@@ -1,13 +1,13 @@
-# Do not change tags in here without changing every other reference to them. 
-# If adding new groups or cultures, make sure they are unique. 
- 
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
 middenrealmian = {
-	graphical_culture = westerngfx 
- 
-    garethi = { 
-		graphical_culture = germangfx 
-		color = { 255 215 0 } 
-	  
+    graphical_culture = westerngfx
+    
+	garethi = {
+		graphical_culture = germangfx
+		color = { 255 215 0 }
+	
 		male_names = {
 			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
 			Bernhelm Bodar Bogumil Boromil Boronian Bosper Brin Burgol Burian Cassim Colga Colgan 
@@ -51,18 +51,16 @@ middenrealmian = {
 			Ulinai Ulmia Utsinde Uthjande Vana 
 			Viridai Vistella Wala Waliburia Walpurgia Wina Wilimai Xaida Xaviera Xerane Xinda Yanis 
 			Yasmina Yassia Ysinthe Yola Yolande Yolde Yosmia Ysilda Zekla Zelda Zidane Zidona Zita Zoe 
-			Zyla Zylya } 
-	  
+			Zyla Zylya } 	
+		
 		dukes_called_kings = no 
 	  
-		# Chance of male children being named after their paternal or maternal grandfather, or their 
-		father. Sum must not exceed 100. 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
 		father_name_chance = 10 
 	 
-		# Chance of female children being named after their paternal or maternal grandmother, or 
-		their mother. Sum must not exceed 100. 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
 		pat_grm_name_chance = 10 
 		mat_grm_name_chance = 50 
 		mother_name_chance = 5 
@@ -71,11 +69,11 @@ middenrealmian = {
 	  
 		modifier = default_culture_modifier 
     } 
- 
-	albernian = { 
-		graphical_culture = celticgfx 
-		color = { 152 251 152} 
-	 
+
+    albernian = {
+        graphical_culture = celticgfx
+        color = { 250 250 210 }
+
 		male_names = { 
 			Aedin Aelfwin Aeneas Aneirin Annlir Ardach Ardan Baiscne Baranoir BelfionnBeli 
 			Bennwir Bladub Branwin Brendan Bruidnich Boronwyn Caitlin Cairbre Callan Cathal Ceibhin Cet 
@@ -109,25 +107,24 @@ middenrealmian = {
 		from_dynasty_prefix = "ni " 
 		  #Needs to be changed to "ni DYNASTY" and "ui DYNASTY" depending on gender 
 		 
-		# Chance of male children being named after their paternal or maternal 
-		grandfather, or their father. Sum must not exceed 100. 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
 		father_name_chance = 10 
 		 
-		# Chance of female children being named after their paternal or maternal 
-		grandmother, or their mother. Sum must not exceed 100. 
-		  pat_grm_name_chance = 10 
-			mat_grm_name_chance = 50 
-			mother_name_chance = 5 
- 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+		pat_grm_name_chance = 10 
+		mat_grm_name_chance = 50 
+		mother_name_chance = 5 
+ 		
+		modifier = default_culture_modifier 
 	} 
- 
-	nostrian = { 
-		graphical_culture = germangfx 
-		color = { 0 255 255 } 
-	 
-		male_names = { 
+
+    nostrian = {
+    	graphical_culture = germangfx
+        color = { 255 248 220 }
+
+    	male_names = { 
 		Ablasion Albio Alrick Alrigion Andarion Andaryn Ansfinion Arngrimm Belenolas 
 		Blasius Bösfold Bosper Brin Buuriel Cloduar Cordovan Droderon Elwin Esindion Ettel Fertilas 
 		Fringlas Gasparyn 
@@ -155,25 +152,24 @@ middenrealmian = {
 		female_patronym = "tochter" 
 		prefix = no # The patronym is added as a suffix 
 		 
-		# Chance of male children being named after their paternal or maternal 
-		grandfather, or their father. Sum must not exceed 100. 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 0 
 		father_name_chance = 0 
 		 
-		# Chance of female children being named after their paternal or maternal 
-		grandmother, or their mother. Sum must not exceed 100. 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
 		pat_grm_name_chance = 10 
 		mat_grm_name_chance = 50 
 		mother_name_chance = 0 
-	 
+	 	
+		modifier = default_culture_modifier 
 	} 
- 
-    andergastian = { 
-		graphical_culture = normangfx 
-		color = { 34 139 34 } 
-		  
-		male_names = {
+
+	andergastian = {
+		graphical_culture = normangfx
+		color = { 173 255 47}
+	
+	male_names = {
 			Adalbrand Arbolf Argos Arnbold Arnbrecht Barl Bärfried Bärnhelm Beusl 
 			Binsbart Blathislaus Bogumil Borkfried Boromil Brin Bruderich Cord Därling Depold Dietrad 
 			Edelbrecht Edl 
@@ -203,26 +199,24 @@ middenrealmian = {
 		 
 		from_dynasty_prefix = "of " 
 		 
-		# Chance of male children being named after their paternal or maternal grandfather, or 
-		their father. Sum must not exceed 100. 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
 		father_name_chance = 10 
 		 
-		# Chance of female children being named after their paternal or maternal grandmother, or 
-		their mother. Sum must not exceed 100. 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
 		pat_grm_name_chance = 10 
 		mat_grm_name_chance = 50 
 		mother_name_chance = 5 
  
- 
+ 		modifier = default_culture_modifier 
     } 
-  
-    northern_marches = { 
-		graphical_culture = englishgfx 
-		color = { 250 128 114} 
-	  
-		male_names = {
+	
+	northern_marches = {
+		graphical_culture = englishgfx
+		color = { 255 218 185 }
+	
+	male_names = {
 			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
 			Bernhelm Bodar Bogumil Boromil Boronian Bosper Brin Burgol Burian Cassim Colga Colgan 
 			Connar Cordovan 
@@ -270,32 +264,30 @@ middenrealmian = {
 		} 
 		  
 			dukes_called_kings = no 
-		baron_titles_hidden = yes 
-		count_titles_hidden = yes 
+			baron_titles_hidden = yes 
+			count_titles_hidden = yes 
 		 
-		from_dynasty_prefix = "of " 
+			from_dynasty_prefix = "of " 
 		 
-		# Chance of male children being named after their paternal or maternal grandfather, or 
-		their father. Sum must not exceed 100. 
-		pat_grf_name_chance = 50 
-		mat_grf_name_chance = 5 
-		father_name_chance = 10 
+			# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
+			pat_grf_name_chance = 50 
+			mat_grf_name_chance = 5 
+			father_name_chance = 10 
 		 
-		# Chance of female children being named after their paternal or maternal grandmother, or 
-		their mother. Sum must not exceed 100. 
-		pat_grm_name_chance = 10 
-		mat_grm_name_chance = 50 
-		mother_name_chance = 5 
-		 
-		modifier = default_culture_modifier 
+			# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+			pat_grm_name_chance = 10 
+			mat_grm_name_chance = 50 
+			mother_name_chance = 5 
+		
+			modifier = default_culture_modifier 
   
     }
-  
-    meadows = { 
-		graphical_culture = celticgfx 
-		color = { 250 128 114} 
-  
-		male_names = {
+	
+	meadows = {
+		graphical_culture = celticgfx
+		color = { 255 239 213 }
+	
+	male_names = {
 			Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag Binsbart Borkfried Bunsenhold 
 			Dankward Derling Dingel Dornwill Drachwill Dreufang Edil Efferdin Eichbart Emmeran Erlwulf 
 			Ferling 
@@ -329,26 +321,24 @@ middenrealmian = {
 		 
 		from_dynasty_prefix = "of " 
  
-		# Chance of male children being named after their paternal or maternal grandfather, or 
-		their father. Sum must not exceed 100. 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
 		father_name_chance = 0 
  
-		# Chance of female children being named after their paternal or maternal grandmother, or 
-		their mother. Sum must not exceed 100. 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
 		pat_grm_name_chance = 10 
 		mat_grm_name_chance = 50 
 		mother_name_chance = 0 
 		 
 		modifier = default_culture_modifier 
     } 
-  
-    kosh = { 
-		graphical_culture = germangfx 
-		color = { 230 230 250 } 
-  
-		male_names = {
+	
+	kosh = { 
+		graphical_culture = germangfx
+		color = { 255 250 205 }
+	
+	male_names = {
 			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
 			Bernhelm Bodar Bogumil Boromil Boronian Bosper Brin Burgol Burian Cassim Colga Colgan 
 			Connar Cordovan 
@@ -401,218 +391,139 @@ middenrealmian = {
 		 
 		from_dynasty_prefix = "of " 
 		 
-		# Chance of male children being named after their paternal or maternal grandfather, or 
-		their father. Sum must not exceed 100. 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
 		father_name_chance = 10 
 		 
-		# Chance of female children being named after their paternal or maternal grandmother, or 
-		their mother. Sum must not exceed 100. 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
 		pat_grm_name_chance = 10 
 		mat_grm_name_chance = 50 
 		mother_name_chance = 5 
 		 
 		modifier = default_culture_modifier 
     }
-  
-    griffinsford = {
-		graphical_culture = normangfx 
-		color = { 255 255 224 } 
-  
-		male_names = {
-			Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag Binsbart Borkfried Bunsenhold 
-			Dankward Derling Dingel Dornwill Drachwill Dreufang Edil Efferdin Eichbart Emmeran Erlwulf 
-			Ferling 
-			Falber Farling Finglan Firl Firnmar Firung Firutin Fuchstreu Geldor Gernward Gerwulf Gille 
-			Gilm Giselhold Giselwulf Grimmfold Gutwill Hargord Harmwulf Hasrolf Heldor Helmbrecht Henja 
-			Herdan Ilmbold Ingerman Jann Jargold Jarl Jarlan Josold Kalping Karfang Kerling Knorrhold 
-			Lein Leuemann Leugrimm Lingmar Linnart_Linnert Marbert Marmwulf Naul Nille Nolle Norsold 
-			Olin Pagol 
-			Perainbart Perdan Phexdan Radumar Ralmir Rodkunk Rondril Rondreich Sadelhold Siltja 
-			Tannfried Tiro Thordenan Thordenin Thorolf Tobor Olfert Uldreich Weldmar Waidbert Waldbert 
-			Waldemar Waldhold 
-			Wallfried Wilfing Wolfhelm Yann 
-		} 
-  
-		female_names = {
-			Äarl Adilgunde Algrid Alwen Amselgunde Aartrude Bormunde Birsa Birsel 
-			Danje Derlinde Dÿlga Dorntrud_Dorntruda Elftraud Elfwid_Elfwide Ellmholda Enn Erdgard 
-			Erlgard Erdlinde 
-			Erlinde Erlwidda Fann Farlgard Farline Farnlieb Feengrunde Feenholde Fioa Fiya Firre 
-			Freugern Freulinde Furgund Gernild Gilamund Gunelde Helchtruda Hennya Hilmtrude 
-			Holdtraud_Holdtraude 
-			Ilfwudde Ilme Kunn Kupunda Lann Linje Luitpercht May Matissa Mirnhilde Mundlieb Nalle 
-			Neunhild Olginai Omwidd Praida Raugunde Rechhilde Thargrin Traute Ullgrein Waidgunde 
-			Walderia 
-			Walpurga_Walpurgia Waldtraude_Waldtraudel    
-		} 
-  
-		dukes_called_kings = no 
-		baron_titles_hidden = yes 
-		count_titles_hidden = yes 
-	 
-		from_dynasty_prefix = "of " 
- 
-		# Chance of male children being named after their paternal or maternal grandfather, or 
-		their father. Sum must not exceed 100. 
-		pat_grf_name_chance = 50 
-		mat_grf_name_chance = 5 
-		father_name_chance = 10 
-		 
-		# Chance of female children being named after their paternal or maternal grandmother, or 
-		their mother. Sum must not exceed 100. 
-		pat_grm_name_chance = 10 
-		mat_grm_name_chance = 50 
-		mother_name_chance = 5 
-		 
-		modifier = default_culture_modifier 
-    } 
-  
-    tobrian = { 
-		graphical_culture = englishgfx 
-		color = { 255 255 255 } 
-  
-		male_names = {
-			Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag Binsbart Borkfried Bunsenhold 
-			Dankward Derling Dingel Dornwill Drachwill Dreufang Edil Efferdin Eichbart Emmeran Erlwulf 
-			Ferling 
-			Falber Farling Finglan Firl Firnmar Firung Firutin Fuchstreu Geldor Gernward Gerwulf Gille 
-			Gilm Giselhold Giselwulf Grimmfold Gutwill Hargord Harmwulf Hasrolf Heldor Helmbrecht Henja 
-			Herdan Ilmbold Ingerman Jann Jargold Jarl Jarlan Josold Kalping Karfang Kerling Knorrhold 
-			Lein Leuemann Leugrimm Lingmar Linnart_Linnert Marbert Marmwulf Naul Nille Nolle Norsold 
-			Olin Pagol 
-			Perainbart Perdan Phexdan Radumar Ralmir Rodkunk Rondril Rondreich Sadelhold Siltja 
-			Tannfried Tiro Thordenan Thordenin Thorolf Tobor Olfert Uldreich Weldmar Waidbert Waldbert 
-			Waldemar Waldhold 
-			Wallfried Wilfing Wolfhelm Yann 
-		} 
-  
-		female_names = {
-			Äarl Adilgunde Algrid Alwen Amselgunde Aartrude Bormunde Birsa Birsel 
-			Danje Derlinde Dÿlga Dorntrud_Dorntruda Elftraud Elfwid_Elfwide Ellmholda Enn Erdgard 
-			Erlgard Erdlinde 
-			Erlinde Erlwidda Fann Farlgard Farline Farnlieb Feengrunde Feenholde Fioa Fiya Firre 
-			Freugern Freulinde Furgund Gernild Gilamund Gunelde Helchtruda Hennya Hilmtrude 
-			Holdtraud_Holdtraude 
-			Ilfwudde Ilme Kunn Kupunda Lann Linje Luitpercht May Matissa Mirnhilde Mundlieb Nalle 
-			Knorrhold Lein Leuemann Leugrimm Lingmar Linnart_Linnert Marbert Marmwulf Naul Nille Nolle Norsold Olin Pagol
-			Perainbart Perdan Phexdan Radumar Ralmir Rodkunk Rondril Rondreich Sadelhold Siltja Tannfried Tiro Thordenan Thordenin Thorolf Tobor Olfert Uldreich Weldmar Waidbert Waldbert Waldemar Waldhold
-			Wallfried Wilfing Wolfhelm Yann
-		}
-    
-		##Fault?
-		##female_names = {Äarl Adilgunde Algrid Alwen Amselgunde Aartrude Bormunde Birsa Birsel Danje Derlinde Dÿlga Dorntrud_Dorntruda Elftraud Elfwid_Elfwide Ellmholda Enn Erdgard Erlgard Erdlinde
-		##Erlinde Erlwidda Fann Farlgard Farline Farnlieb Feengrunde Feenholde Fioa Fiya Firre Freugern Freulinde Furgund Gernild Gilamund Gunelde Helchtruda Hennya Hilmtrude Holdtraud_Holdtraude
-		##Ilfwudde Ilme Kunn Kupunda Lann Linje Luitpercht May Matissa Mirnhilde Mundlieb Nalle Neunhild Olginai Omwidd Praida Raugunde Rechhilde Thargrin Traute Ullgrein Waidgunde Walderia
-		##Walpurga_Walpurgia Waldtraude_Waldtraudel    }
-    
-		dukes_called_kings = no
-		baron_titles_hidden = yes
-		count_titles_hidden = yes
+	
+	tobrian = {
+	graphical_culture = englishgfx
+	color = { 189 183 107 }
+	
+	male_names = {
+		Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag
+		Binsbart Borkfried Bunsenhold
+		Dankward Derling Dingel Dornwill Drachwill Dreufang
+		Edil Efferdin Eichbart Emmeran Erlwulf
+		Ferling	Falber Farling Finglan Firl Firnmar Firung Firutin Fuchstreu
+		Geldor Gernward Gerwulf Gille Gilm Giselhold Giselwulf Grimmfold Gutwill
+		Hargord Harmwulf Hasrolf Heldor Helmbrecht Henja Herdan
+		Ilmbold Ingerman
+		Jann Jargold Jarl Jarlan Josold
+		Kalping Karfang Kerling Knorrhold
+		Lein Leuemann Leugrimm Lingmar Linnart_Linnert
+		Marbert Marmwulf
+		Naul Nille Nolle Norsold
+		Olin Olfert
+		Pagol Perainbart Perdan Phexdan
+		Radumar Ralmir Rodkunk Rondril Rondreich
+		Sadelhold Siltja
+		Tannfried Tiro Thordenan Thordenin Thorolf Tobor
+		Uldreich Weldmar Waidbert Waldbert Waldemar Waldhold Wallfried Wilfing Wolfhelm
+		Yann
+	}
+	
+	female_names = {
+		Äarl Adilgunde Algrid Alwen Amselgunde Aartrude
+		Bormunde Birsa Birsel
+		Danje Derlinde Dÿlga Dorntrud_Dorntruda
+		Elftraud Elfwid_Elfwide Ellmholda Enn Erdgard Erlgard Erdlinde Erlinde Erlwidda
+		Fann Farlgard Farline Farnlieb Feengrunde Feenholde Fioa Fiya Firre Freugern Freulinde Furgund
+		Gernild Gilamund Gunelde
+		Helchtruda Hennya Hilmtrude Holdtraud_Holdtraude
+		Ilfwudde Ilme
+		Kunn Kupunda
+		Lann Linje Luitpercht
+		May Matissa Mirnhilde Mundlieb
+		Nalle Neunhild
+		Olginai Omwidd
+		Praida
+		Raugunde Rechhilde
+		Thargrin Traute
+		Ullgrein
+		Waidgunde Walderia Walpurga_Walpurgia Waldtraude_Waldtraudel
+	}
+	
+	dukes_called_kings = no
+	baron_titles_hidden = yes
+	count_titles_hidden = yes
 
-		from_dynasty_prefix = "of "
+	from_dynasty_prefix = "of "
 
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 5
-		father_name_chance = 10
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 5
+	father_name_chance = 10
 			
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 10
-		mat_grm_name_chance = 50
-		mother_name_chance = 5
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 5
 
-		modifier = default_culture_modifier
+	modifier = default_culture_modifier
     }
-    
-    black_tobrian = {
-		graphical_culture = englishgfx
-		color = { 105 105 105 }
-    
-		male_names = {
-			Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag Binsbart Borkfried Bunsenhold Dankward Derling Dingel Dornwill Drachwill Dreufang Edil Efferdin Eichbart Emmeran Erlwulf Ferling
-			Falber Farling Finglan Firl Firnmar Firung Firutin Fuchstreu Geldor Gernward Gerwulf Gille Gilm Giselhold Giselwulf Grimmfold Gutwill Hargord Harmwulf Hasrolf Heldor Helmbrecht Henja
-			Herdan Ilmbold Ingerman Jann Jargold Jarl Jarlan Josold Kalping Karfang Kerling Knorrhold Lein Leuemann Leugrimm Lingmar Linnart_Linnert Marbert Marmwulf Naul Nille Nolle Norsold Olin Pagol
-			Perainbart Perdan Phexdan Radumar Ralmir Rodkunk Rondril Rondreich Sadelhold Siltja Tannfried Tiro Thordenan Thordenin Thorolf Tobor Olfert Uldreich Weldmar Waidbert Waldbert Waldemar Waldhold
-			Wallfried Wilfing Wolfhelm Yann    Agribalrik Agrimox Arkan Arkhobalrik Balkhabold Belharion Belzoran Blakhardil Belhalmar Borbaradovan Borbaranko Charyptoran Dämonik Darklajin Dragan
-			Dragodan Dragomir Globoman Karmold Kyrjakinnen Lolgramund Nagrajuk Nekromold Nirravus Nishkatko Osko Pelmen Radromir Rako_Rakorium Rhazzoran Shrufred Shruumold Sordan Stojko Thaloran Thargunigor
-			Tharsinion Tharsonius Tijakond Tlalold Tlalum Vermis Vespertilio Xarfo_Xarfold Umdor Vlad Vrak Vultur Zholvan Zantko
-		}
-    
-		female_names = {
-			Achorholde Amrifasha Belkeliban Belshira Belzora Blakharadane Borbarai Borbarild Borbel Braggunde Chlamyscha Difaris Dolorosa Draculea Duglind_Duglinde Flavivirai Heshtholde
-			Jovanka Karmantju Karmothild Kryptild Lacrimosa Laranjid Lolgrima Mactalene Mactane Malarai Mishkarilena Motka Nephazine Nocturna Rhabdan Shazmanyscha Shyhayla Skelene Striga Tasfarella Thalonju
-			Trypanosia Tyakradane Tykramunde Ulchule Venefica Xamanda Varicella Widharica Yaqmonika Yashnata Yersinia Yonahild Zholvis Äarl Adilgunde Algrid Alwen Amselgunde Aartrude Bormunde Birsa Birsel Danje Derlinde Dÿlga Dorntrud_Dorntruda Elftraud Elfwid_Elfwide Ellmholda Enn Erdgard Erlgard Erdlinde
-			Erlinde Erlwidda Fann Farlgard Farline Farnlieb Feengrunde Feenholde Fioa Fiya Firre Freugern Freulinde Furgund Gernild Gilamund Gunelde Helchtruda Hennya Hilmtrude Holdtraud_Holdtraude
-			Ilfwudde Ilme Kunn Kupunda Lann Linje Luitpercht May Matissa Mirnhilde Mundlieb Nalle Neunhild Olginai Omwidd Praida Raugunde Rechhilde Thargrin Traute Ullgrein Waidgunde Walderia
-			Walpurga_Walpurgia Waldtraude_Waldtraudel
-		}
-    
-		dukes_called_kings = no
-		baron_titles_hidden = yes
-		count_titles_hidden = yes
-
-		from_dynasty_prefix = "of "
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 5
-		father_name_chance = 10
-			
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 10
-		mat_grm_name_chance = 50
-		mother_name_chance = 5
-
-		modifier = default_culture_modifier
-    }
-    
-    svelltlander = {
+	
+	svelltlander = {
 		graphical_culture = celticgfx
-		color = { 173 255 47 }
-    
+		color = { 255 228 181 }
+	
 		male_names = {
-			Adran_An Alrik_Rik Angrond Anjun Answin Ardor Arn Badilak_Badi Baltram_Bal Bardo Berman_Ber Bernhelm_Bern Bodar Bogumil_Bogu Boromil Boronian Bosper Brin Burgol Burian Cassim Colga Colgan Connar Cordovan
-			Curthan Cyberian_Cyben Dabbert Darian Debrek Delo Eberhelm Eboreus_Reus Edorian Edo Efferdan Elbrecht Elgor Emmeran_Emmer Ernbrecht_Ern Erlan Erlwin Erzian Eslam Ettel Falk Felian Fingorn Firunian Firu Firitin
-			Folmian Fredo Frumold Geppert Gerbal Gerding Gernot Gero Geron Gerrik Gerion Gilborn Gishelm Glombo_Globo Gorm Goswin Götterfried Groben Gumblad Gurvan Hagen Hal Haldan Halrik Hakon Halman
-			Hane Harad Helmar_Hel Helme Helmbrecht Hesindian Hesindion Hilgert_Hilg Hluthar Iber Igan Immo Ingal Ingrimon Irion Jast Jergan Jobdan Jost Kalman Karon Kedio Korobar Kulman Kvalor Lares Lechdan Leomar_Leo
-			Leuendan_Leuen Linnert Losan Parinor Peradan Perainepreis Perainhilf Perainian Perainor Perval Phelix Phexje Pisidian Plauter Polter Praiodan Praioslob Praiotin Quanion Quendan Quin Radul Rahjadan
-			Refardeon Reo Reto Rigbald Rhys Robak Roban Rondred Rondrian Rukus Rumpo Sal Salix Savertin Sighelm Sigman Sindar Stipen Stordian Storko Sumudan Tabbert Tanglan Thallian Terbun Thimorn_Thim Thisdan
-			Timshal Tjolme Tolak Torben Torm Trautmann Travin Travidan Tsafried Tsajan Tsathalan Tydor Ucuriel Udildor Ugdalf Ugdan Ugo Ulfried Ungolf_Ungo Uriel Valpo Varman Viburn Tirus Voltan Vorlop Wahnfried
-			Welf Wolfman Wulf Wulfhelm Xandro Xindan Xebbert Xerber Yann Yantur Yendan Yendar Yerodin Yeto Zondan Zolthan Zordan}
-		
+			Adran_An Alrik_Rik Angrond Anjun Answin Ardor Arn Badilak_Badi Baltram_Bal Bardo Berman_Ber Bernhelm_Bern Bodar Bogumil_Bogu Boromil Boronian Bosper Brin Burgol Burian
+			Cassim Colga Colgan Connar Cordovan	Curthan Cyberian_Cyben Dabbert Darian Debrek Delo
+			Eberhelm Eboreus_Reus Edorian Edo Efferdan Elbrecht Elgor Emmeran_Emmer Ernbrecht_Ern Erlan Erlwin Erzian Eslam Ettel
+			Falk Felian Fingorn Firunian Firu Firitin Folmian Fredo Frumold
+			Geppert Gerbal Gerding Gernot Gero Geron Gerrik Gerion Gilborn Gishelm Glombo_Globo Gorm Goswin Götterfried Groben Gumblad Gurvan
+			Hagen Hal Haldan Halrik Hakon Halman Hane Harad Helmar_Hel Helme Helmbrecht Hesindian Hesindion Hilgert_Hilg Hluthar Iber Igan Immo Ingal Ingrimon Irion Jast Jergan Jobdan Jost
+			Kalman Karon Kedio Korobar Kulman Kvalor Lares Lechdan Leomar_Leo Leuendan_Leuen Linnert Losan 
+			Parinor Peradan Perainepreis Perainhilf Perainian Perainor Perval Phelix Phexje Pisidian Plauter Polter Praiodan Praioslob Praiotin Quanion Quendan Quin 
+			Radul Rahjadan Refardeon Reo Reto Rigbald Rhys Robak Roban Rondred Rondrian Rukus Rumpo Sal Salix Savertin Sighelm Sigman Sindar Stipen Stordian Storko Sumudan
+			Tabbert Tanglan Thallian Terbun Thimorn_Thim Thisdan Timshal Tjolme Tolak Torben Torm Trautmann Travin Travidan Tsafried Tsajan Tsathalan Tydor
+			Ucuriel Udildor Ugdalf Ugdan Ugo Ulfried Ungolf_Ungo Uriel Valpo Varman Viburn Tirus Voltan Vorlop Wahnfried Welf Wolfman Wulf Wulfhelm
+			Xandro Xindan Xebbert Xerber Yann Yantur Yendan Yendar Yerodin Yeto Zondan Zolthan Zordan
+		}
+	
 		female_names = {
-			Adaque_Ada Alda Alena Alinde_Ali Alruna Alvide Arba Arta Belona Berinka Berna Binya Birsel Boriane Caya Celissa_Celi Cella Charine Coruna Dara Dari Daria Dela Derya Dhana Dilga Dimiona Doride Dorlen
-			Dorfriede Drala Dramina Duridanya Dythilde Dythlind Edala Efferdane Elida_Eli Elene Elwene Emer Fenia Fiana Fina Firsa Firuna Franka_Fran Gala Galtraud Ginaya Girte Gissa Gunelde Gwynna Harika_Rika Harka
-			Heiltrud Hela Hesindiane Hesine Hitta Idra Ifirnia Ilke Ingrimma Isida Jadwina Jasinai Jette Josmine Jule Junivera Karima Khorena Krona Kysira Lana Larona Leia Leta Lidda Linai Livia Losiane Lufilla
-			Maline_Line Maren Mirya Mo Mora Morena Nana Neetya Nella Niam Odelinde Ola Oleana Olorande Ondinai Ondwina Palinai Perdia Praiosmin Perainiane Praiadne Quenia Quelina Quisira Rahjalieb Rahjane Rahjada
-			Ragnar Renzi Roana Rondirai Rondralied Rondriane Rovena Saginta Sagitta Sannah Sari_Saria Selinde Sumudai Susa Sylvette Tanit Thornia Thyria Tita Titina Tsaja Turike Udha Ulinai Ulmia Utsinde Uthjande Vana
-			Viridai Vistella Wala Waliburia_Wali Walpurgia Wina Wilimai Xaida Xaviera Xerane Xinda Yanis Yasmina Yassia Ysinthe Yola Yolande Yolde Yosmia Ysilda Zekla Zelda Zidane Zidona Zita Zoe Zyla Zylya }
-    
+			Adaque_Ada Alda Alena Alinde_Ali Alruna Alvide Arba Arta Belona Berinka Berna Binya Birsel Boriane Caya Celissa_Celi Cella Charine Coruna
+			Dara Dari Daria Dela Derya Dhana Dilga Dimiona Doride Dorlen Dorfriede Drala Dramina Duridanya Dythilde Dythlind Edala Efferdane Elida_Eli Elene Elwene Emer
+			Fenia Fiana Fina Firsa Firuna Franka_Fran Gala Galtraud Ginaya Girte Gissa Gunelde Gwynna Harika_Rika Harka	Heiltrud Hela Hesindiane Hesine Hitta
+			Idra Ifirnia Ilke Ingrimma Isida Jadwina Jasinai Jette Josmine Jule Junivera Karima Khorena Krona Kysira
+			Lana Larona Leia Leta Lidda Linai Livia Losiane Lufilla	Maline_Line Maren Mirya Mo Mora Morena Nana Neetya Nella Niam
+			Odelinde Ola Oleana Olorande Ondinai Ondwina Palinai Perdia Praiosmin Perainiane Praiadne Quenia Quelina Quisira
+			Rahjalieb Rahjane Rahjada Ragnar Renzi Roana Rondirai Rondralied Rondriane Rovena Saginta Sagitta Sannah Sari_Saria Selinde Sumudai Susa Sylvette
+			Tanit Thornia Thyria Tita Titina Tsaja Turike Udha Ulinai Ulmia Utsinde Uthjande Vana Viridai Vistella
+			Wala Waliburia_Wali Walpurgia Wina Wilimai Xaida Xaviera Xerane Xinda Yanis Yasmina Yassia Ysinthe Yola Yolande Yolde Yosmia Ysilda Zekla Zelda Zidane Zidona Zita Zoe Zyla Zylya }
+	
 		dukes_called_kings = no
-		baron_titles_hidden = yes
-		count_titles_hidden = yes
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
 
-		from_dynasty_prefix = "of "
+   		from_dynasty_prefix = "of "
 
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 5
-		father_name_chance = 0
-			
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 10
-		mat_grm_name_chance = 50
-		mother_name_chance = 0
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 5
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
 
-		modifier = default_culture_modifier
-    }
-    
-    darpatian = {
+    	modifier = default_culture_modifier
+	}
+	
+	darpatian = {
 		graphical_culture = englishgfx
-		color = { 147 112 219 }
-		
+		color = { 255 255 224 }
+	
 		male_names = {
 			Adelger Aeron Alfrik Aldron Answin Arddur Arnwulf Bardon Barnhelm Bellias Brinwulf Burcanon Caldon Corelian Dardulan Edric Erdwulf Egilmar Ercont Erlan Falconor Falker Firudon
 			Firunian Fredo Frudorn Gerhelm Gerin Gernbrecht Glorian Godefried Gorthin Hagwulf Harvis_Hervis Helmbrecht Herdfried Hilgert Hornbald Jartan Jorgrimm Karwulf Kedor Kordan Kurtan Ludeger_Ludger
@@ -646,3 +557,1589 @@ middenrealmian = {
     }
 
 }
+
+almada = {
+	graphical_culture = southerngfx
+
+	almadan = {
+		graphical_culture = southerngfx
+		color = { 255 165 0 }	
+		
+		male_names = {
+			Alrico Alonso Almaderich Almanzo_Almanzor Amando Aquitanyo Arif Aslam Assavo Azulejo Badilaco Bardojoz Balbiano Biscarat Bodar Borondino Cahusac Caldaio_Caldaios Cambados
+			Cazorlenyo Danilo Eglamo_Eglamor Escalio Eslam_Eslamo Espejo Farugo Federigo Firuz Gaftaro Girolamo Gonzalo Gualdo Gujadal Hazanyo Hesindio Hillero Ingrimo Ippolito Isonzo
+			Jacinto Jacopo Joselito Kazanyo Korim Lanvolo Laurenzio Ludovigo Lumino Maquedar Marbodan Moritatio Nazir Obidos Ordonyo Perhiman_Perhimano Pelayo Peraininho Perinyo Punino
+			Rafik Rafim Rahijan_Rahijano Raimundo Rohayo Romualdo Rondraldinho Rondraldo Rondrigo Rustam_Rustamo Salvestro Sansovino Servando Talfan Therbun Tolak Trimalchop Tsayano
+			Valdemoro Valpo Vencelao Viento Volapio Yalach Yussevo Zayano Zahir
+		}
+	
+		female_names = {
+			Ahumeda Alienora Aldea Aldonaza Antara Alricia Ayla Azila Baraya Boronya Caneya Caldja Concabella Corvara Daroca Duera Dunyaca Elea Eleonora Escalada Esclarmunda Esfera Eshilha
+			Eslamidia Esribeda Farfanya Fhadime Genista Gonzaga Gujadanya Haricella Ilmice_Ilmicea Ismeralda Jasemina Laila Lioba Luciana Lusita
+			Madalena Maqueda Mirandola Mirhaneba Morena Nahema Neraida Noiona Novara Oczitania Olenga Olivenaca Pasqua Peliria 
+			Rahjada Rahjania Rhajineza Richeza Rifada Rinaya Rondrala_Rondralia Roxalba Sajida Shahane Sefira Selimehda Siguenza Simanca Solivai Solsona 
+			Travanca Tsaja_Tsaia Ulzedona Usanza Valposella Vanoza Vibora Viminyoza Vinyaza Yanis Yaquiria Yedra Yegua Yeshinnita Yeza Yezabella
+			Zafira Zalamea Zarpada Zaya Zorilla Zorzal Zulhaminea
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+
+        from_dynasty_prefix = "of "
+
+
+	    # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 5
+    	father_name_chance = 10
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 5
+
+    	modifier = default_culture_modifier
+	}
+}
+
+	
+
+hjaldingish = {
+    graphical_culture = norsegfx
+    
+    thorwalian = {
+        graphical_culture = norsegfx
+
+        color = {  32 178 170 }
+        
+        male_names = {
+			Aki Ansgar Ansir Arngrim Asgrimm Askir Asleif Atli Atmaskott Beorn Beowulf Bjeri Bjarni Björn Brand Egil Eilif Eindrin
+			Eirik Eldgrimm Faenwulf Firunjar Fjolnir Frenjar Garald Garulf Geir Gerskir Gunn_Gunni Hakon Hallar Halfdan Hardger Hardred Hasgar Helgi
+			Hjerolf_Herolf Herm Hjall_Hjalldi Hjore Hjalmar_Halmar Hjaldar_Haldar Hjelm Ingald Ingirid Ingibjörg Iskir Isleif_Islif Jora Jurge Karven Kari Ketil Kjaskar
+			Laske Leif_Lif Liskolf Maednir Noerre Norri Olav Olgard Olgi Olvir Orgen Orozar Orm Ragnar Raskir Rekki Röngvald Rodi Rorleif_Rorlif
+			Runolf Sigridur Sigrud Solvi Starkad Steinar Stirbjörn Swafgard Swafnan Swafleif_Swaflif Sven Tevil Thinmar Thivar Tjalf Thorgun
+			Thorkar Thorwulf Thurbold Thure Torben Torbrand Tore Torfin Torgal Torstor Trollwulf Tronde Vandrad Walkir Wulfgrimm Yngvar Angar Aril Arinbeorn
+			Arve Bersi Cern Deorn Efferdi Estorik Garsvir Gunn Harsger Helgir Hengist Herjolf Hjall Hjallti Haldar Hjaldar Halmar Hjalmar Ingram Isleif Korin Oremo Orezar Orik
+			Ottan Ottaran Phileas Rangold Rorlik Rorlif Salgar Tjall Torkil Torlif Trol Trolske Valadur Wandrad
+		}
+		
+		female_names = {
+			Akja Aelfhild_Alfhild Algrid Alvida Andra Anga Anhild Arva Asgerda_Asgerd Asgrima Askra Beornhild Bera Bjarnilda Branda Bridgera
+			Bryda Eilif Eindara Eldgrima Estrid Eyvin Firunja Frenja Fridgera_Fridger Garhelt Garhilda Grima Gunbritt Gundrid Gunda Hallbera
+			Hardsgera Helma Hilda Hjalfrida Hjalka Hjalma Hjalda Hjaldis Hjalla Hjelgira Hjora Hrafnhild Ifirniane Ifirnslinda Ingira Isliv_Isliva
+			Jadra Janda Jurga Karva Katla Kjaska Korja Lialin Lingard Liflind Livka Marada Nellgard Norhild Odda Olburga Olgerda Olverja
+			Ragna Ragnild Rangnid Raska Rorlif_Rorlifa Salda Sigrid_Sigrida Sigrun Solva Solveig Svala Svenna Svenja Swafgard Swafnild Swangard
+			Tjalva Thora Thordis Thorfinna Thorhalla Torgrid Torlind Wulfgarda Wulflinda_Wulflind Wulfhilda_Wulfhild Yasma Alfhild Askara
+			Baerhild Dotta Eldgrimma Elkelda Erkenhild Fjolnaras Frenhild Grea Hardgera Hjura Ifirnsgira Iskra Isliva Jandara Jora Malina Ottarenja
+			Ragnid Rondrija Rondriwjulfa Senda Sendja Sindara Sura Swafnirdra Swanda Thorkatla Travidja Tula Tuwine Walla
+		}
+        
+        dukes_called_kings = yes
+        baron_titles_hidden = yes
+        count_titles_hidden = yes
+        
+        from_dynasty_prefix = "of "
+        
+        male_patronym = "sson"
+        female_patronym = "sdottir"
+        prefix = no # The patronym is added as a suffix
+        
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+        pat_grf_name_chance = 50
+        mat_grf_name_chance = 0
+        father_name_chance = 0
+        
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+        pat_grm_name_chance = 10
+        mat_grm_name_chance = 50
+        mother_name_chance = 0
+
+        modifier = default_culture_modifier
+    }
+    
+    gjalskerlandish = {
+        graphical_culture = norsegfx
+
+        color = { 127 255 212 }
+        
+        male_names = {
+        	Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
+			Fredon Lannoch Marfogh Sadrugh Ullachan
+		}
+			
+        female_names = {
+            Andraga Bebann Dundana Dunyabra Hjalbeth Hjurrgat Megrim Morrga Milbeth Murraya Hagwa Shinnath Skrayana Harrkara Ifrunna
+			Meruscha Milbath Thorkat Tulmath Yurrgira
+		}
+        
+        dukes_called_kings = no
+        baron_titles_hidden = yes
+        count_titles_hidden = yes
+        
+        from_dynasty_prefix = "of "
+        
+        male_patronym = "bren "
+        female_patronym = "brai "
+        prefix = yes # The patronym is added as a suffix
+        
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+        pat_grf_name_chance = 50
+        mat_grf_name_chance = 0
+        father_name_chance = 0
+        
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+        pat_grm_name_chance = 10
+        mat_grm_name_chance = 50
+        mother_name_chance = 0
+
+        modifier = default_culture_modifier
+    }
+
+	fjarningish = {
+        graphical_culture = norsegfx
+
+        color = { 224 255 255 }
+        
+        male_names = {
+        	Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
+			Fredon Lannoch Marfogh Sadrugh Ullachan
+		}
+			
+        female_names = {
+            Andraga Bebann Dundana Dunyabra Hjalbeth Hjurrgat Megrim Morrga Milbeth Murraya Hagwa Shinnath Skrayana Harrkara Ifrunna
+			Meruscha Milbath Thorkat Tulmath Yurrgira
+		}
+        
+        dukes_called_kings = no
+        baron_titles_hidden = yes
+        count_titles_hidden = yes
+        
+        from_dynasty_prefix = "of "
+        
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+        pat_grf_name_chance = 50
+        mat_grf_name_chance = 0
+        father_name_chance = 0
+        
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+        pat_grm_name_chance = 10
+        mat_grm_name_chance = 50
+        mother_name_chance = 0
+
+        modifier = default_culture_modifier
+    }
+    
+}
+
+nivese = {
+	graphical_culture = easterngfx
+	
+	tribal_nivese = {
+		graphical_culture = ugricgfx
+		color = { 255 250 250 }
+	
+		male_names = {
+       		Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
+			Gorfangnuk Gurjinen Hanko Hautan Hautanan Heimanuk Hietanen Honuk Horganan Hunjok Huno Janjuk Jorinen Jurtan Jurtanan Kaikanuk Kalkuk Kaunanan Kauno Keinjo Kervo Kilhjo Kinajo Kintan
+			Kintanan Kuljuk Kumo Kylänjak Lanan Latu Leikinen Leksvalen Lieto Mada Madanan Maenan Matiljok Minkio Mouhuk Nantalin Nerkjo Niljo Nurmjo Nysjo Olainen Paimjo Pajimazo Parkanjuk Peltjo
+			Pirtijok Rakjo Rasjuk Raumo Ruukjok Sandjo Seinuk Seinjuk Silkajok Simjok Svartjok Tamperen Toljok Tsaekal Turkunen Tyrjuk Uljok Ulo Valen Valjok Vik Ylsjok Zanuk Zeino 
+    	}
+       
+		female_names = {
+        	Airaksela Amuri Auka Aukaju Baituri Bjanju Biniaki Burti Dakauju Dana Dionju Duri Eikaju Emela Eskola Falkja Ferturi Fidaju Fidju Gateiki Geika Godju Hauka Hirolja Hikia Hyvinga
+			Ikaju Ila Irti Isalmi Jalani Jokela Jokja Jonuri Jutila Jyla Kajani Kantala Karenju Karra Katimäki Kaukalathi Keitakju Kela Kelva Kisa Koski Kuopi Kura
+			Lahti Lappila Lauka Liedsa Liskaju Loja Lojmaa Murula Myrra Nakila Näljavena Nirka Nivilaukaju Nujala Ojakalla Olu
+			Paukaja Peltju Pori Purolju Rael Raela Rauma Roika Rukosari Saari Sarela Saphir Saviharju Savolina Sievi Sjunda Sotkia
+			Takoja Tiensu Tolsa Torhola Tuira Turi Ulu Ulvila Ura Usi Vaala Varpa Vatja Vedaju Vella Viala Vieki Vika Ylista Zurti 
+    	}
+        
+    	dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+        
+     	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+     	pat_grf_name_chance = 50
+     	mat_grf_name_chance = 0
+     	father_name_chance = 0
+        
+     	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+     	pat_grm_name_chance = 10
+     	mat_grm_name_chance = 50
+     	mother_name_chance = 0
+
+     	modifier = default_culture_modifier
+	}
+
+	
+	nuanaä-lie = {
+		graphical_culture = ugricgfx #if we use them at all, need own gfx without hair
+		color = { 240 255 240 }
+	
+		male_names = {
+        	Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
+			Gorfangnuk Gurjinen Hanko Hautan Hautanan Heimanuk Hietanen Honuk Horganan Hunjok Huno Janjuk Jorinen Jurtan Jurtanan
+			Kaikanuk Kalkuk Kaunanan Kauno Keinjo Kervo Kilhjo Kinajo Kintan Kintanan Kuljuk Kumo Kylänjak Lanan Latu Leikinen Leksvalen Lieto Mada Madanan Maenan Matiljok Minkio Mouhuk
+			Nantalin Nerkjo Niljo Nurmjo Nysjo Olainen Paimjo Pajimazo Parkanjuk Peltjo	Pirtijok Rakjo Rasjuk Raumo Ruukjok
+			Sandjo Seinuk Seinjuk Silkajok Simjok Svartjok Tamperen Toljok Tsaekal Turkunen Tyrjuk Uljok Ulo Valen Valjok Vik Ylsjok Zanuk Zeino 
+    	}
+       
+		female_names = {
+       		Airaksela Amuri Auka Aukaju Baituri Bjanju Biniaki Burti Dakauju Dana Dionju Duri Eikaju Emela Eskola Falkja Ferturi Fidaju Fidju Gateiki Geika Godju Hauka Hirolja Hikia Hyvinga
+			Ikaju Ila Irti Isalmi Jalani Jokela Jokja Jonuri Jutila Jyla Kajani Kantala Karenju Karra Katimäki Kaukalathi Keitakju Kela Kelva Kisa Koski Kuopi Kura
+			Lahti Lappila Lauka Liedsa Liskaju Loja Lojmaa Murula Myrra Nakila Näljavena Nirka Nivilaukaju Nujala
+			Ojakalla Olu Paukaja Peltju Pori Purolju Rael Raela Rauma Roika Rukosari Saari Sarela Saphir Saviharju Savolina Sievi Sjunda Sotkia
+			Takoja Tiensu Tolsa Torhola Tuira Turi Ulu Ulvila Ura Usi Vaala Varpa Vatja Vedaju Vella Viala Vieki Vika Ylista Zurti 
+    	}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+     	count_titles_hidden = yes
+        
+     	from_dynasty_prefix = "of "
+
+     	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+     	pat_grf_name_chance = 50
+     	mat_grf_name_chance = 0
+     	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+     	pat_grm_name_chance = 10
+     	mat_grm_name_chance = 50
+     	mother_name_chance = 0
+
+     	modifier = default_culture_modifier
+	}
+}
+
+fountland = {
+	graphical_culture = easterngfx
+	
+	sevirya = {
+		graphical_culture = westernslavicgfx
+		color = { 106 90 205 }
+	
+		male_names = {
+			Albin Arvid Baerjan Baerow Berschin Birjew Bosjew Boutsen Daanje Dabbert Damian Danow Duchjo
+			Dulgjew Dunjew Dunjoscha Elkjow Elko Elkwin Ertzel Firnjan Firunjew Fredo Galjan Goljew Grimjan Hane
+			Helmjew Hurdo Iber Ilmin Irjan Ischtan Jaakon Jasper Jarlow Joost Joschin Jucho Kolkja Larjan Linjan Littjew
+			Ljasew Ljubow Maris Matajew Meljow Mew Miljan Mjesko Nasjan Neerjan Neesdan Olko Orschin Oswin Panek
+			Peraenjow Pedder Pettar Pitjow Pjerow Rowin Rudjew Semkin Stane Suschin Tannjew Thezmar Tirulf Torjin
+			Travin Ugo Ulmjan Ulmew Vigo Wassjew Wolpje Wulfen Wulfjew Xebben
+		}
+	
+		female_names = {
+			Alinja Alwinje Baernja Bernischa Danja Dorlin Duna Dunjascha Eljascha Elkwine Elmjescha Firu nja
+			Frinja Gari Geertja Grimje Gritten Gudwinja Helvja Hesinja Ifirnja Ilmjescha Irinja Isidra Jadvige Janne Jassia
+			Jedwinja Jella Karinja Kundra Libussa Luta Lysminja Maline Marja Marissja Moschane Nadjescha Nadschenka
+			Nessa Nuschinja Olja Paale Peraenja Peranka Rabescha Rassia Rihinja Rowena Rowinja Rudwischa Selwine Sewjescha
+			Sulja Tesbinja Thila Tineke Tjeika Travjescha Turiken Ulmjescha Urjelke Vanjescha Verisja Vcstissja Warja Winja
+			Wolpjanc Wulfjascha Xinja Yadwinja Yasinde Zidonje
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+        
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	fastenland = {
+		graphical_culture = westernslavicgfx
+		color = { 153 50 204 }
+	
+		male_names = {
+			Albin Arvid Baerjan Baerow Berschin Birjew Bosjew Boutsen Daanje Dabbert Damian Danow Duchjo
+			Dulgjew Dunjew Dunjoscha Elkjow Elko Elkwin Ertzel Firnjan Firunjew Fredo Galjan Goljew Grimjan Hane
+			Helmjew Hurdo Iber Ilmin Irjan Ischtan Jaakon Jasper Jarlow Joost Joschin Jucho Kolkja Larjan Linjan Littjew
+			Ljasew Ljubow Maris Matajew Meljow Mew Miljan Mjesko Nasjan Neerjan Neesdan Olko Orschin Oswin Panek
+			Peraenjow Pedder Pettar Pitjow Pjerow Rowin Rudjew Semkin Stane Suschin Tannjew Thezmar Tirulf Torjin
+			Travin Ugo Ulmjan Ulmew Vigo Wassjew Wolpje Wulfen Wulfjew Xebben
+		}
+	
+		female_names = {
+			Alinja Alwinje Baernja Bernischa Danja Dorlin Duna Dunjascha Eljascha Elkwine Elmjescha Firu nja
+			Frinja Gari Geertja Grimje Gritten Gudwinja Helvja Hesinja Ifirnja Ilmjescha Irinja Isidra Jadvige Janne Jassia
+			Jedwinja Jella Karinja Kundra Libussa Luta Lysminja Maline Marja Marissja Moschane Nadjescha Nadschenka
+			Nessa Nuschinja Olja Paale Peraenja Peranka Rabescha Rassia Rihinja Rowena Rowinja Rudwischa Selwine Sewjescha
+			Sulja Tesbinja Thila Tineke Tjeika Travjescha Turiken Ulmjescha Urjelke Vanjescha Verisja Vcstissja Warja Winja
+			Wolpjanc Wulfjascha Xinja Yadwinja Yasinde Zidonje
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+        
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	march = {
+		graphical_culture = westernslavicgfx
+		color = { 102 51 153 }
+	
+		male_names = {
+			Albin Arvid Baerjan Baerow Berschin Birjew Bosjew Boutsen Daanje Dabbert Damian Danow Duchjo
+			Dulgjew Dunjew Dunjoscha Elkjow Elko Elkwin Ertzel Firnjan Firunjew Fredo Galjan Goljew Grimjan Hane
+			Helmjew Hurdo Iber Ilmin Irjan Ischtan Jaakon Jasper Jarlow Joost Joschin Jucho Kolkja Larjan Linjan Littjew
+			Ljasew Ljubow Maris Matajew Meljow Mew Miljan Mjesko Nasjan Neerjan Neesdan Olko Orschin Oswin Panek
+			Peraenjow Pedder Pettar Pitjow Pjerow Rowin Rudjew Semkin Stane Suschin Tannjew Thezmar Tirulf Torjin
+			Travin Ugo Ulmjan Ulmew Vigo Wassjew Wolpje Wulfen Wulfjew Xebben
+		}
+	
+		female_names = {
+			Alinja Alwinje Baernja Bernischa Danja Dorlin Duna Dunjascha Eljascha Elkwine Elmjescha Firu nja
+			Frinja Gari Geertja Grimje Gritten Gudwinja Helvja Hesinja Ifirnja Ilmjescha Irinja Isidra Jadvige Janne Jassia
+			Jedwinja Jella Karinja Kundra Libussa Luta Lysminja Maline Marja Marissja Moschane Nadjescha Nadschenka
+			Nessa Nuschinja Olja Paale Peraenja Peranka Rabescha Rassia Rihinja Rowena Rowinja Rudwischa Selwine Sewjescha
+			Sulja Tesbinja Thila Tineke Tjeika Travjescha Turiken Ulmjescha Urjelke Vanjescha Verisja Vcstissja Warja Winja
+			Wolpjanc Wulfjascha Xinja Yadwinja Yasinde Zidonje
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+        
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+}
+	
+horasian = {
+	graphical_culture = occitangfx
+	
+	septimana = {
+		graphical_culture = southerngfx 
+		color = { 143 188 143 }
+	
+		male_names = {
+			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
+			Arrn Ascanio Aurentian Avessandro Baqed Basilius Bembo Ben Benuto Beppo Boldrino Bonnaro Borso Bosper Burian Cadron
+			Caldor Cangrande Carolan Chiranor_Ciro Cordovan Cornaro Croenar Curon Curthan Cusimo Damion Darian Delgado Dettmar
+			Dorgando Draco Drugon Edorian_Edo Efferdo_Ferdo Eolan Erlan Ezzelino Faldor Fardenin Festo Folnor Gabrino
+			Gardelan Gareno Geron Gilmon Gismondo Grifone Hakaan Haldan Haldur Hesindiego Hesindio Horasio Horathio Irian
+			Irion Jaltek Kalman Kedor Khadan Landor Leomar Leonello Lessandero Lorion Luciano Ludolfo Lysander Malvolio Marbio
+			Masaniello Midor Mondino Muracio Nepolemo Nitor Orsino Ostilio Pandolfo Pasquino Perainio Phederino Phedro Pirtho
+			Polinaro Praias Pulpio Quendan Ralhion Rahjacomo Ralman Rassuan Refardeon Reo_Reon Rimaldo Romin Romualdo Rondraman
+			Rondravio Rondrigo Salarino Salquirio_Sal Sarastro Selinan Stordian Sumudan Sulvodan Talor Tanglan Tassilo Terdin
+			Thalion Thisdan Thuan Timor Tolman Torvon Ugo Umbario Urras Usim Vascal Vermis Vicino Vitale Yarum Yerno Zadalon Zandor Zordan
+		}
+	
+		female_names = {
+			Adaque_Ada Adamante Aifingla Aldare Alda Alessandra Alrike Alvenc Amaziclla Amene Ardare Arissa
+			Arvedua Asmodena Aurelia Avessandra Belcna Bellarahja Bellarita Bellatrix Bonaventa Cavarya_Caya Celissa Cirina Clarizia
+			Coruna Dalida Daria_Dara Desaya Dragontina Dulcinea Duridanya Efferdia Elanor_Ela Elissa Elvene Erlgard Eronia
+			Feodora Fiaga_Fiagarete  Fiammetta Findualia Gerone Gorrada Gylduria_Gylda Gylvana Haldana Haricia Harika Hesine Hesindiaga
+			Hesindiane Hesindora Horanthe Horasianne lmperia Ingrimmanda Irionya Isida Jatane Kusmara Lamea Larona Lelia
+			Leomara Logistilla Lorietta Lovisa Lutisana Lyssandra Lucietta Madalea Maline Marbis Melisande Modesta Morena Mythraela
+			Nanda Nandine Nandora Nevinia Niam Niothia Nita Odina Oleana_Ola Oloranthe Pamina Perainella Phedre Phelicitas
+			Phrosina Polissena Praiadne Premodia Prishya Rahjalina Rahjamande Rahjane Rahjanès Remira Rinaya Rondravia Rondriga
+			Sabetta Salkya Savinya Silvana Simiona Svelinya Sylvette Synella Thalionmel Thespia Tilliane Travietta Tsabella Tsaida Udora
+			Usvina Vanossa Viviona Xaviera Yalma Yasinthe Yesaria Yolande Zarya Zerline Zyrasia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "ya "
+        
+   		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	yaquiria = {
+		graphical_culture = southerngfx 
+		color = { 192 192 192 }
+	
+		male_names = {
+			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
+			Arrn Ascanio Aurentian Avessandro Baqed Basilius Bembo Ben Benuto Beppo Boldrino Bonnaro Borso Bosper Burian Cadron
+			Caldor Cangrande Carolan Chiranor_Ciro Cordovan Cornaro Croenar Curon Curthan Cusimo Damion Darian Delgado Dettmar
+			Dorgando Draco Drugon Edorian_Edo Efferdo_Ferdo Eolan Erlan Ezzelino Faldor Fardenin Festo Folnor Gabrino
+			Gardelan Gareno Geron Gilmon Gismondo Grifone Hakaan Haldan Haldur Hesindiego Hesindio Horasio Horathio Irian
+			Irion Jaltek Kalman Kedor Khadan Landor Leomar Leonello Lessandero Lorion Luciano Ludolfo Lysander Malvolio Marbio
+			Masaniello Midor Mondino Muracio Nepolemo Nitor Orsino Ostilio Pandolfo Pasquino Perainio Phederino Phedro Pirtho
+			Polinaro Praias Pulpio Quendan Ralhion Rahjacomo Ralman Rassuan Refardeon Reo_Reon Rimaldo Romin Romualdo Rondraman
+			Rondravio Rondrigo Salarino Salquirio_Sal Sarastro Selinan Stordian Sumudan Sulvodan Talor Tanglan Tassilo Terdin
+			Thalion Thisdan Thuan Timor Tolman Torvon Ugo Umbario Urras Usim Vascal Vermis Vicino Vitale Yarum Yerno Zadalon Zandor Zordan
+		}
+	
+		female_names = {
+			Adaque_Ada Adamante Aifingla Aldare Alda Alessandra Alrike Alvenc Amaziclla Amene Ardare Arissa
+			Arvedua Asmodena Aurelia Avessandra Belcna Bellarahja Bellarita Bellatrix Bonaventa Cavarya_Caya Celissa Cirina Clarizia
+			Coruna Dalida Daria_Dara Desaya Dragontina Dulcinea Duridanya Efferdia Elanor_Ela Elissa Elvene Erlgard Eronia
+			Feodora Fiaga_Fiagarete  Fiammetta Findualia Gerone Gorrada Gylduria_Gylda Gylvana Haldana Haricia Harika Hesine Hesindiaga
+			Hesindiane Hesindora Horanthe Horasianne lmperia Ingrimmanda Irionya Isida Jatane Kusmara Lamea Larona Lelia
+			Leomara Logistilla Lorietta Lovisa Lutisana Lyssandra Lucietta Madalea Maline Marbis Melisande Modesta Morena Mythraela
+			Nanda Nandine Nandora Nevinia Niam Niothia Nita Odina Oleana_Ola Oloranthe Pamina Perainella Phedre Phelicitas
+			Phrosina Polissena Praiadne Premodia Prishya Rahjalina Rahjamande Rahjane Rahjanès Remira Rinaya Rondravia Rondriga
+			Sabetta Salkya Savinya Silvana Simiona Svelinya Sylvette Synella Thalionmel Thespia Tilliane Travietta Tsabella Tsaida Udora
+			Usvina Vanossa Viviona Xaviera Yalma Yasinthe Yesaria Yolande Zarya Zerline Zyrasia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "ya "
+        
+   		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	aurelat = {
+		graphical_culture = southerngfx 
+		color = { 119 136 153 }
+	
+		male_names = {
+			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
+			Arrn Ascanio Aurentian Avessandro Baqed Basilius Bembo Ben Benuto Beppo Boldrino Bonnaro Borso Bosper Burian Cadron
+			Caldor Cangrande Carolan Chiranor_Ciro Cordovan Cornaro Croenar Curon Curthan Cusimo Damion Darian Delgado Dettmar
+			Dorgando Draco Drugon Edorian_Edo Efferdo_Ferdo Eolan Erlan Ezzelino Faldor Fardenin Festo Folnor Gabrino
+			Gardelan Gareno Geron Gilmon Gismondo Grifone Hakaan Haldan Haldur Hesindiego Hesindio Horasio Horathio Irian
+			Irion Jaltek Kalman Kedor Khadan Landor Leomar Leonello Lessandero Lorion Luciano Ludolfo Lysander Malvolio Marbio
+			Masaniello Midor Mondino Muracio Nepolemo Nitor Orsino Ostilio Pandolfo Pasquino Perainio Phederino Phedro Pirtho
+			Polinaro Praias Pulpio Quendan Ralhion Rahjacomo Ralman Rassuan Refardeon Reo_Reon Rimaldo Romin Romualdo Rondraman
+			Rondravio Rondrigo Salarino Salquirio_Sal Sarastro Selinan Stordian Sumudan Sulvodan Talor Tanglan Tassilo Terdin
+			Thalion Thisdan Thuan Timor Tolman Torvon Ugo Umbario Urras Usim Vascal Vermis Vicino Vitale Yarum Yerno Zadalon Zandor Zordan
+		}
+	
+		female_names = {
+			Adaque_Ada Adamante Aifingla Aldare Alda Alessandra Alrike Alvenc Amaziclla Amene Ardare Arissa
+			Arvedua Asmodena Aurelia Avessandra Belcna Bellarahja Bellarita Bellatrix Bonaventa Cavarya_Caya Celissa Cirina Clarizia
+			Coruna Dalida Daria_Dara Desaya Dragontina Dulcinea Duridanya Efferdia Elanor_Ela Elissa Elvene Erlgard Eronia
+			Feodora Fiaga_Fiagarete  Fiammetta Findualia Gerone Gorrada Gylduria_Gylda Gylvana Haldana Haricia Harika Hesine Hesindiaga
+			Hesindiane Hesindora Horanthe Horasianne lmperia Ingrimmanda Irionya Isida Jatane Kusmara Lamea Larona Lelia
+			Leomara Logistilla Lorietta Lovisa Lutisana Lyssandra Lucietta Madalea Maline Marbis Melisande Modesta Morena Mythraela
+			Nanda Nandine Nandora Nevinia Niam Niothia Nita Odina Oleana_Ola Oloranthe Pamina Perainella Phedre Phelicitas
+			Phrosina Polissena Praiadne Premodia Prishya Rahjalina Rahjamande Rahjane Rahjanès Remira Rinaya Rondravia Rondriga
+			Sabetta Salkya Savinya Silvana Simiona Svelinya Sylvette Synella Thalionmel Thespia Tilliane Travietta Tsabella Tsaida Udora
+			Usvina Vanossa Viviona Xaviera Yalma Yasinthe Yesaria Yolande Zarya Zerline Zyrasia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "ya "
+        
+   		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	coverna = {
+		graphical_culture = southerngfx 
+		color = { 169 169 169 }
+	
+		male_names = {
+			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
+			Arrn Ascanio Aurentian Avessandro Baqed Basilius Bembo Ben Benuto Beppo Boldrino Bonnaro Borso Bosper Burian Cadron
+			Caldor Cangrande Carolan Chiranor_Ciro Cordovan Cornaro Croenar Curon Curthan Cusimo Damion Darian Delgado Dettmar
+			Dorgando Draco Drugon Edorian_Edo Efferdo_Ferdo Eolan Erlan Ezzelino Faldor Fardenin Festo Folnor Gabrino
+			Gardelan Gareno Geron Gilmon Gismondo Grifone Hakaan Haldan Haldur Hesindiego Hesindio Horasio Horathio Irian
+			Irion Jaltek Kalman Kedor Khadan Landor Leomar Leonello Lessandero Lorion Luciano Ludolfo Lysander Malvolio Marbio
+			Masaniello Midor Mondino Muracio Nepolemo Nitor Orsino Ostilio Pandolfo Pasquino Perainio Phederino Phedro Pirtho
+			Polinaro Praias Pulpio Quendan Ralhion Rahjacomo Ralman Rassuan Refardeon Reo_Reon Rimaldo Romin Romualdo Rondraman
+			Rondravio Rondrigo Salarino Salquirio_Sal Sarastro Selinan Stordian Sumudan Sulvodan Talor Tanglan Tassilo Terdin
+			Thalion Thisdan Thuan Timor Tolman Torvon Ugo Umbario Urras Usim Vascal Vermis Vicino Vitale Yarum Yerno Zadalon Zandor Zordan
+		}
+	
+		female_names = {
+			Adaque_Ada Adamante Aifingla Aldare Alda Alessandra Alrike Alvenc Amaziclla Amene Ardare Arissa
+			Arvedua Asmodena Aurelia Avessandra Belcna Bellarahja Bellarita Bellatrix Bonaventa Cavarya_Caya Celissa Cirina Clarizia
+			Coruna Dalida Daria_Dara Desaya Dragontina Dulcinea Duridanya Efferdia Elanor_Ela Elissa Elvene Erlgard Eronia
+			Feodora Fiaga_Fiagarete  Fiammetta Findualia Gerone Gorrada Gylduria_Gylda Gylvana Haldana Haricia Harika Hesine Hesindiaga
+			Hesindiane Hesindora Horanthe Horasianne lmperia Ingrimmanda Irionya Isida Jatane Kusmara Lamea Larona Lelia
+			Leomara Logistilla Lorietta Lovisa Lutisana Lyssandra Lucietta Madalea Maline Marbis Melisande Modesta Morena Mythraela
+			Nanda Nandine Nandora Nevinia Niam Niothia Nita Odina Oleana_Ola Oloranthe Pamina Perainella Phedre Phelicitas
+			Phrosina Polissena Praiadne Premodia Prishya Rahjalina Rahjamande Rahjane Rahjanès Remira Rinaya Rondravia Rondriga
+			Sabetta Salkya Savinya Silvana Simiona Svelinya Sylvette Synella Thalionmel Thespia Tilliane Travietta Tsabella Tsaida Udora
+			Usvina Vanossa Viviona Xaviera Yalma Yasinthe Yesaria Yolande Zarya Zerline Zyrasia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "ya "
+        
+   		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+}
+
+cyclops = {
+	graphical_culture = easterngfx
+	
+	cyclops_islands = {
+		graphical_culture = byzantinegfx
+		color = { 160 82 45 }
+	
+		male_names = {
+			Aisyphan Alrikos Amenelaos Avasios Belemanias Dariÿon Dirimethos Efferdaïos Horakles Ingerydos Kalchas Madaïon Meneander Mermydion Mironos Okeandros
+			Peleiston Pelmides Peraistos Praïokles Rahjenysios Rahjoros Seneb Stoëllios Thalanios Tykates Tyndareos Xeledonios Yidaÿion Zesrad
+		}
+	
+		female_names = {
+			Aglaya Aldara Alrike Apogea Aurike Avesinna Belenike Boronike Efferdiana Garafania  Harika Ingerydike Insina  Iokaste Korina  Kyklania Lanike  Leonore Liaiëlla
+			Menkirdes Mira Myrtale Nemekathe Nermaka Nautika Odenia Peraina Phylinna Phyllis Praïaste Rahjamandra Rondrike Sapeïdra Telemache Thalassandra Tsaëdra Xelena Yppodamea
+			Zo'ïra Zyraste
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "dyll "
+        
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+   		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+}	
+	
+aranians = {
+	graphical_culture = muslimgfx
+	
+	aranian = {
+		color = { 199 21 133 }
+	
+		male_names = {
+			Abubrecht Abdulon Amirwolf Beyhelm Djafardeon Dscheridan Farukol Hamarbald Harunian Jikhbald Marwamir Melekhelm Mukarribald
+			Narebold Omjaralf Retoban Rohaldor Selimwar Shabobert Shafifiro	Sultanor Tullefried Yussufried
+		}
+	
+		female_names = {
+			Aischanka Aylalind Ayshulianne Azizelis Dunjanild Emerbeth Fayrieke Gazalinde Halimyanis Hildebeth Ishannah Jushiberta Lailalinde
+			Nedimsira Neraidane Perainibith Rashpatane Rhayadaque Shilaldara Shulamunde Shulinai Sulajmaid
+			Sybia Yullabethild Zulhaminai
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    	male_patronym = "ibn "
+    	female_patronym = "suni "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 5
+    	mat_grf_name_chance = 50
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 0
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 10
+
+    	modifier = default_culture_modifier
+	}
+}	
+	
+tulamids = {
+	graphical_culture = muslimgfx
+	
+	mhanadistani = {
+		graphical_culture = andalusiangfx
+		color = { 255 0 0 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey Chadim Charef Cherek Dajin Deniz Dilhaban Djuned Dschadir Dscherid Dunchaban
+			Erkhaban Eslam Faizal Faramud Farid_Farsid Faruk Feruzef Feyhach Ftaihif Gaftar Gulshev Habled Hadjiin Hahmud Haimamud Hairan Hamar Hamed Hamil Haschnabah Harabal_Hasrabal Hilal
+			Ismeth Jachman Jalif Jassafer Jedrech Jikhaban Jikhbar Kalkarib Karmal Kasim Kashban Kazan Khabla Khajid_Khalid Khorim Khusrau
+			Maharbal_Mharbal Mahmud Marwan Mawud Melekh Mezzek Mhadul Mhanach Mhukkadin Mordai Muammar Mustafa Nadrash Najara Nareb Nasreddin Nazir Nebahath Neriman Nezahet
+			Omar Omjaid Pakhizal Perhiman Rafid Rashid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rhukeyef Rohal Ruban Ruchan
+			Sahil Said Saiman Sanshied Sedef Selim Selo Seyshaban Shabob Shafir Shahîn Shanatir Shejk Sheranbil Sulman Surkan Tulachim Tulef Tuleyman Ukhraban Umran
+			Yadail Yakuban Yali Yelmiz Yerdawan Yussuf Zachaban Zachan Zahir Zelhiman Zuhal Zulhamid
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Arika Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Byalabeth Chalibah Chanya
+			Dassareth Delilah Demeya Dilhabeth Dimiona Djamilla Dunja Emira_Emiramis Erzibeth Eshila Esmalda Fadime Fahimja Fayrishe Ferushan
+			Halima Harani Hennah Heyeshan Hidaybeth Isha Izmaban Jamilha Josmabith Jushibi Karhima Kemillja Kerime Laila Manjula Meriban Milhibeth Mirhiban Mirshan Moqtah
+			Nahema Nassiban Nazmeya Nedime Neraida Nesliha Niobara Nurhan Onchabeth Oyan Oymira Palmeya Peribeth Perishan Perizel Ranchel Renahban Reshemin Riftah
+			Sajida Sarjaban Sefira Selime Semirhija Shabra Shahane Shanhazadra Shanja Sharisad Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth
+			Tulameth Tulmyrja Yamira Yashima Yasine Yeshinna Yezemin Yilbalis Yosmabith Yullabeth Zahrabeth Zechiban Zulhamin
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	gorian = {
+		graphical_culture = andalusiangfx
+		color = { 178 34 34 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey Chadim Charef Cherek
+			Dajin Deniz Dilhaban Djuned Dschadir Dscherid Dunchaban Erkhaban Eslam Faizal Faramud Farid_Farsid Faruk Feruzef Feyhach Ftaihif Gaftar Gulshev
+			Habled Hadjiin Hahmud Haimamud Hairan Hamar Hamed Hamil Haschnabah Harabal_Hasrabal Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhaban Jikhbar
+			Kalkarib Karmal Kasim Kashban Kazan Khabla Khajid_Khalid Khorim Khusrau Maharbal_Mharbal Mahmud Marwan Mawud Melekh Mezzek Mhadul Mhanach Mhukkadin Mordai Muammar Mustafa
+			Nadrash Najara Nareb Nasreddin Nazir Nebahath Neriman Nezahet Omar Omjaid Pakhizal Perhiman Rafid Rashid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rhukeyef Rohal Ruban Ruchan
+			Sahil Said Saiman Sanshied Sedef Selim Selo Seyshaban Shabob Shafir Shahîn Shanatir Shejk Sheranbil Sulman Surkan Tulachim Tulef Tuleyman Ukhraban Umran
+			Yadail Yakuban Yali Yelmiz Yerdawan Yussuf Zachaban Zachan Zahir Zelhiman Zuhal Zulhamid
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Arika Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Byalabeth Chalibah Chanya
+			Dassareth Delilah Demeya Dilhabeth Dimiona Djamilla Dunja Emira_Emiramis Erzibeth Eshila Esmalda Fadime Fahimja Fayrishe Ferushan
+			Halima Harani Hennah Heyeshan Hidaybeth Isha Izmaban Jamilha Josmabith Jushibi Karhima Kemillja Kerime Laila Manjula Meriban Milhibeth Mirhiban Mirshan Moqtah
+			Nahema Nassiban Nazmeya Nedime Neraida Nesliha Niobara Nurhan Onchabeth Oyan Oymira Palmeya Peribeth Perishan Perizel Ranchel Renahban Reshemin Riftah
+			Sajida Sarjaban Sefira Selime Semirhija Shabra Shahane Shanhazadra Shanja Sharisad Shenny Sherizeth Sheydan Shila Shuhelja 
+			Shulam Sulibeth Tulameth Tulmyrja Yamira Yashima Yasine Yeshinna Yezemin Yilbalis Yosmabith Yullabeth Zahrabeth Zechiban Zulhamin
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	selem = {
+		graphical_culture = turkishgfx
+		color = { 205 92 92 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey Chadim Charef Cherek Dajin Deniz Dilhaban Djuned Dschadir Dscherid Dunchaban
+			Erkhaban Eslam Faizal Faramud Farid_Farsid Faruk Feruzef Feyhach Ftaihif Gaftar Gulshev Habled Hadjiin Hahmud Haimamud Hairan Hamar Hamed Hamil Haschnabah Harabal_Hasrabal Hilal
+			Ismeth Jachman Jalif Jassafer Jedrech Jikhaban Jikhbar Kalkarib Karmal Kasim Kashban Kazan Khabla Khajid_Khalid Khorim Khusrau
+			Maharbal_Mharbal Mahmud Marwan Mawud Melekh Mezzek Mhadul Mhanach Mhukkadin Mordai Muammar Mustafa Nadrash Najara Nareb Nasreddin Nazir Nebahath Neriman Nezahet
+			Omar Omjaid Pakhizal Perhiman Rafid Rashid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rhukeyef Rohal Ruban Ruchan
+			Sahil Said Saiman Sanshied Sedef Selim Selo Seyshaban Shabob Shafir Shahîn Shanatir Shejk Sheranbil Sulman Surkan Tulachim Tulef Tuleyman Ukhraban Umran
+			Yadail	Yakuban Yali Yelmiz Yerdawan Yussuf Zachaban Zachan Zahir Zelhiman Zuhal Zulhamid
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Arika Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Byalabeth Chalibah Chanya
+			Dassareth Delilah Demeya Dilhabeth Dimiona Djamilla Dunja Emira_Emiramis Erzibeth Eshila Esmalda Fadime Fahimja Fayrishe Ferushan
+			Halima Harani Hennah Heyeshan Hidaybeth Isha Izmaban Jamilha Josmabith Jushibi Karhima Kemillja Kerime Laila Manjula Meriban Milhibeth Mirhiban Mirshan Moqtah
+			Nahema Nassiban Nazmeya Nedime Neraida Nesliha Niobara Nurhan Onchabeth Oyan Oymira Palmeya Peribeth Perishan Perizel
+			Ranchel Renahban Reshemin Riftah Sajida Sarjaban Sefira Selime Semirhija Shabra Shahane Shanhazadra Shanja Sharisad Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth
+			Tulameth Tulmyrja Yamira Yashima Yasine Yeshinna Yezemin Yilbalis Yosmabith Yullabeth Zahrabeth Zechiban Zulhamin}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+}
+
+	thalusian = {
+		graphical_culture = persiangfx
+		color = { 220 20 60 }
+	
+		male_names = {
+			Ahjanankhra Ankhra Bahram_Bharma Dolguruq Duowk Erkhaban Kasan Khunsha Harak Haschabna Hashin Kalkarib Mhapasha Mustafa Mozaffa_Muzaffer Muyanpasha Najara Perhiman
+			Rashaman_Rashamana Rhayad Rifat Shantir Sulman Surkan Tamir Waddif Yadda Yadail Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey
+			Chadim Charef Cherek Dajin Deniz Dilhaban Djuned Dschadir Dscherid Dunchaban Eslam Faizal Faramud Farid_Farsid Faruk Feruzef Feyhach Ftaihif Gaftar Gulshev
+			Habled Hadjiin Hahmud Haimamud Hairan Hamar Hamed Hamil Haschnabah Harabal_Hasrabal Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhaban Jikhbar
+			Karmal Kasim Kashban Kazan Khabla Khajid_Khalid Khorim Khusrau Maharbal_Mharbal Mahmud Marwan Mawud Melekh Mezzek Mhadul Mhanach Mhukkadin Mordai Muammar
+			Nadrash Nareb Nasreddin Nazir Nebahath Neriman Nezahet Omar Omjaid Pakhizal Rafid Rashid Rashim Rashman Rastafan Rechan Rezzan Rhukeyef Rohal Ruban Ruchan
+			Sahil Said Saiman Sanshied Sedef Selim Selo Seyshaban Shabob Shafir Shahîn Shanatir Shejk Sheranbil Tulachim Tulef Tuleyman Ukhraban Umran 
+			Yakuban Yali Yelmiz Yerdawan Yussuf Zachaban Zachan Zahir Zelhiman Zuhal Zulhamid
+		}
+	
+		female_names = {
+			Abrizah Azalee Azilabati Azizel Bastrabeth_Bastrabati Bitharam Buhrami Dalilah Elmandasi Halifa Jushibi Lailatum Manyola Mechallabith_Mellabati Meribani Peri_Peribeth Sabaram
+			Sabatum Sharisad Shenny Shukurani Suryabeth_Suriyabati Yazamin Zahrasadja Aischa Aishulibeth Alhina Arika Ashaybith Ayla Ayrina Ayshal Azina
+			Belima Belizeth Beychaliban Birshen Byalabeth Chalibah Chanya Dassareth Delilah Demeya Dilhabeth Dimiona Djamilla Dunja Emira_Emiramis Erzibeth	Eshila Esmalda
+			Fadime Fahimja Fayrishe Ferushan Halima Harani Hennah Heyeshan Hidaybeth Isha Izmaban Jamilha Josmabith Karhima Kemillja Kerime Laila
+			Manjula Meriban Milhibeth Mirhiban Mirshan Moqtah Nahema Nassiban Nazmeya Nedime Neraida Nesliha Niobara Nurhan Onchabeth Oyan Oymira
+			Palmeya Peribeth Perishan Perizel Ranchel Renahban Reshemin Riftah Sajida Sarjaban Sefira Selime Semirhija Shabra Shahane Shanhazadra Shanja Sherizeth Sheydan Shila Shuhelja 
+			Shulam Sulibeth Tulameth Tulmyrja Yamira Yashima Yasine Yeshinna Yezemin Yilbalis Yosmabith Yullabeth Zahrabeth Zechiban Zulhamin
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	ferkina = {
+		graphical_culture = persiangfx
+		color = { 240 128 128 }
+	
+		male_names = {
+			Abtuul Ardavan Ardesh Azad Bashur Burshuk Chosraw Devlekh Djershar Dschafur Dschalf Durjin Faruch Farzand Feridun Fervez Gulbad
+			Hafiz Hamar Haydar Kaszan Kazh Kazûm Khordad Jikhab Madawan Mharbal Mirlam Muyanshîr Nashrath
+			Rachwan Rashni Rustam Sharkhan Tsharik Tugril Tulsani Uchrab Umar Waqran Yabman Yistarrech Zakhaban Zhandur
+		}
+	
+		female_names = {
+			Ashu Azrubat Begum Chanum Chanun Chizuran Chorjan Chorshilan Dscheridocht Duncha Farah Faroshte Farsha Farzandeh Golbanu Golshan
+			Hulya Jeleyin Khalila Khullat Laal Lahileh Massûdeh Mehrshan Nadam Nazrin Nuraya Nurjahan Peribanu Rashadocht Rôhila Rushan
+			Shiringol Shmahba Sulefin Tamra Tarshahet Tebay Tulamin Zarbanu Zuleycha_Zuleha
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	
+	}
+}	
+
+khom = {
+	graphical_culture = muslimgfx
+
+	beni_novad = {
+		graphical_culture = arabicgfx
+		color = { 154 205 50 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
+			Faizal Faramud Feruzef Feyhach Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
+			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid
+			Pakhizal Perhiman Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo	Seyshaban Shabob Shafir Sulman Surkan
+			Tulachim Tulef Tuleyman Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir
+			Gulsev Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet
+			Omjad Qushrah Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
+			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija Laila
+			Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel Ranchel Renahban Riftah
+			Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja Yashima	Yasine Yezemin Zechiban Zulhamin
+			Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah 
+			Kemillja Leyla Merhiban Neslihan Perisha Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	beni_shadif = {
+		graphical_culture = arabicgfx
+		color = { 50 205 50 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
+			Faizal Faramud Feruzef Feyhach Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
+			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid
+			Pakhizal Perhiman Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo	Seyshaban Shabob Shafir Sulman Surkan
+			Tulachim Tulef Tuleyman Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir
+			Gulsev Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet
+			Omjad Qushrah Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
+			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija Laila
+			Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel Ranchel Renahban Riftah
+			Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja Yashima	Yasine Yezemin Zechiban Zulhamin
+			Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah 
+			Kemillja Leyla Merhiban Neslihan Perisha Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	beni_kasim = {
+		graphical_culture = arabicgfx
+		color = { 124 252 0 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
+			Faizal Faramud Feruzef Feyhach Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
+			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid
+			Pakhizal Perhiman Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo	Seyshaban Shabob Shafir Sulman Surkan
+			Tulachim Tulef Tuleyman Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir
+			Gulsev Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet
+			Omjad Qushrah Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
+			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija Laila
+			Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel Ranchel Renahban Riftah
+			Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja Yashima	Yasine Yezemin Zechiban Zulhamin
+			Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah 
+			Kemillja Leyla Merhiban Neslihan Perisha Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	beni_erkin = {
+		graphical_culture = arabicgfx
+		color = { 127 255 0 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
+			Faizal Faramud Feruzef Feyhach Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
+			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid
+			Pakhizal Perhiman Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo	Seyshaban Shabob Shafir Sulman Surkan
+			Tulachim Tulef Tuleyman Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir
+			Gulsev Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet
+			Omjad Qushrah Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
+			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija Laila
+			Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel Ranchel Renahban Riftah
+			Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja Yashima	Yasine Yezemin Zechiban Zulhamin
+			Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah 
+			Kemillja Leyla Merhiban Neslihan Perisha Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	beni_shebt	= {
+		graphical_culture = arabicgfx
+		color = { 0 255 127 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
+			Faizal Faramud Feruzef Feyhach Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
+			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid
+			Pakhizal Perhiman Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo	Seyshaban Shabob Shafir Sulman Surkan
+			Tulachim Tulef Tuleyman Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir
+			Gulsev Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet
+			Omjad Qushrah Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
+			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija Laila
+			Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel Ranchel Renahban Riftah
+			Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja Yashima	Yasine Yezemin Zechiban Zulhamin
+			Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah 
+			Kemillja Leyla Merhiban Neslihan Perisha Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+}
+
+maraskan = {
+	graphical_culture = indiangfx #new gfx needed?
+
+	maraskani = {
+		graphical_culture = indiangfx
+		color = { 107 142 35 }
+	
+		male_names = {
+			Aldifriedijian Alrech Brindijian Darjin_Dajin Denderan Djurmold Dschindziber Elgoran Endijian Fruziber_Feruziber Frumold Garalor Gerbaldijian Hadijian Marajian
+			Maurech Mujiajian Mulziber Perjin Rurech Scheïderan Vegsziber Xanderan Zendijin Alrijin Azulziber Brindimold Brinziber Chakijan Chizuranziber Daziber Derfromold Djurdjin Dschender
+			Dschijndar Endiziber Erolan Ferudan Ferujian Firold Frumojian Galderan Garamold Isdimold Kasimold Keïderan Larijan Lerderan Marbold Marech
+			Marmold Maziber Mujiabor Muldijian Mylendijian Otajin Permold Reojin Rurijian Scheïjian Sindijian Vegziber Yisturjin Yohaijian Zendaijian Zendold  }
+	
+		female_names = {
+			Alryscha Denderajida Idrajid Jamilhajida Madahajida Milhibethjida Xanjida Yasindajida Alfriedijida Anarjid Ayji Bekasabu Cassimasab
+			Dajida_Darjida Debrajida Debrasab Delilahsab Denderaijida Derfromisab Dimiosab Dschijndasab Dschindajida Duchenijida Erolijida Fathimajida Frumoldisab
+			Garasab Haridijida Hesindasab Idrajida Ishajid Iza Jaimlhajida Karhimasab Leryscha Madahijida Morjineïjia Muzashisabu Mylenjida Nedimajida
+			Rahjajida Ramelusab Rondrasab Ruramid Rurijida Sefirajida Selijida Shinojida Sulabethjida Sumujida Tsaryscha Umradjida Viderajida Wagurasab Xanjid Zulamidjida }
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+}
+
+south_aventuria = {
+	graphical_culture = occitangfx
+
+	meridiana = {
+		graphical_culture = occitangfx
+		color = { 0 0 205 }
+	
+		male_names = {
+			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
+			Boromil Brotos Chavo Coragon Deredan Diago Diamanteo_Diamantes Darion Dorio Dragan Efferdito Egiliano Emano
+			Enrisco Fiorenzo Firunando Flaminio Gaiomo Ghorio Gisco Gordo Hagenyo Hanno Hesindiego Himilco
+			Imaculo Ingerinyo_Ingarin Irschan Jacinto Jesidoro Kamillio Khalid Koloman Kornelio Korrero Lirobal Lucan
+			Mandolo Marboso Marno Micirio Monco Morisys Nemekath Nestario Nostromo Orelio Orfeo Pantscho
+			Panfilo Pedresco Phelix Praiopio Quintilian Ramon Rahjamiro Romero Rondrador Rondrigo Salpicon_Salpico Sandro
+			Simodo Tirato Tirenco Tito Travillo Tuco Ulan Vitario Xenophero_Xenofero Yorge Yuan Zurbaran
+		}
+	
+		female_names = {
+			Adaque Alara Alaria Aurelia Avessandra Balatravis Boronaya Boronliebe Canderelle Carimina Cherimoya
+			Conchita Consuela Desideria_Desiderya Diantha Dolorita Dominga Duridanya Efferaine Efferdette Emerencia
+			Esmeralda Estrelle Etiliana Fiorella Folsine Franya Galindia Haricella Hariqués Heliantha Hevane Imelde
+			Imilke Inarés Iryanya Isaura Ismene Jesabela Karianna Katalinya Korisande Korrassòn Korrinna Korrona
+			Luisina Malane Malinche Marbonia Maryarita Marchesca_Marchesa Mochica Morisca Nicolasina Noiona Orelia
+			Palmonella Phecanja Phelicitas Phelippa Praiociose Querinia Rahjadés_Rayadés Rimiona Rondriadora Rosinia_Risinia
+			Rosita Sangrita Saranya Shantalla Traviata Travinés Tomassina Ugolines Ulembina Ursania Vadoria Valería
+			Velvenya Xantilia Ximena Yppolytés Yvonya Zalinés Zephirina Zeradia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	kemi = {
+		graphical_culture = occitangfx
+		color = { 70 130 180 }
+	
+		male_names = {
+			Kemet'nechet Sekem'kutary Shepses'ká Setepen Hati'hesá Abet-ut'yar Pet'nehem Nebîb Sekem'veser Veser'htep Djer'kem Henem'iwen Ahhotpe Ahmenofus Amhotep Anchefenmut
+			Bor-aha Borotep Cheferrah Dio_Dios Djaper Djet-hor Djetkarah Djihutmose Echenmarb Edfu Eje Enezib Hapuseneb Hesi Hrunufe Kacha Kahersetf
+			Mahnaktuf Marbahmesse Marbonemhu Mentuhotep Merenre	Meru Nebkaure Neferha Neferkare Nemekath Nubcheperreh Ptalrik Rechmire Rensi Sechemreh Senui Shepseskaf Seti
+			Userib Userkaf Uthramun Wennafre Werirenptah Adario Agusto Alondro Alriego Amirato	Boromeo Coragon Diamantes Egiliano Enrisco Imaculo Ingarin Jesidoro
+			Kamillio Mandolo Marboso Nestario Pedresco Praiopio Salpico Trienco Vitario Xenofero
+		}
+	
+		female_names = {
+			Tá'meri Me'wehem Â'meset Quenadya Ankhsa Merut'sát Merit'ká Uneb'nemes Neferi Már'bo-nefer Men'kare Djer'kem Amenofet Anchesenuthar Bishdaris Boronayat Boronut Bunefer
+			Chefret Chnumet Duat-hor Eje Etilyatet Golgareret Heqet Hariket Hatschepkert Herireanknes Hetepet Inhapi Iput Iseri Iynefert Keretre Kije
+			Marbokeret Meresinepu Meritneith Meritrah Miryatamun Mutnefru Nefertari Neferu Nefrut Neithikris Nellifer N'hathorut Nillufahr Noyoneti Pepiankhnes Peri Renenet Rethonnachth Sadjehuti
+			Senet Shebnupet Sitnebsechtu Sit-Uthar Taweret Tawosret Teje Tekhnef Teshat Teti Thothnacht Ti Tjepu Udschebten Visaret
+			Avessandra Balatravis Boronaya Carimina Consuela Desiderya Diantha Galindia Heliantha Imelde Inaré Luisina Maryarita Phelippa Praiociose Querinia Rahjadés_Rayadés Ugolines Ulembina
+			Vadoria Valería Xantilia Ximena Yvonya Zalinés Zephirina Zeradia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	mengbilla = {
+		graphical_culture = occitangfx
+		color = { 100 149 237 }
+	
+		male_names = {
+			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
+			Boromil Brotos Chavo Coragon Deredan Diago Diamanteo_Diamantes Darion Dorio Dragan Efferdito Egiliano Emano
+			Enrisco Fiorenzo Firunando Flaminio Gaiomo Ghorio Gisco Gordo Hagenyo Hanno Hesindiego Himilco
+			Imaculo Ingerinyo_Ingarin Irschan Jacinto Jesidoro Kamillio Khalid Koloman Kornelio Korrero Lirobal Lucan
+			Mandolo Marboso Marno Micirio Monco Morisys Nemekath Nestario Nostromo Orelio Orfeo Pantscho
+			Panfilo Pedresco Phelix Praiopio Quintilian Ramon Rahjamiro Romero Rondrador Rondrigo Salpicon_Salpico Sandro
+			Simodo Tirato Tirenco Tito Travillo Tuco Ulan Vitario Xenophero_Xenofero Yorge Yuan Zurbaran
+		}
+	
+		female_names = {
+			Adaque Alara Alaria Aurelia Avessandra Balatravis Boronaya Boronliebe Canderelle Carimina Cherimoya
+			Conchita Consuela Desideria_Desiderya Diantha Dolorita Dominga Duridanya Efferaine Efferdette Emerencia
+			Esmeralda Estrelle Etiliana Fiorella Folsine Franya Galindia Haricella Hariqués Heliantha Hevane Imelde
+			Imilke Inarés Iryanya Isaura Ismene Jesabela Karianna Katalinya Korisande Korrassòn Korrinna Korrona
+			Luisina Malane Malinche Marbonia Maryarita Marchesca_Marchesa Mochica Morisca Nicolasina Noiona Orelia
+			Palmonella Phecanja Phelicitas Phelippa Praiociose Querinia Rahjadés_Rayadés Rimiona Rondriadora Rosinia_Risinia
+			Rosita Sangrita Saranya Shantalla Traviata Travinés Tomassina Ugolines Ulembina Ursania Vadoria Valería
+			Velvenya Xantilia Ximena Yppolytés Yvonya Zalinés Zephirina Zeradia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	drol = {
+		graphical_culture = occitangfx
+		color = {  30 144 255 }
+	
+		male_names = {
+			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
+			Boromil Brotos Chavo Coragon Deredan Diago Diamanteo_Diamantes Darion Dorio Dragan Efferdito Egiliano Emano
+			Enrisco Fiorenzo Firunando Flaminio Gaiomo Ghorio Gisco Gordo Hagenyo Hanno Hesindiego Himilco
+			Imaculo Ingerinyo_Ingarin Irschan Jacinto Jesidoro Kamillio Khalid Koloman Kornelio Korrero Lirobal Lucan
+			Mandolo Marboso Marno Micirio Monco Morisys Nemekath Nestario Nostromo Orelio Orfeo Pantscho
+			Panfilo Pedresco Phelix Praiopio Quintilian Ramon Rahjamiro Romero Rondrador Rondrigo Salpicon_Salpico Sandro
+			Simodo Tirato Tirenco Tito Travillo Tuco Ulan Vitario Xenophero_Xenofero Yorge Yuan Zurbaran
+		}
+	
+		female_names = {
+			Adaque Alara Alaria Aurelia Avessandra Balatravis Boronaya Boronliebe Canderelle Carimina Cherimoya
+			Conchita Consuela Desideria_Desiderya Diantha Dolorita Dominga Duridanya Efferaine Efferdette Emerencia
+			Esmeralda Estrelle Etiliana Fiorella Folsine Franya Galindia Haricella Hariqués Heliantha Hevane Imelde
+			Imilke Inarés Iryanya Isaura Ismene Jesabela Karianna Katalinya Korisande Korrassòn Korrinna Korrona
+			Luisina Malane Malinche Marbonia Maryarita Marchesca_Marchesa Mochica Morisca Nicolasina Noiona Orelia
+			Palmonella Phecanja Phelicitas Phelippa Praiociose Querinia Rahjadés_Rayadés Rimiona Rondriadora Rosinia_Risinia
+			Rosita Sangrita Saranya Shantalla Traviata Travinés Tomassina Ugolines Ulembina Ursania Vadoria Valería
+			Velvenya Xantilia Ximena Yppolytés Yvonya Zalinés Zephirina Zeradia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	charypso = {
+		graphical_culture = occitangfx
+		color = { 0 191 255 }
+	
+		male_names = {
+			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
+			Boromil Brotos Chavo Coragon Deredan Diago Diamanteo_Diamantes Darion Dorio Dragan Efferdito Egiliano Emano
+			Enrisco Fiorenzo Firunando Flaminio Gaiomo Ghorio Gisco Gordo Hagenyo Hanno Hesindiego Himilco
+			Imaculo Ingerinyo_Ingarin Irschan Jacinto Jesidoro Kamillio Khalid Koloman Kornelio Korrero Lirobal Lucan
+			Mandolo Marboso Marno Micirio Monco Morisys Nemekath Nestario Nostromo Orelio Orfeo Pantscho
+			Panfilo Pedresco Phelix Praiopio Quintilian Ramon Rahjamiro Romero Rondrador Rondrigo Salpicon_Salpico Sandro
+			Simodo Tirato Tirenco Tito Travillo Tuco Ulan Vitario Xenophero_Xenofero Yorge Yuan Zurbaran
+		}
+	
+		female_names = {
+			Adaque Alara Alaria Aurelia Avessandra Balatravis Boronaya Boronliebe Canderelle Carimina Cherimoya
+			Conchita Consuela Desideria_Desiderya Diantha Dolorita Dominga Duridanya Efferaine Efferdette Emerencia
+			Esmeralda Estrelle Etiliana Fiorella Folsine Franya Galindia Haricella Hariqués Heliantha Hevane Imelde
+			Imilke Inarés Iryanya Isaura Ismene Jesabela Karianna Katalinya Korisande Korrassòn Korrinna Korrona
+			Luisina Malane Malinche Marbonia Maryarita Marchesca_Marchesa Mochica Morisca Nicolasina Noiona Orelia
+			Palmonella Phecanja Phelicitas Phelippa Praiociose Querinia Rahjadés_Rayadés Rimiona Rondriadora Rosinia_Risinia
+			Rosita Sangrita Saranya Shantalla Traviata Travinés Tomassina Ugolines Ulembina Ursania Vadoria Valería
+			Velvenya Xantilia Ximena Yppolytés Yvonya Zalinés Zephirina Zeradia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	alanfa = {
+		graphical_culture = occitangfx
+		color = { 25 25 112 }
+	
+		male_names = {
+			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
+			Boromil Brotos Chavo Coragon Deredan Diago Diamanteo_Diamantes Darion Dorio Dragan Efferdito Egiliano Emano
+			Enrisco Fiorenzo Firunando Flaminio Gaiomo Ghorio Gisco Gordo Hagenyo Hanno Hesindiego Himilco
+			Imaculo Ingerinyo_Ingarin Irschan Jacinto Jesidoro Kamillio Khalid Koloman Kornelio Korrero Lirobal Lucan
+			Mandolo Marboso Marno Micirio Monco Morisys Nemekath Nestario Nostromo Orelio Orfeo Pantscho
+			Panfilo Pedresco Phelix Praiopio Quintilian Ramon Rahjamiro Romero Rondrador Rondrigo Salpicon_Salpico Sandro
+			Simodo Tirato Tirenco Tito Travillo Tuco Ulan Vitario Xenophero_Xenofero Yorge Yuan Zurbaran
+		}
+	
+		female_names = {
+			Adaque Alara Alaria Aurelia Avessandra Balatravis Boronaya Boronliebe Canderelle Carimina Cherimoya
+			Conchita Consuela Desideria_Desiderya Diantha Dolorita Dominga Duridanya Efferaine Efferdette Emerencia
+			Esmeralda Estrelle Etiliana Fiorella Folsine Franya Galindia Haricella Hariqués Heliantha Hevane Imelde
+			Imilke Inarés Iryanya Isaura Ismene Jesabela Karianna Katalinya Korisande Korrassòn Korrinna Korrona
+			Luisina Malane Malinche Marbonia Maryarita Marchesca_Marchesa Mochica Morisca Nicolasina Noiona Orelia
+			Palmonella Phecanja Phelicitas Phelippa Praiociose Querinia Rahjadés_Rayadés Rimiona Rondriadora Rosinia_Risinia
+			Rosita Sangrita Saranya Shantalla Traviata Travinés Tomassina Ugolines Ulembina Ursania Vadoria Valería
+			Velvenya Xantilia Ximena Yppolytés Yvonya Zalinés Zephirina Zeradia
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	beni_arrat = {
+		graphical_culture = arabicgfx
+		color = { 176 224 230 }
+	
+		male_names = {
+			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam Faizal Faramud Feruzef Feyhach
+			Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
+			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid Pakhizal Perhiman
+			Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo Seyshaban Shabob Shafir Sulman Surkan Tulachim Tulef Tuleyman
+			Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir Gulsev
+			Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet Omjad Qushrah
+			Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
+		}
+	
+		female_names = {
+			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
+			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija
+			Laila Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel
+			Ranchel Renahban Riftah Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja
+			Yashima	Yasine Yezemin Zechiban Zulhamin Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila
+			Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah Kemillja Leyla Merhiban Neslihan Perisha 
+			Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "al "
+    	male_patronym = "ibn "
+    	female_patronym = "saba "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+
+}
+	
+forest_men = {
+	graphical_culture = indiangfx #need own gfx
+	
+	moha = {
+		graphical_culture = indiangfx
+		color = { 255 228 225 }
+	
+		male_names = {
+			Ake-Iya Anhe Anpahah Arapa-Ima Auyan Cankuna Cante-Tinza Catka Capibara Cassawe Caui-Tsche Cekpa Cenote Chayote Chicha Chichirá Coyo-Te Eyapa-Tisa
+			Haha-Rika Hahatonwan Han-Hepi Hahnutah Hapu-Schah Hayatepe He-Sche Hey-Moca Hiye-Haya Ho-Iaya-Yo Huka Huka-Hey Isna-Inti Istima-Tapo Istima-Tonko Kehala Krupuk Kukenam
+			Miniwatu Moriki Pahaha Pancake Panhahe Paranoh Po-Tah-Toh Ruhruni Sica Tapam-Wah Tapa-Hudpo Tapo Taya-Ko Taya-Zo Tepui Tinamu Tokahe Tonku Tonkowan Tupa-Ya
+			Uakari Uike Uitoto Wapiya Yako Yate
+		}
+	
+		female_names = {
+			Ake-Iya Anhe Anpahah Arapa-Ima Auyan Cankuna Cante-Tinza Catka Capibara Cassawe Caui-Tsche Cekpa Cenote Chayote Chicha Chichirá Coyo-Te Eyapa-Tisa
+			Haha-Rika Hahatonwan Han-Hepi Hahnutah Hapu-Schah Hayatepe He-Sche Hey-Moca Hiye-Haya Ho-Iaya-Yo Huka Huka-Hey Isna-Inti Istima-Tapo Istima-Tonko Kehala Krupuk Kukenam
+			Miniwatu Moriki Pahaha Pancake Panhahe Paranoh Po-Tah-Toh Ruhruni Sica Tapam-Wah Tapa-Hudpo Tapo Taya-Ko Taya-Zo Tepui Tinamu Tokahe Tonku Tonkowan Tupa-Ya
+			Uakari Uike Uitoto Wapiya Yako Yate
+		}
+		
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+	miniwatu = {
+		graphical_culture = indiangfx
+		color = { 250 235 215 }
+	
+		male_names = {
+			Aioukea Akivi Alriki Anakena Aotearoa Ariki Ariki-Mao Ariki-Paka Ataranga Attaroa Cawa Gunung-Kawi Hanga-Roa Haoa Haumoana Henua Hinaioio Hitirenga Hoianau Hotu-Matua
+			Kilauea Kiri Kohau-Tahu Kroepoek Kumara Kupe Kuuhama Kea Make Makita Manavai Manutara Matatoa Matua-Tane Maunga-Pui Miru Motu-Iti Motu-Nui Noro
+			Orongo Palau Paoa Poike Pooakai Ramana Rangatiri Rangi_Rangi-Roa Rano Raiatea Raivavae Raraku Ratan Reri Riro Roraima Rotang Ruapehu Ruhite-Paku Sateh
+			Tahai Tahuata Tangate Tare Taro Teaue Te-Hao-O-Tawera Temura_Temuera Tetiaroa Totora
+		}
+	
+		female_names = {
+			Aioukea Akivi Alriki Anakena Aotearoa Ariki Ariki-Mao Ariki-Paka Ataranga Attaroa Cawa Gunung-Kawi Hanga-Roa Haoa Haumoana Henua Hinaioio Hitirenga Hoianau Hotu-Matua
+			Kilauea Kiri Kohau-Tahu Kroepoek Kumara Kupe Kuuhama Kea Make Makita Manavai Manutara Matatoa Matua-Tane Maunga-Pui Miru Motu-Iti Motu-Nui Noro
+			Orongo Palau Paoa Poike Pooakai Ramana Rangatiri Rangi_Rangi-Roa Rano Raiatea Raivavae Raraku Ratan Reri Riro Roraima Rotang Ruapehu Ruhite-Paku Sateh
+			Tahai Tahuata Tangate Tare Taro Teaue Te-Hao-O-Tawera Temura_Temuera Tetiaroa Totora
+		}
+	
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+		from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+}
+
+utulus = {
+	graphical_culture = africangfx
+	
+	utulu = {
+		graphical_culture = africangfx
+		color = { 218 165 32 }
+	
+		male_names = {
+			Ahosi Aru Bamu Bandikut Baoba Baramundi Bemu Billabong Biltong Binturong Bolotongo Buru Cazembe Chaka Chukwalla
+			Dossuye Gimmile Gudilang Imaro Jambo Kalalu Kalimba Kalunde Kapok Kasua	Kingombo Kukaburra Kusu Kweli Labiwasene Luangwa
+			Makalele Mangabe Marwe Menuji Mojo Monebu Mongongo Mopane Mpemba Mtoto Mufete Mulga Mwombaji Mwongozi Mwuzaji Ndiyo Ojoba Ovambo
+			Pombe Rumari Saumu Sawasawa Shimenege Shasiwatu Shimli Taboto Takate Tangawizi Taro Tau Tenkile Tjukurpa
+			Ubangi Udongo Ulundi Uluru Usambara Usuthu Uzuri Wallabi Womba Wommai Yotu-Yindi
+		}
+	
+		female_names = {
+			Ahosi Aru Bamu Bandikut Baoba Baramundi Bemu Billabong Biltong Binturong Bolotongo Buru Cazembe Chaka Chukwalla
+			Dossuye Gimmile Gudilang Imaro Jambo Kalalu Kalimba Kalunde Kapok Kasua	Kingombo Kukaburra Kusu Kweli Labiwasene Luangwa
+			Makalele Mangabe Marwe Menuji Mojo Monebu Mongongo Mopane Mpemba Mtoto Mufete Mulga Mwombaji Mwongozi Mwuzaji Ndiyo Ojoba Ovambo
+			Pombe Rumari Saumu Sawasawa Shimenege Shasiwatu Shimli Taboto Takate Tangawizi Taro Tau Tenkile Tjukurpa
+			Ubangi Udongo Ulundi Uluru Usambara Usuthu Uzuri Wallabi Womba Wommai Yotu-Yindi
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+		from_dynasty_prefix = "of "
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 50
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 10
+    	mat_grm_name_chance = 50
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
+	
+}
+	
