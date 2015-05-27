@@ -17,10 +17,10 @@ zwölfe = {
 		color = { 0.8 0.8 0.6 }
 		
 		crusade_name = CRUSADE
-		scripture_name = KOSMOGONIKA #or Annalen des Götteralters
+		scripture_name = SILEM-HORAS-EDIKT #or Annalen des Götteralters or Kosmogonika
 		priest_title = PRIEST
 		
-		high_god_name = GOD_LOS #or PRA depending on if tag is used for prayers and such
+		high_god_name = GOD_PRAIOS #check what used for, could be Los 
 		
 		god_names = {
 			GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_BORON GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM
@@ -36,19 +36,127 @@ zwölfe = {
 		can_grant_divorce = no #few exceptions to this like demon worshipping etc.
 		can_grant_claim = yes
 		can_call_crusade = yes #circumvent crusades on Khom by only giving e.g. Schwarztobrien crusade target weight?
-		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		priests_can_marry = yes
 		feminist = yes
 		can_retire_to_monastery = yes
 		female_temple_holders  = yes
-		max_consorts = 1 
-		
-		#
+		max_consorts = 1
+		intermarry = rastullah
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 		
+	}
+	
+	alanfaner_ritus = {
+		graphical_culture = westerngfx
+		icon = 2 
+		heresy_icon = 6
+		
+		color = { 0 0 0 } #if not readable use gold 218 165 32
+		
+		crusade_name = CRUSADE
+		scripture_name = CODEX_CORVINUS
+		priest_title = PRIEST
+		
+		high_god_name = GOD_BORON
+		
+		god_names = {
+			GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM
+		}
+		
+		evil_god_names ) {
+			DER_NAMENLOSE BLAKHARAZ BELHALHAR CHARYPTOROTH LOLGRAMOTH THARGUNITOTH AMAZEROTH BELSHIRASH ASFALOTH TASFARELEL BELZHORASH AGRIMOTH BELKELEL
+		}
+		
+		investiture = no
+		can_have_antipopes = yes #only by events?
+		can_excommunicate = yes
+		can_grant_divorce = no
+		can_grant_claim = yes
+		can_call_crusade = yes #be more liberal about target weights here?
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		feminist = yes #only source I found so far was Katalinya Adranez, research religious women
+		can_retire_to_monastery = yes
+		female_temple_holders  = yes
+		max_consorts = 0
+		intermarry = rastullah
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	angrosch = {
+		graphical_culture = westerngfx #maybe muslim for geometrical look?
+		icon = 3
+		heresy_icon = 6
+		
+		crusade_name = CRUSADE
+		scripture_name = BAROBARABBA
+		priest_title = PRIEST
+		
+		high_god_name = GOD_ANGROSCH
+		
+		god_names = {
+			GOD_ANGROSCH GOD_FEKOL GOD_RONDRA GOD_SIMIA
+		}
+		
+		evil_god_names = {
+			PRDRAX DER_DRACHE
+		}
+		
+		investiture = no
+		can_have_antipopes = yes #only by events?
+		can_excommunicate = yes
+		can_grant_divorce = no
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		feminist = yes
+		can_retire_to_monastery = yes
+		female_temple_holders  = yes
+		max_consorts = 1
+		intermarry = rastullah
+		short_reign_opinion_year_mult = 3
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	swafnir = {
+		graphical_culture = norsegfx
+		icon = 4
+		heresy_icon = 6
+	
+		crusade_name = CRUSADE
+		scripture_name = OFFENBARUNG_JURGAS
+		priest_title = PRIEST
+		
+		high_god_name = GOD_SWAFNIR
+		
+		god_names = {
+			GOD_IFIRN GOD_SWAFNIR GOD_TRAVIA
+		}
+		
+		investiture = no
+		can_have_antipopes = yes #only by events?
+		can_excommunicate = yes
+		can_grant_divorce = no
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		feminist = yes
+		can_retire_to_monastery = yes
+		female_temple_holders  = yes
+		max_consorts = 1 #limited due to strong TRA belief
+		intermarry = rastullah
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
 	}
 }
 
