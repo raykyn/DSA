@@ -1,0 +1,18 @@
+# c_zagbar
+
+# County Title
+title = c_zagbar
+
+# Settlements
+max_settlements = 4
+
+b_zagbar = castle
+#b_zagbar_2 = city
+#b_zagbar_3 = temple
+#b_zagbar_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

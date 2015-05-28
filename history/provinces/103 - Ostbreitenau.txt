@@ -1,0 +1,18 @@
+# c_ostbreitenau
+
+# County Title
+title = c_ostbreitenau
+
+# Settlements
+max_settlements = 4
+
+b_ostbreitenau = castle
+#b_ostbreitenau_2 = city
+#b_ostbreitenau_3 = temple
+#b_ostbreitenau_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

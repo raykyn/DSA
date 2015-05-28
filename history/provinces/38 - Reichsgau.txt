@@ -1,0 +1,18 @@
+# c_reichsgau
+
+# County Title
+title = c_reichsgau
+
+# Settlements
+max_settlements = 4
+
+b_reichsgau = castle
+#b_reichsgau_2 = city
+#b_reichsgau_3 = temple
+#b_reichsgau_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

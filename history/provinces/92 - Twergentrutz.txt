@@ -1,0 +1,18 @@
+# c_twergentrutz
+
+# County Title
+title = c_twergentrutz
+
+# Settlements
+max_settlements = 4
+
+b_twergentrutz = castle
+#b_twergentrutz_2 = city
+#b_twergentrutz_3 = temple
+#b_twergentrutz_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

@@ -1,0 +1,18 @@
+# c_halhof
+
+# County Title
+title = c_halhof
+
+# Settlements
+max_settlements = 4
+
+b_halhof = castle
+#b_halhof_2 = city
+#b_halhof_3 = temple
+#b_halhof_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

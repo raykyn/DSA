@@ -1,0 +1,18 @@
+# c_arvepass
+
+# County Title
+title = c_arvepass
+
+# Settlements
+max_settlements = 4
+
+b_arvepass = castle
+#b_arvepass_2 = city
+#b_arvepass_3 = temple
+#b_arvepass_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

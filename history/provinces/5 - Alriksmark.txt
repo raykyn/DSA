@@ -1,0 +1,18 @@
+# c_alriksmark
+
+# County Title
+title = c_alriksmark
+
+# Settlements
+max_settlements = 4
+
+b_alriksmark = castle
+#b_alriksmark_2 = city
+#b_alriksmark_3 = temple
+#b_alriksmark_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

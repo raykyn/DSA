@@ -1,0 +1,18 @@
+# c_gallstein
+
+# County Title
+title = c_gallstein
+
+# Settlements
+max_settlements = 4
+
+b_gallstein = castle
+#b_gallstein_2 = city
+#b_gallstein_3 = temple
+#b_gallstein_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

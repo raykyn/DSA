@@ -1,0 +1,18 @@
+# c_hirschfurten
+
+# County Title
+title = c_hirschfurten
+
+# Settlements
+max_settlements = 4
+
+b_hirschfurten = castle
+#b_hirschfurten_2 = city
+#b_hirschfurten_3 = temple
+#b_hirschfurten_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = forest
+#History

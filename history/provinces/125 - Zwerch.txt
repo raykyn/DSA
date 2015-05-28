@@ -1,0 +1,18 @@
+# c_zwerch
+
+# County Title
+title = c_zwerch
+
+# Settlements
+max_settlements = 4
+
+b_zwerch = castle
+#b_zwerch_2 = city
+#b_zwerch_3 = temple
+#b_zwerch_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

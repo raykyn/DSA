@@ -1,0 +1,18 @@
+# c_retogau
+
+# County Title
+title = c_retogau
+
+# Settlements
+max_settlements = 4
+
+b_retogau = castle
+#b_retogau_2 = city
+#b_retogau_3 = temple
+#b_retogau_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

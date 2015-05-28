@@ -1,0 +1,18 @@
+# c_schwarztannen
+
+# County Title
+title = c_schwarztannen
+
+# Settlements
+max_settlements = 4
+
+b_schwarztannen = castle
+#b_schwarztannen_2 = city
+#b_schwarztannen_3 = temple
+#b_schwarztannen_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = forest
+#History

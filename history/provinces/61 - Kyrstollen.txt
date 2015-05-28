@@ -1,0 +1,18 @@
+# c_kyrstollen
+
+# County Title
+title = c_kyrstollen
+
+# Settlements
+max_settlements = 4
+
+b_kyrstollen = castle
+#b_kyrstollen_2 = city
+#b_kyrstollen_3 = temple
+#b_kyrstollen_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

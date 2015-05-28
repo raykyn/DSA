@@ -1,0 +1,18 @@
+# c_gerbaldsmark
+
+# County Title
+title = c_gerbaldsmark
+
+# Settlements
+max_settlements = 4
+
+b_gerbaldsmark = castle
+#b_gerbaldsmark_2 = city
+#b_gerbaldsmark_3 = temple
+#b_gerbaldsmark_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

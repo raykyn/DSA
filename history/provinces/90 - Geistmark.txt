@@ -1,0 +1,18 @@
+# c_geistmark
+
+# County Title
+title = c_geistmark
+
+# Settlements
+max_settlements = 4
+
+b_geistmark = castle
+#b_geistmark_2 = city
+#b_geistmark_3 = temple
+#b_geistmark_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

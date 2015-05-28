@@ -1,0 +1,18 @@
+# c_hoellenwall
+
+# County Title
+title = c_hoellenwall
+
+# Settlements
+max_settlements = 4
+
+b_hoellenwall = castle
+#b_hoellenwall_2 = city
+#b_hoellenwall_3 = temple
+#b_hoellenwall_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

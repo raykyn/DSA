@@ -1,0 +1,18 @@
+# c_kornhammer
+
+# County Title
+title = c_kornhammer
+
+# Settlements
+max_settlements = 4
+
+b_kornhammer = castle
+#b_kornhammer_2 = city
+#b_kornhammer_3 = temple
+#b_kornhammer_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

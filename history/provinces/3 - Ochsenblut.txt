@@ -1,0 +1,18 @@
+# c_ochsenblut
+
+# County Title
+title = c_ochsenblut
+
+# Settlements
+max_settlements = 4
+
+b_ochsenblut = castle
+#b_ochsenblut_2 = city
+#b_ochsenblut_3 = temple
+#b_ochsenblut_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

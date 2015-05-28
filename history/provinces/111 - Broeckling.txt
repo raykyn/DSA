@@ -1,0 +1,18 @@
+# c_broeckling
+
+# County Title
+title = c_broeckling
+
+# Settlements
+max_settlements = 4
+
+b_broeckling = castle
+#b_broeckling_2 = city
+#b_broeckling_3 = temple
+#b_broeckling_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

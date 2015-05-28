@@ -1,0 +1,18 @@
+# c_artesa
+
+# County Title
+title = c_artesa
+
+# Settlements
+max_settlements = 4
+
+b_artesa = castle
+#b_artesa_2 = city
+#b_artesa_3 = temple
+#b_artesa_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

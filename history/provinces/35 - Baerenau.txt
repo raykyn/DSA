@@ -1,0 +1,18 @@
+# c_baerenau
+
+# County Title
+title = c_baerenau
+
+# Settlements
+max_settlements = 4
+
+b_baerenau = castle
+#b_baerenau_2 = city
+#b_baerenau_3 = temple
+#b_baerenau_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

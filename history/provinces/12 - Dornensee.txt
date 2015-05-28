@@ -1,0 +1,18 @@
+# c_dornensee
+
+# County Title
+title = c_dornensee
+
+# Settlements
+max_settlements = 4
+
+b_dornensee = castle
+#b_dornensee_2 = city
+#b_dornensee_3 = temple
+#b_dornensee_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

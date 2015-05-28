@@ -1,0 +1,18 @@
+# c_jannbach
+
+# County Title
+title = c_jannbach
+
+# Settlements
+max_settlements = 4
+
+b_jannbach = castle
+#b_jannbach_2 = city
+#b_jannbach_3 = temple
+#b_jannbach_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

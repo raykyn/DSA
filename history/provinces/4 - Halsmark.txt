@@ -1,0 +1,18 @@
+# c_halsmark
+
+# County Title
+title = c_halsmark
+
+# Settlements
+max_settlements = 4
+
+b_halsmark = castle
+#b_halsmark_2 = city
+#b_halsmark_3 = temple
+#b_halsmark_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

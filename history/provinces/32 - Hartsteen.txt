@@ -1,0 +1,18 @@
+# c_hartsteen
+
+# County Title
+title = c_hartsteen
+
+# Settlements
+max_settlements = 4
+
+b_hartsteen = castle
+#b_hartsteen_2 = city
+#b_hartsteen_3 = temple
+#b_hartsteen_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

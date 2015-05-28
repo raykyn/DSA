@@ -1,0 +1,18 @@
+# c_silz
+
+# County Title
+title = c_silz
+
+# Settlements
+max_settlements = 4
+
+b_silz = castle
+#b_silz_2 = city
+#b_silz_3 = temple
+#b_silz_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

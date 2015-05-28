@@ -1,0 +1,18 @@
+# c_sertis
+
+# County Title
+title = c_sertis
+
+# Settlements
+max_settlements = 4
+
+b_sertis = castle
+#b_sertis_2 = city
+#b_sertis_3 = temple
+#b_sertis_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

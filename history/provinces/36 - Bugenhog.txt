@@ -1,0 +1,18 @@
+# c_bugenhog
+
+# County Title
+title = c_bugenhog
+
+# Settlements
+max_settlements = 4
+
+b_bugenhog = castle
+#b_bugenhog_2 = city
+#b_bugenhog_3 = temple
+#b_bugenhog_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

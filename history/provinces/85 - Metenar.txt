@@ -1,0 +1,18 @@
+# c_metenar
+
+# County Title
+title = c_metenar
+
+# Settlements
+max_settlements = 4
+
+b_metenar = castle
+#b_metenar_2 = city
+#b_metenar_3 = temple
+#b_metenar_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

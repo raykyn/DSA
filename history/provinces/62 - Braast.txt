@@ -1,0 +1,18 @@
+# c_braast
+
+# County Title
+title = c_braast
+
+# Settlements
+max_settlements = 4
+
+b_braast = castle
+#b_braast_2 = city
+#b_braast_3 = temple
+#b_braast_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

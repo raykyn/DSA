@@ -1,0 +1,18 @@
+# c_greifenfurt
+
+# County Title
+title = c_greifenfurt
+
+# Settlements
+max_settlements = 4
+
+b_greifenfurt = castle
+#b_greifenfurt_2 = city
+#b_greifenfurt_3 = temple
+#b_greifenfurt_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

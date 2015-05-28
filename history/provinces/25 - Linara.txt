@@ -1,0 +1,18 @@
+# c_linara
+
+# County Title
+title = c_linara
+
+# Settlements
+max_settlements = 4
+
+b_linara = castle
+#b_linara_2 = city
+#b_linara_3 = temple
+#b_linara_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

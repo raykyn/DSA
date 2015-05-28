@@ -1,0 +1,18 @@
+# c_neerbusch
+
+# County Title
+title = c_neerbusch
+
+# Settlements
+max_settlements = 4
+
+b_neerbusch = castle
+#b_neerbusch_2 = city
+#b_neerbusch_3 = temple
+#b_neerbusch_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

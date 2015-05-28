@@ -1,0 +1,18 @@
+# c_mardershoeh
+
+# County Title
+title = c_mardershoeh
+
+# Settlements
+max_settlements = 4
+
+b_mardershoeh = castle
+#b_mardershoeh_2 = city
+#b_mardershoeh_3 = temple
+#b_mardershoeh_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

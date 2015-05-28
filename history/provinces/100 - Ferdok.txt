@@ -1,0 +1,18 @@
+# c_ferdok
+
+# County Title
+title = c_ferdok
+
+# Settlements
+max_settlements = 4
+
+b_ferdok = castle
+#b_ferdok_2 = city
+#b_ferdok_3 = temple
+#b_ferdok_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

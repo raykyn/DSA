@@ -1,0 +1,18 @@
+# c_natzungen
+
+# County Title
+title = c_natzungen
+
+# Settlements
+max_settlements = 4
+
+b_natzungen = castle
+#b_natzungen_2 = city
+#b_natzungen_3 = temple
+#b_natzungen_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_taladur
+
+# County Title
+title = c_taladur
+
+# Settlements
+max_settlements = 4
+
+b_taladur = castle
+#b_taladur_2 = city
+#b_taladur_3 = temple
+#b_taladur_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

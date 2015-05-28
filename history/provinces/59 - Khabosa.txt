@@ -1,0 +1,18 @@
+# c_khabosa
+
+# County Title
+title = c_khabosa
+
+# Settlements
+max_settlements = 4
+
+b_khabosa = castle
+#b_khabosa_2 = city
+#b_khabosa_3 = temple
+#b_khabosa_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

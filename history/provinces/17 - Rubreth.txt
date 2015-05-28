@@ -1,0 +1,18 @@
+# c_rubreth
+
+# County Title
+title = c_rubreth
+
+# Settlements
+max_settlements = 4
+
+b_rubreth = castle
+#b_rubreth_2 = city
+#b_rubreth_3 = temple
+#b_rubreth_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = forest
+#History

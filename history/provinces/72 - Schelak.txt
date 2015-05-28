@@ -1,0 +1,18 @@
+# c_schelak
+
+# County Title
+title = c_schelak
+
+# Settlements
+max_settlements = 4
+
+b_schelak = castle
+#b_schelak_2 = city
+#b_schelak_3 = temple
+#b_schelak_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

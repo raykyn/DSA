@@ -1,0 +1,18 @@
+# c_trollnase
+
+# County Title
+title = c_trollnase
+
+# Settlements
+max_settlements = 4
+
+b_trollnase = castle
+#b_trollnase_2 = city
+#b_trollnase_3 = temple
+#b_trollnase_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

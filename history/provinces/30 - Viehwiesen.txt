@@ -1,0 +1,18 @@
+# c_viehwiesen
+
+# County Title
+title = c_viehwiesen
+
+# Settlements
+max_settlements = 4
+
+b_viehwiesen = castle
+#b_viehwiesen_2 = city
+#b_viehwiesen_3 = temple
+#b_viehwiesen_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

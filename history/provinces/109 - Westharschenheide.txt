@@ -1,0 +1,18 @@
+# c_westharschenheide
+
+# County Title
+title = c_westharschenheide
+
+# Settlements
+max_settlements = 4
+
+b_westharschenheide = castle
+#b_westharschenheide_2 = city
+#b_westharschenheide_3 = temple
+#b_westharschenheide_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

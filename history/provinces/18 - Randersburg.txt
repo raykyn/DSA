@@ -1,0 +1,18 @@
+# c_randersburg
+
+# County Title
+title = c_randersburg
+
+# Settlements
+max_settlements = 4
+
+b_randersburg = castle
+#b_randersburg_2 = city
+#b_randersburg_3 = temple
+#b_randersburg_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = forest
+#History

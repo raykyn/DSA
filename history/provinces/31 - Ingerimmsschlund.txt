@@ -1,0 +1,18 @@
+# c_ingerimmsschlund
+
+# County Title
+title = c_ingerimmsschlund
+
+# Settlements
+max_settlements = 4
+
+b_ingerimmsschlund = castle
+#b_ingerimmsschlund_2 = city
+#b_ingerimmsschlund_3 = temple
+#b_ingerimmsschlund_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

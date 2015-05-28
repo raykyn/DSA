@@ -1,0 +1,18 @@
+# c_lichthag
+
+# County Title
+title = c_lichthag
+
+# Settlements
+max_settlements = 4
+
+b_lichthag = castle
+#b_lichthag_2 = city
+#b_lichthag_3 = temple
+#b_lichthag_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

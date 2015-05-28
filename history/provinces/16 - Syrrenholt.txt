@@ -1,0 +1,18 @@
+# c_syrrenholt
+
+# County Title
+title = c_syrrenholt
+
+# Settlements
+max_settlements = 4
+
+b_syrrenholt = castle
+#b_syrrenholt_2 = city
+#b_syrrenholt_3 = temple
+#b_syrrenholt_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = forest
+#History

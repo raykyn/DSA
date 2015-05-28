@@ -1,0 +1,18 @@
+# c_dubios
+
+# County Title
+title = c_dubios
+
+# Settlements
+max_settlements = 4
+
+b_dubios = castle
+#b_dubios_2 = city
+#b_dubios_3 = temple
+#b_dubios_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

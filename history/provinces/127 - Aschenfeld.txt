@@ -1,0 +1,18 @@
+# c_aschenfeld
+
+# County Title
+title = c_aschenfeld
+
+# Settlements
+max_settlements = 4
+
+b_aschenfeld = castle
+#b_aschenfeld_2 = city
+#b_aschenfeld_3 = temple
+#b_aschenfeld_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

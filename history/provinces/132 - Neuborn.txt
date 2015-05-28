@@ -1,0 +1,18 @@
+# c_neuborn
+
+# County Title
+title = c_neuborn
+
+# Settlements
+max_settlements = 4
+
+b_neuborn = castle
+#b_neuborn_2 = city
+#b_neuborn_3 = temple
+#b_neuborn_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

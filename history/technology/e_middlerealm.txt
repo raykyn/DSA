@@ -1,0 +1,16 @@
+#MIDDLEREALM
+technology = {
+	titles = {
+		d_middleduchy
+	}
+	768 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+	}
+	1200 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+	}
+}

@@ -1,0 +1,18 @@
+# c_waldfang
+
+# County Title
+title = c_waldfang
+
+# Settlements
+max_settlements = 4
+
+b_waldfang = castle
+#b_waldfang_2 = city
+#b_waldfang_3 = temple
+#b_waldfang_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = forest
+#History

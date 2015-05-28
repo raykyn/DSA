@@ -1,0 +1,18 @@
+# c_ruchin
+
+# County Title
+title = c_ruchin
+
+# Settlements
+max_settlements = 4
+
+b_ruchin = castle
+#b_ruchin_2 = city
+#b_ruchin_3 = temple
+#b_ruchin_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

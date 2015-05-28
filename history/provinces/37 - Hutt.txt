@@ -1,0 +1,18 @@
+# c_hutt
+
+# County Title
+title = c_hutt
+
+# Settlements
+max_settlements = 4
+
+b_hutt = castle
+#b_hutt_2 = city
+#b_hutt_3 = temple
+#b_hutt_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

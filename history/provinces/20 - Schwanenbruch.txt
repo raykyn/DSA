@@ -1,0 +1,18 @@
+# c_schwanenbruch
+
+# County Title
+title = c_schwanenbruch
+
+# Settlements
+max_settlements = 4
+
+b_schwanenbruch = castle
+#b_schwanenbruch_2 = city
+#b_schwanenbruch_3 = temple
+#b_schwanenbruch_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

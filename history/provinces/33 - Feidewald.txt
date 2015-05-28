@@ -1,0 +1,18 @@
+# c_feidewald
+
+# County Title
+title = c_feidewald
+
+# Settlements
+max_settlements = 4
+
+b_feidewald = castle
+#b_feidewald_2 = city
+#b_feidewald_3 = temple
+#b_feidewald_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

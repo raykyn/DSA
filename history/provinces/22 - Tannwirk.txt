@@ -1,0 +1,18 @@
+# c_tannwirk
+
+# County Title
+title = c_tannwirk
+
+# Settlements
+max_settlements = 4
+
+b_tannwirk = castle
+#b_tannwirk_2 = city
+#b_tannwirk_3 = temple
+#b_tannwirk_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

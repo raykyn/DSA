@@ -1,0 +1,18 @@
+# c_puleth
+
+# County Title
+title = c_puleth
+
+# Settlements
+max_settlements = 4
+
+b_puleth = castle
+#b_puleth_2 = city
+#b_puleth_3 = temple
+#b_puleth_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

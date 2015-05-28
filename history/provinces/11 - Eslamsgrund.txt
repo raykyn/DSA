@@ -1,0 +1,18 @@
+# c_eslamsgrund
+
+# County Title
+title = c_eslamsgrund
+
+# Settlements
+max_settlements = 4
+
+b_eslamsgrund = castle
+#b_eslamsgrund_2 = city
+#b_eslamsgrund_3 = temple
+#b_eslamsgrund_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

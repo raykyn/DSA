@@ -1,0 +1,18 @@
+# c_serrinmoor
+
+# County Title
+title = c_serrinmoor
+
+# Settlements
+max_settlements = 4
+
+b_serrinmoor = castle
+#b_serrinmoor_2 = city
+#b_serrinmoor_3 = temple
+#b_serrinmoor_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

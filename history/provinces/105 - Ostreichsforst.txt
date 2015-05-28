@@ -1,0 +1,18 @@
+# c_ostreichsforst
+
+# County Title
+title = c_ostreichsforst
+
+# Settlements
+max_settlements = 4
+
+b_ostreichsforst = castle
+#b_ostreichsforst_2 = city
+#b_ostreichsforst_3 = temple
+#b_ostreichsforst_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

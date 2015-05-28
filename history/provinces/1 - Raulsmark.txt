@@ -1,0 +1,21 @@
+# c_raulsmark
+
+# County Title
+title = c_raulsmark
+
+# Settlements
+max_settlements = 7
+
+b_gareth = castle
+#b_raulsmark = city
+#b_raulsmark_2 = temple
+#b_raulsmark_3 = castle
+#b_raulsmark_4 = city
+#b_raulsmark_5 = temple
+#b_raulsmark_6 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

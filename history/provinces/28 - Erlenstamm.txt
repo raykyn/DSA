@@ -1,0 +1,18 @@
+# c_erlenstamm
+
+# County Title
+title = c_erlenstamm
+
+# Settlements
+max_settlements = 4
+
+b_erlenstamm = castle
+#b_erlenstamm_2 = city
+#b_erlenstamm_3 = temple
+#b_erlenstamm_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

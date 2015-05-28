@@ -1,0 +1,18 @@
+# c_jurios
+
+# County Title
+title = c_jurios
+
+# Settlements
+max_settlements = 4
+
+b_jurios = castle
+#b_jurios_2 = city
+#b_jurios_3 = temple
+#b_jurios_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

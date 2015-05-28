@@ -1,0 +1,18 @@
+# c_haffith
+
+# County Title
+title = c_haffith
+
+# Settlements
+max_settlements = 4
+
+b_haffith = castle
+#b_haffith_2 = city
+#b_haffith_3 = temple
+#b_haffith_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

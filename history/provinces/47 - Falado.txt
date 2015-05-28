@@ -1,0 +1,18 @@
+# c_falado
+
+# County Title
+title = c_falado
+
+# Settlements
+max_settlements = 4
+
+b_falado = castle
+#b_falado_2 = city
+#b_falado_3 = temple
+#b_falado_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

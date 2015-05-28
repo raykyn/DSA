@@ -1,0 +1,18 @@
+# c_ostharschenheide
+
+# County Title
+title = c_ostharschenheide
+
+# Settlements
+max_settlements = 4
+
+b_ostharschenheide = castle
+#b_ostharschenheide_2 = city
+#b_ostharschenheide_3 = temple
+#b_ostharschenheide_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_westerklotz
+
+# County Title
+title = c_westerklotz
+
+# Settlements
+max_settlements = 4
+
+b_westerklotz = castle
+#b_westerklotz_2 = city
+#b_westerklotz_3 = temple
+#b_westerklotz_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

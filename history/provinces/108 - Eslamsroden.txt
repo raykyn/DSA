@@ -1,0 +1,18 @@
+# c_eslamsroden
+
+# County Title
+title = c_eslamsroden
+
+# Settlements
+max_settlements = 4
+
+b_eslamsroden = castle
+#b_eslamsroden_2 = city
+#b_eslamsroden_3 = temple
+#b_eslamsroden_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

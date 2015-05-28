@@ -1,0 +1,18 @@
+# c_schlundgau
+
+# County Title
+title = c_schlundgau
+
+# Settlements
+max_settlements = 4
+
+b_schlundgau = castle
+#b_schlundgau_2 = city
+#b_schlundgau_3 = temple
+#b_schlundgau_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

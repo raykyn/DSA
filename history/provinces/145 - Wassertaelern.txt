@@ -1,0 +1,18 @@
+# c_wassertaelern
+
+# County Title
+title = c_wassertaelern
+
+# Settlements
+max_settlements = 4
+
+b_wassertaelern = castle
+#b_wassertaelern_2 = city
+#b_wassertaelern_3 = temple
+#b_wassertaelern_4 = castle
+
+# Misc
+culture = darpatian
+religion = puniner
+terrain = farmlands
+#History

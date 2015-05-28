@@ -1,0 +1,18 @@
+# c_schrotenstein
+
+# County Title
+title = c_schrotenstein
+
+# Settlements
+max_settlements = 4
+
+b_schrotenstein = castle
+#b_schrotenstein_2 = city
+#b_schrotenstein_3 = temple
+#b_schrotenstein_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History
