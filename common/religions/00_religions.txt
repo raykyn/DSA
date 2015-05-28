@@ -1,4 +1,4 @@
-zwölfe = {
+﻿twelve = {
 	#all icons placeholders
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
@@ -8,7 +8,7 @@ zwölfe = {
 	ai_convert_same_group = 1 #only convert if zeal is high
 	ai_convert_other_group = 2 #always try to convert
 	
-	puniner_ritus = {
+	puniner = {
 		graphical_culture = westerngfx
 		
 		icon = 1 
@@ -49,7 +49,7 @@ zwölfe = {
 		
 	}
 	
-	alanfaner_ritus = {
+	alanfaner = {
 		graphical_culture = westerngfx
 		icon = 2 
 		heresy_icon = 6
