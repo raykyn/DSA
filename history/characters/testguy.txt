@@ -2,7 +2,7 @@
 	name=William
 	dynasty=752
 	
-	religion=catholic
+	religion=puniner
 	culture=garethi
 	
 	1027.01.15 = { birth=yes }

@@ -1,0 +1,22 @@
+#MIDDENREALM
+technology = {
+	titles = {
+		d_gareth
+		d_eslamsgrund
+		d_greifenfurt
+		d_hartsteen
+		d_reichsforst
+		d_schlund
+		d_waldstein
+	}
+	769 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+	}
+	1453 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+	}
+}

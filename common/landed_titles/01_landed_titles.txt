@@ -8,6 +8,7 @@ e_middlerealm = {
 	
 	capital = 1 # c_raulsmark
 	culture = garethi
+	short_name = yes
 	
 	k_gareth = {
 		color={ 134 154 67 }
