@@ -8,7 +8,6 @@ e_middlerealm = {
 	
 	capital = 1 # c_raulsmark
 	culture = garethi
-	short_name = yes
 	
 	k_gareth = {
 		color={ 134 154 67 }
@@ -219,45 +218,84 @@ e_middlerealm = {
 			}
 		}
 		d_greifenfurt = {
-			color={ 193 187 19 }
+			color={ 45 232 218 }
 			color2={ 255 255 255 }
 			
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 101 province_id = 102 province_id = 103 province_id = 104 province_id = 105 province_id = 106 province_id = 107 province_id = 108 province_id = 109 province_id = 110 } }
+					any_demesne_province = { OR = { province_id = 155 province_id = 156 province_id = 157 province_id = 158 province_id = 159 province_id = 160 province_id = 161 province_id = 162 province_id = 163 province_id = 164 province_id = 165 province_id = 166 province_id = 167 province_id = 168 province_id = 169 province_id = 170 province_id = 171 province_id = 172 province_id = 173 } }
 				}
 			}
-			capital = 101 # c_greifenfurt
+			capital = 155 # c_finsterkamm
 			
-			c_greifenfurt = { # 101
-				color={ 203 177 24 }
+			c_finsterkamm = { # 155
+				color={ 55 222 223 }
 				color2={ 255 255 255 }
 				
-				b_greifenfurt = {
+				b_finsterkamm = {
 				}
-				b_greifenfurt_2 = {
+				b_finsterkamm_2 = {
 				}
-				b_greifenfurt_3 = {
+				b_finsterkamm_3 = {
 				}
-				b_greifenfurt_4 = {
+				b_finsterkamm_4 = {
 				}
 			}
-			c_altenau = { # 104
-				color={ 203 59 59 }
+			c_breitenbruck = { # 161
+				color={ 55 235 136 }
 				color2={ 255 255 255 }
 				
-				b_altenau = {
+				b_breitenbruck = {
 				}
-				b_altenau_2 = {
+				b_breitenbruck_2 = {
 				}
-				b_altenau_3 = {
+				b_breitenbruck_3 = {
 				}
-				b_altenau_4 = {
+				b_breitenbruck_4 = {
 				}
 			}
-			c_eslamsroden = { # 108
-				color={ 203 203 197 }
+			c_dergelstein = { # 159
+				color={ 55 136 116 }
+				color2={ 255 255 255 }
+				
+				b_dergelstein = {
+				}
+				b_dergelstein_2 = {
+				}
+				b_dergelstein_3 = {
+				}
+				b_dergelstein_4 = {
+				}
+			}
+			c_donfanger = { # 170
+				color={ 55 132 27 }
+				color2={ 255 255 255 }
+				
+				b_donfanger = {
+				}
+				b_donfanger_2 = {
+				}
+				b_donfanger_3 = {
+				}
+				b_donfanger_4 = {
+				}
+			}
+			c_dunkelsfarn = { # 168
+				color={ 55 239 21 }
+				color2={ 255 255 255 }
+				
+				b_dunkelsfarn = {
+				}
+				b_dunkelsfarn_2 = {
+				}
+				b_dunkelsfarn_3 = {
+				}
+				b_dunkelsfarn_4 = {
+				}
+			}
+			c_eslamsroden = { # 158
+				color={ 55 30 26 }
 				color2={ 255 255 255 }
 				
 				b_eslamsroden = {
@@ -269,95 +307,173 @@ e_middlerealm = {
 				b_eslamsroden_4 = {
 				}
 			}
-			c_lichthag = { # 110
-				color={ 203 227 43 }
+			c_feldharsch = { # 160
+				color={ 55 219 34 }
 				color2={ 255 255 255 }
 				
-				b_lichthag = {
+				b_feldharsch = {
 				}
-				b_lichthag_2 = {
+				b_feldharsch_2 = {
 				}
-				b_lichthag_3 = {
+				b_feldharsch_3 = {
 				}
-				b_lichthag_4 = {
+				b_feldharsch_4 = {
 				}
 			}
-			c_ostbreitenau = { # 103
-				color={ 203 144 203 }
+			c_greifenberg = { # 164
+				color={ 55 39 132 }
 				color2={ 255 255 255 }
 				
-				b_ostbreitenau = {
+				b_greifenberg = {
 				}
-				b_ostbreitenau_2 = {
+				b_greifenberg_2 = {
 				}
-				b_ostbreitenau_3 = {
+				b_greifenberg_3 = {
 				}
-				b_ostbreitenau_4 = {
+				b_greifenberg_4 = {
 				}
 			}
-			c_ostharschenheide = { # 107
-				color={ 203 48 158 }
+			c_greifenfurt = { # 165
+				color={ 55 33 203 }
 				color2={ 255 255 255 }
 				
-				b_ostharschenheide = {
+				b_greifenfurt = {
 				}
-				b_ostharschenheide_2 = {
+				b_greifenfurt_2 = {
 				}
-				b_ostharschenheide_3 = {
+				b_greifenfurt_3 = {
 				}
-				b_ostharschenheide_4 = {
+				b_greifenfurt_4 = {
 				}
 			}
-			c_ostreichsforst = { # 105
-				color={ 203 162 172 }
+			c_greifenhorst = { # 169
+				color={ 55 238 143 }
 				color2={ 255 255 255 }
 				
-				b_ostreichsforst = {
+				b_greifenhorst = {
 				}
-				b_ostreichsforst_2 = {
+				b_greifenhorst_2 = {
 				}
-				b_ostreichsforst_3 = {
+				b_greifenhorst_3 = {
 				}
-				b_ostreichsforst_4 = {
+				b_greifenhorst_4 = {
 				}
 			}
-			c_westbreitenau = { # 102
-				color={ 203 25 73 }
+			c_hasenfeld = { # 167
+				color={ 55 227 227 }
 				color2={ 255 255 255 }
 				
-				b_westbreitenau = {
+				b_hasenfeld = {
 				}
-				b_westbreitenau_2 = {
+				b_hasenfeld_2 = {
 				}
-				b_westbreitenau_3 = {
+				b_hasenfeld_3 = {
 				}
-				b_westbreitenau_4 = {
+				b_hasenfeld_4 = {
 				}
 			}
-			c_westharschenheide = { # 109
-				color={ 203 59 41 }
+			c_helbrache = { # 172
+				color={ 55 40 228 }
 				color2={ 255 255 255 }
 				
-				b_westharschenheide = {
+				b_helbrache = {
 				}
-				b_westharschenheide_2 = {
+				b_helbrache_2 = {
 				}
-				b_westharschenheide_3 = {
+				b_helbrache_3 = {
 				}
-				b_westharschenheide_4 = {
+				b_helbrache_4 = {
 				}
 			}
-			c_westreichsforst = { # 106
-				color={ 203 64 206 }
+			c_hesindelburg = { # 171
+				color={ 55 24 128 }
 				color2={ 255 255 255 }
 				
-				b_westreichsforst = {
+				b_hesindelburg = {
 				}
-				b_westreichsforst_2 = {
+				b_hesindelburg_2 = {
 				}
-				b_westreichsforst_3 = {
+				b_hesindelburg_3 = {
 				}
-				b_westreichsforst_4 = {
+				b_hesindelburg_4 = {
+				}
+			}
+			c_hexenhain = { # 156
+				color={ 55 137 231 }
+				color2={ 255 255 255 }
+				
+				b_hexenhain = {
+				}
+				b_hexenhain_2 = {
+				}
+				b_hexenhain_3 = {
+				}
+				b_hexenhain_4 = {
+				}
+			}
+			c_kressenburg = { # 162
+				color={ 55 71 48 }
+				color2={ 255 255 255 }
+				
+				b_kressenburg = {
+				}
+				b_kressenburg_2 = {
+				}
+				b_kressenburg_3 = {
+				}
+				b_kressenburg_4 = {
+				}
+			}
+			c_nebelstein = { # 173
+				color={ 55 219 23 }
+				color2={ 255 255 255 }
+				
+				b_nebelstein = {
+				}
+				b_nebelstein_2 = {
+				}
+				b_nebelstein_3 = {
+				}
+				b_nebelstein_4 = {
+				}
+			}
+			c_quastenbroich = { # 163
+				color={ 55 89 190 }
+				color2={ 255 255 255 }
+				
+				b_quastenbroich = {
+				}
+				b_quastenbroich_2 = {
+				}
+				b_quastenbroich_3 = {
+				}
+				b_quastenbroich_4 = {
+				}
+			}
+			c_weihenhorst = { # 166
+				color={ 55 216 228 }
+				color2={ 255 255 255 }
+				
+				b_weihenhorst = {
+				}
+				b_weihenhorst_2 = {
+				}
+				b_weihenhorst_3 = {
+				}
+				b_weihenhorst_4 = {
+				}
+			}
+			c_zalgo = { # 157
+				color={ 55 224 107 }
+				color2={ 255 255 255 }
+				
+				b_zalgo = {
+				}
+				b_zalgo_2 = {
+				}
+				b_zalgo_3 = {
+				}
+				b_zalgo_4 = {
 				}
 			}
 		}
