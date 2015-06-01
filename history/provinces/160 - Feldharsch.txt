@@ -1,0 +1,18 @@
+# c_feldharsch
+
+# County Title
+title = c_feldharsch
+
+# Settlements
+max_settlements = 4
+
+b_feldharsch = castle
+#b_feldharsch_2 = city
+#b_feldharsch_3 = temple
+#b_feldharsch_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

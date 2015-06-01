@@ -1,0 +1,18 @@
+# c_finsterkamm
+
+# County Title
+title = c_finsterkamm
+
+# Settlements
+max_settlements = 4
+
+b_finsterkamm = castle
+#b_finsterkamm_2 = city
+#b_finsterkamm_3 = temple
+#b_finsterkamm_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

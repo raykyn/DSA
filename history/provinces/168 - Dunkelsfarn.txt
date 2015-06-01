@@ -1,0 +1,18 @@
+# c_dunkelsfarn
+
+# County Title
+title = c_dunkelsfarn
+
+# Settlements
+max_settlements = 4
+
+b_dunkelsfarn = castle
+#b_dunkelsfarn_2 = city
+#b_dunkelsfarn_3 = temple
+#b_dunkelsfarn_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

@@ -1,15 +1,15 @@
-# c_lichthag
+# c_hexenhain
 
 # County Title
-title = c_lichthag
+title = c_hexenhain
 
 # Settlements
 max_settlements = 4
 
-b_lichthag = castle
-#b_lichthag_2 = city
-#b_lichthag_3 = temple
-#b_lichthag_4 = castle
+b_hexenhain = castle
+#b_hexenhain_2 = city
+#b_hexenhain_3 = temple
+#b_hexenhain_4 = castle
 
 # Misc
 culture = meadows

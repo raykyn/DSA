@@ -1,0 +1,18 @@
+# c_dergelstein
+
+# County Title
+title = c_dergelstein
+
+# Settlements
+max_settlements = 4
+
+b_dergelstein = castle
+#b_dergelstein_2 = city
+#b_dergelstein_3 = temple
+#b_dergelstein_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_weihenhorst
+
+# County Title
+title = c_weihenhorst
+
+# Settlements
+max_settlements = 4
+
+b_weihenhorst = castle
+#b_weihenhorst_2 = city
+#b_weihenhorst_3 = temple
+#b_weihenhorst_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

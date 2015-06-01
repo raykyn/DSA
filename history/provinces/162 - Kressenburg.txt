@@ -1,0 +1,18 @@
+# c_kressenburg
+
+# County Title
+title = c_kressenburg
+
+# Settlements
+max_settlements = 4
+
+b_kressenburg = castle
+#b_kressenburg_2 = city
+#b_kressenburg_3 = temple
+#b_kressenburg_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

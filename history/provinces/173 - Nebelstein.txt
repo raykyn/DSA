@@ -1,0 +1,18 @@
+# c_nebelstein
+
+# County Title
+title = c_nebelstein
+
+# Settlements
+max_settlements = 4
+
+b_nebelstein = castle
+#b_nebelstein_2 = city
+#b_nebelstein_3 = temple
+#b_nebelstein_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

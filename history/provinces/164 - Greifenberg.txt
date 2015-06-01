@@ -1,0 +1,18 @@
+# c_greifenberg
+
+# County Title
+title = c_greifenberg
+
+# Settlements
+max_settlements = 4
+
+b_greifenberg = castle
+#b_greifenberg_2 = city
+#b_greifenberg_3 = temple
+#b_greifenberg_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

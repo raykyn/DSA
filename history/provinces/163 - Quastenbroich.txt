@@ -1,0 +1,18 @@
+# c_quastenbroich
+
+# County Title
+title = c_quastenbroich
+
+# Settlements
+max_settlements = 4
+
+b_quastenbroich = castle
+#b_quastenbroich_2 = city
+#b_quastenbroich_3 = temple
+#b_quastenbroich_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

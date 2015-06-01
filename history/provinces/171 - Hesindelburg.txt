@@ -1,0 +1,18 @@
+# c_hesindelburg
+
+# County Title
+title = c_hesindelburg
+
+# Settlements
+max_settlements = 4
+
+b_hesindelburg = castle
+#b_hesindelburg_2 = city
+#b_hesindelburg_3 = temple
+#b_hesindelburg_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

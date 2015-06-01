@@ -1,0 +1,18 @@
+# c_breitenbruck
+
+# County Title
+title = c_breitenbruck
+
+# Settlements
+max_settlements = 4
+
+b_breitenbruck = castle
+#b_breitenbruck_2 = city
+#b_breitenbruck_3 = temple
+#b_breitenbruck_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History
