@@ -1,0 +1,18 @@
+# c_altentrallop
+
+# County Title
+title = c_altentrallop
+
+# Settlements
+max_settlements = 4
+
+b_altentrallop = castle
+#b_altentrallop_2 = city
+#b_altentrallop_3 = temple
+#b_altentrallop_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

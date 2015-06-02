@@ -1,0 +1,18 @@
+# c_oestlingen
+
+# County Title
+title = c_oestlingen
+
+# Settlements
+max_settlements = 4
+
+b_oestlingen = castle
+#b_oestlingen_2 = city
+#b_oestlingen_3 = temple
+#b_oestlingen_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

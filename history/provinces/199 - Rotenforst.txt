@@ -1,0 +1,18 @@
+# c_rotenforst
+
+# County Title
+title = c_rotenforst
+
+# Settlements
+max_settlements = 4
+
+b_rotenforst = castle
+#b_rotenforst_2 = city
+#b_rotenforst_3 = temple
+#b_rotenforst_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

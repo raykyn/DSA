@@ -1,0 +1,18 @@
+# c_herzogenthal
+
+# County Title
+title = c_herzogenthal
+
+# Settlements
+max_settlements = 4
+
+b_herzogenthal = castle
+#b_herzogenthal_2 = city
+#b_herzogenthal_3 = temple
+#b_herzogenthal_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

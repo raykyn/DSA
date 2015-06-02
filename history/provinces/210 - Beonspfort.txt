@@ -1,0 +1,18 @@
+# c_beonspfort
+
+# County Title
+title = c_beonspfort
+
+# Settlements
+max_settlements = 4
+
+b_beonspfort = castle
+#b_beonspfort_2 = city
+#b_beonspfort_3 = temple
+#b_beonspfort_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

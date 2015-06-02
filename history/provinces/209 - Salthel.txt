@@ -1,15 +1,15 @@
-# c_d
+# c_salthel
 
 # County Title
-title = c_d
+title = c_salthel
 
 # Settlements
 max_settlements = 4
 
-b_d = castle
-#b_d_2 = city
-#b_d_3 = temple
-#b_d_4 = castle
+b_salthel = castle
+#b_salthel_2 = city
+#b_salthel_3 = temple
+#b_salthel_4 = castle
 
 # Misc
 culture = meadows

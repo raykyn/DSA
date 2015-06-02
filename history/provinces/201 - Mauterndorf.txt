@@ -1,0 +1,18 @@
+# c_mauterndorf
+
+# County Title
+title = c_mauterndorf
+
+# Settlements
+max_settlements = 4
+
+b_mauterndorf = castle
+#b_mauterndorf_2 = city
+#b_mauterndorf_3 = temple
+#b_mauterndorf_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History
