@@ -1,0 +1,18 @@
+# c_foehrenhain
+
+# County Title
+title = c_foehrenhain
+
+# Settlements
+max_settlements = 4
+
+b_foehrenhain = castle
+#b_foehrenhain_2 = city
+#b_foehrenhain_3 = temple
+#b_foehrenhain_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

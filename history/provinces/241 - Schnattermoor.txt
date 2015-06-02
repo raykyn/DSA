@@ -1,0 +1,18 @@
+# c_schnattermoor
+
+# County Title
+title = c_schnattermoor
+
+# Settlements
+max_settlements = 4
+
+b_schnattermoor = castle
+#b_schnattermoor_2 = city
+#b_schnattermoor_3 = temple
+#b_schnattermoor_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_tirandur
+
+# County Title
+title = c_tirandur
+
+# Settlements
+max_settlements = 4
+
+b_tirandur = castle
+#b_tirandur_2 = city
+#b_tirandur_3 = temple
+#b_tirandur_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

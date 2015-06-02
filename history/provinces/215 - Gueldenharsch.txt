@@ -1,0 +1,18 @@
+# c_gueldenharsch
+
+# County Title
+title = c_gueldenharsch
+
+# Settlements
+max_settlements = 4
+
+b_gueldenharsch = castle
+#b_gueldenharsch_2 = city
+#b_gueldenharsch_3 = temple
+#b_gueldenharsch_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

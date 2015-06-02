@@ -1,0 +1,18 @@
+# c_ulracht
+
+# County Title
+title = c_ulracht
+
+# Settlements
+max_settlements = 4
+
+b_ulracht = castle
+#b_ulracht_2 = city
+#b_ulracht_3 = temple
+#b_ulracht_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

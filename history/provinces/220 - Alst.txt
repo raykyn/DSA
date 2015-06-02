@@ -1,0 +1,18 @@
+# c_alst
+
+# County Title
+title = c_alst
+
+# Settlements
+max_settlements = 4
+
+b_alst = castle
+#b_alst_2 = city
+#b_alst_3 = temple
+#b_alst_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

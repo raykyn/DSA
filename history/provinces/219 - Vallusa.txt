@@ -1,0 +1,18 @@
+# c_vallusa
+
+# County Title
+title = c_vallusa
+
+# Settlements
+max_settlements = 4
+
+b_vallusa = castle
+#b_vallusa_2 = city
+#b_vallusa_3 = temple
+#b_vallusa_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

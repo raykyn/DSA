@@ -1,0 +1,18 @@
+# c_rumpenfels
+
+# County Title
+title = c_rumpenfels
+
+# Settlements
+max_settlements = 4
+
+b_rumpenfels = castle
+#b_rumpenfels_2 = city
+#b_rumpenfels_3 = temple
+#b_rumpenfels_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

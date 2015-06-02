@@ -1,0 +1,18 @@
+# c_muschelstrand
+
+# County Title
+title = c_muschelstrand
+
+# Settlements
+max_settlements = 4
+
+b_muschelstrand = castle
+#b_muschelstrand_2 = city
+#b_muschelstrand_3 = temple
+#b_muschelstrand_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

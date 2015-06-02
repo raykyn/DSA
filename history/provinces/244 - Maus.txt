@@ -1,0 +1,18 @@
+# c_maus
+
+# County Title
+title = c_maus
+
+# Settlements
+max_settlements = 4
+
+b_maus = castle
+#b_maus_2 = city
+#b_maus_3 = temple
+#b_maus_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_rulat
+
+# County Title
+title = c_rulat
+
+# Settlements
+max_settlements = 4
+
+b_rulat = castle
+#b_rulat_2 = city
+#b_rulat_3 = temple
+#b_rulat_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

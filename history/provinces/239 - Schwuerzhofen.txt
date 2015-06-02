@@ -1,0 +1,18 @@
+# c_schwuerzhofen
+
+# County Title
+title = c_schwuerzhofen
+
+# Settlements
+max_settlements = 4
+
+b_schwuerzhofen = castle
+#b_schwuerzhofen_2 = city
+#b_schwuerzhofen_3 = temple
+#b_schwuerzhofen_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

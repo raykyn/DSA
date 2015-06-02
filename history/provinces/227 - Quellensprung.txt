@@ -1,0 +1,18 @@
+# c_quellensprung
+
+# County Title
+title = c_quellensprung
+
+# Settlements
+max_settlements = 4
+
+b_quellensprung = castle
+#b_quellensprung_2 = city
+#b_quellensprung_3 = temple
+#b_quellensprung_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

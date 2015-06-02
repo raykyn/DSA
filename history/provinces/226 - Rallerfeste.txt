@@ -1,0 +1,18 @@
+# c_rallerfeste
+
+# County Title
+title = c_rallerfeste
+
+# Settlements
+max_settlements = 4
+
+b_rallerfeste = castle
+#b_rallerfeste_2 = city
+#b_rallerfeste_3 = temple
+#b_rallerfeste_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

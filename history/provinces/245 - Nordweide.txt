@@ -1,0 +1,18 @@
+# c_nordweide
+
+# County Title
+title = c_nordweide
+
+# Settlements
+max_settlements = 4
+
+b_nordweide = castle
+#b_nordweide_2 = city
+#b_nordweide_3 = temple
+#b_nordweide_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

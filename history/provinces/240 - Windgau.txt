@@ -1,0 +1,18 @@
+# c_windgau
+
+# County Title
+title = c_windgau
+
+# Settlements
+max_settlements = 4
+
+b_windgau = castle
+#b_windgau_2 = city
+#b_windgau_3 = temple
+#b_windgau_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

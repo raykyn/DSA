@@ -3,6 +3,8 @@ d_baerwalde;Bärwalde;Bärwalde;Bärwalde;;Bärwalde;;;;;;;;;x
 d_baerwalde_adj;Bärwaldean;;bärwalder;;;;;;;;;;;x
 d_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
 d_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
+d_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
+d_drachenstein_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
 d_eslamsgrund;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
 d_eslamsgrund_adj;Eslamsgrundian;;eslamsgrunder;;;;;;;;;;;x
 d_ferdok;Ferdok;Ferdok;Ferdok;;Ferdok;;;;;;;;;x
@@ -17,6 +19,10 @@ d_heldentrutz;Heldentrutz;Heldentrutz;Heldentrutz;;Heldentrutz;;;;;;;;;x
 d_heldentrutz_adj;Heldentrutzian;;heldentrutzer;;;;;;;;;;;x
 d_huegellande;Hügellande;Hügellande;Hügellande;;Hügellande;;;;;;;;;x
 d_huegellande_adj;Hügellandean;;hügellander;;;;;;;;;;;x
+d_mendena;Mendena;Mendena;Mendena;;Mendena;;;;;;;;;x
+d_mendena_adj;Mendenan;;mendener;;;;;;;;;;;x
+d_misamund;Misamund;Misamund;Misamund;;Misamund;;;;;;;;;x
+d_misamund_adj;Misamundian;;misamunder;;;;;;;;;;;x
 d_ochsenwasser;Ochsenwasser;Ochsenwasser;Ochsenwasser;;Ochsenwasser;;;;;;;;;x
 d_ochsenwasser_adj;Ochsenwasserian;;ochsenwasserer;;;;;;;;;;;x
 d_ragath;Ragath;Ragath;Ragath;;Ragath;;;;;;;;;x
@@ -29,6 +35,8 @@ d_sichelwacht;Sichelwacht;Sichelwacht;Sichelwacht;;Sichelwacht;;;;;;;;;x
 d_sichelwacht_adj;Sichelwachtian;;sichelwachter;;;;;;;;;;;x
 d_suedpforte;Südpforte;Südpforte;Südpforte;;Südpforte;;;;;;;;;x
 d_suedpforte_adj;Südpfortean;;südpforter;;;;;;;;;;;x
+d_tobimora;Tobimora;Tobimora;Tobimora;;Tobimora;;;;;;;;;x
+d_tobimora_adj;Tobimoran;;tobimorer;;;;;;;;;;;x
 d_trollzacken;Trollzacken;Trollzacken;Trollzacken;;Trollzacken;;;;;;;;;x
 d_trollzacken_adj;Trollzackenian;;trollzackener;;;;;;;;;;;x
 d_waldstein;Waldstein;Waldstein;Waldstein;;Waldstein;;;;;;;;;x

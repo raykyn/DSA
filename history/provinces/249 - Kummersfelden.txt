@@ -1,0 +1,18 @@
+# c_kummersfelden
+
+# County Title
+title = c_kummersfelden
+
+# Settlements
+max_settlements = 4
+
+b_kummersfelden = castle
+#b_kummersfelden_2 = city
+#b_kummersfelden_3 = temple
+#b_kummersfelden_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History
