@@ -4,7 +4,7 @@
 middenrealmian = {
     graphical_culture = westerngfx
     
-	garethi = {
+	proxy = { ##This is only needed to prevent a bug
 		graphical_culture = germangfx
 		color = { 1 0.85 0 }
 	
@@ -69,6 +69,72 @@ middenrealmian = {
 	  
 		modifier = default_culture_modifier 
     } 
+	
+	garethi = {
+		graphical_culture = germangfx
+		color = { 1 0.85 0 }
+	
+		male_names = {
+			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
+			Bernhelm Bodar Bogumil Boromil Boronian Bosper Brin Burgol Burian Cassim Colga Colgan 
+			Connar Cordovan 
+			Curthan Cyberian Dabbert Darian Debrek Delo Eberhelm Eboreus Edorian Edo Efferdan 
+			Elbrecht Elgor Emmeran Ernbrecht Erlan Erlwin Erzian Eslam Ettel Falk Felian Fingorn Firunian 
+			Firu Firitin 
+			Folmian Fredo Frumold Geppert Gerbal Gerding Gernot Gero Geron Gerrik Gerion Gilborn 
+			Gishelm Glombo_Globo Gorm Goswin Götterfried Groben Gumblad Gurvan Hagen Hal Haldan 
+			Halrik Hakon Halman 
+			Hane Harad Helmar Helme Helmbrecht Hesindian Hesindion Hilgert Hluthar Iber Igan Immo 
+			Ingal Ingrimon Irion Jast Jergan Jobdan Jost Kalman Karon Kedio Korobar Kulman Kvalor Lares 
+			Lechdan Leomar 
+			Leuendan Linnert Losan Parinor Peradan Perainepreis Perainhilf Perainian Perainor Perval 
+			Phelix Phexje Pisidian Plauter Polter Praiodan Praioslob Praiotin Quanion Quendan Quin Radul 
+			Rahjadan 
+			Refardeon Reo Reto Rigbald Rhys Robak Roban Rondred Rondrian Rukus Rumpo Sal Salix 
+			Savertin Sighelm Sigman Sindar Stipen Stordian Storko Sumudan Tabbert Tanglan Thallian 
+			Terbun Thimorn Thisdan 
+			Timshal Tjolme Tolak Torben Torm Trautmann Travin Travidan Tsafried Tsajan Tsathalan 
+			Tydor Ucuriel Udildor Ugdalf Ugdan Ugo Ulfried Ungolf Uriel Valpo Varman Viburn Tirus Voltan 
+			Vorlop Wahnfried 
+			Welf Wolfman Wulf Wulfhelm Xandro Xindan Xebbert Xerber Yann Yantur Yendan Yendar 
+			Yerodin Yeto Zondan Zolthan Zordan} 
+	  
+		female_names = {
+			Adaque Alda Alena Alinde Alruna Alvide Arba Arta Belona Berinka Berna 
+			Binya Birsel Boriane Caya Celissa Cella Charine Coruna Dara Dari Daria Dela Derya Dhana 
+			Dilga Dimiona Doride Dorlen 
+			Dorfriede Drala Dramina Duridanya Dythilde Dythlind Edala Efferdane Elida Elene Elwene 
+			Emer Fenia Fiana Fina Firsa Firuna Franka Gala Galtraud Ginaya Girte Gissa Gunelde Gwynna 
+			Harika Harka 
+			Heiltrud Hela Hesindiane Hesine Hitta Idra Ifirnia Ilke Ingrimma Isida Jadwina Jasinai Jette 
+			Josmine Jule Junivera Karima Khorena Krona Kysira Lana Larona Leia Leta Lidda Linai Livia 
+			Losiane Lufilla 
+			Maline Maren Mirya Mo Mora Morena Nana Neetya Nella Niam Odelinde Ola Oleana 
+			Olorande Ondinai Ondwina Palinai Perdia Praiosmin Perainiane Praiadne Quenia Quelina 
+			Quisira Rahjalieb Rahjane Rahjada 
+			Ragnar Renzi Roana Rondirai Rondralied Rondriane Rovena Saginta Sagitta Sannah 
+			Sari_Saria Selinde Sumudai Susa Sylvette Tanit Thornia Thyria Tita Titina Tsaja Turike Udha 
+			Ulinai Ulmia Utsinde Uthjande Vana 
+			Viridai Vistella Wala Waliburia Walpurgia Wina Wilimai Xaida Xaviera Xerane Xinda Yanis 
+			Yasmina Yassia Ysinthe Yola Yolande Yolde Yosmia Ysilda Zekla Zelda Zidane Zidona Zita Zoe 
+			Zyla Zylya } 	
+		
+		dukes_called_kings = no 
+	  
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
+		pat_grf_name_chance = 50 
+		mat_grf_name_chance = 5 
+		father_name_chance = 10 
+	 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+		pat_grm_name_chance = 10 
+		mat_grm_name_chance = 50 
+		mother_name_chance = 5 
+	  
+		from_dynasty_prefix = "of " 
+	  
+		modifier = default_culture_modifier 
+    }
 
     albernian = {
         graphical_culture = celticgfx

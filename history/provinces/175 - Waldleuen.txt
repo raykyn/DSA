@@ -1,0 +1,18 @@
+# c_waldleuen
+
+# County Title
+title = c_waldleuen
+
+# Settlements
+max_settlements = 4
+
+b_waldleuen = castle
+#b_waldleuen_2 = city
+#b_waldleuen_3 = temple
+#b_waldleuen_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

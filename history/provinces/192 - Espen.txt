@@ -1,0 +1,18 @@
+# c_espen
+
+# County Title
+title = c_espen
+
+# Settlements
+max_settlements = 4
+
+b_espen = castle
+#b_espen_2 = city
+#b_espen_3 = temple
+#b_espen_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

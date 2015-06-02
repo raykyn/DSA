@@ -1,0 +1,18 @@
+# c_hollerheide
+
+# County Title
+title = c_hollerheide
+
+# Settlements
+max_settlements = 4
+
+b_hollerheide = castle
+#b_hollerheide_2 = city
+#b_hollerheide_3 = temple
+#b_hollerheide_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

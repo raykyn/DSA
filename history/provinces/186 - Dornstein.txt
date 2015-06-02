@@ -1,0 +1,18 @@
+# c_dornstein
+
+# County Title
+title = c_dornstein
+
+# Settlements
+max_settlements = 4
+
+b_dornstein = castle
+#b_dornstein_2 = city
+#b_dornstein_3 = temple
+#b_dornstein_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

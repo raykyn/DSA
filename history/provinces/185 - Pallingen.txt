@@ -1,0 +1,18 @@
+# c_pallingen
+
+# County Title
+title = c_pallingen
+
+# Settlements
+max_settlements = 4
+
+b_pallingen = castle
+#b_pallingen_2 = city
+#b_pallingen_3 = temple
+#b_pallingen_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

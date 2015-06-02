@@ -1,0 +1,18 @@
+# c_weiden
+
+# County Title
+title = c_weiden
+
+# Settlements
+max_settlements = 4
+
+b_weiden = castle
+#b_weiden_2 = city
+#b_weiden_3 = temple
+#b_weiden_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

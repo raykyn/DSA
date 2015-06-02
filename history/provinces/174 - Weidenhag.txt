@@ -1,0 +1,18 @@
+# c_weidenhag
+
+# County Title
+title = c_weidenhag
+
+# Settlements
+max_settlements = 4
+
+b_weidenhag = castle
+#b_weidenhag_2 = city
+#b_weidenhag_3 = temple
+#b_weidenhag_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

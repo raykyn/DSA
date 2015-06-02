@@ -1,0 +1,18 @@
+# c_brachfelde
+
+# County Title
+title = c_brachfelde
+
+# Settlements
+max_settlements = 4
+
+b_brachfelde = castle
+#b_brachfelde_2 = city
+#b_brachfelde_3 = temple
+#b_brachfelde_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

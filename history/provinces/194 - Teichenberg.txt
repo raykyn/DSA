@@ -1,0 +1,18 @@
+# c_teichenberg
+
+# County Title
+title = c_teichenberg
+
+# Settlements
+max_settlements = 4
+
+b_teichenberg = castle
+#b_teichenberg_2 = city
+#b_teichenberg_3 = temple
+#b_teichenberg_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

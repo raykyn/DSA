@@ -1,0 +1,18 @@
+# c_schneehag
+
+# County Title
+title = c_schneehag
+
+# Settlements
+max_settlements = 4
+
+b_schneehag = castle
+#b_schneehag_2 = city
+#b_schneehag_3 = temple
+#b_schneehag_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

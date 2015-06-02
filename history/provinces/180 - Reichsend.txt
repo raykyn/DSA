@@ -1,0 +1,18 @@
+# c_reichsend
+
+# County Title
+title = c_reichsend
+
+# Settlements
+max_settlements = 4
+
+b_reichsend = castle
+#b_reichsend_2 = city
+#b_reichsend_3 = temple
+#b_reichsend_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

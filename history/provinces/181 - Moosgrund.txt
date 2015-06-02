@@ -1,0 +1,18 @@
+# c_moosgrund
+
+# County Title
+title = c_moosgrund
+
+# Settlements
+max_settlements = 4
+
+b_moosgrund = castle
+#b_moosgrund_2 = city
+#b_moosgrund_3 = temple
+#b_moosgrund_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_i
+
+# County Title
+title = c_i
+
+# Settlements
+max_settlements = 4
+
+b_i = castle
+#b_i_2 = city
+#b_i_3 = temple
+#b_i_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

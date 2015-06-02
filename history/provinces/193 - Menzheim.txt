@@ -1,0 +1,18 @@
+# c_menzheim
+
+# County Title
+title = c_menzheim
+
+# Settlements
+max_settlements = 4
+
+b_menzheim = castle
+#b_menzheim_2 = city
+#b_menzheim_3 = temple
+#b_menzheim_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

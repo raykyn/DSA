@@ -1,4 +1,8 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_baerwalde;Bärwalde;Bärwalde;Bärwalde;;Bärwalde;;;;;;;;;x
+d_baerwalde_adj;Bärwaldean;;bärwalder;;;;;;;;;;;x
+d_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
+d_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
 d_eslamsgrund;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
 d_eslamsgrund_adj;Eslamsgrundian;;eslamsgrunder;;;;;;;;;;;x
 d_ferdok;Ferdok;Ferdok;Ferdok;;Ferdok;;;;;;;;;x
@@ -9,6 +13,8 @@ d_greifenfurt;Greifenfurt;Greifenfurt;Greifenfurt;;Greifenfurt;;;;;;;;;x
 d_greifenfurt_adj;Greifenfurtian;;greifenfurter;;;;;;;;;;;x
 d_hartsteen;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
 d_hartsteen_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
+d_heldentrutz;Heldentrutz;Heldentrutz;Heldentrutz;;Heldentrutz;;;;;;;;;x
+d_heldentrutz_adj;Heldentrutzian;;heldentrutzer;;;;;;;;;;;x
 d_huegellande;Hügellande;Hügellande;Hügellande;;Hügellande;;;;;;;;;x
 d_huegellande_adj;Hügellandean;;hügellander;;;;;;;;;;;x
 d_ochsenwasser;Ochsenwasser;Ochsenwasser;Ochsenwasser;;Ochsenwasser;;;;;;;;;x
@@ -19,6 +25,8 @@ d_reichsforst;Reichsforst;Reichsforst;Reichsforst;;Reichsforst;;;;;;;;;x
 d_reichsforst_adj;Reichsforstian;;reichsforster;;;;;;;;;;;x
 d_schlund;Schlund;Schlund;Schlund;;Schlund;;;;;;;;;x
 d_schlund_adj;Schlundian;;schlunder;;;;;;;;;;;x
+d_sichelwacht;Sichelwacht;Sichelwacht;Sichelwacht;;Sichelwacht;;;;;;;;;x
+d_sichelwacht_adj;Sichelwachtian;;sichelwachter;;;;;;;;;;;x
 d_suedpforte;Südpforte;Südpforte;Südpforte;;Südpforte;;;;;;;;;x
 d_suedpforte_adj;Südpfortean;;südpforter;;;;;;;;;;;x
 d_trollzacken;Trollzacken;Trollzacken;Trollzacken;;Trollzacken;;;;;;;;;x

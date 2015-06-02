@@ -1,0 +1,18 @@
+# c_wolfenbinge
+
+# County Title
+title = c_wolfenbinge
+
+# Settlements
+max_settlements = 4
+
+b_wolfenbinge = castle
+#b_wolfenbinge_2 = city
+#b_wolfenbinge_3 = temple
+#b_wolfenbinge_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History
