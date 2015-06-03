@@ -224,12 +224,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 155 province_id = 156 province_id = 157 province_id = 158 province_id = 159 province_id = 160 province_id = 161 province_id = 162 province_id = 163 province_id = 164 province_id = 165 province_id = 166 province_id = 167 province_id = 168 province_id = 169 province_id = 170 province_id = 171 province_id = 172 province_id = 173 } }
+					any_demesne_province = { OR = { province_id = 156 province_id = 157 province_id = 158 province_id = 159 province_id = 160 province_id = 161 province_id = 162 province_id = 163 province_id = 164 province_id = 165 province_id = 166 province_id = 167 province_id = 168 province_id = 169 province_id = 170 province_id = 171 province_id = 172 province_id = 173 province_id = 174 } }
 				}
 			}
-			capital = 155 # c_finsterkamm
+			capital = 156 # c_finsterkamm
 			
-			c_finsterkamm = { # 155
+			c_finsterkamm = { # 156
 				color={ 55 222 223 }
 				color2={ 255 255 255 }
 				
@@ -242,7 +242,7 @@ e_middlerealm = {
 				b_finsterkamm_4 = {
 				}
 			}
-			c_breitenbruck = { # 161
+			c_breitenbruck = { # 162
 				color={ 55 235 136 }
 				color2={ 255 255 255 }
 				
@@ -255,7 +255,7 @@ e_middlerealm = {
 				b_breitenbruck_4 = {
 				}
 			}
-			c_dergelstein = { # 159
+			c_dergelstein = { # 160
 				color={ 55 136 116 }
 				color2={ 255 255 255 }
 				
@@ -268,7 +268,7 @@ e_middlerealm = {
 				b_dergelstein_4 = {
 				}
 			}
-			c_donfanger = { # 170
+			c_donfanger = { # 171
 				color={ 55 132 27 }
 				color2={ 255 255 255 }
 				
@@ -281,7 +281,7 @@ e_middlerealm = {
 				b_donfanger_4 = {
 				}
 			}
-			c_dunkelsfarn = { # 168
+			c_dunkelsfarn = { # 169
 				color={ 55 239 21 }
 				color2={ 255 255 255 }
 				
@@ -294,7 +294,7 @@ e_middlerealm = {
 				b_dunkelsfarn_4 = {
 				}
 			}
-			c_eslamsroden = { # 158
+			c_eslamsroden = { # 159
 				color={ 55 30 26 }
 				color2={ 255 255 255 }
 				
@@ -307,7 +307,7 @@ e_middlerealm = {
 				b_eslamsroden_4 = {
 				}
 			}
-			c_feldharsch = { # 160
+			c_feldharsch = { # 161
 				color={ 55 219 34 }
 				color2={ 255 255 255 }
 				
@@ -320,7 +320,7 @@ e_middlerealm = {
 				b_feldharsch_4 = {
 				}
 			}
-			c_greifenberg = { # 164
+			c_greifenberg = { # 165
 				color={ 55 39 132 }
 				color2={ 255 255 255 }
 				
@@ -333,7 +333,7 @@ e_middlerealm = {
 				b_greifenberg_4 = {
 				}
 			}
-			c_greifenfurt = { # 165
+			c_greifenfurt = { # 166
 				color={ 55 33 203 }
 				color2={ 255 255 255 }
 				
@@ -346,7 +346,7 @@ e_middlerealm = {
 				b_greifenfurt_4 = {
 				}
 			}
-			c_greifenhorst = { # 169
+			c_greifenhorst = { # 170
 				color={ 55 238 143 }
 				color2={ 255 255 255 }
 				
@@ -359,7 +359,7 @@ e_middlerealm = {
 				b_greifenhorst_4 = {
 				}
 			}
-			c_hasenfeld = { # 167
+			c_hasenfeld = { # 168
 				color={ 55 227 227 }
 				color2={ 255 255 255 }
 				
@@ -372,7 +372,7 @@ e_middlerealm = {
 				b_hasenfeld_4 = {
 				}
 			}
-			c_helbrache = { # 172
+			c_helbrache = { # 173
 				color={ 55 40 228 }
 				color2={ 255 255 255 }
 				
@@ -385,7 +385,7 @@ e_middlerealm = {
 				b_helbrache_4 = {
 				}
 			}
-			c_hesindelburg = { # 171
+			c_hesindelburg = { # 172
 				color={ 55 24 128 }
 				color2={ 255 255 255 }
 				
@@ -398,7 +398,7 @@ e_middlerealm = {
 				b_hesindelburg_4 = {
 				}
 			}
-			c_hexenhain = { # 156
+			c_hexenhain = { # 157
 				color={ 55 137 231 }
 				color2={ 255 255 255 }
 				
@@ -411,7 +411,7 @@ e_middlerealm = {
 				b_hexenhain_4 = {
 				}
 			}
-			c_kressenburg = { # 162
+			c_kressenburg = { # 163
 				color={ 55 71 48 }
 				color2={ 255 255 255 }
 				
@@ -424,7 +424,7 @@ e_middlerealm = {
 				b_kressenburg_4 = {
 				}
 			}
-			c_nebelstein = { # 173
+			c_nebelstein = { # 174
 				color={ 55 219 23 }
 				color2={ 255 255 255 }
 				
@@ -437,7 +437,7 @@ e_middlerealm = {
 				b_nebelstein_4 = {
 				}
 			}
-			c_quastenbroich = { # 163
+			c_quastenbroich = { # 164
 				color={ 55 89 190 }
 				color2={ 255 255 255 }
 				
@@ -450,7 +450,7 @@ e_middlerealm = {
 				b_quastenbroich_4 = {
 				}
 			}
-			c_weihenhorst = { # 166
+			c_weihenhorst = { # 167
 				color={ 55 216 228 }
 				color2={ 255 255 255 }
 				
@@ -463,7 +463,7 @@ e_middlerealm = {
 				b_weihenhorst_4 = {
 				}
 			}
-			c_zalgo = { # 157
+			c_zalgo = { # 158
 				color={ 55 224 107 }
 				color2={ 255 255 255 }
 				
@@ -1696,7 +1696,7 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 133 province_id = 135 province_id = 136 province_id = 137 province_id = 138 province_id = 139 province_id = 140 province_id = 141 province_id = 142 province_id = 143 province_id = 144 province_id = 145 province_id = 146 province_id = 147 province_id = 148 province_id = 149 province_id = 150 province_id = 151 province_id = 152 province_id = 153 province_id = 154 } }
+					any_demesne_province = { OR = { province_id = 133 province_id = 135 province_id = 136 province_id = 137 province_id = 138 province_id = 139 province_id = 140 province_id = 141 province_id = 142 province_id = 143 province_id = 144 province_id = 145 province_id = 146 province_id = 147 province_id = 148 province_id = 149 province_id = 150 province_id = 151 province_id = 152 province_id = 153 province_id = 154 province_id = 155 } }
 				}
 			}
 			capital = 133 # c_gadang
@@ -1777,6 +1777,19 @@ e_middlerealm = {
 				b_eckelstor_3 = {
 				}
 				b_eckelstor_4 = {
+				}
+			}
+			c_efferdstraenen = { # 155
+				color={ 242 136 131 }
+				color2={ 255 255 255 }
+				
+				b_efferdstraenen = {
+				}
+				b_efferdstraenen_2 = {
+				}
+				b_efferdstraenen_3 = {
+				}
+				b_efferdstraenen_4 = {
 				}
 			}
 			c_gluckenhang = { # 146
@@ -2374,578 +2387,11 @@ e_middlerealm = {
 			}
 		}
 	}
-	k_tobrien = {
-		color={ 210 68 196 }
-		color2={ 255 255 255 }
-		
-		capital = 212 # c_drachenstein_2
-		culture = tobrian
-		
-		d_drachenstein = {
-			color={ 230 48 206 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 212 province_id = 213 province_id = 214 province_id = 215 province_id = 216 province_id = 217 } }
-				}
-			}
-			capital = 212 # c_drachenstein_2
-			
-			c_drachenstein_2 = { # 212
-				color={ 240 38 211 }
-				color2={ 255 255 255 }
-				
-				b_drachenstein_5 = {
-				}
-				b_drachenstein_6 = {
-				}
-				b_drachenstein_7 = {
-				}
-				b_drachenstein_8 = {
-				}
-			}
-			c_eisenrath = { # 216
-				color={ 240 45 31 }
-				color2={ 255 255 255 }
-				
-				b_eisenrath = {
-				}
-				b_eisenrath_2 = {
-				}
-				b_eisenrath_3 = {
-				}
-				b_eisenrath_4 = {
-				}
-			}
-			c_erlschwerd = { # 214
-				color={ 240 94 79 }
-				color2={ 255 255 255 }
-				
-				b_erlschwerd = {
-				}
-				b_erlschwerd_2 = {
-				}
-				b_erlschwerd_3 = {
-				}
-				b_erlschwerd_4 = {
-				}
-			}
-			c_gueldenharsch = { # 215
-				color={ 240 32 217 }
-				color2={ 255 255 255 }
-				
-				b_gueldenharsch = {
-				}
-				b_gueldenharsch_2 = {
-				}
-				b_gueldenharsch_3 = {
-				}
-				b_gueldenharsch_4 = {
-				}
-			}
-			c_rumpenfels = { # 217
-				color={ 240 221 41 }
-				color2={ 255 255 255 }
-				
-				b_rumpenfels = {
-				}
-				b_rumpenfels_2 = {
-				}
-				b_rumpenfels_3 = {
-				}
-				b_rumpenfels_4 = {
-				}
-			}
-			c_ungolfsthann = { # 213
-				color={ 240 164 50 }
-				color2={ 255 255 255 }
-				
-				b_ungolfsthann = {
-				}
-				b_ungolfsthann_2 = {
-				}
-				b_ungolfsthann_3 = {
-				}
-				b_ungolfsthann_4 = {
-				}
-			}
-		}
-		d_mendena = {
-			color={ 82 216 201 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 224 province_id = 225 province_id = 226 province_id = 227 province_id = 228 province_id = 229 province_id = 230 province_id = 231 province_id = 232 province_id = 233 province_id = 234 province_id = 235 province_id = 236 province_id = 237 } }
-				}
-			}
-			capital = 224 # c_zossberg
-			
-			c_zossberg = { # 224
-				color={ 92 206 206 }
-				color2={ 255 255 255 }
-				
-				b_zossberg = {
-				}
-				b_zossberg_2 = {
-				}
-				b_zossberg_3 = {
-				}
-				b_zossberg_4 = {
-				}
-			}
-			c_borwein = { # 235
-				color={ 92 26 19 }
-				color2={ 255 255 255 }
-				
-				b_borwein = {
-				}
-				b_borwein_2 = {
-				}
-				b_borwein_3 = {
-				}
-				b_borwein_4 = {
-				}
-			}
-			c_foehrenhain = { # 228
-				color={ 142 193 199 }
-				color2={ 255 255 255 }
-				
-				b_foehrenhain = {
-				}
-				b_foehrenhain_2 = {
-				}
-				b_foehrenhain_3 = {
-				}
-				b_foehrenhain_4 = {
-				}
-			}
-			c_ilsur = { # 225
-				color={ 92 228 20 }
-				color2={ 255 255 255 }
-				
-				b_ilsur = {
-				}
-				b_ilsur_2 = {
-				}
-				b_ilsur_3 = {
-				}
-				b_ilsur_4 = {
-				}
-			}
-			c_keilerau = { # 231
-				color={ 142 221 61 }
-				color2={ 255 255 255 }
-				
-				b_keilerau = {
-				}
-				b_keilerau_2 = {
-				}
-				b_keilerau_3 = {
-				}
-				b_keilerau_4 = {
-				}
-			}
-			c_kohlerungen = { # 229
-				color={ 142 201 63 }
-				color2={ 255 255 255 }
-				
-				b_kohlerungen = {
-				}
-				b_kohlerungen_2 = {
-				}
-				b_kohlerungen_3 = {
-				}
-				b_kohlerungen_4 = {
-				}
-			}
-			c_muschelstrand = { # 234
-				color={ 142 78 34 }
-				color2={ 255 255 255 }
-				
-				b_muschelstrand = {
-				}
-				b_muschelstrand_2 = {
-				}
-				b_muschelstrand_3 = {
-				}
-				b_muschelstrand_4 = {
-				}
-			}
-			c_quellensprung = { # 227
-				color={ 92 185 59 }
-				color2={ 255 255 255 }
-				
-				b_quellensprung = {
-				}
-				b_quellensprung_2 = {
-				}
-				b_quellensprung_3 = {
-				}
-				b_quellensprung_4 = {
-				}
-			}
-			c_rallerfeste = { # 226
-				color={ 92 34 217 }
-				color2={ 255 255 255 }
-				
-				b_rallerfeste = {
-				}
-				b_rallerfeste_2 = {
-				}
-				b_rallerfeste_3 = {
-				}
-				b_rallerfeste_4 = {
-				}
-			}
-			c_rulat = { # 236
-				color={ 142 218 16 }
-				color2={ 255 255 255 }
-				
-				b_rulat = {
-				}
-				b_rulat_2 = {
-				}
-				b_rulat_3 = {
-				}
-				b_rulat_4 = {
-				}
-			}
-			c_sarkdosk = { # 232
-				color={ 92 180 211 }
-				color2={ 255 255 255 }
-				
-				b_sarkdosk = {
-				}
-				b_sarkdosk_2 = {
-				}
-				b_sarkdosk_3 = {
-				}
-				b_sarkdosk_4 = {
-				}
-			}
-			c_tesral = { # 230
-				color={ 142 128 125 }
-				color2={ 255 255 255 }
-				
-				b_tesral = {
-				}
-				b_tesral_2 = {
-				}
-				b_tesral_3 = {
-				}
-				b_tesral_4 = {
-				}
-			}
-			c_tisal = { # 233
-				color={ 142 48 147 }
-				color2={ 255 255 255 }
-				
-				b_tisal = {
-				}
-				b_tisal_2 = {
-				}
-				b_tisal_3 = {
-				}
-				b_tisal_4 = {
-				}
-			}
-			c_ulracht = { # 237
-				color={ 142 46 53 }
-				color2={ 255 255 255 }
-				
-				b_ulracht = {
-				}
-				b_ulracht_2 = {
-				}
-				b_ulracht_3 = {
-				}
-				b_ulracht_4 = {
-				}
-			}
-		}
-		d_misamund = {
-			color={ 230 234 41 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 218 province_id = 219 province_id = 220 province_id = 221 province_id = 222 province_id = 223 } }
-				}
-			}
-			capital = 218 # c_misafelden
-			
-			c_misafelden = { # 218
-				color={ 240 224 46 }
-				color2={ 255 255 255 }
-				
-				b_misafelden = {
-				}
-				b_misafelden_2 = {
-				}
-				b_misafelden_3 = {
-				}
-				b_misafelden_4 = {
-				}
-			}
-			c_alst = { # 220
-				color={ 240 129 132 }
-				color2={ 255 255 255 }
-				
-				b_alst = {
-				}
-				b_alst_2 = {
-				}
-				b_alst_3 = {
-				}
-				b_alst_4 = {
-				}
-			}
-			c_firunsschlifen = { # 221
-				color={ 240 43 178 }
-				color2={ 255 255 255 }
-				
-				b_firunsschlifen = {
-				}
-				b_firunsschlifen_2 = {
-				}
-				b_firunsschlifen_3 = {
-				}
-				b_firunsschlifen_4 = {
-				}
-			}
-			c_misamuendel = { # 222
-				color={ 240 47 51 }
-				color2={ 255 255 255 }
-				
-				b_misamuendel = {
-				}
-				b_misamuendel_2 = {
-				}
-				b_misamuendel_3 = {
-				}
-				b_misamuendel_4 = {
-				}
-			}
-			c_tirandur = { # 223
-				color={ 240 209 69 }
-				color2={ 255 255 255 }
-				
-				b_tirandur = {
-				}
-				b_tirandur_2 = {
-				}
-				b_tirandur_3 = {
-				}
-				b_tirandur_4 = {
-				}
-			}
-			c_vallusa = { # 219
-				color={ 240 128 193 }
-				color2={ 255 255 255 }
-				
-				b_vallusa = {
-				}
-				b_vallusa_2 = {
-				}
-				b_vallusa_3 = {
-				}
-				b_vallusa_4 = {
-				}
-			}
-		}
-		d_tobimora = {
-			color={ 68 235 146 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 238 province_id = 239 province_id = 240 province_id = 241 province_id = 242 province_id = 243 province_id = 244 province_id = 245 province_id = 246 province_id = 247 province_id = 248 province_id = 249 province_id = 250 } }
-				}
-			}
-			capital = 238 # c_waischenroth
-			
-			c_waischenroth = { # 238
-				color={ 78 225 151 }
-				color2={ 255 255 255 }
-				
-				b_waischenroth = {
-				}
-				b_waischenroth_2 = {
-				}
-				b_waischenroth_3 = {
-				}
-				b_waischenroth_4 = {
-				}
-			}
-			c_aellingen = { # 242
-				color={ 78 219 67 }
-				color2={ 255 255 255 }
-				
-				b_aellingen = {
-				}
-				b_aellingen_2 = {
-				}
-				b_aellingen_3 = {
-				}
-				b_aellingen_4 = {
-				}
-			}
-			c_albersrode = { # 248
-				color={ 78 94 172 }
-				color2={ 255 255 255 }
-				
-				b_albersrode = {
-				}
-				b_albersrode_2 = {
-				}
-				b_albersrode_3 = {
-				}
-				b_albersrode_4 = {
-				}
-			}
-			c_baruns_pappel = { # 247
-				color={ 78 161 70 }
-				color2={ 255 255 255 }
-				
-				b_baruns_pappel = {
-				}
-				b_baruns_pappel_2 = {
-				}
-				b_baruns_pappel_3 = {
-				}
-				b_baruns_pappel_4 = {
-				}
-			}
-			c_becherlingen = { # 250
-				color={ 78 117 205 }
-				color2={ 255 255 255 }
-				
-				b_becherlingen = {
-				}
-				b_becherlingen_2 = {
-				}
-				b_becherlingen_3 = {
-				}
-				b_becherlingen_4 = {
-				}
-			}
-			c_bergenshus = { # 246
-				color={ 78 75 80 }
-				color2={ 255 255 255 }
-				
-				b_bergenshus = {
-				}
-				b_bergenshus_2 = {
-				}
-				b_bergenshus_3 = {
-				}
-				b_bergenshus_4 = {
-				}
-			}
-			c_kummersfelden = { # 249
-				color={ 78 150 25 }
-				color2={ 255 255 255 }
-				
-				b_kummersfelden = {
-				}
-				b_kummersfelden_2 = {
-				}
-				b_kummersfelden_3 = {
-				}
-				b_kummersfelden_4 = {
-				}
-			}
-			c_maus = { # 244
-				color={ 78 203 176 }
-				color2={ 255 255 255 }
-				
-				b_maus = {
-				}
-				b_maus_2 = {
-				}
-				b_maus_3 = {
-				}
-				b_maus_4 = {
-				}
-			}
-			c_nordweide = { # 245
-				color={ 78 33 171 }
-				color2={ 255 255 255 }
-				
-				b_nordweide = {
-				}
-				b_nordweide_2 = {
-				}
-				b_nordweide_3 = {
-				}
-				b_nordweide_4 = {
-				}
-			}
-			c_schnattermoor = { # 241
-				color={ 78 41 129 }
-				color2={ 255 255 255 }
-				
-				b_schnattermoor = {
-				}
-				b_schnattermoor_2 = {
-				}
-				b_schnattermoor_3 = {
-				}
-				b_schnattermoor_4 = {
-				}
-			}
-			c_schwuerzhofen = { # 239
-				color={ 78 235 128 }
-				color2={ 255 255 255 }
-				
-				b_schwuerzhofen = {
-				}
-				b_schwuerzhofen_2 = {
-				}
-				b_schwuerzhofen_3 = {
-				}
-				b_schwuerzhofen_4 = {
-				}
-			}
-			c_tizamsquell = { # 243
-				color={ 78 135 39 }
-				color2={ 255 255 255 }
-				
-				b_tizamsquell = {
-				}
-				b_tizamsquell_2 = {
-				}
-				b_tizamsquell_3 = {
-				}
-				b_tizamsquell_4 = {
-				}
-			}
-			c_windgau = { # 240
-				color={ 78 31 111 }
-				color2={ 255 255 255 }
-				
-				b_windgau = {
-				}
-				b_windgau_2 = {
-				}
-				b_windgau_3 = {
-				}
-				b_windgau_4 = {
-				}
-			}
-		}
-	}
-	k_weiden = {
+	k_meadows = {
 		color={ 100 62 214 }
 		color2={ 255 255 255 }
 		
-		capital = 174 # c_weidenhag
+		capital = 175 # c_weidenhag
 		culture = meadows
 		
 		d_heldentrutz = {
@@ -2955,12 +2401,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 174 province_id = 175 province_id = 176 province_id = 177 province_id = 178 province_id = 179 province_id = 180 } }
+					any_demesne_province = { OR = { province_id = 175 province_id = 176 province_id = 177 province_id = 178 province_id = 179 province_id = 180 province_id = 181 } }
 				}
 			}
-			capital = 174 # c_weidenhag
+			capital = 175 # c_weidenhag
 			
-			c_weidenhag = { # 174
+			c_weidenhag = { # 175
 				color={ 130 32 229 }
 				color2={ 255 255 255 }
 				
@@ -2973,7 +2419,7 @@ e_middlerealm = {
 				b_weidenhag_4 = {
 				}
 			}
-			c_dergelquell = { # 176
+			c_dergelquell = { # 177
 				color={ 130 234 20 }
 				color2={ 255 255 255 }
 				
@@ -2986,7 +2432,7 @@ e_middlerealm = {
 				b_dergelquell_4 = {
 				}
 			}
-			c_nordhag = { # 178
+			c_nordhag = { # 179
 				color={ 130 122 19 }
 				color2={ 255 255 255 }
 				
@@ -2999,7 +2445,7 @@ e_middlerealm = {
 				b_nordhag_4 = {
 				}
 			}
-			c_reichsend = { # 180
+			c_reichsend = { # 181
 				color={ 130 116 229 }
 				color2={ 255 255 255 }
 				
@@ -3012,7 +2458,7 @@ e_middlerealm = {
 				b_reichsend_4 = {
 				}
 			}
-			c_schneehag = { # 177
+			c_schneehag = { # 178
 				color={ 130 231 132 }
 				color2={ 255 255 255 }
 				
@@ -3025,7 +2471,7 @@ e_middlerealm = {
 				b_schneehag_4 = {
 				}
 			}
-			c_waldleuen = { # 175
+			c_waldleuen = { # 176
 				color={ 130 39 49 }
 				color2={ 255 255 255 }
 				
@@ -3038,7 +2484,7 @@ e_middlerealm = {
 				b_waldleuen_4 = {
 				}
 			}
-			c_weiden = { # 179
+			c_weiden = { # 180
 				color={ 130 219 214 }
 				color2={ 255 255 255 }
 				
@@ -3059,12 +2505,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 181 province_id = 182 province_id = 183 province_id = 184 province_id = 185 province_id = 186 province_id = 187 province_id = 188 } }
+					any_demesne_province = { OR = { province_id = 182 province_id = 183 province_id = 184 province_id = 185 province_id = 186 province_id = 187 province_id = 188 province_id = 189 } }
 				}
 			}
-			capital = 181 # c_moosgrund
+			capital = 182 # c_moosgrund
 			
-			c_moosgrund = { # 181
+			c_moosgrund = { # 182
 				color={ 125 236 139 }
 				color2={ 255 255 255 }
 				
@@ -3077,7 +2523,7 @@ e_middlerealm = {
 				b_moosgrund_4 = {
 				}
 			}
-			c_brachfelde = { # 187
+			c_brachfelde = { # 188
 				color={ 125 219 37 }
 				color2={ 255 255 255 }
 				
@@ -3090,7 +2536,7 @@ e_middlerealm = {
 				b_brachfelde_4 = {
 				}
 			}
-			c_dornstein = { # 186
+			c_dornstein = { # 187
 				color={ 125 222 33 }
 				color2={ 255 255 255 }
 				
@@ -3103,7 +2549,7 @@ e_middlerealm = {
 				b_dornstein_4 = {
 				}
 			}
-			c_hollerheide = { # 188
+			c_hollerheide = { # 189
 				color={ 125 137 20 }
 				color2={ 255 255 255 }
 				
@@ -3116,7 +2562,7 @@ e_middlerealm = {
 				b_hollerheide_4 = {
 				}
 			}
-			c_pallingen = { # 185
+			c_pallingen = { # 186
 				color={ 125 31 29 }
 				color2={ 255 255 255 }
 				
@@ -3129,7 +2575,7 @@ e_middlerealm = {
 				b_pallingen_4 = {
 				}
 			}
-			c_trallop = { # 183
+			c_trallop = { # 184
 				color={ 125 14 94 }
 				color2={ 255 255 255 }
 				
@@ -3142,7 +2588,7 @@ e_middlerealm = {
 				b_trallop_4 = {
 				}
 			}
-			c_urkentrutz = { # 182
+			c_urkentrutz = { # 183
 				color={ 125 21 224 }
 				color2={ 255 255 255 }
 				
@@ -3155,7 +2601,7 @@ e_middlerealm = {
 				b_urkentrutz_4 = {
 				}
 			}
-			c_wolfenbinge = { # 184
+			c_wolfenbinge = { # 185
 				color={ 125 219 227 }
 				color2={ 255 255 255 }
 				
@@ -3176,12 +2622,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 189 province_id = 190 province_id = 191 province_id = 192 province_id = 193 province_id = 194 province_id = 195 province_id = 196 province_id = 197 } }
+					any_demesne_province = { OR = { province_id = 190 province_id = 191 province_id = 192 province_id = 193 province_id = 194 province_id = 195 province_id = 196 province_id = 197 province_id = 198 } }
 				}
 			}
-			capital = 189 # c_baliho
+			capital = 190 # c_baliho
 			
-			c_baliho = { # 189
+			c_baliho = { # 190
 				color={ 125 16 128 }
 				color2={ 255 255 255 }
 				
@@ -3194,7 +2640,7 @@ e_middlerealm = {
 				b_baliho_4 = {
 				}
 			}
-			c_bollinger_heide = { # 196
+			c_bollinger_heide = { # 197
 				color={ 125 225 218 }
 				color2={ 255 255 255 }
 				
@@ -3207,7 +2653,7 @@ e_middlerealm = {
 				b_bollinger_heide_4 = {
 				}
 			}
-			c_espen = { # 192
+			c_espen = { # 193
 				color={ 125 142 21 }
 				color2={ 255 255 255 }
 				
@@ -3220,7 +2666,7 @@ e_middlerealm = {
 				b_espen_4 = {
 				}
 			}
-			c_menzheim = { # 193
+			c_menzheim = { # 194
 				color={ 125 224 29 }
 				color2={ 255 255 255 }
 				
@@ -3233,7 +2679,7 @@ e_middlerealm = {
 				b_menzheim_4 = {
 				}
 			}
-			c_pandlaril = { # 190
+			c_pandlaril = { # 191
 				color={ 125 226 75 }
 				color2={ 255 255 255 }
 				
@@ -3246,7 +2692,7 @@ e_middlerealm = {
 				b_pandlaril_4 = {
 				}
 			}
-			c_perainenstein = { # 191
+			c_perainenstein = { # 192
 				color={ 125 151 32 }
 				color2={ 255 255 255 }
 				
@@ -3259,7 +2705,7 @@ e_middlerealm = {
 				b_perainenstein_4 = {
 				}
 			}
-			c_rotenwasser = { # 195
+			c_rotenwasser = { # 196
 				color={ 125 228 138 }
 				color2={ 255 255 255 }
 				
@@ -3272,7 +2718,7 @@ e_middlerealm = {
 				b_rotenwasser_4 = {
 				}
 			}
-			c_teichenberg = { # 194
+			c_teichenberg = { # 195
 				color={ 125 114 227 }
 				color2={ 255 255 255 }
 				
@@ -3285,7 +2731,7 @@ e_middlerealm = {
 				b_teichenberg_4 = {
 				}
 			}
-			c_zippeldinge = { # 197
+			c_zippeldinge = { # 198
 				color={ 125 21 121 }
 				color2={ 255 255 255 }
 				
@@ -3306,12 +2752,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 198 province_id = 199 province_id = 200 province_id = 201 province_id = 202 province_id = 203 province_id = 204 province_id = 205 province_id = 206 province_id = 207 province_id = 208 province_id = 209 province_id = 210 province_id = 211 } }
+					any_demesne_province = { OR = { province_id = 199 province_id = 200 province_id = 201 province_id = 202 province_id = 203 province_id = 204 province_id = 205 province_id = 206 province_id = 207 province_id = 208 province_id = 209 province_id = 210 province_id = 211 province_id = 212 } }
 				}
 			}
-			capital = 198 # c_drachenstein
+			capital = 199 # c_drachenstein
 			
-			c_drachenstein = { # 198
+			c_drachenstein = { # 199
 				color={ 125 150 35 }
 				color2={ 255 255 255 }
 				
@@ -3324,7 +2770,7 @@ e_middlerealm = {
 				b_drachenstein_4 = {
 				}
 			}
-			c_adlerflug = { # 208
+			c_adlerflug = { # 209
 				color={ 125 180 27 }
 				color2={ 255 255 255 }
 				
@@ -3337,7 +2783,7 @@ e_middlerealm = {
 				b_adlerflug_4 = {
 				}
 			}
-			c_altentrallop = { # 205
+			c_altentrallop = { # 206
 				color={ 125 97 240 }
 				color2={ 255 255 255 }
 				
@@ -3350,7 +2796,7 @@ e_middlerealm = {
 				b_altentrallop_4 = {
 				}
 			}
-			c_beonspfort = { # 210
+			c_beonspfort = { # 211
 				color={ 125 210 222 }
 				color2={ 255 255 255 }
 				
@@ -3363,7 +2809,7 @@ e_middlerealm = {
 				b_beonspfort_4 = {
 				}
 			}
-			c_fuchshag = { # 207
+			c_fuchshag = { # 208
 				color={ 125 33 70 }
 				color2={ 255 255 255 }
 				
@@ -3376,7 +2822,7 @@ e_middlerealm = {
 				b_fuchshag_4 = {
 				}
 			}
-			c_hahnfels = { # 204
+			c_hahnfels = { # 205
 				color={ 125 45 236 }
 				color2={ 255 255 255 }
 				
@@ -3389,7 +2835,7 @@ e_middlerealm = {
 				b_hahnfels_4 = {
 				}
 			}
-			c_herzogenthal = { # 202
+			c_herzogenthal = { # 203
 				color={ 125 64 42 }
 				color2={ 255 255 255 }
 				
@@ -3402,7 +2848,7 @@ e_middlerealm = {
 				b_herzogenthal_4 = {
 				}
 			}
-			c_mauterndorf = { # 201
+			c_mauterndorf = { # 202
 				color={ 125 232 210 }
 				color2={ 255 255 255 }
 				
@@ -3415,7 +2861,7 @@ e_middlerealm = {
 				b_mauterndorf_4 = {
 				}
 			}
-			c_oestlingen = { # 203
+			c_oestlingen = { # 204
 				color={ 125 154 19 }
 				color2={ 255 255 255 }
 				
@@ -3428,7 +2874,7 @@ e_middlerealm = {
 				b_oestlingen_4 = {
 				}
 			}
-			c_rotenforst = { # 199
+			c_rotenforst = { # 200
 				color={ 125 130 226 }
 				color2={ 255 255 255 }
 				
@@ -3441,7 +2887,7 @@ e_middlerealm = {
 				b_rotenforst_4 = {
 				}
 			}
-			c_salthel = { # 209
+			c_salthel = { # 210
 				color={ 125 21 68 }
 				color2={ 255 255 255 }
 				
@@ -3454,7 +2900,7 @@ e_middlerealm = {
 				b_salthel_4 = {
 				}
 			}
-			c_schroffenfels = { # 206
+			c_schroffenfels = { # 207
 				color={ 125 35 205 }
 				color2={ 255 255 255 }
 				
@@ -3467,7 +2913,7 @@ e_middlerealm = {
 				b_schroffenfels_4 = {
 				}
 			}
-			c_schwarzenstein = { # 200
+			c_schwarzenstein = { # 201
 				color={ 125 207 206 }
 				color2={ 255 255 255 }
 				
@@ -3480,7 +2926,7 @@ e_middlerealm = {
 				b_schwarzenstein_4 = {
 				}
 			}
-			c_uhdenwald = { # 211
+			c_uhdenwald = { # 212
 				color={ 125 227 32 }
 				color2={ 255 255 255 }
 				
@@ -3491,6 +2937,1158 @@ e_middlerealm = {
 				b_uhdenwald_3 = {
 				}
 				b_uhdenwald_4 = {
+				}
+			}
+		}
+	}
+	k_tobria = {
+		color={ 210 68 196 }
+		color2={ 255 255 255 }
+		
+		capital = 213 # c_drachenstein_2
+		culture = tobrian
+		
+		d_drachenstein = {
+			color={ 230 48 206 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 213 province_id = 214 province_id = 215 province_id = 216 province_id = 217 province_id = 218 } }
+				}
+			}
+			capital = 213 # c_drachenstein_2
+			
+			c_drachenstein_2 = { # 213
+				color={ 240 38 211 }
+				color2={ 255 255 255 }
+				
+				b_drachenstein_5 = {
+				}
+				b_drachenstein_6 = {
+				}
+				b_drachenstein_7 = {
+				}
+				b_drachenstein_8 = {
+				}
+			}
+			c_eisenrath = { # 217
+				color={ 240 45 31 }
+				color2={ 255 255 255 }
+				
+				b_eisenrath = {
+				}
+				b_eisenrath_2 = {
+				}
+				b_eisenrath_3 = {
+				}
+				b_eisenrath_4 = {
+				}
+			}
+			c_erlschwerd = { # 215
+				color={ 240 94 79 }
+				color2={ 255 255 255 }
+				
+				b_erlschwerd = {
+				}
+				b_erlschwerd_2 = {
+				}
+				b_erlschwerd_3 = {
+				}
+				b_erlschwerd_4 = {
+				}
+			}
+			c_gueldenharsch = { # 216
+				color={ 240 32 217 }
+				color2={ 255 255 255 }
+				
+				b_gueldenharsch = {
+				}
+				b_gueldenharsch_2 = {
+				}
+				b_gueldenharsch_3 = {
+				}
+				b_gueldenharsch_4 = {
+				}
+			}
+			c_rumpenfels = { # 218
+				color={ 240 221 41 }
+				color2={ 255 255 255 }
+				
+				b_rumpenfels = {
+				}
+				b_rumpenfels_2 = {
+				}
+				b_rumpenfels_3 = {
+				}
+				b_rumpenfels_4 = {
+				}
+			}
+			c_ungolfsthann = { # 214
+				color={ 240 164 50 }
+				color2={ 255 255 255 }
+				
+				b_ungolfsthann = {
+				}
+				b_ungolfsthann_2 = {
+				}
+				b_ungolfsthann_3 = {
+				}
+				b_ungolfsthann_4 = {
+				}
+			}
+		}
+		d_beilunk = {
+			color={ 113 57 49 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 278 province_id = 279 province_id = 280 province_id = 281 province_id = 282 province_id = 283 province_id = 284 province_id = 285 province_id = 286 province_id = 287 province_id = 288 province_id = 289 province_id = 290 province_id = 291 province_id = 292 } }
+				}
+			}
+			capital = 278 # c_saldersand
+			
+			c_saldersand = { # 278
+				color={ 103 67 44 }
+				color2={ 255 255 255 }
+				
+				b_saldersand = {
+				}
+				b_saldersand_2 = {
+				}
+				b_saldersand_3 = {
+				}
+				b_saldersand_4 = {
+				}
+			}
+			c_beilunk = { # 286
+				color={ 103 51 59 }
+				color2={ 255 255 255 }
+				
+				b_beilunk = {
+				}
+				b_beilunk_2 = {
+				}
+				b_beilunk_3 = {
+				}
+				b_beilunk_4 = {
+				}
+			}
+			c_borobunth = { # 284
+				color={ 103 196 80 }
+				color2={ 255 255 255 }
+				
+				b_borobunth = {
+				}
+				b_borobunth_2 = {
+				}
+				b_borobunth_3 = {
+				}
+				b_borobunth_4 = {
+				}
+			}
+			c_drileuen = { # 288
+				color={ 103 207 195 }
+				color2={ 255 255 255 }
+				
+				b_drileuen = {
+				}
+				b_drileuen_2 = {
+				}
+				b_drileuen_3 = {
+				}
+				b_drileuen_4 = {
+				}
+			}
+			c_greifenau = { # 280
+				color={ 103 190 196 }
+				color2={ 255 255 255 }
+				
+				b_greifenau = {
+				}
+				b_greifenau_2 = {
+				}
+				b_greifenau_3 = {
+				}
+				b_greifenau_4 = {
+				}
+			}
+			c_gruenau = { # 290
+				color={ 103 52 194 }
+				color2={ 255 255 255 }
+				
+				b_gruenau = {
+				}
+				b_gruenau_2 = {
+				}
+				b_gruenau_3 = {
+				}
+				b_gruenau_4 = {
+				}
+			}
+			c_ilderasch = { # 292
+				color={ 103 69 213 }
+				color2={ 255 255 255 }
+				
+				b_ilderasch = {
+				}
+				b_ilderasch_2 = {
+				}
+				b_ilderasch_3 = {
+				}
+				b_ilderasch_4 = {
+				}
+			}
+			c_kurkum = { # 291
+				color={ 103 54 46 }
+				color2={ 255 255 255 }
+				
+				b_kurkum = {
+				}
+				b_kurkum_2 = {
+				}
+				b_kurkum_3 = {
+				}
+				b_kurkum_4 = {
+				}
+			}
+			c_lorgolosch = { # 281
+				color={ 103 28 137 }
+				color2={ 255 255 255 }
+				
+				b_lorgolosch = {
+				}
+				b_lorgolosch_2 = {
+				}
+				b_lorgolosch_3 = {
+				}
+				b_lorgolosch_4 = {
+				}
+			}
+			c_lyll = { # 279
+				color={ 103 203 191 }
+				color2={ 255 255 255 }
+				
+				b_lyll = {
+				}
+				b_lyll_2 = {
+				}
+				b_lyll_3 = {
+				}
+				b_lyll_4 = {
+				}
+			}
+			c_maich = { # 283
+				color={ 103 195 47 }
+				color2={ 255 255 255 }
+				
+				b_maich = {
+				}
+				b_maich_2 = {
+				}
+				b_maich_3 = {
+				}
+				b_maich_4 = {
+				}
+			}
+			c_norbeneck = { # 282
+				color={ 103 58 193 }
+				color2={ 255 255 255 }
+				
+				b_norbeneck = {
+				}
+				b_norbeneck_2 = {
+				}
+				b_norbeneck_3 = {
+				}
+				b_norbeneck_4 = {
+				}
+			}
+			c_ogerbusch = { # 289
+				color={ 103 218 50 }
+				color2={ 255 255 255 }
+				
+				b_ogerbusch = {
+				}
+				b_ogerbusch_2 = {
+				}
+				b_ogerbusch_3 = {
+				}
+				b_ogerbusch_4 = {
+				}
+			}
+			c_ring_of_lorgolosch = { # 285
+				color={ 103 171 209 }
+				color2={ 255 255 255 }
+				
+				b_ring_of_lorgolosch = {
+				}
+				b_ring_of_lorgolosch_2 = {
+				}
+				b_ring_of_lorgolosch_3 = {
+				}
+				b_ring_of_lorgolosch_4 = {
+				}
+			}
+			c_shamaham = { # 287
+				color={ 103 196 196 }
+				color2={ 255 255 255 }
+				
+				b_shamaham = {
+				}
+				b_shamaham_2 = {
+				}
+				b_shamaham_3 = {
+				}
+				b_shamaham_4 = {
+				}
+			}
+		}
+		d_mendena = {
+			color={ 82 216 201 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 225 province_id = 226 province_id = 227 province_id = 228 province_id = 229 province_id = 230 province_id = 231 province_id = 232 province_id = 233 province_id = 234 province_id = 235 province_id = 236 province_id = 237 province_id = 238 } }
+				}
+			}
+			capital = 225 # c_zossberg
+			
+			c_zossberg = { # 225
+				color={ 92 206 206 }
+				color2={ 255 255 255 }
+				
+				b_zossberg = {
+				}
+				b_zossberg_2 = {
+				}
+				b_zossberg_3 = {
+				}
+				b_zossberg_4 = {
+				}
+			}
+			c_borwein = { # 236
+				color={ 92 26 19 }
+				color2={ 255 255 255 }
+				
+				b_borwein = {
+				}
+				b_borwein_2 = {
+				}
+				b_borwein_3 = {
+				}
+				b_borwein_4 = {
+				}
+			}
+			c_foehrenhain = { # 229
+				color={ 142 193 199 }
+				color2={ 255 255 255 }
+				
+				b_foehrenhain = {
+				}
+				b_foehrenhain_2 = {
+				}
+				b_foehrenhain_3 = {
+				}
+				b_foehrenhain_4 = {
+				}
+			}
+			c_ilsur = { # 226
+				color={ 92 228 20 }
+				color2={ 255 255 255 }
+				
+				b_ilsur = {
+				}
+				b_ilsur_2 = {
+				}
+				b_ilsur_3 = {
+				}
+				b_ilsur_4 = {
+				}
+			}
+			c_keilerau = { # 232
+				color={ 142 221 61 }
+				color2={ 255 255 255 }
+				
+				b_keilerau = {
+				}
+				b_keilerau_2 = {
+				}
+				b_keilerau_3 = {
+				}
+				b_keilerau_4 = {
+				}
+			}
+			c_kohlerungen = { # 230
+				color={ 142 201 63 }
+				color2={ 255 255 255 }
+				
+				b_kohlerungen = {
+				}
+				b_kohlerungen_2 = {
+				}
+				b_kohlerungen_3 = {
+				}
+				b_kohlerungen_4 = {
+				}
+			}
+			c_muschelstrand = { # 235
+				color={ 142 78 34 }
+				color2={ 255 255 255 }
+				
+				b_muschelstrand = {
+				}
+				b_muschelstrand_2 = {
+				}
+				b_muschelstrand_3 = {
+				}
+				b_muschelstrand_4 = {
+				}
+			}
+			c_quellensprung = { # 228
+				color={ 92 185 59 }
+				color2={ 255 255 255 }
+				
+				b_quellensprung = {
+				}
+				b_quellensprung_2 = {
+				}
+				b_quellensprung_3 = {
+				}
+				b_quellensprung_4 = {
+				}
+			}
+			c_rallerfeste = { # 227
+				color={ 92 34 217 }
+				color2={ 255 255 255 }
+				
+				b_rallerfeste = {
+				}
+				b_rallerfeste_2 = {
+				}
+				b_rallerfeste_3 = {
+				}
+				b_rallerfeste_4 = {
+				}
+			}
+			c_rulat = { # 237
+				color={ 142 218 16 }
+				color2={ 255 255 255 }
+				
+				b_rulat = {
+				}
+				b_rulat_2 = {
+				}
+				b_rulat_3 = {
+				}
+				b_rulat_4 = {
+				}
+			}
+			c_sarkdosk = { # 233
+				color={ 92 180 211 }
+				color2={ 255 255 255 }
+				
+				b_sarkdosk = {
+				}
+				b_sarkdosk_2 = {
+				}
+				b_sarkdosk_3 = {
+				}
+				b_sarkdosk_4 = {
+				}
+			}
+			c_tesral = { # 231
+				color={ 142 128 125 }
+				color2={ 255 255 255 }
+				
+				b_tesral = {
+				}
+				b_tesral_2 = {
+				}
+				b_tesral_3 = {
+				}
+				b_tesral_4 = {
+				}
+			}
+			c_tisal = { # 234
+				color={ 142 48 147 }
+				color2={ 255 255 255 }
+				
+				b_tisal = {
+				}
+				b_tisal_2 = {
+				}
+				b_tisal_3 = {
+				}
+				b_tisal_4 = {
+				}
+			}
+			c_ulracht = { # 238
+				color={ 142 46 53 }
+				color2={ 255 255 255 }
+				
+				b_ulracht = {
+				}
+				b_ulracht_2 = {
+				}
+				b_ulracht_3 = {
+				}
+				b_ulracht_4 = {
+				}
+			}
+		}
+		d_misamund = {
+			color={ 230 234 41 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 219 province_id = 220 province_id = 221 province_id = 222 province_id = 223 province_id = 224 } }
+				}
+			}
+			capital = 219 # c_misafelden
+			
+			c_misafelden = { # 219
+				color={ 240 224 46 }
+				color2={ 255 255 255 }
+				
+				b_misafelden = {
+				}
+				b_misafelden_2 = {
+				}
+				b_misafelden_3 = {
+				}
+				b_misafelden_4 = {
+				}
+			}
+			c_alst = { # 221
+				color={ 240 129 132 }
+				color2={ 255 255 255 }
+				
+				b_alst = {
+				}
+				b_alst_2 = {
+				}
+				b_alst_3 = {
+				}
+				b_alst_4 = {
+				}
+			}
+			c_firunsschlifen = { # 222
+				color={ 240 43 178 }
+				color2={ 255 255 255 }
+				
+				b_firunsschlifen = {
+				}
+				b_firunsschlifen_2 = {
+				}
+				b_firunsschlifen_3 = {
+				}
+				b_firunsschlifen_4 = {
+				}
+			}
+			c_misamuendel = { # 223
+				color={ 240 47 51 }
+				color2={ 255 255 255 }
+				
+				b_misamuendel = {
+				}
+				b_misamuendel_2 = {
+				}
+				b_misamuendel_3 = {
+				}
+				b_misamuendel_4 = {
+				}
+			}
+			c_tirandur = { # 224
+				color={ 240 209 69 }
+				color2={ 255 255 255 }
+				
+				b_tirandur = {
+				}
+				b_tirandur_2 = {
+				}
+				b_tirandur_3 = {
+				}
+				b_tirandur_4 = {
+				}
+			}
+			c_vallusa = { # 220
+				color={ 240 128 193 }
+				color2={ 255 255 255 }
+				
+				b_vallusa = {
+				}
+				b_vallusa_2 = {
+				}
+				b_vallusa_3 = {
+				}
+				b_vallusa_4 = {
+				}
+			}
+		}
+		d_osterfelden = {
+			color={ 77 208 58 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 252 province_id = 253 province_id = 254 province_id = 255 province_id = 256 province_id = 257 province_id = 258 province_id = 259 } }
+				}
+			}
+			capital = 252 # c_tobelstein
+			
+			c_tobelstein = { # 252
+				color={ 67 218 53 }
+				color2={ 255 255 255 }
+				
+				b_tobelstein = {
+				}
+				b_tobelstein_2 = {
+				}
+				b_tobelstein_3 = {
+				}
+				b_tobelstein_4 = {
+				}
+			}
+			c_ebersberg = { # 257
+				color={ 67 31 26 }
+				color2={ 255 255 255 }
+				
+				b_ebersberg = {
+				}
+				b_ebersberg_2 = {
+				}
+				b_ebersberg_3 = {
+				}
+				b_ebersberg_4 = {
+				}
+			}
+			c_freudenberg = { # 256
+				color={ 67 218 226 }
+				color2={ 255 255 255 }
+				
+				b_freudenberg = {
+				}
+				b_freudenberg_2 = {
+				}
+				b_freudenberg_3 = {
+				}
+				b_freudenberg_4 = {
+				}
+			}
+			c_lauchenwart = { # 258
+				color={ 67 214 33 }
+				color2={ 255 255 255 }
+				
+				b_lauchenwart = {
+				}
+				b_lauchenwart_2 = {
+				}
+				b_lauchenwart_3 = {
+				}
+				b_lauchenwart_4 = {
+				}
+			}
+			c_lindenhain = { # 259
+				color={ 67 213 202 }
+				color2={ 255 255 255 }
+				
+				b_lindenhain = {
+				}
+				b_lindenhain_2 = {
+				}
+				b_lindenhain_3 = {
+				}
+				b_lindenhain_4 = {
+				}
+			}
+			c_schwarzsicheln = { # 254
+				color={ 67 35 61 }
+				color2={ 255 255 255 }
+				
+				b_schwarzsicheln = {
+				}
+				b_schwarzsicheln_2 = {
+				}
+				b_schwarzsicheln_3 = {
+				}
+				b_schwarzsicheln_4 = {
+				}
+			}
+			c_wetterklamm = { # 255
+				color={ 67 39 215 }
+				color2={ 255 255 255 }
+				
+				b_wetterklamm = {
+				}
+				b_wetterklamm_2 = {
+				}
+				b_wetterklamm_3 = {
+				}
+				b_wetterklamm_4 = {
+				}
+			}
+			c_willbergen = { # 253
+				color={ 67 22 232 }
+				color2={ 255 255 255 }
+				
+				b_willbergen = {
+				}
+				b_willbergen_2 = {
+				}
+				b_willbergen_3 = {
+				}
+				b_willbergen_4 = {
+				}
+			}
+		}
+		d_tobimora = {
+			color={ 68 235 146 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 239 province_id = 240 province_id = 241 province_id = 242 province_id = 243 province_id = 244 province_id = 245 province_id = 246 province_id = 247 province_id = 248 province_id = 249 province_id = 250 province_id = 251 } }
+				}
+			}
+			capital = 239 # c_waischenroth
+			
+			c_waischenroth = { # 239
+				color={ 78 225 151 }
+				color2={ 255 255 255 }
+				
+				b_waischenroth = {
+				}
+				b_waischenroth_2 = {
+				}
+				b_waischenroth_3 = {
+				}
+				b_waischenroth_4 = {
+				}
+			}
+			c_aellingen = { # 243
+				color={ 78 219 67 }
+				color2={ 255 255 255 }
+				
+				b_aellingen = {
+				}
+				b_aellingen_2 = {
+				}
+				b_aellingen_3 = {
+				}
+				b_aellingen_4 = {
+				}
+			}
+			c_albersrode = { # 249
+				color={ 78 94 172 }
+				color2={ 255 255 255 }
+				
+				b_albersrode = {
+				}
+				b_albersrode_2 = {
+				}
+				b_albersrode_3 = {
+				}
+				b_albersrode_4 = {
+				}
+			}
+			c_baruns_pappel = { # 248
+				color={ 78 161 70 }
+				color2={ 255 255 255 }
+				
+				b_baruns_pappel = {
+				}
+				b_baruns_pappel_2 = {
+				}
+				b_baruns_pappel_3 = {
+				}
+				b_baruns_pappel_4 = {
+				}
+			}
+			c_becherlingen = { # 251
+				color={ 78 117 205 }
+				color2={ 255 255 255 }
+				
+				b_becherlingen = {
+				}
+				b_becherlingen_2 = {
+				}
+				b_becherlingen_3 = {
+				}
+				b_becherlingen_4 = {
+				}
+			}
+			c_bergenshus = { # 247
+				color={ 78 75 80 }
+				color2={ 255 255 255 }
+				
+				b_bergenshus = {
+				}
+				b_bergenshus_2 = {
+				}
+				b_bergenshus_3 = {
+				}
+				b_bergenshus_4 = {
+				}
+			}
+			c_kummersfelden = { # 250
+				color={ 78 150 25 }
+				color2={ 255 255 255 }
+				
+				b_kummersfelden = {
+				}
+				b_kummersfelden_2 = {
+				}
+				b_kummersfelden_3 = {
+				}
+				b_kummersfelden_4 = {
+				}
+			}
+			c_maus = { # 245
+				color={ 78 203 176 }
+				color2={ 255 255 255 }
+				
+				b_maus = {
+				}
+				b_maus_2 = {
+				}
+				b_maus_3 = {
+				}
+				b_maus_4 = {
+				}
+			}
+			c_nordweide = { # 246
+				color={ 78 33 171 }
+				color2={ 255 255 255 }
+				
+				b_nordweide = {
+				}
+				b_nordweide_2 = {
+				}
+				b_nordweide_3 = {
+				}
+				b_nordweide_4 = {
+				}
+			}
+			c_schnattermoor = { # 242
+				color={ 78 41 129 }
+				color2={ 255 255 255 }
+				
+				b_schnattermoor = {
+				}
+				b_schnattermoor_2 = {
+				}
+				b_schnattermoor_3 = {
+				}
+				b_schnattermoor_4 = {
+				}
+			}
+			c_schwuerzhofen = { # 240
+				color={ 78 235 128 }
+				color2={ 255 255 255 }
+				
+				b_schwuerzhofen = {
+				}
+				b_schwuerzhofen_2 = {
+				}
+				b_schwuerzhofen_3 = {
+				}
+				b_schwuerzhofen_4 = {
+				}
+			}
+			c_tizamsquell = { # 244
+				color={ 78 135 39 }
+				color2={ 255 255 255 }
+				
+				b_tizamsquell = {
+				}
+				b_tizamsquell_2 = {
+				}
+				b_tizamsquell_3 = {
+				}
+				b_tizamsquell_4 = {
+				}
+			}
+			c_windgau = { # 241
+				color={ 78 31 111 }
+				color2={ 255 255 255 }
+				
+				b_windgau = {
+				}
+				b_windgau_2 = {
+				}
+				b_windgau_3 = {
+				}
+				b_windgau_4 = {
+				}
+			}
+		}
+		d_warunk = {
+			color={ 175 13 58 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 273 province_id = 274 province_id = 275 province_id = 276 province_id = 277 } }
+				}
+			}
+			capital = 273 # c_natterngras
+			
+			c_natterngras = { # 273
+				color={ 165 23 53 }
+				color2={ 255 255 255 }
+				
+				b_natterngras = {
+				}
+				b_natterngras_2 = {
+				}
+				b_natterngras_3 = {
+				}
+				b_natterngras_4 = {
+				}
+			}
+			c_binsenbeck = { # 274
+				color={ 165 187 211 }
+				color2={ 255 255 255 }
+				
+				b_binsenbeck = {
+				}
+				b_binsenbeck_2 = {
+				}
+				b_binsenbeck_3 = {
+				}
+				b_binsenbeck_4 = {
+				}
+			}
+			c_rabenfeld = { # 276
+				color={ 165 210 197 }
+				color2={ 255 255 255 }
+				
+				b_rabenfeld = {
+				}
+				b_rabenfeld_2 = {
+				}
+				b_rabenfeld_3 = {
+				}
+				b_rabenfeld_4 = {
+				}
+			}
+			c_radromsbusch = { # 275
+				color={ 165 65 52 }
+				color2={ 255 255 255 }
+				
+				b_radromsbusch = {
+				}
+				b_radromsbusch_2 = {
+				}
+				b_radromsbusch_3 = {
+				}
+				b_radromsbusch_4 = {
+				}
+			}
+			c_warunk = { # 277
+				color={ 165 175 48 }
+				color2={ 255 255 255 }
+				
+				b_warunk = {
+				}
+				b_warunk_2 = {
+				}
+				b_warunk_3 = {
+				}
+				b_warunk_4 = {
+				}
+			}
+		}
+		d_ysilia = {
+			color={ 46 41 44 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 260 province_id = 261 province_id = 262 province_id = 263 province_id = 264 province_id = 265 province_id = 266 province_id = 267 province_id = 268 province_id = 269 province_id = 270 province_id = 271 province_id = 272 } }
+				}
+			}
+			capital = 260 # c_falkenberg
+			
+			c_falkenberg = { # 260
+				color={ 36 51 39 }
+				color2={ 255 255 255 }
+				
+				b_falkenberg = {
+				}
+				b_falkenberg_2 = {
+				}
+				b_falkenberg_3 = {
+				}
+				b_falkenberg_4 = {
+				}
+			}
+			c_eichmoor = { # 267
+				color={ 36 33 41 }
+				color2={ 255 255 255 }
+				
+				b_eichmoor = {
+				}
+				b_eichmoor_2 = {
+				}
+				b_eichmoor_3 = {
+				}
+				b_eichmoor_4 = {
+				}
+			}
+			c_kathenberg = { # 263
+				color={ 36 243 29 }
+				color2={ 255 255 255 }
+				
+				b_kathenberg = {
+				}
+				b_kathenberg_2 = {
+				}
+				b_kathenberg_3 = {
+				}
+				b_kathenberg_4 = {
+				}
+			}
+			c_kleinwardstein = { # 268
+				color={ 36 212 225 }
+				color2={ 255 255 255 }
+				
+				b_kleinwardstein = {
+				}
+				b_kleinwardstein_2 = {
+				}
+				b_kleinwardstein_3 = {
+				}
+				b_kleinwardstein_4 = {
+				}
+			}
+			c_kuenssberg = { # 262
+				color={ 36 221 206 }
+				color2={ 255 255 255 }
+				
+				b_kuenssberg = {
+				}
+				b_kuenssberg_2 = {
+				}
+				b_kuenssberg_3 = {
+				}
+				b_kuenssberg_4 = {
+				}
+			}
+			c_liliengrund = { # 270
+				color={ 36 235 22 }
+				color2={ 255 255 255 }
+				
+				b_liliengrund = {
+				}
+				b_liliengrund_2 = {
+				}
+				b_liliengrund_3 = {
+				}
+				b_liliengrund_4 = {
+				}
+			}
+			c_mundtbach = { # 265
+				color={ 0 221 194 }
+				color2={ 255 255 255 }
+				
+				b_mundtbach = {
+				}
+				b_mundtbach_2 = {
+				}
+				b_mundtbach_3 = {
+				}
+				b_mundtbach_4 = {
+				}
+			}
+			c_nevelung = { # 264
+				color={ 36 51 205 }
+				color2={ 255 255 255 }
+				
+				b_nevelung = {
+				}
+				b_nevelung_2 = {
+				}
+				b_nevelung_3 = {
+				}
+				b_nevelung_4 = {
+				}
+			}
+			c_oberdarpatien = { # 272
+				color={ 36 44 37 }
+				color2={ 255 255 255 }
+				
+				b_oberdarpatien = {
+				}
+				b_oberdarpatien_2 = {
+				}
+				b_oberdarpatien_3 = {
+				}
+				b_oberdarpatien_4 = {
+				}
+			}
+			c_ogertrift = { # 269
+				color={ 36 32 228 }
+				color2={ 255 255 255 }
+				
+				b_ogertrift = {
+				}
+				b_ogertrift_2 = {
+				}
+				b_ogertrift_3 = {
+				}
+				b_ogertrift_4 = {
+				}
+			}
+			c_rauffenberg = { # 271
+				color={ 0 183 41 }
+				color2={ 255 255 255 }
+				
+				b_rauffenberg = {
+				}
+				b_rauffenberg_2 = {
+				}
+				b_rauffenberg_3 = {
+				}
+				b_rauffenberg_4 = {
+				}
+			}
+			c_spogelsen = { # 261
+				color={ 36 222 34 }
+				color2={ 255 255 255 }
+				
+				b_spogelsen = {
+				}
+				b_spogelsen_2 = {
+				}
+				b_spogelsen_3 = {
+				}
+				b_spogelsen_4 = {
+				}
+			}
+			c_winsheym = { # 266
+				color={ 0 29 139 }
+				color2={ 255 255 255 }
+				
+				b_winsheym = {
+				}
+				b_winsheym_2 = {
+				}
+				b_winsheym_3 = {
+				}
+				b_winsheym_4 = {
 				}
 			}
 		}

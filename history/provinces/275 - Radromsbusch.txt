@@ -1,0 +1,18 @@
+# c_radromsbusch
+
+# County Title
+title = c_radromsbusch
+
+# Settlements
+max_settlements = 4
+
+b_radromsbusch = castle
+#b_radromsbusch_2 = city
+#b_radromsbusch_3 = temple
+#b_radromsbusch_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

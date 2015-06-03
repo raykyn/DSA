@@ -1,0 +1,18 @@
+# c_ring_of_lorgolosch
+
+# County Title
+title = c_ring_of_lorgolosch
+
+# Settlements
+max_settlements = 4
+
+b_ring_of_lorgolosch = castle
+#b_ring_of_lorgolosch_2 = city
+#b_ring_of_lorgolosch_3 = temple
+#b_ring_of_lorgolosch_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

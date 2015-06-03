@@ -1,0 +1,18 @@
+# c_rabenfeld
+
+# County Title
+title = c_rabenfeld
+
+# Settlements
+max_settlements = 4
+
+b_rabenfeld = castle
+#b_rabenfeld_2 = city
+#b_rabenfeld_3 = temple
+#b_rabenfeld_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

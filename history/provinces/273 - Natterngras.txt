@@ -1,0 +1,18 @@
+# c_natterngras
+
+# County Title
+title = c_natterngras
+
+# Settlements
+max_settlements = 4
+
+b_natterngras = castle
+#b_natterngras_2 = city
+#b_natterngras_3 = temple
+#b_natterngras_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

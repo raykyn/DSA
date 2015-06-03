@@ -1,0 +1,18 @@
+# c_kuenssberg
+
+# County Title
+title = c_kuenssberg
+
+# Settlements
+max_settlements = 4
+
+b_kuenssberg = castle
+#b_kuenssberg_2 = city
+#b_kuenssberg_3 = temple
+#b_kuenssberg_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

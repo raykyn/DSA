@@ -3,6 +3,8 @@ d_baerwalde;Bärwalde;Bärwalde;Bärwalde;;Bärwalde;;;;;;;;;x
 d_baerwalde_adj;Bärwaldean;;bärwalder;;;;;;;;;;;x
 d_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
 d_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
+d_beilunk;Beilunk;Beilunk;Beilunk;;Beilunk;;;;;;;;;x
+d_beilunk_adj;Beilunkian;;beilunker;;;;;;;;;;;x
 d_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 d_drachenstein_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
 d_eslamsgrund;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
@@ -25,6 +27,8 @@ d_misamund;Misamund;Misamund;Misamund;;Misamund;;;;;;;;;x
 d_misamund_adj;Misamundian;;misamunder;;;;;;;;;;;x
 d_ochsenwasser;Ochsenwasser;Ochsenwasser;Ochsenwasser;;Ochsenwasser;;;;;;;;;x
 d_ochsenwasser_adj;Ochsenwasserian;;ochsenwasserer;;;;;;;;;;;x
+d_osterfelden;Osterfelden;Osterfelden;Osterfelden;;Osterfelden;;;;;;;;;x
+d_osterfelden_adj;Osterfeldenian;;osterfeldener;;;;;;;;;;;x
 d_ragath;Ragath;Ragath;Ragath;;Ragath;;;;;;;;;x
 d_ragath_adj;Ragathian;;ragather;;;;;;;;;;;x
 d_reichsforst;Reichsforst;Reichsforst;Reichsforst;;Reichsforst;;;;;;;;;x
@@ -43,11 +47,15 @@ d_waldstein;Waldstein;Waldstein;Waldstein;;Waldstein;;;;;;;;;x
 d_waldstein_adj;Waldsteinian;;waldsteiner;;;;;;;;;;;x
 d_waldwacht;Waldwacht;Waldwacht;Waldwacht;;Waldwacht;;;;;;;;;x
 d_waldwacht_adj;Waldwachtian;;waldwachter;;;;;;;;;;;x
+d_warunk;Warunk;Warunk;Warunk;;Warunk;;;;;;;;;x
+d_warunk_adj;Warunkian;;warunker;;;;;;;;;;;x
 d_wehrheim;Wehrheim;Wehrheim;Wehrheim;;Wehrheim;;;;;;;;;x
 d_wehrheim_adj;Wehrheimian;;wehrheimer;;;;;;;;;;;x
 d_wengenholm;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 d_wengenholm_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
 d_yaquirtal;Yaquirtal;Yaquirtal;Yaquirtal;;Yaquirtal;;;;;;;;;x
 d_yaquirtal_adj;Yaquirtalian;;yaquirtaler;;;;;;;;;;;x
+d_ysilia;Ysilia;Ysilia;Ysilia;;Ysilia;;;;;;;;;x
+d_ysilia_adj;Ysilian;;ysiler;;;;;;;;;;;x
 d_zweimuehlen;Zweimühlen;Zweimühlen;Zweimühlen;;Zweimühlen;;;;;;;;;x
 d_zweimuehlen_adj;Zweimühlenian;;zweimühlener;;;;;;;;;;;x

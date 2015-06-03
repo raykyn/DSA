@@ -1,0 +1,18 @@
+# c_tobelstein
+
+# County Title
+title = c_tobelstein
+
+# Settlements
+max_settlements = 4
+
+b_tobelstein = castle
+#b_tobelstein_2 = city
+#b_tobelstein_3 = temple
+#b_tobelstein_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

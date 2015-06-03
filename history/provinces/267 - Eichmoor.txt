@@ -1,0 +1,18 @@
+# c_eichmoor
+
+# County Title
+title = c_eichmoor
+
+# Settlements
+max_settlements = 4
+
+b_eichmoor = castle
+#b_eichmoor_2 = city
+#b_eichmoor_3 = temple
+#b_eichmoor_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

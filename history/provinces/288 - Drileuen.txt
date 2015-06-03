@@ -1,0 +1,18 @@
+# c_drileuen
+
+# County Title
+title = c_drileuen
+
+# Settlements
+max_settlements = 4
+
+b_drileuen = castle
+#b_drileuen_2 = city
+#b_drileuen_3 = temple
+#b_drileuen_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

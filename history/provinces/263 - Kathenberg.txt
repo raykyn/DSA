@@ -1,0 +1,18 @@
+# c_kathenberg
+
+# County Title
+title = c_kathenberg
+
+# Settlements
+max_settlements = 4
+
+b_kathenberg = castle
+#b_kathenberg_2 = city
+#b_kathenberg_3 = temple
+#b_kathenberg_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

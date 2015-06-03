@@ -1,0 +1,18 @@
+# c_borobunth
+
+# County Title
+title = c_borobunth
+
+# Settlements
+max_settlements = 4
+
+b_borobunth = castle
+#b_borobunth_2 = city
+#b_borobunth_3 = temple
+#b_borobunth_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

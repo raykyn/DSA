@@ -1,0 +1,18 @@
+# c_rauffenberg
+
+# County Title
+title = c_rauffenberg
+
+# Settlements
+max_settlements = 4
+
+b_rauffenberg = castle
+#b_rauffenberg_2 = city
+#b_rauffenberg_3 = temple
+#b_rauffenberg_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

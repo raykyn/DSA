@@ -1,0 +1,18 @@
+# c_freudenberg
+
+# County Title
+title = c_freudenberg
+
+# Settlements
+max_settlements = 4
+
+b_freudenberg = castle
+#b_freudenberg_2 = city
+#b_freudenberg_3 = temple
+#b_freudenberg_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

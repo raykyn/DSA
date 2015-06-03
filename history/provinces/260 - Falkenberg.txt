@@ -1,0 +1,18 @@
+# c_falkenberg
+
+# County Title
+title = c_falkenberg
+
+# Settlements
+max_settlements = 4
+
+b_falkenberg = castle
+#b_falkenberg_2 = city
+#b_falkenberg_3 = temple
+#b_falkenberg_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

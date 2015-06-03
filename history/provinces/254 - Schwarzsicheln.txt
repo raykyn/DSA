@@ -1,0 +1,18 @@
+# c_schwarzsicheln
+
+# County Title
+title = c_schwarzsicheln
+
+# Settlements
+max_settlements = 4
+
+b_schwarzsicheln = castle
+#b_schwarzsicheln_2 = city
+#b_schwarzsicheln_3 = temple
+#b_schwarzsicheln_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

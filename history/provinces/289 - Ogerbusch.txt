@@ -1,0 +1,18 @@
+# c_ogerbusch
+
+# County Title
+title = c_ogerbusch
+
+# Settlements
+max_settlements = 4
+
+b_ogerbusch = castle
+#b_ogerbusch_2 = city
+#b_ogerbusch_3 = temple
+#b_ogerbusch_4 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History
