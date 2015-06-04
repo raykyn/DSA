@@ -1,0 +1,18 @@
+# c_bosquirien
+
+# County Title
+title = c_bosquirien
+
+# Settlements
+max_settlements = 4
+
+b_bosquirien = castle
+#b_bosquirien_2 = city
+#b_bosquirien_3 = temple
+#b_bosquirien_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

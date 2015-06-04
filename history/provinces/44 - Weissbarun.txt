@@ -1,0 +1,18 @@
+# c_weissbarun
+
+# County Title
+title = c_weissbarun
+
+# Settlements
+max_settlements = 4
+
+b_weissbarun = castle
+#b_weissbarun_2 = city
+#b_weissbarun_3 = temple
+#b_weissbarun_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

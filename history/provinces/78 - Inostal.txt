@@ -1,0 +1,18 @@
+# c_inostal
+
+# County Title
+title = c_inostal
+
+# Settlements
+max_settlements = 4
+
+b_inostal = castle
+#b_inostal_2 = city
+#b_inostal_3 = temple
+#b_inostal_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

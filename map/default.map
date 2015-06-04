@@ -1,6 +1,6 @@
 max_provinces = 1001
-# stats:  283 provinces
-# unused: 101-110
+# stats:  281 provinces
+# unused: 48-49 101-110
 definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
@@ -17,7 +17,7 @@ static = "static.txt"
 seasons = "seasons.txt"
 
 sea_zones = { 1000 1000 }
-sea_zones = { 77 78 }
+sea_zones = { 87 88 }
 
 ocean_region = {	# farmlands
 	sea_zones = { 1 }

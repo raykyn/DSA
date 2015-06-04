@@ -1,0 +1,18 @@
+# c_mesch
+
+# County Title
+title = c_mesch
+
+# Settlements
+max_settlements = 4
+
+b_mesch = castle
+#b_mesch_2 = city
+#b_mesch_3 = temple
+#b_mesch_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

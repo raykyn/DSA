@@ -1,0 +1,18 @@
+# c_brigella
+
+# County Title
+title = c_brigella
+
+# Settlements
+max_settlements = 4
+
+b_brigella = castle
+#b_brigella_2 = city
+#b_brigella_3 = temple
+#b_brigella_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

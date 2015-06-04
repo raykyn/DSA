@@ -1,0 +1,18 @@
+# c_bangour
+
+# County Title
+title = c_bangour
+
+# Settlements
+max_settlements = 4
+
+b_bangour = castle
+#b_bangour_2 = city
+#b_bangour_3 = temple
+#b_bangour_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

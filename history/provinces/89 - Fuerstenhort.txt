@@ -1,0 +1,18 @@
+# c_fuerstenhort
+
+# County Title
+title = c_fuerstenhort
+
+# Settlements
+max_settlements = 4
+
+b_fuerstenhort = castle
+#b_fuerstenhort_2 = city
+#b_fuerstenhort_3 = temple
+#b_fuerstenhort_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

@@ -1,0 +1,18 @@
+# c_nordhain
+
+# County Title
+title = c_nordhain
+
+# Settlements
+max_settlements = 4
+
+b_nordhain = castle
+#b_nordhain_2 = city
+#b_nordhain_3 = temple
+#b_nordhain_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

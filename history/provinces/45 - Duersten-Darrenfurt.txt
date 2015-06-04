@@ -1,0 +1,18 @@
+# c_duersten_darrenfurt
+
+# County Title
+title = c_duersten_darrenfurt
+
+# Settlements
+max_settlements = 4
+
+b_duersten_darrenfurt = castle
+#b_duersten_darrenfurt_2 = city
+#b_duersten_darrenfurt_3 = temple
+#b_duersten_darrenfurt_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

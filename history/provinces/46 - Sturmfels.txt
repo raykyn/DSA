@@ -1,0 +1,18 @@
+# c_sturmfels
+
+# County Title
+title = c_sturmfels
+
+# Settlements
+max_settlements = 4
+
+b_sturmfels = castle
+#b_sturmfels_2 = city
+#b_sturmfels_3 = temple
+#b_sturmfels_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_selaque
+
+# County Title
+title = c_selaque
+
+# Settlements
+max_settlements = 4
+
+b_selaque = castle
+#b_selaque_2 = city
+#b_selaque_3 = temple
+#b_selaque_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

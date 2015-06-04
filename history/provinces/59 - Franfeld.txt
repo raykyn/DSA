@@ -1,0 +1,18 @@
+# c_franfeld
+
+# County Title
+title = c_franfeld
+
+# Settlements
+max_settlements = 4
+
+b_franfeld = castle
+#b_franfeld_2 = city
+#b_franfeld_3 = temple
+#b_franfeld_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

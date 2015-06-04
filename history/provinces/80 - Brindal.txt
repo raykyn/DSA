@@ -1,0 +1,18 @@
+# c_brindal
+
+# County Title
+title = c_brindal
+
+# Settlements
+max_settlements = 4
+
+b_brindal = castle
+#b_brindal_2 = city
+#b_brindal_3 = temple
+#b_brindal_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

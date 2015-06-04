@@ -1,0 +1,18 @@
+# c_khahirios
+
+# County Title
+title = c_khahirios
+
+# Settlements
+max_settlements = 4
+
+b_khahirios = castle
+#b_khahirios_2 = city
+#b_khahirios_3 = temple
+#b_khahirios_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

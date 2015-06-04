@@ -1,0 +1,18 @@
+# c_geiersgau
+
+# County Title
+title = c_geiersgau
+
+# Settlements
+max_settlements = 4
+
+b_geiersgau = castle
+#b_geiersgau_2 = city
+#b_geiersgau_3 = temple
+#b_geiersgau_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_perrinmarsch
+
+# County Title
+title = c_perrinmarsch
+
+# Settlements
+max_settlements = 4
+
+b_perrinmarsch = castle
+#b_perrinmarsch_2 = city
+#b_perrinmarsch_3 = temple
+#b_perrinmarsch_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

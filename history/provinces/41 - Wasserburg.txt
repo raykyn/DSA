@@ -1,0 +1,18 @@
+# c_wasserburg
+
+# County Title
+title = c_wasserburg
+
+# Settlements
+max_settlements = 4
+
+b_wasserburg = castle
+#b_wasserburg_2 = city
+#b_wasserburg_3 = temple
+#b_wasserburg_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_gnitzenkuhl
+
+# County Title
+title = c_gnitzenkuhl
+
+# Settlements
+max_settlements = 4
+
+b_gnitzenkuhl = castle
+#b_gnitzenkuhl_2 = city
+#b_gnitzenkuhl_3 = temple
+#b_gnitzenkuhl_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

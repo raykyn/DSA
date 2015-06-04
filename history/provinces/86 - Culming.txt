@@ -1,0 +1,18 @@
+# c_culming
+
+# County Title
+title = c_culming
+
+# Settlements
+max_settlements = 4
+
+b_culming = castle
+#b_culming_2 = city
+#b_culming_3 = temple
+#b_culming_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

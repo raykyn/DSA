@@ -1,0 +1,18 @@
+# c_baerenfang
+
+# County Title
+title = c_baerenfang
+
+# Settlements
+max_settlements = 4
+
+b_baerenfang = castle
+#b_baerenfang_2 = city
+#b_baerenfang_3 = temple
+#b_baerenfang_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

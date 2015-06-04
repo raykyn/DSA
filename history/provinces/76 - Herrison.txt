@@ -1,0 +1,18 @@
+# c_herrison
+
+# County Title
+title = c_herrison
+
+# Settlements
+max_settlements = 4
+
+b_herrison = castle
+#b_herrison_2 = city
+#b_herrison_3 = temple
+#b_herrison_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_haselhain
+
+# County Title
+title = c_haselhain
+
+# Settlements
+max_settlements = 4
+
+b_haselhain = castle
+#b_haselhain_2 = city
+#b_haselhain_3 = temple
+#b_haselhain_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

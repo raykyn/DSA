@@ -1,0 +1,18 @@
+# c_birnbrosch
+
+# County Title
+title = c_birnbrosch
+
+# Settlements
+max_settlements = 4
+
+b_birnbrosch = castle
+#b_birnbrosch_2 = city
+#b_birnbrosch_3 = temple
+#b_birnbrosch_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

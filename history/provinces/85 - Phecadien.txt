@@ -1,0 +1,18 @@
+# c_phecadien
+
+# County Title
+title = c_phecadien
+
+# Settlements
+max_settlements = 4
+
+b_phecadien = castle
+#b_phecadien_2 = city
+#b_phecadien_3 = temple
+#b_phecadien_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

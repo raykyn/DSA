@@ -1,0 +1,18 @@
+# c_brendiltal
+
+# County Title
+title = c_brendiltal
+
+# Settlements
+max_settlements = 4
+
+b_brendiltal = castle
+#b_brendiltal_2 = city
+#b_brendiltal_3 = temple
+#b_brendiltal_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_imrah
+
+# County Title
+title = c_imrah
+
+# Settlements
+max_settlements = 4
+
+b_imrah = castle
+#b_imrah_2 = city
+#b_imrah_3 = temple
+#b_imrah_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History
