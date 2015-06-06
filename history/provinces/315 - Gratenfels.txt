@@ -1,0 +1,18 @@
+# c_gratenfels
+
+# County Title
+title = c_gratenfels
+
+# Settlements
+max_settlements = 4
+
+b_gratenfels = castle
+#b_gratenfels_2 = city
+#b_gratenfels_3 = temple
+#b_gratenfels_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

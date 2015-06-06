@@ -1,0 +1,18 @@
+# c_angroschsgau
+
+# County Title
+title = c_angroschsgau
+
+# Settlements
+max_settlements = 4
+
+b_angroschsgau = castle
+#b_angroschsgau_2 = city
+#b_angroschsgau_3 = temple
+#b_angroschsgau_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

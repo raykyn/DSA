@@ -1,0 +1,18 @@
+# c_hluthars_watch
+
+# County Title
+title = c_hluthars_watch
+
+# Settlements
+max_settlements = 4
+
+b_hluthars_watch = castle
+#b_hluthars_watch_2 = city
+#b_hluthars_watch_3 = temple
+#b_hluthars_watch_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

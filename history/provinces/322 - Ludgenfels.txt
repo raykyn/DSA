@@ -1,0 +1,18 @@
+# c_ludgenfels
+
+# County Title
+title = c_ludgenfels
+
+# Settlements
+max_settlements = 4
+
+b_ludgenfels = castle
+#b_ludgenfels_2 = city
+#b_ludgenfels_3 = temple
+#b_ludgenfels_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

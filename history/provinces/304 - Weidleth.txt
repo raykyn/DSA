@@ -1,0 +1,18 @@
+# c_weidleth
+
+# County Title
+title = c_weidleth
+
+# Settlements
+max_settlements = 4
+
+b_weidleth = castle
+#b_weidleth_2 = city
+#b_weidleth_3 = temple
+#b_weidleth_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

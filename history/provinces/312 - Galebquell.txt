@@ -1,0 +1,18 @@
+# c_galebquell
+
+# County Title
+title = c_galebquell
+
+# Settlements
+max_settlements = 4
+
+b_galebquell = castle
+#b_galebquell_2 = city
+#b_galebquell_3 = temple
+#b_galebquell_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

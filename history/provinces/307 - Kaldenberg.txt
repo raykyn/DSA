@@ -1,0 +1,18 @@
+# c_kaldenberg
+
+# County Title
+title = c_kaldenberg
+
+# Settlements
+max_settlements = 4
+
+b_kaldenberg = castle
+#b_kaldenberg_2 = city
+#b_kaldenberg_3 = temple
+#b_kaldenberg_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

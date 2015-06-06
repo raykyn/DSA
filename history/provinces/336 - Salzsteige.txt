@@ -1,0 +1,18 @@
+# c_salzsteige
+
+# County Title
+title = c_salzsteige
+
+# Settlements
+max_settlements = 4
+
+b_salzsteige = castle
+#b_salzsteige_2 = city
+#b_salzsteige_3 = temple
+#b_salzsteige_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

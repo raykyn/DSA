@@ -1,0 +1,18 @@
+# c_ambelmund
+
+# County Title
+title = c_ambelmund
+
+# Settlements
+max_settlements = 4
+
+b_ambelmund = castle
+#b_ambelmund_2 = city
+#b_ambelmund_3 = temple
+#b_ambelmund_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_widdernhall
+
+# County Title
+title = c_widdernhall
+
+# Settlements
+max_settlements = 4
+
+b_widdernhall = castle
+#b_widdernhall_2 = city
+#b_widdernhall_3 = temple
+#b_widdernhall_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

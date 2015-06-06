@@ -1,0 +1,18 @@
+# c_sichelwachter_drachenstein
+
+# County Title
+title = c_sichelwachter_drachenstein
+
+# Settlements
+max_settlements = 4
+
+b_sichelwachter_drachenstein = castle
+#b_sichelwachter_drachenstein_2 = city
+#b_sichelwachter_drachenstein_3 = temple
+#b_sichelwachter_drachenstein_4 = castle
+
+# Misc
+culture = meadows
+religion = puniner
+terrain = farmlands
+#History

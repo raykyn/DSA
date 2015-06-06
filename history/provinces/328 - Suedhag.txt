@@ -1,0 +1,18 @@
+# c_suedhag
+
+# County Title
+title = c_suedhag
+
+# Settlements
+max_settlements = 4
+
+b_suedhag = castle
+#b_suedhag_2 = city
+#b_suedhag_3 = temple
+#b_suedhag_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

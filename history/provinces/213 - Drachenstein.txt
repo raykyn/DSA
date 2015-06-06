@@ -12,7 +12,7 @@ b_drachenstein = castle
 #b_drachenstein_4 = castle
 
 # Misc
-culture = meadows
+culture = tobrian
 religion = puniner
 terrain = farmlands
 #History

@@ -1,0 +1,18 @@
+# c_berg
+
+# County Title
+title = c_berg
+
+# Settlements
+max_settlements = 4
+
+b_berg = castle
+#b_berg_2 = city
+#b_berg_3 = temple
+#b_berg_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_wettershag
+
+# County Title
+title = c_wettershag
+
+# Settlements
+max_settlements = 4
+
+b_wettershag = castle
+#b_wettershag_2 = city
+#b_wettershag_3 = temple
+#b_wettershag_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

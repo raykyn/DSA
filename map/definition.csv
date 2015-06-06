@@ -195,7 +195,7 @@ province;red;green;blue;x;x
 196;125;228;138;Rotenwasser;x
 197;125;225;218;Bollinger Heide;x
 198;125;21;121;Zippeldinge;x
-199;125;150;35;Drachenstein;x
+199;125;150;35;Sichelwachter Drachenstein;x
 200;125;130;226;Rotenforst;x
 201;125;207;206;Schwarzenstein;x
 202;125;232;210;Mauterndorf;x
@@ -209,7 +209,7 @@ province;red;green;blue;x;x
 210;125;21;68;Salthel;x
 211;125;210;222;Beonspfort;x
 212;125;227;32;Uhdenwald;x
-213;240;38;211;Drachenstein_2;x
+213;240;38;211;Drachenstein;x
 214;240;164;50;Ungolfsthann;x
 215;240;94;79;Erlschwerd;x
 216;240;32;217;Gueldenharsch;x
@@ -289,4 +289,48 @@ province;red;green;blue;x;x
 290;103;52;194;Gruenau;x
 291;103;54;46;Kurkum;x
 292;103;69;213;Ilderasch;x
+293;82;195;46;Klippag;x
+294;82;206;189;Fuchsgau;x
+295;82;40;214;Bollharschen;x
+296;135;30;32;Eisenwald;x
+297;135;42;25;Eisenstein;x
+298;135;223;59;Rabenstein;x
+299;135;69;38;Rodaschquell;x
+300;135;208;39;Tandosch;x
+301;135;103;192;Angroschsgau;x
+302;135;45;89;Dohlenfelde;x
+303;135;196;36;Wedengraben;x
+304;169;37;193;Weidleth;x
+305;169;210;46;Gernebruch;x
+306;169;229;217;Hluthars Watch;x
+307;169;22;32;Kaldenberg;x
+308;169;215;43;Albenhus;x
+309;169;221;208;Albengau;x
+310;169;27;45;Liepennstein;x
+311;236;35;26;Arraned;x
+312;236;39;70;Galebquell;x
+313;236;14;187;Firnholz;x
+314;236;220;162;Schnakensee;x
+315;236;228;62;Gratenfels;x
+316;236;212;224;Meilingen;x
+317;236;32;212;Berg;x
+318;236;57;228;Ambelmund;x
+319;236;221;44;Orgils Home;x
+320;236;191;236;Rickenhausen;x
+321;236;31;24;Witzichenberg;x
+322;236;210;46;Ludgenfels;x
+323;236;43;220;Schwertleihe;x
+324;236;164;33;Vairningen;x
+325;236;212;216;Paggenau;x
+326;236;228;173;Tommelsbeuge;x
+327;58;231;44;Wettershag;x
+328;58;27;58;Suedhag;x
+329;58;212;215;Weissengau;x
+330;58;220;31;Rondbirge;x
+331;58;32;26;Osthag;x
+332;58;207;41;Widdernhall;x
+333;58;67;56;Schattengrund;x
+334;58;80;49;Flachstein;x
+335;58;30;213;Greifenklamm;x
+336;58;32;219;Salzsteige;x
 1000;7;0;85;ProxyProvince;x

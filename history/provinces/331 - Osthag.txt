@@ -1,0 +1,18 @@
+# c_osthag
+
+# County Title
+title = c_osthag
+
+# Settlements
+max_settlements = 4
+
+b_osthag = castle
+#b_osthag_2 = city
+#b_osthag_3 = temple
+#b_osthag_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History

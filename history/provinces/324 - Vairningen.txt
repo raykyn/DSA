@@ -1,0 +1,18 @@
+# c_vairningen
+
+# County Title
+title = c_vairningen
+
+# Settlements
+max_settlements = 4
+
+b_vairningen = castle
+#b_vairningen_2 = city
+#b_vairningen_3 = temple
+#b_vairningen_4 = castle
+
+# Misc
+culture = northern_marches
+religion = puniner
+terrain = farmlands
+#History
