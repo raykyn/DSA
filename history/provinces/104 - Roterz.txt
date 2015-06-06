@@ -1,0 +1,18 @@
+# c_roterz
+
+# County Title
+title = c_roterz
+
+# Settlements
+max_settlements = 4
+
+b_roterz = castle
+#b_roterz_2 = city
+#b_roterz_3 = temple
+#b_roterz_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

@@ -1,0 +1,18 @@
+# c_hammerschlag
+
+# County Title
+title = c_hammerschlag
+
+# Settlements
+max_settlements = 4
+
+b_hammerschlag = castle
+#b_hammerschlag_2 = city
+#b_hammerschlag_3 = temple
+#b_hammerschlag_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

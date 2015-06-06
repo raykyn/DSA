@@ -1,0 +1,18 @@
+# c_nadoret
+
+# County Title
+title = c_nadoret
+
+# Settlements
+max_settlements = 4
+
+b_nadoret = castle
+#b_nadoret_2 = city
+#b_nadoret_3 = temple
+#b_nadoret_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History

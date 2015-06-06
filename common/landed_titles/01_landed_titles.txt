@@ -2308,6 +2308,110 @@ e_middlerealm = {
 				}
 			}
 		}
+		d_ferdok = {
+			color={ 25 66 105 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 104 province_id = 105 province_id = 106 province_id = 107 province_id = 108 province_id = 109 province_id = 110 } }
+				}
+			}
+			capital = 104 # c_roterz
+			
+			c_roterz = { # 104
+				color={ 15 76 100 }
+				color2={ 255 255 255 }
+				
+				b_roterz = {
+				}
+				b_roterz_2 = {
+				}
+				b_roterz_3 = {
+				}
+				b_roterz_4 = {
+				}
+			}
+			c_bragahn = { # 108
+				color={ 15 138 199 }
+				color2={ 255 255 255 }
+				
+				b_bragahn = {
+				}
+				b_bragahn_2 = {
+				}
+				b_bragahn_3 = {
+				}
+				b_bragahn_4 = {
+				}
+			}
+			c_ferdok = { # 110
+				color={ 15 169 179 }
+				color2={ 255 255 255 }
+				
+				b_ferdok = {
+				}
+				b_ferdok_2 = {
+				}
+				b_ferdok_3 = {
+				}
+				b_ferdok_4 = {
+				}
+			}
+			c_hammerschlag = { # 107
+				color={ 15 136 70 }
+				color2={ 255 255 255 }
+				
+				b_hammerschlag = {
+				}
+				b_hammerschlag_2 = {
+				}
+				b_hammerschlag_3 = {
+				}
+				b_hammerschlag_4 = {
+				}
+			}
+			c_moorbrueck = { # 106
+				color={ 15 80 59 }
+				color2={ 255 255 255 }
+				
+				b_moorbrueck = {
+				}
+				b_moorbrueck_2 = {
+				}
+				b_moorbrueck_3 = {
+				}
+				b_moorbrueck_4 = {
+				}
+			}
+			c_nadoret = { # 105
+				color={ 15 133 180 }
+				color2={ 255 255 255 }
+				
+				b_nadoret = {
+				}
+				b_nadoret_2 = {
+				}
+				b_nadoret_3 = {
+				}
+				b_nadoret_4 = {
+				}
+			}
+			c_stanniz = { # 109
+				color={ 15 189 137 }
+				color2={ 255 255 255 }
+				
+				b_stanniz = {
+				}
+				b_stanniz_2 = {
+				}
+				b_stanniz_3 = {
+				}
+				b_stanniz_4 = {
+				}
+			}
+		}
 		d_wengenholm = {
 			color={ 10 87 35 }
 			color2={ 255 255 255 }
@@ -2315,7 +2419,7 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 98 province_id = 99 province_id = 100 } }
+					any_demesne_province = { OR = { province_id = 98 province_id = 99 province_id = 100 province_id = 101 province_id = 102 province_id = 103 } }
 				}
 			}
 			capital = 98 # c_wengenholm
@@ -2331,6 +2435,19 @@ e_middlerealm = {
 				b_wengenholm_3 = {
 				}
 				b_wengenholm_4 = {
+				}
+			}
+			c_auersbrueck = { # 103
+				color={ 0 212 194 }
+				color2={ 255 255 255 }
+				
+				b_auersbrueck = {
+				}
+				b_auersbrueck_2 = {
+				}
+				b_auersbrueck_3 = {
+				}
+				b_auersbrueck_4 = {
 				}
 			}
 			c_baerenklamm = { # 99
@@ -2357,6 +2474,32 @@ e_middlerealm = {
 				b_geistmark_3 = {
 				}
 				b_geistmark_4 = {
+				}
+			}
+			c_koschim = { # 101
+				color={ 0 219 63 }
+				color2={ 255 255 255 }
+				
+				b_koschim = {
+				}
+				b_koschim_2 = {
+				}
+				b_koschim_3 = {
+				}
+				b_koschim_4 = {
+				}
+			}
+			c_twergentrutz = { # 102
+				color={ 0 113 47 }
+				color2={ 255 255 255 }
+				
+				b_twergentrutz = {
+				}
+				b_twergentrutz_2 = {
+				}
+				b_twergentrutz_3 = {
+				}
+				b_twergentrutz_4 = {
 				}
 			}
 		}

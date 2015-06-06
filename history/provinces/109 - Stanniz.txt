@@ -1,0 +1,18 @@
+# c_stanniz
+
+# County Title
+title = c_stanniz
+
+# Settlements
+max_settlements = 4
+
+b_stanniz = castle
+#b_stanniz_2 = city
+#b_stanniz_3 = temple
+#b_stanniz_4 = castle
+
+# Misc
+culture = kosh
+religion = puniner
+terrain = hills
+#History
