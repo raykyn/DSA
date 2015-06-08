@@ -1,0 +1,18 @@
+# c_outer_havena
+
+# County Title
+title = c_outer_havena
+
+# Settlements
+max_settlements = 4
+
+b_outer_havena = castle
+#b_outer_havena_2 = city
+#b_outer_havena_3 = temple
+#b_outer_havena_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_bredenhag
+
+# County Title
+title = c_bredenhag
+
+# Settlements
+max_settlements = 4
+
+b_bredenhag = castle
+#b_bredenhag_2 = city
+#b_bredenhag_3 = temple
+#b_bredenhag_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

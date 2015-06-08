@@ -1,0 +1,18 @@
+# c_tommeldomm
+
+# County Title
+title = c_tommeldomm
+
+# Settlements
+max_settlements = 4
+
+b_tommeldomm = castle
+#b_tommeldomm_2 = city
+#b_tommeldomm_3 = temple
+#b_tommeldomm_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

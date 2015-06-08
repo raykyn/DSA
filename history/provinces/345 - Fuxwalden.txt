@@ -1,0 +1,18 @@
+# c_fuxwalden
+
+# County Title
+title = c_fuxwalden
+
+# Settlements
+max_settlements = 4
+
+b_fuxwalden = castle
+#b_fuxwalden_2 = city
+#b_fuxwalden_3 = temple
+#b_fuxwalden_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

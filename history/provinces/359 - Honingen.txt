@@ -1,0 +1,18 @@
+# c_honingen
+
+# County Title
+title = c_honingen
+
+# Settlements
+max_settlements = 4
+
+b_honingen = castle
+#b_honingen_2 = city
+#b_honingen_3 = temple
+#b_honingen_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

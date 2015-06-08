@@ -1,4 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_abagund;Abagund;Abagund;Abagund;;Abagund;;;;;;;;;x
+d_abagund_adj;Abagundian;;abagunder;;;;;;;;;;;x
 d_albenhus;Albenhus;Albenhus;Albenhus;;Albenhus;;;;;;;;;x
 d_albenhus_adj;Albenhusian;;albenhuser;;;;;;;;;;;x
 d_baerwalde;Bärwalde;Bärwalde;Bärwalde;;Bärwalde;;;;;;;;;x
@@ -7,6 +9,8 @@ d_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
 d_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
 d_beilunk;Beilunk;Beilunk;Beilunk;;Beilunk;;;;;;;;;x
 d_beilunk_adj;Beilunkian;;beilunker;;;;;;;;;;;x
+d_bredenhag;Bredenhag;Bredenhag;Bredenhag;;Bredenhag;;;;;;;;;x
+d_bredenhag_adj;Bredenhagian;;bredenhager;;;;;;;;;;;x
 d_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 d_drachenstein_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
 d_elenvina;Elenvina;Elenvina;Elenvina;;Elenvina;;;;;;;;;x
@@ -19,12 +23,18 @@ d_gareth;Gareth;Gareth;Gareth;;Gareth;;;;;;;;;x
 d_gareth_adj;Garethian;;garether;;;;;;;;;;;x
 d_gratenfels;Gratenfels;Gratenfels;Gratenfels;;Gratenfels;;;;;;;;;x
 d_gratenfels_adj;Gratenfelsian;;gratenfelser;;;;;;;;;;;x
+d_great_river;Great River;Great River;Great River;;Great River;;;;;;;;;x
+d_great_river_adj;Great Riverian;;Great Riverer;;;;;;;;;;;x
 d_greifenfurt;Greifenfurt;Greifenfurt;Greifenfurt;;Greifenfurt;;;;;;;;;x
 d_greifenfurt_adj;Greifenfurtian;;greifenfurter;;;;;;;;;;;x
 d_hartsteen;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
 d_hartsteen_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
+d_havena;Havena;Havena;Havena;;Havena;;;;;;;;;x
+d_havena_adj;Havenan;;havener;;;;;;;;;;;x
 d_heldentrutz;Heldentrutz;Heldentrutz;Heldentrutz;;Heldentrutz;;;;;;;;;x
 d_heldentrutz_adj;Heldentrutzian;;heldentrutzer;;;;;;;;;;;x
+d_honingen;Honingen;Honingen;Honingen;;Honingen;;;;;;;;;x
+d_honingen_adj;Honingenian;;honingener;;;;;;;;;;;x
 d_huegellande;Hügellande;Hügellande;Hügellande;;Hügellande;;;;;;;;;x
 d_huegellande_adj;Hügellandean;;hügellander;;;;;;;;;;;x
 d_isenhag;Isenhag;Isenhag;Isenhag;;Isenhag;;;;;;;;;x
@@ -65,6 +75,8 @@ d_wengenholm;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 d_wengenholm_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
 d_windhag;Windhag;Windhag;Windhag;;Windhag;;;;;;;;;x
 d_windhag_adj;Windhagian;;windhager;;;;;;;;;;;x
+d_winhall;Winhall;Winhall;Winhall;;Winhall;;;;;;;;;x
+d_winhall_adj;Winhallian;;winhaller;;;;;;;;;;;x
 d_yaquirtal;Yaquirtal;Yaquirtal;Yaquirtal;;Yaquirtal;;;;;;;;;x
 d_yaquirtal_adj;Yaquirtalian;;yaquirtaler;;;;;;;;;;;x
 d_ysilia;Ysilia;Ysilia;Ysilia;;Ysilia;;;;;;;;;x

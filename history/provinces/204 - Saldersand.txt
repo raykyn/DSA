@@ -12,7 +12,7 @@ b_saldersand = castle
 #b_saldersand_4 = castle
 
 # Misc
-culture = tobrian
+culture = meadows
 religion = puniner
 terrain = farmlands
 #History

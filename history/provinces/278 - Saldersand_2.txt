@@ -1,0 +1,18 @@
+# c_saldersand_2
+
+# County Title
+title = c_saldersand_2
+
+# Settlements
+max_settlements = 4
+
+b_saldersand_5 = castle
+#b_saldersand_6 = city
+#b_saldersand_7 = temple
+#b_saldersand_8 = castle
+
+# Misc
+culture = tobrian
+religion = puniner
+terrain = farmlands
+#History

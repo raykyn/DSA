@@ -1,0 +1,18 @@
+# c_westpforte
+
+# County Title
+title = c_westpforte
+
+# Settlements
+max_settlements = 4
+
+b_westpforte = castle
+#b_westpforte_2 = city
+#b_westpforte_3 = temple
+#b_westpforte_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

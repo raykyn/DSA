@@ -1,0 +1,18 @@
+# c_yantibair
+
+# County Title
+title = c_yantibair
+
+# Settlements
+max_settlements = 4
+
+b_yantibair = castle
+#b_yantibair_2 = city
+#b_yantibair_3 = temple
+#b_yantibair_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

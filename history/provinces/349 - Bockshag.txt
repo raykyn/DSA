@@ -1,0 +1,18 @@
+# c_bockshag
+
+# County Title
+title = c_bockshag
+
+# Settlements
+max_settlements = 4
+
+b_bockshag = castle
+#b_bockshag_2 = city
+#b_bockshag_3 = temple
+#b_bockshag_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

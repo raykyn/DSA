@@ -1,4 +1,8 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+c_abagund;Abagund;Abagund;Abagund;;Abagund;;;;;;;;;x
+c_abagund_adj;Abagundian;;abagunder;;;;;;;;;;;x
+c_abilacht;Abilacht;Abilacht;Abilacht;;Abilacht;;;;;;;;;x
+c_abilacht_adj;Abilachtian;;abilachter;;;;;;;;;;;x
 c_adlerflug;Adlerflug;Adlerflug;Adlerflug;;Adlerflug;;;;;;;;;x
 c_adlerflug_adj;Adlerflugian;;adlerfluger;;;;;;;;;;;x
 c_aehrengatter;Ährengatter;Ährengatter;Ährengatter;;Ährengatter;;;;;;;;;x
@@ -7,16 +11,22 @@ c_aellingen;Ällingen;Ällingen;Ällingen;;Ällingen;;;;;;;;;x
 c_aellingen_adj;Ällingenian;;ällingener;;;;;;;;;;;x
 c_agum;Agum;Agum;Agum;;Agum;;;;;;;;;x
 c_agum_adj;Agumian;;agumer;;;;;;;;;;;x
+c_aiwiallsfest;Aiwiallsfest;Aiwiallsfest;Aiwiallsfest;;Aiwiallsfest;;;;;;;;;x
+c_aiwiallsfest_adj;Aiwiallsfestian;;aiwiallsfester;;;;;;;;;;;x
 c_albengau;Albengau;Albengau;Albengau;;Albengau;;;;;;;;;x
 c_albengau_adj;Albengian;;albenger;;;;;;;;;;;x
 c_albenhus;Albenhus;Albenhus;Albenhus;;Albenhus;;;;;;;;;x
 c_albenhus_adj;Albenhusian;;albenhuser;;;;;;;;;;;x
+c_albentrutz;Albentrutz;Albentrutz;Albentrutz;;Albentrutz;;;;;;;;;x
+c_albentrutz_adj;Albentrutzian;;albentrutzer;;;;;;;;;;;x
 c_albersrode;Albersrode;Albersrode;Albersrode;;Albersrode;;;;;;;;;x
 c_albersrode_adj;Albersrodean;;albersroder;;;;;;;;;;;x
 c_alriksmark;Alriksmark;Alriksmark;Alriksmark;;Alriksmark;;;;;;;;;x
 c_alriksmark_adj;Alriksmarkian;;alriksmarker;;;;;;;;;;;x
 c_alst;Alst;Alst;Alst;;Alst;;;;;;;;;x
 c_alst_adj;Alstian;;alster;;;;;;;;;;;x
+c_altenfaehr;Altenfaehr;Altenfaehr;Altenfaehr;;Altenfaehr;;;;;;;;;x
+c_altenfaehr_adj;Altenfaehrian;;altenfaehrer;;;;;;;;;;;x
 c_altentrallop;Altentrallop;Altentrallop;Altentrallop;;Altentrallop;;;;;;;;;x
 c_altentrallop_adj;Altentrallopian;;altentralloper;;;;;;;;;;;x
 c_altzoll;Altzoll;Altzoll;Altzoll;;Altzoll;;;;;;;;;x
@@ -61,10 +71,14 @@ c_bergenshus;Bergenshus;Bergenshus;Bergenshus;;Bergenshus;;;;;;;;;x
 c_bergenshus_adj;Bergenshusian;;bergenshuser;;;;;;;;;;;x
 c_bergthann;Bergthann;Bergthann;Bergthann;;Bergthann;;;;;;;;;x
 c_bergthann_adj;Bergthannian;;bergthanner;;;;;;;;;;;x
+c_berngau;Berngau;Berngau;Berngau;;Berngau;;;;;;;;;x
+c_berngau_adj;Berngian;;bernger;;;;;;;;;;;x
 c_binsenbeck;Binsenbeck;Binsenbeck;Binsenbeck;;Binsenbeck;;;;;;;;;x
 c_binsenbeck_adj;Binsenbeckian;;binsenbecker;;;;;;;;;;;x
 c_birnbrosch;Birnbrosch;Birnbrosch;Birnbrosch;;Birnbrosch;;;;;;;;;x
 c_birnbrosch_adj;Birnbroschian;;birnbroscher;;;;;;;;;;;x
+c_bockshag;Bockshag;Bockshag;Bockshag;;Bockshag;;;;;;;;;x
+c_bockshag_adj;Bockshagian;;bockshager;;;;;;;;;;;x
 c_bohlenburg;Bohlenburg;Bohlenburg;Bohlenburg;;Bohlenburg;;;;;;;;;x
 c_bohlenburg_adj;Bohlenburgian;;bohlenburger;;;;;;;;;;;x
 c_bollharschen;Bollharschen;Bollharschen;Bollharschen;;Bollharschen;;;;;;;;;x
@@ -83,6 +97,8 @@ c_brachfelde;Brachfelde;Brachfelde;Brachfelde;;Brachfelde;;;;;;;;;x
 c_brachfelde_adj;Brachfeldean;;brachfelder;;;;;;;;;;;x
 c_bragahn;Bragahn;Bragahn;Bragahn;;Bragahn;;;;;;;;;x
 c_bragahn_adj;Bragahnian;;bragahner;;;;;;;;;;;x
+c_bredenhag;Bredenhag;Bredenhag;Bredenhag;;Bredenhag;;;;;;;;;x
+c_bredenhag_adj;Bredenhagian;;bredenhager;;;;;;;;;;;x
 c_breitenbruck;Breitenbruck;Breitenbruck;Breitenbruck;;Breitenbruck;;;;;;;;;x
 c_breitenbruck_adj;Breitenbruckian;;breitenbrucker;;;;;;;;;;;x
 c_brendiltal;Brendiltal;Brendiltal;Brendiltal;;Brendiltal;;;;;;;;;x
@@ -121,6 +137,8 @@ c_dornstein;Dornstein;Dornstein;Dornstein;;Dornstein;;;;;;;;;x
 c_dornstein_adj;Dornsteinian;;dornsteiner;;;;;;;;;;;x
 c_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 c_drachenstein_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
+c_draustein;Draustein;Draustein;Draustein;;Draustein;;;;;;;;;x
+c_draustein_adj;Drausteinian;;drausteiner;;;;;;;;;;;x
 c_drileuen;Drîleuen;Drîleuen;Drîleuen;;Drîleuen;;;;;;;;;x
 c_drileuen_adj;Drîleuenian;;drîleuener;;;;;;;;;;;x
 c_dubios;Dubios;Dubios;Dubios;;Dubios;;;;;;;;;x
@@ -135,6 +153,8 @@ c_eckelstor;Eckelstor;Eckelstor;Eckelstor;;Eckelstor;;;;;;;;;x
 c_eckelstor_adj;Eckelstorian;;eckelstorer;;;;;;;;;;;x
 c_efferdstraenen;Efferdstränen;Efferdstränen;Efferdstränen;;Efferdstränen;;;;;;;;;x
 c_efferdstraenen_adj;Efferdstränenian;;efferdstränener;;;;;;;;;;;x
+c_eichenwald;Eichenwald;Eichenwald;Eichenwald;;Eichenwald;;;;;;;;;x
+c_eichenwald_adj;Eichenwaldian;;eichenwalder;;;;;;;;;;;x
 c_eichmoor;Eichmoor;Eichmoor;Eichmoor;;Eichmoor;;;;;;;;;x
 c_eichmoor_adj;Eichmoorian;;eichmoorer;;;;;;;;;;;x
 c_eisenrath;Eisenrath;Eisenrath;Eisenrath;;Eisenrath;;;;;;;;;x
@@ -187,6 +207,8 @@ c_fuchshag;Fuchshag;Fuchshag;Fuchshag;;Fuchshag;;;;;;;;;x
 c_fuchshag_adj;Fuchshagian;;fuchshager;;;;;;;;;;;x
 c_fuerstenhort;Fürstenhort;Fürstenhort;Fürstenhort;;Fürstenhort;;;;;;;;;x
 c_fuerstenhort_adj;Fürstenhortian;;fürstenhorter;;;;;;;;;;;x
+c_fuxwalden;Fuxwalden;Fuxwalden;Fuxwalden;;Fuxwalden;;;;;;;;;x
+c_fuxwalden_adj;Fuxwaldenian;;fuxwaldener;;;;;;;;;;;x
 c_gadang;Gadang;Gadang;Gadang;;Gadang;;;;;;;;;x
 c_gadang_adj;Gadangian;;gadanger;;;;;;;;;;;x
 c_galbenburg;Galbenburg;Galbenburg;Galbenburg;;Galbenburg;;;;;;;;;x
@@ -201,6 +223,8 @@ c_geiersgau;Geiersgau;Geiersgau;Geiersgau;;Geiersgau;;;;;;;;;x
 c_geiersgau_adj;Geiersgian;;geiersger;;;;;;;;;;;x
 c_geistmark;Geistmark;Geistmark;Geistmark;;Geistmark;;;;;;;;;x
 c_geistmark_adj;Geistmarkian;;geistmarker;;;;;;;;;;;x
+c_gemharsbusch;Gemharsbusch;Gemharsbusch;Gemharsbusch;;Gemharsbusch;;;;;;;;;x
+c_gemharsbusch_adj;Gemharsbuschian;;gemharsbuscher;;;;;;;;;;;x
 c_gerbaldsmark;Gerbaldsmark;Gerbaldsmark;Gerbaldsmark;;Gerbaldsmark;;;;;;;;;x
 c_gerbaldsmark_adj;Gerbaldsmarkian;;gerbaldsmarker;;;;;;;;;;;x
 c_gernebruch;Gernebruch;Gernebruch;Gernebruch;;Gernebruch;;;;;;;;;x
@@ -225,6 +249,8 @@ c_greifenhorst;Greifenhorst;Greifenhorst;Greifenhorst;;Greifenhorst;;;;;;;;;x
 c_greifenhorst_adj;Greifenhorstian;;greifenhorster;;;;;;;;;;;x
 c_greifenklamm;Greifenklamm;Greifenklamm;Greifenklamm;;Greifenklamm;;;;;;;;;x
 c_greifenklamm_adj;Greifenklammian;;greifenklammer;;;;;;;;;;;x
+c_grenzmarken;Grenzmarken;Grenzmarken;Grenzmarken;;Grenzmarken;;;;;;;;;x
+c_grenzmarken_adj;Grenzmarkenian;;grenzmarkener;;;;;;;;;;;x
 c_gruenau;Grünau;Grünau;Grünau;;Grünau;;;;;;;;;x
 c_gruenau_adj;Grünian;;grüner;;;;;;;;;;;x
 c_gueldenharsch;Güldenharsch;Güldenharsch;Güldenharsch;;Güldenharsch;;;;;;;;;x
@@ -249,6 +275,8 @@ c_haselhain;Haselhain;Haselhain;Haselhain;;Haselhain;;;;;;;;;x
 c_haselhain_adj;Haselhainian;;haselhainer;;;;;;;;;;;x
 c_hasenfeld;Hasenfeld;Hasenfeld;Hasenfeld;;Hasenfeld;;;;;;;;;x
 c_hasenfeld_adj;Hasenfeldian;;hasenfelder;;;;;;;;;;;x
+c_havena;Havena;Havena;Havena;;Havena;;;;;;;;;x
+c_havena_adj;Havenan;;havener;;;;;;;;;;;x
 c_helbrache;Helbrache;Helbrache;Helbrache;;Helbrache;;;;;;;;;x
 c_helbrache_adj;Helbrachean;;helbracher;;;;;;;;;;;x
 c_hengefeldt;Hengefeldt;Hengefeldt;Hengefeldt;;Hengefeldt;;;;;;;;;x
@@ -267,8 +295,12 @@ c_hluthars_watch;Hlûthars Watch;Hlûthars Watch;Hlûthars Watch;;Hlûthars Watch;;;
 c_hluthars_watch_adj;Hlûthars Watchian;;Hlûthars Watcher;;;;;;;;;;;x
 c_hoellenwall;Höllenwall;Höllenwall;Höllenwall;;Höllenwall;;;;;;;;;x
 c_hoellenwall_adj;Höllenwallian;;höllenwaller;;;;;;;;;;;x
+c_hohenfels;Hohenfels;Hohenfels;Hohenfels;;Hohenfels;;;;;;;;;x
+c_hohenfels_adj;Hohenfelsian;;hohenfelser;;;;;;;;;;;x
 c_hollerheide;Hollerheide;Hollerheide;Hollerheide;;Hollerheide;;;;;;;;;x
 c_hollerheide_adj;Hollerheidean;;hollerheider;;;;;;;;;;;x
+c_honingen;Honingen;Honingen;Honingen;;Honingen;;;;;;;;;x
+c_honingen_adj;Honingenian;;honingener;;;;;;;;;;;x
 c_hutt;Hutt;Hutt;Hutt;;Hutt;;;;;;;;;x
 c_hutt_adj;Huttian;;hutter;;;;;;;;;;;x
 c_ilderasch;Ilderasch;Ilderasch;Ilderasch;;Ilderasch;;;;;;;;;x
@@ -337,6 +369,8 @@ c_ludgenfels;Ludgenfels;Ludgenfels;Ludgenfels;;Ludgenfels;;;;;;;;;x
 c_ludgenfels_adj;Ludgenfelsian;;ludgenfelser;;;;;;;;;;;x
 c_lyll;Lyll;Lyll;Lyll;;Lyll;;;;;;;;;x
 c_lyll_adj;Lyllian;;lyller;;;;;;;;;;;x
+c_lyngwyn;Lyngwyn;Lyngwyn;Lyngwyn;;Lyngwyn;;;;;;;;;x
+c_lyngwyn_adj;Lyngwynian;;lyngwyner;;;;;;;;;;;x
 c_maich;Maîch;Maîch;Maîch;;Maîch;;;;;;;;;x
 c_maich_adj;Maîchian;;maîcher;;;;;;;;;;;x
 c_mardershoeh;Mardershöh;Mardershöh;Mardershöh;;Mardershöh;;;;;;;;;x
@@ -383,6 +417,8 @@ c_neuborn;Neuborn;Neuborn;Neuborn;;Neuborn;;;;;;;;;x
 c_neuborn_adj;Neubornian;;neuborner;;;;;;;;;;;x
 c_nevelung;Nevelung;Nevelung;Nevelung;;Nevelung;;;;;;;;;x
 c_nevelung_adj;Nevelungian;;nevelunger;;;;;;;;;;;x
+c_niriansee;Niriansee;Niriansee;Niriansee;;Niriansee;;;;;;;;;x
+c_niriansee_adj;Nirianseean;;nirianser;;;;;;;;;;;x
 c_norbeneck;Norbeneck;Norbeneck;Norbeneck;;Norbeneck;;;;;;;;;x
 c_norbeneck_adj;Norbeneckian;;norbenecker;;;;;;;;;;;x
 c_nordhag;Nordhag;Nordhag;Nordhag;;Nordhag;;;;;;;;;x
@@ -401,8 +437,6 @@ c_ochsenklotz;Ochsenklotz;Ochsenklotz;Ochsenklotz;;Ochsenklotz;;;;;;;;;x
 c_ochsenklotz_adj;Ochsenklotzian;;ochsenklotzer;;;;;;;;;;;x
 c_ochsenweide;Ochsenweide;Ochsenweide;Ochsenweide;;Ochsenweide;;;;;;;;;x
 c_ochsenweide_adj;Ochsenweidean;;ochsenweider;;;;;;;;;;;x
-c_oestlingen;Östlingen;Östlingen;Östlingen;;Östlingen;;;;;;;;;x
-c_oestlingen_adj;Östlingenian;;östlingener;;;;;;;;;;;x
 c_ogerbusch;Ogerbusch;Ogerbusch;Ogerbusch;;Ogerbusch;;;;;;;;;x
 c_ogerbusch_adj;Ogerbuschian;;ogerbuscher;;;;;;;;;;;x
 c_ogertrift;Ogertrift;Ogertrift;Ogertrift;;Ogertrift;;;;;;;;;x
@@ -413,6 +447,8 @@ c_orgils_home;Orgils Home;Orgils Home;Orgils Home;;Orgils Home;;;;;;;;;x
 c_orgils_home_adj;Orgils Homean;;Orgils Homer;;;;;;;;;;;x
 c_osthag;Osthag;Osthag;Osthag;;Osthag;;;;;;;;;x
 c_osthag_adj;Osthagian;;osthager;;;;;;;;;;;x
+c_outer_havena;Outer Havena;Outer Havena;Outer Havena;;Outer Havena;;;;;;;;;x
+c_outer_havena_adj;Outer Havenan;;Outer Havener;;;;;;;;;;;x
 c_paggenau;Paggenau;Paggenau;Paggenau;;Paggenau;;;;;;;;;x
 c_paggenau_adj;Paggenian;;paggener;;;;;;;;;;;x
 c_pallingen;Pallingen;Pallingen;Pallingen;;Pallingen;;;;;;;;;x
@@ -489,6 +525,8 @@ c_rumpenfels;Rumpenfels;Rumpenfels;Rumpenfels;;Rumpenfels;;;;;;;;;x
 c_rumpenfels_adj;Rumpenfelsian;;rumpenfelser;;;;;;;;;;;x
 c_saldersand;Saldersand;Saldersand;Saldersand;;Saldersand;;;;;;;;;x
 c_saldersand_adj;Saldersandian;;saldersander;;;;;;;;;;;x
+c_saldersand_2;Saldersand;Saldersand;Saldersand;;Saldersand;;;;;;;;;x
+c_saldersand_2_adj;Saldersandian;;saldersander;;;;;;;;;;;x
 c_salthel;Salthel;Salthel;Salthel;;Salthel;;;;;;;;;x
 c_salthel_adj;Salthelian;;saltheler;;;;;;;;;;;x
 c_salzsteige;Salzsteige;Salzsteige;Salzsteige;;Salzsteige;;;;;;;;;x
@@ -565,10 +603,14 @@ c_tizamsquell;Tizamsquell;Tizamsquell;Tizamsquell;;Tizamsquell;;;;;;;;;x
 c_tizamsquell_adj;Tizamsquellian;;tizamsqueller;;;;;;;;;;;x
 c_tobelstein;Tobelstein;Tobelstein;Tobelstein;;Tobelstein;;;;;;;;;x
 c_tobelstein_adj;Tobelsteinian;;tobelsteiner;;;;;;;;;;;x
+c_tommeldomm;Tommeldomm;Tommeldomm;Tommeldomm;;Tommeldomm;;;;;;;;;x
+c_tommeldomm_adj;Tommeldommian;;tommeldommer;;;;;;;;;;;x
 c_tommelsbeuge;Tommelsbeuge;Tommelsbeuge;Tommelsbeuge;;Tommelsbeuge;;;;;;;;;x
 c_tommelsbeuge_adj;Tommelsbeugean;;tommelsbeuger;;;;;;;;;;;x
 c_trallop;Trallop;Trallop;Trallop;;Trallop;;;;;;;;;x
 c_trallop_adj;Trallopian;;tralloper;;;;;;;;;;;x
+c_traviarim;Traviarim;Traviarim;Traviarim;;Traviarim;;;;;;;;;x
+c_traviarim_adj;Traviarimian;;traviarimer;;;;;;;;;;;x
 c_trollnase;Trollnase;Trollnase;Trollnase;;Trollnase;;;;;;;;;x
 c_trollnase_adj;Trollnasean;;trollnaser;;;;;;;;;;;x
 c_trollsgau;Trollsgau;Trollsgau;Trollsgau;;Trollsgau;;;;;;;;;x
@@ -601,6 +643,8 @@ c_waldfang;Waldfang;Waldfang;Waldfang;;Waldfang;;;;;;;;;x
 c_waldfang_adj;Waldfangian;;waldfanger;;;;;;;;;;;x
 c_waldleuen;Waldleuen;Waldleuen;Waldleuen;;Waldleuen;;;;;;;;;x
 c_waldleuen_adj;Waldleuenian;;waldleuener;;;;;;;;;;;x
+c_wallersrain;Wallersrain;Wallersrain;Wallersrain;;Wallersrain;;;;;;;;;x
+c_wallersrain_adj;Wallersrainian;;wallersrainer;;;;;;;;;;;x
 c_warunk;Warunk;Warunk;Warunk;;Warunk;;;;;;;;;x
 c_warunk_adj;Warunkian;;warunker;;;;;;;;;;;x
 c_wasserburg;Wasserburg;Wasserburg;Wasserburg;;Wasserburg;;;;;;;;;x
@@ -629,24 +673,34 @@ c_wengenholm;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 c_wengenholm_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
 c_westerklotz;Westerklotz;Westerklotz;Westerklotz;;Westerklotz;;;;;;;;;x
 c_westerklotz_adj;Westerklotzian;;westerklotzer;;;;;;;;;;;x
+c_westpforte;Westpforte;Westpforte;Westpforte;;Westpforte;;;;;;;;;x
+c_westpforte_adj;Westpfortean;;westpforter;;;;;;;;;;;x
 c_wetterklamm;Wetterklamm;Wetterklamm;Wetterklamm;;Wetterklamm;;;;;;;;;x
 c_wetterklamm_adj;Wetterklammian;;wetterklammer;;;;;;;;;;;x
 c_wettershag;Wettershag;Wettershag;Wettershag;;Wettershag;;;;;;;;;x
 c_wettershag_adj;Wettershagian;;wettershager;;;;;;;;;;;x
+c_weyringen;Weyringen;Weyringen;Weyringen;;Weyringen;;;;;;;;;x
+c_weyringen_adj;Weyringenian;;weyringener;;;;;;;;;;;x
 c_widdernhall;Widdernhall;Widdernhall;Widdernhall;;Widdernhall;;;;;;;;;x
 c_widdernhall_adj;Widdernhallian;;widdernhaller;;;;;;;;;;;x
 c_willbergen;Willbergen;Willbergen;Willbergen;;Willbergen;;;;;;;;;x
 c_willbergen_adj;Willbergenian;;willbergener;;;;;;;;;;;x
 c_windgau;Windgau;Windgau;Windgau;;Windgau;;;;;;;;;x
 c_windgau_adj;Windgian;;windger;;;;;;;;;;;x
+c_winhall;Winhall;Winhall;Winhall;;Winhall;;;;;;;;;x
+c_winhall_adj;Winhallian;;winhaller;;;;;;;;;;;x
 c_winsheym;Winsheym;Winsheym;Winsheym;;Winsheym;;;;;;;;;x
 c_winsheym_adj;Winsheymian;;winsheymer;;;;;;;;;;;x
 c_witzichenberg;Witzichenberg;Witzichenberg;Witzichenberg;;Witzichenberg;;;;;;;;;x
 c_witzichenberg_adj;Witzichenbergian;;witzichenberger;;;;;;;;;;;x
 c_wolfenbinge;Wolfenbinge;Wolfenbinge;Wolfenbinge;;Wolfenbinge;;;;;;;;;x
 c_wolfenbinge_adj;Wolfenbingean;;wolfenbinger;;;;;;;;;;;x
+c_yantibair;Yantibair;Yantibair;Yantibair;;Yantibair;;;;;;;;;x
+c_yantibair_adj;Yantibairian;;yantibairer;;;;;;;;;;;x
 c_yasamir;Yasamir;Yasamir;Yasamir;;Yasamir;;;;;;;;;x
 c_yasamir_adj;Yasamirian;;yasamirer;;;;;;;;;;;x
+c_ylvidoch;Ylvidoch;Ylvidoch;Ylvidoch;;Ylvidoch;;;;;;;;;x
+c_ylvidoch_adj;Ylvidochian;;ylvidocher;;;;;;;;;;;x
 c_zackenberg;Zackenberg;Zackenberg;Zackenberg;;Zackenberg;;;;;;;;;x
 c_zackenberg_adj;Zackenbergian;;zackenberger;;;;;;;;;;;x
 c_zagbar;Zagbar;Zagbar;Zagbar;;Zagbar;;;;;;;;;x

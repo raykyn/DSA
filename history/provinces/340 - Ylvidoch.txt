@@ -1,0 +1,18 @@
+# c_ylvidoch
+
+# County Title
+title = c_ylvidoch
+
+# Settlements
+max_settlements = 4
+
+b_ylvidoch = castle
+#b_ylvidoch_2 = city
+#b_ylvidoch_3 = temple
+#b_ylvidoch_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

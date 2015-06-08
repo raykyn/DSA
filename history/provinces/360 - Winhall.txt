@@ -1,0 +1,18 @@
+# c_winhall
+
+# County Title
+title = c_winhall
+
+# Settlements
+max_settlements = 4
+
+b_winhall = castle
+#b_winhall_2 = city
+#b_winhall_3 = temple
+#b_winhall_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

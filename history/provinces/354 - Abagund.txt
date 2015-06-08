@@ -1,0 +1,18 @@
+# c_abagund
+
+# County Title
+title = c_abagund
+
+# Settlements
+max_settlements = 4
+
+b_abagund = castle
+#b_abagund_2 = city
+#b_abagund_3 = temple
+#b_abagund_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

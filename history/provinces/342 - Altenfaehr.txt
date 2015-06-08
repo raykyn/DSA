@@ -1,0 +1,18 @@
+# c_altenfaehr
+
+# County Title
+title = c_altenfaehr
+
+# Settlements
+max_settlements = 4
+
+b_altenfaehr = castle
+#b_altenfaehr_2 = city
+#b_altenfaehr_3 = temple
+#b_altenfaehr_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

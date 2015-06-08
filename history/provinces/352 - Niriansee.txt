@@ -1,0 +1,18 @@
+# c_niriansee
+
+# County Title
+title = c_niriansee
+
+# Settlements
+max_settlements = 4
+
+b_niriansee = castle
+#b_niriansee_2 = city
+#b_niriansee_3 = temple
+#b_niriansee_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

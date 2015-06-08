@@ -1,0 +1,18 @@
+# c_traviarim
+
+# County Title
+title = c_traviarim
+
+# Settlements
+max_settlements = 4
+
+b_traviarim = castle
+#b_traviarim_2 = city
+#b_traviarim_3 = temple
+#b_traviarim_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_draustein
+
+# County Title
+title = c_draustein
+
+# Settlements
+max_settlements = 4
+
+b_draustein = castle
+#b_draustein_2 = city
+#b_draustein_3 = temple
+#b_draustein_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_abilacht
+
+# County Title
+title = c_abilacht
+
+# Settlements
+max_settlements = 4
+
+b_abilacht = castle
+#b_abilacht_2 = city
+#b_abilacht_3 = temple
+#b_abilacht_4 = castle
+
+# Misc
+culture = albernian
+religion = puniner
+terrain = farmlands
+#History
