@@ -23,7 +23,7 @@ twelve = {
 		high_god_name = GOD_PRAIOS #check what used for, could be Los 
 		
 		god_names = {
-			GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_BORON GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM
+			GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_BORON GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM GOD_RAHJA
 		}
 		
 		evil_god_names = {
@@ -52,6 +52,106 @@ twelve = {
 		
 	}
 	
+	horas = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.64 }
+		parent = puniner
+		
+		high_god_name = GOD_HORAS
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	lowanger = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.67 }
+		parent = puniner
+		
+		high_god_name = GOD_PRAIOS
+		
+		god_names = {
+			GOD_PRAIOS GOD_BORON
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	jilaskan = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.7 }
+		parent = puniner
+		
+		priests_can_inherit = yes
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	feqz = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.58 }
+		parent = puniner
+		
+		high_god_name = GOD_FEQZ
+
+		god_names = {
+			GOD_FEQZ GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_BORON GOD_FIRUN GOD_TSA GOD_PERAINE GOD_INGERIMM GOD_RAHJA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	prinzipisten = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.54 }
+		parent = puniner
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	mada = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.54 }
+		parent = puniner
+		
+		high_god_name = GOD_MADA
+		
+		god_names = {
+			GOD_PHEX GOD_MADA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
 	alanfaner = {
 		graphical_culture = westerngfx
 		icon = 2 
@@ -66,7 +166,7 @@ twelve = {
 		high_god_name = GOD_BORON
 		
 		god_names = {
-			GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM
+			GOD_BORON GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_INGERIMM GOD_RAHJA
 		}
 		
 		evil_god_names = {
@@ -94,10 +194,88 @@ twelve = {
 		religious_clothing_priest = 1
 	}
 	
+	vsar = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 6
+		
+		color = { 0 0 0.2 }
+		parent = alanfaner
+		
+		high_god_name = GOD_VSAR
+		
+		god_names = {
+			GOD_VSAR GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM GOD_RAHJA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	kor = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 6
+		
+		color = { 0.2 0 0 }
+		parent = alanfaner
+		
+		high_god_name = GOD_KOR
+		
+		god_names = {
+			GOD_KOR GOD_BORON GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM GOD_RAHJA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	nandus = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 6
+		
+		color = { 0 0.2 0.2 }
+		parent = alanfaner
+		
+		high_god_name = GOD_NANDUS
+		
+		god_names = {
+			GOD_NANDUS GOD_BORON GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM GOD_RAHJA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	levthan = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 6
+		
+		color = { 0.4 0.2 0.2 }
+		parent = alanfaner
+		
+		high_god_name = GOD_LEVTHAN
+		
+		god_names = {
+			GOD_LEVTHAN GOD_BORON GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_HESINDE GOD_FIRUN GOD_TSA GOD_PHEX GOD_PERAINE GOD_INGERIMM GOD_RAHJA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
 	angrosch = {
 		graphical_culture = westerngfx #maybe muslim for geometrical look?
 		icon = 3
 		heresy_icon = 6
+		
+		color = { 0.86 0.44 0.58 }
 		
 		crusade_name = CRUSADE
 		scripture_name = BAROBARABBA
@@ -139,6 +317,8 @@ twelve = {
 		graphical_culture = norsegfx
 		icon = 4
 		heresy_icon = 6
+		
+		color = { 0.9 0.9 0.98 }
 	
 		crusade_name = CRUSADE
 		scripture_name = OFFENBARUNG_JURGAS
@@ -173,6 +353,29 @@ twelve = {
 		intermarry = rur_gror
 		intermarry = shaman_n
 		intermarry = shaman_s
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	waskir = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 6
+		
+		color = { 0.9 0.75 0.98 }
+		parent = swafnir
+		
+		high_god_name = GOD_SWAFNIR
+		
+		god_names = {
+			GOD_IFIRN GOD_SWAFNIR GOD_TRAVIA GOD_FIRUN GOD_RONDRA GOD_SUMU GOD_EFFERD GOD_TORSTOR_OM GOD_KOR GOD_RAZORAG GOD_QUARAWARNACH
+		}
+		
+		evil_god_names = {
+			HRANNGAR
+		}
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -230,8 +433,83 @@ khom = {
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 	}
-}
 
+	kasim = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 6
+		
+		color = { 1 1 0.95 }
+		parent = rastullah
+		
+		aggression = 1.5
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	urtulamiden = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 6
+		
+		color = { 1 0.95 1 }
+		parent = rastullah
+		
+		high_god_name = GOD_PRAIOS
+		
+		god_names = {
+			GOD_RASRAGH GOD_PERADSCHAJA GOD_RASCHA GOD_MARHIBO GOD_MHAQASHA GOD_ALMAHMOUD GOD_EFFERD GOD_TUURMHAKAQ GOD_FEQZ GOD_AVES GOD_RASTULLAH
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+
+	uled_ashshebah = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 6
+		
+		color = { 0.95 1 1 }
+		parent = rastullah
+		
+		high_god_name = GOD_PYRDACOR
+		
+		god_names = {
+			GOD_UMBRACOR GOD_FULDIGOR GOD_TECLADOR GOD_PYRDACOR GOD_ALDINOR GOD_NOSULGOR
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	beni_uchakani = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 6
+		
+		color = { 0.95 0.95 0.95 }
+		parent = rastullah
+		
+		high_god_name = GOD_RAANDRAT
+		
+		god_names = {
+			GOD_RAANDRAT
+		}
+		
+		max_wives = 1
+		max_consorts = 0
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+}
+	
 maraskan = {
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
@@ -278,6 +556,44 @@ maraskan = {
 		intermarry = twelve
 		intermarry = shaman_n
 		intermarry = shaman_s
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	richter = {
+		graphical_culture = westerngfx
+
+		icon = 4
+		heresy_icon = 6
+		
+		color = {0.2 0.72 0.2}
+		parent = rur_gror
+		
+		high_god_name = GOD_RUR_GROR
+		
+		god_names = {
+			GOD_PRAIOS GOD_PHEX
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	garasabayad = {
+		graphical_culture = westerngfx
+
+		icon = 4
+		heresy_icon = 6
+		
+		color = {0.4 0.8 0.2}
+		parent = rur_gror
+		
+		evil_god_names = {
+			GUELDEN_GEFLUEGELTE
+		}
+		
+		pacifist = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -335,6 +651,23 @@ shaman_n = {
 		religious_clothing_priest = 1
 	}
 	
+	shirrzach = {
+		graphical_culture = norsegfx
+
+		icon = 4
+		heresy_icon = 6
+		
+		color = {0.5 0.95 0.83}
+		parent = wolf
+		
+		god_names = {
+			GOD_SHIRRZACH GOD_GRISPELZ GOD_LISKA GOD_REISSGRAM GOD_ROTSCHWEIF GOD_FIRNGRIM GOD_ARNGRIM GOD_RANGILD GOD_RISSA GOD_RONGJA GOD_RANIK
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
 	gjalsker = {
 		graphical_culture = norsegfx
 		
@@ -378,6 +711,26 @@ shaman_n = {
 		religious_clothing_priest = 1
 	}
 	
+	skothsloch = { ##stretching it a bit
+		graphical_culture = norsegfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0.27 0.4 0.6}
+		parent = gjalsker
+		
+		high_god_name = CALYACHAN
+		
+		
+		god_names = {
+			CALYACHAN MOCHULA
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
 	fjarninger = {
 		graphical_culture = norsegfx
 		
@@ -416,6 +769,23 @@ shaman_n = {
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	karankarn = { ##IBdN 117
+		graphical_culture = norsegfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0.42 0.62 0.63}
+		parent = fjarninger
+		
+		god_names = {
+			GOD_ANGARA GOD_KARANKARN
+		}
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -468,6 +838,23 @@ shaman_s= {
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	ykkandil = {
+		graphical_culture = africangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0.8 0.4 0.4}
+		parent = moha
+		
+		god_names = {
+			GOD_TAKEHE GOD_NIPAKAU GOD_KEKE GOD_WAPIYA GOD_YKKANDIL
+		}
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
