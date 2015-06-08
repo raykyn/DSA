@@ -1599,51 +1599,6 @@ khom = {
     	modifier = default_culture_modifier
 	}
 	
-	beni_kasim = {
-		graphical_culture = arabicgfx
-		color = { 0.49 0.99 0 }
-	
-		male_names = {
-			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
-			Faizal Faramud Feruzef Feyhach Gaftar Habled Hamar Hamed Hamil Haschnabah Hilal Ismeth Jachman Jalif Jassafer Jedrech Jikhbar Kasim Kazan Kashban Khalid Karmal Khorim Khusrau
-			Mahmud Marwan Melekh Mezzek Mhanach Mhukkadin Muammar Mustafa Nareb Nasreddin Nazir Nebahath Neriman Nezaheth Omar Omjaid
-			Pakhizal Perhiman Rafid Rashim Rashman Rastafan Rechan Rezzan Rhayad Rohal Ruban Ruchan Sahil Said Saiman Sanshied Sedef Selim Selo	Seyshaban Shabob Shafir Sulman Surkan
-			Tulachim Tulef Tuleyman Ukhraban Umran Yakuban Yali Yelmiz Yussuf Zachan Zachaban Zelhiman Zuhal Zuhamid Azzan Banyaman Chanan Devlech Dschelef Dscherman Feisal Fetaihif Ghantabir
-			Gulsev Hadjiin Hahmud Hairan Hamadi Haschabnah Hailif Harun Hassan Husami Ilram Jahlif Jenechet Keshban Kharmal Kermal Kheriman Mailik Melahath Moumamed Nariman Nezahet
-			Omjad Qushrah Rafim Raschid Rhuban Rukeyev Saajd Sarhihi
-		}
-	
-		female_names = {
-			Abrizah Aischa Aishulibeth Alhina Ashaybith Ayla Ayrina Ayshal Azina Belima Belizeth Beychaliban Birshen Chalibah Delilah_Dalilah Demeya Dilhabeth Damila Dunja
-			Erzibeth Emiramis Esmalda Fadime Fahimja Fayrishe Ferushan Halima Heyeshan Hidaybeht Isha Izmaban Jamilha Jushibi Josmabith Karhima Kerime Kemilija Laila
-			Milhibeth Mirhiban Mirshan Nahema Nassiban Nazmeya Nedime Neraida Nesliha Nurhan Oyan Oymira Onchabeth Palmeya Persihan Perizel Ranchel Renahban Riftah
-			Sefira_Safirya Selime Semihija Shahane Shanja Shenny Sherizeth Sheydan Shila Shuhelja Shulam Sulibeth Tulameth Tulmyrja Yashima	Yasine Yezemin Zechiban Zulhamin
-			Aisha Allhina Asheibith Azila Azizel Chaliba Dalilah Djamilla_Dschamilla Erichan Erizbeth Eshila Fathamah Fatimah Fayrische Feruschan Heyeschan Hidayibeth Ishar Izmhban Karimah 
-			Kemillja Leyla Merhiban Neslihan Perisha Sermirhjia Shanya Sharaseht Sherezad Sherieth Sheyla Shuhejla Tulmyria Yashmina Zafira
-		}
-	
-		dukes_called_kings = no
-    	baron_titles_hidden = yes
-    	count_titles_hidden = yes
-        
-    	from_dynasty_prefix = "al "
-    	male_patronym = "ibn "
-    	female_patronym = "saba "
-    	prefix = yes 
-    
-    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-    	pat_grf_name_chance = 50
-    	mat_grf_name_chance = 0
-    	father_name_chance = 0
-        
-    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-    	pat_grm_name_chance = 10
-    	mat_grm_name_chance = 50
-    	mother_name_chance = 0
-
-    	modifier = default_culture_modifier
-	}
-	
 	beni_erkin = {
 		graphical_culture = arabicgfx
 		color = { 0.5 1 0 }
