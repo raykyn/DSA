@@ -17,7 +17,7 @@ twelve = {
 		color = { 0.8 0.8 0.6 }
 		
 		crusade_name = CRUSADE
-		scripture_name = SILEM-HORAS-EDIKT #or Annalen des Götteralters or Kosmogonika
+		scripture_name = SILEM-HORAS-EDIKT #or Annalen des Goetteralters or Kosmogonika
 		priest_title = PRIEST
 		
 		high_god_name = GOD_PRAIOS #check what used for, could be Los 
@@ -313,6 +313,21 @@ twelve = {
 		religious_clothing_priest = 1
 	}
 	
+	finsterkamm = {
+		graphical_culture = westerngfx
+		icon = 3
+		heresy_icon = 6
+		
+		color = { 0.86 0.44 0.58 }
+		
+		parent = angrosch
+		
+		intermarry = angrosch
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
 	swafnir = {
 		graphical_culture = norsegfx
 		icon = 4
@@ -487,7 +502,7 @@ khom = {
 		religious_clothing_priest = 1
 	}
 	
-	beni_uchakani = {
+	uchakani = {
 		graphical_culture = muslimgfx
 
 		icon = 3
@@ -792,7 +807,7 @@ shaman_n = {
 	}
 }
 
-shaman_s= {
+shaman_s = {
 	has_coa_on_barony_only = yes
 	graphical_culture = africangfx
 	playable = yes
@@ -903,9 +918,24 @@ shaman_s= {
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 	}
+		
+	tscholuq = {
+		graphical_culture = africangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = {1 0.34 0}
+		parent = utulu
+
+		high_god_name = GOD_KRTHONCHH
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
 }
 
-barbarian={
+barbarian = {
 	has_coa_on_barony_only = yes
 	graphical_culture = africangfx
 	playable = yes
@@ -953,5 +983,158 @@ barbarian={
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
+	}
+}
+
+orks = {
+	has_coa_on_barony_only = yes
+	graphical_culture = byzantinegfx
+	playable = yes
+	ai_peaceful = yes
+	ai_convert_same_group = 1 #only convert if zeal is high
+	ai_convert_other_group = 2 #always try to convert
+	
+	orkland = {
+		graphical_culture = byzantinegfx
+		
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0.5 0 0}
+		
+		crusade_name = CRUSADE
+		scripture_name = ORAL_TRADITION
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_BRAZORAGH
+		
+		god_names = {
+			GOD_TAIRACH GOD_RIKAI GOD_GRAVESH GOD_RANAGH GOD_GLANTUBAN GOD_NEUNFINGER GOD_ANGARAI
+		}
+		
+		evil_god_names = {
+			NON-ORKS
+		}##placeholder
+		
+		investiture = no
+		can_have_antipopes = no
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_grant_claim = no
+		can_call_crusade = yes
+		priests_can_inherit = no
+		priests_can_marry = no
+		feminist = no
+		can_retire_to_monastery = no
+		female_temple_holders = no
+		max_wives = 0 ##apparently wont stop random gens from being married
+		max_consorts = 10
+		matrilineal_marriages = no
+		allow_viking_invasion = yes
+		allow_looting = yes
+		aggression = 1.5
+		peace_prestige_loss = yes 
+		raised_vassal_opinion_loss = no
+		
+				
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	schurachai = {
+		graphical_culture = byzantinegfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0.5 0.2 0}
+		parent = orkland
+		
+		high_god_name = GOD_TEIRRA
+		
+		god_names = {
+			GOD_KARMORRAGH GOD_EFRUN GOD_TEIRRA GOD_BRTHONA GOD_GHURKCH GOD_ZORKYACH GOD_HARRGUHLACH
+		}
+		
+		evil_god_names = {
+			GOD_INKRA
+		}
+		
+		priests_can_inherit = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+}
+
+echsen = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	ai_peaceful = yes
+	ai_convert_same_group = 1 #only convert if zeal is high
+	ai_convert_other_group = 2 #always try to convert
+	
+	########################################################################
+	###status of archaic achaz very debatable, since a proper realization
+	###would require even more new races I will ignore them for now.
+	###Depending on how easy modding decadence would be, it could emulate
+	###avoiding H'Ranga attention of Achaz religion.
+	########################################################################
+	
+	tribal_achaz = {
+		graphical_culture = indiangfx 
+		
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0 0.4 0}
+		
+		crusade_name = CRUSADE
+		scripture_name = ORAL_TRADITION
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_ZSSAH
+		
+		god_names = {
+			GOD_HSZINT GOD_CHARYBYZZ GOD_KRTHONCHH GOD_VSAR GOD_ZSSAH
+		}
+		
+		evil_god_names = {
+			HRANGA
+		}
+		
+		investiture = no
+		can_have_antipopes = no
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		feminist = yes
+		can_retire_to_monastery = no
+		female_temple_holders  = yes
+
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	ppyrr = {
+		graphical_culture = indiangfx 
+		
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0 0.5 0}
+		
+		parent = tribal_achaz
+		
+		high_god_name = GOD_PPYRR
+		
+		god_names = {
+			GOD_HSZINT GOD_CHARYBYZZ GOD_KRTHONCHH GOD_VSAR GOD_PPYRR GOD_ZSSAH
+		}
 	}
 }
