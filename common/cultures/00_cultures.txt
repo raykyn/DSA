@@ -216,6 +216,7 @@ middenrealmian = {
 			Scanlail Selma Seola Setana Sili Siona Silabh Sylna Tibraide Traviynla Tsaingla Tuadh Uathne 
 			Yanna Ynlais Ysit 
 		} 
+
 		dukes_called_kings = no 
 		baron_titles_hidden = yes 
 		count_titles_hidden = yes 
@@ -241,23 +242,26 @@ middenrealmian = {
         color = { 1 0.97 0.86 }
 
     	male_names = { 
-		Ablasion Albio Alrick Alrigion Andarion Andaryn Ansfinion Arngrimm Belenolas 
-		Blasius Bösfold Bosper Brin Buuriel Cloduar Cordovan Droderon Elwin Esindion Ettel Fertilas 
-		Fringlas Gasparyn 
-		Geron Gillo Hein Immo Ingvalion 
-		Kasimir Kasmyrdin Kasparbald Lucardus Melcher Movert Orasilas Ornibion Peraineryn 
-		Perainhold Perval Polter Rakorious Rauert Reto Rigbald Rondrian Rosedyon Rudegar Storko 
-		Tommelian Ucurius 
-		Valpo Valtoron Vitus Ukko Yantur Yeto} 
+			Ablasion Albio Alrick Alrigion Andarion Andaryn Ansfinion Arngrimm Belenolas 
+			Blasius Bösfold Bosper Brin Buuriel Cloduar Cordovan Droderon Elwin Esindion Ettel Fertilas 
+			Fringlas Gasparyn 
+			Geron Gillo Hein Immo Ingvalion 
+			Kasimir Kasmyrdin Kasparbald Lucardus Melcher Movert Orasilas Ornibion Peraineryn 
+			Perainhold Perval Polter Rakorious Rauert Reto Rigbald Rondrian Rosedyon Rudegar Storko 
+			Tommelian Ucurius 
+			Valpo Valtoron Vitus Ukko Yantur Yeto
+		} 
 		 
 		female_names = { 
-		Algai Alrike Amenai Alaroth Asmodette Baldis Belenoleth Brea Brintje Dalidai 
-		Deire Delusia Dextris Efferdje Elle Elysmine Finntje Firunette Franiane Frede Gertlind Girte 
-		Gylde Gythje Haraike Heladis 
-		Helasine Hete Idra Ingvaline Kasmine Linai Line Lysmine Maire Marlinke May Milis Misa 
-		Noraleth Nostriane Nostris Nurinai Perai Peranke Rondirai Rondriane Ruade Selma Senebiane 
-		Tommeline Travieke Triumfina Ulse Vitcorine Wilimai Yanntje 
-		Yasmina Yolande_Yolanda Ynlais Yppolitis} 
+			Algai Alrike Amenai Alaroth Asmodette Baldis Belenoleth Brea Brintje Dalidai 
+			Deire Delusia Dextris Efferdje Elle Elysmine Finntje Firunette Franiane Frede Gertlind Girte 
+			Gylde Gythje Haraike Heladis 
+			Helasine Hete Idra Ingvaline Kasmine Linai Line Lysmine Maire Marlinke May Milis Misa 
+			Noraleth Nostriane Nostris Nurinai Perai Peranke Rondirai Rondriane Ruade Selma Senebiane 
+			Tommeline Travieke Triumfina Ulse Vitcorine Wilimai Yanntje 
+			Yasmina Yolande_Yolanda Ynlais Yppolitis
+		} 
+		
 		dukes_called_kings = no 
 		baron_titles_hidden = yes 
 		count_titles_hidden = yes 
@@ -2213,4 +2217,369 @@ utulus = {
 	}
 	
 }
+
+####NON-HUMAN CULTURES
+###ALL gfx PLACEHOLDERS
+
+dwarves = {
+	graphical_culture = germangfx
 	
+	ore_d = {
+		graphical_culture = germangfx
+		color = { 0.73 0.55 0.55 }
+	
+		male_names = {
+			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
+			Ballasch Balum Bandhag Bariom Bartram Bengram Beryt Bilbosch Bims Borax Borlox Bram Brodrosch
+			Bugul Burri Cadrim Cendrasch Chrysokoll Chrysoprax Cobaltosch Cratosch Cuprum Dabrasch Damar Degro
+			Dergam Doro Duglim Dugobalosch Durin Dwarusch Ebbo Ebrasch Engerim Erax Etosch Fadoram
+			Famburasch Farto Faruk Ferro Fobosch Fosamar Frathag Frodosch Fughal Fusakel Fux Galla Gandresch
+			Garam Gargamil Gerambalosch Gilgamosch Gneis Grasam Greifax Grimmbart Groin Grotho Grubosch
+			Gurthag Hamo Hardo Hargasch Himbi Himgi Hoffam Hogisch Hornitex Hugen Huramasch Ibralosch Igen
+			Igrim Iko Ingram Ingrasch Ischabax Isegrimm Jalosch Jandrim Jolhag Kagrim Kalrugen Kamarix Kirgam
+			Korscho Kroscho Kubax Kunhag Kunthul_Kunthulkucky Kuwim Lagorasch Laurax Linosch Loscho Louso Lugen Mangam
+			Marnax Mazgram Migosch Mokel Muragosch Murax Murgh Murgrim Muschorox Mutolosch Namin Nerix Norrin
+			Nortgram Nuitar Nuxolam Obolosch Oboto Odmar Ogrim Olbar Orsox Oschin Paglim Partram Perilax
+			Pogolosch Rabagasch Radebrum Rambox Ramox Rocki Roglom Rosbur Rugosch Rumburak Ruprecht
+			Sagrud Schachthag Schalasch Schorman Schrax Schrobosch Schrock Seghal Semo Siglim_Siglom Simogasch
+			Sordolax Spat Stollosch Storax Sugusch Surim Tabuk Tharin Thoram Thurgrim_Thorgrim Tlutasch Topasch Topax
+			Tuff Tulasch Tuwar Ubar Ubaraschax Ufuk Ugin Ulgosch_Ugosch Ukko Ullum Utram Uxor Xaglom Xagul
+			Xandaresch Xasch Xerberum_Xerberim Xetolosch Xologrim_Xolgorim Xolkar Xomasch Zabbardi Zinkhal Zinnamom 
+		}
+	
+		female_names = {
+			Abisimta Agescha Andesine Andra Angalla Angrboda Angroschela Anthrazita_Anthrazitia Argenta Artrima Artritina Aurea
+			Aurulne Azurita Barina_Barine Beryllne Bischa Bohima_Bolrima Borascha Breccie Bupu Cadrima Caldera Calzitescha
+			Cugula Dargrima_Dagrima Derscha Diorita Dobsche Dorella Dorescha Duglima Dugulne Durga Etoscha Ferrlika_Fenlika
+			Fluorite Gagate Garescha Gelia Gerhala Germa Gima Gine Golain Gudelne Halite Halrima Harikascha Hescha Herdra Hoganna Hoscha
+			Hogescha Hugelne Hulka Igelne Igrima Ingrascha Iridine Jetrascha Jorna_Jorma Kageine_Kagelne Korunde Krina_Krima Lavascha
+			Lubra Lugra Magmascha Mira Murgrima Mutola Narescha Nira Norturrima Oblomowa Ogulne Olga
+			Olivina Orima Orthoklascha Patina Pergalna_Pegalne Platinzia Pyrite Rabaga_Rabagasche Roglima Rubidia Sagulne Segrima
+			Silicischa Sinterascha Stannate Sugescha Tantalla Thurescha_Thorescha Tirzula Topasa Turmaline Ugrilne_Ugilne Vanada
+			Xagulne_Xagula Xebrima Xolgima_Xolgrima Xylgrima Ytterbia Zanlika Zitrine
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "Sohn des " 
+		female_patronym = "Tochter der " 
+ 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+		father_name_chance = 95
+ 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 5
+		mother_name_chance = 95
+
+		modifier = default_culture_modifier
+	}
+	
+	anvil_d = {
+		graphical_culture = germangfx
+		color = { 1 0.87 0.68 }
+	
+		male_names = {
+			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
+			Ballasch Balum Bandhag Bariom Bartram Bengram Beryt Bilbosch Bims Borax Borlox Bram Brodrosch
+			Bugul Burri Cadrim Cendrasch Chrysokoll Chrysoprax Cobaltosch Cratosch Cuprum Dabrasch Damar Degro
+			Dergam Doro Duglim Dugobalosch Durin Dwarusch Ebbo Ebrasch Engerim Erax Etosch Fadoram
+			Famburasch Farto Faruk Ferro Fobosch Fosamar Frathag Frodosch Fughal Fusakel Fux Galla Gandresch
+			Garam Gargamil Gerambalosch Gilgamosch Gneis Grasam Greifax Grimmbart Groin Grotho Grubosch
+			Gurthag Hamo Hardo Hargasch Himbi Himgi Hoffam Hogisch Hornitex Hugen Huramasch Ibralosch Igen
+			Igrim Iko Ingram Ingrasch Ischabax Isegrimm Jalosch Jandrim Jolhag Kagrim Kalrugen Kamarix Kirgam
+			Korscho Kroscho Kubax Kunhag Kunthul_Kunthulkucky Kuwim Lagorasch Laurax Linosch Loscho Louso Lugen Mangam
+			Marnax Mazgram Migosch Mokel Muragosch Murax Murgh Murgrim Muschorox Mutolosch Namin Nerix Norrin
+			Nortgram Nuitar Nuxolam Obolosch Oboto Odmar Ogrim Olbar Orsox Oschin Paglim Partram Perilax
+			Pogolosch Rabagasch Radebrum Rambox Ramox Rocki Roglom Rosbur Rugosch Rumburak Ruprecht
+			Sagrud Schachthag Schalasch Schorman Schrax Schrobosch Schrock Seghal Semo Siglim_Siglom Simogasch
+			Sordolax Spat Stollosch Storax Sugusch Surim Tabuk Tharin Thoram Thurgrim_Thorgrim Tlutasch Topasch Topax
+			Tuff Tulasch Tuwar Ubar Ubaraschax Ufuk Ugin Ulgosch_Ugosch Ukko Ullum Utram Uxor Xaglom Xagul
+			Xandaresch Xasch Xerberum_Xerberim Xetolosch Xologrim_Xolgorim Xolkar Xomasch Zabbardi Zinkhal Zinnamom 
+		}
+	
+		female_names = {
+			Abisimta Agescha Andesine Andra Angalla Angrboda Angroschela Anthrazita_Anthrazitia Argenta Artrima Artritina Aurea
+			Aurulne Azurita Barina_Barine Beryllne Bischa Bohima_Bolrima Borascha Breccie Bupu Cadrima Caldera Calzitescha
+			Cugula Dargrima_Dagrima Derscha Diorita Dobsche Dorella Dorescha Duglima Dugulne Durga Etoscha Ferrlika_Fenlika
+			Fluorite Gagate Garescha Gelia Gerhala Germa Gima Gine Golain Gudelne Halite Halrima Harikascha Hescha Herdra Hoganna Hoscha
+			Hogescha Hugelne Hulka Igelne Igrima Ingrascha Iridine Jetrascha Jorna_Jorma Kageine_Kagelne Korunde Krina_Krima Lavascha
+			Lubra Lugra Magmascha Mira Murgrima Mutola Narescha Nira Norturrima Oblomowa Ogulne Olga
+			Olivina Orima Orthoklascha Patina Pergalna_Pegalne Platinzia Pyrite Rabaga_Rabagasche Roglima Rubidia Sagulne Segrima
+			Silicischa Sinterascha Stannate Sugescha Tantalla Thurescha_Thorescha Tirzula Topasa Turmaline Ugrilne_Ugilne Vanada
+			Xagulne_Xagula Xebrima Xolgima_Xolgrima Xylgrima Ytterbia Zanlika Zitrine
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+ 
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "Sohn des " 
+		female_patronym = "Tochter der " 
+ 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+		father_name_chance = 95
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 5
+		mother_name_chance = 95
+
+		modifier = default_culture_modifier
+	}
+	
+	diamond_d = {
+		graphical_culture = germangfx
+		color = { 0.86 0.86 0.86 }
+	
+		male_names = {
+			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
+			Ballasch Balum Bandhag Bariom Bartram Bengram Beryt Bilbosch Bims Borax Borlox Bram Brodrosch
+			Bugul Burri Cadrim Cendrasch Chrysokoll Chrysoprax Cobaltosch Cratosch Cuprum Dabrasch Damar Degro
+			Dergam Doro Duglim Dugobalosch Durin Dwarusch Ebbo Ebrasch Engerim Erax Etosch Fadoram
+			Famburasch Farto Faruk Ferro Fobosch Fosamar Frathag Frodosch Fughal Fusakel Fux Galla Gandresch
+			Garam Gargamil Gerambalosch Gilgamosch Gneis Grasam Greifax Grimmbart Groin Grotho Grubosch
+			Gurthag Hamo Hardo Hargasch Himbi Himgi Hoffam Hogisch Hornitex Hugen Huramasch Ibralosch Igen
+			Igrim Iko Ingram Ingrasch Ischabax Isegrimm Jalosch Jandrim Jolhag Kagrim Kalrugen Kamarix Kirgam
+			Korscho Kroscho Kubax Kunhag Kunthul_Kunthulkucky Kuwim Lagorasch Laurax Linosch Loscho Louso Lugen Mangam
+			Marnax Mazgram Migosch Mokel Muragosch Murax Murgh Murgrim Muschorox Mutolosch Namin Nerix Norrin
+			Nortgram Nuitar Nuxolam Obolosch Oboto Odmar Ogrim Olbar Orsox Oschin Paglim Partram Perilax
+			Pogolosch Rabagasch Radebrum Rambox Ramox Rocki Roglom Rosbur Rugosch Rumburak Ruprecht
+			Sagrud Schachthag Schalasch Schorman Schrax Schrobosch Schrock Seghal Semo Siglim_Siglom Simogasch
+			Sordolax Spat Stollosch Storax Sugusch Surim Tabuk Tharin Thoram Thurgrim_Thorgrim Tlutasch Topasch Topax
+			Tuff Tulasch Tuwar Ubar Ubaraschax Ufuk Ugin Ulgosch_Ugosch Ukko Ullum Utram Uxor Xaglom Xagul
+			Xandaresch Xasch Xerberum_Xerberim Xetolosch Xologrim_Xolgorim Xolkar Xomasch Zabbardi Zinkhal Zinnamom 
+		}
+	
+		female_names = {
+			Abisimta Agescha Andesine Andra Angalla Angrboda Angroschela Anthrazita_Anthrazitia Argenta Artrima Artritina Aurea
+			Aurulne Azurita Barina_Barine Beryllne Bischa Bohima_Bolrima Borascha Breccie Bupu Cadrima Caldera Calzitescha
+			Cugula Dargrima_Dagrima Derscha Diorita Dobsche Dorella Dorescha Duglima Dugulne Durga Etoscha Ferrlika_Fenlika
+			Fluorite Gagate Garescha Gelia Gerhala Germa Gima Gine Golain Gudelne Halite Halrima Harikascha Hescha Herdra Hoganna Hoscha
+			Hogescha Hugelne Hulka Igelne Igrima Ingrascha Iridine Jetrascha Jorna_Jorma Kageine_Kagelne Korunde Krina_Krima Lavascha
+			Lubra Lugra Magmascha Mira Murgrima Mutola Narescha Nira Norturrima Oblomowa Ogulne Olga
+			Olivina Orima Orthoklascha Patina Pergalna_Pegalne Platinzia Pyrite Rabaga_Rabagasche Roglima Rubidia Sagulne Segrima
+			Silicischa Sinterascha Stannate Sugescha Tantalla Thurescha_Thorescha Tirzula Topasa Turmaline Ugrilne_Ugilne Vanada
+			Xagulne_Xagula Xebrima Xolgima_Xolgrima Xylgrima Ytterbia Zanlika Zitrine
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "Sohn des " 
+		female_patronym = "Tochter der " 
+ 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+		father_name_chance = 95
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 5
+		mother_name_chance = 95
+
+		modifier = default_culture_modifier
+	}
+	
+	hill_d = {
+		graphical_culture = germangfx
+		color = { 0.55 0.93 0.55 }
+	
+		male_names = {
+			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
+			Ballasch Balum Bandhag Bariom Bartram Bengram Beryt Bilbosch Bims Borax Borlox Bram Brodrosch
+			Bugul Burri Cadrim Cendrasch Chrysokoll Chrysoprax Cobaltosch Cratosch Cuprum Dabrasch Damar Degro
+			Dergam Doro Duglim Dugobalosch Durin Dwarusch Ebbo Ebrasch Engerim Erax Etosch Fadoram
+			Famburasch Farto Faruk Ferro Fobosch Fosamar Frathag Frodosch Fughal Fusakel Fux Galla Gandresch
+			Garam Gargamil Gerambalosch Gilgamosch Gneis Grasam Greifax Grimmbart Groin Grotho Grubosch
+			Gurthag Hamo Hardo Hargasch Himbi Himgi Hoffam Hogisch Hornitex Hugen Huramasch Ibralosch Igen
+			Igrim Iko Ingram Ingrasch Ischabax Isegrimm Jalosch Jandrim Jolhag Kagrim Kalrugen Kamarix Kirgam
+			Korscho Kroscho Kubax Kunhag Kunthul_Kunthulkucky Kuwim Lagorasch Laurax Linosch Loscho Louso Lugen Mangam
+			Marnax Mazgram Migosch Mokel Muragosch Murax Murgh Murgrim Muschorox Mutolosch Namin Nerix Norrin
+			Nortgram Nuitar Nuxolam Obolosch Oboto Odmar Ogrim Olbar Orsox Oschin Paglim Partram Perilax
+			Pogolosch Rabagasch Radebrum Rambox Ramox Rocki Roglom Rosbur Rugosch Rumburak Ruprecht
+			Sagrud Schachthag Schalasch Schorman Schrax Schrobosch Schrock Seghal Semo Siglim_Siglom Simogasch
+			Sordolax Spat Stollosch Storax Sugusch Surim Tabuk Tharin Thoram Thurgrim_Thorgrim Tlutasch Topasch Topax
+			Tuff Tulasch Tuwar Ubar Ubaraschax Ufuk Ugin Ulgosch_Ugosch Ukko Ullum Utram Uxor Xaglom Xagul
+			Xandaresch Xasch Xerberum_Xerberim Xetolosch Xologrim_Xolgorim Xolkar Xomasch Zabbardi Zinkhal Zinnamom 
+		}
+	
+		female_names = {
+			Abisimta Agescha Andesine Andra Angalla Angrboda Angroschela Anthrazita_Anthrazitia Argenta Artrima Artritina Aurea
+			Aurulne Azurita Barina_Barine Beryllne Bischa Bohima_Bolrima Borascha Breccie Bupu Cadrima Caldera Calzitescha
+			Cugula Dargrima_Dagrima Derscha Diorita Dobsche Dorella Dorescha Duglima Dugulne Durga Etoscha Ferrlika_Fenlika
+			Fluorite Gagate Garescha Gelia Gerhala Germa Gima Gine Golain Gudelne Halite Halrima Harikascha Hescha Herdra Hoganna Hoscha
+			Hogescha Hugelne Hulka Igelne Igrima Ingrascha Iridine Jetrascha Jorna_Jorma Kageine_Kagelne Korunde Krina_Krima Lavascha
+			Lubra Lugra Magmascha Mira Murgrima Mutola Narescha Nira Norturrima Oblomowa Ogulne Olga
+			Olivina Orima Orthoklascha Patina Pergalna_Pegalne Platinzia Pyrite Rabaga_Rabagasche Roglima Rubidia Sagulne Segrima
+			Silicischa Sinterascha Stannate Sugescha Tantalla Thurescha_Thorescha Tirzula Topasa Turmaline Ugrilne_Ugilne Vanada
+			Xagulne_Xagula Xebrima Xolgima_Xolgrima Xylgrima Ytterbia Zanlika Zitrine
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "Sohn des " 
+		female_patronym = "Tochter der " 
+ 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+		father_name_chance = 95
+ 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 5
+		mother_name_chance = 95
+
+		modifier = default_culture_modifier
+	}
+}
+
+ork_culture = {
+	orklander = {
+		graphical_culture = germangfx
+		color = { 0.55 0 0.55 }
+	
+		male_names = {
+			Alrork Airakh Arbachzeg Aregz Ashim Azparuch Azzek Balrork Baßtorg Blorg Bozorgh Brazoch Burchai Buiruzz Byakkrak Elgork
+			Ertugulk Gach Garch Garzlokh Ghairazz Gharrai Gharrz Girkush Goras Gorromp Gospodorkreg Graksch
+			Grakvach Grärch Graulunkh Grod Gruufhairork Gurshai Gushrok_Gushrogh Hairork Harkhash Hugur Hulgharuk Joruk Jurran
+			Karrag Kempreg Kerschoi Khaidach Kharrechzek Kholzzsha Khurrach Khurraz Kurruz Knurrz Kunzech Krrachtt
+			Mardukh_Mardugh Marfogh Mohork Morak Morghinak Morkash Morrok Nargazz Naggai Ogrik Oigrunz Okorork Olrik Olruk
+			Orcheggz Orezzar Orgrosch Raszech Rulgargop Sadrak Schindzilarz Schlagto_Schlagtogh Shardur Sharkak
+			Sharkhush Sharraz Sholocham Shurda Shurrak Stickrott Tairon Thukraz Trufagh Tuzzugh Ugrashak Ugur Ugurkan
+			Uigar Ulughbeg Upaatl Urgrushak Waldork Walduch Wosz_Woszuch Yagrikzek Yagu_Yaguch Yorrak Yrram Yurek Ziraitach
+		}
+	
+		female_names = {
+		
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+	  	count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+		
+		female_patronym = "Tochter des " 
+		###proper Ork culture would be "Property of [husband]"
+	
+	  	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+	  	father_name_chance = 15
+	
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	
+	besatzer = {
+		graphical_culture = germangfx
+		color = { 0.55 0 0.6 }
+	
+		male_names = {
+			Alrork Airakh Arbachzeg Aregz Ashim Azparuch Azzek Balrork Baßtorg Blorg Bozorgh Brazoch Burchai Buiruzz Byakkrak Elgork
+			Ertugulk Gach Garch Garzlokh Ghairazz Gharrai Gharrz Girkush Goras Gorromp Gospodorkreg Graksch
+			Grakvach Grärch Graulunkh Grod Gruufhairork Gurshai Gushrok_Gushrogh Hairork Harkhash Hugur Hulgharuk Joruk Jurran
+			Karrag Kempreg Kerschoi Khaidach Kharrechzek Kholzzsha Khurrach Khurraz Kurruz Knurrz Kunzech Krrachtt
+			Mardukh_Mardugh Marfogh Mohork Morak Morghinak Morkash Morrok Nargazz Naggai Ogrik Oigrunz Okorork Olrik Olruk
+			Orcheggz Orezzar Orgrosch Raszech Rulgargop Sadrak Schindzilarz Schlagto_Schlagtogh Shardur Sharkak
+			Sharkhush Sharraz Sholocham Shurda Shurrak Stickrott Tairon Thukraz Trufagh Tuzzugh Ugrashak Ugur Ugurkan
+			Uigar Ulughbeg Upaatl Urgrushak Waldork Walduch Wosz_Woszuch Yagrikzek Yagu_Yaguch Yorrak Yrram Yurek Ziraitach
+		}
+	
+		female_names = {
+		
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+	  	count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+		
+		female_patronym = "Tochter des " 
+		###proper Ork culture would be "Property of [husband]"
+	
+	  	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+	  	father_name_chance = 15
+	
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	
+}
+
+achaz = {
+	tribal_a = {
+		graphical_culture = germangfx
+		color = { 0 0.4 0 }
+	
+		male_names = {
+			Achatazz Achazz Ahzzhur Antzzs Arssachz Aso'Zzrt Atzhzhaleh Chakmol Chnathon Chrho Chssa Chtmok Chtrif Chuszrr Crmichl Dschossrr Fffssz
+			He'Schrr H'Itsiz_He'Itsiz Hrika Htzilchtli Hyszinth I'Gsss Iss'Izz Jia'Strr Kische Krmmkr Krshn Ktzike Ku'Izz Lrik Ls'Wssin Miquitztl Mtlatzink
+			N'gachrir Nga'Churr Qiqqim Qiqtl Qiriq Quttissnz P'kal Rhamess Rschst Schar'Kar Shashcha Shintr Shkank'Wil Shn Shrrz Skarshshzinth Snofr Sr'Riszs Ssirissa Szintiss
+			Szzirrtr Tenochtitl Thirschisch Tifll Tizk Tkal Tkhnef Tlazolteotl Tn Tscholalq Tschak Tshitshn Tsht
+			Turzass'Chr Tz_Tzz Tziktzal Uxll Wsffar Xacatl Xad'Mal Xchwar_Xch'War Xzelfasr Xochimilk Xolotl Xriskls Xsitrr Yaschkuqqim
+			Yatschpass_Yatschpassach Ych'thszz Yszassar Zzahxel Z'Fsir
+		}
+	
+		female_names = {
+			Achatazz Achazz Ahzzhur Antzzs Arssachz Aso'Zzrt Atzhzhaleh Chakmol Chnathon Chrho Chssa Chtmok Chtrif Chuszrr Crmichl Dschossrr Fffssz
+			He'Schrr H'Itsiz_He'Itsiz Hrika Htzilchtli Hyszinth I'Gsss Iss'Izz Jia'Strr Kische Krmmkr Krshn Ktzike Ku'Izz Lrik Ls'Wssin Miquitztl Mtlatzink
+			N'gachrir Nga'Churr Qiqqim Qiqtl Qiriq Quttissnz P'kal Rhamess Rschst Schar'Kar Shashcha Shintr Shkank'Wil Shn Shrrz Skarshshzinth Snofr Sr'Riszs Ssirissa Szintiss
+			Szzirrtr Tenochtitl Thirschisch Tifll Tizk Tkal Tkhnef Tlazolteotl Tn Tscholalq Tschak Tshitshn Tsht
+			Turzass'Chr Tz_Tzz Tziktzal Uxll Wsffar Xacatl Xad'Mal Xchwar_Xch'War Xzelfasr Xochimilk Xolotl Xriskls Xsitrr Yaschkuqqim
+			Yatschpass_Yatschpassach Ych'thszz Yszassar Zzahxel Z'Fsir
+		}
+	
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+	  	count_titles_hidden = yes
+
+		from_dynasty_prefix = "of "
+		
+		female_patronym = "Tochter des " 
+		###proper Ork culture would be "Property of [husband]"
+	
+	  	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 5
+		mat_grf_name_chance = 0
+	  	father_name_chance = 15
+	
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
