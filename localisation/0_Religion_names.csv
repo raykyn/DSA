@@ -1,9 +1,237 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 puniner;Rite Of Punin;Rite Of Punin;Puniner Ritus;;;;;;;;;;;x
 twelve;Twelvegods;Twelvegods;Zwölfgötter;;;;;;;;;;;x
-puniner_DESC;Much description, very words, wow.;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
+puniner_DESC;description;description;description;;;;;;;;;;;x
+DER_NAMENLOSE;The Nameless One;The Nameless One;Der Namenlose;;;;;;;;;;;x
+BLAKHARAZ;Blakharaz;Blakharaz;Blakharaz;;;;;;;;;;;x
+BELHALHAR;Belhalhar;Belhalhar;Belhalhar;;;;;;;;;;;x
+CHARYPTOROTH;Charyptoroth;Charyptoroth;Charyptoroth;;;;;;;;;;;x
+LOLGRAMOTH;Lolgramoth;Lolgramoth;Lolgramoth;;;;;;;;;;;x
+THARGUNITOTH;Thargunitoth;Thargunitoth;Thargunitoth;;;;;;;;;;;x
+AMAZEROTH;Amazeroth;Amazeroth;Amazeroth;;;;;;;;;;;x
+BELSHIRASH;Belshirash;Belshirash;Belshirash;;;;;;;;;;;x
+ASFALOTH;Asfaloth;Asfaloth;Asfaloth;;;;;;;;;;;x
+BELKELEL;Belkelel;Belkelel;Belkelel;;;;;;;;;;;x
+TASFARELEL;Tasfarelel;Tasfarelel;Tasfarelel;;;;;;;;;;;x
+BELZHORASH;Belzhorash;Belzhorash;Belzhorash;;;;;;;;;;;x
+AGRIMOTH;Agrimoth;Agrimoth;Agrimoth;;;;;;;;;;;x
+GOD_PRAIOS;Praios;Praios;Praios;;;;;;;;;;;x
+GOD_RONDRA;Rondra;Rondra;Rondra;;;;;;;;;;;x
+GOD_EFFERD;Efferd;Efferd;Efferd;;;;;;;;;;;x
+GOD_TRAVIA;Travia;Travia;Travia;;;;;;;;;;;x
+GOD_BORON;Boron;Boron;Boron;;;;;;;;;;;x
+GOD_HESINDE;Hesinde;Hesinde;Hesinde;;;;;;;;;;;x
+GOD_FIRUN;Firun;Firun;Firun;;;;;;;;;;;x
+GOD_TSA;Tsa;Tsa;Tsa;;;;;;;;;;;x
+GOD_PHEX;Phex;Phex;Phex;;;;;;;;;;;x
+GOD_PERAINE;Peraine;Peraine;Peraine;;;;;;;;;;;x
+GOD_INGERIMM;Ingerimm;Ingerimm;Ingerimm;;;;;;;;;;;x
+GOD_RAHJA;Rahja;Rahja;Rahja;;;;;;;;;;;x
+PRIEST;Priest;Priest;Priester;;;;;;;;;;;x
+SILEM-HORAS-EDIKT;Silem-Horas edict;Silem-Horas edict;Silem-Horas-Edikt;;;;;;;;;;;x
+CRUSADE;Crusade;Crusade;Kreuzzug;;;;;;;;;;;x
+horas;Church Of Horas;Church Of Horas;Horas-Kirche;;;;;;;;;;;x
+horas_DESC;description;description;description;;;;;;;;;;;x
+GOD_HORAS;Horas;Horas;Horas;;;;;;;;;;;x
+lowanger;Lowanger Dualism;Lowanger Dualism;Lowanger Dualismus;;;;;;;;;;;x
+lowanger_DESC;description;description;description;;;;;;;;;;;x
+jilaskan;Priest-Kings;Priest-Kings;Priesterkaiser;;;;;;;;;;;x
+jilaskan_DESC;description;description;description;;;;;;;;;;;x
+feqz;Feqz cult;Feqz cult;Feqzkult;;;;;;;;;;;x
+feqz_DESC;description;description;description;;;;;;;;;;;x
+GOD_FEQZ;Feqz;Feqz;Feqz;;;;;;;;;;;x
+prinzipisten;Principleists;Principleists;Prinzipisten;;;;;;;;;;;x
+prinzipisten_DESC;description;description;description;;;;;;;;;;;x
+mada;Mada cult;Mada cult;Madakult;;;;;;;;;;;x
+mada_DESC;description;description;description;;;;;;;;;;;x
+GOD_MADA;Mada;Mada;Mada;;;;;;;;;;;x
+alanfaner;Rite Of Al'Anfa;Rite Of Al'Anfa;Al'Anfaner Ritus;;;;;;;;;;;x
+alanfaner_DESC;description;description;description;;;;;;;;;;;x
+CODEX_CORVINUS;Codex Corvinus;Codex Corvinus;Codex Corvinus;;;;;;;;;;;x
+vsar;V'Sar cult;V'Sar cult;V'Sarkult;;;;;;;;;;;x
+vsar_DESC;description;description;description;;;;;;;;;;;x
+GOD_VSAR;V'Sar;V'sar;V'sar;;;;;;;;;;;x
+kor;Kor cult;Kor cult;Korkult;;;;;;;;;;;x
+kor_DESC;description;description;description;;;;;;;;;;;x
+GOD_KOR;Kor;Kor;Kor;;;;;;;;;;;x
+nandus;Church Of Nandus;Church Of Nandus;Nanduskirche;;;;;;;;;;;x
+nandus_DESC;description;description;description;;;;;;;;;;;x
+GOD_NANDUS;Nandus;Nandus;Nandus;;;;;;;;;;;x
+levthan;Levthan disciple;Levthan disciple;Levthansjünger;;;;;;;;;;;x
+levthan_DESC;description;description;description;;;;;;;;;;;x
+GOD_LEVTHAN;Levthan;Levthan;Levthan;;;;;;;;;;;x
+angrosch;Church Of Angrosch;Church Of Angrosch;Angroschkirche;;;;;;;;;;;x
+angrosch_DESC;description;description;description;;;;;;;;;;;x
+PRDRAX;Prdrax;Prdrax;Prdrax;;;;;;;;;;;x
+DER_DRACHE;The Dragon;The Dragon;Der Drache;;;;;;;;;;;x
+GOD_ANGROSCH;Angrosch;Angrosch;Angrosch;;;;;;;;;;;x
+GOD_FEKOL;Fekol;Fekol;Fekol;;;;;;;;;;;x
+GOD_SIMIA;Simia;Simia;Simia;;;;;;;;;;;x
+BAROBARABBA;Barobarabba;Barobarabba;Barobarabba;;;;;;;;;;;x
+finsterkamm;Angrosch Fundamentalism;Angrosch Fundamentalism;Angroschfundamentalismus;;;;;;;;;;;x
+finsterkamm_DESC;description;description;description;;;;;;;;;;;x
+swafnir;Church Of Swafnir;Church Of Swafnir;Swafnirkirche;;;;;;;;;;;x
+swafnir_DESC;description;description;description;;;;;;;;;;;x
+HRANNGAR;Hranngar;Hranngar;Hranngar;;;;;;;;;;;x
+GOD_IFIRN;Ifirn;Ifirn;Ifirn;;;;;;;;;;;x
+GOD_SWAFNIR;Swafnir;Swafnir;Swafnir;;;;;;;;;;;x
+GOD_SUMU;Sumu;Sumu;Sumu;;;;;;;;;;;x
+OFFENBARUNG_JURGAS;Jurga's revelation;Jurga's revelation;Offenbarung Jurgas;;;;;;;;;;;x
+waskir;Waskirian cults;Waskirian cults;Waskirer Kulte;;;;;;;;;;;x
+waskir_DESC;description;description;description;;;;;;;;;;;x
+GOD_TORSTOR_OM;Torstor Om;Torstor Om;Torstor Om;;;;;;;;;;;x
+GOD_RAZORAG;Razorag;Razorag;Razorag;;;;;;;;;;;x
+GOD_QUARAWARNACH;Quarawarnach;Quarawarnach;Quarawarnach;;;;;;;;;;;x
+khom;Novadi churches;Novadi churches;Novadikirchen;;;;;;;;;;;x
+rastullah;Rastullah belief;Rastullah belief;Rastullahglaube;;;;;;;;;;;x
+rastullah_DESC;description;description;description;;;;;;;;;;;x
+ECHSEN;reptiles;reptiles;Geschuppte;;;;;;;;;;;x
+GOD_ASSALI;Assali;Assali;Assali;;;;;;;;;;;x
+GOD_ALMAHASOLTAN;Almahasoltan;Almahasoltan;Almahasoltan;;;;;;;;;;;x
+MAWDLI;Mawdli;Mawdli;Mawdli;;;;;;;;;;;x
+RASTULLAH_IN_KEFT;Rastullah in Keft;Rastullah in Keft;Rastullah in Keft;;;;;;;;;;;x
+GOD_RASTULLAH;Rastullah;Rastullah;Rastullah;;;;;;;;;;;x
+kasim;Beni Kasim;Beni Kasim;Beni Kasim;;;;;;;;;;;x
+kasim_DESC;description;description;description;;;;;;;;;;;x
+urtulamiden;Primordial Tulamidian belief;Primordial Tulamidian belief;Urtulamidischer Glauben;;;;;;;;;;;x
+urtulamiden_DESC;description;description;description;;;;;;;;;;;x
+GOD_RASRAGH;Ras'Ragh;Ras'Ragh;Ras'Ragh;;;;;;;;;;;x
+GOD_PERADSCHAJA;Peradschaja;Peradschaja;Peradschaja;;;;;;;;;;;x
+GOD_RASCHA;Rascha;Rascha;Rascha;;;;;;;;;;;x
+GOD_MARHIBO;Marhibo;Marhibo;Marhibo;;;;;;;;;;;x
+GOD_MHAQASHA;Mha'Qasha;Mha'Qasha;Mha'Qasha;;;;;;;;;;;x
+GOD_ALMAHMOUD;Al'Mahmoud;Al'Mahmoud;Al'Mahmoud;;;;;;;;;;;x
+GOD_TUURMHAKAQ;Tuur-Mhakaq;Tuur-Mhakaq;Tuur-Mhakaq;;;;;;;;;;;x
+GOD_AVES;Aves;Aves;Aves;;;;;;;;;;;
+uled_ashshebah;Uled ash'Shebah;Uled ash'Shebah;Uled ash'Shebah;;;;;;;;;;;x
+uled_ashshebah_DESC;description;description;description;;;;;;;;;;;x
+GOD_UMBRACOR;Umbracor;Umbracor;Umbracor;;;;;;;;;;;x
+GOD_FULDIGOR;Fuldigor;Fuldigor;Fuldigor;;;;;;;;;;;x
+GOD_TECLADOR;Teclador;Teclador;Teclador;;;;;;;;;;;x
+GOD_PYRDACOR;Pyrdacor;Pyrdacor;Pyrdacor;;;;;;;;;;;x
+GOD_ALDINOR;Aldinor;Aldinor;Aldinor;;;;;;;;;;;x
+GOD_NOSULGOR;Nosulgor;Nosulgor;Nosulgor;;;;;;;;;;;x
+uchakani;Beni Uchakâni;Beni Uchakâni;Beni Uchakâni;;;;;;;;;;;x
+uchakani_DESC;description;description;description;;;;;;;;;;;x
+GOD_RAANDRA;Ra'Andra;Ra'Andra;Ra'Andra;;;;;;;;;;;x
+maraskan;Marasakani beliefs;Maraskani beliefs;Maraskaner Glauben;;;;;;;;;;;x
+rur_gror;Rur & Gror Dualism;Rur & Gror Dualism;Rur & Gror Dualismus;;;;;;;;;;;x
+rur_gror_DESC;description;description;description;;;;;;;;;;;x
+BRUDERLOSE;The Brotherless One;The Brotherless One;Der Bruderlose;;;;;;;;;;;x
+HEILIGE_ROLLEN;Holy Scrolls of the Beni Rurech;Holy Scrolls of the Beni Rurech;Heilige Rollen der Beni Rurech;;;;;;;;;;;x
+GOD_RUR_GROR;Rur & Gror;Rur & Gror;Rur & Gror;;;;;;;;;;;x
+richter;Sect of the Judges;Sect of the Judges;Richtersekte;;;;;;;;;;;x
+richter_DESC;description;description;description;;;;;;;;;;;x
+garasabayad;Garasabayad Mercy;Garasabayad Mercy;Garasabayad Barmherzigkeit;;;;;;;;;;;x
+garasabayad_DESC;description;description;description;;;;;;;;;;;x
+GUELDEN_GEFLUEGELTE;The Golden-Winged One;The Golden-Winged One;Der Gülden Geflügelte;;;;;;;;;;;x
+shaman_n;Northern Animism;Northern Animism;Nördlicher Animismus;;;;;;;;;;;x
+wolf;Celestial Wolves;Celestial Wolves;Himmelswölfe;;;;;;;;;;;x
+wolf_DESC;description;description;description;;;;;;;;;;;x
+KYRJAKA;Kyrjaka;Kyrjaka;Kyrjaka;;;;;;;;;;;x
+UEBERZAEHLIGE;The Supernumerous One;The Supernumerous One;Der Überzählige;;;;;;;;;;;x
+GOD_GRISPELZ;Grispelz;Grispelz;Grispelz;;;;;;;;;;;x
+GOD_LISKA;Liska;Liska;Liska;;;;;;;;;;;x
+GOD_REISSGRAM;Reissgram;Reissgram;Reissgram;;;;;;;;;;;x
+GOD_ROTSCHWEIF;Rotschweif;Rotschweif;Rotschweif;;;;;;;;;;;x
+GOD_FIRNGRIM;Firngrim;Firngrim;Firngrim;;;;;;;;;;;x
+GOD_ARNGRIM;Arngrim;Arngrim;Arngrim;;;;;;;;;;;x
+GOD_RANGILD;Rangild;Rangild;Rangild;;;;;;;;;;;x
+GOD_RISSA;Rissa;Rissa;Rissa;;;;;;;;;;;x
+GOD_RONGJA;Rongja;Rongja;Rongja;;;;;;;;;;;x
+GOD_RANIK;Ranik;Ranik;Ranik;;;;;;;;;;;x
+KASKJU;Kaskju;Kaskju;Kaskju;;;;;;;;;;;x
+GOD_GORFANG;Gorfang;Gorfang;Gorfang;;;;;;;;;;;x
+ORAL_TRADITION;Oral Tradition;Oral Tradition;Mündliche Überlieferung;;;;;;;;;;;x
+shirrzach;Shirr'Zach cult;Shirr'Zach cult;Shirr'Zachkult;;;;;;;;;;;x
+shirrzach_DESC;description;description;description;;;;;;;;;;;x
+GOD_SHIRRZACH;Shirr'Zach;Shirr'Zach;Shirr'Zach;;;;;;;;;;;x
+gjalsker;The White Mammoth;The White Mammoth;Das Weiße Mammut;;;;;;;;;;;x
+gjalsker_DESC;description;description;description;;;;;;;;;;;x
+CALYACHAN;Calyach'an Mochûla;Calyach'an Mochûla;Calyach'an Mochûla;;;;;;;;;;;x
+MOCHULA;Mochûla;Mochûla;Mochûla;;;;;;;;;;;x
+GOD_ZWANFIR;Zwanfir;Zwanfir;Zwanfir;;;;;;;;;;;x
+GOD_IFRUNN;Ifrunn;Ifrunn;Ifrunn;;;;;;;;;;;x
+GOD_SINDARRA;Sindarra;Sindarra;Sindarra;;;;;;;;;;;x
+GOD_FEKORR;Fekorr;Fekorr;Fekorr;;;;;;;;;;;x
+GOD_TAYRACH;Tayrach;Tayrach;Tayrach;;;;;;;;;;;x
+GOD_MAKKA;Makka;Makka;Makka;;;;;;;;;;;x
+GOD_YURRGA;Yurrga;Yurrga;Yurrga;;;;;;;;;;;x
+GOD_WOLKENKOPF;Wolkenkopf;Wolkenkopf;Wolkenkopf;;;;;;;;;;;x
+GOD_NATURU-GON;Natûru-Gon;Natûru-Gon;Natûru-Gon;;;;;;;;;;;x
+BRENOCH-DUN;Brenoch-Dûn;Brenoch-Dûn;Brenoch-Dûn;;;;;;;;;;;x
+skothsloch;Skoth'sloch Haerad;Skoth'sloch Haerad;Skoth'sloch Haerad;;;;;;;;;;;x
+skothsloch_DESC;description;description;description;;;;;;;;;;;x
+fjarninger;Frundengar;Frundengar;Frundengar;;;;;;;;;;;x
+fjarninger_DESC;description;description;description;;;;;;;;;;;x
+SAGA;Saga;Saga;Saga;;;;;;;;;;;x
+SKULDUR;Skuldur;Skuldur;Skuldur;;;;;;;;;;;x
+GOD_FRUNU;Frunu;Frunu;Frunu;;;;;;;;;;;x
+GOD_ANGARA;Angara;Angara;Angara;;;;;;;;;;;x
+HRAMASCHTU;Hramaschtu;Hramaschtu;Hramaschtu;;;;;;;;;;;x
+SWAFNIR;Swafnir;Swafnir;Swafnir;;;;;;;;;;;x
+karankarn;Karankarn cult;Karankarn cult;Karankarnkult;;;;;;;;;;;x
+karankarn_DESC;description;description;description;;;;;;;;;;;x
+GOD_KARANKARN;Karankarn;Karankarn;Karankarn;;;;;;;;;;;x
+shaman_s;Southern Animism;Southern Animism;Südlicher Animismus;;;;;;;;;;;x
+moha;Tapam & Nipakau;Tapam & Nipakau;Tapam & Nipakau;;;;;;;;;;;x
+moha_DESC;description;description;description;;;;;;;;;;;x
+SHAMAN;Shaman;Shaman;Schamane;;;;;;;;;;;x
+TAYA;Taya;Taya;Taya;;;;;;;;;;;x
+GOD_KAMALUQ;Kamaluq;Kamaluq;Kamaluq;;;;;;;;;;;x
+GOD_WAPIYA;Wapiya;Wapiya;Wapiya;;;;;;;;;;;x
+GOD_KEKE;Keke;Keke;Keke;;;;;;;;;;;x
+GOD_NIPAKAU;Nipakau;Nipakau;Nipakau;;;;;;;;;;;x
+GOD_TAKEHE;Takehe;Takehe;Takehe;;;;;;;;;;;x
+ANPA-TONKU;Anpa-Tonku;Anpa-Tonku;Anpa-Tonku;;;;;;;;;;;x
+TSCHOMATACHAP;Tschomatachap;Tschomatachap;Tschomatachap;;;;;;;;;;;x
+SATUUL;Satuul;Satuul;Satuul;;;;;;;;;;;x
+BURDAQ;Burdaq;Burdaq;Burdaq;;;;;;;;;;;x
+ykkandil;Ykkandil cult;Ykkandil cult;Ykkandilkult;;;;;;;;;;;x
+ykkandil_DESC;description;description;description;;;;;;;;;;;x
+GOD_YKKANDIL;Ykkandil;Ykkandil;Ykkandil;;;;;;;;;;;x
+utulu;Obaran's Chosen;Obaran's Chosen;Obarans Erwählte;;;;;;;;;;;x
+utulu_DESC;description;description;description;;;;;;;;;;;x
+GOD_OBARAN;Obaran;Obaran;Obaran;;;;;;;;;;;x
+GEISTERSEHER;Ghostseer;Ghostseer;Geisterseher;;;;;;;;;;;x
+NACHTSCHWARZE_HERRIN;Nightblack Mistress;Nightblack Mistress;Nachtschwarze Herrin;;;;;;;;;;;x
+tscholuq;Tscholuq tribe;Tscholuq tribe;Tscholuqstamm;;;;;;;;;;;x
+tscholuq_DESC;description;description;description;;;;;;;;;;;x
+GOD_KRTHONCHH;Kr'Thon'Chh;Kr'Thon'Chh;Kr'Thon'Chh;;;;;;;;;;;x
+barbarian;Barbarians;Barbarians;Barbaren;;;;;;;;;;;x
+ferkina;Bloodrites;Bloodrites;Blutriten;;;;;;;;;;;x
+ferkina_DESC;description;description;description;;;;;;;;;;;x
+GOD_RASCHTULA;Raschtula;Raschtula;Raschtula;;;;;;;;;;;x
+NURANSHARIM;Nuranshâr;Nuranshâr;Nuranshâr;;;;;;;;;;;x
+GOD_ELEMENTS;The Elements;The Elements;Die Elemente;;;;;;;;;;;x
+GOD_MOON;The Moon;The Moon;Der Mond;;;;;;;;;;;x
+BLUTLOSE;The Bloodless;The Bloodless;Die Blutlosen;;;;;;;;;;;x
+orks;Blackpelts;Blackpelts;Schwarzpelze;;;;;;;;;;;x
+orkland;Aikar Brazoragh;Aikar Brazoragh;Aikar Brazoragh;;;;;;;;;;;x
+orkland_DESC;description;description;description;;;;;;;;;;;x
+GOD_TAIRACH;Tairach;Tairach;Tairach;;;;;;;;;;;x
+GOD_RIKAI;Rikai;Rikai;Rikai;;;;;;;;;;;x
+GOD_GRAVESH;Gravesh;Gravesh;Gravesh;;;;;;;;;;;x
+GOD_RANAGH;Ranagh;Ranagh;Ranagh;;;;;;;;;;;x
+GOD_GLANTUBAN;Glantuban;Glantuban;Glantuban;;;;;;;;;;;x
+GOD_NEUNFINGER;Ninefingers;Ninefingers;Ninefingers;;;;;;;;;;;x
+GOD_ANGARAI;Angarai;Angarai;Angarai;;;;;;;;;;;x
+GOD_BRAZORAGH;Brazoragh;Brazoragh;Brazoragh;;;;;;;;;;;x
+shurachai;Shurachai tribe;Shurachai tribe;Shurachaistamm;;;;;;;;;;;x
+shurachai_DESC;description;description;description;;;;;;;;;;;x
+GOD_TEIRRA;Teirra;Teirra;Teirra;;;;;;;;;;;x
+GOD_INKRA;Inkra;Inkra;Inkra;;;;;;;;;;;x
+GOD_KARMORRAGH;Karmorragh;Karmorragh;Karmorragh;;;;;;;;;;;x
+GOD_EFRUN;Efrun;Efrun;Efrun;;;;;;;;;;;x
+GOD_BRTHONA;Brthona;Brthona;Brthona;;;;;;;;;;;x
+GOD_GHURKCH;Ghurkch;Ghurkch;Ghurkch;;;;;;;;;;;x
+echsen;Lizard people;Lizard people;Echsenmenschen;;;;;;;;;;;x
+tribal_achaz;H'Ranga;H'Ranga;H'Ranga;;;;;;;;;;;x
+tribal_achaz_DESC;description;description;description;;;;;;;;;;;x
+HRANGA;H'Ranga;H'Ranga;H'Ranga;;;;;;;;;;;x
+GOD_HSZINT;H'Szint;H'Szint;H'Szint;;;;;;;;;;;x
+GOD_CHARYBYZZ;Charyb'Yzz;Charyb'Yzz;Charyb'Yzz;;;;;;;;;;;x
+GOD_ZSSAH;Zssah;Zssah;Zssah;;;;;;;;;;;x
+ppyrr;Ppyrr cult;Ppyrr cult;Ppyrrkult;;;;;;;;;;;x
+ppyrr_DESC;description;description;description;;;;;;;;;;;x
+GOD_PPYRR;Ppyrr;Ppyrr;Ppyrr;;;;;;;;;;;x

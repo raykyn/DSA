@@ -511,10 +511,10 @@ khom = {
 		color = { 0.95 0.95 0.95 }
 		parent = rastullah
 		
-		high_god_name = GOD_RAANDRAT
+		high_god_name = GOD_RAANDRA
 		
 		god_names = {
-			GOD_RAANDRAT
+			GOD_RAANDRA
 		}
 		
 		max_wives = 1
@@ -1041,7 +1041,7 @@ orks = {
 		religious_clothing_priest = 1
 	}
 	
-	schurachai = {
+	shurachai = {
 		graphical_culture = byzantinegfx
 
 		icon = 5
@@ -1053,7 +1053,7 @@ orks = {
 		high_god_name = GOD_TEIRRA
 		
 		god_names = {
-			GOD_KARMORRAGH GOD_EFRUN GOD_TEIRRA GOD_BRTHONA GOD_GHURKCH GOD_ZORKYACH GOD_HARRGUHLACH
+			GOD_KARMORRAGH GOD_EFRUN GOD_TEIRRA GOD_BRTHONA GOD_GHURKCH
 		}
 		
 		evil_god_names = {
