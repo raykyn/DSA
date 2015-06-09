@@ -1,0 +1,18 @@
+# c_llanka
+
+# County Title
+title = c_llanka
+
+# Settlements
+max_settlements = 4
+
+b_llanka = castle
+#b_llanka_2 = city
+#b_llanka_3 = temple
+#b_llanka_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

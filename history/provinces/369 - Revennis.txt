@@ -1,0 +1,18 @@
+# c_revennis
+
+# County Title
+title = c_revennis
+
+# Settlements
+max_settlements = 4
+
+b_revennis = castle
+#b_revennis_2 = city
+#b_revennis_3 = temple
+#b_revennis_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

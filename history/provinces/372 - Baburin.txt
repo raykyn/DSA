@@ -1,0 +1,18 @@
+# c_baburin
+
+# County Title
+title = c_baburin
+
+# Settlements
+max_settlements = 4
+
+b_baburin = castle
+#b_baburin_2 = city
+#b_baburin_3 = temple
+#b_baburin_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

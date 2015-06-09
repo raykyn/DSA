@@ -1,0 +1,18 @@
+# c_narhuabad
+
+# County Title
+title = c_narhuabad
+
+# Settlements
+max_settlements = 4
+
+b_narhuabad = castle
+#b_narhuabad_2 = city
+#b_narhuabad_3 = temple
+#b_narhuabad_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_farukand
+
+# County Title
+title = c_farukand
+
+# Settlements
+max_settlements = 4
+
+b_farukand = castle
+#b_farukand_2 = city
+#b_farukand_3 = temple
+#b_farukand_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

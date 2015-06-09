@@ -1,0 +1,18 @@
+# c_ras_nefidim
+
+# County Title
+title = c_ras_nefidim
+
+# Settlements
+max_settlements = 4
+
+b_ras_nefidim = castle
+#b_ras_nefidim_2 = city
+#b_ras_nefidim_3 = temple
+#b_ras_nefidim_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

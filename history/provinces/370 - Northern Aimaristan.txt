@@ -1,0 +1,18 @@
+# c_northern_aimaristan
+
+# County Title
+title = c_northern_aimaristan
+
+# Settlements
+max_settlements = 4
+
+b_northern_aimaristan = castle
+#b_northern_aimaristan_2 = city
+#b_northern_aimaristan_3 = temple
+#b_northern_aimaristan_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

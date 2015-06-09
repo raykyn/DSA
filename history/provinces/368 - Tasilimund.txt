@@ -1,0 +1,18 @@
+# c_tasilimund
+
+# County Title
+title = c_tasilimund
+
+# Settlements
+max_settlements = 4
+
+b_tasilimund = castle
+#b_tasilimund_2 = city
+#b_tasilimund_3 = temple
+#b_tasilimund_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

@@ -136,7 +136,7 @@ middenrealmian = {
 		modifier = default_culture_modifier 
     }
 
-    albernian = {
+    stub = {
         graphical_culture = celticgfx
         color = { 1 1 0.82 }
 
@@ -185,6 +185,56 @@ middenrealmian = {
  		
 		modifier = default_culture_modifier 
 	} 
+	
+	albernian = {
+        graphical_culture = celticgfx
+        color = { 1 1 0.82 }
+
+		male_names = { 
+			Aedin Aelfwin Aeneas Aneirin Annlir Ardach Ardan Baiscne Baranoir BelfionnBeli 
+			Bennwir Bladub Branwin Brendan Bruidnich Boronwyn Caitlin Cairbre Callan Cathal Ceibhin Cet 
+			Cethern Cian 
+			Conair Conaill Conlai Conn Coran Cormac Cuanu Cuill Cuilyn Cumal Cuscrid Cynwal 
+			Diarmait Diman Domnall Donn Dubh Dumnoric Dunvallo Efferdwin Elfwin Eochaid Eogan 
+			Faerwyn Fann Fiachra Finn Finwaen 
+			Firunwin Glarik Glennir Gial Gun Gwyn Halman Hesindion Hilko Hjalbin Ikaron Illaen 
+			Irian Jast Laeg Lon Lothur Luan Lughaid Menno Meredin Mi Misla Morgan Muir Niamad Niando 
+			Nibwyn Noisi Norbwyn 
+			Oisin Ordhan Osgur Peranwyn Pergrin Praiowin Phexlyn Rhajalyn Reochaid Raidri 
+			Rhodri Rigan Rhonwian Ruadh Sainglir Scibor Sean Senach Sidech Swafnian Taltin Tamlin 
+			Taranion Tibraid Trom Tsael 
+			Tuachall Uallach Uachdan Uisne Ulfert Yann 
+		} 
+		female_names = { 
+			Aeb Aedha Aife Ailill Ainsel Albhe Algai Befinna Belisa Betir Boronlyl Branwen 
+			Caillinnis Cell Cordaella Cuanna Cuib Daire Deirdre Derdriu Dornaell Dubinn Buibhe Efferlill 
+			Eillyn Emer Enid Etaine 
+			Ethal Fiall Finnla Finnabir Firael Gepkeline Gilia Glenna Grainne Hesindana Idra Illail 
+			Invher Isora Laille Larinu Libana Lyn Lotha Maire Maegh Mil Morrigu Murgin Nansi Neelke Niamh 
+			Nurinai 
+			Peraylla Praiolynna Phexla Raike Rhajala Rianod Riganna Ruada Rudraighe Saingla 
+			Scanlail Selma Seola Setana Sili Siona Silabh Sylna Tibraide Traviynla Tsaingla Tuadh Uathne 
+			Yanna Ynlais Ysit 
+		} 
+		dukes_called_kings = no 
+		baron_titles_hidden = yes 
+		count_titles_hidden = yes 
+		 
+		from_dynasty_prefix = "ni " 
+		  #Needs to be changed to "ni DYNASTY" and "ui DYNASTY" depending on gender 
+		 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
+		pat_grf_name_chance = 50 
+		mat_grf_name_chance = 5 
+		father_name_chance = 10 
+		 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+		pat_grm_name_chance = 10 
+		mat_grm_name_chance = 50 
+		mother_name_chance = 5 
+ 		
+		modifier = default_culture_modifier 
+	}
 
     nostrian = {
     	graphical_culture = germangfx

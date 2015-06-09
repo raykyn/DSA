@@ -1963,6 +1963,261 @@ e_middlerealm = {
 			}
 		}
 	}
+	k_arania = {
+		color={ 12 241 206 }
+		color2={ 255 255 255 }
+		
+		capital = 364 # c_zorgan
+		culture = aranian
+		
+		d_zorgan = {
+			color={ 32 221 216 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 364 province_id = 365 province_id = 366 } }
+				}
+			}
+			capital = 364 # c_zorgan
+			
+			c_zorgan = { # 364
+				color={ 42 211 221 }
+				color2={ 255 255 255 }
+				
+				b_zorgan = {
+				}
+				b_zorgan_2 = {
+				}
+				b_zorgan_3 = {
+				}
+				b_zorgan_4 = {
+				}
+			}
+			c_barbrueck = { # 366
+				color={ 42 225 58 }
+				color2={ 255 255 255 }
+				
+				b_barbrueck = {
+				}
+				b_barbrueck_2 = {
+				}
+				b_barbrueck_3 = {
+				}
+				b_barbrueck_4 = {
+				}
+			}
+			c_narhuabad = { # 365
+				color={ 42 37 66 }
+				color2={ 255 255 255 }
+				
+				b_narhuabad = {
+				}
+				b_narhuabad_2 = {
+				}
+				b_narhuabad_3 = {
+				}
+				b_narhuabad_4 = {
+				}
+			}
+		}
+		d_baburin = {
+			color={ 241 37 32 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 367 province_id = 368 province_id = 369 province_id = 370 province_id = 371 province_id = 372 } }
+				}
+			}
+			capital = 367 # c_ulahshan
+			
+			c_ulahshan = { # 367
+				color={ 231 47 27 }
+				color2={ 255 255 255 }
+				
+				b_ulahshan = {
+				}
+				b_ulahshan_2 = {
+				}
+				b_ulahshan_3 = {
+				}
+				b_ulahshan_4 = {
+				}
+			}
+			c_baburin = { # 372
+				color={ 231 39 23 }
+				color2={ 255 255 255 }
+				
+				b_baburin = {
+				}
+				b_baburin_2 = {
+				}
+				b_baburin_3 = {
+				}
+				b_baburin_4 = {
+				}
+			}
+			c_northern_aimaristan = { # 370
+				color={ 231 133 133 }
+				color2={ 255 255 255 }
+				
+				b_northern_aimaristan = {
+				}
+				b_northern_aimaristan_2 = {
+				}
+				b_northern_aimaristan_3 = {
+				}
+				b_northern_aimaristan_4 = {
+				}
+			}
+			c_revennis = { # 369
+				color={ 231 221 140 }
+				color2={ 255 255 255 }
+				
+				b_revennis = {
+				}
+				b_revennis_2 = {
+				}
+				b_revennis_3 = {
+				}
+				b_revennis_4 = {
+				}
+			}
+			c_southern_aimaristan = { # 371
+				color={ 231 229 29 }
+				color2={ 255 255 255 }
+				
+				b_southern_aimaristan = {
+				}
+				b_southern_aimaristan_2 = {
+				}
+				b_southern_aimaristan_3 = {
+				}
+				b_southern_aimaristan_4 = {
+				}
+			}
+			c_tasilimund = { # 368
+				color={ 231 38 210 }
+				color2={ 255 255 255 }
+				
+				b_tasilimund = {
+				}
+				b_tasilimund_2 = {
+				}
+				b_tasilimund_3 = {
+				}
+				b_tasilimund_4 = {
+				}
+			}
+		}
+		d_elburum = {
+			color={ 151 14 205 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 373 province_id = 374 province_id = 375 province_id = 376 province_id = 377 province_id = 378 province_id = 379 } }
+				}
+			}
+			capital = 373 # c_farukand
+			
+			c_farukand = { # 373
+				color={ 141 24 200 }
+				color2={ 255 255 255 }
+				
+				b_farukand = {
+				}
+				b_farukand_2 = {
+				}
+				b_farukand_3 = {
+				}
+				b_farukand_4 = {
+				}
+			}
+			c_elburum = { # 378
+				color={ 141 37 67 }
+				color2={ 255 255 255 }
+				
+				b_elburum = {
+				}
+				b_elburum_2 = {
+				}
+				b_elburum_3 = {
+				}
+				b_elburum_4 = {
+				}
+			}
+			c_farsh_uruch = { # 374
+				color={ 141 125 144 }
+				color2={ 255 255 255 }
+				
+				b_farsh_uruch = {
+				}
+				b_farsh_uruch_2 = {
+				}
+				b_farsh_uruch_3 = {
+				}
+				b_farsh_uruch_4 = {
+				}
+			}
+			c_llanka = { # 376
+				color={ 141 29 196 }
+				color2={ 255 255 255 }
+				
+				b_llanka = {
+				}
+				b_llanka_2 = {
+				}
+				b_llanka_3 = {
+				}
+				b_llanka_4 = {
+				}
+			}
+			c_ras_nefidim = { # 375
+				color={ 141 126 88 }
+				color2={ 255 255 255 }
+				
+				b_ras_nefidim = {
+				}
+				b_ras_nefidim_2 = {
+				}
+				b_ras_nefidim_3 = {
+				}
+				b_ras_nefidim_4 = {
+				}
+			}
+			c_rathmos = { # 379
+				color={ 141 233 55 }
+				color2={ 255 255 255 }
+				
+				b_rathmos = {
+				}
+				b_rathmos_2 = {
+				}
+				b_rathmos_3 = {
+				}
+				b_rathmos_4 = {
+				}
+			}
+			c_yaisirabad = { # 377
+				color={ 141 219 52 }
+				color2={ 255 255 255 }
+				
+				b_yaisirabad = {
+				}
+				b_yaisirabad_2 = {
+				}
+				b_yaisirabad_3 = {
+				}
+				b_yaisirabad_4 = {
+				}
+			}
+		}
+	}
 	k_darpatia = {
 		color={ 16 23 72 }
 		color2={ 255 255 255 }

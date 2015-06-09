@@ -1,0 +1,18 @@
+# c_yaisirabad
+
+# County Title
+title = c_yaisirabad
+
+# Settlements
+max_settlements = 4
+
+b_yaisirabad = castle
+#b_yaisirabad_2 = city
+#b_yaisirabad_3 = temple
+#b_yaisirabad_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History
