@@ -2347,6 +2347,110 @@ e_middlerealm = {
 				}
 			}
 		}
+		d_khunchom = {
+			color={ 219 36 191 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 403 province_id = 404 province_id = 405 province_id = 406 province_id = 407 province_id = 408 province_id = 409 } }
+				}
+			}
+			capital = 403 # c_khunchom
+			
+			c_khunchom = { # 403
+				color={ 229 26 196 }
+				color2={ 255 255 255 }
+				
+				b_khunchom = {
+				}
+				b_khunchom_2 = {
+				}
+				b_khunchom_3 = {
+				}
+				b_khunchom_4 = {
+				}
+			}
+			c_challef = { # 407
+				color={ 229 218 65 }
+				color2={ 255 255 255 }
+				
+				b_challef = {
+				}
+				b_challef_2 = {
+				}
+				b_challef_3 = {
+				}
+				b_challef_4 = {
+				}
+			}
+			c_jaiban = { # 408
+				color={ 229 45 38 }
+				color2={ 255 255 255 }
+				
+				b_jaiban = {
+				}
+				b_jaiban_2 = {
+				}
+				b_jaiban_3 = {
+				}
+				b_jaiban_4 = {
+				}
+			}
+			c_mhanerhaven = { # 409
+				color={ 229 214 42 }
+				color2={ 255 255 255 }
+				
+				b_mhanerhaven = {
+				}
+				b_mhanerhaven_2 = {
+				}
+				b_mhanerhaven_3 = {
+				}
+				b_mhanerhaven_4 = {
+				}
+			}
+			c_rabatistan = { # 406
+				color={ 229 195 194 }
+				color2={ 255 255 255 }
+				
+				b_rabatistan = {
+				}
+				b_rabatistan_2 = {
+				}
+				b_rabatistan_3 = {
+				}
+				b_rabatistan_4 = {
+				}
+			}
+			c_temphis = { # 404
+				color={ 229 161 211 }
+				color2={ 255 255 255 }
+				
+				b_temphis = {
+				}
+				b_temphis_2 = {
+				}
+				b_temphis_3 = {
+				}
+				b_temphis_4 = {
+				}
+			}
+			c_yaisiristan = { # 405
+				color={ 229 82 22 }
+				color2={ 255 255 255 }
+				
+				b_yaisiristan = {
+				}
+				b_yaisiristan_2 = {
+				}
+				b_yaisiristan_3 = {
+				}
+				b_yaisiristan_4 = {
+				}
+			}
+		}
 		d_palmyramis = {
 			color={ 184 242 27 }
 			color2={ 255 255 255 }

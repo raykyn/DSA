@@ -1,0 +1,18 @@
+# c_challef
+
+# County Title
+title = c_challef
+
+# Settlements
+max_settlements = 4
+
+b_challef = castle
+#b_challef_2 = city
+#b_challef_3 = temple
+#b_challef_4 = castle
+
+# Misc
+culture = aranian
+religion = rastullah
+terrain = farmlands
+#History

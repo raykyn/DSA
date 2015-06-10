@@ -1,0 +1,18 @@
+# c_rabatistan
+
+# County Title
+title = c_rabatistan
+
+# Settlements
+max_settlements = 4
+
+b_rabatistan = castle
+#b_rabatistan_2 = city
+#b_rabatistan_3 = temple
+#b_rabatistan_4 = castle
+
+# Misc
+culture = aranian
+religion = rastullah
+terrain = farmlands
+#History

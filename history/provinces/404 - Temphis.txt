@@ -1,0 +1,18 @@
+# c_temphis
+
+# County Title
+title = c_temphis
+
+# Settlements
+max_settlements = 4
+
+b_temphis = castle
+#b_temphis_2 = city
+#b_temphis_3 = temple
+#b_temphis_4 = castle
+
+# Misc
+culture = aranian
+religion = rastullah
+terrain = farmlands
+#History

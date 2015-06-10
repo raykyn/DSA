@@ -1,0 +1,18 @@
+# c_mhanerhaven
+
+# County Title
+title = c_mhanerhaven
+
+# Settlements
+max_settlements = 4
+
+b_mhanerhaven = castle
+#b_mhanerhaven_2 = city
+#b_mhanerhaven_3 = temple
+#b_mhanerhaven_4 = castle
+
+# Misc
+culture = aranian
+religion = rastullah
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_yaisiristan
+
+# County Title
+title = c_yaisiristan
+
+# Settlements
+max_settlements = 4
+
+b_yaisiristan = castle
+#b_yaisiristan_2 = city
+#b_yaisiristan_3 = temple
+#b_yaisiristan_4 = castle
+
+# Misc
+culture = aranian
+religion = rastullah
+terrain = farmlands
+#History
