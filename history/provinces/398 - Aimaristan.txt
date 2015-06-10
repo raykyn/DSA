@@ -1,0 +1,18 @@
+# c_aimaristan
+
+# County Title
+title = c_aimaristan
+
+# Settlements
+max_settlements = 4
+
+b_aimaristan = castle
+#b_aimaristan_2 = city
+#b_aimaristan_3 = temple
+#b_aimaristan_4 = castle
+
+# Misc
+culture = aranian
+religion = rastullah
+terrain = farmlands
+#History

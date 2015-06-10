@@ -1,0 +1,18 @@
+# c_bobrastan
+
+# County Title
+title = c_bobrastan
+
+# Settlements
+max_settlements = 4
+
+b_bobrastan = castle
+#b_bobrastan_2 = city
+#b_bobrastan_3 = temple
+#b_bobrastan_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

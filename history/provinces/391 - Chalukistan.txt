@@ -1,0 +1,18 @@
+# c_chalukistan
+
+# County Title
+title = c_chalukistan
+
+# Settlements
+max_settlements = 4
+
+b_chalukistan = castle
+#b_chalukistan_2 = city
+#b_chalukistan_3 = temple
+#b_chalukistan_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

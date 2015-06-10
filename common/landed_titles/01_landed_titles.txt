@@ -2022,6 +2022,136 @@ e_middlerealm = {
 				}
 			}
 		}
+		d_anchopal = {
+			color={ 117 43 218 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 388 province_id = 389 province_id = 390 province_id = 391 province_id = 392 province_id = 393 province_id = 394 province_id = 395 province_id = 396 } }
+				}
+			}
+			capital = 388 # c_higher_goria
+			
+			c_higher_goria = { # 388
+				color={ 127 33 223 }
+				color2={ 255 255 255 }
+				
+				b_higher_goria = {
+				}
+				b_higher_goria_2 = {
+				}
+				b_higher_goria_3 = {
+				}
+				b_higher_goria_4 = {
+				}
+			}
+			c_ankrabad = { # 392
+				color={ 127 49 214 }
+				color2={ 255 255 255 }
+				
+				b_ankrabad = {
+				}
+				b_ankrabad_2 = {
+				}
+				b_ankrabad_3 = {
+				}
+				b_ankrabad_4 = {
+				}
+			}
+			c_birchalukistan = { # 393
+				color={ 127 40 41 }
+				color2={ 255 255 255 }
+				
+				b_birchalukistan = {
+				}
+				b_birchalukistan_2 = {
+				}
+				b_birchalukistan_3 = {
+				}
+				b_birchalukistan_4 = {
+				}
+			}
+			c_bobrastan = { # 395
+				color={ 127 155 112 }
+				color2={ 255 255 255 }
+				
+				b_bobrastan = {
+				}
+				b_bobrastan_2 = {
+				}
+				b_bobrastan_3 = {
+				}
+				b_bobrastan_4 = {
+				}
+			}
+			c_chalukistan = { # 391
+				color={ 127 215 60 }
+				color2={ 255 255 255 }
+				
+				b_chalukistan = {
+				}
+				b_chalukistan_2 = {
+				}
+				b_chalukistan_3 = {
+				}
+				b_chalukistan_4 = {
+				}
+			}
+			c_gadang_falls = { # 394
+				color={ 127 223 27 }
+				color2={ 255 255 255 }
+				
+				b_gadang_falls = {
+				}
+				b_gadang_falls_2 = {
+				}
+				b_gadang_falls_3 = {
+				}
+				b_gadang_falls_4 = {
+				}
+			}
+			c_lower_goria = { # 390
+				color={ 127 215 223 }
+				color2={ 255 255 255 }
+				
+				b_lower_goria = {
+				}
+				b_lower_goria_2 = {
+				}
+				b_lower_goria_3 = {
+				}
+				b_lower_goria_4 = {
+				}
+			}
+			c_nerenenha = { # 389
+				color={ 127 32 33 }
+				color2={ 255 255 255 }
+				
+				b_nerenenha = {
+				}
+				b_nerenenha_2 = {
+				}
+				b_nerenenha_3 = {
+				}
+				b_nerenenha_4 = {
+				}
+			}
+			c_samradistan = { # 396
+				color={ 127 213 211 }
+				color2={ 255 255 255 }
+				
+				b_samradistan = {
+				}
+				b_samradistan_2 = {
+				}
+				b_samradistan_3 = {
+				}
+				b_samradistan_4 = {
+				}
+			}
+		}
 		d_baburin = {
 			color={ 241 37 32 }
 			color2={ 255 255 255 }
@@ -2214,6 +2344,214 @@ e_middlerealm = {
 				b_yaisirabad_3 = {
 				}
 				b_yaisirabad_4 = {
+				}
+			}
+		}
+		d_palmyramis = {
+			color={ 184 242 27 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 380 province_id = 381 province_id = 382 province_id = 383 province_id = 384 province_id = 385 province_id = 386 province_id = 387 } }
+				}
+			}
+			capital = 380 # c_muchabad
+			
+			c_muchabad = { # 380
+				color={ 194 232 32 }
+				color2={ 255 255 255 }
+				
+				b_muchabad = {
+				}
+				b_muchabad_2 = {
+				}
+				b_muchabad_3 = {
+				}
+				b_muchabad_4 = {
+				}
+			}
+			c_awallakand = { # 384
+				color={ 194 180 190 }
+				color2={ 255 255 255 }
+				
+				b_awallakand = {
+				}
+				b_awallakand_2 = {
+				}
+				b_awallakand_3 = {
+				}
+				b_awallakand_4 = {
+				}
+			}
+			c_djeristan = { # 385
+				color={ 194 31 40 }
+				color2={ 255 255 255 }
+				
+				b_djeristan = {
+				}
+				b_djeristan_2 = {
+				}
+				b_djeristan_3 = {
+				}
+				b_djeristan_4 = {
+				}
+			}
+			c_floeszern = { # 387
+				color={ 194 221 71 }
+				color2={ 255 255 255 }
+				
+				b_floeszern = {
+				}
+				b_floeszern_2 = {
+				}
+				b_floeszern_3 = {
+				}
+				b_floeszern_4 = {
+				}
+			}
+			c_ghadanar = { # 383
+				color={ 194 219 41 }
+				color2={ 255 255 255 }
+				
+				b_ghadanar = {
+				}
+				b_ghadanar_2 = {
+				}
+				b_ghadanar_3 = {
+				}
+				b_ghadanar_4 = {
+				}
+			}
+			c_jindir = { # 386
+				color={ 194 41 43 }
+				color2={ 255 255 255 }
+				
+				b_jindir = {
+				}
+				b_jindir_2 = {
+				}
+				b_jindir_3 = {
+				}
+				b_jindir_4 = {
+				}
+			}
+			c_palmyrabad = { # 381
+				color={ 194 226 219 }
+				color2={ 255 255 255 }
+				
+				b_palmyrabad = {
+				}
+				b_palmyrabad_2 = {
+				}
+				b_palmyrabad_3 = {
+				}
+				b_palmyrabad_4 = {
+				}
+			}
+			c_tamaristan = { # 382
+				color={ 194 35 217 }
+				color2={ 255 255 255 }
+				
+				b_tamaristan = {
+				}
+				b_tamaristan_2 = {
+				}
+				b_tamaristan_3 = {
+				}
+				b_tamaristan_4 = {
+				}
+			}
+		}
+		d_yalalaid = {
+			color={ 0 30 28 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 397 province_id = 398 province_id = 399 province_id = 400 province_id = 401 province_id = 402 } }
+				}
+			}
+			capital = 397 # c_amaristan
+			
+			c_amaristan = { # 397
+				color={ 246 40 23 }
+				color2={ 255 255 255 }
+				
+				b_amaristan = {
+				}
+				b_amaristan_2 = {
+				}
+				b_amaristan_3 = {
+				}
+				b_amaristan_4 = {
+				}
+			}
+			c_aimaristan = { # 398
+				color={ 246 35 205 }
+				color2={ 255 255 255 }
+				
+				b_aimaristan = {
+				}
+				b_aimaristan_2 = {
+				}
+				b_aimaristan_3 = {
+				}
+				b_aimaristan_4 = {
+				}
+			}
+			c_korushkand = { # 399
+				color={ 246 36 199 }
+				color2={ 255 255 255 }
+				
+				b_korushkand = {
+				}
+				b_korushkand_2 = {
+				}
+				b_korushkand_3 = {
+				}
+				b_korushkand_4 = {
+				}
+			}
+			c_malqistan = { # 402
+				color={ 246 231 24 }
+				color2={ 255 255 255 }
+				
+				b_malqistan = {
+				}
+				b_malqistan_2 = {
+				}
+				b_malqistan_3 = {
+				}
+				b_malqistan_4 = {
+				}
+			}
+			c_pelqananistan = { # 401
+				color={ 246 143 226 }
+				color2={ 255 255 255 }
+				
+				b_pelqananistan = {
+				}
+				b_pelqananistan_2 = {
+				}
+				b_pelqananistan_3 = {
+				}
+				b_pelqananistan_4 = {
+				}
+			}
+			c_shariwanistan = { # 400
+				color={ 246 219 38 }
+				color2={ 255 255 255 }
+				
+				b_shariwanistan = {
+				}
+				b_shariwanistan_2 = {
+				}
+				b_shariwanistan_3 = {
+				}
+				b_shariwanistan_4 = {
 				}
 			}
 		}

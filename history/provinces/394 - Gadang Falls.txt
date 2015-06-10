@@ -1,0 +1,18 @@
+# c_gadang_falls
+
+# County Title
+title = c_gadang_falls
+
+# Settlements
+max_settlements = 4
+
+b_gadang_falls = castle
+#b_gadang_falls_2 = city
+#b_gadang_falls_3 = temple
+#b_gadang_falls_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_ankrabad
+
+# County Title
+title = c_ankrabad
+
+# Settlements
+max_settlements = 4
+
+b_ankrabad = castle
+#b_ankrabad_2 = city
+#b_ankrabad_3 = temple
+#b_ankrabad_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

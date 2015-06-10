@@ -1,0 +1,18 @@
+# c_jindir
+
+# County Title
+title = c_jindir
+
+# Settlements
+max_settlements = 4
+
+b_jindir = castle
+#b_jindir_2 = city
+#b_jindir_3 = temple
+#b_jindir_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_tamaristan
+
+# County Title
+title = c_tamaristan
+
+# Settlements
+max_settlements = 4
+
+b_tamaristan = castle
+#b_tamaristan_2 = city
+#b_tamaristan_3 = temple
+#b_tamaristan_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

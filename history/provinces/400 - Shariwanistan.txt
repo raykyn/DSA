@@ -1,0 +1,18 @@
+# c_shariwanistan
+
+# County Title
+title = c_shariwanistan
+
+# Settlements
+max_settlements = 4
+
+b_shariwanistan = castle
+#b_shariwanistan_2 = city
+#b_shariwanistan_3 = temple
+#b_shariwanistan_4 = castle
+
+# Misc
+culture = aranian
+religion = oronian
+terrain = farmlands
+#History

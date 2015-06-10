@@ -1,0 +1,18 @@
+# c_higher_goria
+
+# County Title
+title = c_higher_goria
+
+# Settlements
+max_settlements = 4
+
+b_higher_goria = castle
+#b_higher_goria_2 = city
+#b_higher_goria_3 = temple
+#b_higher_goria_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History

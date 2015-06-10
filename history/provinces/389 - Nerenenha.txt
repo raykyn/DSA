@@ -1,0 +1,18 @@
+# c_nerenenha
+
+# County Title
+title = c_nerenenha
+
+# Settlements
+max_settlements = 4
+
+b_nerenenha = castle
+#b_nerenenha_2 = city
+#b_nerenenha_3 = temple
+#b_nerenenha_4 = castle
+
+# Misc
+culture = aranian
+religion = puniner
+terrain = farmlands
+#History
