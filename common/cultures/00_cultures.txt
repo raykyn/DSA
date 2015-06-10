@@ -72,7 +72,7 @@ middenrealmian = {
 	
 	garethi = {
 		graphical_culture = germangfx
-		color = { 1 0.85 0 }
+		color = { 1 0.8 0 }
 	
 		male_names = {
 			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
@@ -138,7 +138,7 @@ middenrealmian = {
 
     stub = {
         graphical_culture = celticgfx
-        color = { 1 1 0.82 }
+        color = { 1 1 0.82 }
 
 		male_names = { 
 			Aedin Aelfwin Aeneas Aneirin Annlir Ardach Ardan Baiscne Baranoir BelfionnBeli 
@@ -188,7 +188,7 @@ middenrealmian = {
 	
 	albernian = {
         graphical_culture = celticgfx
-        color = { 1 1 0.82 }
+        color = { 1 0.8 0.2 }
 
 		male_names = { 
 			Aedin Aelfwin Aeneas Aneirin Annlir Ardach Ardan Baiscne Baranoir BelfionnBeli 
@@ -239,7 +239,7 @@ middenrealmian = {
 
     nostrian = {
     	graphical_culture = germangfx
-        color = { 1 0.97 0.86 }
+        color = { 1 0.8 0.4 }
 
     	male_names = { 
 			Ablasion Albio Alrick Alrigion Andarion Andaryn Ansfinion Arngrimm Belenolas 
@@ -287,7 +287,7 @@ middenrealmian = {
 
 	andergastian = {
 		graphical_culture = normangfx
-		color = { 0.67 1 0.18}
+		color = { 1 1 0 }
 	
 	male_names = {
 			Adalbrand Arbolf Argos Arnbold Arnbrecht Barl Bärfried Bärnhelm Beusl 
@@ -334,7 +334,7 @@ middenrealmian = {
 	
 	northern_marches = {
 		graphical_culture = englishgfx
-		color = { 1 0.85 0.72 }
+		color = { 1 1 0.2 }
 	
 	male_names = {
 			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
@@ -405,7 +405,7 @@ middenrealmian = {
 	
 	meadows = {
 		graphical_culture = celticgfx
-		color = { 1 0.94 0.84 }
+		color = { 1 0.4 0.2 }
 	
 	male_names = {
 			Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag Binsbart Borkfried Bunsenhold 
@@ -456,7 +456,7 @@ middenrealmian = {
 	
 	kosh = { 
 		graphical_culture = germangfx
-		color = { 1 0.98 0.8 }
+		color = { 1 1 0.4 }
 	
 	male_names = {
 			Adran Alrik Angrond Anjun Answin Ardor Arn Badilak Baltram Bardo Berman 
@@ -526,7 +526,7 @@ middenrealmian = {
 	
 	tobrian = {
 	graphical_culture = englishgfx
-	color = { 0.74 0.71 0.42 }
+	color = { 1 0.4 0 }
 	
 	male_names = {
 		Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag
@@ -593,7 +593,7 @@ middenrealmian = {
 	
 	svelltlander = {
 		graphical_culture = celticgfx
-		color = { 1 0.89 0.71 }
+		color = { 1 0.6 0.8 }
 	
 		male_names = {
 			Adran_An Alrik_Rik Angrond Anjun Answin Ardor Arn Badilak_Badi Baltram_Bal Bardo Berman_Ber Bernhelm_Bern Bodar Bogumil_Bogu Boromil Boronian Bosper Brin Burgol Burian
@@ -642,7 +642,7 @@ middenrealmian = {
 	
 	darpatian = {
 		graphical_culture = englishgfx
-		color = { 1 1 0.88 }
+		color = { 1 0.86 1 }
 	
 		male_names = {
 			Adelger Aeron Alfrik Aldron Answin Arddur Arnwulf Bardon Barnhelm Bellias Brinwulf Burcanon Caldon Corelian Dardulan Edric Erdwulf Egilmar Ercont Erlan Falconor Falker Firudon
@@ -683,7 +683,7 @@ almada = {
 
 	almadan = {
 		graphical_culture = southerngfx
-		color = { 1 0.65 0 }	
+		color = { 1 0.6 0 }	
 		
 		male_names = {
 			Alrico Alonso Almaderich Almanzo_Almanzor Amando Aquitanyo Arif Aslam Assavo Azulejo Badilaco Bardojoz Balbiano Biscarat Bodar Borondino Cahusac Caldaio_Caldaios Cambados
@@ -731,7 +731,7 @@ hjaldingish = {
     thorwalian = {
         graphical_culture = norsegfx
 
-        color = { 0.13 0.69 0.66 }
+        color = { 0 0 0.4 }
         
         male_names = {
 			Aki Ansgar Ansir Arngrim Asgrimm Askir Asleif Atli Atmaskott Beorn Beowulf Bjeri Bjarni Björn Brand Egil Eilif Eindrin
@@ -781,7 +781,7 @@ hjaldingish = {
     gjalskerlandish = {
         graphical_culture = norsegfx
 
-        color = { 0.5 1 0.83 }
+        color = { 0 0.2 0.6 }
         
         male_names = {
         	Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
@@ -819,7 +819,7 @@ hjaldingish = {
 	fjarningish = {
         graphical_culture = norsegfx
 
-        color = { 0.87 1 1 }
+        color = { 0.2 0.2 1 }
         
         male_names = {
         	Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
@@ -857,7 +857,7 @@ nivese = {
 	
 	tribal_nivese = {
 		graphical_culture = ugricgfx
-		color = { 1 0.98 0.98 }
+		color = { 1 0.98 0.98 }
 	
 		male_names = {
        		Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
@@ -896,7 +896,7 @@ nivese = {
 	
 	nuanaä-lie = {
 		graphical_culture = ugricgfx #if we use them at all, need own gfx without hair
-		color = { 0.94 1 0.94 }
+		color = { 0.94 1 0.94 }
 	
 		male_names = {
         	Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
@@ -939,7 +939,7 @@ fountland = {
 	
 	sevirya = {
 		graphical_culture = westernslavicgfx
-		color = { 0.41 0.35 0.8 }
+		color = { 0.6 0 1 }
 	
 		male_names = {
 			Albin Arvid Baerjan Baerow Berschin Birjew Bosjew Boutsen Daanje Dabbert Damian Danow Duchjo
@@ -980,7 +980,7 @@ fountland = {
 	
 	fastenland = {
 		graphical_culture = westernslavicgfx
-		color = { 0.6 0.2 0.8 }
+		color = { 0.4 0 1 }
 	
 		male_names = {
 			Albin Arvid Baerjan Baerow Berschin Birjew Bosjew Boutsen Daanje Dabbert Damian Danow Duchjo
@@ -1021,7 +1021,7 @@ fountland = {
 	
 	march = {
 		graphical_culture = westernslavicgfx
-		color = { 0.4 0.2 0.6 }
+		color = { 0.4 0 0.4 }
 	
 		male_names = {
 			Albin Arvid Baerjan Baerow Berschin Birjew Bosjew Boutsen Daanje Dabbert Damian Danow Duchjo
@@ -1066,7 +1066,7 @@ horasian = {
 	
 	septimana = {
 		graphical_culture = southerngfx 
-		color = { 0.56 0.74 0.56 }
+		color = { 0 0.8 0.6 }
 	
 		male_names = {
 			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
@@ -1115,7 +1115,7 @@ horasian = {
 	
 	yaquiria = {
 		graphical_culture = southerngfx 
-		color = { 0.75 0.75 0.75 }
+		color = { 0 1 0.4 }
 	
 		male_names = {
 			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
@@ -1164,7 +1164,7 @@ horasian = {
 	
 	aurelat = {
 		graphical_culture = southerngfx 
-		color = { 0.47 0.53 0.6 }
+		color = { 0 1 0.6 }
 	
 		male_names = {
 			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
@@ -1213,7 +1213,7 @@ horasian = {
 	
 	coverna = {
 		graphical_culture = southerngfx 
-		color = { 0.66 0.66 0.66 }
+		color = { 0 1 0.8 }
 	
 		male_names = {
 			Adaon Alborn Aldo Alessandro Alricilian Alricio Alverigo Alvin Amaldo Anselmo Argelione Ariano Ariosto
@@ -1266,7 +1266,7 @@ cyclops = {
 	
 	cyclops_islands = {
 		graphical_culture = byzantinegfx
-		color = { 0.63 0.32 0.18 }
+		color = { 0.6 0.2 0.4 }
 	
 		male_names = {
 			Aisyphan Alrikos Amenelaos Avasios Belemanias Dariÿon Dirimethos Efferdaïos Horakles Ingerydos Kalchas Madaïon Meneander Mermydion Mironos Okeandros
@@ -1344,7 +1344,7 @@ tulamids = {
 	
 	mhanadistani = {
 		graphical_culture = andalusiangfx
-		color = { 1 0 0 }
+		color = { 1 0 0 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey Chadim Charef Cherek Dajin Deniz Dilhaban Djuned Dschadir Dscherid Dunchaban
@@ -1389,7 +1389,7 @@ tulamids = {
 	
 	gorian = {
 		graphical_culture = andalusiangfx
-		color = { 0.69 0.13 0.13 }
+		color = { 0.8 0 0 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey Chadim Charef Cherek
@@ -1434,7 +1434,7 @@ tulamids = {
 	
 	selem = {
 		graphical_culture = turkishgfx
-		color = { 0.8 0.36 0.36 }
+		color = { 0.6 0 0 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alam Alev Ali Alrik Amaryd Amir Arkos Assaf Aytan Babur Benayman Bey Chadim Charef Cherek Dajin Deniz Dilhaban Djuned Dschadir Dscherid Dunchaban
@@ -1478,7 +1478,7 @@ tulamids = {
 
 	thalusian = {
 		graphical_culture = persiangfx
-		color = { 0.86 0.08 0.34 }
+		color = { 1 0 0.2 }
 	
 		male_names = {
 			Ahjanankhra Ankhra Bahram_Bharma Dolguruq Duowk Erkhaban Kasan Khunsha Harak Haschabna Hashin Kalkarib Mhapasha Mustafa Mozaffa_Muzaffer Muyanpasha Najara Perhiman
@@ -1525,7 +1525,7 @@ tulamids = {
 	
 	ferkina = {
 		graphical_culture = persiangfx
-		color = { 0.94 0.5 0.5 }
+		color = { 0.4 0.4 0.2 }
 	
 		male_names = {
 			Abtuul Ardavan Ardesh Azad Bashur Burshuk Chosraw Devlekh Djershar Dschafur Dschalf Durjin Faruch Farzand Feridun Fervez Gulbad
@@ -1565,7 +1565,7 @@ khom = {
 
 	beni_novad = {
 		graphical_culture = arabicgfx
-		color = { 0.6 0.8 0.2 }
+		color = { 1 0 0.6 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
@@ -1610,7 +1610,7 @@ khom = {
 	
 	beni_shadif = {
 		graphical_culture = arabicgfx
-		color = { 0.2 0.8 0.2 }
+		color = { 1 0 1 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
@@ -1655,7 +1655,7 @@ khom = {
 	
 	beni_erkin = {
 		graphical_culture = arabicgfx
-		color = { 0.5 1 0 }
+		color = { 1 0.2 1 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
@@ -1700,7 +1700,7 @@ khom = {
 	
 	beni_shebt	= {
 		graphical_culture = arabicgfx
-		color = { 0 1 0.5 }
+		color = { 1 0 0.8 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam
@@ -1749,7 +1749,7 @@ maraskan = {
 
 	maraskani = {
 		graphical_culture = indiangfx
-		color = { 0.42 0.56 0.14 }
+		color = { 0 0.4 0.0 }
 	
 		male_names = {
 			Aldifriedijian Alrech Brindijian Darjin_Dajin Denderan Djurmold Dschindziber Elgoran Endijian Fruziber_Feruziber Frumold Garalor Gerbaldijian Hadijian Marajian
@@ -1789,7 +1789,7 @@ south_aventuria = {
 
 	meridiana = {
 		graphical_culture = occitangfx
-		color = { 0 0 0.8 }
+		color = { 0 0 0.6 }
 	
 		male_names = {
 			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
@@ -1833,7 +1833,7 @@ south_aventuria = {
 	
 	kemi = {
 		graphical_culture = occitangfx
-		color = { 0.27 0.51 0.71 }
+		color = { 0.2 0.2 0.6 }
 	
 		male_names = {
 			Kemet'nechet Sekem'kutary Shepses'ká Setepen Hati'hesá Abet-ut'yar Pet'nehem Nebîb Sekem'veser Veser'htep Djer'kem Henem'iwen Ahhotpe Ahmenofus Amhotep Anchefenmut
@@ -1873,7 +1873,7 @@ south_aventuria = {
 	
 	mengbilla = {
 		graphical_culture = occitangfx
-		color = { 0.39 0.58 0.93 }
+		color = { 0 0.2 1 }
 	
 		male_names = {
 			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
@@ -1917,7 +1917,7 @@ south_aventuria = {
 	
 	drol = {
 		graphical_culture = occitangfx
-		color = { 0.12 0.56 1 }
+		color = { 0 0.2 0.8 }
 	
 		male_names = {
 			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
@@ -1961,7 +1961,7 @@ south_aventuria = {
 	
 	charypso = {
 		graphical_culture = occitangfx
-		color = { 0 0.75 1 }
+		color = { 0.2 1 0.8 }
 	
 		male_names = {
 			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
@@ -2005,7 +2005,7 @@ south_aventuria = {
 	
 	alanfa = {
 		graphical_culture = occitangfx
-		color = { 0.09 0.09 0.44 }
+		color = { 0 0 0.8 }
 	
 		male_names = {
 			Adario Agusto Alondro Alrico Alricio Alriego Alrique Amirato Audarito Avessander Badilaco Boromeo
@@ -2049,7 +2049,7 @@ south_aventuria = {
 	
 	beni_arrat = {
 		graphical_culture = arabicgfx
-		color = { 0.69 0.88 0.9 }
+		color = { 0.2 0.8 0.6 }
 	
 		male_names = {
 			Abdul Abu Achmad Achtev Alev Ali Alrik Amir Assaf Aytan Benayman Chadim Charef Cherek Dajin Deniz Dilhaban Dschadir Dscherid Dunchaban Erkhaban Eslam Faizal Faramud Feruzef Feyhach
@@ -2100,7 +2100,7 @@ forest_men = {
 	
 	moha = {
 		graphical_culture = indiangfx
-		color = { 1 0.89 0.88 }
+		color = { 0 0.8 0 }
 	
 		male_names = {
 			Ake-Iya Anhe Anpahah Arapa-Ima Auyan Cankuna Cante-Tinza Catka Capibara Cassawe Caui-Tsche Cekpa Cenote Chayote Chicha Chichirá Coyo-Te Eyapa-Tisa
@@ -2137,7 +2137,7 @@ forest_men = {
 	
 	miniwatu = {
 		graphical_culture = indiangfx
-		color = { 0.98 0.92 0.84 }
+		color = { 0.2 1 0.6 }
 	
 		male_names = {
 			Aioukea Akivi Alriki Anakena Aotearoa Ariki Ariki-Mao Ariki-Paka Ataranga Attaroa Cawa Gunung-Kawi Hanga-Roa Haoa Haumoana Henua Hinaioio Hitirenga Hoianau Hotu-Matua
@@ -2179,7 +2179,7 @@ utulus = {
 	
 	utulu = {
 		graphical_culture = africangfx
-		color = { 0.85 0.65 0.13 }
+		color = { 0.2 1 0 }
 	
 		male_names = {
 			Ahosi Aru Bamu Bandikut Baoba Baramundi Bemu Billabong Biltong Binturong Bolotongo Buru Cazembe Chaka Chukwalla
@@ -2226,7 +2226,7 @@ dwarves = {
 	
 	ore_d = {
 		graphical_culture = germangfx
-		color = { 0.73 0.55 0.55 }
+		color = { 0.86 0.86 0.86}
 	
 		male_names = {
 			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
@@ -2283,7 +2283,7 @@ dwarves = {
 	
 	anvil_d = {
 		graphical_culture = germangfx
-		color = { 1 0.87 0.68 }
+		color = { 0.66 0.66 0.66 }
 	
 		male_names = {
 			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
@@ -2340,7 +2340,7 @@ dwarves = {
 	
 	diamond_d = {
 		graphical_culture = germangfx
-		color = { 0.86 0.86 0.86 }
+		color = { 0.41 0.41 0.41 }
 	
 		male_names = {
 			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
@@ -2397,7 +2397,7 @@ dwarves = {
 	
 	hill_d = {
 		graphical_culture = germangfx
-		color = { 0.55 0.93 0.55 }
+		color = { 0.18 0.31 0.31 }
 	
 		male_names = {
 			Adbrag Alberik Alrix Ambosseli Andrasch Angrox Artox Arombolosch Arthag Arthogrosch Atosch Auro
@@ -2456,7 +2456,7 @@ dwarves = {
 ork_culture = {
 	orklander = {
 		graphical_culture = germangfx
-		color = { 0.55 0 0.55 }
+		color = { 0.4 0 0.6 }
 	
 		male_names = {
 			Alrork Airakh Arbachzeg Aregz Ashim Azparuch Azzek Balrork Baßtorg Blorg Bozorgh Brazoch Burchai Buiruzz Byakkrak Elgork
@@ -2497,7 +2497,7 @@ ork_culture = {
 	
 	besatzer = {
 		graphical_culture = germangfx
-		color = { 0.55 0 0.6 }
+		color = { 0.6 0 0.8 }
 	
 		male_names = {
 			Alrork Airakh Arbachzeg Aregz Ashim Azparuch Azzek Balrork Baßtorg Blorg Bozorgh Brazoch Burchai Buiruzz Byakkrak Elgork
@@ -2541,7 +2541,7 @@ ork_culture = {
 achaz = {
 	tribal_a = {
 		graphical_culture = germangfx
-		color = { 0 0.4 0 }
+		color = { 0.2 0.4 0.2 }
 	
 		male_names = {
 			Achatazz Achazz Ahzzhur Antzzs Arssachz Aso'Zzrt Atzhzhaleh Chakmol Chnathon Chrho Chssa Chtmok Chtrif Chuszrr Crmichl Dschossrr Fffssz
