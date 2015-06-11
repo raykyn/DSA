@@ -30,7 +30,7 @@ twelve = {
 			DER_NAMENLOSE BLAKHARAZ BELHALHAR CHARYPTOROTH LOLGRAMOTH THARGUNITOTH AMAZEROTH BELSHIRASH ASFALOTH TASFARELEL BELZHORASH AGRIMOTH BELKELEL
 		} #debatable if arch demons should count
 		
-		investiture = no
+		investiture = yes
 		can_have_antipopes = yes #only by events?
 		can_excommunicate = yes
 		can_grant_divorce = no #few exceptions to this like demon worshipping etc.

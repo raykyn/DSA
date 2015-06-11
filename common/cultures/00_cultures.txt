@@ -2,8 +2,8 @@
 # If adding new groups or cultures, make sure they are unique.
 
 middenrealmian = {
-    graphical_culture = westerngfx
-    
+	graphical_culture = westerngfx
+	
 	proxy = { ##This is only needed to prevent a bug
 		graphical_culture = germangfx
 		color = { 1 0.85 0 }
@@ -32,7 +32,7 @@ middenrealmian = {
 			Vorlop Wahnfried 
 			Welf Wolfman Wulf Wulfhelm Xandro Xindan Xebbert Xerber Yann Yantur Yendan Yendar 
 			Yerodin Yeto Zondan Zolthan Zordan} 
-	  
+		
 		female_names = {
 			Adaque Alda Alena Alinde Alruna Alvide Arba Arta Belona Berinka Berna 
 			Binya Birsel Boriane Caya Celissa Cella Charine Coruna Dara Dari Daria Dela Derya Dhana 
@@ -51,24 +51,24 @@ middenrealmian = {
 			Ulinai Ulmia Utsinde Uthjande Vana 
 			Viridai Vistella Wala Waliburia Walpurgia Wina Wilimai Xaida Xaviera Xerane Xinda Yanis 
 			Yasmina Yassia Ysinthe Yola Yolande Yolde Yosmia Ysilda Zekla Zelda Zidane Zidona Zita Zoe 
-			Zyla Zylya } 	
+			Zyla Zylya }
 		
 		dukes_called_kings = no 
-	  
+		
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
 		father_name_chance = 10 
-	 
+		
 		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
 		pat_grm_name_chance = 10 
 		mat_grm_name_chance = 50 
 		mother_name_chance = 5 
-	  
+		
 		from_dynasty_prefix = "of " 
-	  
+		
 		modifier = default_culture_modifier 
-    } 
+	}
 	
 	garethi = {
 		graphical_culture = germangfx
@@ -98,7 +98,7 @@ middenrealmian = {
 			Vorlop Wahnfried 
 			Welf Wolfman Wulf Wulfhelm Xandro Xindan Xebbert Xerber Yann Yantur Yendan Yendar 
 			Yerodin Yeto Zondan Zolthan Zordan} 
-	  
+		
 		female_names = {
 			Adaque Alda Alena Alinde Alruna Alvide Arba Arta Belona Berinka Berna 
 			Binya Birsel Boriane Caya Celissa Cella Charine Coruna Dara Dari Daria Dela Derya Dhana 
@@ -120,7 +120,7 @@ middenrealmian = {
 			Zyla Zylya } 	
 		
 		dukes_called_kings = no 
-	  
+		
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
 		pat_grf_name_chance = 50 
 		mat_grf_name_chance = 5 
@@ -134,11 +134,11 @@ middenrealmian = {
 		from_dynasty_prefix = "of " 
 	  
 		modifier = default_culture_modifier 
-    }
+	}
 
-    stub = {
-        graphical_culture = celticgfx
-        color = { 1 1 0.82 }
+	stub = {
+		graphical_culture = celticgfx
+		color = { 1 1 0.82 }
 
 		male_names = { 
 			Aedin Aelfwin Aeneas Aneirin Annlir Ardach Ardan Baiscne Baranoir BelfionnBeli 
@@ -154,8 +154,8 @@ middenrealmian = {
 			Rhodri Rigan Rhonwian Ruadh Sainglir Scibor Sean Senach Sidech Swafnian Taltin Tamlin 
 			Taranion Tibraid Trom Tsael 
 			Tuachall Uallach Uachdan Uisne Ulfert Yann 
-		} 
-		female_names = { 
+		}
+		female_names = {
 			Aeb Aedha Aife Ailill Ainsel Albhe Algai Befinna Belisa Betir Boronlyl Branwen 
 			Caillinnis Cell Cordaella Cuanna Cuib Daire Deirdre Derdriu Dornaell Dubinn Buibhe Efferlill 
 			Eillyn Emer Enid Etaine 
@@ -165,7 +165,7 @@ middenrealmian = {
 			Peraylla Praiolynna Phexla Raike Rhajala Rianod Riganna Ruada Rudraighe Saingla 
 			Scanlail Selma Seola Setana Sili Siona Silabh Sylna Tibraide Traviynla Tsaingla Tuadh Uathne 
 			Yanna Ynlais Ysit 
-		} 
+		}
 		dukes_called_kings = no 
 		baron_titles_hidden = yes 
 		count_titles_hidden = yes 
@@ -184,11 +184,11 @@ middenrealmian = {
 		mother_name_chance = 5 
  		
 		modifier = default_culture_modifier 
-	} 
+	}
 	
 	albernian = {
-        graphical_culture = celticgfx
-        color = { 1 0.8 0.2 }
+		graphical_culture = celticgfx
+		color = { 1 0.8 0.2 }
 
 		male_names = { 
 			Aedin Aelfwin Aeneas Aneirin Annlir Ardach Ardan Baiscne Baranoir BelfionnBeli 
@@ -237,11 +237,11 @@ middenrealmian = {
 		modifier = default_culture_modifier 
 	}
 
-    nostrian = {
-    	graphical_culture = germangfx
-        color = { 1 0.8 0.4 }
+	nostrian_c = {
+		graphical_culture = germangfx
+		color = { 1 0.8 0.4 }
 
-    	male_names = { 
+		male_names = { 
 			Ablasion Albio Alrick Alrigion Andarion Andaryn Ansfinion Arngrimm Belenolas 
 			Blasius Bösfold Bosper Brin Buuriel Cloduar Cordovan Droderon Elwin Esindion Ettel Fertilas 
 			Fringlas Gasparyn 
@@ -250,17 +250,16 @@ middenrealmian = {
 			Perainhold Perval Polter Rakorious Rauert Reto Rigbald Rondrian Rosedyon Rudegar Storko 
 			Tommelian Ucurius 
 			Valpo Valtoron Vitus Ukko Yantur Yeto
-		} 
-		 
-		female_names = { 
+		}
+		
+		female_names = {
 			Algai Alrike Amenai Alaroth Asmodette Baldis Belenoleth Brea Brintje Dalidai 
 			Deire Delusia Dextris Efferdje Elle Elysmine Finntje Firunette Franiane Frede Gertlind Girte 
-			Gylde Gythje Haraike Heladis 
-			Helasine Hete Idra Ingvaline Kasmine Linai Line Lysmine Maire Marlinke May Milis Misa 
+			Gylde Gythje Haraike Heladis Helasine Hete Idra Ingvaline Kasmine Linai Line Lysmine Maire Marlinke May Milis Misa 
 			Noraleth Nostriane Nostris Nurinai Perai Peranke Rondirai Rondriane Ruade Selma Senebiane 
 			Tommeline Travieke Triumfina Ulse Vitcorine Wilimai Yanntje 
 			Yasmina Yolande_Yolanda Ynlais Yppolitis
-		} 
+		}
 		
 		dukes_called_kings = no 
 		baron_titles_hidden = yes 
@@ -283,13 +282,13 @@ middenrealmian = {
 		mother_name_chance = 0 
 	 	
 		modifier = default_culture_modifier 
-	} 
+	}
 
-	andergastian = {
+	andergastian_c = {
 		graphical_culture = normangfx
 		color = { 1 1 0 }
 	
-	male_names = {
+		male_names = {
 			Adalbrand Arbolf Argos Arnbold Arnbrecht Barl Bärfried Bärnhelm Beusl 
 			Binsbart Blathislaus Bogumil Borkfried Boromil Brin Bruderich Cord Därling Depold Dietrad 
 			Edelbrecht Edl 
@@ -301,7 +300,7 @@ middenrealmian = {
 			Rickl Seffel 
 			Sepald Steinislaus Travignaz Uhlfing Uribert Waldbert Waldmar Waschtl Wendolyn Wenzel 
 			Wenzeslaus Wlastimil_Wlastl Yaruslaus
-		} 
+		}
 		  
 		female_names = {
 			Algrete Alrike Alwena Amseltraud Andela Arnhild Bera Birsel Bugga Dorota 
@@ -312,7 +311,8 @@ middenrealmian = {
 			Neunhild Permine 
 			Renzi Resi Rosi Roßwid Rotrud Rusena Sari Stine Sumunelda Tenxwind Traute Trautgold 
 			Travegunde Varena Vera Walderia Waldrada Walpurga Waldtraute Wendeline
-		} 
+		}
+		
 		dukes_called_kings = no 
 		baron_titles_hidden = yes 
 		count_titles_hidden = yes 
@@ -383,31 +383,30 @@ middenrealmian = {
 			Zyla Zylya 
 		} 
 		  
-			dukes_called_kings = no 
-			baron_titles_hidden = yes 
-			count_titles_hidden = yes 
+		dukes_called_kings = no 
+		baron_titles_hidden = yes 
+		count_titles_hidden = yes 
 		 
-			from_dynasty_prefix = "of " 
+		from_dynasty_prefix = "of " 
 		 
-			# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
-			pat_grf_name_chance = 50 
-			mat_grf_name_chance = 5 
-			father_name_chance = 10 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
+		pat_grf_name_chance = 50 
+		mat_grf_name_chance = 5 
+		father_name_chance = 10 
 		 
-			# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
-			pat_grm_name_chance = 10 
-			mat_grm_name_chance = 50 
-			mother_name_chance = 5 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+		pat_grm_name_chance = 10 
+		mat_grm_name_chance = 50 
+		mother_name_chance = 5 
 		
-			modifier = default_culture_modifier 
-  
-    }
+		modifier = default_culture_modifier 
+	}
 	
 	meadows = {
 		graphical_culture = celticgfx
 		color = { 1 0.4 0.2 }
 	
-	male_names = {
+		male_names = {
 			Ailfir Ailrik Ailgrimm Aldewein Angrist Anshag Binsbart Borkfried Bunsenhold 
 			Dankward Derling Dingel Dornwill Drachwill Dreufang Edil Efferdin Eichbart Emmeran Erlwulf 
 			Ferling 
@@ -420,7 +419,7 @@ middenrealmian = {
 			Tannfried Tiro Thordenan Thordenin Thorolf Tobor Olfert Uldreich Weldmar Waidbert Waldbert 
 			Waldemar Waldhold 
 			Wallfried Wilfing Wolfhelm Yann 
-		} 
+		}
   
 		female_names = {
 			Äarl Adilgunde Algrid Alwen Amselgunde Aartrude Bormunde Birsa Birsel 
@@ -675,11 +674,10 @@ middenrealmian = {
 
 		modifier = default_culture_modifier
     }
-
 }
 
 almada = {
-	graphical_culture = southerngfx
+	graphical_culture = occitangfx ###Fallback
 
 	almadan = {
 		graphical_culture = southerngfx
@@ -722,18 +720,15 @@ almada = {
     	modifier = default_culture_modifier
 	}
 }
-
+hjaldingish_c = {
+	graphical_culture = norsegfx
 	
-
-hjaldingish = {
-    graphical_culture = norsegfx
-    
-    thorwalian = {
-        graphical_culture = norsegfx
-
-        color = { 0 0 0.4 }
-        
-        male_names = {
+	thorwalian_c = {
+		graphical_culture = norsegfx
+		
+		color = { 0 0 0.4 }
+		
+		male_names = {
 			Aki Ansgar Ansir Arngrim Asgrimm Askir Asleif Atli Atmaskott Beorn Beowulf Bjeri Bjarni Björn Brand Egil Eilif Eindrin
 			Eirik Eldgrimm Faenwulf Firunjar Fjolnir Frenjar Garald Garulf Geir Gerskir Gunn_Gunni Hakon Hallar Halfdan Hardger Hardred Hasgar Helgi
 			Hjerolf_Herolf Herm Hjall_Hjalldi Hjore Hjalmar_Halmar Hjaldar_Haldar Hjelm Ingald Ingirid Ingibjörg Iskir Isleif_Islif Jora Jurge Karven Kari Ketil Kjaskar
@@ -754,183 +749,179 @@ hjaldingish = {
 			Baerhild Dotta Eldgrimma Elkelda Erkenhild Fjolnaras Frenhild Grea Hardgera Hjura Ifirnsgira Iskra Isliva Jandara Jora Malina Ottarenja
 			Ragnid Rondrija Rondriwjulfa Senda Sendja Sindara Sura Swafnirdra Swanda Thorkatla Travidja Tula Tuwine Walla
 		}
-        
-        dukes_called_kings = yes
-        baron_titles_hidden = yes
-        count_titles_hidden = yes
-        
-        from_dynasty_prefix = "of "
-        
-        male_patronym = "sson"
-        female_patronym = "sdottir"
-        prefix = no # The patronym is added as a suffix
-        
-        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-        pat_grf_name_chance = 50
-        mat_grf_name_chance = 0
-        father_name_chance = 0
-        
-        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-        pat_grm_name_chance = 10
-        mat_grm_name_chance = 50
-        mother_name_chance = 0
+		
+		dukes_called_kings = yes
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+		
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "sson"
+		female_patronym = "sdottir"
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	gjalskerland_c = {
+		graphical_culture = norsegfx
 
-        modifier = default_culture_modifier
-    }
-    
-    gjalskerlandish = {
-        graphical_culture = norsegfx
-
-        color = { 0 0.2 0.6 }
-        
-        male_names = {
-        	Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
+		color = { 0 0.2 0.6 }
+		
+		male_names = {
+			Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
 			Fredon Lannoch Marfogh Sadrugh Ullachan
 		}
 			
-        female_names = {
-            Andraga Bebann Dundana Dunyabra Hjalbeth Hjurrgat Megrim Morrga Milbeth Murraya Hagwa Shinnath Skrayana Harrkara Ifrunna
+		female_names = {
+			Andraga Bebann Dundana Dunyabra Hjalbeth Hjurrgat Megrim Morrga Milbeth Murraya Hagwa Shinnath Skrayana Harrkara Ifrunna
 			Meruscha Milbath Thorkat Tulmath Yurrgira
 		}
-        
-        dukes_called_kings = no
-        baron_titles_hidden = yes
-        count_titles_hidden = yes
-        
-        from_dynasty_prefix = "of "
-        
-        male_patronym = "bren "
-        female_patronym = "brai "
-        prefix = yes # The patronym is added as a suffix
-        
-        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-        pat_grf_name_chance = 50
-        mat_grf_name_chance = 0
-        father_name_chance = 0
-        
-        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-        pat_grm_name_chance = 10
-        mat_grm_name_chance = 50
-        mother_name_chance = 0
+		
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+		
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "bren "
+		female_patronym = "brai "
+		prefix = yes # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
 
-        modifier = default_culture_modifier
-    }
+		modifier = default_culture_modifier
+	}
+	fjarningish_c = {
+		graphical_culture = norsegfx
 
-	fjarningish = {
-        graphical_culture = norsegfx
-
-        color = { 0.2 0.2 1 }
-        
-        male_names = {
-        	Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
+		color = { 0.2 0.2 1 }
+		
+		male_names = {
+			Anchas Bradruch Branchan Dundoch Islogh Ifrunndoch Mjesgold Morghinach Struan Wladuch Yuchdan Yurrgold Alrogh Bannoch Braghad Domnach Dundan Durtacht
 			Fredon Lannoch Marfogh Sadrugh Ullachan
 		}
 			
-        female_names = {
-            Andraga Bebann Dundana Dunyabra Hjalbeth Hjurrgat Megrim Morrga Milbeth Murraya Hagwa Shinnath Skrayana Harrkara Ifrunna
+		female_names = {
+			Andraga Bebann Dundana Dunyabra Hjalbeth Hjurrgat Megrim Morrga Milbeth Murraya Hagwa Shinnath Skrayana Harrkara Ifrunna
 			Meruscha Milbath Thorkat Tulmath Yurrgira
 		}
-        
-        dukes_called_kings = no
-        baron_titles_hidden = yes
-        count_titles_hidden = yes
-        
-        from_dynasty_prefix = "of "
-        
-        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-        pat_grf_name_chance = 50
-        mat_grf_name_chance = 0
-        father_name_chance = 0
-        
-        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-        pat_grm_name_chance = 10
-        mat_grm_name_chance = 50
-        mother_name_chance = 0
+		
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
 
-        modifier = default_culture_modifier
-    }
-    
+		modifier = default_culture_modifier
+	}
 }
-
 nivese = {
 	graphical_culture = easterngfx
 	
-	tribal_nivese = {
+	nivese_c = {
 		graphical_culture = ugricgfx
 		color = { 1 0.98 0.98 }
 	
 		male_names = {
-       		Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
+			Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
 			Gorfangnuk Gurjinen Hanko Hautan Hautanan Heimanuk Hietanen Honuk Horganan Hunjok Huno Janjuk Jorinen Jurtan Jurtanan Kaikanuk Kalkuk Kaunanan Kauno Keinjo Kervo Kilhjo Kinajo Kintan
 			Kintanan Kuljuk Kumo Kylänjak Lanan Latu Leikinen Leksvalen Lieto Mada Madanan Maenan Matiljok Minkio Mouhuk Nantalin Nerkjo Niljo Nurmjo Nysjo Olainen Paimjo Pajimazo Parkanjuk Peltjo
 			Pirtijok Rakjo Rasjuk Raumo Ruukjok Sandjo Seinuk Seinjuk Silkajok Simjok Svartjok Tamperen Toljok Tsaekal Turkunen Tyrjuk Uljok Ulo Valen Valjok Vik Ylsjok Zanuk Zeino 
-    	}
-       
+		}
+		
 		female_names = {
-        	Airaksela Amuri Auka Aukaju Baituri Bjanju Biniaki Burti Dakauju Dana Dionju Duri Eikaju Emela Eskola Falkja Ferturi Fidaju Fidju Gateiki Geika Godju Hauka Hirolja Hikia Hyvinga
+			Airaksela Amuri Auka Aukaju Baituri Bjanju Biniaki Burti Dakauju Dana Dionju Duri Eikaju Emela Eskola Falkja Ferturi Fidaju Fidju Gateiki Geika Godju Hauka Hirolja Hikia Hyvinga
 			Ikaju Ila Irti Isalmi Jalani Jokela Jokja Jonuri Jutila Jyla Kajani Kantala Karenju Karra Katimäki Kaukalathi Keitakju Kela Kelva Kisa Koski Kuopi Kura
 			Lahti Lappila Lauka Liedsa Liskaju Loja Lojmaa Murula Myrra Nakila Näljavena Nirka Nivilaukaju Nujala Ojakalla Olu
 			Paukaja Peltju Pori Purolju Rael Raela Rauma Roika Rukosari Saari Sarela Saphir Saviharju Savolina Sievi Sjunda Sotkia
 			Takoja Tiensu Tolsa Torhola Tuira Turi Ulu Ulvila Ura Usi Vaala Varpa Vatja Vedaju Vella Viala Vieki Vika Ylista Zurti 
-    	}
-        
-    	dukes_called_kings = no
-    	baron_titles_hidden = yes
-    	count_titles_hidden = yes
-        
-    	from_dynasty_prefix = "of "
-        
-     	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-     	pat_grf_name_chance = 50
-     	mat_grf_name_chance = 0
-     	father_name_chance = 0
-        
-     	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-     	pat_grm_name_chance = 10
-     	mat_grm_name_chance = 50
-     	mother_name_chance = 0
+		}
+		
+		dukes_called_kings = no
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
 
-     	modifier = default_culture_modifier
+		modifier = default_culture_modifier
 	}
 
 	
-	nuanaä-lie = {
+	nuanaa-lie = {
 		graphical_culture = ugricgfx #if we use them at all, need own gfx without hair
 		color = { 0.94 1 0.94 }
 	
 		male_names = {
-        	Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
+			Abjo Adjok Airujo Altanan Arjuk Arko Banuk Beranen Berko Binjok Danjuk Dernkjo Dragjo Ebnan Eikaljok Eiko Einuk Enan Enko Eno Enuk Erljuk Gaitjok Garnan Garnuk Genko Gjuternuk
 			Gorfangnuk Gurjinen Hanko Hautan Hautanan Heimanuk Hietanen Honuk Horganan Hunjok Huno Janjuk Jorinen Jurtan Jurtanan
 			Kaikanuk Kalkuk Kaunanan Kauno Keinjo Kervo Kilhjo Kinajo Kintan Kintanan Kuljuk Kumo Kylänjak Lanan Latu Leikinen Leksvalen Lieto Mada Madanan Maenan Matiljok Minkio Mouhuk
 			Nantalin Nerkjo Niljo Nurmjo Nysjo Olainen Paimjo Pajimazo Parkanjuk Peltjo	Pirtijok Rakjo Rasjuk Raumo Ruukjok
 			Sandjo Seinuk Seinjuk Silkajok Simjok Svartjok Tamperen Toljok Tsaekal Turkunen Tyrjuk Uljok Ulo Valen Valjok Vik Ylsjok Zanuk Zeino 
-    	}
-       
+		}
+		
 		female_names = {
-       		Airaksela Amuri Auka Aukaju Baituri Bjanju Biniaki Burti Dakauju Dana Dionju Duri Eikaju Emela Eskola Falkja Ferturi Fidaju Fidju Gateiki Geika Godju Hauka Hirolja Hikia Hyvinga
+			Airaksela Amuri Auka Aukaju Baituri Bjanju Biniaki Burti Dakauju Dana Dionju Duri Eikaju Emela Eskola Falkja Ferturi Fidaju Fidju Gateiki Geika Godju Hauka Hirolja Hikia Hyvinga
 			Ikaju Ila Irti Isalmi Jalani Jokela Jokja Jonuri Jutila Jyla Kajani Kantala Karenju Karra Katimäki Kaukalathi Keitakju Kela Kelva Kisa Koski Kuopi Kura
 			Lahti Lappila Lauka Liedsa Liskaju Loja Lojmaa Murula Myrra Nakila Näljavena Nirka Nivilaukaju Nujala
 			Ojakalla Olu Paukaja Peltju Pori Purolju Rael Raela Rauma Roika Rukosari Saari Sarela Saphir Saviharju Savolina Sievi Sjunda Sotkia
 			Takoja Tiensu Tolsa Torhola Tuira Turi Ulu Ulvila Ura Usi Vaala Varpa Vatja Vedaju Vella Viala Vieki Vika Ylista Zurti 
-    	}
+		}
 	
 		dukes_called_kings = no
-    	baron_titles_hidden = yes
-     	count_titles_hidden = yes
-        
-     	from_dynasty_prefix = "of "
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+		
+		from_dynasty_prefix = "of "
 
-     	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-     	pat_grf_name_chance = 50
-     	mat_grf_name_chance = 0
-     	father_name_chance = 0
-        
-    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-     	pat_grm_name_chance = 10
-     	mat_grm_name_chance = 50
-     	mother_name_chance = 0
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
 
-     	modifier = default_culture_modifier
+		modifier = default_culture_modifier
 	}
 }
 
@@ -1261,10 +1252,10 @@ horasian = {
 	}
 }
 
-cyclops = {
+cyclops_islands = {
 	graphical_culture = easterngfx
 	
-	cyclops_islands = {
+	cyclopean = {
 		graphical_culture = byzantinegfx
 		color = { 0.6 0.2 0.4 }
 	
@@ -1340,7 +1331,7 @@ aranians = {
 }	
 	
 tulamids = {
-	graphical_culture = muslimgfx
+	graphical_culture = muslimgfx ###Fallback
 	
 	mhanadistani = {
 		graphical_culture = andalusiangfx
@@ -1560,7 +1551,7 @@ tulamids = {
 	}
 }	
 
-khom = {
+khom_c = {
 	graphical_culture = muslimgfx
 
 	beni_novad = {
@@ -1698,7 +1689,7 @@ khom = {
     	modifier = default_culture_modifier
 	}
 	
-	beni_shebt	= {
+	beni_schebt	= {
 		graphical_culture = arabicgfx
 		color = { 1 0 0.8 }
 	
@@ -1744,11 +1735,11 @@ khom = {
 	}
 }
 
-maraskan = {
-	graphical_culture = indiangfx #new gfx needed?
+maraskan_c = {
+	graphical_culture = muslimgfx ###Fallback
 
 	maraskani = {
-		graphical_culture = indiangfx
+		graphical_culture = mongolgfx
 		color = { 0 0.4 0.0 }
 	
 		male_names = {
@@ -1832,7 +1823,7 @@ south_aventuria = {
 	}
 	
 	kemi = {
-		graphical_culture = occitangfx
+		graphical_culture = muslimgfx
 		color = { 0.2 0.2 0.6 }
 	
 		male_names = {
@@ -2049,6 +2040,7 @@ south_aventuria = {
 	
 	beni_arrat = {
 		graphical_culture = arabicgfx
+		second_graphical_culture = muslimgfx ###Fallback
 		color = { 0.2 0.8 0.6 }
 	
 		male_names = {
@@ -2096,10 +2088,10 @@ south_aventuria = {
 }
 	
 forest_men = {
-	graphical_culture = indiangfx #need own gfx
+	graphical_culture = muslimgfx ###Fallback
 	
-	moha = {
-		graphical_culture = indiangfx
+	mohan_c = {
+		graphical_culture = mesoamericangfx
 		color = { 0 0.8 0 }
 	
 		male_names = {
@@ -2175,9 +2167,9 @@ forest_men = {
 }
 
 utulus = {
-	graphical_culture = africangfx
+	graphical_culture = muslimgfx ###Fallback
 	
-	utulu = {
+	utulu_c = {
 		graphical_culture = africangfx
 		color = { 0.2 1 0 }
 	
@@ -2493,49 +2485,7 @@ ork_culture = {
 		mother_name_chance = 0
 
 		modifier = default_culture_modifier
-	}
-	
-	besatzer = {
-		graphical_culture = germangfx
-		color = { 0.6 0 0.8 }
-	
-		male_names = {
-			Alrork Airakh Arbachzeg Aregz Ashim Azparuch Azzek Balrork Baßtorg Blorg Bozorgh Brazoch Burchai Buiruzz Byakkrak Elgork
-			Ertugulk Gach Garch Garzlokh Ghairazz Gharrai Gharrz Girkush Goras Gorromp Gospodorkreg Graksch
-			Grakvach Grärch Graulunkh Grod Gruufhairork Gurshai Gushrok_Gushrogh Hairork Harkhash Hugur Hulgharuk Joruk Jurran
-			Karrag Kempreg Kerschoi Khaidach Kharrechzek Kholzzsha Khurrach Khurraz Kurruz Knurrz Kunzech Krrachtt
-			Mardukh_Mardugh Marfogh Mohork Morak Morghinak Morkash Morrok Nargazz Naggai Ogrik Oigrunz Okorork Olrik Olruk
-			Orcheggz Orezzar Orgrosch Raszech Rulgargop Sadrak Schindzilarz Schlagto_Schlagtogh Shardur Sharkak
-			Sharkhush Sharraz Sholocham Shurda Shurrak Stickrott Tairon Thukraz Trufagh Tuzzugh Ugrashak Ugur Ugurkan
-			Uigar Ulughbeg Upaatl Urgrushak Waldork Walduch Wosz_Woszuch Yagrikzek Yagu_Yaguch Yorrak Yrram Yurek Ziraitach
-		}
-	
-		female_names = {
-		
-		}
-	
-		dukes_called_kings = no
-		baron_titles_hidden = yes
-	  	count_titles_hidden = yes
-
-		from_dynasty_prefix = "of "
-		
-		female_patronym = "Tochter des " 
-		###proper Ork culture would be "Property of [husband]"
-	
-	  	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 5
-		mat_grf_name_chance = 0
-	  	father_name_chance = 15
-	
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 0
-		mat_grm_name_chance = 0
-		mother_name_chance = 0
-
-		modifier = default_culture_modifier
-	}
-	
+	}	
 }
 
 achaz = {
