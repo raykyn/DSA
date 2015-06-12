@@ -1514,7 +1514,7 @@ tulamids = {
     	modifier = default_culture_modifier
 	}
 	
-	ferkina = {
+	ferkina_c = {
 		graphical_culture = persiangfx
 		color = { 0.4 0.4 0.2 }
 	
