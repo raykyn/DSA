@@ -12,7 +12,7 @@ b_mhanerhaven = castle
 #b_mhanerhaven_4 = castle
 
 # Misc
-culture = aranian
+culture = mhanadistani
 religion = rastullah
 terrain = farmlands
 #History

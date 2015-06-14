@@ -12,7 +12,7 @@ b_rabatistan = castle
 #b_rabatistan_4 = castle
 
 # Misc
-culture = aranian
+culture = mhanadistani
 religion = rastullah
 terrain = farmlands
 #History

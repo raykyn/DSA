@@ -12,7 +12,7 @@ b_challef = castle
 #b_challef_4 = castle
 
 # Misc
-culture = aranian
+culture = mhanadistani
 religion = rastullah
 terrain = farmlands
 #History

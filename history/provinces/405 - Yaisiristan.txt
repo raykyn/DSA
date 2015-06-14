@@ -12,7 +12,7 @@ b_yaisiristan = castle
 #b_yaisiristan_4 = castle
 
 # Misc
-culture = aranian
+culture = mhanadistani
 religion = rastullah
 terrain = farmlands
 #History
