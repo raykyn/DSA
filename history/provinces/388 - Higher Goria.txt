@@ -12,7 +12,7 @@ b_higher_goria = castle
 #b_higher_goria_4 = castle
 
 # Misc
-culture = aranian
+culture = gorian
 religion = puniner
 terrain = farmlands
 #History

@@ -535,6 +535,14 @@ b_chalukistan_3;Chalukistan;Chalukistan;Chalukistan;;Chalukistan;;;;;;;;;x
 b_chalukistan_3_adj;Chalukistanian;;chalukistaner;;;;;;;;;;;x
 b_chalukistan_4;Chalukistan;Chalukistan;Chalukistan;;Chalukistan;;;;;;;;;x
 b_chalukistan_4_adj;Chalukistanian;;chalukistaner;;;;;;;;;;;x
+b_coast_of_tears;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
+b_coast_of_tears_adj;Coast of Tearsian;;Coast of Tearser;;;;;;;;;;;x
+b_coast_of_tears_2;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
+b_coast_of_tears_2_adj;Coast of Tearsian;;Coast of Tearser;;;;;;;;;;;x
+b_coast_of_tears_3;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
+b_coast_of_tears_3_adj;Coast of Tearsian;;Coast of Tearser;;;;;;;;;;;x
+b_coast_of_tears_4;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
+b_coast_of_tears_4_adj;Coast of Tearsian;;Coast of Tearser;;;;;;;;;;;x
 b_cres;Cres;Cres;Cres;;Cres;;;;;;;;;x
 b_cres_adj;Cresian;;creser;;;;;;;;;;;x
 b_cres_2;Cres;Cres;Cres;;Cres;;;;;;;;;x
@@ -551,6 +559,14 @@ b_culming_3;Culming;Culming;Culming;;Culming;;;;;;;;;x
 b_culming_3_adj;Culmingian;;culminger;;;;;;;;;;;x
 b_culming_4;Culming;Culming;Culming;;Culming;;;;;;;;;x
 b_culming_4_adj;Culmingian;;culminger;;;;;;;;;;;x
+b_delta_of_awalakim;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
+b_delta_of_awalakim_adj;Delta of Awalakimian;;Delta of Awalakimer;;;;;;;;;;;x
+b_delta_of_awalakim_2;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
+b_delta_of_awalakim_2_adj;Delta of Awalakimian;;Delta of Awalakimer;;;;;;;;;;;x
+b_delta_of_awalakim_3;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
+b_delta_of_awalakim_3_adj;Delta of Awalakimian;;Delta of Awalakimer;;;;;;;;;;;x
+b_delta_of_awalakim_4;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
+b_delta_of_awalakim_4_adj;Delta of Awalakimian;;Delta of Awalakimer;;;;;;;;;;;x
 b_dergelheim;Dergelheim;Dergelheim;Dergelheim;;Dergelheim;;;;;;;;;x
 b_dergelheim_adj;Dergelheimian;;dergelheimer;;;;;;;;;;;x
 b_dergelheim_2;Dergelheim;Dergelheim;Dergelheim;;Dergelheim;;;;;;;;;x
@@ -679,6 +695,14 @@ b_dunkelsfarn_3;Dunkelsfarn;Dunkelsfarn;Dunkelsfarn;;Dunkelsfarn;;;;;;;;;x
 b_dunkelsfarn_3_adj;Dunkelsfarnian;;dunkelsfarner;;;;;;;;;;;x
 b_dunkelsfarn_4;Dunkelsfarn;Dunkelsfarn;Dunkelsfarn;;Dunkelsfarn;;;;;;;;;x
 b_dunkelsfarn_4_adj;Dunkelsfarnian;;dunkelsfarner;;;;;;;;;;;x
+b_east_thalus_massif;East Thalus Massif;East Thalus Massif;East Thalus Massif;;East Thalus Massif;;;;;;;;;x
+b_east_thalus_massif_adj;East Thalus Massifian;;East Thalus Massifer;;;;;;;;;;;x
+b_east_thalus_massif_2;East Thalus Massif;East Thalus Massif;East Thalus Massif;;East Thalus Massif;;;;;;;;;x
+b_east_thalus_massif_2_adj;East Thalus Massifian;;East Thalus Massifer;;;;;;;;;;;x
+b_east_thalus_massif_3;East Thalus Massif;East Thalus Massif;East Thalus Massif;;East Thalus Massif;;;;;;;;;x
+b_east_thalus_massif_3_adj;East Thalus Massifian;;East Thalus Massifer;;;;;;;;;;;x
+b_east_thalus_massif_4;East Thalus Massif;East Thalus Massif;East Thalus Massif;;East Thalus Massif;;;;;;;;;x
+b_east_thalus_massif_4_adj;East Thalus Massifian;;East Thalus Massifer;;;;;;;;;;;x
 b_ebersberg;Ebersberg;Ebersberg;Ebersberg;;Ebersberg;;;;;;;;;x
 b_ebersberg_adj;Ebersbergian;;ebersberger;;;;;;;;;;;x
 b_ebersberg_2;Ebersberg;Ebersberg;Ebersberg;;Ebersberg;;;;;;;;;x
@@ -751,6 +775,14 @@ b_elburum_3;Elburum;Elburum;Elburum;;Elburum;;;;;;;;;x
 b_elburum_3_adj;Elburumian;;elburumer;;;;;;;;;;;x
 b_elburum_4;Elburum;Elburum;Elburum;;Elburum;;;;;;;;;x
 b_elburum_4_adj;Elburumian;;elburumer;;;;;;;;;;;x
+b_eldhena;El'Dhena;El'Dhena;El'Dhena;;El'Dhena;;;;;;;;;x
+b_eldhena_adj;El'Dhenan;;el'dhener;;;;;;;;;;;x
+b_eldhena_2;El'Dhena;El'Dhena;El'Dhena;;El'Dhena;;;;;;;;;x
+b_eldhena_2_adj;El'Dhenan;;el'dhener;;;;;;;;;;;x
+b_eldhena_3;El'Dhena;El'Dhena;El'Dhena;;El'Dhena;;;;;;;;;x
+b_eldhena_3_adj;El'Dhenan;;el'dhener;;;;;;;;;;;x
+b_eldhena_4;El'Dhena;El'Dhena;El'Dhena;;El'Dhena;;;;;;;;;x
+b_eldhena_4_adj;El'Dhenan;;el'dhener;;;;;;;;;;;x
 b_erlenstamm;Erlenstamm;Erlenstamm;Erlenstamm;;Erlenstamm;;;;;;;;;x
 b_erlenstamm_adj;Erlenstammian;;erlenstammer;;;;;;;;;;;x
 b_erlenstamm_2;Erlenstamm;Erlenstamm;Erlenstamm;;Erlenstamm;;;;;;;;;x
@@ -2009,6 +2041,38 @@ b_ogertrift_3;Ogertrift;Ogertrift;Ogertrift;;Ogertrift;;;;;;;;;x
 b_ogertrift_3_adj;Ogertriftian;;ogertrifter;;;;;;;;;;;x
 b_ogertrift_4;Ogertrift;Ogertrift;Ogertrift;;Ogertrift;;;;;;;;;x
 b_ogertrift_4_adj;Ogertriftian;;ogertrifter;;;;;;;;;;;x
+b_ongalabad;Ongalabad;Ongalabad;Ongalabad;;Ongalabad;;;;;;;;;x
+b_ongalabad_adj;Ongalabadian;;ongalabader;;;;;;;;;;;x
+b_ongalabad_2;Ongalabad;Ongalabad;Ongalabad;;Ongalabad;;;;;;;;;x
+b_ongalabad_2_adj;Ongalabadian;;ongalabader;;;;;;;;;;;x
+b_ongalabad_3;Ongalabad;Ongalabad;Ongalabad;;Ongalabad;;;;;;;;;x
+b_ongalabad_3_adj;Ongalabadian;;ongalabader;;;;;;;;;;;x
+b_ongalabad_4;Ongalabad;Ongalabad;Ongalabad;;Ongalabad;;;;;;;;;x
+b_ongalabad_4_adj;Ongalabadian;;ongalabader;;;;;;;;;;;x
+b_ongalo_highlands;Ongalo-Highlands;Ongalo-Highlands;Ongalo-Highlands;;Ongalo-Highlands;;;;;;;;;x
+b_ongalo_highlands_adj;Ongalo-Highlandsian;;ongalo-highlandser;;;;;;;;;;;x
+b_ongalo_highlands_2;Ongalo-Highlands;Ongalo-Highlands;Ongalo-Highlands;;Ongalo-Highlands;;;;;;;;;x
+b_ongalo_highlands_2_adj;Ongalo-Highlandsian;;ongalo-highlandser;;;;;;;;;;;x
+b_ongalo_highlands_3;Ongalo-Highlands;Ongalo-Highlands;Ongalo-Highlands;;Ongalo-Highlands;;;;;;;;;x
+b_ongalo_highlands_3_adj;Ongalo-Highlandsian;;ongalo-highlandser;;;;;;;;;;;x
+b_ongalo_highlands_4;Ongalo-Highlands;Ongalo-Highlands;Ongalo-Highlands;;Ongalo-Highlands;;;;;;;;;x
+b_ongalo_highlands_4_adj;Ongalo-Highlandsian;;ongalo-highlandser;;;;;;;;;;;x
+b_ongalo_swamps;Ongalo-Swamps;Ongalo-Swamps;Ongalo-Swamps;;Ongalo-Swamps;;;;;;;;;x
+b_ongalo_swamps_adj;Ongalo-Swampsian;;ongalo-swampser;;;;;;;;;;;x
+b_ongalo_swamps_2;Ongalo-Swamps;Ongalo-Swamps;Ongalo-Swamps;;Ongalo-Swamps;;;;;;;;;x
+b_ongalo_swamps_2_adj;Ongalo-Swampsian;;ongalo-swampser;;;;;;;;;;;x
+b_ongalo_swamps_3;Ongalo-Swamps;Ongalo-Swamps;Ongalo-Swamps;;Ongalo-Swamps;;;;;;;;;x
+b_ongalo_swamps_3_adj;Ongalo-Swampsian;;ongalo-swampser;;;;;;;;;;;x
+b_ongalo_swamps_4;Ongalo-Swamps;Ongalo-Swamps;Ongalo-Swamps;;Ongalo-Swamps;;;;;;;;;x
+b_ongalo_swamps_4_adj;Ongalo-Swampsian;;ongalo-swampser;;;;;;;;;;;x
+b_ongaloquell;Ongaloquell;Ongaloquell;Ongaloquell;;Ongaloquell;;;;;;;;;x
+b_ongaloquell_adj;Ongaloquellian;;ongaloqueller;;;;;;;;;;;x
+b_ongaloquell_2;Ongaloquell;Ongaloquell;Ongaloquell;;Ongaloquell;;;;;;;;;x
+b_ongaloquell_2_adj;Ongaloquellian;;ongaloqueller;;;;;;;;;;;x
+b_ongaloquell_3;Ongaloquell;Ongaloquell;Ongaloquell;;Ongaloquell;;;;;;;;;x
+b_ongaloquell_3_adj;Ongaloquellian;;ongaloqueller;;;;;;;;;;;x
+b_ongaloquell_4;Ongaloquell;Ongaloquell;Ongaloquell;;Ongaloquell;;;;;;;;;x
+b_ongaloquell_4_adj;Ongaloquellian;;ongaloqueller;;;;;;;;;;;x
 b_oppstein;Oppstein;Oppstein;Oppstein;;Oppstein;;;;;;;;;x
 b_oppstein_adj;Oppsteinian;;oppsteiner;;;;;;;;;;;x
 b_oppstein_2;Oppstein;Oppstein;Oppstein;;Oppstein;;;;;;;;;x
@@ -2317,6 +2381,14 @@ b_rondbirge_3;Rondbirge;Rondbirge;Rondbirge;;Rondbirge;;;;;;;;;x
 b_rondbirge_3_adj;Rondbirgean;;rondbirger;;;;;;;;;;;x
 b_rondbirge_4;Rondbirge;Rondbirge;Rondbirge;;Rondbirge;;;;;;;;;x
 b_rondbirge_4_adj;Rondbirgean;;rondbirger;;;;;;;;;;;x
+b_ronishagen;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
+b_ronishagen_adj;Ronishagenian;;ronishagener;;;;;;;;;;;x
+b_ronishagen_2;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
+b_ronishagen_2_adj;Ronishagenian;;ronishagener;;;;;;;;;;;x
+b_ronishagen_3;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
+b_ronishagen_3_adj;Ronishagenian;;ronishagener;;;;;;;;;;;x
+b_ronishagen_4;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
+b_ronishagen_4_adj;Ronishagenian;;ronishagener;;;;;;;;;;;x
 b_rosenbusch;Rosenbusch;Rosenbusch;Rosenbusch;;Rosenbusch;;;;;;;;;x
 b_rosenbusch_adj;Rosenbuschian;;rosenbuscher;;;;;;;;;;;x
 b_rosenbusch_2;Rosenbusch;Rosenbusch;Rosenbusch;;Rosenbusch;;;;;;;;;x
@@ -2717,6 +2789,22 @@ b_tesral_3;Tesral;Tesral;Tesral;;Tesral;;;;;;;;;x
 b_tesral_3_adj;Tesralian;;tesraler;;;;;;;;;;;x
 b_tesral_4;Tesral;Tesral;Tesral;;Tesral;;;;;;;;;x
 b_tesral_4_adj;Tesralian;;tesraler;;;;;;;;;;;x
+b_thalusa;Thalusa;Thalusa;Thalusa;;Thalusa;;;;;;;;;x
+b_thalusa_adj;Thalusan;;thaluser;;;;;;;;;;;x
+b_thalusa_2;Thalusa;Thalusa;Thalusa;;Thalusa;;;;;;;;;x
+b_thalusa_2_adj;Thalusan;;thaluser;;;;;;;;;;;x
+b_thalusa_3;Thalusa;Thalusa;Thalusa;;Thalusa;;;;;;;;;x
+b_thalusa_3_adj;Thalusan;;thaluser;;;;;;;;;;;x
+b_thalusa_4;Thalusa;Thalusa;Thalusa;;Thalusa;;;;;;;;;x
+b_thalusa_4_adj;Thalusan;;thaluser;;;;;;;;;;;x
+b_thalusim;Thalusim;Thalusim;Thalusim;;Thalusim;;;;;;;;;x
+b_thalusim_adj;Thalusimian;;thalusimer;;;;;;;;;;;x
+b_thalusim_2;Thalusim;Thalusim;Thalusim;;Thalusim;;;;;;;;;x
+b_thalusim_2_adj;Thalusimian;;thalusimer;;;;;;;;;;;x
+b_thalusim_3;Thalusim;Thalusim;Thalusim;;Thalusim;;;;;;;;;x
+b_thalusim_3_adj;Thalusimian;;thalusimer;;;;;;;;;;;x
+b_thalusim_4;Thalusim;Thalusim;Thalusim;;Thalusim;;;;;;;;;x
+b_thalusim_4_adj;Thalusimian;;thalusimer;;;;;;;;;;;x
 b_thangolforst;Thangolforst;Thangolforst;Thangolforst;;Thangolforst;;;;;;;;;x
 b_thangolforst_adj;Thangolforstian;;thangolforster;;;;;;;;;;;x
 b_thangolforst_2;Thangolforst;Thangolforst;Thangolforst;;Thangolforst;;;;;;;;;x
@@ -3037,6 +3125,14 @@ b_wengenholm_3;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 b_wengenholm_3_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
 b_wengenholm_4;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 b_wengenholm_4_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
+b_west_thalus_massif;West Thalus Massif;West Thalus Massif;West Thalus Massif;;West Thalus Massif;;;;;;;;;x
+b_west_thalus_massif_adj;West Thalus Massifian;;West Thalus Massifer;;;;;;;;;;;x
+b_west_thalus_massif_2;West Thalus Massif;West Thalus Massif;West Thalus Massif;;West Thalus Massif;;;;;;;;;x
+b_west_thalus_massif_2_adj;West Thalus Massifian;;West Thalus Massifer;;;;;;;;;;;x
+b_west_thalus_massif_3;West Thalus Massif;West Thalus Massif;West Thalus Massif;;West Thalus Massif;;;;;;;;;x
+b_west_thalus_massif_3_adj;West Thalus Massifian;;West Thalus Massifer;;;;;;;;;;;x
+b_west_thalus_massif_4;West Thalus Massif;West Thalus Massif;West Thalus Massif;;West Thalus Massif;;;;;;;;;x
+b_west_thalus_massif_4_adj;West Thalus Massifian;;West Thalus Massifer;;;;;;;;;;;x
 b_westerklotz;Westerklotz;Westerklotz;Westerklotz;;Westerklotz;;;;;;;;;x
 b_westerklotz_adj;Westerklotzian;;westerklotzer;;;;;;;;;;;x
 b_westerklotz_2;Westerklotz;Westerklotz;Westerklotz;;Westerklotz;;;;;;;;;x

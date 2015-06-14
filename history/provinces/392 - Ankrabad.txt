@@ -12,7 +12,7 @@ b_ankrabad = castle
 #b_ankrabad_4 = castle
 
 # Misc
-culture = aranian
+culture = gorian
 religion = puniner
 terrain = farmlands
 #History

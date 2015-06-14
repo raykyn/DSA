@@ -12,7 +12,7 @@ b_birchalukistan = castle
 #b_birchalukistan_4 = castle
 
 # Misc
-culture = aranian
+culture = gorian
 religion = puniner
 terrain = farmlands
 #History

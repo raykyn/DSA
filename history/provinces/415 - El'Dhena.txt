@@ -1,0 +1,18 @@
+# c_eldhena
+
+# County Title
+title = c_eldhena
+
+# Settlements
+max_settlements = 4
+
+b_eldhena = castle
+#b_eldhena_2 = city
+#b_eldhena_3 = temple
+#b_eldhena_4 = castle
+
+# Misc
+culture = thalusian
+religion = rastullah
+terrain = farmlands
+#History

@@ -133,10 +133,14 @@ c_challef;Challef;Challef;Challef;;Challef;;;;;;;;;x
 c_challef_adj;Challefian;;challefer;;;;;;;;;;;x
 c_chalukistan;Chalukistan;Chalukistan;Chalukistan;;Chalukistan;;;;;;;;;x
 c_chalukistan_adj;Chalukistanian;;chalukistaner;;;;;;;;;;;x
+c_coast_of_tears;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
+c_coast_of_tears_adj;Coast of Tearsian;;Coast of Tearser;;;;;;;;;;;x
 c_cres;Cres;Cres;Cres;;Cres;;;;;;;;;x
 c_cres_adj;Cresian;;creser;;;;;;;;;;;x
 c_culming;Culming;Culming;Culming;;Culming;;;;;;;;;x
 c_culming_adj;Culmingian;;culminger;;;;;;;;;;;x
+c_delta_of_awalakim;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
+c_delta_of_awalakim_adj;Delta of Awalakimian;;Delta of Awalakimer;;;;;;;;;;;x
 c_dergelheim;Dergelheim;Dergelheim;Dergelheim;;Dergelheim;;;;;;;;;x
 c_dergelheim_adj;Dergelheimian;;dergelheimer;;;;;;;;;;;x
 c_dergelquell;Dergelquell;Dergelquell;Dergelquell;;Dergelquell;;;;;;;;;x
@@ -169,6 +173,8 @@ c_duersten_darrenfurt;Dürsten-Darrenfurt;Dürsten-Darrenfurt;Dürsten-Darrenfurt;;
 c_duersten_darrenfurt_adj;Dürsten-Darrenfurtian;;dürsten-darrenfurter;;;;;;;;;;;x
 c_dunkelsfarn;Dunkelsfarn;Dunkelsfarn;Dunkelsfarn;;Dunkelsfarn;;;;;;;;;x
 c_dunkelsfarn_adj;Dunkelsfarnian;;dunkelsfarner;;;;;;;;;;;x
+c_east_thalus_massif;East Thalus Massif;East Thalus Massif;East Thalus Massif;;East Thalus Massif;;;;;;;;;x
+c_east_thalus_massif_adj;East Thalus Massifian;;East Thalus Massifer;;;;;;;;;;;x
 c_ebersberg;Ebersberg;Ebersberg;Ebersberg;;Ebersberg;;;;;;;;;x
 c_ebersberg_adj;Ebersbergian;;ebersberger;;;;;;;;;;;x
 c_eckelstor;Eckelstor;Eckelstor;Eckelstor;;Eckelstor;;;;;;;;;x
@@ -187,6 +193,8 @@ c_eisenwald;Eisenwald;Eisenwald;Eisenwald;;Eisenwald;;;;;;;;;x
 c_eisenwald_adj;Eisenwaldian;;eisenwalder;;;;;;;;;;;x
 c_elburum;Elburum;Elburum;Elburum;;Elburum;;;;;;;;;x
 c_elburum_adj;Elburumian;;elburumer;;;;;;;;;;;x
+c_eldhena;El'Dhena;El'Dhena;El'Dhena;;El'Dhena;;;;;;;;;x
+c_eldhena_adj;El'Dhenan;;el'dhener;;;;;;;;;;;x
 c_erlenstamm;Erlenstamm;Erlenstamm;Erlenstamm;;Erlenstamm;;;;;;;;;x
 c_erlenstamm_adj;Erlenstammian;;erlenstammer;;;;;;;;;;;x
 c_erlschwerd;Erlschwerd;Erlschwerd;Erlschwerd;;Erlschwerd;;;;;;;;;x
@@ -501,6 +509,14 @@ c_ogerbusch;Ogerbusch;Ogerbusch;Ogerbusch;;Ogerbusch;;;;;;;;;x
 c_ogerbusch_adj;Ogerbuschian;;ogerbuscher;;;;;;;;;;;x
 c_ogertrift;Ogertrift;Ogertrift;Ogertrift;;Ogertrift;;;;;;;;;x
 c_ogertrift_adj;Ogertriftian;;ogertrifter;;;;;;;;;;;x
+c_ongalabad;Ongalabad;Ongalabad;Ongalabad;;Ongalabad;;;;;;;;;x
+c_ongalabad_adj;Ongalabadian;;ongalabader;;;;;;;;;;;x
+c_ongalo_highlands;Ongalo-Highlands;Ongalo-Highlands;Ongalo-Highlands;;Ongalo-Highlands;;;;;;;;;x
+c_ongalo_highlands_adj;Ongalo-Highlandsian;;ongalo-highlandser;;;;;;;;;;;x
+c_ongalo_swamps;Ongalo-Swamps;Ongalo-Swamps;Ongalo-Swamps;;Ongalo-Swamps;;;;;;;;;x
+c_ongalo_swamps_adj;Ongalo-Swampsian;;ongalo-swampser;;;;;;;;;;;x
+c_ongaloquell;Ongaloquell;Ongaloquell;Ongaloquell;;Ongaloquell;;;;;;;;;x
+c_ongaloquell_adj;Ongaloquellian;;ongaloqueller;;;;;;;;;;;x
 c_oppstein;Oppstein;Oppstein;Oppstein;;Oppstein;;;;;;;;;x
 c_oppstein_adj;Oppsteinian;;oppsteiner;;;;;;;;;;;x
 c_orgils_home;Orgils Home;Orgils Home;Orgils Home;;Orgils Home;;;;;;;;;x
@@ -577,6 +593,8 @@ c_rommilys;Rommilys;Rommilys;Rommilys;;Rommilys;;;;;;;;;x
 c_rommilys_adj;Rommilysian;;rommilyser;;;;;;;;;;;x
 c_rondbirge;Rondbirge;Rondbirge;Rondbirge;;Rondbirge;;;;;;;;;x
 c_rondbirge_adj;Rondbirgean;;rondbirger;;;;;;;;;;;x
+c_ronishagen;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
+c_ronishagen_adj;Ronishagenian;;ronishagener;;;;;;;;;;;x
 c_rosenbusch;Rosenbusch;Rosenbusch;Rosenbusch;;Rosenbusch;;;;;;;;;x
 c_rosenbusch_adj;Rosenbuschian;;rosenbuscher;;;;;;;;;;;x
 c_rotenforst;Rotenforst;Rotenforst;Rotenforst;;Rotenforst;;;;;;;;;x
@@ -677,6 +695,10 @@ c_temphis;Temphis;Temphis;Temphis;;Temphis;;;;;;;;;x
 c_temphis_adj;Temphisian;;temphiser;;;;;;;;;;;x
 c_tesral;Tesral;Tesral;Tesral;;Tesral;;;;;;;;;x
 c_tesral_adj;Tesralian;;tesraler;;;;;;;;;;;x
+c_thalusa;Thalusa;Thalusa;Thalusa;;Thalusa;;;;;;;;;x
+c_thalusa_adj;Thalusan;;thaluser;;;;;;;;;;;x
+c_thalusim;Thalusim;Thalusim;Thalusim;;Thalusim;;;;;;;;;x
+c_thalusim_adj;Thalusimian;;thalusimer;;;;;;;;;;;x
 c_thangolforst;Thangolforst;Thangolforst;Thangolforst;;Thangolforst;;;;;;;;;x
 c_thangolforst_adj;Thangolforstian;;thangolforster;;;;;;;;;;;x
 c_tirandur;Tirandur;Tirandur;Tirandur;;Tirandur;;;;;;;;;x
@@ -757,6 +779,8 @@ c_weissengau;Weissengau;Weissengau;Weissengau;;Weissengau;;;;;;;;;x
 c_weissengau_adj;Weissengian;;weissenger;;;;;;;;;;;x
 c_wengenholm;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 c_wengenholm_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
+c_west_thalus_massif;West Thalus Massif;West Thalus Massif;West Thalus Massif;;West Thalus Massif;;;;;;;;;x
+c_west_thalus_massif_adj;West Thalus Massifian;;West Thalus Massifer;;;;;;;;;;;x
 c_westerklotz;Westerklotz;Westerklotz;Westerklotz;;Westerklotz;;;;;;;;;x
 c_westerklotz_adj;Westerklotzian;;westerklotzer;;;;;;;;;;;x
 c_westpforte;Westpforte;Westpforte;Westpforte;;Westpforte;;;;;;;;;x

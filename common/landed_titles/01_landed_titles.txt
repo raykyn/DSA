@@ -4837,6 +4837,209 @@ e_middlerealm = {
 			}
 		}
 	}
+	k_thalusia = {
+		color={ 204 250 39 }
+		color2={ 255 255 255 }
+		
+		capital = 410 # c_thalusa
+		culture = thalusian
+		
+		d_thalusia = {
+			color={ 224 230 49 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 410 province_id = 411 province_id = 412 province_id = 413 } }
+				}
+			}
+			capital = 410 # c_thalusa
+			
+			c_thalusa = { # 410
+				color={ 234 220 54 }
+				color2={ 255 255 255 }
+				
+				b_thalusa = {
+				}
+				b_thalusa_2 = {
+				}
+				b_thalusa_3 = {
+				}
+				b_thalusa_4 = {
+				}
+			}
+			c_east_thalus_massif = { # 413
+				color={ 234 36 40 }
+				color2={ 255 255 255 }
+				
+				b_east_thalus_massif = {
+				}
+				b_east_thalus_massif_2 = {
+				}
+				b_east_thalus_massif_3 = {
+				}
+				b_east_thalus_massif_4 = {
+				}
+			}
+			c_ronishagen = { # 411
+				color={ 234 41 181 }
+				color2={ 255 255 255 }
+				
+				b_ronishagen = {
+				}
+				b_ronishagen_2 = {
+				}
+				b_ronishagen_3 = {
+				}
+				b_ronishagen_4 = {
+				}
+			}
+			c_thalusim = { # 412
+				color={ 234 172 214 }
+				color2={ 255 255 255 }
+				
+				b_thalusim = {
+				}
+				b_thalusim_2 = {
+				}
+				b_thalusim_3 = {
+				}
+				b_thalusim_4 = {
+				}
+			}
+		}
+		d_eldhena = {
+			color={ 141 152 131 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 414 province_id = 415 province_id = 416 } }
+				}
+			}
+			capital = 414 # c_coast_of_tears
+			
+			c_coast_of_tears = { # 414
+				color={ 151 142 136 }
+				color2={ 255 255 255 }
+				
+				b_coast_of_tears = {
+				}
+				b_coast_of_tears_2 = {
+				}
+				b_coast_of_tears_3 = {
+				}
+				b_coast_of_tears_4 = {
+				}
+			}
+			c_eldhena = { # 415
+				color={ 151 215 72 }
+				color2={ 255 255 255 }
+				
+				b_eldhena = {
+				}
+				b_eldhena_2 = {
+				}
+				b_eldhena_3 = {
+				}
+				b_eldhena_4 = {
+				}
+			}
+			c_west_thalus_massif = { # 416
+				color={ 151 208 216 }
+				color2={ 255 255 255 }
+				
+				b_west_thalus_massif = {
+				}
+				b_west_thalus_massif_2 = {
+				}
+				b_west_thalus_massif_3 = {
+				}
+				b_west_thalus_massif_4 = {
+				}
+			}
+		}
+		d_ongalo = {
+			color={ 100 27 149 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 417 province_id = 418 province_id = 419 province_id = 420 province_id = 421 } }
+				}
+			}
+			capital = 417 # c_delta_of_awalakim
+			
+			c_delta_of_awalakim = { # 417
+				color={ 90 37 144 }
+				color2={ 255 255 255 }
+				
+				b_delta_of_awalakim = {
+				}
+				b_delta_of_awalakim_2 = {
+				}
+				b_delta_of_awalakim_3 = {
+				}
+				b_delta_of_awalakim_4 = {
+				}
+			}
+			c_ongalabad = { # 421
+				color={ 90 192 206 }
+				color2={ 255 255 255 }
+				
+				b_ongalabad = {
+				}
+				b_ongalabad_2 = {
+				}
+				b_ongalabad_3 = {
+				}
+				b_ongalabad_4 = {
+				}
+			}
+			c_ongalo_highlands = { # 418
+				color={ 90 193 61 }
+				color2={ 255 255 255 }
+				
+				b_ongalo_highlands = {
+				}
+				b_ongalo_highlands_2 = {
+				}
+				b_ongalo_highlands_3 = {
+				}
+				b_ongalo_highlands_4 = {
+				}
+			}
+			c_ongalo_swamps = { # 419
+				color={ 90 221 49 }
+				color2={ 255 255 255 }
+				
+				b_ongalo_swamps = {
+				}
+				b_ongalo_swamps_2 = {
+				}
+				b_ongalo_swamps_3 = {
+				}
+				b_ongalo_swamps_4 = {
+				}
+			}
+			c_ongaloquell = { # 420
+				color={ 90 26 139 }
+				color2={ 255 255 255 }
+				
+				b_ongaloquell = {
+				}
+				b_ongaloquell_2 = {
+				}
+				b_ongaloquell_3 = {
+				}
+				b_ongaloquell_4 = {
+				}
+			}
+		}
+	}
 	k_tobria = {
 		color={ 210 68 196 }
 		color2={ 255 255 255 }

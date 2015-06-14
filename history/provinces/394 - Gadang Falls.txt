@@ -12,7 +12,7 @@ b_gadang_falls = castle
 #b_gadang_falls_4 = castle
 
 # Misc
-culture = aranian
+culture = gorian
 religion = puniner
 terrain = farmlands
 #History
