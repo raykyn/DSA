@@ -43,6 +43,9 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 1
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = rur_gror
 		intermarry = shaman_n
 		intermarry = shaman_s
@@ -79,6 +82,9 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 1
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = rur_gror
 		intermarry = shaman_n
 		intermarry = shaman_s
@@ -117,25 +123,6 @@ twelve = {
 		
 		priests_can_inherit = yes
 
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-	}
-	
-	feqz = {
-		graphical_culture = westerngfx
-
-		icon = 1
-		heresy_icon = 6
-		
-		color = { 0.8 0.8 0.58 }
-		parent = puniner
-		
-		high_god_name = GOD_FEQZ
-
-		god_names = {
-			GOD_FEQZ GOD_PRAIOS GOD_RONDRA GOD_EFFERD GOD_TRAVIA GOD_BORON GOD_FIRUN GOD_TSA GOD_PERAINE GOD_INGERIMM GOD_RAHJA
-		}
-		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 	}
@@ -206,6 +193,9 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = rur_gror
 		intermarry = shaman_n
 		intermarry = shaman_s
@@ -324,6 +314,9 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 1
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = rur_gror
 		intermarry = shaman_n
 		intermarry = shaman_s
@@ -385,6 +378,9 @@ twelve = {
 		allow_rivermovement = yes
 		allow_viking_invasion = yes
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = rur_gror
 		intermarry = shaman_n
 		intermarry = shaman_s
@@ -415,9 +411,51 @@ twelve = {
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 	}
+	urtulamiden = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 6
+		
+		color = { 1 0.95 1 }
+		
+		high_god_name = GOD_FEQZ
+		
+		god_names = {
+			GOD_RASRAGH GOD_PERADSCHAJA GOD_RASCHA GOD_MARHIBO GOD_MHAQASHA GOD_ALMAHMOUD GOD_EFFERD GOD_TUURMHAKAQ GOD_FEQZ GOD_PRAIOS GOD_AVES GOD_RASTULLAH
+		}
+		evil_god_names = {
+			ECHSEN
+		}
+		
+		investiture = yes
+		can_have_antipopes = no
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_grant_claim = no
+		can_call_crusade = no
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		feminist = yes
+		can_retire_to_monastery = no
+		female_temple_holders = no
+		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
+		intermarry = rur_gror
+		intermarry = shaman_n
+		intermarry = shaman_s
+		max_wives = 7
+		max_consorts = 7
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+
 }
 
-khom = {
+rastullah_group = {
 	has_coa_on_barony_only = yes
 	graphical_culture = muslimgfx
 	playable = yes
@@ -484,25 +522,6 @@ khom = {
 		religious_clothing_priest = 1
 	}
 	
-	urtulamiden = {
-		graphical_culture = muslimgfx
-
-		icon = 3
-		heresy_icon = 6
-		
-		color = { 1 0.95 1 }
-		parent = rastullah
-		
-		high_god_name = GOD_PRAIOS
-		
-		god_names = {
-			GOD_RASRAGH GOD_PERADSCHAJA GOD_RASCHA GOD_MARHIBO GOD_MHAQASHA GOD_ALMAHMOUD GOD_EFFERD GOD_TUURMHAKAQ GOD_FEQZ GOD_AVES GOD_RASTULLAH
-		}
-		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-	}
-
 	uled_ashshebah = {
 		graphical_culture = muslimgfx
 
@@ -539,6 +558,48 @@ khom = {
 		
 		max_wives = 1
 		max_consorts = 0
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+
+		ferkina = {
+		graphical_culture = africangfx
+		
+		icon = 5
+		heresy_icon = 6
+		
+		color = {0.55 0 0}
+		
+		crusade_name = CRUSADE
+		scripture_name = ORAL_TRADITION
+		priest_title = NURANSHARIM
+		
+		high_god_name = GOD_RASCHTULA
+		
+		god_names = {
+			GOD_RASCHA GOD_MOON GOD_ELEMENTS
+		}
+		
+		evil_god_names = {
+			ECHSEN BLUTLOSE
+		}
+		
+		investiture = no
+		can_have_antipopes = no
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		feminist = no
+		can_retire_to_monastery = no
+		female_temple_holders  = no
+		max_consorts = 4
+		allow_looting = yes
+		matrilineal_marriages = no
+		aggression = 2.0
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -588,6 +649,9 @@ maraskan = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = twelve
 		intermarry = shaman_n
 		intermarry = shaman_s
@@ -678,6 +742,9 @@ shaman_n = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
@@ -738,6 +805,9 @@ shaman_n = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
@@ -801,6 +871,9 @@ shaman_n = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
@@ -870,6 +943,9 @@ shaman_s = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
@@ -930,6 +1006,9 @@ shaman_s = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
+		intermarry = kasim
+		intermarry = uled_ashshebah
+		intermarry = uchakani
 		intermarry = twelve
 		intermarry = rur_gror
 		intermarry = shaman_s
@@ -955,56 +1034,6 @@ shaman_s = {
 	}
 }
 
-barbarian = {
-	has_coa_on_barony_only = yes
-	graphical_culture = africangfx
-	playable = yes
-	ai_peaceful = yes
-	ai_convert_same_group = 1 #only convert if zeal is high
-	ai_convert_other_group = 2 #always try to convert
-	
-	ferkina = {
-		graphical_culture = africangfx
-		
-		icon = 5
-		heresy_icon = 6
-		
-		color = {0.55 0 0}
-		
-		crusade_name = CRUSADE
-		scripture_name = ORAL_TRADITION
-		priest_title = NURANSHARIM
-		
-		high_god_name = GOD_RASCHTULA
-		
-		god_names = {
-			GOD_RASCHA GOD_MOON GOD_ELEMENTS
-		}
-		
-		evil_god_names = {
-			ECHSEN BLUTLOSE
-		}
-		
-		investiture = no
-		can_have_antipopes = no
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_claim = yes
-		can_call_crusade = yes
-		priests_can_inherit = no
-		priests_can_marry = yes
-		feminist = no
-		can_retire_to_monastery = no
-		female_temple_holders  = no
-		max_consorts = 4
-		allow_looting = yes
-		matrilineal_marriages = no
-		aggression = 2.0
-		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-	}
-}
 
 orks = {
 	has_coa_on_barony_only = yes
