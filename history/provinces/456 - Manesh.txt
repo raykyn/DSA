@@ -1,0 +1,18 @@
+# c_manesh
+
+# County Title
+title = c_manesh
+
+# Settlements
+max_settlements = 4
+
+b_manesh = castle
+#b_manesh_2 = city
+#b_manesh_3 = temple
+#b_manesh_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = desert
+#History

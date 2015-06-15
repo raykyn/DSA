@@ -1644,7 +1644,7 @@ khom_c = {
     	modifier = default_culture_modifier
 	}
 	
-	beni_erkin = {
+	beni_erkin = { #too small to be used
 		graphical_culture = arabicgfx
 		color = { 1 0.2 1 }
 	

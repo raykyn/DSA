@@ -12,7 +12,7 @@ b_erkinstein = castle
 #b_erkinstein_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = puniner
 terrain = farmlands
 #History

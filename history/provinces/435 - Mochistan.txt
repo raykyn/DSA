@@ -12,7 +12,7 @@ b_mochistan = castle
 #b_mochistan_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = rastullah
 terrain = farmlands
 #History

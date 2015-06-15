@@ -1,0 +1,18 @@
+# c_kireh
+
+# County Title
+title = c_kireh
+
+# Settlements
+max_settlements = 4
+
+b_kireh = castle
+#b_kireh_2 = city
+#b_kireh_3 = temple
+#b_kireh_4 = castle
+
+# Misc
+culture = beni_novad
+religion = kasim
+terrain = desert
+#History

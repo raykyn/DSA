@@ -12,7 +12,7 @@ b_gorian_steppe = castle
 #b_gorian_steppe_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = puniner
 terrain = farmlands
 #History

@@ -1,0 +1,18 @@
+# c_hayabeth
+
+# County Title
+title = c_hayabeth
+
+# Settlements
+max_settlements = 4
+
+b_hayabeth = castle
+#b_hayabeth_2 = city
+#b_hayabeth_3 = temple
+#b_hayabeth_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = desert
+#History

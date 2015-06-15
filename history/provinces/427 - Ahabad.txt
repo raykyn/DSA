@@ -12,7 +12,7 @@ b_ahabad = castle
 #b_ahabad_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = puniner
 terrain = farmlands
 #History

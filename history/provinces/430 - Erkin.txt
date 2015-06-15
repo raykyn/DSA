@@ -12,7 +12,7 @@ b_erkin = castle
 #b_erkin_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = rastullah
 terrain = farmlands
 #History

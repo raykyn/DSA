@@ -12,7 +12,7 @@ b_tamuristan = castle
 #b_tamuristan_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = rastullah
 terrain = farmlands
 #History

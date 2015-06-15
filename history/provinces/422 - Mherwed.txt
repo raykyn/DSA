@@ -12,7 +12,7 @@ b_mherwed = castle
 #b_mherwed_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = rastullah
 terrain = farmlands
 #History

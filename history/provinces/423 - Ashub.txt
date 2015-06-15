@@ -12,7 +12,7 @@ b_ashub = castle
 #b_ashub_4 = castle
 
 # Misc
-culture = thalusian
-religion = thalusian
+culture = mhanadistani
+religion = rastullah
 terrain = farmlands
 #History

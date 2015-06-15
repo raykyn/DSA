@@ -1,0 +1,18 @@
+# c_eslamabad
+
+# County Title
+title = c_eslamabad
+
+# Settlements
+max_settlements = 4
+
+b_eslamabad = castle
+#b_eslamabad_2 = city
+#b_eslamabad_3 = temple
+#b_eslamabad_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = farmlands
+#History

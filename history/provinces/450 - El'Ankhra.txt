@@ -1,0 +1,18 @@
+# c_elankhra
+
+# County Title
+title = c_elankhra
+
+# Settlements
+max_settlements = 4
+
+b_elankhra = castle
+#b_elankhra_2 = city
+#b_elankhra_3 = temple
+#b_elankhra_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = desert
+#History

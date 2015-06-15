@@ -1,0 +1,18 @@
+# c_birscha
+
+# County Title
+title = c_birscha
+
+# Settlements
+max_settlements = 4
+
+b_birscha = castle
+#b_birscha_2 = city
+#b_birscha_3 = temple
+#b_birscha_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = desert
+#History
