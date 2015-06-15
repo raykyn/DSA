@@ -1,0 +1,18 @@
+# c_baghtiaristan
+
+# County Title
+title = c_baghtiaristan
+
+# Settlements
+max_settlements = 4
+
+b_baghtiaristan = castle
+#b_baghtiaristan_2 = city
+#b_baghtiaristan_3 = temple
+#b_baghtiaristan_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

@@ -2,6 +2,563 @@
 
 
 
+e_caliphate = {
+	color={ 194 4 34 }
+	color2={ 255 255 20 }
+	
+	capital = 410 # c_thalusa
+	culture = thalusian
+	
+	k_thalusia = {
+		color={ 204 250 39 }
+		color2={ 255 255 255 }
+		
+		capital = 410 # c_thalusa
+		culture = thalusian
+		
+		d_thalusia = {
+			color={ 224 230 49 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 410 province_id = 411 province_id = 412 province_id = 413 } }
+				}
+			}
+			capital = 410 # c_thalusa
+			
+			c_thalusa = { # 410
+				color={ 234 220 54 }
+				color2={ 255 255 255 }
+				
+				b_thalusa = {
+				}
+				b_thalusa_2 = {
+				}
+				b_thalusa_3 = {
+				}
+				b_thalusa_4 = {
+				}
+			}
+			c_east_thalus_massif = { # 413
+				color={ 234 36 40 }
+				color2={ 255 255 255 }
+				
+				b_east_thalus_massif = {
+				}
+				b_east_thalus_massif_2 = {
+				}
+				b_east_thalus_massif_3 = {
+				}
+				b_east_thalus_massif_4 = {
+				}
+			}
+			c_ronishagen = { # 411
+				color={ 234 41 181 }
+				color2={ 255 255 255 }
+				
+				b_ronishagen = {
+				}
+				b_ronishagen_2 = {
+				}
+				b_ronishagen_3 = {
+				}
+				b_ronishagen_4 = {
+				}
+			}
+			c_thalusim = { # 412
+				color={ 234 172 214 }
+				color2={ 255 255 255 }
+				
+				b_thalusim = {
+				}
+				b_thalusim_2 = {
+				}
+				b_thalusim_3 = {
+				}
+				b_thalusim_4 = {
+				}
+			}
+		}
+		d_eldhena = {
+			color={ 141 152 131 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 414 province_id = 415 province_id = 416 } }
+				}
+			}
+			capital = 414 # c_coast_of_tears
+			
+			c_coast_of_tears = { # 414
+				color={ 151 142 136 }
+				color2={ 255 255 255 }
+				
+				b_coast_of_tears = {
+				}
+				b_coast_of_tears_2 = {
+				}
+				b_coast_of_tears_3 = {
+				}
+				b_coast_of_tears_4 = {
+				}
+			}
+			c_eldhena = { # 415
+				color={ 151 215 72 }
+				color2={ 255 255 255 }
+				
+				b_eldhena = {
+				}
+				b_eldhena_2 = {
+				}
+				b_eldhena_3 = {
+				}
+				b_eldhena_4 = {
+				}
+			}
+			c_west_thalus_massif = { # 416
+				color={ 151 208 216 }
+				color2={ 255 255 255 }
+				
+				b_west_thalus_massif = {
+				}
+				b_west_thalus_massif_2 = {
+				}
+				b_west_thalus_massif_3 = {
+				}
+				b_west_thalus_massif_4 = {
+				}
+			}
+		}
+		d_ongalo = {
+			color={ 100 27 149 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 417 province_id = 418 province_id = 419 province_id = 420 province_id = 421 } }
+				}
+			}
+			capital = 417 # c_delta_of_awalakim
+			
+			c_delta_of_awalakim = { # 417
+				color={ 90 37 144 }
+				color2={ 255 255 255 }
+				
+				b_delta_of_awalakim = {
+				}
+				b_delta_of_awalakim_2 = {
+				}
+				b_delta_of_awalakim_3 = {
+				}
+				b_delta_of_awalakim_4 = {
+				}
+			}
+			c_ongalabad = { # 421
+				color={ 90 192 206 }
+				color2={ 255 255 255 }
+				
+				b_ongalabad = {
+				}
+				b_ongalabad_2 = {
+				}
+				b_ongalabad_3 = {
+				}
+				b_ongalabad_4 = {
+				}
+			}
+			c_ongalo_highlands = { # 418
+				color={ 90 193 61 }
+				color2={ 255 255 255 }
+				
+				b_ongalo_highlands = {
+				}
+				b_ongalo_highlands_2 = {
+				}
+				b_ongalo_highlands_3 = {
+				}
+				b_ongalo_highlands_4 = {
+				}
+			}
+			c_ongalo_swamps = { # 419
+				color={ 90 221 49 }
+				color2={ 255 255 255 }
+				
+				b_ongalo_swamps = {
+				}
+				b_ongalo_swamps_2 = {
+				}
+				b_ongalo_swamps_3 = {
+				}
+				b_ongalo_swamps_4 = {
+				}
+			}
+			c_ongaloquell = { # 420
+				color={ 90 26 139 }
+				color2={ 255 255 255 }
+				
+				b_ongaloquell = {
+				}
+				b_ongaloquell_2 = {
+				}
+				b_ongaloquell_3 = {
+				}
+				b_ongaloquell_4 = {
+				}
+			}
+		}
+	}
+	k_mhanadistan = {
+		color={ 136 201 40 }
+		color2={ 255 255 255 }
+		
+		capital = 422 # c_mherwed
+		culture = thalusian
+		
+		d_balash = {
+			color={ 116 221 30 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 422 province_id = 423 province_id = 424 province_id = 425 } }
+				}
+			}
+			capital = 422 # c_mherwed
+			
+			c_mherwed = { # 422
+				color={ 106 231 25 }
+				color2={ 255 255 255 }
+				
+				b_mherwed = {
+				}
+				b_mherwed_2 = {
+				}
+				b_mherwed_3 = {
+				}
+				b_mherwed_4 = {
+				}
+			}
+			c_ashub = { # 423
+				color={ 106 27 211 }
+				color2={ 255 255 255 }
+				
+				b_ashub = {
+				}
+				b_ashub_2 = {
+				}
+				b_ashub_3 = {
+				}
+				b_ashub_4 = {
+				}
+			}
+			c_madrashistan = { # 425
+				color={ 106 29 65 }
+				color2={ 255 255 255 }
+				
+				b_madrashistan = {
+				}
+				b_madrashistan_2 = {
+				}
+				b_madrashistan_3 = {
+				}
+				b_madrashistan_4 = {
+				}
+			}
+			c_tamuristan = { # 424
+				color={ 106 121 119 }
+				color2={ 255 255 255 }
+				
+				b_tamuristan = {
+				}
+				b_tamuristan_2 = {
+				}
+				b_tamuristan_3 = {
+				}
+				b_tamuristan_4 = {
+				}
+			}
+		}
+		d_erkin = {
+			color={ 54 214 210 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 429 province_id = 430 } }
+				}
+			}
+			capital = 429 # c_erkinstein
+			
+			c_erkinstein = { # 429
+				color={ 64 204 215 }
+				color2={ 255 255 255 }
+				
+				b_erkinstein = {
+				}
+				b_erkinstein_2 = {
+				}
+				b_erkinstein_3 = {
+				}
+				b_erkinstein_4 = {
+				}
+			}
+			c_erkin = { # 430
+				color={ 64 145 50 }
+				color2={ 255 255 255 }
+				
+				b_erkin = {
+				}
+				b_erkin_2 = {
+				}
+				b_erkin_3 = {
+				}
+				b_erkin_4 = {
+				}
+			}
+		}
+		d_gadang = {
+			color={ 112 143 193 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 431 province_id = 432 province_id = 433 province_id = 434 } }
+				}
+			}
+			capital = 431 # c_malyai
+			
+			c_malyai = { # 431
+				color={ 122 133 198 }
+				color2={ 255 255 255 }
+				
+				b_malyai = {
+				}
+				b_malyai_2 = {
+				}
+				b_malyai_3 = {
+				}
+				b_malyai_4 = {
+				}
+			}
+			c_fasar = { # 432
+				color={ 122 50 152 }
+				color2={ 255 255 255 }
+				
+				b_fasar = {
+				}
+				b_fasar_2 = {
+				}
+				b_fasar_3 = {
+				}
+				b_fasar_4 = {
+				}
+			}
+			c_habinistan = { # 434
+				color={ 122 154 52 }
+				color2={ 255 255 255 }
+				
+				b_habinistan = {
+				}
+				b_habinistan_2 = {
+				}
+				b_habinistan_3 = {
+				}
+				b_habinistan_4 = {
+				}
+			}
+			c_rasiastan = { # 433
+				color={ 122 111 50 }
+				color2={ 255 255 255 }
+				
+				b_rasiastan = {
+				}
+				b_rasiastan_2 = {
+				}
+				b_rasiastan_3 = {
+				}
+				b_rasiastan_4 = {
+				}
+			}
+		}
+		d_mhanadistan = {
+			color={ 168 23 43 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 435 province_id = 436 province_id = 437 province_id = 438 province_id = 439 province_id = 440 province_id = 441 province_id = 442 } }
+				}
+			}
+			capital = 435 # c_mochistan
+			
+			c_mochistan = { # 435
+				color={ 158 33 38 }
+				color2={ 255 255 255 }
+				
+				b_mochistan = {
+				}
+				b_mochistan_2 = {
+				}
+				b_mochistan_3 = {
+				}
+				b_mochistan_4 = {
+				}
+			}
+			c_baghtiaristan = { # 441
+				color={ 158 91 139 }
+				color2={ 255 255 255 }
+				
+				b_baghtiaristan = {
+				}
+				b_baghtiaristan_2 = {
+				}
+				b_baghtiaristan_3 = {
+				}
+				b_baghtiaristan_4 = {
+				}
+			}
+			c_hineshipur = { # 437
+				color={ 158 198 246 }
+				color2={ 255 255 255 }
+				
+				b_hineshipur = {
+				}
+				b_hineshipur_2 = {
+				}
+				b_hineshipur_3 = {
+				}
+				b_hineshipur_4 = {
+				}
+			}
+			c_mahanadibeuge = { # 442
+				color={ 158 203 42 }
+				color2={ 255 255 255 }
+				
+				b_mahanadibeuge = {
+				}
+				b_mahanadibeuge_2 = {
+				}
+				b_mahanadibeuge_3 = {
+				}
+				b_mahanadibeuge_4 = {
+				}
+			}
+			c_mhakhoramistan = { # 438
+				color={ 158 217 53 }
+				color2={ 255 255 255 }
+				
+				b_mhakhoramistan = {
+				}
+				b_mhakhoramistan_2 = {
+				}
+				b_mhakhoramistan_3 = {
+				}
+				b_mhakhoramistan_4 = {
+				}
+			}
+			c_mhanessipur = { # 436
+				color={ 158 216 206 }
+				color2={ 255 255 255 }
+				
+				b_mhanessipur = {
+				}
+				b_mhanessipur_2 = {
+				}
+				b_mhanessipur_3 = {
+				}
+				b_mhanessipur_4 = {
+				}
+			}
+			c_selicumia = { # 439
+				color={ 158 28 207 }
+				color2={ 255 255 255 }
+				
+				b_selicumia = {
+				}
+				b_selicumia_2 = {
+				}
+				b_selicumia_3 = {
+				}
+				b_selicumia_4 = {
+				}
+			}
+			c_therfasistan = { # 440
+				color={ 158 199 188 }
+				color2={ 255 255 255 }
+				
+				b_therfasistan = {
+				}
+				b_therfasistan_2 = {
+				}
+				b_therfasistan_3 = {
+				}
+				b_therfasistan_4 = {
+				}
+			}
+		}
+		d_rashdul = {
+			color={ 198 38 217 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 426 province_id = 427 province_id = 428 } }
+				}
+			}
+			capital = 426 # c_rashdul
+			
+			c_rashdul = { # 426
+				color={ 208 28 222 }
+				color2={ 255 255 255 }
+				
+				b_rashdul = {
+				}
+				b_rashdul_2 = {
+				}
+				b_rashdul_3 = {
+				}
+				b_rashdul_4 = {
+				}
+			}
+			c_ahabad = { # 427
+				color={ 208 225 39 }
+				color2={ 255 255 255 }
+				
+				b_ahabad = {
+				}
+				b_ahabad_2 = {
+				}
+				b_ahabad_3 = {
+				}
+				b_ahabad_4 = {
+				}
+			}
+			c_gorian_steppe = { # 428
+				color={ 208 196 211 }
+				color2={ 255 255 255 }
+				
+				b_gorian_steppe = {
+				}
+				b_gorian_steppe_2 = {
+				}
+				b_gorian_steppe_3 = {
+				}
+				b_gorian_steppe_4 = {
+				}
+			}
+		}
+	}
+}
 e_middlerealm = {
 	color={ 144 144 72 }
 	color2={ 255 255 20 }
@@ -4833,209 +5390,6 @@ e_middlerealm = {
 				b_widdernhall_3 = {
 				}
 				b_widdernhall_4 = {
-				}
-			}
-		}
-	}
-	k_thalusia = {
-		color={ 204 250 39 }
-		color2={ 255 255 255 }
-		
-		capital = 410 # c_thalusa
-		culture = thalusian
-		
-		d_thalusia = {
-			color={ 224 230 49 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 410 province_id = 411 province_id = 412 province_id = 413 } }
-				}
-			}
-			capital = 410 # c_thalusa
-			
-			c_thalusa = { # 410
-				color={ 234 220 54 }
-				color2={ 255 255 255 }
-				
-				b_thalusa = {
-				}
-				b_thalusa_2 = {
-				}
-				b_thalusa_3 = {
-				}
-				b_thalusa_4 = {
-				}
-			}
-			c_east_thalus_massif = { # 413
-				color={ 234 36 40 }
-				color2={ 255 255 255 }
-				
-				b_east_thalus_massif = {
-				}
-				b_east_thalus_massif_2 = {
-				}
-				b_east_thalus_massif_3 = {
-				}
-				b_east_thalus_massif_4 = {
-				}
-			}
-			c_ronishagen = { # 411
-				color={ 234 41 181 }
-				color2={ 255 255 255 }
-				
-				b_ronishagen = {
-				}
-				b_ronishagen_2 = {
-				}
-				b_ronishagen_3 = {
-				}
-				b_ronishagen_4 = {
-				}
-			}
-			c_thalusim = { # 412
-				color={ 234 172 214 }
-				color2={ 255 255 255 }
-				
-				b_thalusim = {
-				}
-				b_thalusim_2 = {
-				}
-				b_thalusim_3 = {
-				}
-				b_thalusim_4 = {
-				}
-			}
-		}
-		d_eldhena = {
-			color={ 141 152 131 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 414 province_id = 415 province_id = 416 } }
-				}
-			}
-			capital = 414 # c_coast_of_tears
-			
-			c_coast_of_tears = { # 414
-				color={ 151 142 136 }
-				color2={ 255 255 255 }
-				
-				b_coast_of_tears = {
-				}
-				b_coast_of_tears_2 = {
-				}
-				b_coast_of_tears_3 = {
-				}
-				b_coast_of_tears_4 = {
-				}
-			}
-			c_eldhena = { # 415
-				color={ 151 215 72 }
-				color2={ 255 255 255 }
-				
-				b_eldhena = {
-				}
-				b_eldhena_2 = {
-				}
-				b_eldhena_3 = {
-				}
-				b_eldhena_4 = {
-				}
-			}
-			c_west_thalus_massif = { # 416
-				color={ 151 208 216 }
-				color2={ 255 255 255 }
-				
-				b_west_thalus_massif = {
-				}
-				b_west_thalus_massif_2 = {
-				}
-				b_west_thalus_massif_3 = {
-				}
-				b_west_thalus_massif_4 = {
-				}
-			}
-		}
-		d_ongalo = {
-			color={ 100 27 149 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 417 province_id = 418 province_id = 419 province_id = 420 province_id = 421 } }
-				}
-			}
-			capital = 417 # c_delta_of_awalakim
-			
-			c_delta_of_awalakim = { # 417
-				color={ 90 37 144 }
-				color2={ 255 255 255 }
-				
-				b_delta_of_awalakim = {
-				}
-				b_delta_of_awalakim_2 = {
-				}
-				b_delta_of_awalakim_3 = {
-				}
-				b_delta_of_awalakim_4 = {
-				}
-			}
-			c_ongalabad = { # 421
-				color={ 90 192 206 }
-				color2={ 255 255 255 }
-				
-				b_ongalabad = {
-				}
-				b_ongalabad_2 = {
-				}
-				b_ongalabad_3 = {
-				}
-				b_ongalabad_4 = {
-				}
-			}
-			c_ongalo_highlands = { # 418
-				color={ 90 193 61 }
-				color2={ 255 255 255 }
-				
-				b_ongalo_highlands = {
-				}
-				b_ongalo_highlands_2 = {
-				}
-				b_ongalo_highlands_3 = {
-				}
-				b_ongalo_highlands_4 = {
-				}
-			}
-			c_ongalo_swamps = { # 419
-				color={ 90 221 49 }
-				color2={ 255 255 255 }
-				
-				b_ongalo_swamps = {
-				}
-				b_ongalo_swamps_2 = {
-				}
-				b_ongalo_swamps_3 = {
-				}
-				b_ongalo_swamps_4 = {
-				}
-			}
-			c_ongaloquell = { # 420
-				color={ 90 26 139 }
-				color2={ 255 255 255 }
-				
-				b_ongaloquell = {
-				}
-				b_ongaloquell_2 = {
-				}
-				b_ongaloquell_3 = {
-				}
-				b_ongaloquell_4 = {
 				}
 			}
 		}

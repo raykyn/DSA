@@ -1,0 +1,18 @@
+# c_mahanadibeuge
+
+# County Title
+title = c_mahanadibeuge
+
+# Settlements
+max_settlements = 4
+
+b_mahanadibeuge = castle
+#b_mahanadibeuge_2 = city
+#b_mahanadibeuge_3 = temple
+#b_mahanadibeuge_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

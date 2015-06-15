@@ -13,6 +13,6 @@ b_yaisiristan = castle
 
 # Misc
 culture = mhanadistani
-religion = rastullah
+religion = puniner
 terrain = farmlands
 #History

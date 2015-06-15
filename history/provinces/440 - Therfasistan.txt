@@ -1,0 +1,18 @@
+# c_therfasistan
+
+# County Title
+title = c_therfasistan
+
+# Settlements
+max_settlements = 4
+
+b_therfasistan = castle
+#b_therfasistan_2 = city
+#b_therfasistan_3 = temple
+#b_therfasistan_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

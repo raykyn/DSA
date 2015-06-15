@@ -9,6 +9,8 @@ d_baburin;Baburin;Baburin;Baburin;;Baburin;;;;;;;;;x
 d_baburin_adj;Baburinian;;baburiner;;;;;;;;;;;x
 d_baerwalde;Bärwalde;Bärwalde;Bärwalde;;Bärwalde;;;;;;;;;x
 d_baerwalde_adj;Bärwaldean;;bärwalder;;;;;;;;;;;x
+d_balash;Balash;Balash;Balash;;Balash;;;;;;;;;x
+d_balash_adj;Balashian;;balasher;;;;;;;;;;;x
 d_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
 d_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
 d_beilunk;Beilunk;Beilunk;Beilunk;;Beilunk;;;;;;;;;x
@@ -23,10 +25,14 @@ d_eldhena;El'Dhena;El'Dhena;El'Dhena;;El'Dhena;;;;;;;;;x
 d_eldhena_adj;El'Dhenan;;el'dhener;;;;;;;;;;;x
 d_elenvina;Elenvina;Elenvina;Elenvina;;Elenvina;;;;;;;;;x
 d_elenvina_adj;Elenvinan;;elenviner;;;;;;;;;;;x
+d_erkin;Erkin;Erkin;Erkin;;Erkin;;;;;;;;;x
+d_erkin_adj;Erkinian;;erkiner;;;;;;;;;;;x
 d_eslamsgrund;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
 d_eslamsgrund_adj;Eslamsgrundian;;eslamsgrunder;;;;;;;;;;;x
 d_ferdok;Ferdok;Ferdok;Ferdok;;Ferdok;;;;;;;;;x
 d_ferdok_adj;Ferdokian;;ferdoker;;;;;;;;;;;x
+d_gadang;Gadang;Gadang;Gadang;;Gadang;;;;;;;;;x
+d_gadang_adj;Gadangian;;gadanger;;;;;;;;;;;x
 d_gareth;Gareth;Gareth;Gareth;;Gareth;;;;;;;;;x
 d_gareth_adj;Garethian;;garether;;;;;;;;;;;x
 d_gratenfels;Gratenfels;Gratenfels;Gratenfels;;Gratenfels;;;;;;;;;x
@@ -51,6 +57,8 @@ d_khunchom;Khunchom;Khunchom;Khunchom;;Khunchom;;;;;;;;;x
 d_khunchom_adj;Khunchomian;;khunchomer;;;;;;;;;;;x
 d_mendena;Mendena;Mendena;Mendena;;Mendena;;;;;;;;;x
 d_mendena_adj;Mendenan;;mendener;;;;;;;;;;;x
+d_mhanadistan;Mhanadistan;Mhanadistan;Mhanadistan;;Mhanadistan;;;;;;;;;x
+d_mhanadistan_adj;Mhanadistanian;;mhanadistaner;;;;;;;;;;;x
 d_misamund;Misamund;Misamund;Misamund;;Misamund;;;;;;;;;x
 d_misamund_adj;Misamundian;;misamunder;;;;;;;;;;;x
 d_ochsenwasser;Ochsenwasser;Ochsenwasser;Ochsenwasser;;Ochsenwasser;;;;;;;;;x
@@ -65,6 +73,8 @@ d_perricum;Perricum;Perricum;Perricum;;Perricum;;;;;;;;;x
 d_perricum_adj;Perricumian;;perricumer;;;;;;;;;;;x
 d_ragath;Ragath;Ragath;Ragath;;Ragath;;;;;;;;;x
 d_ragath_adj;Ragathian;;ragather;;;;;;;;;;;x
+d_rashdul;Rashdul;Rashdul;Rashdul;;Rashdul;;;;;;;;;x
+d_rashdul_adj;Rashdulian;;rashduler;;;;;;;;;;;x
 d_reichsforst;Reichsforst;Reichsforst;Reichsforst;;Reichsforst;;;;;;;;;x
 d_reichsforst_adj;Reichsforstian;;reichsforster;;;;;;;;;;;x
 d_schlund;Schlund;Schlund;Schlund;;Schlund;;;;;;;;;x

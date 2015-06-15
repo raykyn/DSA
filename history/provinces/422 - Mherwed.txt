@@ -1,0 +1,18 @@
+# c_mherwed
+
+# County Title
+title = c_mherwed
+
+# Settlements
+max_settlements = 4
+
+b_mherwed = castle
+#b_mherwed_2 = city
+#b_mherwed_3 = temple
+#b_mherwed_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

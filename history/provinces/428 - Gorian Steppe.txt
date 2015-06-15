@@ -1,0 +1,18 @@
+# c_gorian_steppe
+
+# County Title
+title = c_gorian_steppe
+
+# Settlements
+max_settlements = 4
+
+b_gorian_steppe = castle
+#b_gorian_steppe_2 = city
+#b_gorian_steppe_3 = temple
+#b_gorian_steppe_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

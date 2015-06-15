@@ -1,0 +1,23 @@
+#CALIPHATE
+technology = {
+	titles = {
+		d_thalusia
+		d_eldhena
+		d_ongalo
+		d_balash
+		d_erkin
+		d_gadang
+		d_mhanadistan
+		d_rashdul
+	}
+	769 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+	}
+	1453 = {
+		military = 5.0
+		economy = 5.0
+		culture = 5.0
+	}
+}

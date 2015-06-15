@@ -1,0 +1,18 @@
+# c_fasar
+
+# County Title
+title = c_fasar
+
+# Settlements
+max_settlements = 4
+
+b_fasar = castle
+#b_fasar_2 = city
+#b_fasar_3 = temple
+#b_fasar_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

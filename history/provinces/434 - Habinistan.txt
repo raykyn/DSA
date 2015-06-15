@@ -1,0 +1,18 @@
+# c_habinistan
+
+# County Title
+title = c_habinistan
+
+# Settlements
+max_settlements = 4
+
+b_habinistan = castle
+#b_habinistan_2 = city
+#b_habinistan_3 = temple
+#b_habinistan_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

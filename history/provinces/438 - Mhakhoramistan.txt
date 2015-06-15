@@ -1,0 +1,18 @@
+# c_mhakhoramistan
+
+# County Title
+title = c_mhakhoramistan
+
+# Settlements
+max_settlements = 4
+
+b_mhakhoramistan = castle
+#b_mhakhoramistan_2 = city
+#b_mhakhoramistan_3 = temple
+#b_mhakhoramistan_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

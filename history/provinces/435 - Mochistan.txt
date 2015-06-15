@@ -1,0 +1,18 @@
+# c_mochistan
+
+# County Title
+title = c_mochistan
+
+# Settlements
+max_settlements = 4
+
+b_mochistan = castle
+#b_mochistan_2 = city
+#b_mochistan_3 = temple
+#b_mochistan_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

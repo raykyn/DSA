@@ -1,0 +1,18 @@
+# c_rasiastan
+
+# County Title
+title = c_rasiastan
+
+# Settlements
+max_settlements = 4
+
+b_rasiastan = castle
+#b_rasiastan_2 = city
+#b_rasiastan_3 = temple
+#b_rasiastan_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History
