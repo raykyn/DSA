@@ -1,8 +1,8 @@
 bookmark =
 {
-	name = "BM_THE_RETURNED_EMPEROR"
-	desc = "BM_THE_RETURNED_EMPEROR_DESC"
-	date = 1030.1.1
+	name = "BM_PEACE_OF_ARIVOR"
+	desc = "BM_PEACE_OF_ARIVOR_DESC"
+	date = 1030.8.28
 }
 
 bookmark =
