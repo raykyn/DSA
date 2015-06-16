@@ -1,0 +1,18 @@
+# c_port_corrad
+
+# County Title
+title = c_port_corrad
+
+# Settlements
+max_settlements = 4
+
+b_port_corrad = castle
+#b_port_corrad_2 = city
+#b_port_corrad_3 = temple
+#b_port_corrad_4 = castle
+
+# Misc
+culture = mengbilla
+religion = alanfaner
+terrain = farmlands
+#History

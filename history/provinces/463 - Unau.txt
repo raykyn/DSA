@@ -1,0 +1,18 @@
+# c_unau
+
+# County Title
+title = c_unau
+
+# Settlements
+max_settlements = 4
+
+b_unau = castle
+#b_unau_2 = city
+#b_unau_3 = temple
+#b_unau_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_vishia
+
+# County Title
+title = c_vishia
+
+# Settlements
+max_settlements = 4
+
+b_vishia = castle
+#b_vishia_2 = city
+#b_vishia_3 = temple
+#b_vishia_4 = castle
+
+# Misc
+culture = beni_arrat
+religion = rastullah
+terrain = farmlands
+#History

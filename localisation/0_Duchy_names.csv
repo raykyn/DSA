@@ -9,6 +9,8 @@ d_anchopal;Anchopal;Anchopal;Anchopal;;Anchopal;;;;;;;;;x
 d_anchopal_adj;Anchopalian;;anchopaler;;;;;;;;;;;x
 d_ankhra;Ankhra;Ankhra;Ankhra;;Ankhra;;;;;;;;;x
 d_ankhra_adj;Ankhran;;ankhrer;;;;;;;;;;;x
+d_arratistan;Arratistan;Arratistan;Arratistan;;Arratistan;;;;;;;;;x
+d_arratistan_adj;Arratistanian;;arratistaner;;;;;;;;;;;x
 d_baburin;Baburin;Baburin;Baburin;;Baburin;;;;;;;;;x
 d_baburin_adj;Baburinian;;baburiner;;;;;;;;;;;x
 d_baerwalde;Bärwalde;Bärwalde;Bärwalde;;Bärwalde;;;;;;;;;x
@@ -91,6 +93,10 @@ d_schebt;Schebt;Schebt;Schebt;;Schebt;;;;;;;;;x
 d_schebt_adj;Schebtian;;schebter;;;;;;;;;;;x
 d_schlund;Schlund;Schlund;Schlund;;Schlund;;;;;;;;;x
 d_schlund_adj;Schlundian;;schlunder;;;;;;;;;;;x
+d_selem;Selem;Selem;Selem;;Selem;;;;;;;;;x
+d_selem_adj;Selemian;;selemer;;;;;;;;;;;x
+d_shadif;Shadif;Shadif;Shadif;;Shadif;;;;;;;;;x
+d_shadif_adj;Shadifian;;shadifer;;;;;;;;;;;x
 d_sichelwacht;Sichelwacht;Sichelwacht;Sichelwacht;;Sichelwacht;;;;;;;;;x
 d_sichelwacht_adj;Sichelwachtian;;sichelwachter;;;;;;;;;;;x
 d_suedpforte;Südpforte;Südpforte;Südpforte;;Südpforte;;;;;;;;;x
