@@ -1,0 +1,18 @@
+# c_usdaran
+
+# County Title
+title = c_usdaran
+
+# Settlements
+max_settlements = 4
+
+b_usdaran = castle
+#b_usdaran_2 = city
+#b_usdaran_3 = temple
+#b_usdaran_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

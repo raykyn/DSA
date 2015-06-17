@@ -1,0 +1,18 @@
+# c_mherweggyn
+
+# County Title
+title = c_mherweggyn
+
+# Settlements
+max_settlements = 4
+
+b_mherweggyn = castle
+#b_mherweggyn_2 = city
+#b_mherweggyn_3 = temple
+#b_mherweggyn_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

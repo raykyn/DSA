@@ -1,0 +1,18 @@
+# c_feqabab
+
+# County Title
+title = c_feqabab
+
+# Settlements
+max_settlements = 4
+
+b_feqabab = castle
+#b_feqabab_2 = city
+#b_feqabab_3 = temple
+#b_feqabab_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

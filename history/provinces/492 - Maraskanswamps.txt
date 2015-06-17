@@ -1,0 +1,18 @@
+# c_maraskanswamps
+
+# County Title
+title = c_maraskanswamps
+
+# Settlements
+max_settlements = 4
+
+b_maraskanswamps = castle
+#b_maraskanswamps_2 = city
+#b_maraskanswamps_3 = temple
+#b_maraskanswamps_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

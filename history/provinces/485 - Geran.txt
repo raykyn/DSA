@@ -1,0 +1,18 @@
+# c_geran
+
+# County Title
+title = c_geran
+
+# Settlements
+max_settlements = 4
+
+b_geran = castle
+#b_geran_2 = city
+#b_geran_3 = temple
+#b_geran_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

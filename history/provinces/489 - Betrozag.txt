@@ -1,0 +1,18 @@
+# c_betrozag
+
+# County Title
+title = c_betrozag
+
+# Settlements
+max_settlements = 4
+
+b_betrozag = castle
+#b_betrozag_2 = city
+#b_betrozag_3 = temple
+#b_betrozag_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

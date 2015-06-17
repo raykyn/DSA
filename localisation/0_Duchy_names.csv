@@ -21,6 +21,8 @@ d_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
 d_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
 d_beilunk;Beilunk;Beilunk;Beilunk;;Beilunk;;;;;;;;;x
 d_beilunk_adj;Beilunkian;;beilunker;;;;;;;;;;;x
+d_boran;Boran;Boran;Boran;;Boran;;;;;;;;;x
+d_boran_adj;Boranian;;boraner;;;;;;;;;;;x
 d_bredenhag;Bredenhag;Bredenhag;Bredenhag;;Bredenhag;;;;;;;;;x
 d_bredenhag_adj;Bredenhagian;;bredenhager;;;;;;;;;;;x
 d_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
@@ -59,6 +61,10 @@ d_huegellande;Hügellande;Hügellande;Hügellande;;Hügellande;;;;;;;;;x
 d_huegellande_adj;Hügellandean;;hügellander;;;;;;;;;;;x
 d_isenhag;Isenhag;Isenhag;Isenhag;;Isenhag;;;;;;;;;x
 d_isenhag_adj;Isenhagian;;isenhager;;;;;;;;;;;x
+d_jergan;Jergan;Jergan;Jergan;;Jergan;;;;;;;;;x
+d_jergan_adj;Jerganian;;jerganer;;;;;;;;;;;x
+d_jilaskan;Jilaskan;Jilaskan;Jilaskan;;Jilaskan;;;;;;;;;x
+d_jilaskan_adj;Jilaskanian;;jilaskaner;;;;;;;;;;;x
 d_kasim;Kasim;Kasim;Kasim;;Kasim;;;;;;;;;x
 d_kasim_adj;Kasimian;;kasimer;;;;;;;;;;;x
 d_kharram;Kharram;Kharram;Kharram;;Kharram;;;;;;;;;x
@@ -99,6 +105,8 @@ d_shadif;Shadif;Shadif;Shadif;;Shadif;;;;;;;;;x
 d_shadif_adj;Shadifian;;shadifer;;;;;;;;;;;x
 d_sichelwacht;Sichelwacht;Sichelwacht;Sichelwacht;;Sichelwacht;;;;;;;;;x
 d_sichelwacht_adj;Sichelwachtian;;sichelwachter;;;;;;;;;;;x
+d_sinoda;Sinoda;Sinoda;Sinoda;;Sinoda;;;;;;;;;x
+d_sinoda_adj;Sinodan;;sinoder;;;;;;;;;;;x
 d_suedpforte;Südpforte;Südpforte;Südpforte;;Südpforte;;;;;;;;;x
 d_suedpforte_adj;Südpfortean;;südpforter;;;;;;;;;;;x
 d_terkui;Terkui;Terkui;Terkui;;Terkui;;;;;;;;;x
@@ -109,6 +117,8 @@ d_tobimora;Tobimora;Tobimora;Tobimora;;Tobimora;;;;;;;;;x
 d_tobimora_adj;Tobimoran;;tobimorer;;;;;;;;;;;x
 d_trollzacken;Trollzacken;Trollzacken;Trollzacken;;Trollzacken;;;;;;;;;x
 d_trollzacken_adj;Trollzackenian;;trollzackener;;;;;;;;;;;x
+d_tuzak;Tuzak;Tuzak;Tuzak;;Tuzak;;;;;;;;;x
+d_tuzak_adj;Tuzakian;;tuzaker;;;;;;;;;;;x
 d_waldstein;Waldstein;Waldstein;Waldstein;;Waldstein;;;;;;;;;x
 d_waldstein_adj;Waldsteinian;;waldsteiner;;;;;;;;;;;x
 d_waldwacht;Waldwacht;Waldwacht;Waldwacht;;Waldwacht;;;;;;;;;x

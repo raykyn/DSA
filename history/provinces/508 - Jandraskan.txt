@@ -1,0 +1,18 @@
+# c_jandraskan
+
+# County Title
+title = c_jandraskan
+
+# Settlements
+max_settlements = 4
+
+b_jandraskan = castle
+#b_jandraskan_2 = city
+#b_jandraskan_3 = temple
+#b_jandraskan_4 = castle
+
+# Misc
+culture = garethi
+religion = jilaskan
+terrain = farmlands
+#History

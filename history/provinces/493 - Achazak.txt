@@ -1,0 +1,18 @@
+# c_achazak
+
+# County Title
+title = c_achazak
+
+# Settlements
+max_settlements = 4
+
+b_achazak = castle
+#b_achazak_2 = city
+#b_achazak_3 = temple
+#b_achazak_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

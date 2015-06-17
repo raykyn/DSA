@@ -4848,6 +4848,443 @@ e_middlerealm = {
 			}
 		}
 	}
+	k_maraskan = {
+		color={ 217 12 39 }
+		color2={ 255 255 255 }
+		
+		capital = 482 # c_tuzak
+		culture = maraskan
+		
+		d_tuzak = {
+			color={ 237 248 49 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 482 province_id = 483 province_id = 484 province_id = 485 province_id = 486 } }
+				}
+			}
+			capital = 482 # c_tuzak
+			
+			c_tuzak = { # 482
+				color={ 247 238 54 }
+				color2={ 255 255 255 }
+				
+				b_tuzak = {
+				}
+				b_tuzak_2 = {
+				}
+				b_tuzak_3 = {
+				}
+				b_tuzak_4 = {
+				}
+			}
+			c_alrurdan = { # 486
+				color={ 247 43 211 }
+				color2={ 255 255 255 }
+				
+				b_alrurdan = {
+				}
+				b_alrurdan_2 = {
+				}
+				b_alrurdan_3 = {
+				}
+				b_alrurdan_4 = {
+				}
+			}
+			c_geran = { # 485
+				color={ 247 194 191 }
+				color2={ 255 255 255 }
+				
+				b_geran = {
+				}
+				b_geran_2 = {
+				}
+				b_geran_3 = {
+				}
+				b_geran_4 = {
+				}
+			}
+			c_obogyn = { # 483
+				color={ 247 218 56 }
+				color2={ 255 255 255 }
+				
+				b_obogyn = {
+				}
+				b_obogyn_2 = {
+				}
+				b_obogyn_3 = {
+				}
+				b_obogyn_4 = {
+				}
+			}
+			c_talued = { # 484
+				color={ 247 31 33 }
+				color2={ 255 255 255 }
+				
+				b_talued = {
+				}
+				b_talued_2 = {
+				}
+				b_talued_3 = {
+				}
+				b_talued_4 = {
+				}
+			}
+		}
+		d_boran = {
+			color={ 94 82 58 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 495 province_id = 496 province_id = 497 province_id = 498 province_id = 499 } }
+				}
+			}
+			capital = 495 # c_boran
+			
+			c_boran = { # 495
+				color={ 84 92 53 }
+				color2={ 255 255 255 }
+				
+				b_boran = {
+				}
+				b_boran_2 = {
+				}
+				b_boran_3 = {
+				}
+				b_boran_4 = {
+				}
+			}
+			c_charasim = { # 498
+				color={ 84 78 69 }
+				color2={ 255 255 255 }
+				
+				b_charasim = {
+				}
+				b_charasim_2 = {
+				}
+				b_charasim_3 = {
+				}
+				b_charasim_4 = {
+				}
+			}
+			c_dinoda = { # 496
+				color={ 84 150 74 }
+				color2={ 255 255 255 }
+				
+				b_dinoda = {
+				}
+				b_dinoda_2 = {
+				}
+				b_dinoda_3 = {
+				}
+				b_dinoda_4 = {
+				}
+			}
+			c_maraskancliff = { # 499
+				color={ 84 219 63 }
+				color2={ 255 255 255 }
+				
+				b_maraskancliff = {
+				}
+				b_maraskancliff_2 = {
+				}
+				b_maraskancliff_3 = {
+				}
+				b_maraskancliff_4 = {
+				}
+			}
+			c_usdaran = { # 497
+				color={ 84 54 23 }
+				color2={ 255 255 255 }
+				
+				b_usdaran = {
+				}
+				b_usdaran_2 = {
+				}
+				b_usdaran_3 = {
+				}
+				b_usdaran_4 = {
+				}
+			}
+		}
+		d_jergan = {
+			color={ 168 125 90 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 500 province_id = 501 province_id = 502 province_id = 503 province_id = 504 province_id = 505 province_id = 506 } }
+				}
+			}
+			capital = 500 # c_jergan
+			
+			c_jergan = { # 500
+				color={ 158 135 85 }
+				color2={ 255 255 255 }
+				
+				b_jergan = {
+				}
+				b_jergan_2 = {
+				}
+				b_jergan_3 = {
+				}
+				b_jergan_4 = {
+				}
+			}
+			c_asfar = { # 501
+				color={ 158 53 132 }
+				color2={ 255 255 255 }
+				
+				b_asfar = {
+				}
+				b_asfar_2 = {
+				}
+				b_asfar_3 = {
+				}
+				b_asfar_4 = {
+				}
+			}
+			c_feqabab = { # 505
+				color={ 158 170 32 }
+				color2={ 255 255 255 }
+				
+				b_feqabab = {
+				}
+				b_feqabab_2 = {
+				}
+				b_feqabab_3 = {
+				}
+				b_feqabab_4 = {
+				}
+			}
+			c_gipflak = { # 502
+				color={ 158 29 60 }
+				color2={ 255 255 255 }
+				
+				b_gipflak = {
+				}
+				b_gipflak_2 = {
+				}
+				b_gipflak_3 = {
+				}
+				b_gipflak_4 = {
+				}
+			}
+			c_huab = { # 504
+				color={ 158 82 33 }
+				color2={ 255 255 255 }
+				
+				b_huab = {
+				}
+				b_huab_2 = {
+				}
+				b_huab_3 = {
+				}
+				b_huab_4 = {
+				}
+			}
+			c_praiobab = { # 506
+				color={ 158 75 75 }
+				color2={ 255 255 255 }
+				
+				b_praiobab = {
+				}
+				b_praiobab_2 = {
+				}
+				b_praiobab_3 = {
+				}
+				b_praiobab_4 = {
+				}
+			}
+			c_yerkilan = { # 503
+				color={ 158 124 45 }
+				color2={ 255 255 255 }
+				
+				b_yerkilan = {
+				}
+				b_yerkilan_2 = {
+				}
+				b_yerkilan_3 = {
+				}
+				b_yerkilan_4 = {
+				}
+			}
+		}
+		d_jilaskan = {
+			color={ 237 77 122 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 507 province_id = 508 province_id = 509 } }
+				}
+			}
+			capital = 507 # c_jilaskan
+			
+			c_jilaskan = { # 507
+				color={ 247 67 127 }
+				color2={ 255 255 255 }
+				
+				b_jilaskan = {
+				}
+				b_jilaskan_2 = {
+				}
+				b_jilaskan_3 = {
+				}
+				b_jilaskan_4 = {
+				}
+			}
+			c_etlaskan = { # 509
+				color={ 247 139 160 }
+				color2={ 255 255 255 }
+				
+				b_etlaskan = {
+				}
+				b_etlaskan_2 = {
+				}
+				b_etlaskan_3 = {
+				}
+				b_etlaskan_4 = {
+				}
+			}
+			c_jandraskan = { # 508
+				color={ 247 189 223 }
+				color2={ 255 255 255 }
+				
+				b_jandraskan = {
+				}
+				b_jandraskan_2 = {
+				}
+				b_jandraskan_3 = {
+				}
+				b_jandraskan_4 = {
+				}
+			}
+		}
+		d_sinoda = {
+			color={ 172 159 49 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 487 province_id = 488 province_id = 489 province_id = 490 province_id = 491 province_id = 492 province_id = 493 province_id = 494 } }
+				}
+			}
+			capital = 487 # c_sinoda
+			
+			c_sinoda = { # 487
+				color={ 162 169 44 }
+				color2={ 255 255 255 }
+				
+				b_sinoda = {
+				}
+				b_sinoda_2 = {
+				}
+				b_sinoda_3 = {
+				}
+				b_sinoda_4 = {
+				}
+			}
+			c_achazak = { # 493
+				color={ 162 145 30 }
+				color2={ 255 255 255 }
+				
+				b_achazak = {
+				}
+				b_achazak_2 = {
+				}
+				b_achazak_3 = {
+				}
+				b_achazak_4 = {
+				}
+			}
+			c_betrozag = { # 489
+				color={ 162 53 84 }
+				color2={ 255 255 255 }
+				
+				b_betrozag = {
+				}
+				b_betrozag_2 = {
+				}
+				b_betrozag_3 = {
+				}
+				b_betrozag_4 = {
+				}
+			}
+			c_buli = { # 488
+				color={ 162 185 53 }
+				color2={ 255 255 255 }
+				
+				b_buli = {
+				}
+				b_buli_2 = {
+				}
+				b_buli_3 = {
+				}
+				b_buli_4 = {
+				}
+			}
+			c_dornak = { # 491
+				color={ 162 98 59 }
+				color2={ 255 255 255 }
+				
+				b_dornak = {
+				}
+				b_dornak_2 = {
+				}
+				b_dornak_3 = {
+				}
+				b_dornak_4 = {
+				}
+			}
+			c_maraskanswamps = { # 492
+				color={ 162 61 62 }
+				color2={ 255 255 255 }
+				
+				b_maraskanswamps = {
+				}
+				b_maraskanswamps_2 = {
+				}
+				b_maraskanswamps_3 = {
+				}
+				b_maraskanswamps_4 = {
+				}
+			}
+			c_mherweggyn = { # 494
+				color={ 162 161 53 }
+				color2={ 255 255 255 }
+				
+				b_mherweggyn = {
+				}
+				b_mherweggyn_2 = {
+				}
+				b_mherweggyn_3 = {
+				}
+				b_mherweggyn_4 = {
+				}
+			}
+			c_zinobab = { # 490
+				color={ 162 100 55 }
+				color2={ 255 255 255 }
+				
+				b_zinobab = {
+				}
+				b_zinobab_2 = {
+				}
+				b_zinobab_3 = {
+				}
+				b_zinobab_4 = {
+				}
+			}
+		}
+	}
 	k_meadows = {
 		color={ 100 62 214 }
 		color2={ 255 255 255 }

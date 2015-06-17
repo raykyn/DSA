@@ -1,0 +1,18 @@
+# c_buli
+
+# County Title
+title = c_buli
+
+# Settlements
+max_settlements = 4
+
+b_buli = castle
+#b_buli_2 = city
+#b_buli_3 = temple
+#b_buli_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

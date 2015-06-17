@@ -1,0 +1,18 @@
+# c_talued
+
+# County Title
+title = c_talued
+
+# Settlements
+max_settlements = 4
+
+b_talued = castle
+#b_talued_2 = city
+#b_talued_3 = temple
+#b_talued_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_huab
+
+# County Title
+title = c_huab
+
+# Settlements
+max_settlements = 4
+
+b_huab = castle
+#b_huab_2 = city
+#b_huab_3 = temple
+#b_huab_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

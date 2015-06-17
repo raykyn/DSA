@@ -1,0 +1,18 @@
+# c_praiobab
+
+# County Title
+title = c_praiobab
+
+# Settlements
+max_settlements = 4
+
+b_praiobab = castle
+#b_praiobab_2 = city
+#b_praiobab_3 = temple
+#b_praiobab_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_asfar
+
+# County Title
+title = c_asfar
+
+# Settlements
+max_settlements = 4
+
+b_asfar = castle
+#b_asfar_2 = city
+#b_asfar_3 = temple
+#b_asfar_4 = castle
+
+# Misc
+culture = maraskan
+religion = rur_gror
+terrain = farmlands
+#History
