@@ -674,6 +674,9 @@ middenrealmian = {
 
 		modifier = default_culture_modifier
     }
+	
+	##Please add "phecadian" for Grangor and Surroundings (also Southern Windhag will be phecadian) 
+	##Instead delete Septimana culture, wouldn't be a lot of provinces with it anyway
 }
 
 almada = {
