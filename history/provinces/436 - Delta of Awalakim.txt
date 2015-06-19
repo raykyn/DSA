@@ -1,0 +1,18 @@
+# c_delta_of_awalakim
+
+# County Title
+title = c_delta_of_awalakim
+
+# Settlements
+max_settlements = 4
+
+b_delta_of_awalakim = castle
+#b_delta_of_awalakim_2 = city
+#b_delta_of_awalakim_3 = temple
+#b_delta_of_awalakim_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

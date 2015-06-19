@@ -1,0 +1,18 @@
+# c_rashdul
+
+# County Title
+title = c_rashdul
+
+# Settlements
+max_settlements = 4
+
+b_rashdul = castle
+#b_rashdul_2 = city
+#b_rashdul_3 = temple
+#b_rashdul_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = puniner
+terrain = farmlands
+#History

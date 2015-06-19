@@ -1,0 +1,18 @@
+# c_goetzenzwinge
+
+# County Title
+title = c_goetzenzwinge
+
+# Settlements
+max_settlements = 4
+
+b_goetzenzwinge = castle
+#b_goetzenzwinge_2 = city
+#b_goetzenzwinge_3 = temple
+#b_goetzenzwinge_4 = castle
+
+# Misc
+culture = chababian
+religion = horas
+terrain = farmlands
+#History

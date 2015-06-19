@@ -1,0 +1,18 @@
+# c_ongalo_swamps
+
+# County Title
+title = c_ongalo_swamps
+
+# Settlements
+max_settlements = 4
+
+b_ongalo_swamps = castle
+#b_ongalo_swamps_2 = city
+#b_ongalo_swamps_3 = temple
+#b_ongalo_swamps_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

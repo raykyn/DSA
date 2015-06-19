@@ -1,0 +1,18 @@
+# c_selem
+
+# County Title
+title = c_selem
+
+# Settlements
+max_settlements = 4
+
+b_selem = castle
+#b_selem_2 = city
+#b_selem_3 = temple
+#b_selem_4 = castle
+
+# Misc
+culture = selem
+religion = rastullah
+terrain = farmlands
+#History

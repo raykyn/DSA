@@ -1,0 +1,18 @@
+# c_ahabad
+
+# County Title
+title = c_ahabad
+
+# Settlements
+max_settlements = 4
+
+b_ahabad = castle
+#b_ahabad_2 = city
+#b_ahabad_3 = temple
+#b_ahabad_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = puniner
+terrain = farmlands
+#History

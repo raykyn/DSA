@@ -1,0 +1,18 @@
+# c_tarfui
+
+# County Title
+title = c_tarfui
+
+# Settlements
+max_settlements = 4
+
+b_tarfui = castle
+#b_tarfui_2 = city
+#b_tarfui_3 = temple
+#b_tarfui_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = desert
+#History

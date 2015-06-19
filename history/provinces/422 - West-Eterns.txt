@@ -1,0 +1,18 @@
+# c_west_eterns
+
+# County Title
+title = c_west_eterns
+
+# Settlements
+max_settlements = 4
+
+b_west_eterns = castle
+#b_west_eterns_2 = city
+#b_west_eterns_3 = temple
+#b_west_eterns_4 = castle
+
+# Misc
+culture = beni_arrat
+religion = rastullah
+terrain = farmlands
+#History

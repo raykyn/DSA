@@ -1,0 +1,18 @@
+# c_ongalabad
+
+# County Title
+title = c_ongalabad
+
+# Settlements
+max_settlements = 4
+
+b_ongalabad = castle
+#b_ongalabad_2 = city
+#b_ongalabad_3 = temple
+#b_ongalabad_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

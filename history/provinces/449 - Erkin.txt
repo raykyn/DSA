@@ -1,0 +1,18 @@
+# c_erkin
+
+# County Title
+title = c_erkin
+
+# Settlements
+max_settlements = 4
+
+b_erkin = castle
+#b_erkin_2 = city
+#b_erkin_3 = temple
+#b_erkin_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = rastullah
+terrain = farmlands
+#History

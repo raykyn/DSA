@@ -1,0 +1,18 @@
+# c_alrifat
+
+# County Title
+title = c_alrifat
+
+# Settlements
+max_settlements = 4
+
+b_alrifat = castle
+#b_alrifat_2 = city
+#b_alrifat_3 = temple
+#b_alrifat_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = desert
+#History

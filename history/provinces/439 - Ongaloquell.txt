@@ -1,0 +1,18 @@
+# c_ongaloquell
+
+# County Title
+title = c_ongaloquell
+
+# Settlements
+max_settlements = 4
+
+b_ongaloquell = castle
+#b_ongaloquell_2 = city
+#b_ongaloquell_3 = temple
+#b_ongaloquell_4 = castle
+
+# Misc
+culture = thalusian
+religion = thalusian
+terrain = farmlands
+#History

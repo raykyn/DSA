@@ -1,0 +1,18 @@
+# c_chababquell
+
+# County Title
+title = c_chababquell
+
+# Settlements
+max_settlements = 4
+
+b_chababquell = castle
+#b_chababquell_2 = city
+#b_chababquell_3 = temple
+#b_chababquell_4 = castle
+
+# Misc
+culture = chababian
+religion = horas
+terrain = farmlands
+#History

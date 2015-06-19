@@ -1,0 +1,18 @@
+# c_mhanessipur
+
+# County Title
+title = c_mhanessipur
+
+# Settlements
+max_settlements = 4
+
+b_mhanessipur = castle
+#b_mhanessipur_2 = city
+#b_mhanessipur_3 = temple
+#b_mhanessipur_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = rastullah
+terrain = farmlands
+#History

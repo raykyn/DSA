@@ -1,0 +1,18 @@
+# c_malkillabad
+
+# County Title
+title = c_malkillabad
+
+# Settlements
+max_settlements = 4
+
+b_malkillabad = castle
+#b_malkillabad_2 = city
+#b_malkillabad_3 = temple
+#b_malkillabad_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = farmlands
+#History

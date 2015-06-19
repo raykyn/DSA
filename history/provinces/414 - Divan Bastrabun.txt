@@ -1,0 +1,18 @@
+# c_divan_bastrabun
+
+# County Title
+title = c_divan_bastrabun
+
+# Settlements
+max_settlements = 4
+
+b_divan_bastrabun = castle
+#b_divan_bastrabun_2 = city
+#b_divan_bastrabun_3 = temple
+#b_divan_bastrabun_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = farmlands
+#History

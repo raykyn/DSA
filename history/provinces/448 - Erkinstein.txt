@@ -1,0 +1,18 @@
+# c_erkinstein
+
+# County Title
+title = c_erkinstein
+
+# Settlements
+max_settlements = 4
+
+b_erkinstein = castle
+#b_erkinstein_2 = city
+#b_erkinstein_3 = temple
+#b_erkinstein_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = puniner
+terrain = farmlands
+#History

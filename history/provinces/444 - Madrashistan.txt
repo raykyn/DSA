@@ -1,0 +1,18 @@
+# c_madrashistan
+
+# County Title
+title = c_madrashistan
+
+# Settlements
+max_settlements = 4
+
+b_madrashistan = castle
+#b_madrashistan_2 = city
+#b_madrashistan_3 = temple
+#b_madrashistan_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = rastullah
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_malyai
+
+# County Title
+title = c_malyai
+
+# Settlements
+max_settlements = 4
+
+b_malyai = castle
+#b_malyai_2 = city
+#b_malyai_3 = temple
+#b_malyai_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = rastullah
+terrain = farmlands
+#History

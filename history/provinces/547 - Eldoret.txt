@@ -1,0 +1,18 @@
+# c_eldoret
+
+# County Title
+title = c_eldoret
+
+# Settlements
+max_settlements = 4
+
+b_eldoret = castle
+#b_eldoret_2 = city
+#b_eldoret_3 = temple
+#b_eldoret_4 = castle
+
+# Misc
+culture = chababian
+religion = horas
+terrain = farmlands
+#History

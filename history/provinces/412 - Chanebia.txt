@@ -1,0 +1,18 @@
+# c_chanebia
+
+# County Title
+title = c_chanebia
+
+# Settlements
+max_settlements = 4
+
+b_chanebia = castle
+#b_chanebia_2 = city
+#b_chanebia_3 = temple
+#b_chanebia_4 = castle
+
+# Misc
+culture = beni_novad
+religion = rastullah
+terrain = farmlands
+#History

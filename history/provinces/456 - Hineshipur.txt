@@ -1,0 +1,18 @@
+# c_hineshipur
+
+# County Title
+title = c_hineshipur
+
+# Settlements
+max_settlements = 4
+
+b_hineshipur = castle
+#b_hineshipur_2 = city
+#b_hineshipur_3 = temple
+#b_hineshipur_4 = castle
+
+# Misc
+culture = mhanadistani
+religion = rastullah
+terrain = farmlands
+#History

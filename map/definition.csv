@@ -73,7 +73,7 @@ province;red;green;blue;x;x
 74;248;182;168;Jannbach;x
 75;248;149;156;Flogglond;x
 76;248;196;49;Herrison;x
-77;248;94;34;Agum;x
+77;248;248;92;Agum;x
 78;248;221;73;Inostal;x
 79;248;173;150;Geiersgau;x
 80;248;160;39;Brindal;x
@@ -406,78 +406,78 @@ province;red;green;blue;x;x
 407;229;218;65;Challef;x
 408;229;45;38;Jaiban;x
 409;229;214;42;Mhanerhaven;x
-410;234;220;54;Thalusa;x
-411;234;41;181;Ronishagen;x
-412;234;172;214;Thalusim;x
-413;234;36;40;East Thalus Massif;x
-414;151;142;136;Coast of Tears;x
-415;151;215;72;El'Dhena;x
-416;151;208;216;West Thalus Massif;x
-417;90;37;144;Delta of Awalakim;x
-418;90;193;61;Ongalo-Highlands;x
-419;90;221;49;Ongalo-Swamps;x
-420;90;26;139;Ongaloquell;x
-421;90;192;206;Ongalabad;x
-422;106;231;25;Mherwed;x
-423;106;27;211;Ashub;x
-424;106;121;119;Tamuristan;x
-425;106;29;65;Madrashistan;x
-426;208;28;222;Rashdul;x
-427;208;225;39;Ahabad;x
-428;208;196;211;Gorian Steppe;x
-429;64;204;215;Erkinstein;x
-430;64;145;50;Erkin;x
-431;122;133;198;Malyai;x
-432;122;50;152;Fasar;x
-433;122;111;50;Rasiastan;x
-434;122;154;52;Habinistan;x
-435;158;33;38;Mochistan;x
-436;158;216;206;Mhanessipur;x
-437;158;198;246;Hineshipur;x
-438;158;217;53;Mhakhoramistan;x
-439;158;28;207;Selicumia;x
-440;158;199;188;Therfasistan;x
-441;158;91;139;Baghtiaristan;x
-442;158;203;42;Mahanadibeuge;x
-443;149;28;72;Keft;x
-444;149;57;44;Tarfui;x
-445;149;112;36;Hayabeth;x
-446;113;155;50;Al'Rifat;x
-447;113;205;103;El'Karram;x
-448;169;143;220;Yiyimris;x
-449;169;186;198;Kireh;x
-450;148;65;76;El'Ankhra;x
-451;148;44;87;Virinlassih;x
-452;148;107;63;Alam-Therekh;x
-453;212;65;193;Therekh;x
-454;212;122;221;Achan;x
-455;169;82;41;Shebah;x
-456;169;154;53;Manesh;x
-457;169;129;40;Birscha;x
-458;68;57;132;Ukuban;x
-459;68;151;128;Amhallah;x
-460;68;89;231;Omlad;x
-461;68;230;107;Amhallassih-Summits;x
-462;68;230;222;Eslamabad;x
-463;235;175;41;Unau;x
-464;235;192;142;Manekh Chanebi;x
-465;235;111;235;Chanebia;x
-466;235;39;31;Kannemuende;x
-467;235;224;92;Divan Bastrabun;x
-468;126;234;44;Selem;x
-469;126;203;213;Nagwa;x
-470;126;145;68;Machsiz;x
-471;126;47;190;Malkillabad;x
-472;126;204;94;Szintoquell;x
-473;144;63;208;El'Arrat;x
-474;144;206;116;South-Arratistan;x
-475;144;130;61;West-Eterns;x
-476;144;87;247;Vishia;x
-477;144;130;195;Wagrashaquell;x
-478;144;99;155;Chumbiri;x
-479;144;75;55;Chababihills;x
-480;144;61;47;Osdask;x
-481;144;163;197;Port Corrad;x
+410;235;175;41;Unau;x
+411;235;192;142;Manekh Chanebi;x
+412;235;111;235;Chanebia;x
+413;235;39;31;Kannemuende;x
+414;235;224;92;Divan Bastrabun;x
+415;126;234;44;Selem;x
+416;126;203;213;Nagwa;x
+417;126;145;68;Machsiz;x
+418;126;47;190;Malkillabad;x
+419;126;204;94;Szintoquell;x
+420;144;63;208;El'Arrat;x
+421;144;206;116;South-Arratistan;x
+422;144;130;61;West-Eterns;x
+423;144;87;247;Vishia;x
+424;144;130;195;Wagrashaquell;x
+425;144;99;155;Chumbiri;x
+426;144;75;55;Chababihills;x
+427;144;61;47;Osdask;x
+428;144;163;197;Port Corrad;x
+429;234;220;54;Thalusa;x
+430;234;41;181;Ronishagen;x
+431;234;172;214;Thalusim;x
+432;234;36;40;East Thalus Massif;x
+433;151;142;136;Coast of Tears;x
+434;151;215;72;El'Dhena;x
+435;151;208;216;West Thalus Massif;x
+436;90;37;144;Delta of Awalakim;x
+437;90;193;61;Ongalo-Highlands;x
+438;90;221;49;Ongalo-Swamps;x
+439;90;26;139;Ongaloquell;x
+440;90;192;206;Ongalabad;x
+441;106;231;25;Mherwed;x
+442;106;27;211;Ashub;x
+443;106;121;119;Tamuristan;x
+444;106;29;65;Madrashistan;x
+445;208;28;222;Rashdul;x
+446;208;225;39;Ahabad;x
+447;208;196;211;Gorian Steppe;x
+448;64;204;215;Erkinstein;x
+449;64;145;50;Erkin;x
+450;122;133;198;Malyai;x
+451;122;50;152;Fasar;x
+452;122;111;50;Rasiastan;x
+453;122;154;52;Habinistan;x
+454;158;33;38;Mochistan;x
+455;158;216;206;Mhanessipur;x
+456;158;198;246;Hineshipur;x
+457;158;217;53;Mhakhoramistan;x
+458;158;28;207;Selicumia;x
+459;158;199;188;Therfasistan;x
+460;158;91;139;Baghtiaristan;x
+461;158;203;42;Mahanadibeuge;x
+462;149;28;72;Keft;x
+463;149;57;44;Tarfui;x
+464;149;112;36;Hayabeth;x
+465;113;155;50;Al'Rifat;x
+466;113;205;103;El'Karram;x
+467;169;143;220;Yiyimris;x
+468;169;186;198;Kireh;x
+469;148;65;76;El'Ankhra;x
+470;148;44;87;Virinlassih;x
+471;148;107;63;Alam-Therekh;x
+472;212;65;193;Therekh;x
+473;212;122;221;Achan;x
+474;169;82;41;Shebah;x
+475;169;154;53;Manesh;x
+476;169;129;40;Birscha;x
+477;68;57;132;Ukuban;x
+478;68;151;128;Amhallah;x
+479;68;89;231;Omlad;x
+480;68;230;107;Amhallassih-Summits;x
+481;68;230;222;Eslamabad;x
 482;247;238;54;Tuzak;x
 483;247;218;56;Obogyn;x
 484;247;31;33;Talued;x
@@ -534,7 +534,18 @@ province;red;green;blue;x;x
 535;162;170;97;Silas;x
 536;162;140;111;Belhanka;x
 537;162;164;195;Sikram;x
-538;191;68;38;Northern Goldrocks;x
+538;191;18;0;Northern Goldrocks;x
 539;191;100;121;Goldrocks;x
 540;191;154;161;Southern Goldrocks;x
+541;150;149;38;Khomblick;x
+542;150;182;42;Gueldenhang;x
+543;150;140;202;Firetail;x
+544;206;90;28;Neetha;x
+545;206;128;97;Brelak;x
+546;206;196;95;Banchab;x
+547;206;201;97;Eldoret;x
+548;206;182;39;Kabash;x
+549;206;40;22;Sunderstein;x
+550;206;35;43;Goetzenzwinge;x
+551;206;98;52;Chababquell;x
 1000;7;0;85;ProxyProvince;x

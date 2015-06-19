@@ -1253,6 +1253,8 @@ horasian = {
 
     	modifier = default_culture_modifier
 	}
+	
+	##Please add chababian as a culture
 }
 
 cyclops_islands = {
