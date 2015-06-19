@@ -7637,3 +7637,30 @@ e_middlerealm = {
 		}
 	}
 }
+
+###SPECIAL TITLES
+##Capital + color placeholder
+k_zwoelf = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	capital = 2
+	
+	title = "HELIODAN"
+	foa = "HELIODAN_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = puniner
+	
+	dignity = 90
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+}
