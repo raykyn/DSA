@@ -1,0 +1,18 @@
+# c_ruthor
+
+# County Title
+title = c_ruthor
+
+# Settlements
+max_settlements = 4
+
+b_ruthor = castle
+#b_ruthor_2 = city
+#b_ruthor_3 = temple
+#b_ruthor_4 = castle
+
+# Misc
+culture = yaquiria
+religion = horas
+terrain = farmlands
+#History

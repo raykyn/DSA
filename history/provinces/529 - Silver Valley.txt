@@ -1,0 +1,18 @@
+# c_silver_valley
+
+# County Title
+title = c_silver_valley
+
+# Settlements
+max_settlements = 4
+
+b_silver_valley = castle
+#b_silver_valley_2 = city
+#b_silver_valley_3 = temple
+#b_silver_valley_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History

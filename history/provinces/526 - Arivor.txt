@@ -1,0 +1,18 @@
+# c_arivor
+
+# County Title
+title = c_arivor
+
+# Settlements
+max_settlements = 4
+
+b_arivor = castle
+#b_arivor_2 = city
+#b_arivor_3 = temple
+#b_arivor_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History

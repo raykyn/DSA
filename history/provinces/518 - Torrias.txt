@@ -1,0 +1,18 @@
+# c_torrias
+
+# County Title
+title = c_torrias
+
+# Settlements
+max_settlements = 4
+
+b_torrias = castle
+#b_torrias_2 = city
+#b_torrias_3 = temple
+#b_torrias_4 = castle
+
+# Misc
+culture = yaquiria
+religion = horas
+terrain = farmlands
+#History

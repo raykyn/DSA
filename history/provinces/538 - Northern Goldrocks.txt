@@ -1,0 +1,18 @@
+# c_northern_goldrocks
+
+# County Title
+title = c_northern_goldrocks
+
+# Settlements
+max_settlements = 4
+
+b_northern_goldrocks = castle
+#b_northern_goldrocks_2 = city
+#b_northern_goldrocks_3 = temple
+#b_northern_goldrocks_4 = castle
+
+# Misc
+culture = yaquiria
+religion = horas
+terrain = farmlands
+#History

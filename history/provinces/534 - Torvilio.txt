@@ -1,0 +1,18 @@
+# c_torvilio
+
+# County Title
+title = c_torvilio
+
+# Settlements
+max_settlements = 4
+
+b_torvilio = castle
+#b_torvilio_2 = city
+#b_torvilio_3 = temple
+#b_torvilio_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History

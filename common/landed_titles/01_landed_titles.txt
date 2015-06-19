@@ -1212,6 +1212,503 @@ e_caliphate = {
 		}
 	}
 }
+e_horasia = {
+	color={ 208 9 74 }
+	color2={ 255 255 20 }
+	
+	capital = 510 # c_vinsalt
+	culture = yaquiria
+	
+	k_yaquiria = {
+		color={ 198 19 69 }
+		color2={ 255 255 255 }
+		
+		capital = 510 # c_vinsalt
+		culture = yaquiria
+		
+		d_yaquiria = {
+			color={ 178 39 59 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 510 province_id = 511 province_id = 512 province_id = 513 province_id = 514 province_id = 515 province_id = 516 } }
+				}
+			}
+			capital = 510 # c_vinsalt
+			
+			c_vinsalt = { # 510
+				color={ 168 49 54 }
+				color2={ 255 255 255 }
+				
+				b_vinsalt = {
+				}
+				b_vinsalt_2 = {
+				}
+				b_vinsalt_3 = {
+				}
+				b_vinsalt_4 = {
+				}
+			}
+			c_bethana = { # 513
+				color={ 168 130 117 }
+				color2={ 255 255 255 }
+				
+				b_bethana = {
+				}
+				b_bethana_2 = {
+				}
+				b_bethana_3 = {
+				}
+				b_bethana_4 = {
+				}
+			}
+			c_bosparan_forest = { # 512
+				color={ 168 43 80 }
+				color2={ 255 255 255 }
+				
+				b_bosparan_forest = {
+				}
+				b_bosparan_forest_2 = {
+				}
+				b_bosparan_forest_3 = {
+				}
+				b_bosparan_forest_4 = {
+				}
+			}
+			c_kuslik = { # 511
+				color={ 168 35 199 }
+				color2={ 255 255 255 }
+				
+				b_kuslik = {
+				}
+				b_kuslik_2 = {
+				}
+				b_kuslik_3 = {
+				}
+				b_kuslik_4 = {
+				}
+			}
+			c_pertakis = { # 514
+				color={ 168 69 50 }
+				color2={ 255 255 255 }
+				
+				b_pertakis = {
+				}
+				b_pertakis_2 = {
+				}
+				b_pertakis_3 = {
+				}
+				b_pertakis_4 = {
+				}
+			}
+			c_ruthor = { # 515
+				color={ 168 106 178 }
+				color2={ 255 255 255 }
+				
+				b_ruthor = {
+				}
+				b_ruthor_2 = {
+				}
+				b_ruthor_3 = {
+				}
+				b_ruthor_4 = {
+				}
+			}
+			c_shumir = { # 516
+				color={ 168 51 149 }
+				color2={ 255 255 255 }
+				
+				b_shumir = {
+				}
+				b_shumir_2 = {
+				}
+				b_shumir_3 = {
+				}
+				b_shumir_4 = {
+				}
+			}
+		}
+		d_arivor = {
+			color={ 10 113 207 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 526 province_id = 527 province_id = 528 province_id = 529 province_id = 530 } }
+				}
+			}
+			capital = 526 # c_arivor
+			
+			c_arivor = { # 526
+				color={ 0 123 202 }
+				color2={ 255 255 255 }
+				
+				b_arivor = {
+				}
+				b_arivor_2 = {
+				}
+				b_arivor_3 = {
+				}
+				b_arivor_4 = {
+				}
+			}
+			c_aldyra = { # 527
+				color={ 0 195 211 }
+				color2={ 255 255 255 }
+				
+				b_aldyra = {
+				}
+				b_aldyra_2 = {
+				}
+				b_aldyra_3 = {
+				}
+				b_aldyra_4 = {
+				}
+			}
+			c_silver_valley = { # 529
+				color={ 0 42 123 }
+				color2={ 255 255 255 }
+				
+				b_silver_valley = {
+				}
+				b_silver_valley_2 = {
+				}
+				b_silver_valley_3 = {
+				}
+				b_silver_valley_4 = {
+				}
+			}
+			c_terubis = { # 528
+				color={ 0 185 79 }
+				color2={ 255 255 255 }
+				
+				b_terubis = {
+				}
+				b_terubis_2 = {
+				}
+				b_terubis_3 = {
+				}
+				b_terubis_4 = {
+				}
+			}
+			c_westfar = { # 530
+				color={ 0 60 51 }
+				color2={ 255 255 255 }
+				
+				b_westfar = {
+				}
+				b_westfar_2 = {
+				}
+				b_westfar_3 = {
+				}
+				b_westfar_4 = {
+				}
+			}
+		}
+		d_goldrocks = {
+			color={ 201 58 43 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 538 province_id = 539 province_id = 540 } }
+				}
+			}
+			capital = 538 # c_northern_goldrocks
+			
+			c_northern_goldrocks = { # 538
+				color={ 191 68 38 }
+				color2={ 255 255 255 }
+				
+				b_northern_goldrocks = {
+				}
+				b_northern_goldrocks_2 = {
+				}
+				b_northern_goldrocks_3 = {
+				}
+				b_northern_goldrocks_4 = {
+				}
+			}
+			c_goldrocks = { # 539
+				color={ 191 100 121 }
+				color2={ 255 255 255 }
+				
+				b_goldrocks = {
+				}
+				b_goldrocks_2 = {
+				}
+				b_goldrocks_3 = {
+				}
+				b_goldrocks_4 = {
+				}
+			}
+			c_southern_goldrocks = { # 540
+				color={ 191 154 161 }
+				color2={ 255 255 255 }
+				
+				b_southern_goldrocks = {
+				}
+				b_southern_goldrocks_2 = {
+				}
+				b_southern_goldrocks_3 = {
+				}
+				b_southern_goldrocks_4 = {
+				}
+			}
+		}
+		d_grangor = {
+			color={ 181 220 38 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 519 province_id = 520 province_id = 521 province_id = 522 province_id = 523 province_id = 524 province_id = 525 } }
+				}
+			}
+			capital = 519 # c_grangor
+			
+			c_grangor = { # 519
+				color={ 191 210 43 }
+				color2={ 255 255 255 }
+				
+				b_grangor = {
+				}
+				b_grangor_2 = {
+				}
+				b_grangor_3 = {
+				}
+				b_grangor_4 = {
+				}
+			}
+			c_bomed = { # 525
+				color={ 191 154 107 }
+				color2={ 255 255 255 }
+				
+				b_bomed = {
+				}
+				b_bomed_2 = {
+				}
+				b_bomed_3 = {
+				}
+				b_bomed_4 = {
+				}
+			}
+			c_phecanostein = { # 523
+				color={ 191 214 135 }
+				color2={ 255 255 255 }
+				
+				b_phecanostein = {
+				}
+				b_phecanostein_2 = {
+				}
+				b_phecanostein_3 = {
+				}
+				b_phecanostein_4 = {
+				}
+			}
+			c_phecanowald = { # 522
+				color={ 191 149 51 }
+				color2={ 255 255 255 }
+				
+				b_phecanowald = {
+				}
+				b_phecanowald_2 = {
+				}
+				b_phecanowald_3 = {
+				}
+				b_phecanowald_4 = {
+				}
+			}
+			c_schradok = { # 524
+				color={ 191 124 79 }
+				color2={ 255 255 255 }
+				
+				b_schradok = {
+				}
+				b_schradok_2 = {
+				}
+				b_schradok_3 = {
+				}
+				b_schradok_4 = {
+				}
+			}
+			c_sewamund = { # 520
+				color={ 191 211 158 }
+				color2={ 255 255 255 }
+				
+				b_sewamund = {
+				}
+				b_sewamund_2 = {
+				}
+				b_sewamund_3 = {
+				}
+				b_sewamund_4 = {
+				}
+			}
+			c_tikalen = { # 521
+				color={ 191 114 95 }
+				color2={ 255 255 255 }
+				
+				b_tikalen = {
+				}
+				b_tikalen_2 = {
+				}
+				b_tikalen_3 = {
+				}
+				b_tikalen_4 = {
+				}
+			}
+		}
+		d_methumis = {
+			color={ 122 203 53 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 531 province_id = 532 province_id = 533 province_id = 534 province_id = 535 province_id = 536 province_id = 537 } }
+				}
+			}
+			capital = 531 # c_methumis
+			
+			c_methumis = { # 531
+				color={ 132 193 58 }
+				color2={ 255 255 255 }
+				
+				b_methumis = {
+				}
+				b_methumis_2 = {
+				}
+				b_methumis_3 = {
+				}
+				b_methumis_4 = {
+				}
+			}
+			c_belhanka = { # 536
+				color={ 162 140 111 }
+				color2={ 255 255 255 }
+				
+				b_belhanka = {
+				}
+				b_belhanka_2 = {
+				}
+				b_belhanka_3 = {
+				}
+				b_belhanka_4 = {
+				}
+			}
+			c_linneth = { # 533
+				color={ 162 141 193 }
+				color2={ 255 255 255 }
+				
+				b_linneth = {
+				}
+				b_linneth_2 = {
+				}
+				b_linneth_3 = {
+				}
+				b_linneth_4 = {
+				}
+			}
+			c_onjaro = { # 532
+				color={ 162 77 101 }
+				color2={ 255 255 255 }
+				
+				b_onjaro = {
+				}
+				b_onjaro_2 = {
+				}
+				b_onjaro_3 = {
+				}
+				b_onjaro_4 = {
+				}
+			}
+			c_sikram = { # 537
+				color={ 162 164 195 }
+				color2={ 255 255 255 }
+				
+				b_sikram = {
+				}
+				b_sikram_2 = {
+				}
+				b_sikram_3 = {
+				}
+				b_sikram_4 = {
+				}
+			}
+			c_silas = { # 535
+				color={ 162 170 97 }
+				color2={ 255 255 255 }
+				
+				b_silas = {
+				}
+				b_silas_2 = {
+				}
+				b_silas_3 = {
+				}
+				b_silas_4 = {
+				}
+			}
+			c_torvilio = { # 534
+				color={ 162 159 25 }
+				color2={ 255 255 255 }
+				
+				b_torvilio = {
+				}
+				b_torvilio_2 = {
+				}
+				b_torvilio_3 = {
+				}
+				b_torvilio_4 = {
+				}
+			}
+		}
+		d_yaquirbreak = {
+			color={ 152 121 127 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 517 province_id = 518 } }
+				}
+			}
+			capital = 517 # c_oberfels
+			
+			c_oberfels = { # 517
+				color={ 162 111 132 }
+				color2={ 255 255 255 }
+				
+				b_oberfels = {
+				}
+				b_oberfels_2 = {
+				}
+				b_oberfels_3 = {
+				}
+				b_oberfels_4 = {
+				}
+			}
+			c_torrias = { # 518
+				color={ 162 114 95 }
+				color2={ 255 255 255 }
+				
+				b_torrias = {
+				}
+				b_torrias_2 = {
+				}
+				b_torrias_3 = {
+				}
+				b_torrias_4 = {
+				}
+			}
+		}
+	}
+}
 e_middlerealm = {
 	color={ 144 144 72 }
 	color2={ 255 255 20 }
@@ -7636,31 +8133,4 @@ e_middlerealm = {
 			}
 		}
 	}
-}
-
-###SPECIAL TITLES
-##Capital + color placeholder
-k_zwoelf = {
-	color={ 255 249 198 }
-	color2={ 220 220 0 }
-	capital = 2
-	
-	title = "HELIODAN"
-	foa = "HELIODAN_FOA"
-	short_name = yes
-	location_ruler_title = yes
-	
-	# Always exists
-	landless = yes
-	
-	# Controls a religion
-	controls_religion = puniner
-	
-	dignity = 90
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	
 }

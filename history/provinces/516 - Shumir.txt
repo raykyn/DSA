@@ -1,0 +1,18 @@
+# c_shumir
+
+# County Title
+title = c_shumir
+
+# Settlements
+max_settlements = 4
+
+b_shumir = castle
+#b_shumir_2 = city
+#b_shumir_3 = temple
+#b_shumir_4 = castle
+
+# Misc
+culture = yaquiria
+religion = horas
+terrain = farmlands
+#History

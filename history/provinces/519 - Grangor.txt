@@ -1,0 +1,18 @@
+# c_grangor
+
+# County Title
+title = c_grangor
+
+# Settlements
+max_settlements = 4
+
+b_grangor = castle
+#b_grangor_2 = city
+#b_grangor_3 = temple
+#b_grangor_4 = castle
+
+# Misc
+culture = phecadian
+religion = horas
+terrain = farmlands
+#History

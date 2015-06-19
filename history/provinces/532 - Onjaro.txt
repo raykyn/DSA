@@ -1,0 +1,18 @@
+# c_onjaro
+
+# County Title
+title = c_onjaro
+
+# Settlements
+max_settlements = 4
+
+b_onjaro = castle
+#b_onjaro_2 = city
+#b_onjaro_3 = temple
+#b_onjaro_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History

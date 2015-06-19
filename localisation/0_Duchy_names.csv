@@ -9,6 +9,8 @@ d_anchopal;Anchopal;Anchopal;Anchopal;;Anchopal;;;;;;;;;x
 d_anchopal_adj;Anchopalian;;anchopaler;;;;;;;;;;;x
 d_ankhra;Ankhra;Ankhra;Ankhra;;Ankhra;;;;;;;;;x
 d_ankhra_adj;Ankhran;;ankhrer;;;;;;;;;;;x
+d_arivor;Arivor;Arivor;Arivor;;Arivor;;;;;;;;;x
+d_arivor_adj;Arivorian;;arivorer;;;;;;;;;;;x
 d_arratistan;Arratistan;Arratistan;Arratistan;;Arratistan;;;;;;;;;x
 d_arratistan_adj;Arratistanian;;arratistaner;;;;;;;;;;;x
 d_baburin;Baburin;Baburin;Baburin;;Baburin;;;;;;;;;x
@@ -43,6 +45,10 @@ d_gadang;Gadang;Gadang;Gadang;;Gadang;;;;;;;;;x
 d_gadang_adj;Gadangian;;gadanger;;;;;;;;;;;x
 d_gareth;Gareth;Gareth;Gareth;;Gareth;;;;;;;;;x
 d_gareth_adj;Garethian;;garether;;;;;;;;;;;x
+d_goldrocks;Goldrocks;Goldrocks;Goldrocks;;Goldrocks;;;;;;;;;x
+d_goldrocks_adj;Goldrocksian;;goldrockser;;;;;;;;;;;x
+d_grangor;Grangor;Grangor;Grangor;;Grangor;;;;;;;;;x
+d_grangor_adj;Grangorian;;grangorer;;;;;;;;;;;x
 d_gratenfels;Gratenfels;Gratenfels;Gratenfels;;Gratenfels;;;;;;;;;x
 d_gratenfels_adj;Gratenfelsian;;gratenfelser;;;;;;;;;;;x
 d_great_river;Great River;Great River;Great River;;Great River;;;;;;;;;x
@@ -73,6 +79,8 @@ d_khunchom;Khunchom;Khunchom;Khunchom;;Khunchom;;;;;;;;;x
 d_khunchom_adj;Khunchomian;;khunchomer;;;;;;;;;;;x
 d_mendena;Mendena;Mendena;Mendena;;Mendena;;;;;;;;;x
 d_mendena_adj;Mendenan;;mendener;;;;;;;;;;;x
+d_methumis;Methumis;Methumis;Methumis;;Methumis;;;;;;;;;x
+d_methumis_adj;Methumisian;;methumiser;;;;;;;;;;;x
 d_mhanadistan;Mhanadistan;Mhanadistan;Mhanadistan;;Mhanadistan;;;;;;;;;x
 d_mhanadistan_adj;Mhanadistanian;;mhanadistaner;;;;;;;;;;;x
 d_misamund;Misamund;Misamund;Misamund;;Misamund;;;;;;;;;x
@@ -135,6 +143,10 @@ d_winhall;Winhall;Winhall;Winhall;;Winhall;;;;;;;;;x
 d_winhall_adj;Winhallian;;winhaller;;;;;;;;;;;x
 d_yalalaid;Yalalaid;Yalalaid;Yalalaid;;Yalalaid;;;;;;;;;x
 d_yalalaid_adj;Yalalaidian;;yalalaider;;;;;;;;;;;x
+d_yaquirbreak;Yaquirbreak;Yaquirbreak;Yaquirbreak;;Yaquirbreak;;;;;;;;;x
+d_yaquirbreak_adj;Yaquirbreakian;;yaquirbreaker;;;;;;;;;;;x
+d_yaquiria;Yaquiria;Yaquiria;Yaquiria;;Yaquiria;;;;;;;;;x
+d_yaquiria_adj;Yaquirian;;yaquirer;;;;;;;;;;;x
 d_yaquirtal;Yaquirtal;Yaquirtal;Yaquirtal;;Yaquirtal;;;;;;;;;x
 d_yaquirtal_adj;Yaquirtalian;;yaquirtaler;;;;;;;;;;;x
 d_ysilia;Ysilia;Ysilia;Ysilia;;Ysilia;;;;;;;;;x

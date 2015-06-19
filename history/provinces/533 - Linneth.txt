@@ -1,0 +1,18 @@
+# c_linneth
+
+# County Title
+title = c_linneth
+
+# Settlements
+max_settlements = 4
+
+b_linneth = castle
+#b_linneth_2 = city
+#b_linneth_3 = temple
+#b_linneth_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History

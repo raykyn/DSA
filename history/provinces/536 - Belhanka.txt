@@ -1,0 +1,18 @@
+# c_belhanka
+
+# County Title
+title = c_belhanka
+
+# Settlements
+max_settlements = 4
+
+b_belhanka = castle
+#b_belhanka_2 = city
+#b_belhanka_3 = temple
+#b_belhanka_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History

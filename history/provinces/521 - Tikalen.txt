@@ -1,0 +1,18 @@
+# c_tikalen
+
+# County Title
+title = c_tikalen
+
+# Settlements
+max_settlements = 4
+
+b_tikalen = castle
+#b_tikalen_2 = city
+#b_tikalen_3 = temple
+#b_tikalen_4 = castle
+
+# Misc
+culture = yaquiria
+religion = horas
+terrain = farmlands
+#History

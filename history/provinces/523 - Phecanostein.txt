@@ -1,0 +1,18 @@
+# c_phecanostein
+
+# County Title
+title = c_phecanostein
+
+# Settlements
+max_settlements = 4
+
+b_phecanostein = castle
+#b_phecanostein_2 = city
+#b_phecanostein_3 = temple
+#b_phecanostein_4 = castle
+
+# Misc
+culture = phecadian
+religion = horas
+terrain = farmlands
+#History

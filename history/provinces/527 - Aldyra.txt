@@ -1,0 +1,18 @@
+# c_aldyra
+
+# County Title
+title = c_aldyra
+
+# Settlements
+max_settlements = 4
+
+b_aldyra = castle
+#b_aldyra_2 = city
+#b_aldyra_3 = temple
+#b_aldyra_4 = castle
+
+# Misc
+culture = yaquiria
+religion = horas
+terrain = farmlands
+#History

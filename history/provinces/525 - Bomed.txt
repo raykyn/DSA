@@ -1,0 +1,18 @@
+# c_bomed
+
+# County Title
+title = c_bomed
+
+# Settlements
+max_settlements = 4
+
+b_bomed = castle
+#b_bomed_2 = city
+#b_bomed_3 = temple
+#b_bomed_4 = castle
+
+# Misc
+culture = phecadian
+religion = horas
+terrain = farmlands
+#History

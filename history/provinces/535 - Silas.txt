@@ -1,0 +1,18 @@
+# c_silas
+
+# County Title
+title = c_silas
+
+# Settlements
+max_settlements = 4
+
+b_silas = castle
+#b_silas_2 = city
+#b_silas_3 = temple
+#b_silas_4 = castle
+
+# Misc
+culture = coverna
+religion = horas
+terrain = farmlands
+#History
