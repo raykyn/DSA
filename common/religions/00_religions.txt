@@ -43,7 +43,6 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 1
 		intermarry = rastullah
-		intermarry = kasim
 		intermarry = uled_ashshebah
 		intermarry = uchakani
 		intermarry = rur_gror
@@ -82,7 +81,6 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 1
 		intermarry = rastullah
-		intermarry = kasim
 		intermarry = uled_ashshebah
 		intermarry = uchakani
 		intermarry = rur_gror
@@ -193,7 +191,6 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 0
 		intermarry = rastullah
-		intermarry = kasim
 		intermarry = uled_ashshebah
 		intermarry = uchakani
 		intermarry = rur_gror
@@ -314,7 +311,6 @@ twelve = {
 		female_temple_holders  = yes
 		max_consorts = 1
 		intermarry = rastullah
-		intermarry = kasim
 		intermarry = uled_ashshebah
 		intermarry = uchakani
 		intermarry = rur_gror
@@ -378,7 +374,6 @@ twelve = {
 		allow_rivermovement = yes
 		allow_viking_invasion = yes
 		intermarry = rastullah
-		intermarry = kasim
 		intermarry = uled_ashshebah
 		intermarry = uchakani
 		intermarry = rur_gror
@@ -422,7 +417,7 @@ twelve = {
 		high_god_name = GOD_FEQZ
 		
 		god_names = {
-			GOD_RASRAGH GOD_PERADSCHAJA GOD_RASCHA GOD_MARHIBO GOD_MHAQASHA GOD_ALMAHMOUD GOD_EFFERD GOD_TUURMHAKAQ GOD_FEQZ GOD_PRAIOS GOD_AVES GOD_RASTULLAH
+			GOD_RASRAGH GOD_RAANDRA GOD_PERADSCHAJA GOD_RASCHA GOD_MARHIBO GOD_MHAQASHA GOD_ALMAHMOUD GOD_EFFERD GOD_TUURMHAKAQ GOD_FEQZ GOD_PRAIOS GOD_AVES GOD_RASTULLAH GOD_GADANGA GOD_ATVARYA
 		}
 		evil_god_names = {
 			ECHSEN
@@ -440,7 +435,6 @@ twelve = {
 		can_retire_to_monastery = no
 		female_temple_holders = no
 		intermarry = rastullah
-		intermarry = kasim
 		intermarry = uled_ashshebah
 		intermarry = uchakani
 		intermarry = rur_gror
@@ -509,6 +503,7 @@ rastullah_group = {
 
 	kasim = {
 		graphical_culture = muslimgfx
+		ai_convert_same_group = 2 #always try to convert
 
 		icon = 3
 		heresy_icon = 6
@@ -517,6 +512,7 @@ rastullah_group = {
 		parent = rastullah
 		
 		aggression = 1.5
+		intermarry = kasim#See if they only marry between themselves as stated in RA p.81 
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -541,27 +537,27 @@ rastullah_group = {
 		religious_clothing_priest = 1
 	}
 	
-	uchakani = {
-		graphical_culture = muslimgfx
+	#uchakani = {
+		#graphical_culture = muslimgfx
 
-		icon = 3
-		heresy_icon = 6
+		#icon = 3
+		#heresy_icon = 6
 		
-		color = { 0.95 0.95 0.95 }
-		parent = rastullah
+		#color = { 0.95 0.95 0.95 }
+		#parent = rastullah
 		
-		high_god_name = GOD_RAANDRA
+		#high_god_name = GOD_RAANDRA
 		
-		god_names = {
-			GOD_RAANDRA
-		}
+		#god_names = {
+			#GOD_RAANDRA
+		#}
 		
-		max_wives = 1
-		max_consorts = 0
+		#max_wives = 1
+		#max_consorts = 0
 		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-	}
+		#religious_clothing_head = 0
+		#religious_clothing_priest = 1
+	#}
 
 		ferkina = {
 		graphical_culture = africangfx
