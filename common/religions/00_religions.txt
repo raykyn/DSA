@@ -749,7 +749,7 @@ shaman_n = {
 		religious_clothing_priest = 1
 	}
 	
-	shirrzach = {
+	schirrzach = {
 		graphical_culture = norsegfx
 
 		icon = 4
