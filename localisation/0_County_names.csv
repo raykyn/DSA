@@ -31,6 +31,8 @@ c_albentrutz;Albentrutz;Albentrutz;Albentrutz;;Albentrutz;;;;;;;;;x
 c_albentrutz_adj;Albentrutzian;;albentrutzer;;;;;;;;;;;x
 c_albersrode;Albersrode;Albersrode;Albersrode;;Albersrode;;;;;;;;;x
 c_albersrode_adj;Albersrodean;;albersroder;;;;;;;;;;;x
+c_alchuram;Al'Churam;Al'Churam;Al'Churam;;Al'Churam;;;;;;;;;x
+c_alchuram_adj;Al'Churamian;;al'churamer;;;;;;;;;;;x
 c_aldyra;Aldyra;Aldyra;Aldyra;;Aldyra;;;;;;;;;x
 c_aldyra_adj;Aldyran;;aldyrer;;;;;;;;;;;x
 c_alrifat;Al'Rifat;Al'Rifat;Al'Rifat;;Al'Rifat;;;;;;;;;x
@@ -69,6 +71,8 @@ c_artesa;Artésa;Artésa;Artésa;;Artésa;;;;;;;;;x
 c_artesa_adj;Artésan;;artéser;;;;;;;;;;;x
 c_arvepass;Arvepass;Arvepass;Arvepass;;Arvepass;;;;;;;;;x
 c_arvepass_adj;Arvepassian;;arvepasser;;;;;;;;;;;x
+c_asboran;Asboran;Asboran;Asboran;;Asboran;;;;;;;;;x
+c_asboran_adj;Asboranian;;asboraner;;;;;;;;;;;x
 c_aschenfeld;Aschenfeld;Aschenfeld;Aschenfeld;;Aschenfeld;;;;;;;;;x
 c_aschenfeld_adj;Aschenfeldian;;aschenfelder;;;;;;;;;;;x
 c_asfar;As'Far;As'Far;As'Far;;As'Far;;;;;;;;;x
@@ -149,6 +153,8 @@ c_bosparan_forest;Bosparan Forest;Bosparan Forest;Bosparan Forest;;Bosparan Fore
 c_bosparan_forest_adj;Bosparan Forestian;;Bosparan Forester;;;;;;;;;;;x
 c_bosquirien;Bosquirien;Bosquirien;Bosquirien;;Bosquirien;;;;;;;;;x
 c_bosquirien_adj;Bosquirienian;;bosquiriener;;;;;;;;;;;x
+c_bosquirquell;Bosquirquell;Bosquirquell;Bosquirquell;;Bosquirquell;;;;;;;;;x
+c_bosquirquell_adj;Bosquirquellian;;bosquirqueller;;;;;;;;;;;x
 c_braast;Braast;Braast;Braast;;Braast;;;;;;;;;x
 c_braast_adj;Braastian;;braaster;;;;;;;;;;;x
 c_brachfelde;Brachfelde;Brachfelde;Brachfelde;;Brachfelde;;;;;;;;;x
@@ -225,6 +231,8 @@ c_dornstein;Dornstein;Dornstein;Dornstein;;Dornstein;;;;;;;;;x
 c_dornstein_adj;Dornsteinian;;dornsteiner;;;;;;;;;;;x
 c_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 c_drachenstein_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
+c_drakonia;Drakonia;Drakonia;Drakonia;;Drakonia;;;;;;;;;x
+c_drakonia_adj;Drakonian;;drakoner;;;;;;;;;;;x
 c_draustein;Draustein;Draustein;Draustein;;Draustein;;;;;;;;;x
 c_draustein_adj;Drausteinian;;drausteiner;;;;;;;;;;;x
 c_drileuen;Drîleuen;Drîleuen;Drîleuen;;Drîleuen;;;;;;;;;x
@@ -237,6 +245,8 @@ c_dunkelsfarn;Dunkelsfarn;Dunkelsfarn;Dunkelsfarn;;Dunkelsfarn;;;;;;;;;x
 c_dunkelsfarn_adj;Dunkelsfarnian;;dunkelsfarner;;;;;;;;;;;x
 c_east_thalus_massif;East Thalus Massif;East Thalus Massif;East Thalus Massif;;East Thalus Massif;;;;;;;;;x
 c_east_thalus_massif_adj;East Thalus Massifian;;East Thalus Massifer;;;;;;;;;;;x
+c_eastern_raschtulswall;Eastern Raschtulswall;Eastern Raschtulswall;Eastern Raschtulswall;;Eastern Raschtulswall;;;;;;;;;x
+c_eastern_raschtulswall_adj;Eastern Raschtulswallian;;Eastern Raschtulswaller;;;;;;;;;;;x
 c_ebersberg;Ebersberg;Ebersberg;Ebersberg;;Ebersberg;;;;;;;;;x
 c_ebersberg_adj;Ebersbergian;;ebersberger;;;;;;;;;;;x
 c_eckelstor;Eckelstor;Eckelstor;Eckelstor;;Eckelstor;;;;;;;;;x
@@ -495,6 +505,10 @@ c_khahirios;Khahirios;Khahirios;Khahirios;;Khahirios;;;;;;;;;x
 c_khahirios_adj;Khahiriosian;;khahirioser;;;;;;;;;;;x
 c_khomblick;Khômblick;Khômblick;Khômblick;;Khômblick;;;;;;;;;x
 c_khomblick_adj;Khômblickian;;khômblicker;;;;;;;;;;;x
+c_khoram_mountains;Khoram Mountains;Khoram Mountains;Khoram Mountains;;Khoram Mountains;;;;;;;;;x
+c_khoram_mountains_adj;Khoram Mountainsian;;Khoram Mountainser;;;;;;;;;;;x
+c_khoram_pass;Khoram Pass;Khoram Pass;Khoram Pass;;Khoram Pass;;;;;;;;;x
+c_khoram_pass_adj;Khoram Passian;;Khoram Passer;;;;;;;;;;;x
 c_khunchom;Khunchom;Khunchom;Khunchom;;Khunchom;;;;;;;;;x
 c_khunchom_adj;Khunchomian;;khunchomer;;;;;;;;;;;x
 c_kireh;Kireh;Kireh;Kireh;;Kireh;;;;;;;;;x
@@ -601,6 +615,8 @@ c_mherwed;Mherwed;Mherwed;Mherwed;;Mherwed;;;;;;;;;x
 c_mherwed_adj;Mherwedian;;mherweder;;;;;;;;;;;x
 c_mherweggyn;Mherweggyn;Mherweggyn;Mherweggyn;;Mherweggyn;;;;;;;;;x
 c_mherweggyn_adj;Mherweggynian;;mherweggyner;;;;;;;;;;;x
+c_mirina;Mirina;Mirina;Mirina;;Mirina;;;;;;;;;x
+c_mirina_adj;Mirinan;;miriner;;;;;;;;;;;x
 c_misafelden;Misafelden;Misafelden;Misafelden;;Misafelden;;;;;;;;;x
 c_misafelden_adj;Misafeldenian;;misafeldener;;;;;;;;;;;x
 c_misamuendel;Misamündel;Misamündel;Misamündel;;Misamündel;;;;;;;;;x
@@ -657,6 +673,8 @@ c_northern_aimaristan;Northern Aimaristan;Northern Aimaristan;Northern Aimarista
 c_northern_aimaristan_adj;Northern Aimaristanian;;Northern Aimaristaner;;;;;;;;;;;x
 c_northern_goldrocks;Northern Goldrocks;Northern Goldrocks;Northern Goldrocks;;Northern Goldrocks;;;;;;;;;x
 c_northern_goldrocks_adj;Northern Goldrocksian;;Northern Goldrockser;;;;;;;;;;;x
+c_northern_raschtulswall;Northern Raschtulswall;Northern Raschtulswall;Northern Raschtulswall;;Northern Raschtulswall;;;;;;;;;x
+c_northern_raschtulswall_adj;Northern Raschtulswallian;;Northern Raschtulswaller;;;;;;;;;;;x
 c_oberangbar;Oberangbar;Oberangbar;Oberangbar;;Oberangbar;;;;;;;;;x
 c_oberangbar_adj;Oberangbarian;;oberangbarer;;;;;;;;;;;x
 c_oberdarpatien;Oberdarpatien;Oberdarpatien;Oberdarpatien;;Oberdarpatien;;;;;;;;;x
@@ -749,6 +767,10 @@ c_randersburg;Randersburg;Randersburg;Randersburg;;Randersburg;;;;;;;;;x
 c_randersburg_adj;Randersburgian;;randersburger;;;;;;;;;;;x
 c_ras_nefidim;Ras Nefidim;Ras Nefidim;Ras Nefidim;;Ras Nefidim;;;;;;;;;x
 c_ras_nefidim_adj;Ras Nefidimian;;Ras Nefidimer;;;;;;;;;;;x
+c_raschtuls_tower;Raschtuls Tower;Raschtuls Tower;Raschtuls Tower;;Raschtuls Tower;;;;;;;;;x
+c_raschtuls_tower_adj;Raschtuls Towerian;;Raschtuls Towerer;;;;;;;;;;;x
+c_raschtulspass;Raschtulspass;Raschtulspass;Raschtulspass;;Raschtulspass;;;;;;;;;x
+c_raschtulspass_adj;Raschtulspassian;;raschtulspasser;;;;;;;;;;;x
 c_rashdul;Rashdul;Rashdul;Rashdul;;Rashdul;;;;;;;;;x
 c_rashdul_adj;Rashdulian;;rashduler;;;;;;;;;;;x
 c_rasiastan;Rasiastan;Rasiastan;Rasiastan;;Rasiastan;;;;;;;;;x
@@ -873,6 +895,8 @@ c_silver_valley;Silver Valley;Silver Valley;Silver Valley;;Silver Valley;;;;;;;;
 c_silver_valley_adj;Silver Valleian;;Silver Valleer;;;;;;;;;;;x
 c_silz;Silz;Silz;Silz;;Silz;;;;;;;;;x
 c_silz_adj;Silzian;;silzer;;;;;;;;;;;x
+c_simiador;Simiador;Simiador;Simiador;;Simiador;;;;;;;;;x
+c_simiador_adj;Simiadorian;;simiadorer;;;;;;;;;;;x
 c_sinoda;Sinoda;Sinoda;Sinoda;;Sinoda;;;;;;;;;x
 c_sinoda_adj;Sinodan;;sinoder;;;;;;;;;;;x
 c_south_arratistan;South-Arratistan;South-Arratistan;South-Arratistan;;South-Arratistan;;;;;;;;;x
@@ -881,6 +905,8 @@ c_southern_aimaristan;Southern Aimaristan;Southern Aimaristan;Southern Aimarista
 c_southern_aimaristan_adj;Southern Aimaristanian;;Southern Aimaristaner;;;;;;;;;;;x
 c_southern_goldrocks;Southern Goldrocks;Southern Goldrocks;Southern Goldrocks;;Southern Goldrocks;;;;;;;;;x
 c_southern_goldrocks_adj;Southern Goldrocksian;;Southern Goldrockser;;;;;;;;;;;x
+c_southern_raschtulswall;Southern Raschtulswall;Southern Raschtulswall;Southern Raschtulswall;;Southern Raschtulswall;;;;;;;;;x
+c_southern_raschtulswall_adj;Southern Raschtulswallian;;Southern Raschtulswaller;;;;;;;;;;;x
 c_spogelsen;Spogelsen;Spogelsen;Spogelsen;;Spogelsen;;;;;;;;;x
 c_spogelsen_adj;Spogelsenian;;spogelsener;;;;;;;;;;;x
 c_stanniz;Stanniz;Stanniz;Stanniz;;Stanniz;;;;;;;;;x
@@ -907,6 +933,8 @@ c_tandosch;Tandosch;Tandosch;Tandosch;;Tandosch;;;;;;;;;x
 c_tandosch_adj;Tandoschian;;tandoscher;;;;;;;;;;;x
 c_tannwirk;Tannwirk;Tannwirk;Tannwirk;;Tannwirk;;;;;;;;;x
 c_tannwirk_adj;Tannwirkian;;tannwirker;;;;;;;;;;;x
+c_tarfelhazaqur_mor;Tarf'El'Hazaqur Mor;Tarf'El'Hazaqur Mor;Tarf'El'Hazaqur Mor;;Tarf'El'Hazaqur Mor;;;;;;;;;x
+c_tarfelhazaqur_mor_adj;Tarf'El'Hazaqur Morian;;Tarf'El'Hazaqur Morer;;;;;;;;;;;x
 c_tarfui;Tarfui;Tarfui;Tarfui;;Tarfui;;;;;;;;;x
 c_tarfui_adj;Tarfian;;tarfer;;;;;;;;;;;x
 c_tasilimund;Tasilimund;Tasilimund;Tasilimund;;Tasilimund;;;;;;;;;x

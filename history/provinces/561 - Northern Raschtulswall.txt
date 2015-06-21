@@ -1,0 +1,16 @@
+# c_northern_raschtulswall
+
+# County Title
+title = c_northern_raschtulswall
+
+# Settlements
+max_settlements = 2
+
+b_northern_raschtulswall = castle
+#b_northern_raschtulswall_2 = city
+
+# Misc
+culture = ferkina_c
+religion = ferkina
+terrain = mountains
+#History

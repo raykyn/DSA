@@ -1,0 +1,8 @@
+# k_ferkina
+800.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1060.1.1={ holder=1
+	liege=d_khoram_mountains
+}

@@ -8303,3 +8303,163 @@ e_middlerealm = {
 		}
 	}
 }
+k_ferkina = {
+	color={ 166 42 53 }
+	color2={ 255 255 255 }
+	
+	capital = 552 # c_bosquirquell
+	culture = ferkina_c
+	
+	d_raschtulswall = {
+		color={ 146 62 43 }
+		color2={ 255 255 255 }
+		
+		allow = {
+			OR = {
+				lower_tier_than = KING
+				any_demesne_province = { OR = { province_id = 552 province_id = 553 province_id = 554 province_id = 555 province_id = 556 province_id = 557 province_id = 558 province_id = 559 province_id = 560 province_id = 561 } }
+			}
+		}
+		capital = 552 # c_bosquirquell
+		
+		c_bosquirquell = { # 552
+			color={ 136 72 38 }
+			color2={ 255 255 255 }
+			
+			b_bosquirquell = {
+			}
+			b_bosquirquell_2 = {
+			}
+		}
+		c_asboran = { # 557
+			color={ 136 25 78 }
+			color2={ 255 255 255 }
+			
+			b_asboran = {
+			}
+			b_asboran_2 = {
+			}
+		}
+		c_drakonia = { # 558
+			color={ 136 25 11 }
+			color2={ 255 255 255 }
+			
+			b_drakonia = {
+			}
+			b_drakonia_2 = {
+			}
+		}
+		c_eastern_raschtulswall = { # 554
+			color={ 136 25 50 }
+			color2={ 255 255 255 }
+			
+			b_eastern_raschtulswall = {
+			}
+			b_eastern_raschtulswall_2 = {
+			}
+		}
+		c_northern_raschtulswall = { # 561
+			color={ 136 56 47 }
+			color2={ 255 255 255 }
+			
+			b_northern_raschtulswall = {
+			}
+			b_northern_raschtulswall_2 = {
+			}
+		}
+		c_raschtuls_tower = { # 555
+			color={ 136 149 103 }
+			color2={ 255 255 255 }
+			
+			b_raschtuls_tower = {
+			}
+			b_raschtuls_tower_2 = {
+			}
+		}
+		c_raschtulspass = { # 553
+			color={ 136 97 55 }
+			color2={ 255 255 255 }
+			
+			b_raschtulspass = {
+			}
+			b_raschtulspass_2 = {
+			}
+		}
+		c_simiador = { # 560
+			color={ 136 22 3 }
+			color2={ 255 255 255 }
+			
+			b_simiador = {
+			}
+			b_simiador_2 = {
+			}
+		}
+		c_southern_raschtulswall = { # 556
+			color={ 136 40 21 }
+			color2={ 255 255 255 }
+			
+			b_southern_raschtulswall = {
+			}
+			b_southern_raschtulswall_2 = {
+			}
+		}
+		c_tarfelhazaqur_mor = { # 559
+			color={ 136 40 30 }
+			color2={ 255 255 255 }
+			
+			b_tarfelhazaqur_mor = {
+			}
+			b_tarfelhazaqur_mor_2 = {
+			}
+		}
+	}
+	d_khoram_mountains = {
+		color={ 146 17 221 }
+		color2={ 255 255 255 }
+		
+		allow = {
+			OR = {
+				lower_tier_than = KING
+				any_demesne_province = { OR = { province_id = 562 province_id = 563 province_id = 564 province_id = 565 } }
+			}
+		}
+		capital = 562 # c_mirina
+		
+		c_mirina = { # 562
+			color={ 136 27 216 }
+			color2={ 255 255 255 }
+			
+			b_mirina = {
+			}
+			b_mirina_2 = {
+			}
+		}
+		c_alchuram = { # 565
+			color={ 136 25 246 }
+			color2={ 255 255 255 }
+			
+			b_alchuram = {
+			}
+			b_alchuram_2 = {
+			}
+		}
+		c_khoram_mountains = { # 564
+			color={ 136 13 165 }
+			color2={ 255 255 255 }
+			
+			b_khoram_mountains = {
+			}
+			b_khoram_mountains_2 = {
+			}
+		}
+		c_khoram_pass = { # 563
+			color={ 136 21 74 }
+			color2={ 255 255 255 }
+			
+			b_khoram_pass = {
+			}
+			b_khoram_pass_2 = {
+			}
+		}
+	}
+}

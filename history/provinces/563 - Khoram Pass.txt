@@ -1,0 +1,16 @@
+# c_khoram_pass
+
+# County Title
+title = c_khoram_pass
+
+# Settlements
+max_settlements = 2
+
+b_khoram_pass = castle
+#b_khoram_pass_2 = city
+
+# Misc
+culture = ferkina_c
+religion = ferkina
+terrain = mountains
+#History

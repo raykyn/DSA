@@ -1,0 +1,16 @@
+# c_raschtulspass
+
+# County Title
+title = c_raschtulspass
+
+# Settlements
+max_settlements = 2
+
+b_raschtulspass = castle
+#b_raschtulspass_2 = city
+
+# Misc
+culture = ferkina_c
+religion = ferkina
+terrain = mountains
+#History
