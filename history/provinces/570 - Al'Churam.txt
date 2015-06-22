@@ -1,0 +1,16 @@
+# c_alchuram
+
+# County Title
+title = c_alchuram
+
+# Settlements
+max_settlements = 2
+
+b_alchuram = castle
+#b_alchuram_2 = city
+
+# Misc
+culture = ferkina_c
+religion = ferkina
+terrain = impassable_mountains
+#History

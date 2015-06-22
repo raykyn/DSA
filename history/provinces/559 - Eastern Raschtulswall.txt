@@ -1,0 +1,16 @@
+# c_eastern_raschtulswall
+
+# County Title
+title = c_eastern_raschtulswall
+
+# Settlements
+max_settlements = 2
+
+b_eastern_raschtulswall = castle
+#b_eastern_raschtulswall_2 = city
+
+# Misc
+culture = ferkina_c
+religion = ferkina
+terrain = mountains
+#History

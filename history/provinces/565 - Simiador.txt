@@ -1,0 +1,16 @@
+# c_simiador
+
+# County Title
+title = c_simiador
+
+# Settlements
+max_settlements = 2
+
+b_simiador = castle
+#b_simiador_2 = city
+
+# Misc
+culture = diamond_d
+religion = angrosch
+terrain = mountains
+#History

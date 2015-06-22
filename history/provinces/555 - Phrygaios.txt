@@ -1,0 +1,18 @@
+# c_phrygaios
+
+# County Title
+title = c_phrygaios
+
+# Settlements
+max_settlements = 4
+
+b_phrygaios = castle
+#b_phrygaios_2 = city
+#b_phrygaios_3 = temple
+#b_phrygaios_4 = castle
+
+# Misc
+culture = cyclopean
+religion = horas
+terrain = farmlands
+#History

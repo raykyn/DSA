@@ -1,0 +1,16 @@
+# c_asboran
+
+# County Title
+title = c_asboran
+
+# Settlements
+max_settlements = 2
+
+b_asboran = castle
+#b_asboran_2 = city
+
+# Misc
+culture = maraskani
+religion = rur_gror
+terrain = mountains
+#History

@@ -1,0 +1,18 @@
+# c_baltrea
+
+# County Title
+title = c_baltrea
+
+# Settlements
+max_settlements = 4
+
+b_baltrea = castle
+#b_baltrea_2 = city
+#b_baltrea_3 = temple
+#b_baltrea_4 = castle
+
+# Misc
+culture = cyclopean
+religion = horas
+terrain = farmlands
+#History

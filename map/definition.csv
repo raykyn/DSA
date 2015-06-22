@@ -548,18 +548,23 @@ province;red;green;blue;x;x
 549;206;40;22;Sunderstein;x
 550;206;35;43;Goetzenzwinge;x
 551;206;98;52;Chababquell;x
-552;136;72;38;Bosquirquell;x
-553;136;97;55;Raschtulspass;x
-554;136;25;50;Eastern Raschtulswall;x
-555;136;149;103;Raschtuls Tower;x
-556;136;40;21;Southern Raschtulswall;x
-557;136;25;78;Asboran;x
-558;136;25;11;Drakonia;x
-559;136;40;30;Tarf'El'Hazaqur Mor;x
-560;136;22;3;Simiador;x
-561;136;56;47;Northern Raschtulswall;x
-562;136;27;216;Mirina;x
-563;136;21;74;Khoram Pass;x
-564;136;13;165;Khoram Mountains;x
-565;136;25;246;Al'Churam;x
+552;0;71;136;Hylailos;x
+553;142;37;74;Baltrea;x
+554;142;75;35;Pailos;x
+555;142;29;201;Phrygaios;x
+556;142;173;42;Kutaki;x
+557;136;72;38;Bosquirquell;x
+558;136;97;55;Raschtulspass;x
+559;136;25;50;Eastern Raschtulswall;x
+560;136;149;103;Raschtuls Tower;x
+561;136;40;21;Southern Raschtulswall;x
+562;136;25;78;Asboran;x
+563;136;25;11;Drakonia;x
+564;136;40;30;Tarf'El'Hazaqur Mor;x
+565;136;22;3;Simiador;x
+566;136;56;47;Northern Raschtulswall;x
+567;136;27;216;Mirina;x
+568;136;21;74;Khoram Pass;x
+569;136;13;165;Khoram Mountains;x
+570;136;25;246;Al'Churam;x
 1000;7;0;85;ProxyProvince;x

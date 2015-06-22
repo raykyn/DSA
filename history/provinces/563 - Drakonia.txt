@@ -1,0 +1,16 @@
+# c_drakonia
+
+# County Title
+title = c_drakonia
+
+# Settlements
+max_settlements = 2
+
+b_drakonia = castle
+#b_drakonia_2 = city
+
+# Misc
+culture = ferkina_c
+religion = ferkina
+terrain = mountains
+#History

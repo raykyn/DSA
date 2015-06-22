@@ -95,6 +95,8 @@ c_baghtiaristan;Baghtiaristan;Baghtiaristan;Baghtiaristan;;Baghtiaristan;;;;;;;;
 c_baghtiaristan_adj;Baghtiaristanian;;baghtiaristaner;;;;;;;;;;;x
 c_baliho;Baliho;Baliho;Baliho;;Baliho;;;;;;;;;x
 c_baliho_adj;Balihian;;baliher;;;;;;;;;;;x
+c_baltrea;Baltrea;Baltrea;Baltrea;;Baltrea;;;;;;;;;x
+c_baltrea_adj;Baltrean;;baltrer;;;;;;;;;;;x
 c_banchab;Banchab;Banchab;Banchab;;Banchab;;;;;;;;;x
 c_banchab_adj;Banchabian;;banchaber;;;;;;;;;;;x
 c_bangour;Bangour;Bangour;Bangour;;Bangour;;;;;;;;;x
@@ -463,6 +465,8 @@ c_huab;Huab;Huab;Huab;;Huab;;;;;;;;;x
 c_huab_adj;Huabian;;huaber;;;;;;;;;;;x
 c_hutt;Hutt;Hutt;Hutt;;Hutt;;;;;;;;;x
 c_hutt_adj;Huttian;;hutter;;;;;;;;;;;x
+c_hylailos;Hylailos;Hylailos;Hylailos;;Hylailos;;;;;;;;;x
+c_hylailos_adj;Hylailosian;;hylailoser;;;;;;;;;;;x
 c_ilderasch;Ilderasch;Ilderasch;Ilderasch;;Ilderasch;;;;;;;;;x
 c_ilderasch_adj;Ilderaschian;;ilderascher;;;;;;;;;;;x
 c_ilsur;Ilsur;Ilsur;Ilsur;;Ilsur;;;;;;;;;x
@@ -539,6 +543,8 @@ c_kurkum;Kurkum;Kurkum;Kurkum;;Kurkum;;;;;;;;;x
 c_kurkum_adj;Kurkumian;;kurkumer;;;;;;;;;;;x
 c_kuslik;Kuslik;Kuslik;Kuslik;;Kuslik;;;;;;;;;x
 c_kuslik_adj;Kuslikian;;kusliker;;;;;;;;;;;x
+c_kutaki;Kutaki;Kutaki;Kutaki;;Kutaki;;;;;;;;;x
+c_kutaki_adj;Kutakian;;kutaker;;;;;;;;;;;x
 c_kyrstollen;Kyrstollen;Kyrstollen;Kyrstollen;;Kyrstollen;;;;;;;;;x
 c_kyrstollen_adj;Kyrstollenian;;kyrstollener;;;;;;;;;;;x
 c_lauchenwart;Lauchenwart;Lauchenwart;Lauchenwart;;Lauchenwart;;;;;;;;;x
@@ -717,6 +723,8 @@ c_outer_havena;Outer Havena;Outer Havena;Outer Havena;;Outer Havena;;;;;;;;;x
 c_outer_havena_adj;Outer Havenan;;Outer Havener;;;;;;;;;;;x
 c_paggenau;Paggenau;Paggenau;Paggenau;;Paggenau;;;;;;;;;x
 c_paggenau_adj;Paggenian;;paggener;;;;;;;;;;;x
+c_pailos;Pailos;Pailos;Pailos;;Pailos;;;;;;;;;x
+c_pailos_adj;Pailosian;;pailoser;;;;;;;;;;;x
 c_pallingen;Pallingen;Pallingen;Pallingen;;Pallingen;;;;;;;;;x
 c_pallingen_adj;Pallingenian;;pallingener;;;;;;;;;;;x
 c_palmyrabad;Palmyrabad;Palmyrabad;Palmyrabad;;Palmyrabad;;;;;;;;;x
@@ -737,6 +745,8 @@ c_phecanostein;Phecanostein;Phecanostein;Phecanostein;;Phecanostein;;;;;;;;;x
 c_phecanostein_adj;Phecanosteinian;;phecanosteiner;;;;;;;;;;;x
 c_phecanowald;Phecanowald;Phecanowald;Phecanowald;;Phecanowald;;;;;;;;;x
 c_phecanowald_adj;Phecanowaldian;;phecanowalder;;;;;;;;;;;x
+c_phrygaios;Phrygaios;Phrygaios;Phrygaios;;Phrygaios;;;;;;;;;x
+c_phrygaios_adj;Phrygaiosian;;phrygaioser;;;;;;;;;;;x
 c_port_corrad;Port Corrad;Port Corrad;Port Corrad;;Port Corrad;;;;;;;;;x
 c_port_corrad_adj;Port Corradian;;Port Corrader;;;;;;;;;;;x
 c_praiobab;Praiobab;Praiobab;Praiobab;;Praiobab;;;;;;;;;x
