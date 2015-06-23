@@ -24,3 +24,540 @@ k_zwoelf = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 	
 }
+
+##HOLY ORDERS
+##culture chosen for HQ
+
+d_beni_uchakani = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = beni_uchakani_composition
+	
+	culture = beni_novad
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 1 # (Must be an integer between 1 and 512)
+}
+d_ardariten = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = ardariten_composition
+	
+	culture = yaquiria
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+
+d_templer = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = templer_composition
+	
+	culture = maraskani
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 1 # (Must be an integer between 1 and 512)
+}
+d_schwerter = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = schwerter_composition
+	
+	culture = garethi
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_yppolitaner = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = yppolitaner_composition
+	
+	culture = tobrian
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_zornesritter = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = zornesritter_composition
+	
+	culture = garethi
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 5 # (Must be an integer between 1 and 512)
+}
+d_sonnenlegion = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = sonnenlegion_composition
+	
+	culture = tobrian
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_bannstrahler = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = bannstrahler_composition
+	
+	culture = darpatian
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_gaenseritter = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = gaenseritter_composition
+	
+	culture = darpatian
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_golgariten = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = golgariten_composition
+	
+	culture = kosh
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_saebeltaenzer = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = saebeltaenzer_composition
+	
+	culture = mhanadistani
+	
+	# Parent Religion 
+	religion = puniner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_rahjakavaliere = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = rahjakavaliere_composition
+	
+	culture = coverna
+	
+	# Parent Religion 
+	religion = horas
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_rabengarde = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = bannstrahler_composition
+	
+	culture = meridiana
+	
+	# Parent Religion 
+	religion = alanfaner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_basaltfaust = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = basaltfaust_composition
+	
+	culture = alanfa
+	
+	# Parent Religion 
+	religion = alanfaner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_tempelgarde_schweigen = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = tempelgarde_schweigen_composition
+	
+	culture = alanfa
+	
+	# Parent Religion 
+	religion = alanfaner
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_hadjinim = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = hadjinim_composition
+	
+	culture = beni_novad
+	
+	# Parent Religion 
+	religion = rastullah
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_tarisharim = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = tarisharim_composition
+	
+	culture = beni_schebt
+	
+	# Parent Religion 
+	religion = rastullah
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_aldrakhorim = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = aldrakhorim_composition
+	
+	culture = beni_erkin
+	
+	# Parent Religion 
+	religion = rastullah
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+d_sahabiyat = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 1 #Gareth
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = sahabiyat_composition
+	
+	culture = mhanadistani
+	
+	# Parent Religion 
+	religion = urtulamiden
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
