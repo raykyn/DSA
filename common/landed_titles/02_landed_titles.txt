@@ -105,7 +105,7 @@ d_templer = {
 	culture = maraskani
 	
 	# Parent Religion 
-	religion = puniner
+	religion = jenseitige_familie
 	
 	# Cannot be held as a secondary title
 	primary = yes
