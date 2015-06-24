@@ -1,18 +1,18 @@
-# c_maraskancliff
+# c_maraskanicliff
 
 # County Title
-title = c_maraskancliff
+title = c_maraskanicliff
 
 # Settlements
 max_settlements = 4
 
-b_maraskancliff = castle
-#b_maraskancliff_2 = city
-#b_maraskancliff_3 = temple
-#b_maraskancliff_4 = castle
+b_maraskanicliff = castle
+#b_maraskanicliff_2 = city
+#b_maraskanicliff_3 = temple
+#b_maraskanicliff_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History

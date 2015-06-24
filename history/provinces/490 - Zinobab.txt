@@ -12,7 +12,7 @@ b_zinobab = castle
 #b_zinobab_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History

@@ -12,7 +12,7 @@ b_mherweggyn = castle
 #b_mherweggyn_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History

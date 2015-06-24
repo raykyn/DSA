@@ -12,7 +12,7 @@ b_sinoda = castle
 #b_sinoda_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History

@@ -12,7 +12,7 @@ b_buli = castle
 #b_buli_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History
