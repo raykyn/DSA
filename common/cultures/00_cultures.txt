@@ -1058,7 +1058,7 @@ fountland = {
 horasian = {
 	graphical_culture = occitangfx
 	
-	septimana = {
+	phecadian = {
 		graphical_culture = southerngfx 
 		color = { 0 0.8 0.6 }
 	
@@ -1156,7 +1156,7 @@ horasian = {
     	modifier = default_culture_modifier
 	}
 	
-	aurelat = {
+	chababian = {
 		graphical_culture = southerngfx 
 		color = { 0 1 0.6 }
 	
