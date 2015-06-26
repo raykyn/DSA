@@ -142,71 +142,6 @@ decisions = {
 								#}
 							#}
 						#}
-						#AND = {
-							#culture = saxon
-							#ROOT = {
-								#OR = {
-									#culture = norman 
-									#culture = english
-								#}
-							#}
-						#}
-						#AND = {
-							#culture = norman
-							#ROOT = {
-								#OR = {
-									#culture = english 
-									#culture = saxon
-								#}
-							#}
-						#}
-						#AND = {
-							#culture_group = east_slavic
-							#ROOT = {
-								#culture = russian
-							#}
-						#}
-						#AND = {
-							#culture = pictish
-							#ROOT = {
-								#culture = scottish
-							#}
-						#}
-						#AND = {
-							#culture = lombard
-							#ROOT = {
-								#culture = italian
-							#}
-						#}
-						#AND = {
-							#culture = old_frankish
-							#ROOT = {
-								#culture = frankish
-							#}
-						#}
-						#AND = {
-							#culture = frisian
-							#ROOT = {
-								#culture = dutch
-							#}
-						#}
-						#AND = {
-							#culture = old_saxon
-							#ROOT = {
-								#culture = german
-							#}
-						#}
-						#AND = {
-							#culture = visigothic
-							#ROOT = {
-								#OR = {
-									#culture_group = iberian
-									#culture = andalusian_arabic
-									#culture = occitan
-									#religion_group = muslim
-								#}
-							#}
-						#}
 					#}
 				#}
 			#}
@@ -352,6 +287,7 @@ decisions = {
 	}
 	
 	# Pagans are allowed to convert to the attacker's religion when under holy war
+	##Even if gjalsker = pagan for example, not happy with them converting on attack
 	convert_to_attacker_religion = {
 		is_high_prio = yes
 		
@@ -555,11 +491,9 @@ decisions = {
 		#}
 		#ai_will_do = {
 			#factor = 1
-			
 			#modifier = {
 				#factor = 0.2 # Slow it down a bit
 			#}
-			
 			#modifier = { # Do not flip if we're in a huge Norse empire
 				#factor = 0
 				#top_liege = { culture = norse }
@@ -579,7 +513,6 @@ decisions = {
 					#}
 				#}
 			#}
-			
 			#modifier = {
 				#factor = 0.01
 				#capital_scope = {
@@ -646,7 +579,6 @@ decisions = {
 				#limit = { religion = norse_pagan }
 				#religion = norse_pagan_reformed
 			#}
-			
 			#hidden_tooltip = {
 				#any_courtier = {
 					#limit = {
@@ -739,13 +671,11 @@ decisions = {
 				#}
 			#}
 		#}
-		
 		#effect = {
 			#prestige = -500
 			#religion_authority = {
 				#modifier = ruler_converted_from
 			#}
-			
 			#if = {
 				#limit = {
 					#trait = cynical
@@ -764,9 +694,7 @@ decisions = {
 					#add_trait = sympathy_pagans
 				#}
 			#}		
-			
 			#religion = catholic
-			
 			#hidden_tooltip = {
 				#religion_authority = {
 					#modifier = ruler_converted_to
@@ -774,11 +702,9 @@ decisions = {
 			#}
 			#piety = 200
 		#}
-		
 		#revoke_allowed = {
 			#always = no
 		#}
-		
 		#ai_will_do = {
 			#factor = 0
 		#}
@@ -815,11 +741,9 @@ decisions = {
 		#}
 		#ai_will_do = {
 			#factor = 1
-			
 			#modifier = {
 				#factor = 0.2 # Slow it down a bit
 			#}
-			
 			#modifier = {
 				#factor = 0.01
 				#capital_scope = {
@@ -873,7 +797,7 @@ decisions = {
 	#########################################
 	 help_liege_manage_titles = {
 	 	is_high_prio = yes
-
+		
 		potential = {
 			liege = {
 				NOT = { character = ROOT }
@@ -885,7 +809,7 @@ decisions = {
 				}
 				ai = no
 			}
-
+			
 			OR = {
 				has_job_title = job_chancellor
 				has_job_title = job_treasurer
@@ -959,7 +883,7 @@ decisions = {
 	
 	ask_help_to_manage_titles = {
 	 	is_high_prio = yes
-
+		
 		potential = {
 			is_ruler = yes
 			
@@ -1007,7 +931,7 @@ decisions = {
 		}
 	}
 	
-		employ_priest = {
+		employ_priest = {#needs 2nd version for religions w/o female temple holders
 		potential = {
 			ai = no
 		}
@@ -1019,7 +943,7 @@ decisions = {
 			create_random_priest = {
 				random_traits = yes
 				dynasty = random
-				female = no
+				female = yes
 			}
 			new_character = {
 			}
@@ -1044,7 +968,7 @@ decisions = {
 			create_random_steward = {
 				random_traits = yes
 				dynasty = random
-				female = no
+				female = yes
 			}
 			new_character = {
 			}
@@ -1083,6 +1007,779 @@ decisions = {
 			factor = 0
 		}
 	}
+	
+	###########################
+	###REALM DECISIONS
+	###########################
+	hold_a_epic_tournament  = {
+		is_high_prio = yes
+		potential = {
+			NOT = {
+				has_character_flag = epic_tournament
+				has_character_flag = do_not_disturb
+			}
+			OR = {
+				religion_group = twelve
+				religion_group = rastullah_group#?
+				religion_group = maraskan
+			}
+			independent = yes
+			OR = {
+				tier = king
+				tier = emperor 
+			}
+			location = {
+				owner = { character = ROOT }
+			}
+		}
+		allow = {
+			war = no
+			prisoner = no
+			in_command = no
+			NOT = { trait = in_hiding }
+			age = 16
+			prestige = 500
+			wealth = 200
+		}
+		effect = {
+			set_character_flag = epic_tournament
+			set_character_flag = do_not_disturb
+			clr_character_flag = tournament_has_ended
+			hidden_tooltip = { character_event = { id = 70999 days = 150 } } # Safety catch flag clearing
+			wealth = -200
+			prestige = 100
+			character_event = { id = 70033 tooltip = "tournament_invite" }
+			hidden_tooltip = {
+				character_event = { id = 70001 days = 60 } # Tournament start
+				clr_character_flag = tournament_has_ended
+				any_realm_character = {
+					limit = {
+						OR = {
+							is_feudal = yes
+							is_tribal = yes
+						}
+						NOT = { has_job_title = job_spiritual }
+						age = 16
+						NOT = { age = 50 }
+						NOT = { trait = incapable }
+						prisoner = no	
+					}
+					clr_character_flag = tournament_has_ended
+					character_event = { id = 70000 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						wealth = 1000
+						scaled_wealth = 3.0
+					}
+				}
+			}
+		}
+	}
+	
+	buy_indulgence_for_sins = {#are there any Aventurian religions that allow indulgences?
+		potential = {
+			#religion = catholic
+			age = 16
+			demesne_size = 1
+			NOT = { has_character_flag = ask_for_indulgence }
+		}
+		allow = {
+			scaled_wealth = 1.0
+			wealth = 25
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = ask_for_indulgence
+			rightful_religious_head_scope = {
+				character_event = { id = 39250 days = 5 random = 12 tooltip = "indulgence_ask" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { scaled_wealth = 10.0 }
+					piety = 0
+				}
+			}
+		}
+	}
+	
+	issue_declaration_of_repentance = {
+		potential = {
+			OR = {
+				religion_group = twelve
+				religion_group = maraskan
+			}
+			age = 16
+			demesne_size = 1
+			NOT = { has_character_flag = ask_for_repentance }
+			rightful_religious_head_scope = {
+				ROOT = {
+					excommunicated_for = PREV
+				}
+			}
+		}
+		allow = {
+			scaled_wealth = 2.0
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = ask_for_repentance
+			rightful_religious_head_scope = {
+				character_event = { id = 39252 days = 5 random = 12 tooltip = "repentance_ask" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 10.0
+				}
+			}
+		}
+	}
+	
+	demand_liege_title = {
+		is_high_prio = yes
+		potential = {
+			ai = no
+			NOT = { has_character_flag = requested_de_jure_title }
+			liege = {
+				NOT = { character = ROOT }
+			}
+			is_adult = yes
+			prisoner = no
+			is_playable = yes
+			tier = count
+			NOT = { trait = incapable }
+		}
+		allow = {
+			liege = {
+				opinion = {
+					who = ROOT
+					value = 25
+				}
+			}
+			liege = {
+				any_demesne_title = {
+					tier = duke
+					has_de_jure_pretension = ROOT
+					can_be_given_away = yes
+					lower_tier_than = PREV
+				}
+			}
+		}
+		effect = {
+			set_character_flag = requested_de_jure_title
+			liege = { letter_event = { id = 63041 days = 4 tooltip = "EVTTOOLTIP63041" } } # "vassal_request_events.txt"
+		}
+		ai_will_do = {
+			factor = 0 # The AI is limited to the similar event 63040
+		}
+	}
+	
+	petition_doge_for_tp = {
+		is_high_prio = yes
+		potential = {
+			is_merchant_republic = no
+			is_patrician = yes
+			liege = { is_merchant_republic = yes }
+			NOT = { has_character_flag = petition_doge_for_tp_taken }
+			OR = {
+				liege = {
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_post_diff = {
+							character = ROOT
+							value = 10
+						}
+					}
+				}
+				AND = {
+					NOT = { num_of_trade_posts = 1 }
+					liege = {
+						any_vassal = {
+							is_patrician = yes
+							num_of_trade_posts = 10
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			liege = {
+				opinion = {
+					who = ROOT
+					value = 25
+				}
+			}
+		}
+		effect = {
+			set_character_flag = petition_doge_for_tp_taken
+			liege = {
+				letter_event = { id = REP.500 days = 5 tooltip = EVTTOOLTIP_REP_500 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	usurp_tp = {
+		is_high_prio = yes
+		potential = {
+			is_merchant_republic = yes
+			is_patrician = yes
+			NOT = { has_character_flag = usurp_tp_taken }
+			OR = {
+				any_vassal = {
+					is_patrician = yes
+					num_of_trade_post_diff = {
+						character = ROOT
+						value = 10
+					}
+				}
+				AND = {
+					NOT = { num_of_trade_posts = 1 }
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_posts = 10
+					}
+				}
+			}
+		}
+		allow = {
+			is_merchant_republic = yes
+		}
+		effect = {
+			set_character_flag = usurp_tp_taken
+			if = {
+				limit = {
+					num_of_trade_posts = 1
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_post_diff = {
+							character = ROOT
+							value = 10
+						}
+					}
+				}
+				random_vassal = {
+					limit = {
+						is_patrician = yes
+						num_of_trade_post_diff = {
+							character = ROOT
+							value = 10
+						}
+					}
+					set_character_flag = target_patrician_doge
+					letter_event = { id = REP.510 days = 5 tooltip = EVTTOOLTIP_REP_510 }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { num_of_trade_posts = 1 }
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_posts = 10
+					}
+				}
+				random_vassal = {
+					limit = {
+						is_patrician = yes
+						num_of_trade_posts = 10
+					}
+					set_character_flag = target_patrician_doge
+					letter_event = { id = REP.510 days = 5 tooltip = EVTTOOLTIP_REP_510 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	organize_varangian_guard = {##use for extinct guard batallions or similar?
+		is_high_prio = yes
+		potential = {
+			#has_landed_title = e_byzantium
+			prisoner = no
+			age = 16
+			#has_global_flag = viking_age_started
+			NOT = { has_global_flag = varangian_guard_founded }
+			any_playable_ruler = {
+				#religion = norse_pagan
+				#capital_scope = {
+					#distance = {
+						#where = 496	# Constantinople
+						#value = 400	# Not too far away
+					#}
+				}
+			}
+		allow = {
+			prestige = 300
+			wealth = 300
+		}
+		effect = {
+			set_global_flag = varangian_guard_founded
+			prestige = -300
+			wealth = -300
+			activate_title = { title = d_varangian_guard status = yes }
+			hidden_tooltip = {
+				narrative_event = { id = TOG.3100 }
+				create_character = {
+					random_traits = yes
+					#religion = norse_pagan
+					#culture = norse
+					dynasty = NONE
+					female = yes
+					age = 34
+					trait = skilled_tactician
+				}
+				new_character = {
+					d_varangian_guard = {
+						grant_title = PREV
+					}
+					set_defacto_liege = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+##############################
+###UNIT DECISIONS
+##############################
+conscript_merchant_ships = {
+		is_high_prio = yes
+		potential = {
+			NOT = {
+				has_earmarked_regiments = conscripted_merchant_ships
+			}
+			has_overseas_holdings = yes
+		}
+		allow = {
+			war = yes
+			wealth = 50
+		}
+		effect = {
+			wealth = -50
+			spawn_fleet = {
+				province = closest # closest sea zone
+				owner = ROOT
+				disband_on_peace = yes
+				earmark = conscripted_merchant_ships
+				troops =
+				{
+					galleys = { 20 20 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				year = 1100
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						OR = {
+							defender = { character = ROOT }
+							attacker = { character = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	raise_tribal_units = {
+		is_high_prio = yes
+		is_mercenary = yes
+		potential = {
+			ai = no
+			is_tribal = no#since currently no one tribal define via religion?
+			OR = {
+			religion_group = shaman_n
+			religion_group = shaman_s
+			religion_group = demonic
+			}
+		}
+		allow = {
+			war = yes
+			prestige = 500
+			wealth = 0
+		}
+		effect = {
+			prestige = -500
+			spawn_unit = {
+				owner = ROOT
+				province = ROOT
+				home = ROOT
+				troops = {
+					archers = { 500 500 }
+					light_infantry = { 1500 1500 }
+					heavy_infantry = { 300 300 }
+					light_cavalry = { 200 200 }
+				}
+				attrition = 1.0
+				disband_on_peace = yes
+				maintenance_multiplier = 0.5
+			}
+		}
+		ai_will_do = {
+			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
+		}
+	}
+	
+	#create_hungary = {
+		#is_high_prio = yes
+		#potential = {
+			#has_landed_title = k_magyar
+			#culture = hungarian
+			#k_hungary = {
+				#has_holder = no
+			#}
+			#k_magyar = {
+				#is_vice_royalty = no
+			#}
+		#}
+		#allow = {
+			#war = no
+			#completely_controls = d_pest
+			#OR = {
+				#completely_controls = d_transylvania
+				#completely_controls = d_ungvar
+				#completely_controls = d_nyitra
+			#}
+		#}
+		#effect = {
+			#set_global_flag = avar_khaganate_renamed
+			#k_hungary = {
+				#reset_coa = THIS
+			#}
+			#if = {
+				#limit = { has_nickname = no }
+				#give_nickname = nick_the_great
+			#}
+			#spawn_unit = {
+				#province = 522 # Pest
+				#owner = ROOT
+				#match_character = ROOT
+				#match_mult = 1.0
+				#attrition = 0.5
+			#}
+			#spawn_unit = {
+				#province = 522 # Pest
+				#owner = ROOT
+				#match_character = ROOT
+				#match_mult = 0.5
+				#attrition = 0.5
+			#}
+			#spawn_unit = {
+				#province = 522 # Pest
+				#owner = ROOT
+				#match_character = ROOT
+				#match_mult = 0.33
+				#attrition = 0.5
+			#}
+			#custom_tooltip = {
+				#text = EVTOPTA62910_CUSTOM
+			#}
+			#prestige = 1000
+			#wealth = 1000
+			#narrative_event = { id = 62910 tooltip = EVTTOOLTIP62910 }
+		#}
+		#ai_will_do = {
+			#factor = 1
+		#}
+	#}
+	
+	#restore_priesthood = {
+		#is_high_prio = yes
+		#potential = {
+			#has_dlc = "The Old Gods"
+			#religion_group = zoroastrian_group
+			#NOT = { has_global_flag = zoroastrian_priesthood_founded }
+		#}
+		#allow = {
+			#has_landed_title = e_persia
+			#piety = 300
+		#}
+		#effect = {
+			#set_global_flag = zoroastrian_priesthood_founded
+			#piety = -300
+			#activate_title = { title = d_zoroastrian status = yes }
+			#hidden_tooltip = {
+				#create_random_priest = {
+					#random_traits = yes
+					#religion = zoroastrian
+					#culture = persian
+					#dynasty = random
+					#female = no
+					#age = 41
+				#}
+				#new_character = {
+					#d_zoroastrian = {
+						#grant_title = PREV
+					#}
+					#narrative_event = { id = TOG.6004 days = 2 }
+				#}
+			#}
+			#d_zoroastrian = {
+				#holder_scope = {
+					#e_persia = {
+						#holder_scope = {
+							#set_defacto_vassal = PREVPREV
+						#}
+					#}
+				#}
+			#}
+		#}
+		#ai_will_do = {
+			#factor = 1
+		#}
+	#}
+	
+	
+	form_new_kingdom = {
+		is_high_prio = yes
+		potential = {
+			#has_dlc = "Charlemagne"
+			is_playable = yes
+			tier = DUKE
+			NOT = { tier = KING }
+			OR = {
+				ai = no
+				AND = {
+					trait = proud
+					prestige = 5000
+				}
+				AND = {
+					trait = ambitious
+					prestige = 5000
+				}
+				prestige = 15000
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			prestige = 1000
+			OR = {
+				realm_size = 35
+				custom_tooltip = {
+					text = form_new_kingdom_requirement_tooltip
+					hidden_tooltip = {
+						any_demesne_title = {
+							count = 3
+							tier = DUKE
+						}
+					}
+				}
+			}
+			wealth = 300
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = KING
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+				
+				hidden_tooltip = {
+					empire = {
+						ROOT = {
+							primary_title = {
+								de_jure_liege = PREVPREV
+							}
+						}
+					}
+					
+					ROOT = {
+						primary_title = {
+							holder_scope = {
+								any_title_under = {
+									limit = {
+										tier = DUKE
+										kingdom = {
+											has_holder = no
+										}
+									}
+									de_jure_liege = PREVPREV
+								}
+								any_title_under = {
+									limit = {
+										tier = COUNT
+										location = {
+											duchy = {
+												kingdom = {
+													has_holder = no
+												}
+												
+												NOT = { de_jure_liege_or_above = PREVPREVPREVPREV }
+												ROOT = {
+													completely_controls = PREV
+												}
+											}
+										}
+									}
+									location = {
+										duchy = {
+											de_jure_liege = PREVPREVPREVPREV
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				
+			}
+			wealth = -300
+			custom_tooltip = { text = form_new_kingdom_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_new_empire = {
+		is_high_prio = yes
+		potential = {
+			#has_dlc = "Charlemagne"
+			is_playable = yes
+			tier = KING
+			NOT = { tier = EMPEROR }
+			OR = {
+				ai = no
+				AND = {
+					trait = proud
+					prestige = 40000
+				}
+				AND = {
+					trait = ambitious
+					prestige = 40000
+				}
+				prestige = 120000
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			prestige = 8000
+			OR = {
+				realm_size = 180
+				custom_tooltip = {
+					text = form_new_empire_requirement_tooltip
+					hidden_tooltip = {
+						any_demesne_title = {
+							count = 3
+							tier = KING
+						}
+					}
+				}
+			}
+			wealth = 1000
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = EMPEROR
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+				
+				hidden_tooltip = {
+					ROOT = {
+						primary_title = {
+							holder_scope = {
+								any_title_under = {
+									limit = {
+										tier = KING
+										empire = {
+											has_holder = no
+										}
+									}
+									de_jure_liege = PREVPREV
+								}
+								any_title_under = {
+									limit = {
+										tier = DUKE
+										location = {
+											kingdom = {
+												empire = {
+													has_holder = no
+												}
+												
+												NOT = { de_jure_liege_or_above = PREVPREVPREVPREV }
+												ROOT = {
+													completely_controls = PREV
+												}
+											}
+										}
+									}
+									location = {
+										kingdom = {
+											de_jure_liege = PREVPREVPREVPREV
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			wealth = -1000
+			custom_tooltip = { text = form_new_empire_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }
 
 #################################
@@ -1097,9 +1794,12 @@ feast_0 = {
 			}
 			prisoner = no
 			OR = {
-				#religion_group = christian
-				#religion_group = zoroastrian_group
-				#religion_group = jewish_group
+				religion_group = twelve
+				religion_group = rastullah_group
+				religion_group = maraskan
+				religion_group = shaman_n
+				religion_group = shaman_s
+				religion_group = demonic
 			}
 			NOT = {
 				has_character_modifier = holding_large_feast
@@ -1190,7 +1890,11 @@ feast_0 = {
 	summer_fair = {
 		potential = {
 			is_ruler = yes
-			#religion_group = christian
+			OR = {
+				religion_group = twelve
+				religion_group = rastullah_group
+				religion_group = maraskan
+			}
 			prisoner = no
 			NOT = {
 				has_character_modifier = holding_summer_fair
@@ -1278,18 +1982,10 @@ feast_0 = {
 		potential = {
 			is_ruler = yes
 			age = 16
-			is_female = no
 			prisoner = no
 			OR = {
-				religion_group = christian
+				religion_group = twelve
 				religion_group = pagan_group
-			}
-			NOT = {
-				OR = {
-					#has_landed_title = e_mongol_empire
-					#has_landed_title = e_golden_horde
-					#has_landed_title = e_il-khanate
-				}
 			}
 			NOT = {	has_character_modifier = holding_grand_hunt }
 			NOT = { has_character_flag = do_not_disturb }
@@ -1371,10 +2067,8 @@ feast_0 = {
 			num_of_vassals = 1
 			capital_scope = {
 				OR = {
-					#empire = { title = e_rajastan }
-					#empire = { title = e_bengal }
-					#empire = { title = e_deccan }
-					#empire = { title = e_india }
+					empire = { title = e_meridiana }
+					##placeholder for regions south of Mengbilla
 				}
 			}
 			NOT = { has_character_flag = do_not_disturb }
@@ -1391,7 +2085,7 @@ feast_0 = {
 			NOT = {	trait = incapable }
 			NOT = { trait = in_hiding }
 			prisoner = no
-			NOT = { religion = jain }
+			#NOT = { religion = jain }
 		}
 		effect = {
 			wealth = -25
@@ -1433,6 +2127,7 @@ feast_0 = {
 		}
 	}
 	
+	##adopt this for Twelvegods? PRA could +10 opinion noble vassals RON +1 martial etc for example
 	choose_hindu_patron_deity = {
 		potential = {
 			#has_dlc = "Rajas of India"
@@ -1471,7 +2166,7 @@ feast_0 = {
 		}
 	}
 	
-	catholic_pilgrimage = {        # For all Christians
+	catholic_pilgrimage = {        # allow pilgrimages for Twelvegods?
 		potential = {
 			#has_dlc = "Sons of Abraham"
 			OR = {
@@ -1676,13 +2371,13 @@ feast_0 = {
 		}
 	}
 	
-	commission_runestone = {
+	commission_runestone = { ##appropriated for Gjalsker Cregg'an Mor tradition
 		potential = {
 			#has_dlc = "The Old Gods"
 			is_ruler = yes
 			age = 16
 			prisoner = no
-			#culture_group = north_germanic
+			culture = gjalskerland_c
 			NOT = {	has_character_flag = commissioned_runestone }
 			NOT = { year = 1150 }
 		}
@@ -1722,7 +2417,7 @@ feast_0 = {
 			is_female = no
 			prisoner = no
 			#culture = mongol
-			OR = {
+			OR = { #for Orks maybe?
 				#has_landed_title = e_il-khanate
 				#has_landed_title = e_golden_horde
 				#has_landed_title = e_mongol_empire
@@ -1788,7 +2483,7 @@ feast_0 = {
 		}
 	}	
 	
-	hold_blot = {
+	hold_blot = { #or maybe this for Orks
 		is_high_prio = yes
 		potential = {
 			#has_dlc = "The Old Gods"
@@ -1860,299 +2555,9 @@ feast_0 = {
 				}
 			}
 		}
-	}	
-	
-	hold_ukon_juhla = {
-		potential = {
-			#has_dlc = "The Old Gods"
-			is_ruler = yes
-			age = 16
-			prisoner = no
-			OR = {
-				#religion = finnish_pagan
-				#religion = finnish_pagan_reformed
-			}
-			NOT = { has_character_modifier = held_ukon_juhla_timer }
-			NOT = {	has_character_flag = holding_ukon_juhla }
-			NOT = {	has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			AND = {
-				NOT = { month = 7 }
-				month = 4
-			}
-			wealth = 50
-			prisoner = no
-			NOT = { trait = in_hiding }
-		}
-		effect = {
-			wealth = -50
-			set_character_flag = holding_ukon_juhla
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = TOG.899 days = 150 } } # Safety catch flag clearing
-			custom_tooltip = {
-				text = prepare_ukon_juhla
-				hidden_tooltip = { 
-					character_event = { id = TOG.700 } 
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					wealth = 300
-				}
-			}
-			modifier = {
-				factor = 0
-				trait = shy
-			}
-			modifier = {
-				factor = 0
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-		}
 	}
 	
-	hold_uzgavenes = {
-		potential = {
-			#has_dlc = "The Old Gods"
-			is_ruler = yes
-			age = 16
-			prisoner = no
-			OR = {
-				#religion = baltic_pagan
-				#religion = baltic_pagan_reformed
-			}
-			NOT = { has_character_modifier = held_uzgavenes_timer }
-			NOT = {	has_character_flag = holding_uzgavenes }
-			NOT = {	has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			AND = {
-				NOT = { month = 7 }
-				month = 4
-			}
-			wealth = 50
-			prisoner = no
-			NOT = { trait = in_hiding }
-		}
-		effect = {
-			wealth = -50
-			set_character_flag = holding_uzgavenes
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = TOG.899 days = 150 } } # Safety catch flag clearing
-			custom_tooltip = {
-				text = prepare_uzgavenes
-				hidden_tooltip = { 
-					character_event = { id = TOG.750 } 
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					wealth = 300
-				}
-			}
-			modifier = {
-				factor = 0
-				trait = shy
-			}
-			modifier = {
-				factor = 0
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-		}
-	}
-	
-	hold_jarilo = {
-		potential = {
-			#has_dlc = "The Old Gods"
-			is_ruler = yes
-			age = 16
-			prisoner = no
-			OR = {
-				#religion = slavic_pagan
-				#religion = slavic_pagan_reformed
-			}
-			NOT = { has_character_modifier = held_jarilo_timer }
-			NOT = {	has_character_flag = holding_jarilo }
-			NOT = {	has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			AND = {
-				NOT = { month = 7 }
-				month = 4
-			}
-			wealth = 50
-			prisoner = no
-			NOT = { trait = in_hiding }
-		}
-		effect = {
-			wealth = -50
-			set_character_flag = holding_jarilo
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = TOG.899 days = 150 } } # Safety catch flag clearing
-			custom_tooltip = {
-				text = prepare_jarilo
-				hidden_tooltip = { 
-					character_event = { id = TOG.800 } 
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					wealth = 300
-				}
-			}
-			modifier = {
-				factor = 0
-				trait = shy
-			}
-			modifier = {
-				factor = 0
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-		}
-	}
-	
-	celebrate_passover = {
-		is_high_prio = yes
-		potential = {
-			#has_dlc = "Sons of Abraham"
-			is_ruler = yes
-			age = 16
-			prisoner = no
-			#religion_group = jewish_group
-			NOT = { has_character_modifier = held_passover_timer }
-			NOT = {	has_character_flag = holding_passover }
-			NOT = {	has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			AND = {
-				NOT = { month = 6 }
-				month = 3
-			}
-			wealth = 50
-			prisoner = no
-			NOT = { trait = in_hiding }
-		}
-		effect = {
-			wealth = -50
-			set_character_flag = holding_passover
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = SoA.599 days = 150 } } # Safety catch flag clearing
-			custom_tooltip = {
-				text = passover_celebrations
-				hidden_tooltip = { 
-					character_event = { id = SoA.500 } 
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					wealth = 300
-				}
-			}
-			modifier = {
-				factor = 0
-				trait = shy
-			}
-			modifier = {
-				factor = 0
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-		}
-	}	
-	
-	borrow_money_jews = {
+	borrow_money_jews = { ##borrow from Nordlandbank? consider AGoT mod
 		potential = {
 			OR = {
 				#religion_group = christian
@@ -2237,7 +2642,7 @@ feast_0 = {
 		}
 	}
 
-	become_kshatriya = {
+	become_kshatriya = { #only culture with caste system would be Orks, rising there should be harder/more lethal
 		is_high_prio = yes
 		potential = {
 			is_ruler = yes
@@ -2264,7 +2669,7 @@ feast_0 = {
 				}
 			}
 		}
-
+		
 		effect = {
 			if = {
 				limit = { learning = 12 }
@@ -2333,528 +2738,6 @@ feast_0 = {
 			modifier = {
 				factor = 0.1
 			}
-		}
-	}
-
-	hold_diwali_feast_hindu = {
-		potential = {
-			#has_dlc = "Rajas of India"
-			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			prisoner = no
-			#religion = hindu
-			NOT = { trait = incapable }
-			NOT = { has_character_modifier = patron_kali }
-			NOT = {
-				has_character_modifier = holding_diwali_feast
-			}
-			NOT = {
-				has_character_modifier = holding_kali_puja_feast
-			}
-			NOT = {
-				has_character_modifier = large_feast_timer
-			}
-			NOT = {
-				has_character_modifier = fabulous_feast
-			}
-			NOT = {
-				has_character_flag = guest_diwali_feast_started
-			}
-			NOT = {
-				liege = {
-					has_character_modifier = holding_diwali_feast
-					has_character_modifier = holding_kali_puja_feast
-				}
-			}
-			num_of_vassals = 1
-			NOT = { has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			prisoner = no
-			NOT = { trait = in_hiding }
-			scaled_wealth = 0.2
-			month = 9
-			prestige = 100
-		}
-		effect = {
-			scaled_wealth = -0.2
-			add_character_modifier = {
-				name = holding_diwali_feast
-				duration = 365
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = RoI.1000 } }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0.1
-			modifier = {
-				factor = 0
-				NOT = {
-					scaled_wealth = 2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				trait = shy
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}	
-			modifier = {
-				factor = 0
-				NOT = { age = 30 }
-			}			
-		}
-	}
-
-	hold_diwali_feast_buddhist = {
-		potential = {
-			#has_dlc = "Rajas of India"
-			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			prisoner = no
-			#religion = buddhist
-			NOT = { trait = incapable }
-			NOT = {
-				has_character_modifier = holding_diwali_feast
-			}
-			NOT = {
-				has_character_modifier = holding_kali_puja_feast
-			}
-			NOT = {
-				has_character_modifier = large_feast_timer
-			}
-			NOT = {
-				has_character_modifier = fabulous_feast
-			}
-			NOT = {
-				has_character_flag = guest_diwali_feast_started
-			}
-			NOT = {
-				liege = {
-					has_character_modifier = holding_diwali_feast
-					has_character_modifier = holding_kali_puja_feast
-				}
-			}		
-			num_of_vassals = 1
-			NOT = { has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			prisoner = no
-			NOT = { trait = in_hiding }
-			scaled_wealth = 0.2
-			month = 9
-			prestige = 100
-		}
-		effect = {
-			scaled_wealth = -0.2
-			add_character_modifier = {
-				name = holding_diwali_feast
-				duration = 365
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			
-			hidden_tooltip = { character_event = { id = RoI.1000 } }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0.1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					scaled_wealth = 2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				trait = shy
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = { age = 30 }
-			}
-		}
-	}
-
-	hold_diwali_feast_jain = {
-		potential = {
-			#has_dlc = "Rajas of India"
-			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			prisoner = no
-			#religion = jain
-			NOT = { trait = incapable }
-			NOT = {
-				has_character_modifier = holding_diwali_feast
-			}
-			NOT = {
-				has_character_modifier = holding_kali_puja_feast
-			}
-			NOT = {
-				has_character_modifier = large_feast_timer
-			}
-			NOT = {
-				has_character_modifier = fabulous_feast
-			}
-			NOT = {
-				has_character_flag = guest_diwali_feast_started
-			}
-			NOT = {
-				liege = {
-					has_character_modifier = holding_diwali_feast
-					has_character_modifier = holding_kali_puja_feast
-				}
-			}			
-			num_of_vassals = 1
-			NOT = { has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			prisoner = no
-			NOT = { trait = in_hiding }
-			scaled_wealth = 0.2
-			month = 9
-			prestige = 100
-		}
-		effect = {
-			scaled_wealth = -0.2
-			add_character_modifier = {
-				name = holding_diwali_feast
-				duration = 365
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			
-			hidden_tooltip = { character_event = { id = RoI.1000 } }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0.1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					scaled_wealth = 2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				trait = shy
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = { age = 30 }
-			}
-		}
-	}
-
-	hold_diwali_feast_kali_puja = {
-		potential = {
-			#has_dlc = "Rajas of India"
-			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			prisoner = no
-			#religion = hindu
-			NOT = { trait = incapable }
-			OR = {
-				#has_character_modifier = patron_kali
-				#capital_scope = { kingdom = { title = k_bengal } }
-				#capital_scope = { kingdom = { title = k_kamarupa } }
-				#capital_scope = { kingdom = { title = k_orissa } }
-				#capital_scope = { kingdom = { title = k_bihar } }
-			}
-			NOT = {
-				has_character_modifier = holding_diwali_feast
-			}
-			NOT = {
-				has_character_modifier = holding_kali_puja_feast
-			}
-			NOT = {
-				has_character_modifier = large_feast_timer
-			}
-			NOT = {
-				has_character_modifier = fabulous_feast
-			}
-			NOT = {
-				has_character_flag = guest_diwali_feast_started
-			}
-			NOT = {
-				liege = {
-					has_character_modifier = holding_diwali_feast
-					has_character_modifier = holding_kali_puja_feast
-				}
-			}			
-			num_of_vassals = 1
-			NOT = { has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			prisoner = no
-			NOT = { trait = in_hiding }
-			scaled_wealth = 0.2
-			month = 9
-			prestige = 100
-		}
-		effect = {
-			scaled_wealth = -0.2
-			add_character_modifier = {
-				name = holding_kali_puja_feast
-				duration = 365
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = RoI.1000 } }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0.1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					scaled_wealth = 2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				trait = shy
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = { age = 30 }
-			}		
-		}
-	}
-
-	find_guru = {
-		potential = {
-			age = 16
-			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			prisoner = no
-			#religion_group = indian_group
-			NOT = { has_character_flag = looking_for_guru }
-			NOT = { has_character_flag = found_guru }
-			NOT = {
-				any_courtier = {
-					has_minor_title = title_guru
-				}
-			}
-		}
-		allow = {
-			prisoner = no
-			wealth = 50
-			prestige = 300
-		}
-		effect = {
-			wealth = -50
-			set_character_flag = looking_for_guru
-			character_event = { id = RoI.3000 }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				trait = cynical
-			}
-			modifier = {
-				factor = 0
-				NOT = { wealth = 200 }
-			}
-		}
-	}
-	
-	hold_zun_feast = {
-		potential = {
-			has_dlc = "Charlemagne"
-			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			prisoner = no
-			OR = {
-				#eligion = zun_pagan
-				#religion = zun_pagan_reformed
-			}
-			NOT = { trait = incapable }
-			num_of_vassals = 1
-			NOT = {
-				has_character_modifier = holding_zun_feast
-			}
-			NOT = {
-				has_character_modifier = holding_diwali_feast
-			}
-			NOT = {
-				has_character_modifier = holding_kali_puja_feast
-			}
-			NOT = {
-				has_character_modifier = large_feast_timer
-			}
-			NOT = {
-				has_character_modifier = fabulous_feast
-			}
-			NOT = {
-				has_character_flag = guest_zun_feast_started
-			}
-			NOT = {
-				liege = { has_character_modifier = holding_zun_feast }
-			}
-			NOT = { has_character_flag = do_not_disturb }
-		}
-		allow = {
-			war = no
-			any_demesne_title = {
-				is_occupied = no
-			}
-			prisoner = no
-			NOT = { trait = in_hiding }
-			scaled_wealth = 0.2
-			month = 3
-			NOT = { month = 9 }
-			prestige = 100
-		}
-		effect = {
-			scaled_wealth = -0.2
-			add_character_modifier = {
-				name = holding_zun_feast
-				duration = 365
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = CM.4100 } }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0.1
-			modifier = {
-				factor = 0
-				NOT = {
-					scaled_wealth = 2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				trait = shy
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 730
-					}
-				}
-			}	
-			modifier = {
-				factor = 0
-				NOT = { age = 30 }
-			}			
 		}
 	}
 	
@@ -4713,7 +4596,6 @@ laws = {
 		feudal_opinion = -10
 	}
 	
-	
 	# FEUDAL VASSAL LEVY SIZE LAWS
 	##############################
 	
@@ -5347,7 +5229,6 @@ laws = {
 	}
 	
 	
-	
 	# TEMPLE VASSAL TAX SIZE LAWS
 	##############################
 	
@@ -5517,7 +5398,7 @@ targetted_decisions = {
 			factor = 0
 		}
 	}
-
+	
 	legitimize_bastard = {
 		filter = dynasty
 		ai_target_filter = dynasty
@@ -6524,7 +6405,770 @@ targetted_decisions = {
 			}			
 		}
 	}
+##################################
+###WAY OF LIFE DECISIONS
+#################################
 	
+	break_up_with_lover = {
+		ai_target_filter = court
+		
+		from_potential = {
+			ai = no
+			has_dlc = "Way of Life"
+			has_lover = yes
+		}
+		potential = {
+			is_lover = FROM
+			NOT = { any_spouse = { character = FROM } }
+			NOT = { any_consort = { character = FROM } }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			FROM = { character_event = { id = WoL.1109 tooltip = EVTTOOLTIP64046 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	seduce_decision = {
+		
+		ai_target_filter = realm
+	
+		from_potential = {
+			is_marriage_adult = yes
+			has_focus = focus_seduction
+			NOT = { trait = incapable }
+			prisoner = no
+			NOT = { has_any_opinion_modifier = opinion_seducing }
+			OR = {
+				ai = no
+				AND = {
+					OR = {
+						is_female = no
+						AND = {
+							trait = homosexual
+							OR = {
+								is_married = yes
+								is_consort = yes
+							}
+						}
+						trait = lustful
+						any_spouse = {
+							trait = homosexual
+						}
+						any_consort = {
+							trait = homosexual
+						}
+					}
+					is_ill = no
+					NOT = { trait = eunuch }
+					NOT = { trait = infirm }
+					NOT = { trait = inbred }
+					NOT = { trait = imbecile }
+					NOT = { trait = chaste }
+					NOT = { trait = shy }
+				}
+			}
+		}
+		
+		potential = {
+			is_marriage_adult = yes
+			NOT = { character = FROM }
+			NOT = { trait = incapable }
+			prisoner = no
+			NOT = { is_lover = FROM }
+			NOT = { is_former_lover = FROM }
+			
+			NOT = { is_consort = FROM }
+			NOT = { any_spouse = { character = FROM } }
+			
+			NOT = { is_child_of = FROM }
+			NOT = { mother_even_if_dead = { is_child_of = FROM } }
+			NOT = { father_even_if_dead = { is_child_of = FROM } }
+			FROM = {
+				NOT = { is_child_of = ROOT }
+				NOT = { mother_even_if_dead = { is_child_of = ROOT } }
+				NOT = { father_even_if_dead = { is_child_of = ROOT } }
+			}
+			OR = {
+				AND = {
+					FROM = { NOT = { trait = homosexual } }
+					NOT = { trait = homosexual }
+					NOT = { same_sex = FROM }
+				}
+				AND = {
+					FROM = { trait = homosexual }
+					trait = homosexual
+					same_sex = FROM
+				}
+			}
+		}
+		
+		allow = {
+			NOT = { trait = celibate }
+			NOT = { FROM = { trait = celibate } }
+			religion_group = FROM
+			is_within_diplo_range = FROM
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				FROM = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_seducing
+						years = 1000
+					}
+					
+					if = {
+						limit = {
+							is_close_relative = ROOT
+							NOT = { religion = messalian }
+							NOT = { religion = zoroastrian }
+						}
+						character_event = { id = WoL.102 days = 1 } # Warning - Incest scandal risk
+						break = yes
+					}
+					
+					if = {
+						limit = {
+							same_sex = ROOT
+						}
+						character_event = { id = WoL.104 days = 1 } # Warning - Homosexual scandal risk
+						break = yes
+					}
+					
+					if = {
+						limit = {
+							religion_group = christian
+							OR = {
+								is_priest = yes
+								trait = monk
+								trait = nun
+								ROOT = { is_priest = yes }
+								ROOT = { trait = monk }
+								ROOT = { trait = nun }
+							}
+						}
+						character_event = { id = WoL.103 days = 1 } # Warning - Priest scandal risk
+						break = yes
+					}
+					
+					if = {
+						limit = { 
+							age_diff = {
+								who = ROOT
+								years = 25
+							}
+						}
+						character_event = { id = WoL.101 days = 1 } # Warning - Age scandal risk
+						break = yes
+					}
+					
+					character_event = { id = WoL.100 days = 1 } # No warning - Let the chase begin!
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1 		# 1 = 100% chance every month (for each allowed target!)
+			modifier = {
+				factor = 0.05
+			}
+			modifier = {
+				factor = 0
+				is_female = yes
+				age = 40
+			}
+			modifier = {
+				factor = 0
+				is_female = yes
+				has_character_modifier = lustful_affair_timer
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_lovers = 1
+				NOT = { trait = lustful }
+				NOT = { trait = hedonist }
+				NOT = { trait = seducer }
+				NOT = { trait = seductress }
+				NOT = { has_focus = focus_seduction }
+			}
+			
+			modifier = {
+				factor = 0.25
+				ai = no
+			}
+			
+			modifier = {
+				factor = 0.1
+				is_ruler = no
+				any_spouse = {
+					ai = no
+				}
+				any_consort = {
+					ai = no
+				}
+			}
+			
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						trait = lustful
+						trait = hedonist
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					trait = chaste
+					trait = ugly
+					trait = dwarf
+					trait = inbred
+					trait = imbecile
+					trait = clubfooted
+					trait = harelip
+					trait = hunchback
+					trait = eunuch
+					is_ill = yes
+					is_pregnant = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				is_close_relative = FROM
+				FROM = {
+					NOT = { trait = lustful }
+					NOT = { trait = arbitrary }
+					NOT = { trait = possessed }
+					NOT = { trait = lunatic }
+				}
+			}
+			
+			modifier = {
+				factor = 2
+				trait = gregarious
+			}
+			modifier = {
+				factor = 5 # A more interesting quarry
+				OR = {
+					is_playable = yes
+					is_married = yes
+					father_even_if_dead = {
+						always = yes
+					}
+					mother_even_if_dead = {
+						always = yes
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 10
+				trait = fair
+			}
+		}
+	}
+	
+	decision_spy_on = {
+		ai_target_filter = realm
+		
+		from_potential = {
+			has_focus = focus_intrigue
+			NOT = { trait = incapable }
+			prisoner = no
+			NOT = { has_any_opinion_modifier = opinion_spying_on }
+			NOT = { has_any_opinion_modifier = opinion_breaking_out }
+		}
+		potential = {
+			NOT = { trait = incapable }
+			same_realm = FROM
+			NOT = { character = FROM }
+		}
+		allow = {
+			prisoner = no
+			is_adult = yes
+			is_within_diplo_range = FROM
+		}
+		effect = {
+			hidden_tooltip = {
+				FROM = {
+					any_opinion_modifier_target = {
+						limit = {
+							reverse_has_opinion_modifier = {
+								who = PREV
+								modifier = opinion_spying_on
+							}
+						}
+						reverse_remove_opinion = {
+							who = PREV
+							modifier = opinion_spying_on
+						}
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_spying_on
+						months = 12000
+					}
+					character_event = { id = WoL.2050 days = 1 }
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1 		# 1 = 100% chance every month (for each allowed target!)
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0
+				NOT = { is_rival = FROM }
+				NOT = { is_married = FROM }
+				NOR = {
+					AND = {
+						OR = {
+							is_ruler = yes
+							has_plot = yes
+						}
+						liege = { character = FROM }
+					}
+					AND = {
+						is_ruler = yes
+						same_liege = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_plot = yes
+			}
+			modifier = {
+				factor = 5.0
+				FROM = { trait = paranoid }
+			}
+			modifier = {
+				factor = 10.0
+				in_faction = yes
+				liege = { character = FROM }
+			}
+			modifier = {
+				factor = 10.0
+				FROM = { leads_faction = yes }
+				in_faction = no
+				same_liege = FROM
+			}
+		}
+	}
+	
+	decision_break_free = {
+		is_high_prio = yes
+	
+		filter = sub_realm
+		ai_target_filter = dynasty
+		
+		from_potential = {
+			has_focus = focus_intrigue
+			NOT = { trait = incapable }
+			NOT = { has_any_opinion_modifier = opinion_breaking_out }
+			NOT = { has_any_opinion_modifier = opinion_spying_on }
+		}
+		
+		potential = {
+			NOT = { character = FROM }
+			OR = {
+				AND = {
+					prisoner = yes
+					liege = { character = FROM }
+					host = { NOT = { character = FROM } }
+				}
+				AND = {
+					is_female = yes
+					is_consort = yes
+					prisoner = no
+					consort = {
+						NOT = { character = FROM }
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_forced_consort
+						}
+					}
+					is_close_relative = FROM
+				}
+			}
+		}
+		
+		allow = {
+			NOT = { trait = incapable }
+			NOT = { has_character_modifier = failed_escape }
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				FROM = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_breaking_out
+						months = 12000
+					}
+					if = {
+						limit = { ROOT = { prisoner = yes } }
+						character_event = { id = WoL.2200 days = 1 }
+					}
+					if = {
+						limit = { ROOT = { prisoner = no } }
+						character_event = { id = WoL.2201 days = 1 }
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1 		# 1 = 100% chance every month (for each allowed target!)
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 0
+				trait = decadent
+				religion_group = muslim
+			}
+		}
+	}
+
+	invite_to_party = {
+		ai_target_filter = court
+		
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			has_focus = focus_carousing
+			prisoner = no
+			war = no
+			NOT = { trait = incapable }
+			NOT = { had_character_flag = { flag = inviting_guests_to_party_timer days = 90 } }
+		}
+		potential = {
+			is_adult = yes
+			war = no
+			prisoner = no
+			NOT = { trait = incapable }
+			is_within_diplo_range = FROM
+			NOT = { has_character_flag = carousing_invite }
+			NOT = { character = FROM }                            # Can't do this decision on yourself...
+		}
+		allow = {
+			same_realm = FROM   # Can only invite characters in same realm!
+			NOT = { has_character_modifier = organizing_party }
+			NOT = { has_character_modifier = party_carousing }
+			NOT = {
+				reverse_has_opinion_modifier = {
+					modifier = opinion_declined_party
+					who = FROM
+				}
+			}
+			FROM = {
+				NOT = { has_character_modifier = party_timer }
+				OR = {
+					NOT = { religion_group = muslim }
+					trait = decadent
+					trait = hedonist
+					trait = drunkard
+				}
+			}
+		}
+		effect = {
+			FROM = {
+				if = {
+					limit = {
+						NOT = { has_character_modifier = organizing_party }
+					}
+					add_character_modifier = {
+						name = organizing_party
+						duration = 120
+					}
+					hidden_tooltip = { character_event = { id = WoL.4010 days = 120 } } # Party to be held in four months
+					set_character_flag = inviting_guests_to_party_timer
+				}
+				set_character_flag = do_not_disturb # NOTE
+			}
+			hidden_tooltip = {
+				letter_event = { id = WoL.4000 days = 7 } # Invitee receives event - any number of invitees possible
+			}
+			set_character_flag = carousing_invite
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				FROM = { has_character_modifier = organizing_party } # AI will only invite one person
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					trait = leper
+					trait = has_bubonic_plague
+					trait = has_typhoid_fever
+					trait = has_typhus
+					trait = has_measles
+					trait = has_small_pox
+				}
+			}
+		}
+	}
+	duel_decision = {
+		is_high_prio = yes
+		
+		filter = rivals
+		ai_target_filter = rivals
+		
+		from_potential = {
+			is_adult = yes
+			prisoner = no
+			has_dlc = "Way of Life"
+			has_focus = focus_war
+			has_regent = no
+			OR = {
+				ai = no
+				AND = {
+					is_female = no
+					NOT = { trait = craven }
+					NOT = { trait = content }
+				}
+			}
+			OR = {
+				is_female = no
+				religion_group = pagan_group
+				religion = cathar
+				religion = buddhist
+				religion = bogomilist
+				religion = messalian
+			}
+		}
+		
+		potential = {
+			is_adult = yes
+			prisoner = no
+			OR = {
+				is_female = no
+				FROM = { is_female = yes }
+			}
+			NOT = { character = FROM }
+			is_ill = no
+			NOT = { trait = incapable }
+			NOT = { age = 60 }
+		}
+		
+		allow = {
+			FROM = { ### Valid reason for duel
+				OR = {
+					is_foe = ROOT
+					custom_tooltip = {
+						text = duel_tooltip_excommunicated
+						AND = {
+							trait = zealous
+							ROOT = { 
+								trait = excommunicated
+								religion = ROOT
+							}
+						}
+					}
+					AND = {
+						religion_group = muslim
+						trait = zealous
+						ROOT = {
+							trait = decadent
+						}
+					}
+				}
+				NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_fled_duel } }
+			}
+			custom_tooltip = {
+				text = duel_tooltip_fought_before
+				hidden_tooltip = {
+					NOT = {
+						has_opinion_modifier = { who = FROM modifier = opinion_fought_duel }
+					}
+					FROM = { 
+						NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_fought_duel } }
+					}
+				}
+			}
+			custom_tooltip = {
+				text = duel_tooltip_busy
+				hidden_tooltip = {
+					FROM = {
+						NOT = { has_character_flag = do_not_disturb }
+						NOT = { war = yes }
+					}
+					NOT = { has_character_flag = do_not_disturb }
+					NOT = { war = yes }
+				}
+			}
+			custom_tooltip = {
+				text = duel_tooltip_valid_target
+				hidden_tooltip = { ### Not female or challenger religion accepts female warriors
+					OR = {
+						is_female = no
+						FROM = { religion_group = pagan_group }
+						FROM = { religion = cathar }
+						FROM = { religion = buddhist }
+						FROM = { religion = bogomilist }
+						FROM = { religion = messalian }
+					} ### Not priest or challenger religion is pagan
+					OR = {
+						is_priest = no
+						FROM = { religion_group = pagan_group }
+					}
+				}
+			}
+			custom_tooltip = {
+				text = duel_tooltip_recent_duel
+				hidden_tooltip = {
+					FROM = { NOT = { has_character_modifier = recent_duel_timer } }
+					NOT = { has_character_modifier = recent_duel_timer }
+				}
+			}
+			ROOT = {
+				custom_tooltip = {
+					text = duel_tooltip_sickness
+					hidden_tooltip = {				
+						NOT = {
+							OR = {
+								trait = incapable
+								trait = infirm
+								trait = has_aztec_disease
+								trait = has_small_pox
+								trait = has_measles
+								trait = has_bubonic_plague
+								trait = has_typhus
+								trait = has_typhoid_fever
+								trait = has_tuberculosis
+								trait = leper
+								trait = pneumonic
+							}
+						}
+					}
+				}
+			}
+			FROM = {
+				custom_tooltip = {
+					text = duel_tooltip_sickness
+					hidden_tooltip = {
+						NOT = {
+							OR = {
+								trait = incapable
+								trait = infirm
+								trait = has_aztec_disease
+								trait = has_small_pox
+								trait = has_measles
+								trait = has_bubonic_plague
+								trait = has_typhus
+								trait = has_typhoid_fever
+								trait = has_tuberculosis
+								trait = leper
+								trait = pneumonic
+							}
+						}
+					}
+				}
+			}
+			is_within_diplo_range = ROOT # CPU HEAVY!
+		}
+		
+		effect = {
+			if = { 
+				limit = {
+					OR = {
+						age = 50
+						trait = wounded
+						trait = maimed
+					}
+				}
+				custom_tooltip = { 
+					text = dishonorable_duel_tooltip
+					hidden_tooltip = {
+						FROM = {
+							any_realm_character = {
+								limit = {
+									NOT = { character = FROM }
+									OR = {
+										trait = honest
+										trait = kind
+										trait = just
+									}
+								}
+								opinion = {
+									modifier = opinion_dishonorable_duel
+									who = FROM
+									months = 36
+								}
+							}
+						}
+					}
+				}
+			}
+			FROM = {
+				if = {
+					limit = { religion = jain }
+					piety = -20
+					custom_tooltip = { text = jain_ahimsa_tooltip }
+				}
+				add_character_modifier = {
+					modifier = recent_duel_timer
+					duration = 365
+					hidden = yes
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = WoL.11000 }
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_character_modifier = declined_prestige_duel_timer
+			}
+			modifier = {
+				factor = 0.01
+			}
+		}
+	}
 }
 ############################
 ###FACTION DECISIONS
@@ -7598,6 +8242,1538 @@ plot_decisions = {
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+	}
+	
+	###################################
+	###PLOT DECISIONS
+	####################################
+	plot_gain_title_decision = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_gain_title
+			NOT = { has_character_flag = plot_gain_title_decision_taken }
+		}
+		allow = {
+			plot_power = 0.8
+			num_of_plot_backers = 1
+			plot_target_char = {
+				prisoner = no
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			plot_target_char = {
+				letter_event = { id = 8000 days = 3 tooltip = "EVTTOOLTIP8000" }
+			}
+			hidden_tooltip = {
+				set_character_flag = plot_gain_title_decision_taken
+				activate_plot = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
+
+	plot_gain_vassal_title_decision = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_gain_vassal_title
+			NOT = { has_character_flag = plot_gain_vassal_title_decision_taken }
+		}
+		allow = {
+			plot_power = 0.8
+			num_of_plot_backers = 1
+			plot_target_char = {
+				prisoner = no
+				custom_tooltip = {
+					text = not_under_attack
+					hidden_tooltip = {
+						NOT = {
+							any_war = {
+								defender = {
+									character = PREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			plot_target_char = {
+				letter_event = { id = 8030 days = 3 tooltip = "EVTTOOLTIP8030" }
+			}
+			hidden_tooltip = {
+				set_character_flag = plot_gain_vassal_title_decision_taken
+				activate_plot = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
+	
+	plot_weaken_fellow_vassal_decision = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_weaken_fellow_vassal
+			NOT = { has_character_flag = plot_weaken_fellow_vassal_decision_taken }
+		}
+		allow = {
+			plot_power = 1
+			num_of_plot_backers = 1
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			plot_target_char = {
+				letter_event = { id = 7505 days = 3 tooltip = "EVTTOOLTIP7505" }
+			}
+			hidden_tooltip = {
+				set_character_flag = plot_weaken_fellow_vassal_decision_taken
+				activate_plot = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
+	
+	plot_weaken_fellow_vassal_decision_liege = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_weaken_fellow_vassal
+			NOT = { 
+				has_character_flag = plot_weaken_fellow_vassal_decision_liege_taken
+				has_character_flag = plot_weaken_fellow_vassal_decision_taken
+				plot_target_char  = {
+					reverse_opinion = { 
+						who = liege
+						value = 40
+					}
+				}
+			}
+		}
+		allow = {
+			plot_power = 0.6
+			num_of_plot_backers = 1
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+				
+		effect = {
+			top_liege = {
+				letter_event = {
+					id = 7500
+					days = 3
+					tooltip = "EVTTOOLTIP7500"
+				}
+			}
+			hidden_tooltip = {
+				set_character_flag = plot_weaken_fellow_vassal_decision_liege_taken
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
+	
+	plot_gain_liege_title_decision_100 = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_gain_liege_title
+			NOT = { has_character_flag = plot_gain_liege_title_decision_taken }
+		}
+		allow = {
+			plot_power = 1
+			num_of_plot_backers = 5
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				random_list = {
+					90 = { 
+						character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					}
+					10 = {
+						character_event = { id = 7601 tooltip = "EVTTOOLTIP7601" }
+					}
+				}
+				hidden_tooltip = {
+					set_character_flag = plot_gain_liege_title_decision_taken
+					activate_plot = yes
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	plot_gain_liege_title_decision_75 = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_gain_liege_title
+			NOT = { has_character_flag = plot_gain_liege_title_decision_taken }
+		}
+		allow = {
+			plot_power = 0.75
+			num_of_plot_backers = 3
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				random_list = {
+					60 = { 
+						character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					}
+					40 = {
+						character_event = { id = 7601 tooltip = "EVTTOOLTIP7601" }
+					}
+				}
+				hidden_tooltip = {
+					set_character_flag = plot_gain_liege_title_decision_taken
+					activate_plot = yes
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
+	
+	plot_gain_fellow_vassal_title_decision_100 = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_gain_fellow_vassal_title
+			NOT = { has_character_flag = plot_gain_fellow_vassal_title_decision_taken }
+		}
+		allow = {
+			plot_power = 1
+			num_of_plot_backers = 4
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				random_list = {
+					90 = { 
+						character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					}
+					10 = {
+						character_event = { id = 7602 tooltip = "EVTTOOLTIP7601" }
+					}
+				}
+				hidden_tooltip = {
+					set_character_flag = plot_gain_fellow_vassal_title_decision_taken
+					activate_plot = yes
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	plot_gain_fellow_vassal_title_decision_75 = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_gain_fellow_vassal_title
+			NOT = { has_character_flag = plot_gain_fellow_vassal_title_decision_taken }
+		}
+		allow = {
+			plot_power = 0.75
+			num_of_plot_backers = 3
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				random_list = {
+					60 = { 
+						character_event = { id = 7600 tooltip = "EVTTOOLTIP7600" }
+					}
+					40 = {
+						character_event = { id = 7602 tooltip = "EVTTOOLTIP7601" }
+					}
+				}
+				hidden_tooltip = {
+					set_character_flag = plot_gain_fellow_vassal_title_decision_taken
+					activate_plot = yes
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { plot_power = 0.9 }
+			}
+		}
+	}
+	
+	plot_seize_trade_post_decision = {
+		is_high_prio = yes
+		
+		potential = {
+			age = 16
+			has_plot = plot_seize_trade_post
+			NOT = { has_character_flag = plot_seize_trade_post_decision_taken }
+		}
+		allow = {
+			plot_power = 0.75
+			num_of_plot_backers = 3
+			plot_target_char = {
+				NOT = {
+					any_war = {
+						defender = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				character_event = { id = REP.300 tooltip = EVTTOOLTIPREP.300 }
+				set_character_flag = plot_seize_trade_post_decision_taken
+				activate_plot = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { plot_power = 0.9 }
+					NOT = { wealth = 300 }
+				}
+			}
+		}
+	}
+}
+
+###################################
+###SUCCESSION LAWS
+###################################
+# DO NOT ALTER THE NAME OR NUMBER OF THESE!
+
+succession_laws = {
+
+	succ_gavelkind = {
+		oldest_child_opinion = -10
+		child_opinion = 30
+		dynasty_opinion = 10
+		vassal_opinion = 5
+	
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				NOT = { religion_group = muslim }
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			rebel = no
+			OR = {
+				AND = {
+					tier = baron
+					OR = {
+						is_feudal = yes
+						is_tribal = yes
+					}
+				}
+				holder_scope = { is_feudal = yes }
+				holder_scope = { is_tribal = yes }
+			}
+			is_primary_type_title = no
+		}
+		allow = {
+			holder_scope = {
+				OR = {
+					is_tribal = no
+					NOT = { religion_group = pagan_group }
+				}
+			}
+		}
+		effect = {
+			succession = gavelkind
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_elective_gavelkind = {
+		child_opinion = 25
+		dynasty_opinion = 10
+	
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				NOT = { religion_group = muslim }
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			rebel = no
+			OR = {
+				AND = {
+					tier = baron
+					OR = {
+						is_feudal = yes
+						is_tribal = yes
+					}
+				}
+				holder_scope = { is_feudal = yes }
+				holder_scope = { is_tribal = yes }
+			}
+			is_primary_type_title = no
+		}
+		allow = {
+			holder_scope = { is_tribal = yes }
+		}
+		effect = {
+			succession = elective_gavelkind
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_seniority = {
+		vassal_opinion = -10
+		oldest_child_opinion = -30
+		child_opinion = -20
+		dynasty_opinion = 10
+	
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				OR = {
+					is_merchant_republic = no
+					primary_title = {
+						NOT = { title = PREVPREV }
+					}
+				}
+				
+				NOT = { religion_group = muslim }
+				NOT = { religion_group = indian_group }
+				
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+					is_patrician = yes
+				}
+				
+				OR = {
+					is_republic = no
+					is_patrician = yes
+				}
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = { is_feudal = yes }
+				holder_scope = { is_patrician = yes }
+			}
+			
+			is_primary_type_title = no
+			
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		
+		allow = {
+			OR = {
+				hidden_tooltip = {
+					has_crown_law_title = no
+				}
+				holder_scope = {
+					is_patrician = yes 
+					OR = {
+						is_merchant_republic = no
+						PREV = {
+							is_primary_holder_title = no
+						}
+					}
+				}
+				crownlaw_title = {
+					OR = {
+						has_law = crown_authority_2
+						has_law = crown_authority_3
+						has_law = crown_authority_4
+					}
+				}
+			}
+		}
+		
+		effect = {
+			succession = seniority
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_primogeniture = {
+		oldest_child_opinion = 20
+		youngest_child_opinion = -30
+		child_opinion = -20
+		dynasty_opinion = -5
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				NOT = { religion_group = muslim }
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+				}
+				
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			is_primary_type_title = no
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = { is_feudal = yes }
+			}
+		}
+		allow = {
+			OR = {
+				hidden_tooltip = {
+					has_crown_law_title = no
+				}
+				crownlaw_title = {
+					OR = {
+						has_law = crown_authority_3
+						has_law = crown_authority_4
+					}
+				}
+			}
+		}
+		
+		effect = {
+			succession = primogeniture
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_feudal_elective = {
+		oldest_child_opinion = -30
+		child_opinion = -10
+		dynasty_opinion = -5
+		vassal_opinion = 20
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				NOT = { religion_group = muslim }
+				NOT = { religion_group = indian_group }
+				is_merchant_republic = no
+				is_patrician = no
+				
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+				}
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			is_primary_type_title = no
+			NOT = { tier = baron }
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = { is_feudal = yes }
+			}
+		}
+		effect = {
+			succession = feudal_elective
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_tanistry = {
+		oldest_child_opinion = -40
+		child_opinion = -20
+		dynasty_opinion = 10
+		vassal_opinion = 5
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				NOT = { religion_group = muslim }
+				is_merchant_republic = no
+				is_patrician = no
+				culture_group = celtic
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			is_primary_type_title = no
+			NOT = { tier = baron }
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = { is_feudal = yes }
+			}
+		}
+		effect = {
+			succession = tanistry
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_ultimogeniture = {
+		youngest_child_opinion = 20
+		oldest_child_opinion = -30
+		child_opinion = -20
+		dynasty_opinion = -5
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				OR = {
+					culture = mongol
+					AND = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = pagan }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = west_african_pagan }
+					}
+				}
+				
+				NOT = { religion_group = muslim }
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			is_primary_type_title = no
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = { is_feudal = yes }
+			}
+		}
+		allow = {
+			OR = {
+				hidden_tooltip = {
+					has_crown_law_title = no
+				}
+				crownlaw_title = {
+					NOT = { has_law = crown_authority_0 }
+				}
+			}
+		}
+		
+		effect = {
+			succession = ultimogeniture
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+
+	succ_turkish_succession = {
+		oldest_child_opinion = -10
+#		child_opinion = 30
+#		dynasty_opinion = 10
+		potential = {
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				is_republic = no
+				is_merchant_republic = no
+				religion_group = muslim
+			}
+			is_primary_type_title = no
+		}
+		effect = {
+			succession = turkish_succession
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	succ_papal_succession = {
+		potential = {
+			title = k_papal_state
+		}
+		
+		effect = {
+			succession = papal_succession
+		}
+		revoke_allowed = {
+			always = no
+		}		
+	}
+	
+	# Titles revert back to the liege on death
+	succ_appointment = {
+		potential = {
+			holder_scope = {
+				is_feudal = yes
+				independent = no
+				any_liege = {
+					holy_order = yes
+				}
+				is_merchant_republic = no
+			}
+		}
+		effect = {
+			succession = appointment
+		}
+		revoke_allowed = {
+			always = no
+		}		
+	}
+	
+	succ_open_elective = {
+		potential = {
+			NOT = { title = k_papal_state }
+			temporary = no
+			OR = {
+				is_primary_type_title = yes
+				holy_order = yes
+				AND = {
+					tier = baron
+					OR = {
+						is_republic = yes
+						AND = {
+							is_theocracy = yes
+							NOT = { holder_scope = { religion_group = muslim } }
+						}
+					}
+				}
+				holder_scope = {
+					OR = {
+						is_republic = yes
+						AND = {
+							is_theocracy = yes
+							NOT = { religion_group = muslim }
+						}
+					}
+				}
+			}
+			OR = {
+				is_landless_type_title = yes
+				holder_scope = { is_theocracy = no }
+				holder_scope = { 
+					NOT = { religion = catholic }
+					NOT = { religion = fraticelli }
+				}
+			}
+			holder_scope = { 
+				is_patrician = no
+				is_merchant_republic = no
+				OR = {
+					independent = yes
+					is_feudal = no
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			succession = open_elective
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	succ_catholic_bishopric = {
+		potential = {
+			is_landless_type_title = no
+			OR = {
+				AND = {
+					tier = baron
+					is_theocracy = yes
+				}
+				holder_scope = { is_theocracy = yes }
+			}
+			
+			holder_scope = {
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
+				is_merchant_republic = no
+				OR = {
+					independent = yes
+					is_feudal = no
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+			}
+			is_primary_type_title = no
+		}
+		effect = {
+			succession = catholic_bishopric
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_patrician_elective = {
+		potential = {
+			is_primary_holder_title = yes
+			holder_scope = {
+				is_merchant_republic = yes
+			}
+		}
+		effect = {
+			succession = patrician_elective
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+}
+
+###!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1elf
+gender_laws = {
+	cognatic_succession = {
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+					is_merchant_republic = yes
+				}
+				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
+				has_horde_culture = no
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			
+			is_landless_type_title = no
+			
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = {
+					is_feudal = yes
+				}
+			}
+			
+			is_primary_type_title = no
+		}
+		effect = {
+			gender_succ = cognatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	agnatic_succession = {
+		female_dynasty_opinion = -10
+	
+		potential = {
+			always = yes
+		}
+		effect = {
+			gender_succ = agnatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	true_cognatic_succession = {
+		male_dynasty_opinion = -10
+		
+		potential = {
+			holder_scope = { 
+				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
+				has_horde_culture = no
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			
+			is_landless_type_title = no
+			
+			OR = {
+				AND = {
+					tier = baron
+					is_feudal = yes
+				}
+				holder_scope = { is_feudal = yes }
+			}
+			
+			is_primary_type_title = no
+		}
+		allow = {
+			holder_scope = {
+				OR = {
+					culture = basque
+					religion = cathar
+					religion = messalian
+				}
+			}
+		}
+		effect = {
+			gender_succ = true_cognatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	enatic_succession = {
+		male_dynasty_opinion = -20
+		female_dynasty_opinion = 20
+		
+		potential = {
+			always = no # For modders only
+		}
+		allow = {
+			always=yes
+		}
+		effect = {
+			gender_succ = enatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	enatic_cognatic_succession = {
+		male_dynasty_opinion = -15
+		female_dynasty_opinion = 10
+		
+		potential = {
+			always = no # For modders only
+		}
+		allow = {
+			always=yes
+		}
+		effect = {
+			gender_succ = enatic_cognatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+}
+##############################
+###VASSAL DECISIONS
+##############################
+# Vassal decisions are listed for each courtier and direct vassal. The ruler is in the FROM scope.
+
+vassal_decisions = {
+
+	vassal_fatwa_decision = {
+		from_potential = {
+			religion_group = muslim
+			any_courtier = {
+				has_job_title = job_spiritual
+				religion_group = muslim
+			}
+		}
+		
+		potential = {
+			age = 16
+			is_ruler = yes
+			is_landed = yes
+			prisoner = no
+			is_liege_or_above = FROM
+			religion_group = muslim
+			decadence = 40
+			NOT = { piety = 100 }
+			NOT = { dynasty = FROM }
+			NOT = { has_job_title = job_spiritual }
+			NOT = { has_character_modifier = fatwa_timer }
+		}
+		allow = {
+			NOT = { FROM = { decadence = 40} }
+			FROM = { piety = 100 }
+		}
+		effect = {
+			add_character_modifier = {
+				name = fatwa_timer
+				duration = 1140
+				hidden = yes
+			}
+			FROM = {
+				any_courtier = {
+					limit = { has_job_title = job_spiritual }
+					character_event = { id = 88750 days = 3 tooltip = "EVTTOOLTIP88750" }
+				}
+			}
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 88754 }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				reverse_opinion = { who = FROM value = 40 }
+			}
+		}
+	}
+	
+	vassal_castrate_decision = {
+		from_potential = {
+			culture_group = byzantine
+		}
+	
+		potential = {
+			has_dlc = "Legacy of Rome"
+			prisoner = yes
+			is_female = no
+			NOT = { trait = eunuch }
+			host = { character = FROM }
+		}
+		allow = {
+			prisoner = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				if = {
+					limit = { age = 16}
+					FROM = {
+						character_event = { id = LoR.832 }
+					}
+				}
+				if = {
+					limit = { NOT = { age = 16 } }
+					FROM = {
+						character_event = { id = LoR.834 }
+					}
+				}
+			}
+			character_event = { id = LoR.833 tooltip = "EVTTOOLTIPLoR.833" }
+			add_trait = eunuch
+			prisoner = no
+			opinion = {
+				modifier = opinion_castrated_me
+				who = FROM
+			}
+			FROM = {
+				if = {
+					limit = { NOT = { trait = cruel } }
+					random = {
+						chance = 25
+						add_trait = cruel
+						hidden_tooltip = {
+							character_event = { id = 38259 }
+						}
+					}
+				}
+				piety = -50
+			}
+			hidden_tooltip = {
+				mother = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = FROM
+					}
+				}
+				father = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = FROM
+					}
+				}
+				spouse = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = FROM
+					}
+				}
+				any_child = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = FROM
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							NOT = { dynasty = ROOT }
+							NOT = { sibling = ROOT }
+						}
+					}
+					any_sibling = {
+						opinion = {
+							modifier = opinion_castrated_close_kin
+							who = FROM
+						}
+					}
+					any_dynasty_member = {
+						opinion = {
+							modifier = opinion_castrated_family
+							who = FROM
+						}
+					}
+				}
+				FROM = {
+					remove_opinion = { who = ROOT modifier = opinion_traitor }
+					remove_opinion = { who = ROOT modifier = opinion_rebel_traitor }
+					remove_opinion = { who = ROOT modifier = opinion_dishonorable }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				reverse_opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0
+				FROM = { trait = kind }
+			}
+			modifier = {
+				factor = 0.2 # Less likely to do it
+			}
+			modifier = {
+				factor = 1.2
+				FROM = {
+					OR = {
+						trait = cruel
+						trait = impaler
+					}
+				}
+			}
+		}
+	}
+	
+	vassal_blinding_decision = {
+	
+		from_potential = {
+			culture_group = byzantine
+		}
+	
+		potential = {
+			has_dlc = "Legacy of Rome"
+			prisoner = yes
+			NOT = { trait = blinded }
+			host = { character = FROM }
+		}
+		allow = {
+			prisoner = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = LoR.830 }
+				}
+			}
+			character_event = { id = LoR.831 tooltip = "EVTTOOLTIPLoR.831" }
+			add_trait = blinded
+			prisoner = no
+			opinion = {
+				modifier = opinion_blinded_me
+				who = FROM
+			}
+			FROM = {
+				if = {
+					limit = { NOT = { trait = cruel } }
+					random = {
+						chance = 25
+						add_trait = cruel
+						hidden_tooltip = {
+							character_event = { id = 38259 }
+						}
+					}
+				}
+				piety = -50
+			}
+			hidden_tooltip = {
+				mother = {
+					opinion = {
+						modifier = opinion_blinded_close_kin
+						who = FROM
+					}
+				}
+				father = {
+					opinion = {
+						modifier = opinion_blinded_close_kin
+						who = FROM
+					}
+				}
+				spouse = {
+					opinion = {
+						modifier = opinion_blinded_close_kin
+						who = FROM
+					}
+				}
+				any_child = {
+					opinion = {
+						modifier = opinion_blinded_close_kin
+						who = FROM
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							NOT = { dynasty = ROOT }
+							NOT = { sibling = ROOT }
+						}
+					}
+					any_sibling = {
+						opinion = {
+							modifier = opinion_blinded_close_kin
+							who = FROM
+						}
+					}
+					any_dynasty_member = {
+						opinion = {
+							modifier = opinion_blinded_family
+							who = FROM
+						}
+					}
+				}
+				FROM = {
+					remove_opinion = { who = ROOT modifier = opinion_traitor }
+					remove_opinion = { who = ROOT modifier = opinion_rebel_traitor }
+					remove_opinion = { who = ROOT modifier = opinion_dishonorable }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				reverse_opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0
+				FROM = { trait = kind }
+			}
+			modifier = {
+				factor = 0.4 # Less likely to do it
+			}
+			modifier = {
+				factor = 2
+				is_pretender = yes
+				FROM = {
+					OR = {
+						is_pretender = yes
+						is_primary_heir = yes
+					}
+				}
+			}
+		}
+	}
+	
+	
+	vassal_zun_judgement_decision = {
+	
+		from_potential = {
+			OR = {
+				religion = zun_pagan
+				religion = zun_pagan_reformed
+			}
+		}
+	
+		potential = {
+			prisoner = yes
+			NOT = { has_character_modifier = zun_judgement }
+			host = { character = FROM }
+		}
+		allow = {
+			prisoner = yes
+		}
+		effect = {
+			character_event = { id = CM.15000 days = 1 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 10000000
+			
+			modifier = {
+				factor = 0
+				reverse_opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0
+				FROM = { trait = kind }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = cruel }
+			}
+			modifier = {
+				factor = 0.4 # Less likely to do it
+			}
+			modifier = {
+				factor = 2
+				is_pretender = yes
+				FROM = {
+					OR = {
+						is_pretender = yes
+						is_primary_heir = yes
 					}
 				}
 			}

@@ -584,7 +584,7 @@ rastullah_group = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = yes
 		can_grant_claim = yes
 		can_call_crusade = yes
@@ -728,7 +728,7 @@ shaman_n = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = yes
 		can_grant_claim = yes
 		can_call_crusade = yes
@@ -791,7 +791,7 @@ shaman_n = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = no
 		can_grant_claim = yes
 		can_call_crusade = yes
@@ -857,7 +857,7 @@ shaman_n = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = no
 		can_grant_claim = yes
 		can_call_crusade = yes
@@ -929,7 +929,7 @@ shaman_s = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = yes
 		can_grant_claim = yes
 		can_call_crusade = yes
@@ -992,7 +992,7 @@ shaman_s = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = yes
 		can_grant_claim = yes
 		can_call_crusade = yes
@@ -1152,7 +1152,7 @@ echsen = {
 		
 		investiture = no
 		can_have_antipopes = no
-		can_excommunicate = yes
+		can_excommunicate = no
 		can_grant_divorce = yes
 		can_grant_claim = yes
 		can_call_crusade = yes
