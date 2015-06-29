@@ -1780,7 +1780,6 @@ conscript_merchant_ships = {
 		}
 	}
 	
-}
 
 #################################
 ###MINOR DECISIONS
@@ -2793,7 +2792,7 @@ feast_0 = {
 			}
 		}
 	}
-
+}
 de_jure_laws = {
 
 # CROWN AUTHORITY
@@ -4397,7 +4396,7 @@ laws = {
 				independent = yes
 				is_feudal = yes
 			}
-			has_dlc = "Charlemagne"
+			#has_dlc = "Charlemagne"
 		}
 		revoke_allowed = {
 			always = no
@@ -4427,7 +4426,7 @@ laws = {
 				independent = yes
 				is_feudal = yes
 			}
-			has_dlc = "Charlemagne"
+			#has_dlc = "Charlemagne"
 		}
 		revoke_allowed = {
 			always = no
@@ -4470,7 +4469,7 @@ laws = {
 				independent = yes
 				is_feudal = yes
 			}
-			has_dlc = "Charlemagne"
+			#has_dlc = "Charlemagne"
 		}
 		revoke_allowed = {
 			always = no
@@ -4640,7 +4639,7 @@ laws = {
 				NOT = { tier = baron }
 				holder_scope = { is_patrician = yes }
 			}
-			NOT = { holder_scope = { religion_group = muslim } }
+			#NOT = { holder_scope = { religion_group = muslim } }
 		}
 		revoke_allowed = {
 			always = no
@@ -4672,7 +4671,7 @@ laws = {
 				NOT = { tier = baron }
 				holder_scope = { is_patrician = yes }
 			}
-			NOT = { holder_scope = { religion_group = muslim } }
+			#NOT = { holder_scope = { religion_group = muslim } }
 		}
 		revoke_allowed = {
 			always = no
@@ -6414,7 +6413,7 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
-			has_dlc = "Way of Life"
+			#has_dlc = "Way of Life"
 			has_lover = yes
 		}
 		potential = {
@@ -6896,7 +6895,7 @@ targetted_decisions = {
 			FROM = {
 				NOT = { has_character_modifier = party_timer }
 				OR = {
-					NOT = { religion_group = muslim }
+					#NOT = { religion_group = muslim }
 					trait = decadent
 					trait = hedonist
 					trait = drunkard
@@ -6955,7 +6954,7 @@ targetted_decisions = {
 		from_potential = {
 			is_adult = yes
 			prisoner = no
-			has_dlc = "Way of Life"
+			#has_dlc = "Way of Life"
 			has_focus = focus_war
 			has_regent = no
 			OR = {
@@ -7003,11 +7002,14 @@ targetted_decisions = {
 							}
 						}
 					}
-					AND = {
-						religion_group = muslim
+					AND = {#I like the idea of zealous TRA knights dueling hedonists etc
+						#religion_group = muslim
 						trait = zealous
 						ROOT = {
-							trait = decadent
+							OR = {
+								trait = decadent
+								trait = hedonist
+								trait = drunkard
 						}
 					}
 				}
@@ -7038,17 +7040,17 @@ targetted_decisions = {
 			custom_tooltip = {
 				text = duel_tooltip_valid_target
 				hidden_tooltip = { ### Not female or challenger religion accepts female warriors
-					OR = {
-						is_female = no
-						FROM = { religion_group = pagan_group }
-						FROM = { religion = cathar }
-						FROM = { religion = buddhist }
-						FROM = { religion = bogomilist }
-						FROM = { religion = messalian }
+					#OR = {
+						#is_female = no
+						#FROM = { religion_group = pagan_group }
+						#FROM = { religion = cathar }
+						#FROM = { religion = buddhist }
+						#FROM = { religion = bogomilist }
+						#FROM = { religion = messalian }
 					} ### Not priest or challenger religion is pagan
 					OR = {
 						is_priest = no
-						FROM = { religion_group = pagan_group }
+						#FROM = { religion_group = pagan_group }
 					}
 				}
 			}
@@ -7136,18 +7138,6 @@ targetted_decisions = {
 							}
 						}
 					}
-				}
-			}
-			FROM = {
-				if = {
-					limit = { religion = jain }
-					piety = -20
-					custom_tooltip = { text = jain_ahimsa_tooltip }
-				}
-				add_character_modifier = {
-					modifier = recent_duel_timer
-					duration = 365
-					hidden = yes
 				}
 			}
 			hidden_tooltip = {
@@ -8675,8 +8665,7 @@ plot_decisions = {
 			}
 		}
 	}
-}
-
+	}
 ###################################
 ###SUCCESSION LAWS
 ###################################
@@ -8700,7 +8689,7 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
+				#NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -8810,15 +8799,15 @@ succession_laws = {
 					}
 				}
 				
-				NOT = { religion_group = muslim }
-				NOT = { religion_group = indian_group }
+				#NOT = { religion_group = muslim }
+				#NOT = { religion_group = indian_group }
 				
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-					religion = hellenic_pagan
-					is_patrician = yes
-				}
+				#OR = {
+					#NOT = { religion_group = pagan_group }
+					#is_reformed_religion = yes
+					#religion = hellenic_pagan
+					#is_patrician = yes
+				#}
 				
 				OR = {
 					is_republic = no
@@ -8894,12 +8883,12 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-					religion = hellenic_pagan
-				}
+				#NOT = { religion_group = muslim }
+				#OR = {
+					#NOT = { religion_group = pagan_group }
+					#is_reformed_religion = yes
+					#religion = hellenic_pagan
+				#}
 				
 				is_merchant_republic = no
 				is_patrician = no
@@ -8955,16 +8944,16 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
-				NOT = { religion_group = indian_group }
-				is_merchant_republic = no
-				is_patrician = no
+				#NOT = { religion_group = muslim }
+				#NOT = { religion_group = indian_group }
+				#is_merchant_republic = no#Bornland
+				#is_patrician = no#Bornland
 				
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-					religion = hellenic_pagan
-				}
+				#OR = {
+					#NOT = { religion_group = pagan_group }
+					#is_reformed_religion = yes
+					#religion = hellenic_pagan
+				#}
 			}
 			OR = {
 				is_landless_type_title = no
@@ -9004,10 +8993,10 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
+				#NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				culture_group = celtic
+				#culture_group = celtic
 			}
 			OR = {
 				is_landless_type_title = no
@@ -9047,21 +9036,21 @@ succession_laws = {
 						}
 					}
 				}
-				OR = {
-					culture = mongol
-					AND = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = pagan }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = west_african_pagan }
-					}
-				}
+				#OR = {
+					#culture = mongol
+					#AND = {
+						#NOT = { religion = norse_pagan }
+						#NOT = { religion = tengri_pagan }
+						#NOT = { religion = baltic_pagan }
+						#NOT = { religion = finnish_pagan }
+						#NOT = { religion = aztec }
+						#NOT = { religion = pagan }
+						#NOT = { religion = slavic_pagan }
+						#NOT = { religion = west_african_pagan }
+					#}
+				#}
 				
-				NOT = { religion_group = muslim }
+				#NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -9119,7 +9108,7 @@ succession_laws = {
 				}
 				is_republic = no
 				is_merchant_republic = no
-				religion_group = muslim
+				#religion_group = muslim
 			}
 			is_primary_type_title = no
 		}
@@ -9132,7 +9121,7 @@ succession_laws = {
 	}
 	succ_papal_succession = {
 		potential = {
-			title = k_papal_state
+			title = k_zwoelf
 		}
 		
 		effect = {
@@ -9165,38 +9154,38 @@ succession_laws = {
 	
 	succ_open_elective = {
 		potential = {
-			NOT = { title = k_papal_state }
+			#NOT = { title = k_papal_state }
 			temporary = no
 			OR = {
 				is_primary_type_title = yes
 				holy_order = yes
 				AND = {
 					tier = baron
-					OR = {
-						is_republic = yes
-						AND = {
-							is_theocracy = yes
-							NOT = { holder_scope = { religion_group = muslim } }
-						}
-					}
+					#OR = {
+						#is_republic = yes
+						#AND = {
+							#is_theocracy = yes
+							#NOT = { holder_scope = { religion_group = muslim } }
+						#}
+					#}
 				}
-				holder_scope = {
-					OR = {
-						is_republic = yes
-						AND = {
-							is_theocracy = yes
-							NOT = { religion_group = muslim }
-						}
-					}
-				}
+				#holder_scope = {
+					#OR = {
+						#is_republic = yes
+						#AND = {
+							#is_theocracy = yes
+							#NOT = { religion_group = muslim }
+						#}
+					#}
+				#}
 			}
 			OR = {
 				is_landless_type_title = yes
 				holder_scope = { is_theocracy = no }
-				holder_scope = { 
-					NOT = { religion = catholic }
-					NOT = { religion = fraticelli }
-				}
+				#holder_scope = { 
+					#NOT = { religion = catholic }
+					#NOT = { religion = fraticelli }
+				#}
 			}
 			holder_scope = { 
 				is_patrician = no
@@ -9232,10 +9221,10 @@ succession_laws = {
 			}
 			
 			holder_scope = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
+				#OR = {
+					#religion = catholic
+					#religion = fraticelli
+				#}
 				is_merchant_republic = no
 				OR = {
 					independent = yes
@@ -9272,7 +9261,6 @@ succession_laws = {
 		}			
 	}
 }
-
 ###!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1elf
 gender_laws = {
 	cognatic_succession = {
@@ -9280,19 +9268,12 @@ gender_laws = {
 			holder_scope = {
 				OR = {
 					independent = yes
-					NOT = {
-						any_liege = {
-							holy_order = yes
-						}
-					}
 					is_merchant_republic = yes
 				}
-				NOT = { religion_group = muslim }
-				NOT = { religion = tengri_pagan_reformed }
-				NOT = { religion = tengri_pagan }
+				NOT = { religion_group = rastullah_group }
 				has_horde_culture = no
-				is_merchant_republic = no
-				is_patrician = no
+				#is_merchant_republic = no
+				#is_patrician = no
 			}
 			
 			is_landless_type_title = no
@@ -9330,19 +9311,14 @@ gender_laws = {
 		}			
 	}
 	true_cognatic_succession = {
-		male_dynasty_opinion = -10
+		#male_dynasty_opinion = -10
 		
 		potential = {
 			holder_scope = { 
-				NOT = { religion_group = muslim }
-				NOT = { religion = tengri_pagan_reformed }
-				NOT = { religion = tengri_pagan }
+				NOT = { religion_group = rastullah_group }
 				has_horde_culture = no
-				is_merchant_republic = no
-				is_patrician = no
 			}
 			
-			is_landless_type_title = no
 			
 			OR = {
 				AND = {
@@ -9352,16 +9328,6 @@ gender_laws = {
 				holder_scope = { is_feudal = yes }
 			}
 			
-			is_primary_type_title = no
-		}
-		allow = {
-			holder_scope = {
-				OR = {
-					culture = basque
-					religion = cathar
-					religion = messalian
-				}
-			}
 		}
 		effect = {
 			gender_succ = true_cognatic
@@ -9376,7 +9342,7 @@ gender_laws = {
 		female_dynasty_opinion = 20
 		
 		potential = {
-			always = no # For modders only
+			culture = aranians
 		}
 		allow = {
 			always=yes
@@ -9390,11 +9356,11 @@ gender_laws = {
 	}
 	
 	enatic_cognatic_succession = {
-		male_dynasty_opinion = -15
+		male_dynasty_opinion = -10
 		female_dynasty_opinion = 10
 		
 		potential = {
-			always = no # For modders only
+			culture = aranians
 		}
 		allow = {
 			always=yes
@@ -9417,10 +9383,10 @@ vassal_decisions = {
 
 	vassal_fatwa_decision = {
 		from_potential = {
-			religion_group = muslim
+			religion_group = rastullah_group
 			any_courtier = {
 				has_job_title = job_spiritual
-				religion_group = muslim
+				religion_group = rastullah_group
 			}
 		}
 		
@@ -9430,8 +9396,8 @@ vassal_decisions = {
 			is_landed = yes
 			prisoner = no
 			is_liege_or_above = FROM
-			religion_group = muslim
-			decadence = 40
+			religion_group = rastullah_group
+			#decadence = 40
 			NOT = { piety = 100 }
 			NOT = { dynasty = FROM }
 			NOT = { has_job_title = job_spiritual }
@@ -9473,7 +9439,7 @@ vassal_decisions = {
 	
 	vassal_castrate_decision = {
 		from_potential = {
-			culture_group = byzantine
+			#culture_group = byzantine #which cultures/religions?
 		}
 	
 		potential = {
@@ -9605,7 +9571,7 @@ vassal_decisions = {
 	vassal_blinding_decision = {
 	
 		from_potential = {
-			culture_group = byzantine
+			#culture_group = byzantine #which cultures/religions?
 		}
 	
 		potential = {
@@ -9730,8 +9696,8 @@ vassal_decisions = {
 	
 		from_potential = {
 			OR = {
-				religion = zun_pagan
-				religion = zun_pagan_reformed
+				#religion = zun_pagan
+				#religion = zun_pagan_reformed
 			}
 		}
 	
