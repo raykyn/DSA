@@ -2873,12 +2873,12 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA94088
-		trigger = { NOT = { religion_group = muslim } }
+		#trigger = { NOT = { religion_group = muslim } }
 		change_learning = 1
 	}
 	option = {
 		name = EVTOPTA94091
-		trigger = { religion_group = muslim }
+		#trigger = { religion_group = muslim }
 		change_learning = 1
 	}
 }
@@ -5953,7 +5953,7 @@ character_event = {
 			if = {
 				limit = {
 					NOT = {
-						religion_group = muslim
+						#religion_group = muslim
 					}
 				}
 				add_trait = chaste
@@ -9285,7 +9285,7 @@ character_event = {
 	option = {
 		name = EVTOPTL96500 # War elephants
 		trigger = {
-			religion_group = indian_group
+			#religion_group = indian_group
 			NOT = { trait = war_elephant_leader }
 		}
 		add_trait = war_elephant_leader
@@ -9812,4 +9812,10232 @@ character_event = {
 		}
 		add_trait = siege_leader
 	}
+}
+#############################################
+#
+# EVENTS FOR LOVE, PREGNANCY AND BIRTH
+#
+#############################################
+# by Henrik Fåhraeus
+#############################################
+
+#############################################
+# EVENTS LEADING UP TO BASTARD PREGNANCY
+# (Attraction grows between the male ruler and a female courtier)
+#############################################
+
+# A courtier initiates romance with the liege
+## hopefully fires for fem rulers as well?
+character_event = {
+	id = 450
+	desc = EVTDESC450
+	picture = GFX_evt_lovers
+	
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_marriage_adult = yes
+		
+		OR = {
+			#is_female = no
+			NOT = { age = 40 }
+		}
+		
+		OR = {
+			is_ruler = no
+			liege = {
+				at_location = ROOT
+			}
+		}
+		
+		independent = no
+		has_lover = no
+		is_pregnant = no
+		is_consort = no
+		
+		NOT = { trait = infirm }
+		NOT = { trait = incapable }
+		NOT = { trait = celibate }
+		
+		OR = {
+			is_married = no
+			trait = lustful
+			trait = deceitful
+			spouse = {
+				NOT = { is_lover = ROOT }
+				NOT = { reverse_opinion = { who = ROOT value = 50 } }
+			}
+		}
+		
+		liege = {
+			NOT = { character = ROOT }
+			demesne_size = 1
+			is_pregnant = no
+			prisoner = no
+			has_regent = no
+			NOT = { trait = infirm }
+			NOT = { is_close_relative = ROOT }
+			OR = {
+				AND = {
+					NOT = { trait = homosexual }
+					ROOT = { NOT = { trait = homosexual } }
+					OR = {
+						AND = {
+							is_female = no
+							ROOT = { is_female = yes }
+						}
+						AND = {
+							is_female = yes
+							ROOT = { is_female = no }
+						}
+					}
+				}
+				AND = {
+					trait = homosexual
+					ROOT = { trait = homosexual }
+					OR = {
+						AND = {
+							is_female = no
+							ROOT = { is_female = no }
+						}
+						AND = {
+							is_female = yes
+							ROOT = { is_female = yes }
+						}
+					}
+				}
+			}
+			
+			NOT = { num_of_lovers = 5 }
+			is_marriage_adult = yes
+			OR = {
+				#is_female = no
+				NOT = { age = 40 }
+			}
+			NOT = {
+				has_character_modifier = lustful_affair_timer
+			}
+			NOT = {
+				is_former_lover = ROOT
+			}
+			NOT = { is_rival = ROOT }
+			NOT = { trait = infirm }
+			NOT = { trait = incapable }
+			NOT = { trait = celibate }
+			NOT = { trait = eunuch }
+			NOT = { any_spouse = { character = ROOT } }
+			NOT = { any_consort = { character = ROOT } }
+			opinion = { who = ROOT value = 0 }
+			reverse_opinion = { who = ROOT value = 0 }
+			OR = {
+				is_married = no
+				NOT = { trait = chaste }
+			}
+			NOT = { trait = in_hiding }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		
+		modifier = {
+			factor = 2.0
+			has_dlc = "Way of Life"
+			NOT = { has_focus = focus_seduction }
+			NOT = { liege = { has_focus = focus_seduction } }
+		}
+		
+		modifier = {
+			factor = 2.0
+			liege = { num_of_lovers = 1 }
+		}		
+		modifier = {
+			factor = 3.0
+			liege = { num_of_lovers = 2 }
+		}
+		modifier = {
+			factor = 4.0
+			liege = { num_of_lovers = 3 }
+		}
+		modifier = {
+			factor = 5.0
+			liege = { num_of_lovers = 4 }
+		}
+		modifier = {
+			factor = 2.0
+			is_ruler = yes
+		}
+		modifier = {
+			factor = 4.0
+			religion_group = rastullah_group
+		}
+		modifier = {
+			factor = 4.0
+			liege = { religion_group = rastullah_group }
+		}
+		modifier = {
+			factor = 0.33
+			trait = homosexual # To balance for fewer potential lovers
+		}
+		modifier = {
+			factor = 0.2
+			has_character_flag = debutante
+			NOT = {
+				had_character_flag = {
+					flag = debutante
+					days = 1095
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			is_female = yes
+			NOT = { age = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			liege = {
+				spouse = {
+					NOT = { age = 30 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				spouse = {
+					age = 40
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			age = 30
+		}
+		modifier = {
+			factor = 0.5
+			trait = hedonist
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = hedonist }
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = lustful }
+		}
+		modifier = {
+			factor = 0.5
+			trait = fair
+		}
+		modifier = {
+			factor = 0.5
+			liege = { trait = fair }
+		}
+		modifier = {
+			factor = 2.0
+			trait = shy
+		}
+		modifier = {
+			factor = 2.0
+			liege = { trait = shy }
+		}
+		modifier = {
+			factor = 2.0
+			trait = ugly
+		}
+		modifier = {
+			factor = 2.0
+			liege = { trait = ugly }
+		}
+		modifier = {
+			factor = 10.0
+			trait = chaste
+		}
+		modifier = {
+			factor = 10.0
+			liege = { trait = chaste }
+		}
+		modifier = {
+			factor = 2.0
+			is_female = yes
+			liege = {
+				is_female = no
+				any_child = { trait = bastard } 
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA450
+		liege = {
+			add_character_modifier = {
+				name = lustful_affair_timer
+				duration = 1460
+				hidden = yes
+			}
+			character_event = { id = 451 days = 7 tooltip = EVTTOOLTIP451 }
+		}
+	}
+	option = {
+		name = EVTOPTB450
+		trigger = {
+			ai = no
+		}
+		piety = 5
+	}
+}
+
+# The liege responds to his/her advances
+character_event = {
+	id = 451
+	desc = EVTDESC451
+	picture = GFX_evt_lovers
+
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTA451 # Make a move
+		ai_chance = { factor = 90 }
+		FROM = { character_event = { id = 452 days = 7 tooltip = EVTTOOLTIP452 } }
+	}
+
+	option = {
+		name = EVTOPTB451 # Not appropriate
+		trigger = {
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.01
+				has_focus = focus_seduction
+			}
+		}
+		if = {
+			#limit = {
+				#NOT = { religion_group = zoroastrian_group }
+			#}
+			piety = 5
+		}
+		#if = {
+			#limit = {
+				#religion_group = zoroastrian_group
+			#}
+			#piety = -5
+		#}
+	}
+	option = {
+		name = EVTOPTC451 # Not my type
+		trigger = {
+			ai = no
+			OR = {
+				trait = lustful
+				trait = hedonist
+			}
+		}
+		prestige = -5
+	}
+}
+
+# The courtier accepts or spurns the liege lord
+character_event = {
+	id = 452
+
+	is_triggered_only = yes
+
+	desc = EVTDESC452
+	picture = GFX_evt_lovers
+
+	option = {
+		name = EVTOPTA452 # What took him/her so long?
+		ai_chance = {
+			factor = 90
+		}
+		
+		add_lover = FROM
+		
+		FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+		
+#		log = "452: [From.GetBestName] tumbles [Root.GetBestName]"
+		
+		# Chance of impregnation
+		if = {
+			limit = {
+				fertility = 0.25
+				FROM = { fertility = 0.25 }
+				OR = {
+					AND = {
+						is_female = yes
+						FROM = { is_female = no }
+						NOT = { age = 45 }
+					}
+					AND = {
+						is_female = no
+						FROM = {
+							is_female = yes
+							NOT = { age = 45 }
+						}
+					}
+				}
+			}
+			if = {
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										AND = {
+											is_female = yes 
+											is_married = no
+											is_consort = no
+										}
+										FROM = {
+											is_female = yes
+											is_married = no
+											is_consort = no
+										}
+									}
+								}
+								impregnate = FROM
+#								log = "452: [From.GetBestName] impregnates [Root.GetBestName]"
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+#							log = "452: [From.GetBestName] cuckoo impregnates [Root.GetBestName]"
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									AND = {
+										is_female = yes 
+										is_married = no
+										is_consort = no
+									}
+									FROM = {
+										is_female = yes
+										is_married = no
+										is_consort = no
+									}
+								}
+							}
+							impregnate = FROM
+#							log = "452: [From.GetBestName] impregnates [Root.GetBestName]"
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+#						log = "452: [From.GetBestName] cuckoo impregnates [Root.GetBestName]"
+					}
+					50 = { }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTB452 # Dissuade
+		trigger = {
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_female = no }
+				is_female = yes
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.1
+				liege = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+		}
+		
+		FROM = { character_event = { id = 454 tooltip = EVTTOOLTIP454 } }
+		
+#		log = "452: [Root.GetBestName] rebuffs [From.GetBestName]"
+	}
+
+	option = {
+		name = EVTOPTC452 # Scream for help!
+		trigger = {
+			FROM = { is_female = no }
+			is_female = yes
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.01
+				liege = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+		}
+		FROM = { character_event = { id = 455 tooltip = EVTTOOLTIP455 } }
+		
+#		log = "452: [Root.GetBestName] embarrasses [From.GetBestName]"
+	}
+}
+
+# The ruler becomes his/her lover
+character_event = {
+	id = 453
+
+	is_triggered_only = yes
+
+	desc = EVTDESC453
+	picture = GFX_evt_lovers
+
+	option = {
+		name = EVTOPTA453
+	}
+}
+
+# The initiator is spurned and disappointed
+character_event = {
+	id = 454
+	picture = GFX_evt_quarrel
+
+	is_triggered_only = yes
+
+	desc = EVTDESC454
+
+	option = {
+		name = EVTOPTA454
+		opinion = {
+			who = FROM
+			modifier = opinion_spurned
+			years = 5
+		}
+	}
+}
+
+# The ruler is spurned and embarrassed
+character_event = {
+	id = 455
+	picture = GFX_evt_quarrel
+
+	is_triggered_only = yes
+
+	desc = EVTDESC455
+
+	option = {
+		name = EVTOPTA455
+		opinion = {
+			who = FROM
+			modifier = opinion_embarrassed
+			years = 5
+		}
+	}
+}
+
+# A courtier initiates romance with another courtier
+character_event = {
+	id = 456
+	
+	hide_window = yes
+
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		is_ruler = no
+		is_marriage_adult = yes
+		OR = {
+			is_female = no
+			NOT = { age = 40 }
+		}
+		
+		has_lover = no
+		is_pregnant = no
+		is_ill = no
+		
+		liege = {
+			OR = {
+				ai = no
+				higher_tier_than = DUKE
+			}
+		}
+		
+		NOT = { trait = chaste }
+		NOT = { trait = infirm }
+		NOT = { trait = celibate }
+		NOT = { trait = eunuch }
+		NOT = { trait = in_hiding }
+		
+		# Faithful spouses don't cheat
+		OR = {
+			is_married = no
+			trait = lustful
+			trait = deceitful
+			trait = arbitrary
+			spouse = {
+				NOT = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+		}
+		OR = {
+			is_consort = no
+			trait = lustful
+			trait = deceitful
+			trait = arbitrary
+			consort = {
+				NOT = { reverse_opinion = { who = ROOT value = 0 } }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4000
+		
+		modifier = {
+			factor = 0.5
+			spouse = { is_ruler = yes }
+		}
+		modifier = {
+			factor = 0.5
+			spouse = { has_lover = yes }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { age = 30 }
+			spouse = { age = 50 }
+		}
+		modifier = {
+			factor = 0.33
+			trait = homosexual #to balance for fewer potential lovers
+		}
+		modifier = {
+			factor = 0.33
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = hedonist
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			is_female = yes
+			age = 30
+		}
+		
+		# Harems are well guarded...
+		modifier = {
+			factor = 3.0
+			is_female = yes
+			is_married = yes
+			has_polygamy = yes
+		}
+		
+		# Wives and Concubines of rulers have a harder time initiating this (unless it's their Focus)
+		modifier = {
+			factor = 3.0
+			is_female = yes
+			NOT = { has_focus = focus_seduction }
+			liege = {
+				OR = {
+					is_consort = ROOT
+					any_spouse = {
+						character = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			random_courtier = {
+				limit = {
+					is_ruler = no
+					has_lover = no
+					is_pregnant = no
+					prisoner = no
+					is_marriage_adult = yes
+					is_ill = no
+					
+					NOT = { is_close_relative = ROOT }
+					OR = {
+						AND = {
+							NOT = { trait = homosexual }
+							ROOT = { NOT = { trait = homosexual } }
+							same_sex = no
+						}
+						AND = {
+							trait = homosexual
+							ROOT = { trait = homosexual }
+							same_sex = yes
+						}
+					}
+					
+					OR = {
+						is_female = no
+						NOT = { age = 40 }
+					}
+					
+					NOT = {
+						has_character_modifier = lustful_affair_timer
+					}
+					
+					NOT = { trait = infirm }
+					NOT = { trait = incapable }
+					NOT = { trait = celibate }
+					NOT = { trait = eunuch }
+					NOT = { trait = chaste }
+					
+					OR = {
+						ROOT = {
+							OR = {
+								trait = inbred
+								trait = imbecile
+								trait = dwarf
+								trait = ugly
+							}
+						}
+						AND = {
+							NOT = { trait = inbred }
+							NOT = { trait = imbecile }
+							NOT = { trait = dwarf }
+						}
+					}
+					
+					NOT = { spouse = { character = ROOT } }
+					
+					opinion = { who = ROOT value = 0 }
+					reverse_opinion = { who = ROOT value = 0 }
+					
+					NOT = {
+						is_former_lover = ROOT
+					}
+					
+					# Faithful spouses don't cheat
+					OR = {
+						is_married = no
+						trait = lustful
+						trait = deceitful
+						trait = arbitrary
+						spouse = {
+							NOT = { reverse_opinion = { who = PREV value = 0 } }
+						}
+					}
+					
+					OR = {
+						is_consort = no
+						trait = lustful
+						trait = deceitful
+						trait = arbitrary
+						consort = {
+							NOT = { reverse_opinion = { who = PREV value = 0 } }
+						}
+					}
+				}
+				
+				character_event = { id = 457 }
+			}
+		}
+	}
+}
+
+# Courtier advances accepted or rebuffed by other courtier
+character_event = {
+	id = 457
+	
+	hide_window = yes
+
+	capable_only = yes
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK # Let's tumble!
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 3.0
+				trait = lustful
+			}
+			modifier = {
+				factor = 2.0
+				trait = hedonist
+			}
+		}
+		
+		add_lover = FROM
+		
+		add_character_modifier = {
+			name = lustful_affair_timer
+			duration = 2190
+			hidden = yes
+		}
+		
+#		log = "457: [From.GetBestName] tumbles [Root.GetBestName]"
+		
+		# Chance of impregnation
+		if = {
+			limit = {
+				fertility = 0.25
+				FROM = { fertility = 0.25 }
+				OR = {
+					AND = {
+						is_female = yes
+						FROM = { is_female = no }
+						NOT = { age = 45 }
+					}
+					AND = {
+						is_female = no
+						FROM = {
+							is_female = yes
+							NOT = { age = 45 }
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					fertility = 0.5
+					FROM = { fertility = 0.5 }
+				}
+				random_list = {
+					75 = {
+						if = { 
+							limit = {
+								OR = {
+									AND = {
+										is_female = yes 
+										is_married = no
+										is_consort = no
+									}
+									FROM = {
+										is_female = yes
+										is_married = no
+										is_consort = no
+									}
+								}
+							}
+							impregnate = FROM
+#							log = "457: [From.GetBestName] impregnates [Root.GetBestName]"
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+#						log = "457: [From.GetBestName] cuckoo impregnates [Root.GetBestName]"
+					}
+					25 = { }
+				}
+				break = yes
+			}
+			
+			random_list = {
+				50 = {
+					if = { 
+						limit = {
+							OR = {
+								AND = {
+									is_female = yes 
+									is_married = no
+									is_consort = no
+								}
+								FROM = {
+									is_female = yes
+									is_married = no
+									is_consort = no
+								}
+							}
+						}
+						impregnate = FROM
+#						log = "457: [From.GetBestName] impregnates [Root.GetBestName]"
+						break = yes
+					}
+					impregnate_cuckoo = FROM
+#					log = "457: [From.GetBestName] cuckoo impregnates [Root.GetBestName]"
+				}
+				50 = { }
+			}
+		}
+	}
+	
+	option = {
+		name = NO # No way!
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 50.0
+				OR = {
+					trait = monk
+					trait = nun
+					trait = chaste
+				}
+			}
+			
+			modifier = {
+				factor = 30.0
+				NOT = {
+					OR = {
+						trait = ugly
+						trait = dwarf
+						trait = imbecile
+						trait = inbred
+					}
+				}
+				FROM = {
+					trait = ugly
+					NOT = { trait = seducer }
+					NOT = { trait = seductress }
+				}
+			}
+			
+			modifier = {
+				factor = 30.0
+				NOT = {
+					OR = {
+						trait = ugly
+						trait = dwarf
+						trait = imbecile
+						trait = inbred
+					}
+				}
+				FROM = {
+					trait = dwarf
+					NOT = { trait = seducer }
+					NOT = { trait = seductress }
+				}
+			}
+			modifier = {
+				factor = 30.0
+				NOT = {
+					OR = {
+						trait = ugly
+						trait = dwarf
+						trait = imbecile
+						trait = inbred
+					}
+				}
+				FROM = {
+					trait = imbecile
+					NOT = { trait = seducer }
+					NOT = { trait = seductress }
+				}
+			}
+			modifier = {
+				factor = 100.0
+				NOT = {
+					OR = {
+						trait = ugly
+						trait = dwarf
+						trait = imbecile
+						trait = inbred
+					}
+				}
+				FROM = {
+					trait = inbred
+					NOT = { trait = seducer }
+					NOT = { trait = seductress }
+				}
+			}
+			
+			# Wives and Concubines of rulers are watched...
+			modifier = {
+				factor = 60.0
+				is_female = yes
+				has_polygamy = no
+				NOT = { has_focus = focus_seduction }
+				liege = {
+					OR = {
+						is_consort = ROOT
+						any_spouse = {
+							character = ROOT
+						}
+					}
+				}
+			}
+			
+			# Harems are especially well guarded...
+			modifier = {
+				factor = 200.0
+				is_female = yes
+				is_married = yes
+				has_polygamy = yes
+			}
+		}
+		
+		reverse_opinion = {
+			who = FROM
+			modifier = opinion_spurned
+			years = 5
+		}
+		
+#		log = "457: [Root.GetBestName] rebuffs [From.GetBestName]"
+	}
+}
+
+#############################################
+# PREGNANCY STARTS SHOWING EVENTS
+#############################################
+
+# On-action event: Pregnancy starts showing
+character_event = {
+	id = 400
+	desc = EVTDESC400
+	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = pregnant }
+		father_of_unborn = {
+			any_spouse = {
+				character = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		prestige = 10
+		
+		if = {
+			limit = {
+				father_of_unborn = {
+					is_alive = yes
+				}
+			}
+			
+			hidden_tooltip = {
+				if = {
+					limit = {
+						father_of_unborn = {
+							trait = paranoid
+						}
+					}
+					random = {
+						chance = 50
+						father_of_unborn = { character_event = { id = 404 } }
+						break = yes
+					}
+				}
+				if = {
+					limit = {
+						father_of_unborn = {
+							NOT = { trait = paranoid }
+							NOT = { trait = trusting }
+						}
+					}
+					random = {
+						chance = 1
+						father_of_unborn = { character_event = { id = 404 } }
+						break = yes
+					}
+				}
+			}
+			
+			father_of_unborn = { character_event = { id = 403 tooltip = EVTTOOLTIP403 } }
+		}
+	}
+}
+
+# On-action event: Pregnancy out of wedlock!
+character_event = {
+	id = 401
+	desc = EVTDESC401
+	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = pregnant }
+		is_married = no
+		is_consort = no
+		father_of_unborn = {
+			NOT = {
+				any_spouse = {
+					character = ROOT
+				}				
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		piety = -50
+		prestige = -50
+	}
+}
+
+# On-action event: Pregnancy in matrimony, with another father!
+character_event = {
+	id = 402
+	desc = EVTDESC402
+	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = pregnant }
+		is_married = yes
+		father_of_unborn = {
+			NOT = {
+				any_spouse = {
+					character = ROOT
+				}			
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA402
+		add_trait = pregnant
+		
+#		log = "402: [Root.GetTitledName], wife of [Root.Spouse.GetTitledName] in [Root.Employer.PrimaryTitle.GetName] gets pregnant with [Root.FatherOfUnborn.GetTitledName]."
+		
+		spouse = { character_event = { id = 404 tooltip = EVTTOOLTIP404 } }
+	}
+}
+
+# The husband is a proud father!
+character_event = {
+	id = 403
+	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC403
+
+	option = {
+		name = OK
+		prestige = 5
+	}
+}
+
+# The husband suspects something ain't right
+character_event = {
+	id = 404
+	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = EVTDESC404_KF
+		trigger = {
+			FROM = {
+				father_of_unborn_known = yes
+				father_of_unborn = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+	}
+	
+	desc = {
+		text = EVTDESC404
+		trigger = {
+			NOT = { random = 50 }
+			FROM = {
+				OR = {
+					father_of_unborn_known = no
+					father_of_unborn = { character = ROOT }
+				}
+			}
+		}
+	}
+	
+	desc = {
+		text = EVTDESC404_2
+		trigger = {
+			random = 50
+			FROM = {
+				OR = {
+					father_of_unborn_known = no
+					father_of_unborn = { character = ROOT }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA404 # Doubt besets me...
+		trigger = {
+			FROM = {
+				OR = {
+					father_of_unborn_known = no
+					father_of_unborn = { character = ROOT }
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { trait = trusting }
+				OR = {
+					trait = paranoid
+					intrigue = 10
+					random = 25 # 75% chance
+				}
+			}
+			hidden_tooltip = {
+				FROM = { character_event = { id = 21000 days = 7 random = 16 } } # Investigate this further
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB404 # Denounce them both as traitors!
+		trigger = {
+			FROM = {
+				father_of_unborn_known = yes
+				father_of_unborn = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				father_of_unborn = {
+					save_event_target_as = target_adulterer
+				}
+				character_event = { id = 20 } # Adultery fallout
+			}
+		}
+		
+		FROM = {
+			father_of_unborn = {
+				hidden_tooltip = {
+					character_event = { id = 21006 }
+				}
+			}
+			
+			hidden_tooltip = {
+				character_event = { id = 21005 }
+			}
+		}
+	}
+}
+
+# Hidden bounce event: The husband might investigate
+character_event = {
+	id = 21000
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { character_event = { id = 21001 } }
+	}
+}
+
+# Husband suspects wife is pregnant with another man
+character_event = {
+	id = 21001
+	
+	desc = EVTDESC21001
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA21001 # Hire someone to find out
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.25
+				trait = craven
+			}
+			modifier = {
+				factor = 0.25
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = temperate
+			}
+			modifier = {
+				factor = 2.0
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2.0
+				trait = wroth
+			}
+			modifier = {
+				factor = 5.0
+				trait = cruel
+			}
+			modifier = {
+				factor = 5.0
+				trait = impaler
+			}
+			modifier = {
+				factor = 10
+				trait = paranoid
+			}
+		}
+		wealth = -5
+		hidden_tooltip = {
+			FROM = { character_event = { id = 21002 } } # Investigate this further
+		}
+	}
+	
+	option = {
+		name = EVTOPTB21001 # No, I trust her word!
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Wife: Hidden bounce event: The husband is investigating
+character_event = {
+	id = 21002
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_pregnant = yes
+	}
+	
+	option = {
+		name = OK # Success
+		
+		trigger = {
+			father_of_unborn = {
+				NOT = { character = FROM }
+			}
+		}
+		
+		clr_character_flag = final_unfaithful_investigation
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				FROM = {
+					NOT = { intrigue = 2 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					NOT = { intrigue = 5 }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = {
+					intrigue = 10
+				}
+			}
+			modifier = {
+				factor = 3.0
+				FROM = {
+					intrigue = 15
+				}
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					trait = deceitful
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = {
+					trait = schemer
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = {
+					any_courtier = {
+						has_opinion_modifier = {
+							modifier = opinion_chasing_friend
+							who = ROOT
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = {
+					any_courtier = {
+						has_opinion_modifier = {
+							modifier = opinion_chasing_spouse
+							who = ROOT
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = {
+					any_courtier = {
+						has_opinion_modifier = {
+							modifier = opinion_chasing_child
+							who = ROOT
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = {
+					has_focus = focus_intrigue
+				}
+			}
+		}
+		
+		set_character_flag = spies_adultery
+		FROM = { character_event = { id = 21003 days = 10 random = 30 } }
+	}
+	
+	option = {
+		name = OK # No success yet
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				NOT = { intrigue = 2 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { intrigue = 5 }
+			}
+			modifier = {
+				factor = 2.0
+				intrigue = 10
+			}
+			modifier = {
+				factor = 3.0
+				intrigue = 15
+			}
+			modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.5
+				trait = seducer
+			}
+			modifier = {
+				factor = 2.0
+				trait = schemer
+			}
+			modifier = {
+				factor = 5.0
+				has_character_modifier = wol_court_vixen
+			}
+			modifier = {
+				factor = 5.0
+				father_of_unborn = {
+					has_character_modifier = wol_court_tomcat
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_focus = focus_intrigue
+			}
+		}
+		
+		if = {
+			limit = { has_character_flag = final_unfaithful_investigation }
+			clr_character_flag = final_unfaithful_investigation
+			FROM = { character_event = { id = 21011 days = 15 random = 30 } } # Husband fails
+			break = yes
+		}
+		
+		FROM = { character_event = { id = 21010 days = 15 random = 30 } } # Husband can escalate investigation
+	}
+}
+
+# Husband's investigation is not going well. What now?
+character_event = {
+	id = 21010
+	
+	desc = EVTDESC21010
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA21010 # What a relief!
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0.1
+				has_focus = focus_intrigue
+			}
+			modifier = {
+				factor = 3.0
+				trait = trusting
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB21010 # Confront her directly
+		ai_chance = {
+			factor = 100
+		}
+		hidden_tooltip = {
+			FROM = { character_event = { id = 21012 days = 2 } }
+		}
+	}
+	option = {
+		name = EVTOPTC21010 # Hire more spies!
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { wealth = 100 }
+			}
+			modifier = {
+				factor = 0.1
+				trait = greedy
+			}
+		}
+		wealth = -20
+		hidden_tooltip = {
+			FROM = {
+				set_character_flag = final_unfaithful_investigation
+				character_event = { id = 21002 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD21010 # Lay a trap
+		trigger = {
+			FROM = {
+				NOT = { intrigue = 9 }
+				NOT = { trait = schemer }
+				NOT = { has_character_modifier = wol_court_vixen }
+				father_of_unborn = {
+					is_alive = yes 
+					NOT = { character = ROOT }
+					NOT = { has_character_modifier = wol_court_tomcat }
+				}
+			}
+			OR = {
+				intrigue = 12
+				trait = schemer
+				AND = {
+					has_focus = focus_intrigue
+					intrigue = 5
+				}
+			}
+		}
+		tooltip_info = intrigue
+		ai_chance = {
+			factor = 10000
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = 21016 days = 2 }
+			}
+		}
+	}
+}
+
+# Husband's investigation fails
+character_event = {
+	id = 21011
+	
+	desc = EVTDESC21011
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA21011 # Damnation
+		opinion = {
+			who = FROM
+			modifier = opinion_suspected_adultery
+			months = 60
+		}
+	}
+}
+
+# Husband confronts wife directly
+character_event = {
+	id = 21012
+	
+	desc = EVTDESC21012
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA21012 # Deny
+		ai_chance = {
+			factor = 100
+		}
+		FROM = { character_event = { id = 21013 days = 1 } }
+	}
+	option = {
+		name = EVTOPTB21012 # Tearfully confess
+		trigger = {
+			father_of_unborn = {
+				NOT = { character = FROM }
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0
+				trait = cruel
+			}
+			modifier = {
+				factor = 10.0
+				trait = kind
+			}
+			modifier = {
+				factor = 10.0
+				trait = just
+			}
+			modifier = {
+				factor = 20.0
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+		}
+		set_character_flag = confessed_adultery
+		FROM = { character_event = { id = 21003 days = 1 } }
+	}
+	
+	option = {
+		name = EVTOPTC21012 # Skillfully manipulate him
+		trigger = {
+			OR = {
+				intrigue = 12
+				has_focus = focus_intrigue
+				has_focus = focus_seduction
+				has_character_modifier = wol_court_vixen
+				trait = seductress
+			}
+			FROM = {
+				NOT = { has_focus = focus_intrigue }
+				NOT = { intrigue = 9 }
+			}
+		}
+		tooltip_info = intrigue
+		ai_chance = {
+			factor = 10000
+		}
+		FROM = { character_event = { id = 21015 days = 1 } }
+	}
+}
+
+# Wife denies. Husband's investigation fails.
+character_event = {
+	id = 21013
+	
+	desc = EVTDESC21013
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_alive = yes }
+	}
+	
+	option = {
+		name = EVTOPTA21013 # Alright
+		opinion = {
+			who = FROM
+			modifier = opinion_suspected_adultery
+			months = 60
+		}
+	}
+}
+
+# Wife caught. Consequences...
+character_event = {
+	id = 21003
+	
+	desc = { 
+		text = EVTDESC21003_CR
+		trigger = {
+			FROM = {
+				has_character_flag = spies_adultery
+				father_of_unborn = {
+					is_close_relative = PREV
+				}
+			}
+		}
+	}
+	
+	desc = { 
+		text = EVTDESC21003
+		trigger = {
+			FROM = {
+				has_character_flag = spies_adultery
+				father_of_unborn = {
+					NOT = { is_close_relative = PREV }
+				}
+			}
+		}
+	}
+	
+	desc = { 
+		text = EVTDESC21003_CONF_CR
+		trigger = {
+			FROM = {
+				has_character_flag = confessed_adultery
+				father_of_unborn = {
+					is_close_relative = PREV
+				}
+			}
+		}
+	}
+	
+	desc = { 
+		text = EVTDESC21003_CONF
+		trigger = {
+			FROM = {
+				has_character_flag = confessed_adultery
+				father_of_unborn = {
+					NOT = { is_close_relative = PREV }
+				}
+			}
+		}
+	}
+	
+	desc = { 
+		text = EVTDESC21003_TRAP_CR
+		trigger = {
+			FROM = {
+				has_character_flag = trap_adultery
+				father_of_unborn = {
+					is_close_relative = PREV
+				}
+			}
+		}
+	}
+	
+	desc = { 
+		text = EVTDESC21003_TRAP
+		trigger = {
+			FROM = {
+				has_character_flag = trap_adultery
+				father_of_unborn = {
+					NOT = { is_close_relative = PREV }
+				}
+			}
+		}
+	}
+	
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_alive = yes }
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_character_flag = trap_adultery
+					has_character_flag = spies_adultery
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = paranoid }
+					NOT = { trait = trusting }
+				}
+				random = {
+					chance = 10
+					add_trait = paranoid
+					hidden_tooltip = {
+						character_event = { id = 38275 days = 3 } # Paranoid gained
+					}
+				}
+			}
+			
+			if = {
+				limit = { trait = trusting }
+				random = {
+					chance = 20
+					remove_trait = trusting
+					hidden_tooltip = {
+						character_event = { id = 38306 days = 3 } # Trusting lost
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA21003 # Keep this quiet
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				trait = wroth
+			}
+			modifier = {
+				factor = 0
+				trait = cruel
+			}
+			modifier = {
+				factor = 0
+				trait = envious
+			}
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = temperate
+			}
+			modifier = {
+				factor = 5
+				trait = kind
+			}
+			modifier = {
+				factor = 5
+				trait = cynical
+			}
+		}
+		
+		FROM = {
+			clr_character_flag = trap_adultery
+			clr_character_flag = confessed_adultery
+			clr_character_flag = spies_adultery
+			
+			reverse_opinion = {
+				who = ROOT
+				modifier = opinion_unfaithful_private
+				months = 60
+			}
+			father_of_unborn = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_cuckolded_private
+					months = 60
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = {
+			text = EVTOPTB21003 # Unholy!
+			trigger = {
+				#NOT = { religion = zoroastrian }
+				#NOT = { religion = messalian }
+				FROM = {
+					father_of_unborn = {
+						is_close_relative = PREV
+					}
+				}
+			}
+		}
+		name = {
+			text = EVTOPTC21003 # Holy, but they are still traitors!
+			trigger = {
+			#no idea if this could fit some Aventurian religion/culture
+				#OR = {
+					#religion = zoroastrian
+					#religion = messalian
+				#}
+				FROM = {
+					father_of_unborn = {
+						is_close_relative = PREV
+					}
+				}
+			}
+		}
+		name = {
+			text = EVTOPTD21003 # Traitors!
+			trigger = {
+				FROM = {
+					father_of_unborn = {
+						NOT = { is_close_relative = PREV }
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				father_of_unborn = {
+					save_event_target_as = target_adulterer
+				}
+				character_event = { id = 20 } # Adultery fallout
+			}
+		}
+		
+		FROM = {
+			father_of_unborn_known = yes
+			father_of_unborn = {
+				hidden_tooltip = {
+					character_event = { id = 21006 }
+				}
+			}
+			
+			hidden_tooltip = {
+				if = {
+					limit = { has_character_flag = spies_adultery }
+					character_event = { id = 21005 }
+				}
+			}
+			
+			clr_character_flag = trap_adultery
+			clr_character_flag = confessed_adultery
+			clr_character_flag = spies_adultery
+		}
+	}
+}
+
+# Wife denies and manipulates husband.
+character_event = {
+	id = 21015
+	
+	desc = EVTDESC21015
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_alive = yes }
+	}
+	
+	option = {
+		name = EVTOPTA21015 # Alright
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_regrets_accusation
+			months = 36
+		}
+		
+		if = {
+			limit = {
+				NOT = { trait = paranoid }
+				NOT = { trait = trusting }
+			}
+			random = {
+				chance = 20
+				add_trait = trusting
+				hidden_tooltip = {
+					character_event = { id = 38250 } # Trusting gained
+				}
+			}
+		}
+		
+		if = {
+			limit = { trait = paranoid }
+			random = {
+				chance = 20
+				remove_trait = paranoid
+				hidden_tooltip = {
+					character_event = { id = 38305 } # Paranoid lost
+				}
+			}
+		}
+	}
+}
+
+# Wife: husband has laid a trap
+character_event = {
+	id = 21016
+	
+	desc = EVTDESC21016
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_alive = yes }
+	}
+	
+	option = {
+		name = EVTOPTA21016 # That conniving bastard!
+		
+		set_character_flag = trap_adultery
+		FROM = {
+			character_event = { id = 21003 tooltip = EVTTOOLTIP21003_TRAP }
+		}
+	}
+}
+
+# The unfaithful wife is notified that the husband knows
+character_event = {
+	id = 21005
+	desc = EVTDESC21005
+	
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA21005 # Damn!
+	}
+}
+
+# The adulterer is notified that the husband knows
+character_event = {
+	id = 21006
+	desc = EVTDESC21006
+	
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA21006 # Damn!
+		trigger = { is_liege_or_above = FROM }
+	}
+	option = {
+		name = EVTOPTB21006 # Damn!
+		trigger = { NOT = { is_liege_or_above = FROM } }
+	}
+}
+
+
+# Consort: Pregnancy starts showing
+character_event = {
+	id = 410
+	desc = EVTDESC410
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = pregnant }
+		father_of_unborn = {
+			is_consort = ROOT
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		prestige = 10
+		
+		if = {
+			limit = {
+				father_of_unborn = {
+					is_alive = yes
+				}
+			}
+			
+			hidden_tooltip = {
+				if = {
+					limit = {
+						father_of_unborn = {
+							trait = paranoid
+						}
+					}
+					random = {
+						chance = 50
+						father_of_unborn = { character_event = { id = 404 } }
+						break = yes
+					}
+				}
+				if = {
+					limit = {
+						father_of_unborn = {
+							NOT = { trait = paranoid }
+							NOT = { trait = trusting }
+						}
+					}
+					random = {
+						chance = 1
+						father_of_unborn = { character_event = { id = 404 } }
+						break = yes
+					}
+				}
+			}
+			
+			father_of_unborn = { character_event = { id = 413 tooltip = EVTTOOLTIP413 } }
+		}
+	}
+}
+
+# Consort: Pregnancy with another father!
+character_event = {
+	id = 412
+	desc = EVTDESC412
+	picture = "GFX_evt_pregnancy"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = pregnant }
+		is_consort = yes
+		father_of_unborn = {
+			NOT = {
+				is_consort = ROOT		
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA412
+		add_trait = pregnant
+		consort = { character_event = { id = 404 tooltip = EVTTOOLTIP404 } }
+	}
+}
+
+# The consort's liege is a proud father!
+character_event = {
+	id = 413
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes 
+	
+	desc = EVTDESC413
+
+	option = {
+		name = OK
+		prestige = 5
+	}
+}
+
+#############################################
+# EVENTS ON THE BIRTH OF A BASTARD CHILD
+#############################################
+
+# On-action event: A child is born out of wedlock
+character_event = {
+	id = 300
+	desc = EVTDESC300
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		was_conceived_a_bastard = yes
+		NOT = { real_father = { always = yes } } # There is no 'real_father' set, i.e. this is not a hidden, cuckoo bastard
+	}
+
+	option = {
+		name = OK
+		father = {
+			character_event = { id = 301 days = 1 } # The father's reaction
+		}
+	}
+}
+
+# The father reacts to the bastard birth
+character_event = {
+	id = 301
+	desc = EVTDESC301
+	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA301 # Legitimize the child
+		trigger = {
+			has_polygamy = no
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = { is_female = yes }
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					NOT = { age = 50 }
+					any_child = {
+						is_alive = yes
+						is_female = no
+					}
+				}
+			}
+			modifier = {
+				factor = 0.2
+				trait = zealous
+				#religion_group = christian
+				#NOT = {
+					#OR = {
+						#religion = bogomilist
+						#religion = cathar
+						#religion = paulician
+						#religion = messalian
+					#}
+				#}
+			}
+			modifier = {
+				factor = 2.0
+				trait = just
+			}
+			modifier = {
+				factor = 2.0
+				trait = kind
+			}
+		}
+		
+		custom_tooltip = { text = EVTOPTA301_DESC }
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = 302 } # The child gets the father's dynasty
+			}
+			mother = {
+				character_event = { id = 303 tooltip = EVTTOOLTIP303 } # The child's mother is very pleased
+				spouse = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's husband is pissed off
+				}		
+				consort = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's lord is pissed off
+				}			
+			}
+		}
+		any_child = {
+			limit = {
+				NOT = { character = FROM }
+				dynasty = ROOT
+				NOT = { trait = bastard }
+			}
+			opinion = {
+				who = ROOT
+				modifier = legitimized_bastard
+				months = 12
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB301 # Acknowledge the child
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				FROM = { is_female = yes }
+			}
+			modifier = {
+				factor = 0.5
+				trait = zealous
+				#religion_group = christian
+				#NOT = {
+					#OR = {
+						#religion = bogomilist
+						#religion = cathar
+						#religion = paulician
+						#religion = messalian
+					#}
+				#}
+			}
+			modifier = {
+				factor = 2.0
+				trait = just
+			}
+			modifier = {
+				factor = 2.0
+				trait = kind
+			}
+		}
+		
+		custom_tooltip = { text = EVTOPTB301_DESC }
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = 306 } # The child gets the father's dynasty, but is not legitimized.
+			}
+			if = {
+				limit = { trait = born_in_the_purple }
+				remove_trait = born_in_the_purple
+			}
+			mother = {
+				character_event = { id = 307 tooltip = EVTTOOLTIP307 } # The child's mother is pleased
+				spouse = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's husband is pissed off
+				}
+				consort = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's man is pissed off
+				}				
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC301 # Denounce the child
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2.0
+				trait = cruel
+			}
+			modifier = {
+				factor = 2.0
+				trait = arbitrary
+			}
+		}
+		
+		custom_tooltip = { text = EVTOPTC301_DESC }
+		
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = 309 } #  The child founds a new bastard dynasty
+			}
+			#if = {
+				#limit = { trait = born_in_the_purple }
+				#remove_trait = born_in_the_purple
+			#}
+			#if = {
+				#limit = { trait = saoshyant_descendant }
+				#remove_trait = saoshyant_descendant
+			#}
+			#if = {
+				#limit = { trait = sayyid }
+				#remove_trait = sayyid
+			#}
+			mother = {
+				character_event = { id = 310 tooltip = EVTTOOLTIP310 } # The child's mother is dishonoured
+				spouse = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's husband is pissed off
+				}	
+				consort = {
+					character_event = { id = 304 tooltip = EVTTOOLTIP304 } # The child's mother's man is pissed off
+				}				
+			}
+		}
+	}
+}
+
+# The child gets the father's dynasty
+character_event = {
+	id = 302
+	
+	is_triggered_only = yes 
+	desc = EVTDESC302
+	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_intrigue
+
+	option = {
+		name = OK
+		dynasty = FROM
+		remove_trait = bastard
+		add_trait = legit_bastard
+		
+		father = {
+			spouse = {
+				character_event = { id = 305 tooltip = EVTTOOLTIP305 } # The father's wife is enraged
+			}
+		}
+	}
+}
+
+# The child's mother is very pleased
+character_event = {
+	id = 303
+	
+	is_triggered_only = yes 
+	desc = EVTDESC303
+	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_diplomacy
+
+	option = {
+		name = EVTOPTA303
+		opinion = {
+			who = FROM
+			modifier = legitimized_child
+			years = 10
+		}
+	}
+}
+
+# The child's mother's husband is pissed off
+character_event = {
+	id = 304
+	picture = GFX_evt_quarrel
+	border = GFX_event_normal_frame_intrigue
+	desc = EVTDESC304
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = EVTOPTA304
+		FROMFROM = {
+			real_father = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_cuckolded
+					years = 10
+				}
+			}
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_unfaithful_wife
+					years = 10
+				}
+			}
+		}
+	}
+}
+
+# The father's wife is enraged
+character_event = {
+	id = 305
+	desc = EVTDESC305
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = EVTOPTA305
+		FROM = {
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = slut_seductress
+					years = 20
+				}
+			}
+		}
+		
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = legitimized_bastard
+				years = 20
+			}
+		}
+	}
+}
+
+# The child gets the father's dynasty, but is not legitimized.
+character_event = {
+	id = 306
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC306
+	picture = GFX_evt_birth
+
+	option = {
+		name = OK
+		dynasty = FROM
+		add_trait = bastard
+		
+		father = {
+			spouse = {
+				character_event = { id = 308 tooltip = EVTTOOLTIP308 } # The father's wife is angered
+			}
+		}
+	}
+}
+
+# The child's mother is pleased
+character_event = {
+	id = 307
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC307
+	picture = GFX_evt_birth
+
+	option = {
+		name = EVTOPTA307
+		opinion = {
+			who = FROM
+			modifier = acknowledged_child
+			years = 10
+		}
+	}
+}
+
+# The father's wife is angered
+character_event = {
+	id = 308
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC308
+
+	option = {
+		name = EVTOPTA308
+		FROM = {
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = slut_seductress
+					years = 20
+				}
+			}
+		}
+		
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = acknowledged_bastard
+				years = 10
+			}
+		}
+	}
+}
+
+# The child is denounced
+character_event = {
+	id = 309
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC309
+	picture = GFX_evt_birth
+
+	option = {
+		name = OK
+		dynasty = mother_bastard
+		
+		father = {
+			spouse = {
+				character_event = { id = 311 } # The father's wife is displeased
+			}
+		}
+		set_father = 0
+		set_real_father = FROM
+	}
+}
+
+# The child's mother is dishonoured
+character_event = {
+	id = 310
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC310
+
+	option = {
+		name = EVTOPTA310
+		opinion = {
+			who = FROM
+			modifier = denounced_child
+			years = 10
+		}
+	}
+}
+
+# The father's wife is displeased
+character_event = {
+	id = 311
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes 
+		
+	desc = EVTDESC311
+
+	option = {
+		name = EVTOPTA311
+		FROM = {
+			mother = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = slut_seductress
+					years = 20
+				}
+			}
+		}
+		
+		spouse = {
+			reverse_opinion = {
+				who = ROOT
+				modifier = opinion_unfaithful_husband
+				years = 5
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 312
+	desc = "EVTDESC312"
+	picture = "GFX_evt_birth"
+	
+	is_triggered_only = yes 	
+	
+	trigger = {
+		mother = {
+			is_consort = yes #TODO: Should probably track this in code instead, in case consort status changes during pregnancy
+		}
+	}	
+	
+	option = {
+		name = "EVTOPTA12"
+		add_trait = child_of_consort
+	}
+}
+
+# On-action event: Birth complications
+character_event = {
+	id = 313
+	desc = OK
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { age = 1 }
+	}
+
+	immediate = {
+		random_list = {
+			80 = {
+				# All is well
+			}
+			10 = {
+				add_trait = sickly
+			}
+			10 = {
+				add_trait = ill
+			}
+		}
+	}
+
+	option = { # No complications
+		name = OK
+		ai_chance = {
+			factor = 120
+			modifier = {
+				factor = 2.0
+				mother = {
+					health = 6
+				}
+			}
+			modifier = {
+				factor = 2.0
+				mother = {
+					health = 7
+				}
+			}
+			modifier = {
+				factor = 2.0
+				mother = {
+					num_of_children = 3
+				}
+			}
+			modifier = {
+				factor = 1.2
+				age = 20
+			}
+			modifier = {
+				factor = 1.2
+				age = 25
+			}
+			modifier = {
+				factor = 1.2
+				age = 30
+			}
+		}
+	}
+	option = { # Mother gets ill
+		name = OK
+		ai_chance = {
+			factor = 12
+			modifier = {
+				factor = 0
+				mother = {
+					trait = pneumonic
+				}
+			}
+			modifier = {
+				factor = 2.0
+				mother = {
+					NOT = { health = 4.1 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				mother = {
+					NOT = { num_of_children = 2 }
+				}
+			}
+		}
+		
+		mother = {
+			if = {
+				limit = {
+					trait = ill
+				}
+				character_event = { id = 316 }
+			}
+			if = {
+				limit = {
+					NOT = { trait = ill }
+				}
+				character_event = { id = 315 }
+			}
+		}
+	}
+	option = { # Mother gets pneumonia
+		name = OK
+		ai_chance = {
+			factor = 8
+			
+			modifier = {
+				factor = 2.0
+				mother = {
+					NOT = { health = 4.1 }
+				}
+			}
+			modifier = {
+				factor = 6.0
+				mother = {
+					NOT = { health = 3.1 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				mother = {
+					NOT = { num_of_children = 2 }
+				}
+			}
+		}
+		
+		mother = {
+			if = {
+				limit = {
+					OR = {
+						trait = pneumonic 
+						has_epidemic = yes
+					}
+				}
+				death = {
+					death_reason = death_childbirth
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							trait = pneumonic 
+							has_epidemic = yes
+						}
+					}
+				}
+				character_event = { id = 316 }
+			}
+		}
+	}
+	option = { # Mother dies
+		name = OK
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2.0
+				mother = {
+					NOT = { health = 4.1 }
+				}
+			}
+			modifier = {
+				factor = 6.0
+				mother = {
+					NOT = { health = 3.1 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				mother = {
+					NOT = { num_of_children = 2 }
+				}
+			}
+		}
+		mother = {
+			death = {
+				death_reason = death_childbirth
+			}
+		}
+	}
+}
+
+# On-action event: Birth complications after a stillbirth
+character_event = {
+	id = 314
+	desc = OK
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		age = 1
+	}
+	
+	option = { # No complications
+		name = OK
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 2.0
+				health = 6
+			}
+			modifier = {
+				factor = 2.0
+				health = 7
+			}
+			modifier = {
+				factor = 2.0
+				num_of_children = 3
+			}
+			modifier = {
+				factor = 1.2
+				age = 20
+			}
+			modifier = {
+				factor = 1.2
+				age = 25
+			}
+			modifier = {
+				factor = 1.2
+				age = 30
+			}
+		}
+	}
+	option = { # Mother gets ill
+		name = OK
+		ai_chance = {
+			factor = 22
+			modifier = {
+				factor = 0
+				trait = pneumonic
+			}
+			modifier = {
+				factor = 2.0
+				NOT = { health = 4.1 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { num_of_children = 2 }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = ill
+			}
+			character_event = { id = 315 }
+		}
+		if = {
+			limit = {
+				NOT = { trait = ill }
+			}
+			character_event = { id = 314 }
+		}
+	}
+	option = { # Mother gets pneumonia
+		name = OK
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 2.0
+				NOT = { health = 4.1 }
+			}
+			modifier = {
+				factor = 6.0
+				NOT = { health = 3.1 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { num_of_children = 2 }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = pneumonic 
+					has_epidemic = yes
+				}
+			}
+			death = {
+				death_reason = death_childbirth
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						trait = pneumonic 
+						has_epidemic = yes
+					}
+				}
+			}
+			character_event = { id = 315 }
+		}
+	}
+	option = { # Mother dies
+		name = OK
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2.0
+				NOT = { health = 4.1 }
+			}
+			modifier = {
+				factor = 6.0
+				NOT = { health = 3.1 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { num_of_children = 2 }
+			}
+		}
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+# Mother ill after giving birth
+character_event = {
+	id = 315
+	desc = EVTDESC315
+	picture = GFX_evt_illness
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_trait = ill
+	}
+
+	option = {
+		name = EVTOPTA315
+		tooltip = {
+			add_trait = ill
+		}
+	}
+}
+
+# Mother pneumonic after giving birth
+character_event = {
+	id = 316
+	desc = EVTDESC315
+	picture = GFX_evt_illness
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_trait = pneumonic
+	}
+
+	option = {
+		name = EVTOPTA315
+		tooltip = {
+			add_trait = pneumonic
+		}
+	}
+}
+	
+# On-action event: A bastard child is born, but is not recognized as such by the spouse of the mother
+character_event = {
+	id = 318
+	desc = EVTDESC318
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		real_father = {
+			is_alive = yes
+			ROOT = {
+				father = {
+					NOT = { character = PREVPREV }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+		mother = {
+			character_event = { id = 317 } # The real father is notified
+		}
+	}
+}
+
+# Ping the mother
+character_event = {
+	id = 317
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			real_father = {
+				character_event = { id = 319 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 319
+	desc = EVTDESC319
+	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA319
+		piety = -1
+		
+		# Just to get the portraits
+		FROMFROM = {
+			break = yes
+		}
+		FROMFROM = {
+			father = {
+				break = yes
+			}
+		}
+	}
+}
+###########################################
+#
+# Campaign Events
+#
+# ID 6900-6999 is reserved
+#
+###########################################
+#
+# Written by Johan Andersson
+
+#Become friendly with a fellow vassal when both at same location and we got same liege
+character_event = {
+	id = 6900
+	desc = EVTDESC6900
+	picture = GFX_evt_battle
+	
+	#only_men = yes
+	min_age = 16	
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+		independent = no
+		NOT = { trait = shy }
+		liege = {
+			any_vassal = {
+				NOT = { character = ROOT }
+				in_command = yes
+				at_location = ROOT
+				NOT = { war_with = ROOT }
+				NOT = { trait = shy }
+				opinion = { who = ROOT value = -30 }
+				NOT = {	opinion = { who = ROOT value = 30 } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.8
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.8
+			trait = brave
+		}
+	}
+	
+	immediate = {
+		liege = {
+			random_vassal = {
+				limit = {
+					NOT = { character = ROOT }
+					in_command = yes
+					at_location = ROOT
+					NOT = { war_with = ROOT }
+					NOT = { trait = shy }
+					opinion = { who = ROOT value = -30 }
+					NOT = {	opinion = { who = ROOT value = 30 } }
+				}
+				set_character_flag = campaign_friend
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA6900
+		liege = {
+			random_vassal = {
+				limit = {
+					has_character_flag = campaign_friend
+				}
+				clr_character_flag = campaign_friend
+				
+				opinion = {
+					modifier = campaign_friend
+					who = ROOT
+					years = 10
+				}
+				hidden_tooltip = {
+					character_event = { id = 6901 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+#Brother in arms!
+character_event = {
+	id = 6901
+	desc = EVTDESC6901
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA6901
+		reverse_opinion = {
+			modifier = campaign_friend
+			who = FROM
+			years = 10
+		}		
+	}
+}
+
+#Save someone's life at the battlefield...  become very good friend.
+character_event = {
+	id = 6910
+	desc = EVTDESC6910
+	picture = GFX_evt_battle
+
+	min_age = 16	
+	#only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+		in_battle = yes
+		independent = no
+		NOT = { trait = craven }
+		NOT = { health_traits = 1 }
+		liege = {
+			any_vassal = {
+				NOT = { character = ROOT }
+				in_command = yes
+				in_battle = yes
+				at_location = ROOT
+				NOT = { war_with = ROOT }
+				NOT = { health_traits = 1 }
+				opinion = { who = ROOT value = -30 }
+				NOT = {	opinion = { who = ROOT value = 30 } }
+			}
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		
+	}
+	immediate = {
+		liege = {
+			random_vassal = {
+				limit = {
+					NOT = { character = ROOT }
+					in_command = yes
+					at_location = ROOT
+					in_battle = yes
+					NOT = { health_traits = 1 }
+					NOT = { war_with = ROOT }
+					opinion = { who = ROOT value = -30 }
+					NOT = {	opinion = { who = ROOT value = 30 } }
+				}
+				set_character_flag = campaign_friend
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA6910
+		liege = {
+			random_vassal = {
+				limit = {
+					has_character_flag = campaign_friend
+				}
+				clr_character_flag = campaign_friend
+				prestige = 5
+				
+				opinion = {
+					modifier = saved_on_battlefield
+					who = ROOT
+					years = 10
+				}
+				hidden_tooltip = {
+					character_event = { id = 6911 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+#Saved a new friend
+character_event = {
+	id = 6911
+	desc = EVTDESC6911
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA6911
+		add_trait = wounded
+		reverse_opinion = {
+			modifier = saved_him_on_battlefield
+			who = FROM
+			years = 10
+		}		
+	}
+}
+
+#Become rival with a fellow vassal when both at same location and we got same liege
+character_event = {
+	id = 6920
+	desc = EVTDESC6920
+	picture = GFX_evt_battle
+
+	#only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = yes
+		independent = no
+		liege = {
+			any_vassal = {
+				NOT = { character = ROOT }
+				in_command = yes
+				at_location = ROOT
+				NOT = { war_with = ROOT }
+				opinion = { who = ROOT value = -30 }
+				NOT = {	opinion = { who = ROOT value = 30 } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.8
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.8
+			trait = wroth
+		}
+		
+	}
+	immediate = {
+		liege = {
+			random_vassal = {
+				limit = {
+					NOT = { character = ROOT }
+					in_command = yes
+					at_location = ROOT
+					NOT = { war_with = ROOT }
+					opinion = { who = ROOT value = -30 }
+					NOT = {	opinion = { who = ROOT value = 30 } }
+				}
+				set_character_flag = campaign_friend
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA6920
+		liege = {
+			random_vassal = {
+				limit = {
+					has_character_flag = campaign_friend
+				}
+				clr_character_flag = campaign_friend
+				
+				opinion = {
+					modifier = campaign_rival
+					who = ROOT
+					years = 5
+				}
+				hidden_tooltip = {
+					character_event = { id = 6921 days = 1 }
+				}
+			}
+		}
+		
+	}
+}
+
+#Gained a rival
+character_event = {
+	id = 6921
+	desc = EVTDESC6921
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA6921
+		reverse_opinion = {
+			modifier = campaign_rival
+			who = FROM
+			years = 5
+		}		
+	}
+}
+################################################
+#
+# Events for Childhood Personality Traits
+#
+# ID 1500-1999 is reserved
+#
+# The basic events are triggered by on actions
+#
+#################################################
+#
+# Written by Sara Wendel-Örtqvist, Johan Andersson & Henrik Fåhraeus
+
+#Event ID 1500-1509 is reserved for Gluttonous events
+
+# Gain Gluttony
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = 1500
+	desc = "EVTDESC1500"
+	picture = "GFX_evt_child_play"
+	
+	is_triggered_only = yes
+	
+	min_age = 6
+	max_age = 16
+
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = temperate }
+		NOT = { trait = gluttonous }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA1500"
+		add_trait = gluttonous
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2000
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Guardian discourages gluttony
+character_event = {
+	id = 1501
+	desc = "EVTDESC1501"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = gluttonous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1501"
+		remove_trait = gluttonous
+	}
+}
+
+#######################################################################
+
+#Event ID 1510-1519 is reserved for Temperate events
+#Temperate Child
+character_event = {
+	id = 1510
+	desc = "EVTDESC1510"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = temperate }
+		NOT = { trait = gluttonous }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}		
+
+	}
+	
+	option = {
+		name = "EVTOPTA1510"
+		add_trait = temperate
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2010
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discourage Temperance
+character_event = {
+	id = 1511
+	desc = "EVTDESC1511"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = temperate
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1511"
+		remove_trait = temperate
+	}
+}
+
+#######################################################################
+
+#Event ID 1520-1529 is reserved for Greedy events
+#Greedy Child
+character_event = {
+	id = 1520
+	desc = "EVTDESC1520"
+	picture = "GFX_evt_child_bully"
+	
+	is_triggered_only = yes
+	
+	min_age = 6
+	max_age = 16
+
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = charitable }
+		NOT = { trait = greedy }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = envious
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1520"
+		add_trait = greedy
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2020
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discourage Greed
+character_event = {
+	id = 1521
+	desc = "EVTDESC1521"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = greedy
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1521"
+		remove_trait = greedy
+	}
+}
+
+#######################################################################
+
+#Event ID 1530-1539 is reserved for Charitable events#
+#Charitable Child
+character_event = {
+	id = 1530
+	desc = "EVTDESC1530"
+	picture = "GFX_evt_child_talking"
+	
+	is_triggered_only = yes
+	
+	min_age = 6
+	max_age = 16
+
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = charitable }
+		NOT = { trait = greedy }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1530"
+		add_trait = charitable
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2030
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discourage Charity
+character_event = {
+	id = 1531
+	desc = "EVTDESC1531"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = charitable
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1531"
+		remove_trait = charitable
+	}
+}
+
+#######################################################################
+
+#Event ID 1540-1549 is reserved for Slothful events#
+#Slothful Child
+character_event = {
+	id = 1540
+	desc = "EVTDESC1540"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		#religion_group = christian
+		NOT = { personality_traits = 5 }
+		NOT = { trait = diligent }
+		NOT = { trait = slothful }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gluttonous
+		}
+		modifier = {
+			factor = 0.5
+			trait = temperate
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1540"
+		add_trait = slothful
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2040
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1541
+	desc = "EVTDESC1541"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = slothful
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1541"
+		remove_trait = slothful
+	}
+}
+
+#######################################################################
+
+
+#Event ID 1550-1559 is reserved for Diligent events#
+#Diligent Child
+character_event = {
+	id = 1550
+	desc = "EVTDESC1550"
+	picture = "GFX_evt_child_reading"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = diligent }
+		NOT = { trait = slothful }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = temperate
+		}
+		modifier = {
+			factor = 0.5
+			trait = gluttonous
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1550"
+		add_trait = diligent
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2050
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1551
+	desc = "EVTDESC1551"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = diligent
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1551"
+		remove_trait = diligent
+	}
+}
+
+#######################################################################
+
+#Event ID 1560-1569 is reserved for Envious events#
+#Envious Child
+character_event = {
+	id = 1560
+	desc = "EVTDESC1560"
+	picture = "GFX_evt_child_bully"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = kind }
+		NOT = { trait = envious }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = greedy
+		}
+		modifier = {
+			factor = 2
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.5
+			trait = charitable
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1560"
+		add_trait = envious
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2060
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1561
+	desc = "EVTDESC1561"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = envious
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1561"
+		trigger = { is_female = yes }
+		remove_trait = envious
+	}
+	option = {
+		name = "EVTOPTB1561"
+		trigger = { is_female = no }
+		remove_trait = envious
+	}
+}
+
+#######################################################################
+
+#Event ID 1570-1579 is reserved for Kind events#
+#Kind Child
+character_event = {
+	id = 1570
+	desc = "EVTDESC1570"
+	picture = "GFX_evt_child_talking"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = kind }
+		NOT = { trait = envious }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 0.5
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = charitable
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1570"
+		add_trait = kind
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2070
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1571
+	desc = "EVTDESC1571"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = kind
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1571"
+		remove_trait = kind
+	}
+}
+
+#######################################################################
+
+#Event ID 1580-1589 is reserved for Wroth events#
+#Wroth Child
+character_event = {
+	id = 1580
+	desc = "EVTDESC1580"
+	picture = "GFX_evt_child_bully"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = wroth }
+		NOT = { trait = patient }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.1
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.1
+		}
+		modifier = {
+			trait = fair
+			factor = 0.1
+		}
+		modifier = {
+			trait = ugly
+			factor = 5.0
+		}
+		modifier = {
+			trait = dwarf
+			factor = 2.0
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.2
+		}
+		modifier = {
+			trait = quick
+			factor = 0.75
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.15
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 2.0
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.5
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1580"
+		add_trait = wroth
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2080
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1581
+	desc = "EVTDESC1581"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = wroth
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1581"
+		remove_trait = wroth
+	}
+}
+
+#######################################################################
+
+#Event ID 1590-1599 is reserved for Patient events#
+#Patient Child
+character_event = {
+	id = 1590
+	desc = "EVTDESC1590"
+	picture = "GFX_evt_child_reading"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = wroth }
+		NOT = { trait = patient }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1590"
+		add_trait = patient
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2090
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1591
+	desc = "EVTDESC1591"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = patient
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1591"
+		remove_trait = patient
+	}
+}
+
+#######################################################################
+
+#Event ID 1600-1609 is reserved for Proud events#
+#Proud Child
+character_event = {
+	id = 1600
+	desc = "EVTDESC1600"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = proud }
+		NOT = { trait = humble }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+
+		modifier = {
+			trait = clubfooted
+			factor = 0.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.1
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.1
+		}
+		modifier = {
+			trait = fair
+			factor = 5.0
+		}
+		modifier = {
+			trait = ugly
+			factor = 0.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.1
+		}		
+		modifier = {
+			trait = genius
+			factor = 5.0
+		}
+		modifier = {
+			trait = quick
+			factor = 5.0
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.1
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.1
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.5
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1600"
+		add_trait = proud
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2100
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1601
+	desc = "EVTDESC1601"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = proud
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1601"
+		remove_trait = proud
+	}
+}
+
+#######################################################################
+
+#Event ID 1610-1619 is reserved for Humble events#
+#Humble Child
+character_event = {
+	id = 1610
+	desc = "EVTDESC1610"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = proud }
+		NOT = { trait = humble }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 2.0
+		}
+		modifier = {
+			trait = harelip
+			factor = 2.0
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 2.0
+		}
+		modifier = {
+			trait = stutter
+			factor = 2.0
+		}
+		modifier = {
+			trait = fair
+			factor = 0.1
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.5
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.5
+		}
+		modifier = {
+			trait = quick
+			factor = 1.25
+		}	
+		modifier = {
+			trait = slow
+			factor = 2.0
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.1
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.01
+		}
+		modifier = {
+			trait = weak
+			factor = 2.5
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1610"
+		add_trait = humble
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2110
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1611
+	desc = "EVTDESC1611"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = humble
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1611"
+		remove_trait = humble
+	}
+}
+
+#######################################################################
+
+### OTHER ###
+
+#Event ID 1620-1629 is reserved for Deceitful events#
+# Deceitful Child
+character_event = {
+	id = 1620
+	desc = "EVTDESC1620"
+	picture = "GFX_evt_child_bully"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = honest }
+		NOT = { trait = deceitful }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1620"
+		add_trait = deceitful
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2120
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1621
+	desc = "EVTDESC1621"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = deceitful
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1621"
+		remove_trait = deceitful
+	}
+}
+
+#######################################################################
+
+# Event ID 1630-1639 is reserved for Zealous events #
+### Zealous ###
+character_event = {
+	id = 1630
+	desc = "EVTDESC1630"
+	picture = "GFX_evt_child_reading"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			religion_group = rastullah_group
+		}
+		#NOT = {
+			#religion_group = indian_group
+		#}
+		NOT = { personality_traits = 5 }
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1630"
+		add_trait = zealous
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2130
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1631
+	desc = "EVTDESC1631"
+	picture = "GFX_evt_child_reading"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = zealous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1631"
+		remove_trait = zealous
+	}
+}
+
+### Zealous - Muslim ###
+character_event = {
+	id = 1632
+	desc = "EVTDESC1632"
+	picture = "GFX_evt_child_reading"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = rastullah_group
+		NOT = { personality_traits = 5 }
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1630"
+		add_trait = zealous
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2132
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+#######################################################################
+
+#Event ID 1640-1649 is reserved for Honest events#
+#Honest Child
+character_event = {
+	id = 1640
+	desc = "EVTDESC1640"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = honest }
+		NOT = { trait = deceitful }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1640"
+		add_trait = honest
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2140
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1641
+	desc = "EVTDESC1641"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = honest
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1641"
+		remove_trait = honest
+	}
+}
+
+#######################################################################
+
+#Event ID 1650-1659 is reserved for Craven events#
+# Craven
+character_event = {
+	id = 1650
+	desc = "EVTDESC1650"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = craven }
+		NOT = { trait = brave }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1650"
+		add_trait = craven
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2150
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1651
+	desc = "EVTDESC1651"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = craven
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1651"
+		remove_trait = craven
+	}
+}
+
+#######################################################################
+
+#Event ID 1660-1669 is reserved for Brave events#
+#Brave Child
+character_event = {
+	id = 1660
+	desc = "EVTDESC1660"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = craven }
+		NOT = { trait = brave }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1660"
+		add_trait = brave
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2160
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1661
+	desc = "EVTDESC1661"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = brave
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1661"
+		remove_trait = brave
+	}
+}
+
+#######################################################################
+
+#Event ID 1670-1679 is reserved for Shy events#
+#Shy Child
+character_event = {
+	id = 1670
+	desc = "EVTDESC1670"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = shy }
+		NOT = { trait = gregarious }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1670"
+		add_trait = shy
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2170
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1671
+	desc = "EVTDESC1671"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = shy
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1671"
+		remove_trait = shy
+	}
+}
+
+#######################################################################
+
+#Event ID 1680-1689 is reserved for Gregarious events#
+#Gregarious Child
+character_event = {
+	id = 1680
+	desc = "EVTDESC1680"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = shy }
+		NOT = { trait = gregarious }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.05
+		}
+		modifier = {
+			trait = fair
+			factor = 5.0
+		}
+		modifier = {
+			trait = ugly
+			factor = 0.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 2.0
+		}
+		modifier = {
+			trait = quick
+			factor = 5.0
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1680"
+		add_trait = gregarious
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2180
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1681
+	desc = "EVTDESC1681"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = gregarious
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1681"
+		remove_trait = gregarious
+	}
+}
+
+#######################################################################
+
+#Event ID 1690-1699 is reserved for Ambitious events#
+#Ambitious Child
+character_event = {
+	id = 1690
+	desc = "EVTDESC1690"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = content }
+		NOT = { trait = ambitious }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = proud
+		}
+		modifier = {
+			factor = 0.5
+			trait = humble
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1690"
+		add_trait = ambitious
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2190
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1691
+	desc = "EVTDESC1691"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = ambitious
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1691"
+		remove_trait = ambitious
+	}
+}
+
+#######################################################################
+
+#Event ID 1700-1709 is reserved for Content events#
+#Content Child
+character_event = {
+	id = 1700
+	desc = "EVTDESC1700"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = content }
+		NOT = { trait = ambitious }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+			modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1700"
+		add_trait = content
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2200
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1701
+	desc = "EVTDESC1701"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = content
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1701"
+		remove_trait = content
+	}
+}
+
+#######################################################################
+
+#Event ID 1710-1719 is reserved for Arbitrary events#
+#Arbitrary Child
+character_event = {
+	id = 1710
+	desc = "EVTDESC1710"
+	picture = "GFX_evt_child_bully"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = just }
+		NOT = { trait = arbitrary }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1710"
+		add_trait = arbitrary
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2210
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1711
+	desc = "EVTDESC1711"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = arbitrary
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1711"
+		remove_trait = arbitrary
+	}
+}
+
+#######################################################################
+
+#Event ID 1720-1729 is reserved for Just events#
+#Just Child
+character_event = {
+	id = 1720
+	desc = "EVTDESC1720"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = just }
+		NOT = { trait = arbitrary }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1720"
+		add_trait = just
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2220
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1721
+	desc = "EVTDESC1721"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = just
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1721"
+		remove_trait = just
+	}
+}
+
+#######################################################################
+
+#Event ID 1730-1739 is reserved for Cynical events#
+### Cynical Child ###
+character_event = {
+	id = 1730
+	desc = "EVTDESC1730"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			religion_group = rastullah_group
+		}
+		NOT = { personality_traits = 5 }
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1730"
+		add_trait = cynical
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2230
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1731
+	desc = "EVTDESC1731"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = cynical
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1731"
+		remove_trait = cynical
+	}
+}
+
+### Cynical Child - Muslim ###
+character_event = {
+	id = 1732
+	desc = "EVTDESC1732"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = rastullah_group
+		NOT = { personality_traits = 5 }
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1730"
+		add_trait = cynical
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2230
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Discouraged
+character_event = {
+	id = 1733
+	desc = "EVTDESC1733"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = cynical
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1731"
+		remove_trait = cynical
+	}
+}
+
+#######################################################################
+
+
+# Gain Cruel
+# On-action: on_yearly_childhood_pulse
+character_event = {
+	id = 1965
+	desc = "EVTDESC1965"
+	picture = "GFX_evt_child_bully"
+	
+	min_age = 6
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { personality_traits = 5 }
+		NOT = { trait = kind }
+		NOT = { trait = cruel }
+		has_guardian = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1965"
+		add_trait = cruel
+		if = {
+			#limit = { religion = jain }
+			piety = -20
+			custom_tooltip = { text = jain_ahimsa_tooltip }
+		}
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 2465
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Guardian discourages cruelty
+character_event = {
+	id = 1966
+	desc = "EVTDESC1966"
+	picture = "GFX_evt_guardian"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			add_trait = cruel
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1966"
+		remove_trait = cruel
+	}
+}
+
+#######################################################################
+
+# Male Homosexual
+character_event = {
+	id = 1980
+	desc = "EVTDESC1980"
+	picture = GFX_evt_brothel
+	
+	min_age = 13
+	max_age = 17
+	only_men = yes
+	
+	trigger = {
+		is_married = no
+		has_guardian = yes
+		NOT = {
+			trait = zealous
+		}
+		NOT = {
+			trait = homosexual
+		}
+		NOT = {
+			trait = chaste
+		}
+		NOT = {
+			trait = celibate
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 960
+		
+		
+		modifier = {
+			factor = 0.75
+			martial = 10
+			trait = fair
+		}
+		
+		modifier = {
+			factor = 0.75
+			trait = shy
+			learning = 10
+		}
+		
+		modifier = {
+			factor = 0.75
+			trait = trusting
+			any_courtier = {
+				age = 12
+				not = { age = 18 }
+				trait = homosexual
+				reverse_opinion = { who = ROOT value = 25 }
+			}		
+		} 
+		
+		modifier = {
+			factor = 0.9
+			OR = {
+				guardian = {
+					trait = homosexual
+				}
+				father = {
+					trait = homosexual
+				}
+			}
+		}
+		
+	}
+	
+	option = {
+		name = "EVTOPTA1980"
+		add_trait = homosexual
+	}
+}
+
+### Remove Male Homosexual ###
+character_event = {
+	id = 1985
+	desc = "EVTDESC1985"
+	picture = GFX_evt_brothel
+	
+	min_age = 13
+	max_age = 17
+	only_men = yes
+	
+	trigger = {
+		is_married = no
+		has_guardian = yes
+		num_traits = 4
+		trait = homosexual
+		NOT = {
+			religion_group = rastullah_group
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		
+		modifier = {
+			factor = 0.1
+			trait = zealous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1985"
+		piety = -50
+	}
+	option = {
+		name = "EVTOPTB1985"
+		remove_trait = homosexual
+	}
+}
+
+### Remove Homosexual - Muslim ###
+character_event = {
+	id = 1986
+	desc = "EVTDESC1986"
+	picture = GFX_evt_brothel
+	
+	min_age = 13
+	max_age = 17
+	
+	trigger = {
+		is_married = no
+		has_guardian = yes
+		num_traits = 4
+		trait = homosexual
+		OR = {
+			religion_group = rastullah_group
+			#religion_group = indian_group
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		
+		modifier = {
+			factor = 0.1
+			trait = zealous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1986"
+		piety = -50
+	}
+	option = {
+		name = "EVTOPTB1986"
+		remove_trait = homosexual
+	}
+}
+
+### Female Homosexual ###
+character_event = {
+	id = 1990
+	desc = "EVTDESC1990"
+	picture = GFX_evt_garden
+	
+	min_age = 12
+	max_age = 17
+	only_women = yes
+	
+	trigger = {
+		is_married = no
+		has_guardian = yes
+		NOT = {
+			trait = zealous
+		}
+		NOT = {
+			trait = homosexual
+		}
+		NOT = {
+			trait = chaste
+		}
+		NOT = {
+			trait = celibate
+		}		
+	}
+
+	mean_time_to_happen = {
+		months = 960
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1980"
+		add_trait = homosexual
+	}
+}
+
+### Remove Female Homosexual ###
+character_event = {
+	id = 1995
+	desc = "EVTDESC1995"
+	picture = GFX_evt_garden
+	
+	min_age = 12
+	max_age = 17
+	only_women = yes
+	
+	trigger = {
+		is_married = no
+		has_guardian = yes
+		num_traits = 4
+		trait = homosexual
+		NOT = {
+			religion_group = rastullah_group
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.1
+			trait = zealous
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1985"
+		piety = -50
+	}
+	option = {
+		name = "EVTOPTB1985"
+		remove_trait = homosexual
+	}
+}
+
+#Nobody believes me! - removed, no text and no event that triggers this
+#character_event = {
+#	id = 30013
+#	desc = "EVTDESC30013"
+#	picture = GFX_evt_child_bully
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "EVTOPTA30013"
+#		prestige = -50
+#	}
+#}
+	
+#Spouse is kicked out and the heir takes over - removed, no text and no event that triggers this
+#character_event = {
+#	id = 30014
+#	desc = "EVTDESC30014"
+#	picture = GFX_evt_scandal
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "EVTOPTA30014"
+#		banish = yes
+#	}
+#
+#	option = {
+#		name = "EVTOPTB30014"
+#		prestige = -1000
+#	}
+#}
+
+#################################
+# More flavor events
+#################################
+
+# Child is slow to learn to talk
+character_event = {
+	id = 1900
+	desc = "EVTDESC1900"
+	picture = "GFX_evt_child_play"
+	
+	max_age = 5
+	prisoner = no
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = stutter }
+		father = {
+			is_alive = yes
+			employer = {
+				ROOT = {
+					employer = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}		
+	
+	}
+	
+	option = {
+		name = "EVTOPTA1900"
+		hidden_tooltip = {
+			father = {
+				character_event = {
+					id = 38200
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Daddy, where do children come from?
+character_event = {
+	id = 1901
+	desc = "EVTDESC1901"
+	picture = "GFX_evt_child_play"
+	
+	max_age = 6
+	prisoner = no
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = trusting }
+		father = {
+			is_alive = yes
+			employer = {
+				ROOT = {
+					employer = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		NOT = { personality_traits = 5 }
+	
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1901"
+		hidden_tooltip = {
+			father = {
+				character_event = {
+					id = 38201
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Child is afraid of the dark
+character_event = {
+	id = 1902
+	desc = "EVTDESC1902"
+	picture = "GFX_evt_child_play"
+	
+	max_age = 6
+	prisoner = no
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = trusting }
+		father = {
+			is_alive = yes
+			employer = {
+				ROOT = {
+					employer = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1902"
+		hidden_tooltip = {
+			father = {
+				character_event = {
+					id = 38202
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Child is often involved in fights with other toddlers
+character_event = {
+	id = 1903
+	desc = "EVTDESC1903"
+	picture = "GFX_evt_child_play"
+	
+	max_age = 6
+	prisoner = no
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = wroth }
+		father = {
+			is_alive = yes
+			employer = {
+				ROOT = {
+					employer = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1903"
+		hidden_tooltip = {
+			father = {
+				character_event = {
+					id = 38203
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Your child always wants more toys
+character_event = {
+	id = 1904
+	desc = "EVTDESC1904"
+	picture = "GFX_evt_child_play"
+	
+	max_age = 6
+	prisoner = no
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = greedy }
+		father = {
+			is_alive = yes
+			employer = {
+				ROOT = {
+					employer = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1904"
+		hidden_tooltip = {
+			father = {
+				character_event = {
+					id = 38204
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Dad, Where is mom?
+character_event = {
+	id = 1905
+	desc = "EVTDESC1905"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+	prisoner = no
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { is_abroad = yes }
+		father = {
+			is_alive = yes
+			employer = {
+				ROOT = {
+					employer = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		mother_even_if_dead = { is_alive = no }
+		NOT = { trait = bastard }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1905"
+		hidden_tooltip = {
+			father = {
+				character_event = {
+					id = 38205
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Child has trouble making friends
+character_event = {
+	id = 1906
+	desc = "EVTDESC1906"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = gregarious }
+		has_guardian = yes
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 3
+			trait = stutter
+		}
+	modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}		
+	}
+	
+	option = {
+		name = "EVTOPTA1906"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38206
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Child wants to play with friends instead of studying
+character_event = {
+	id = 1907
+	desc = "EVTDESC1907"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = { personality_traits = 5 }
+		NOT = {
+			religion_group = rastullah_group
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1907"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38207
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Where do heathens come from?
+character_event = {
+	id = 1908
+	desc = "EVTDESC1908"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		#religion_group = christian
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA1908"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38208
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Child is often playing very daring games with other children
+character_event = {
+	id = 1909
+	desc = "EVTDESC1909"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = { trait = craven }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1909"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38209
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Daddy, does God exist?
+character_event = {
+	id = 1910
+	desc = "EVTDESC1910"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		#religion_group = christian
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1910"
+		guardian = {
+			character_event = {
+				id = 38210
+				days = 3
+				tooltip = "EVTTOOLTIP38210"
+			}
+		}
+	}
+}
+
+# Why do people die?
+character_event = {
+	id = 1911
+	desc = "EVTDESC1911"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = { is_ruler = yes }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1911"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38211
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Will I rule one day?
+character_event = {
+	id = 1912
+	desc = "EVTDESC1912"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 11
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = { is_ruler = yes }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1912"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38212
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Child has developed a habit for wild parties
+character_event = {
+	id = 1913
+	desc = "EVTDESC1913"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = { trait = lustful }
+		NOT = { trait = chaste }
+		NOT = { personality_traits = 5 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1913"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38213
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# If we're Catholic and our enemies are Catholic, why are we fighting?
+character_event = {
+	id = 1914
+	desc = "EVTDESC1914"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		religion = puniner
+		NOT = { trait = cynical }
+		guardian = {
+			religion = puniner
+			OR = {
+				any_current_enemy = { religion = puniner }
+				any_liege = { any_current_enemy = { religion = puniner } } 
+			}
+		}
+		NOT = { personality_traits = 5 }
+		
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1914"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38214
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+### Why is the church so rich when the peasants are starving and poor? ###
+character_event = {
+	id = 1915
+	desc = "EVTDESC1915"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		religion_group = twelve
+		NOT = { trait = zealous }
+		NOT = { trait = cynical }
+		NOT = { trait = charitable }
+		NOT = { trait = greedy }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1915"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38215
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Why did you let off that peasant accused from poaching?
+character_event = {
+	id = 1916
+	desc = "EVTDESC1916"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {	guardian = { trait = cruel } }
+		NOT = {	guardian = { trait = arbitrary } }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1916"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38216
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# These peasants we have are all mine to command like little slaves, right?
+character_event = {
+	id = 1917
+	desc = "EVTDESC1917"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {	trait = kind }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}		
+
+	}
+	
+	option = {
+		name = "EVTOPTA1917"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38217
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# If a tree falls in the woods and there's nobody there to hear it, does it make a noise?
+character_event = {
+	id = 1918
+	desc = "EVTDESC1918"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		learning = 4
+		NOT = { trait = diligent }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1918"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38218
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Since we all die anyway, why to be so hassled about life?
+character_event = {
+	id = 1919
+	desc = "EVTDESC1919"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		#NOT = { religion_group = indian_group }
+		NOT = { trait = lustful }
+		NOT = { trait = chaste }
+		NOT = { trait = temperate }
+		NOT = { trait = gluttonous }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1919"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38219
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+#How can I best serve God?
+character_event = {
+	id = 1920
+	desc = "EVTDESC1920"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		OR = {
+			religion_group = twelve
+			religion_group = rastullah_group
+			#religion_group = jewish_group
+		}
+		NOT = { trait = cynical }
+		NOT = { trait = craven }
+		NOT = { trait = brave }
+		NOT = { trait = just }
+		NOT = { trait = arbitrary }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1920"
+		hidden_tooltip = {
+			guardian = {
+				character_event = {
+					id = 38220
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# Female Child is playing with swords instead of sewing
+character_event = {
+	id = 1921
+	desc = "EVTDESC1921"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	only_women = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {
+			trait = brave
+		}
+		NOT = {
+			trait = humble
+		}
+		NOT = {
+			trait = just
+		}
+		NOT = {
+			trait = wounded
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		#modifier = {
+			#religion = cathar
+			#factor = 3
+		#}
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTA1921"
+		guardian = {
+			character_event = {
+				id = 38221
+				days = 3
+				tooltip = "EVTOOLTIP38221"
+			}
+		}
+	}
+}
+
+# Child is ridiculed for cowardness
+character_event = {
+	id = 1922
+	desc = "EVTDESC1922"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		learning = 5
+		NOT = {
+			martial = 3
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTA1922"
+		guardian = {
+			character_event = {
+				id = 38222
+				days = 3
+				tooltip = "EVTOOLTIP38222"
+			}
+		}
+	}
+}
+
+# Child is sneaking through the dungeons, and comes up with a bloody knife it found
+character_event = {
+	id = 1923
+	desc = "EVTDESC1923"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {
+			trait = craven
+		}
+		NOT = {
+			trait = deceitful
+		}
+		NOT = {
+			trait = cruel
+		}
+		NOT = {
+			trait = wroth
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}		
+	
+	}
+	
+	option = {
+		name = "EVTOPTA1923"
+		guardian = {
+			character_event = {
+				id = 38223
+				days = 3
+				tooltip = "EVTOOLTIP38223"
+			}
+		}
+	}
+}
+
+# Child hides away to read books
+character_event = {
+	id = 1924
+	desc = "EVTDESC1924"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		learning = 6
+		NOT = {
+			martial = 5
+		}
+		NOT = {
+			trait = shy
+		}
+		NOT = {
+			trait = gregarious
+		}
+		NOT = {
+			trait = humble
+		}
+		NOT = {
+			trait = proud
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.1
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.1
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.1
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.9
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.9
+		}
+		modifier = {
+			trait = fair
+			factor = 1.05
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.05
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 10
+		}
+		modifier = {
+			trait = quick
+			factor = 2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.1
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 2.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1924"
+		guardian = {
+			character_event = {
+				id = 38224
+				days = 3
+				tooltip = "EVTOOLTIP38224"
+			}
+		}
+	}
+}
+
+# Ugly child, fair courtier
+character_event = {
+	id = 1925
+	desc = "EVTDESC1925"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 10
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		trait = ugly
+		guardian = {
+			any_courtier = {
+				trait = fair
+			}
+		}
+		NOT = {
+			trait = envious
+		}
+		NOT = {
+			trait = ambitious
+		}
+		NOT = {
+			trait = arbitrary
+		}
+		NOT = {
+			trait = content
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA1925"
+		guardian = {
+			character_event = {
+				id = 38225
+				days = 3
+				tooltip = "EVTOOLTIP38225"
+			}
+		}
+	}
+}
+
+# Fair child
+character_event = {
+	id = 1926
+	desc = "EVTDESC1926"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 10
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {
+			trait = proud
+		}
+		NOT = {
+			trait = gregarious
+		}
+		NOT = {
+			trait = shy
+		}
+		NOT = {
+			trait = gregarious
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA1926"
+		guardian = {
+			character_event = {
+				id = 38226
+				days = 3
+				tooltip = "EVTOOLTIP38226"
+			}
+		}
+	}
+}
+
+# Child shows a tendency to count money whenever possible...
+character_event = {
+	id = 1927
+	desc = "EVTDESC1927"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		OR = {
+			AND = {
+				stewardship = 3
+				age = 6
+				NOT = { age = 11 }
+			}
+			AND = {
+				stewardship = 6
+				age = 11
+			}
+		}
+		NOT = {
+			trait = greedy
+		}
+		NOT = {
+			trait = charitable
+		}
+		NOT = {
+			trait = zealous
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.5
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.5
+		}
+		modifier = {
+			trait = hunchback
+			factor = 2.0
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.5
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.5
+		}
+		modifier = {
+			trait = fair
+			factor = 1.5
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.5
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.05
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.75
+		}
+		modifier = {
+			trait = quick
+			factor = 1.2
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.05
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.25
+		}
+		modifier = {
+			trait = strong
+			factor = 1.05
+		}
+		modifier = {
+			trait = weak
+			factor = 1.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1927"
+		guardian = {
+			character_event = {
+				id = 38227
+				days = 3
+				tooltip = "EVTOOLTIP38227"
+			}
+		}
+	}
+}
+
+# Child shows interest in visitors to the court
+character_event = {
+	id = 1928
+	desc = "EVTDESC1928"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		OR = {
+			AND = {
+				intrigue = 3
+				age = 6
+			}
+			AND = {
+				intrigue = 6
+				age = 11
+			}
+		}
+		NOT = {
+			trait = honest
+		}
+		NOT = {
+			trait = deceitful
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTA1928"
+		guardian = {
+			character_event = {
+				id = 38228
+				days = 3
+				tooltip = "EVTOOLTIP38228"
+			}
+		}
+	}
+}
+
+# Child constantly plays with swords and practices fighting with older men
+character_event = {
+	id = 1929
+	desc = "EVTDESC1929"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	only_men = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		OR = {
+			AND = {
+				martial = 3 
+				age = 6
+			}
+			AND = {
+				martial = 6
+				age = 11
+			}
+		}
+		NOT = {
+			trait = craven
+		}
+		NOT = {
+			trait = proud
+		}
+		NOT = {
+			trait = diligent
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTA1929"
+		guardian = {
+			character_event = {
+				id = 38229
+				days = 3
+				tooltip = "EVTOOLTIP38229"
+			}
+		}
+	}
+}
+
+# First kiss
+character_event = {
+	id = 1930
+	desc = "EVTDESC1930"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		OR = {
+			trait = kind
+			trait = gregarious 
+			trait = trusting
+		}
+		NOT = {
+			trait = chaste
+		}
+		NOT = {
+			trait = lustful
+		}
+		NOT = {
+			trait = deceitful
+		}
+		NOT = {
+			trait = zealous
+		}
+		NOT = {
+			trait = paranoid
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTA1930"
+		guardian = {
+			character_event = {
+				id = 38230
+				days = 3
+				tooltip = "EVTOOLTIP38230"
+			}
+		}
+	}
+}
+
+# Boy is spending all his time in the kitchen, risk becoming gluttonous and craven
+character_event = {
+	id = 1931
+	desc = "EVTDESC1931"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	only_men = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {
+			trait = brave
+		}
+		NOT = {
+			trait = craven
+		}
+		NOT = {
+			trait = gluttonous
+		}
+		NOT = {
+			trait = temperate
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 1.05
+		}
+		modifier = {
+			trait = harelip
+			factor = 1.10
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.5
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.05
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.05
+		}
+		modifier = {
+			trait = fair
+			factor = 0.95
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.10
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.2
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.95
+		}
+		modifier = {
+			trait = quick
+			factor = 0.95
+		}	
+		modifier = {
+			trait = slow
+			factor = 1.2
+		}
+		modifier = {
+			trait = imbecile
+			factor = 1.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 1.5
+		}
+		modifier = {
+			trait = strong
+			factor = 0.05
+		}
+		modifier = {
+			trait = weak
+			factor = 5.0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1931"
+		guardian = {
+			character_event = {
+				id = 38231
+				days = 3
+				tooltip = "EVTOOLTIP38231"
+			}
+		}
+	}
+}
+
+# Too curious a child: Guardian finds him/her in the highest tower
+character_event = {
+	id = 1932
+	desc = "EVTDESC1932"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		NOT = {
+			trait = brave
+		}
+		NOT = {
+			trait = honest
+		}
+		NOT = {
+			trait = deceitful
+		}
+		NOT = {
+			trait = craven
+		}
+		NOT = {
+			trait = maimed
+		}
+		NOT = {
+			trait = wounded
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1932"
+		guardian = {
+			character_event = {
+				id = 38232
+				days = 3
+				tooltip = "EVTOOLTIP38232"
+			}
+		}
+	}
+}
+
+# Child is ill
+character_event = {
+	id = 1933
+	desc = "EVTDESC1933"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		trait = ill
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA1933"
+		guardian = {
+			character_event = {
+				id = 38233
+				days = 3
+				tooltip = "EVTOOLTIP38233"
+			}
+		}
+	}
+}
+
+# Homosexual child
+character_event = {
+	id = 1934
+	desc = "EVTDESC1934"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 11
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		trait = homosexual
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA1934"
+		guardian = {
+			character_event = {
+				id = 38234
+				days = 3
+				tooltip = "EVTOOLTIP38234"
+			}
+		}
+	}
+}
+
+# Child is good at talking to people, and have no problem getting friends
+character_event = {
+	id = 1935
+	desc = "EVTDESC1935"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	is_triggered_only = yes
+	
+	trigger = {
+		has_guardian = yes
+		OR = {
+			AND = {
+				age = 6
+				intrigue = 3
+			}
+			AND = {
+				age = 11
+				intrigue = 6
+			}
+		}
+		NOT = {
+			trait = honest
+		}
+		NOT = {
+			trait = deceitful
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			trait = clubfooted
+			factor = 0.8
+		}
+		modifier = {
+			trait = harelip
+			factor = 0.9
+		}
+		modifier = {
+			trait = hunchback
+			factor = 0.7
+		}
+		modifier = {
+			trait = lisp
+			factor = 0.95
+		}
+		modifier = {
+			trait = stutter
+			factor = 0.95
+		}
+		modifier = {
+			trait = fair
+			factor = 0.8
+		}
+		modifier = {
+			trait = ugly
+			factor = 1.25
+		}
+		modifier = {
+			trait = dwarf
+			factor = 0.9
+		}		
+		modifier = {
+			trait = genius
+			factor = 1.05
+		}
+		modifier = {
+			trait = quick
+			factor = 1.05
+		}	
+		modifier = {
+			trait = slow
+			factor = 0.95
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.5
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.05
+		}
+		modifier = {
+			trait = strong
+			factor = 5.0
+		}
+		modifier = {
+			trait = weak
+			factor = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1935"
+		guardian = {
+			character_event = {
+				id = 38235
+				days = 3
+				tooltip = "EVTOOLTIP38235"
+			}
+		}
+	}
+}
+
+#Child does not have a guardian
+character_event = {
+	id = 1991
+	desc = "EVTDESC1991"
+	picture = "GFX_evt_child_play"
+	
+	min_age = 6
+	max_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_guardian = no
+		independent = no
+		NOT = {	personality_traits = 5 }
+		liege = {
+			any_courtier = {
+				character = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	
+	option = {
+		name = "EVTOPTA1991"
+		if = {
+			limit = {
+				independent = no
+			}
+			liege = {
+				character_event = {
+					id = 2490
+					tooltip = "EVTOOLTIP2490"
+				}
+			}
+		}
+		if = {
+			limit = {
+				independent = yes
+			}
+			regent = {
+				character_event = {
+					id = 2490
+					tooltip = "EVTOOLTIP2490"
+				}
+			}
+		}
+	}	
 }
