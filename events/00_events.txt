@@ -1,3 +1,4 @@
+#LEFT OUT: ACHIEVEMENT EVENTS, BYZANTINE, ALL CM EVENTS, CRITICAL, CRUSADE, DECADENCE
 #########################################################
 #
 # Landless Character Adventures for The Old Gods DLC
@@ -20040,4 +20041,6432 @@ character_event = {
 			}
 		}
 	}	
+}
+###########################################
+#                                         #
+# Special Chronicle Events                #
+#                                         #
+# ID CM.10000-CM.11999                    #
+#                                         #
+###########################################
+
+namespace = CM
+
+# When chronicle is begun (On Action on_chronicle_start)
+character_event = {
+	id = CM.10000
+
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_START
+			picture = GFX_evt_monk
+		}
+	}
+}
+
+# When chronicle is transferred to new character (On Action on_chronicle_owner_change)
+character_event = {
+	id = CM.10001
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				FROM = {
+					is_dying = no
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_PLAYER_INHERITANCE_LANDLESS
+				portrait = [Root.GetID]
+				picture = GFX_evt_emissary
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_dying = yes
+					culture = ROOT
+					religion = ROOT
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_PLAYER_INHERITANCE_NORMAL
+				portrait = [Root.GetID]
+				picture = GFX_evt_coronation
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_dying = yes
+					culture = ROOT
+					NOT = { religion = ROOT }
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_PLAYER_INHERITANCE_NEW_RELIGION
+				portrait = [Root.GetID]
+				picture = GFX_evt_coronation
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_dying = yes
+					NOT = { culture = ROOT }
+					religion = ROOT
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_PLAYER_INHERITANCE_NEW_CULTURE
+				portrait = [Root.GetID]
+				picture = GFX_evt_coronation
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_dying = yes
+					NOT = { culture = ROOT }
+					NOT = { religion = ROOT }
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_PLAYER_INHERITANCE_NEW_CULTURE_AND_RELIGION
+				portrait = [Root.GetID]
+				picture = GFX_evt_coronation
+			}
+		}
+	}
+}
+
+#############################
+# Various chronicle events  #
+#############################
+
+# From on action on_death - check who died and create appropriate chronicle entries
+character_event = {
+	id = CM.10010
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			any_vassal = { ai = no }
+			any_spouse = { ai = no }
+			any_child = { ai = no }
+			any_playable_ruler = {
+				ai = no
+				current_heir = {
+					character = ROOT
+				}
+			}
+			AND = {
+				controls_religion = yes
+				any_playable_ruler = {
+					ai = no
+					religion = ROOT
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		any_vassal = {
+			limit = {
+				ai = no
+				NOT = {
+					OR = {
+						father = { character = ROOT }
+						mother = { character = ROOT }
+					}
+				}
+				NOT = { is_primary_heir = ROOT } # Any vassal except primary heir which is handled in chronicle owner transfer event CM.10001
+			}
+			chronicle = {
+				entry = CHRONICLE_DEATH_OF_LIEGE
+				portrait = [Root.GetID]
+			}
+		}
+		any_spouse = {
+			limit = {
+				ai = no
+				NOT = { is_primary_heir = ROOT } # Not used for primary heir which is handled in chronicle owner transfer event CM.10001
+			}
+			chronicle = {
+				entry = CHRONICLE_DEATH_OF_SPOUSE
+				portrait = [Root.GetID]
+			}
+		}
+		any_child = {
+			limit = {
+				ai = no
+				ROOT = {
+					NOT = { is_primary_heir = PREV } # Sent to any child except primary heir which is handled in chronicle owner transfer event CM.10001
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_DEATH_OF_PARENT
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				current_heir = {
+					character = ROOT
+				}
+				NOT = { is_primary_heir = ROOT } # Not used for primary heir which is handled in chronicle owner transfer event CM.10001
+			}
+			chronicle = {
+				entry = CHRONICLE_DEATH_OF_HEIR
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				religion_head = {
+					character = ROOT
+				}
+				NOT = { is_primary_heir = ROOT } # Not used for primary heir which is handled in chronicle owner transfer event CM.10001
+				NOT = {
+					OR = {
+						father = { character = ROOT }
+						mother = { character = ROOT }
+						spouse = { character = ROOT }
+					}
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_DEATH_OF_RELIGION_HEAD
+				portrait = [Root.GetID]
+			}
+		}
+	}
+}
+
+# From on action on_birth - check who was born and create appropriate chronicle entries
+character_event = {
+	id = CM.10011
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			father = { ai = no }
+			mother = { ai = no }
+		}
+	}
+	
+	immediate = {
+		character_event = { id = CM.19011 days = 2 } # Delay to allow for naming of child.
+	}
+}
+
+character_event = {
+	id = CM.19011
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			father = { ai = no }
+			mother = { ai = no }
+		}
+	}
+	
+	immediate = {
+		father = {
+			if = {
+				limit = {
+					ai = no
+					OR = {
+						NOT = { num_of_children = 2 }
+						AND = {
+							FROM = { is_female = no }
+							NOT = {
+								any_child = {
+									NOT = { character = FROM }
+									is_female = no
+								}
+							}
+						}
+					}
+				}
+				chronicle = {
+					entry = CHRONICLE_BIRTH_FATHER
+					portrait = [Root.GetID]
+				}
+			}
+		}
+		mother = {
+			if = {
+				limit = {
+					ai = no
+					OR = {
+						NOT = { num_of_children = 2 }
+						AND = {
+							FROM = { is_female = no }
+							NOT = {
+								any_child = {
+									NOT = { character = FROM }
+									is_female = no
+								}
+							}
+						}
+					}
+				}
+				chronicle = {
+					entry = CHRONICLE_BIRTH_MOTHER
+					portrait = [Root.GetID]
+				}
+			}
+		}
+	}
+}
+
+# War
+character_event = {
+	id = CM.10012
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	immediate = {
+		FROM = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_WAR_DECLARED_ATTACKER
+					portrait = [Prev.GetID]
+				}
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_WAR_DECLARED_DEFENDER
+				portrait = [From.GetID]
+			}
+		}
+	}
+}
+
+# Joined ally in war
+character_event = {
+	id = CM.10013
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = no
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_JOINED_ALLY_IN_WAR
+			portrait = [From.GetID]
+		}
+	}
+}
+
+# Answered call to arms
+character_event = {
+	id = CM.10014
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { ai = no }
+	}
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_JOINED_ALLY_IN_WAR_2
+				portrait = [Prev.GetID]
+			}
+		}
+	}
+}
+
+# On crusade creation
+	# Called from 'on_crusade_creation'
+	# new_character is the targetted enemy
+	# ROOT is the religious head
+	# FROM is the attacked kingdom title
+character_event = {
+	id = CM.10015
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				religion = ROOT
+			}
+			chronicle = {
+				entry = CHRONICLE_FRIENDLY_CRUSADE_STARTED
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				religion = new_character
+			}
+			chronicle = {
+				entry = CHRONICLE_UNFRIENDLY_CRUSADE_STARTED
+				portrait = [Root.GetID]
+			}
+		}
+		ROOT = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_FRIENDLY_CRUSADE_STARTED
+					portrait = [Root.GetID]
+				}
+			}
+		}
+	}
+}
+
+# On crusade success
+	# ROOT is the target title
+	# new_character is the Enemy
+	# FROM is the taker
+character_event = {
+	id = CM.10016
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				FROM = {
+					religion_head = { is_alive = yes }
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no
+					OR = {
+						religion = FROM
+						religion = new_character
+					}
+					NOT = { character = FROM }
+				}
+				chronicle = {
+					entry = CHRONICLE_CRUSADE_WON
+					portrait = [From.RelHead.GetID]
+				}
+			}
+			FROM = {
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_CRUSADE_WON_AND_I_GOT_THE_TITLE
+						portrait = [From.GetID]
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					FROM = {
+						religion_head = { is_alive = yes } # Crusade ended inconclusively as the religious head no longer exist
+					}
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no
+					OR = {
+						religion = FROM
+						religion = new_character
+					}
+				}
+				chronicle = {
+					entry = CHRONICLE_CRUSADE_LOST_NO_HEAD
+				}
+			}
+		}
+	}
+}
+
+# On crusade failure
+	# ROOT is the target title
+	# new_character is the Enemy
+	# FROM is the Pope/Caliph
+character_event = {
+	id = CM.10017
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				OR = {
+					religion = FROM
+					religion = new_character
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_CRUSADE_LOST
+				portrait = [New.GetID]
+			}
+		}
+	}
+}
+
+# Aztec first contact
+character_event = {
+	id = CM.10018
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				capital_scope = {
+					NOT = { empire = { title = e_rajastan } }
+					NOT = { empire = { title = e_bengal } }
+					NOT = { empire = { title = e_deccan } }
+					NOT = { empire = { title = e_india } }
+					NOT = { empire = { title = e_abyssinia } }
+				}
+			}
+			character_event = { id = CM.10019 }
+		}
+	}
+}
+
+character_event = {
+	id = CM.10019
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_AZTECS_FIRST_CONTACT
+			portrait = [From.GetID]
+		}
+	}
+}
+
+# Aztec Invasion
+character_event = {
+	id = CM.10020
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_AZTEC_INVASION
+			portrait = [From.GetID]
+		}
+	}
+}
+
+# Creates new higher level title
+	# On create title - ROOT is the creating character, FROM is the title
+character_event = {
+	id = CM.10021
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		ROOT = {
+			any_demesne_title = {
+				NOT = { title = FROM }
+				FROM = {
+					higher_tier_than = PREV
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_CREATED_TITLE
+			portrait = [Root.GetID]
+		}
+	}
+}
+
+# Usurps new higher level title
+	# On usurp title ROOT is the character, FROM is the title, FROMFROM is the old holder
+character_event = {
+	id = CM.10022
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		ROOT = {
+			any_demesne_title = {
+				NOT = { title = FROM }
+				FROM = {
+					higher_tier_than = PREV
+				}
+			}
+		}
+	}
+
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_USURPED_TITLE
+			portrait = [Root.GetID]
+		}
+	}
+}
+
+# Marriage
+character_event = {
+	id = CM.10023
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			ai = no
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				mother_even_if_dead = { always = yes }
+				OR = {
+					new_character = {
+						father_even_if_dead = {
+							PREV = {
+								mother_even_if_dead = {
+									higher_tier_than = PREVPREV
+								}
+							}
+						}
+					}
+					NOT = { father_even_if_dead = { always = yes } }
+				}
+			}
+			FROM = {
+				chronicle = {
+				entry = CHRONICLE_MARRIED_MOTHER_IMPORTANT
+				portrait = [New.GetID]
+				}
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { always = yes }
+				OR = {
+					new_character = {
+						father_even_if_dead = {
+							PREV = {
+								mother_even_if_dead = {
+									NOT = { higher_tier_than = PREVPREV }
+								}
+							}
+						}
+					}
+					NOT = { mother_even_if_dead = { always = yes } }
+				}
+			}
+			FROM = {
+				chronicle = {
+				entry = CHRONICLE_MARRIED_FATHER_IMPORTANT
+				portrait = [New.GetID]
+				}
+			}
+		}
+		if = {
+			limit = {
+				new_character = {
+					NOT = { father_even_if_dead = { always = yes } }
+					NOT = { mother_even_if_dead = { always = yes } }
+				}
+			}
+			FROM = {
+				chronicle = {
+				entry = CHRONICLE_MARRIED_NO_PARENT
+				portrait = [New.GetID]
+				}
+			}
+		}
+	}
+}
+
+
+# From on action on_became_imprisoned - check who was imprisoned and create appropriate chronicle entries
+character_event = {
+	id = CM.10024
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			any_vassal = { ai = no }
+			any_spouse = { ai = no }
+			any_child = { ai = no }
+			any_playable_ruler = {
+				ai = no
+				current_heir = {
+					character = ROOT
+				}
+			}
+			AND = {
+				controls_religion = yes
+				any_playable_ruler = {
+					ai = no
+					religion = ROOT
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PLAYER_IMPRISONED
+				portrait = [Root.GetID]
+			}
+		}
+		any_vassal = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_LIEGE_IMPRISONED
+				portrait = [Root.GetID]
+			}
+		}
+		any_spouse = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_SPOUSE_IMPRISONED
+				portrait = [Root.GetID]
+			}
+		}
+		any_child = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PARENT_IMPRISONED
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				current_heir = {
+					character = ROOT
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_HEIR_IMPRISONED
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				religion_head = {
+					character = ROOT
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_RELIGION_HEAD_IMPRISONED
+				portrait = [Root.GetID]
+			}
+		}
+	}
+}
+
+# From on action on_released_from_prison - check who was released and create appropriate chronicle entries
+character_event = {
+	id = CM.10025
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			any_vassal = { ai = no }
+			any_spouse = { ai = no }
+			any_child = { ai = no }
+			any_playable_ruler = {
+				ai = no
+				current_heir = {
+					character = ROOT
+				}
+			}
+			AND = {
+				controls_religion = yes
+				any_playable_ruler = {
+					ai = no
+					religion = ROOT
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PLAYER_RELEASED
+				portrait = [Root.GetID]
+			}
+		}
+		any_vassal = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_LIEGE_RELEASED
+				portrait = [Root.GetID]
+			}
+		}
+		any_spouse = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_SPOUSE_RELEASED
+				portrait = [Root.GetID]
+			}
+		}
+		any_child = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PARENT_RELEASED
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				current_heir = {
+					character = ROOT
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_HEIR_RELEASED
+				portrait = [Root.GetID]
+			}
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				religion_head = {
+					character = ROOT
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_RELIGION_HEAD_RELEASED
+				portrait = [Root.GetID]
+			}
+		}
+	}
+}
+
+# When a character converts to a new religion - On action: on_character_convert_religion
+character_event = {
+	id = CM.10026
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			any_vassal = { ai = no }
+			liege = { ai = no }
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PLAYER_CONVERTED_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
+		if = {
+			limit = {
+				any_vassal = { ai = no }
+			}
+			chronicle = {
+				entry = CHRONICLE_LIEGE_CONVERTED_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
+		if = {
+			limit = {
+				liege = { ai = no }
+				independent = no
+				OR = {
+					AND = {
+						liege = { primary_title = { tier = KING } }
+						primary_title = { higher_tier_than = COUNT }
+					}
+					AND = {
+						liege = { primary_title = { tier = EMPEROR } }
+						primary_title = { higher_tier_than = DUKE }
+					}
+				}
+			}
+			liege = {
+				chronicle = {
+					entry = CHRONICLE_MAJOR_VASSAL_CONVERTED_RELIGION
+					portrait = [Root.GetID]
+				}
+			}
+		}
+	}
+}
+
+# When a character converts to a new culture - On action: on_character_convert_culture
+character_event = {
+	id = CM.10027
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = no
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_PLAYER_CONVERTED_CULTURE
+			portrait = [Root.GetID]
+		}
+	}
+}
+
+# When a character acquires a nickname - On action: on_acquire_nickname
+character_event = {
+	id = CM.10028
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = no
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_PLAYER_ACQUIRED_NICKNAME
+			portrait = [Root.GetID]
+		}
+	}
+}
+
+# Won battle - On action: on_battle_won
+character_event = {
+	id = CM.10029
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = no
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_WON_BATTLE_FOUGHT
+			portrait = [Root.GetID]
+		}
+	}
+}
+
+# Lost battle - On action: on_battle_lost
+character_event = {
+	id = CM.10030
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = no
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_LOST_BATTLE_FOUGHT
+			portrait = [Root.GetID]
+		}
+	}
+}
+
+# Won battle but didn't participate myself
+character_event = {
+	id = CM.10031
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				top_liege = {
+					ai = no
+					NOT = { at_location = ROOT }
+					war_with = FROM
+				}
+			}
+			top_liege = {
+				chronicle = {
+					entry = CHRONICLE_WON_BATTLE_BUT_DIDNT_FIGHT
+					portrait = [Root.GetID] # The commander
+				}
+			}
+		}
+	}
+}
+
+# Lost battle but didn't participate myself
+character_event = {
+	id = CM.10032
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				top_liege = {
+					ai = no
+					NOT = { at_location = ROOT }
+					war_with = FROM
+				}
+			}
+			top_liege = {
+				chronicle = {
+					entry = CHRONICLE_LOST_BATTLE_BUT_DIDNT_FIGHT
+					portrait = [Root.GetID] # The commander
+				}
+			}
+		}
+	}
+}
+
+# Personally captured major settlement
+character_event = {
+	id = CM.10033
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = no
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_CAPTURED_MAJOR_SETTLEMENT_MYSELF
+			picture = GFX_evt_victory_arch_byzantine
+		}
+	}
+}
+
+# My forces captured major settlement
+character_event = {
+	id = CM.10034
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = yes
+	
+	trigger = {
+		OR = {
+			FROM = { title = b_roma }
+			FROM = { title = b_constantinople }
+			FROM = { title = b_bagdad }
+			FROM = { title = b_indraprastha }
+			FROM = { title = b_jerusalem }
+			FROM = { title = b_mecca }
+			FROM = { title = b_alexandria }
+			FROM = { title = b_cordoba }
+			AND = {
+				year = 900
+				FROM = { title = b_venezia }
+			}
+			AND = {
+				year = 1164
+				FROM = { title = b_koln }
+			}
+			AND = {
+				year = 1200
+				FROM = { title = b_paris }
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				top_liege = {
+					ai = no
+					NOT = { at_location = ROOT }
+				}
+			}
+			top_liege = {
+				chronicle = {
+					entry = CHRONICLE_MY_FORCES_CAPTURED_MAJOR_SETTLEMENT
+					portrait = [Root.GetID] # The commander
+				}
+			}
+		}
+	}
+}
+
+# Enemy forces captured major settlement
+character_event = {
+	id = CM.10035
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	ai = yes
+	
+	trigger = {
+		OR = {
+			FROM = { title = b_roma }
+			FROM = { title = b_constantinople }
+			FROM = { title = b_bagdad }
+			FROM = { title = b_indraprastha }
+			FROM = { title = b_jerusalem }
+			FROM = { title = b_mecca }
+			FROM = { title = b_alexandria }
+			FROM = { title = b_cordoba }
+			AND = {
+				year = 900
+				FROM = { title = b_venezia }
+			}
+			AND = {
+				year = 1164
+				FROM = { title = b_koln }
+			}
+			AND = {
+				year = 1200
+				FROM = { title = b_paris }
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				FROM = {
+					owner = {
+						top_liege = {
+							ai = no
+						}
+					}
+				}
+			}
+			FROM = {
+				owner = {
+					top_liege = {
+						chronicle = {
+							entry = CHRONICLE_ENEMY_FORCES_CAPTURED_MAJOR_SETTLEMENT
+							portrait = [Root.GetID] # The owner of the enemy forces
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Marriage of primary heir  - ROOT is employer. FROM is employers "employee". new_character is the other spouse.
+character_event = {
+	id = CM.10036
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_playable_ruler = {
+			ai = no
+			FROM = { is_primary_heir = PREV }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				mother_even_if_dead = { always = yes }
+				OR = {
+					new_character = {
+						father_even_if_dead = {
+							PREV = {
+								mother_even_if_dead = {
+									higher_tier_than = PREVPREV
+								}
+							}
+						}
+					}
+					NOT = { father_even_if_dead = { always = yes } }
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no
+					FROM = { is_primary_heir = PREV }
+				}
+				chronicle = {
+					entry = CHRONICLE_MARRIED_MOTHER_IMPORTANT
+					portrait = [New.GetID]
+				}
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { always = yes }
+				OR = {
+					new_character = {
+						father_even_if_dead = {
+							PREV = {
+								mother_even_if_dead = {
+									NOT = { higher_tier_than = PREVPREV }
+								}
+							}
+						}
+					}
+					NOT = { mother_even_if_dead = { always = yes } }
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no
+					FROM = { is_primary_heir = PREV }
+				}
+				chronicle = {
+					entry = CHRONICLE_MARRIED_FATHER_IMPORTANT
+					portrait = [New.GetID]
+				}
+			}
+		}
+		if = {
+			limit = {
+				new_character = {
+					NOT = { father_even_if_dead = { always = yes } }
+					NOT = { mother_even_if_dead = { always = yes } }
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					ai = no
+					FROM = { is_primary_heir = PREV }
+				}
+				chronicle = {
+					entry = CHRONICLE_MARRIED_NO_PARENT
+					portrait = [New.GetID]
+				}
+			}
+		}
+	}
+}
+
+# Divorce
+character_event = {
+	id = CM.10037
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_DIVORCED
+			portrait = [Spouse.GetID]
+		}
+	}
+}
+
+# Peace, attacker won
+character_event = {
+	id = CM.10038
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	immediate = {
+		FROM = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_WAR_WON
+					portrait = [Prev.GetID]
+				}
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_WAR_WON
+				portrait = [From.GetID]
+			}
+		}
+	}
+}
+
+# Inherit major title   - # ROOT is the character, FROM is the title, FROMFROM is the old holder
+character_event = {
+	id = CM.10039
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { higher_tier_than = FROM }
+			}
+			chronicle = {
+				entry = CHRONICLE_INHERIT_MAJOR_TITLE
+				PICTURE = GFX_evt_throne_room
+			}
+		}
+	}
+}
+
+# Peace, whitepeace
+character_event = {
+	id = CM.10040
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	immediate = {
+		FROM = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_WAR_WHITEPEACE
+					portrait = [Prev.GetID]
+				}
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_WAR_WHITEPEACE
+				portrait = [From.GetID]
+			}
+		}
+	}
+}
+
+# Peace, defender won
+character_event = {
+	id = CM.10041
+	
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	immediate = {
+		FROM = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_WAR_LOST
+					portrait = [Prev.GetID]
+				}
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_WAR_LOST
+				portrait = [From.GetID]
+			}
+		}
+	}
+}
+
+
+
+#############################################################################################
+# Random content if chronicle is empty at year end (On Action on_create_chronicle_if_empty) #
+#############################################################################################
+
+# Dragon Sighted
+character_event = {
+	id = CM.10500
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10501 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10501
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0001
+				type = MONSTER_SIGHTED
+			}
+		}
+	}
+}
+
+# Giant sighted
+character_event = {
+	id = CM.10502
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10503 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10503
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0002
+				type = MONSTER_SIGHTED
+			}
+		}
+	}
+}
+
+# Sea serpents sighted
+character_event = {
+	id = CM.10504
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10505 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10505
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0003
+				type = MONSTER_SIGHTED
+			}
+		}
+	}
+}
+
+# Strange shapes seen dancing on the moon
+character_event = {
+	id = CM.10506
+	
+	hide_window = yes
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_FILL0004
+			type = MONSTER_SIGHTED
+		}
+	}
+}
+
+# Ten feet tall woman
+character_event = {
+	id = CM.10507
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10508 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10508
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0005
+				type = MONSTER_SIGHTED
+			}
+		}
+	}
+}
+
+# Raining blood
+character_event = {
+	id = CM.10509
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10510 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10510
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0006
+				type = FREAK_NATURAL_EVENT
+			}
+		}
+	}
+}
+
+# Strange plague kills rabbits
+character_event = {
+	id = CM.10511
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10512 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10512
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0007
+				type = FREAK_NATURAL_EVENT
+			}
+		}
+	}
+}
+
+# Earthquake
+character_event = {
+	id = CM.10513
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10514 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10514
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0008
+				type = NATURAL_DISASTER
+			}
+		}
+	}
+}
+
+# Flood
+character_event = {
+	id = CM.10515
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10516 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10516
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0009
+				type = NATURAL_DISASTER
+			}
+		}
+	}
+}
+
+# Two suns were seen
+character_event = {
+	id = CM.10517
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10518 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10518
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0010
+				type = FREAK_NATURAL_EVENT
+			}
+		}
+	}
+}
+
+# Goat with three heads was born
+character_event = {
+	id = CM.10519
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10520 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10520
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0011
+				type = MONSTER_SIGHTED
+			}
+		}
+	}
+}
+
+# Bird invasion
+character_event = {
+	id = CM.10521
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10522 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10522
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0012
+				type = FREAK_NATURAL_EVENT
+			}
+		}
+	}
+}
+
+# Many children born in province
+character_event = {
+	id = CM.10523
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10524 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10524
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0013
+				type = POPULATION_EVENT
+			}
+		}
+	}
+}
+
+# Province celebrates beloved ruler
+character_event = {
+	id = CM.10525
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_demesne_province = {
+			province_event = { id = CM.10526 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10526
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0014
+				type = POPULATION_EVENT
+			}
+		}
+	}
+}
+
+# A star falls from the sky
+character_event = {
+	id = CM.10527
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		random_realm_province = {
+			province_event = { id = CM.10528 }
+		}
+	}
+}
+
+province_event = {
+	id = CM.10528
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			chronicle = {
+				entry = CHRONICLE_FILL0015
+				type = FREAK_NATURAL_EVENT
+			}
+		}
+	}
+}
+
+# Bountiful harvest
+character_event = {
+	id = CM.10529
+	
+	is_triggered_only = yes 
+	
+	hide_window = yes
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_FILL0016
+			type = POPULATION_EVENT
+		}
+	}
+}
+###################################
+#
+# Civil War Events
+#
+# Id 45000 - 45999 reserved
+#
+###################################
+
+# Faction Revolt - Great numbers of Rebels flock to your banner
+character_event = {
+	id = 45000
+	desc = "EVTDESC45000"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war_with = FROM
+	}
+	
+	option = {
+		name = "EXCELLENT"
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = 45001 }
+			}
+		}
+		
+		capital_scope = {
+			tooltip = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.05
+						attrition = 1.0
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.05
+						attrition = 1.0
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.05
+						attrition = 1.0
+					}
+				}
+			}
+			
+			hidden_tooltip = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 23
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.05
+						earmark = faction_revolters
+						attrition = 1.0
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 30
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.05
+						earmark = faction_revolters
+						attrition = 1.0
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 31
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.05
+						earmark = faction_revolters
+						attrition = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+
+# Faction Revolt - Rebels flock to rebel leader's banner
+character_event = {
+	id = 45001
+	desc = "EVTDESC45001"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = "EVTOPTA45001"
+	}
+}
+
+
+# Faction Revolt - Loyalists flock to your banner
+character_event = {
+	id = 45002
+	desc = "EVTDESC45002"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war = yes
+		any_war = {
+			defender = { character = ROOT }
+			attacker = {
+				liege_before_war = { character = ROOT }
+			}
+		}
+	}
+	
+	option = {
+		name = "EXCELLENT"
+		
+		hidden_tooltip = {
+			any_war = {
+				limit = {
+					defender = { character = ROOT }
+					attacker = {
+						liege_before_war = { character = ROOT }
+					}
+				}
+				any_attacker = {
+					character_event = { id = 45003 }
+				}
+			}
+		}
+		
+		capital_scope = {
+			tooltip = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = ROOT
+						match_mult = 0.038
+						attrition = 1.0
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = ROOT
+						match_mult = 0.038
+						attrition = 1.0
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = ROOT
+						match_mult = 0.038
+						attrition = 1.0
+					}
+				}
+			}
+			
+			hidden_tooltip = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 23
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = ROOT
+						match_mult = 0.038
+						earmark = faction_loyalists
+						attrition = 1.0
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 30
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = ROOT
+						match_mult = 0.038
+						earmark = faction_loyalists
+						attrition = 1.0
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 31
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = ROOT
+						match_mult = 0.038
+						earmark = faction_loyalists
+						attrition = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+
+# Faction Revolt - Loyalists flock to the liege's banner
+character_event = {
+	id = 45003
+	desc = "EVTDESC45003"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = "EVTOPTA45003"
+	}
+}
+
+# Faction Revolt - A smaller number of Rebels flock to your banner
+character_event = {
+	id = 45004
+	desc = "EVTDESC45000"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war_with = FROM
+	}
+	
+	option = {
+		name = "EXCELLENT"
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = 45001 }
+			}
+		}
+		
+		capital_scope = {
+			tooltip = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.025
+						attrition = 1.0
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.025
+						attrition = 1.0
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.025
+						attrition = 1.0
+					}
+				}
+			}
+			
+			hidden_tooltip = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 23
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.025
+						earmark = faction_revolters
+						attrition = 1.0
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 30
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.025
+						earmark = faction_revolters
+						attrition = 1.0
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 31
+					attributes = {
+						martial = 5
+					}
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						match_character = FROM
+						match_mult = 0.025
+						earmark = faction_revolters
+						attrition = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+#############################################
+#
+# Court Event Series
+#
+# Event ID 73000-73999 is reserved
+#
+#############################################
+#Written by Johan Andersson
+
+#A famous writer proposes to compose your family chronicles
+character_event = {
+	id = 73000
+	desc = EVTDESC73000
+	picture = GFX_evt_monk
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		NOT = { trait = proud }
+		NOT = { trait = humble }
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.1
+			trait = shy
+		}		
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+		
+	}	
+	
+	option = {
+		name = EVTOPTA73000 #Give him patronage
+		scaled_wealth = -0.2
+		prestige = 25
+		random = {
+			chance = 15
+			add_trait = proud 
+			hidden_tooltip = { character_event = { id = 38261 }  }
+		}
+	}	
+	option = {
+		name = EVTOPTB73000 #Ignore him
+		any_dynasty_member = {
+			limit = {
+				NOT = {
+					character = ROOT
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = disrespects_dynasty
+				months = 120
+			}
+		}
+		random = {
+			chance = 15
+			add_trait = humble 
+			hidden_tooltip = { character_event = { id = 38260 }  }
+		}
+		
+	}	
+}	
+
+#Your young wife takes a passion for romantic poetry. She keeps reading any sort of romantic poetry she can get hold of.
+character_event = {
+	id = 73001
+	desc = EVTDESC73001
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	#only_men = yes
+	#considering men can be targets of minnesingers in Aventuria this should fit both as well
+	
+	trigger = {
+		is_married = yes
+		spouse = {
+			is_abroad = no
+			prisoner = no
+			is_alive = yes
+			NOT = { age = 21 }
+			NOT = { demesne_size = 1 }
+			fertility = 0.15
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 4.0
+			spouse = { is_pregnant = yes }
+		}
+		modifier = {
+			factor = 2.0
+			spouse = { trait = poet }
+		}
+		modifier = {
+			factor = 1.5
+			trait = gregarious
+		}
+	}	
+	
+	option = {
+		name = EVTOPTA73001 # Help her, by getting her more to read.
+		wealth = -10
+		spouse = { fertility = 0.1 }
+		if = {
+			limit = { spouse = { not = {trait = lustful } } }
+			spouse = { add_trait = lustful }
+		}
+		opinion = {
+			who = ROOT
+			modifier = spouse_encouraged
+			months = 12
+		}		
+	}	
+	option = {
+		name = EVTOPTB73001 # That is her interests, not mine.
+		piety = 5
+		spouse = { fertility = -0.1 }
+		opinion = {
+			who = ROOT
+			modifier = spouse_ignores_me
+			months = 12
+		}		
+	}
+	option = {
+		name = EVTOPTC73001 # These are books created by satan!
+		trigger = {
+			religion_group = twelve
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT= { trait = zealous }
+			}
+		}
+		if = {
+			limit = {
+				spouse = {
+					NOT = {
+						religion_group = rastullah_group
+					}
+				}
+			}
+			spouse = { add_trait = chaste }
+		}
+		piety = 10
+	}
+	option = {
+		name = EVTOPTD73001 # These are books created by Shaytan!
+		trigger = {
+			religion_group = rastullah_group
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT= { trait = zealous }
+			}
+		}
+		if = {
+			limit = {
+				spouse = {
+					NOT = {
+						religion_group = rastullah_group
+					}
+				}
+			}
+			spouse = { add_trait = chaste }
+		}
+		piety = 10
+	}
+}	
+
+#The Church wants to organise a Miracle play for a local saint
+character_event = {
+	id = 73002
+	desc = EVTDESC73002
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		religion = twelve
+		in_command = no
+		any_vassal = {
+			tier = baron
+			is_theocracy = yes
+			NOT = {
+				has_opinion_modifier = { who = ROOT modifier = ignores_local_saints }
+			}
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 0.1
+			trait = cynical
+		}
+	}	
+	
+	option = {
+		name = EVTOPTA73002 # It is for the glory of God!
+		scaled_wealth = -0.20
+		piety = 10
+	}	
+	option = {
+		name = EVTOPTB73002 # If the Church wants it, the Church pays for it
+		random_vassal = {
+			limit = {
+				tier = baron
+				is_theocracy = yes
+			}
+			opinion = {
+				who = ROOT
+				modifier = ignores_local_saints
+				years = 2
+			}				
+		}
+	}	
+}	
+
+#The Peasants wants to organise a great carnival and ask for your funding
+character_event = {
+	id = 73003
+	desc = EVTDESC73003
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		religion_group = twelve
+		in_command = no
+		tier = count
+		wealth = 50
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = kind
+		}
+	}	
+	
+	option = {
+		name = EVTOPTA73003 # We are rich, we can support this.
+		wealth = -25
+		if = {
+			limit = { trait = greedy }
+			prestige = -5
+		}
+	}	
+	option = {
+		name = EVTOPTB73003 # They are just peasants..
+		random_demesne_province = {
+			add_province_modifier = {
+				name = peasants_scorned
+				duration = 120
+			}
+		}
+		remove_trait = just
+	}	
+}	
+
+#A famous writer proposes to compose your family chronicles ## A talented artist proposes to paint a portrait of your father
+character_event = {
+	id = 73004
+	desc = EVTDESC73004
+	picture = GFX_evt_monk
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = no
+		father_even_if_dead = {
+			is_alive = no
+			prestige = 100
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.1
+			trait = shy
+		}		
+	}	
+	
+	option = {
+		name = EVTOPTA73004 #This will be grand in the main hall
+		scaled_wealth = -0.15
+		prestige = 25
+	}	
+	option = {
+		name = EVTOPTB73004 #This is a waste of money
+		any_dynasty_member = {
+			opinion = {
+				who = ROOT
+				modifier = disrespects_dynasty
+				months = 120
+			}
+		}
+	}	
+}	
+
+#Luxury clothes are trendy at the moment. What about keeping your courtiers busy by changing the fashion at court?
+character_event = {
+	id = 73005
+	desc = EVTDESC73005
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		in_command = no
+		OR = {
+			trait = fair
+			trait = ugly
+		}
+		NOT = {	trait = humble	}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2.0
+			trait = proud
+			trait = fair
+		}
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+	}	
+	
+	option = {
+		name = EVTOPTA73005 #Introduce fashion at the court
+		if = {
+			limit = { trait = fair }
+			random = {
+				chance = 10
+				add_trait = proud 
+				hidden_tooltip = { character_event = { id = 38261 }  }
+			}
+		}
+		scaled_wealth = -0.2
+		prestige = 5
+		piety = -5
+		any_courtier = {
+			wealth = -5
+			prestige = 5
+			piety = -5
+		}
+		
+	}	
+	option = {
+		name = EVTOPTB73005 #There are better ways of spending the taxes
+		piety = 5
+		prestige = 10
+		
+		random = {
+			chance = 15
+			add_trait = humble 
+			hidden_tooltip = { character_event = { id = 38260 }  }
+		}
+		
+	}	
+}	
+
+#Your son has got a servant maid pregnant
+character_event = {
+	id = 73006
+	desc = EVTDESC73006
+	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	only_men = yes #Is 76026 the female version of this?
+	
+	trigger = {
+		any_child = {
+			is_married = no
+			is_female = no
+			age = 16
+			NOT = { age = 21 }
+			NOT = { demesne_size = 1 }
+			NOT = { trait = chaste }
+			NOT = { trait = celibate }
+		}
+	}
+	immediate = {
+		random_child = {
+			limit = {
+				is_married = no
+				is_female = no
+				age = 16
+				NOT = { age = 21 }
+				NOT = { demesne_size = 1 }
+				NOT = { trait = chaste }
+				NOT = { trait = celibate }
+			}
+			set_character_flag = knock_up_maid
+		}
+
+	}
+	option = {
+		name = EVTOPTA73006 #That's my boy
+		trigger = {
+			NOT = { trait = chaste }
+			NOT = { trait = celibate }
+		}
+		piety = -10
+		random_child = {
+			limit = { has_character_flag = knock_up_maid }
+			opinion = {
+				modifier = approves_of_my_behaviour
+				who = ROOT
+				years = 2
+			}			
+			add_trait = lustful
+			clr_character_flag = knock_up_maid
+		}
+	}
+	option = {
+		name = EVTOPTB73006 #Force him to adopt the child to prevent scandal
+		piety = 10
+		random_child = {
+			limit = { has_character_flag = knock_up_maid }
+			opinion = {
+				modifier = resentful_of_my_behaviour
+				who = ROOT
+				years = 2
+			}	
+			create_character = {
+				age = 0
+				trait = bastard
+			}
+			new_character = {
+				set_father = prev
+				dynasty = father
+			}
+			prestige = -5
+			clr_character_flag = knock_up_maid
+		}
+	}
+	option = {
+		name = EVTOPTC73006 #Give him a beating for messing with inferiors
+		if = {
+			#limit = { religion = jain } #should be possible for HES believers, no?
+			piety = -20
+			custom_tooltip = { text = jain_ahimsa_tooltip }
+		}
+		random_child = {
+			limit = { has_character_flag = knock_up_maid }
+			opinion = {
+				modifier = resentful_of_my_behaviour
+				who = ROOT
+				years = 2
+			}
+			add_trait = wroth
+			add_trait = ambitious
+			clr_character_flag = knock_up_maid
+		}
+	}
+	option = {
+		name = EVTOPTD73006 #Send him to confess his sins
+		trigger = {
+			OR = {
+				religion_group = twelve
+				religion_group = rastullah_group
+			}
+		}
+		random_child = {
+			limit = { has_character_flag = knock_up_maid }
+			if = {
+				limit = {
+					religion_group = twelve
+				}
+				add_trait = chaste
+			}
+			if = {
+				limit = {
+					religion_group = rastullah_group
+				}
+				piety = -10
+			}
+			clr_character_flag = knock_up_maid
+		}
+	}
+}
+	
+### Bored wife: Your wife wants latest fashion fad.... ###
+character_event = {
+	id = 73007
+	desc = EVTDESC73007
+	picture = GFX_evt_daughter_asking_father
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	#only_men = yes
+	#dont marry those foppish Horasian dudes
+	
+	trigger = {
+		in_command = no
+		spouse = {
+			is_abroad = no
+			prisoner = no
+			is_alive = yes
+			NOT = { trait = shy } 
+			NOT = { trait = zealous }
+			NOT = { demesne_size = 1 }
+			opinion = { who = ROOT value = 10 }
+		}
+		NOT = { trait = zealous }
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.25
+			spouse = { trait = stressed }
+		}
+		modifier = {
+			factor = 2.0
+			spouse = { trait = greedy }
+		}
+		modifier = {
+			factor = 1.5
+			spouse = { trait = fair }
+		}
+		modifier = {
+			factor = 2.5
+			spouse = { trait = ugly }
+		}
+
+	}	
+	
+	option = {
+		name = EVTOPTA73007 #My money is your money, darling
+		trigger = {
+			NOT = { trait = greedy }
+		}
+		if = {
+			limit = { spouse = { trait = stressed  } }
+			spouse = { remove_trait = stressed  }
+		}
+		add_trait = charitable
+		character_event = { id = 73005 days = 10 tooltip = EVTTOOLTIP73005 }
+	}	
+	option = {
+		name = EVTOPTB73007 #Let's go to the church instead, darling
+		trigger = {
+			religion_group = twelve
+		}
+		if = {
+			limit = { trait = cynical }
+			prestige = -5
+		}
+		add_trait = zealous
+		spouse = { add_trait = zealous }
+		
+	}	
+	option = {
+		name = EVTOPTC73007 #Shoo, this is my money you're talking about
+		trigger = {
+			NOT = { trait = greedy }
+		}
+		add_trait = greedy
+		spouse = {
+			opinion = {
+				who = ROOT
+				modifier = not_feeling_apreciated
+				years = 2
+			}
+		}
+	}	
+}	
+
+#A famous herald proposed his service
+character_event = {
+	id = 73008
+	desc = EVTDESC73008
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		is_landed = yes
+		capital_scope = { TECH_NOBLE_CUSTOMS = 4 }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 0.05
+			trait = shy
+		}	
+		modifier = {
+			factor = 1.25
+			trait = gregarious
+		}	
+	}
+	option = {
+		name = EVTOPTA73008 #Hire him.
+		create_random_diplomat = {
+			random_traits = yes
+			dynasty = random
+			female = no
+		}
+		scaled_wealth = -0.1
+	}
+	option = {
+		name = EVTOPTB73008 #Not interested
+		prestige = -5
+	}
+
+}
+
+# A destitute noble FROM a former enemy court ask for permanent hospitality
+character_event = {
+	id = 73009
+	desc = EVTDESC73009
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		war = yes
+		any_current_enemy = {
+			culture = ROOT
+		}
+	}
+
+	weight_multiplier = {
+		days = 1	
+		modifier = {
+			factor = 1.5
+			trait = kind
+		}
+		modifier = {
+			factor = 0.2
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.2
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+	}
+
+	option = {
+		name = EVTOPTA73009  #Welcome him to your court
+		scaled_wealth = -0.2
+		create_random_soldier = {
+			random_traits = yes
+			dynasty = random
+			#female = no
+		}
+		new_character = {
+			ROOT = {
+				random_current_enemy = {
+					limit = {
+						culture = ROOT
+					}
+					random_demesne_title = {
+						limit = {
+							OR = {
+								AND = {
+									tier = baron
+									is_capital = no
+								}
+								tier = count
+							}
+						}
+						add_claim = prevprevprev
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB73009 #Tell him he can only stay for the night
+		piety = 15
+	}
+
+}
+
+#I've been readin 'Ars Moriendi', and it claims that death is not something to be afraid of. 
+#insert Aventurian about Boron being fair or Marbo or sth similar
+character_event = {
+	id = 73010
+	desc = EVTDESC73010
+	picture = GFX_evt_library
+	
+	min_age = 55
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#year = 1415
+		OR = {
+			religion_group = twelve
+			religion_group = rastullah_group
+			religion_group = demonic
+		}
+		NOT = { has_character_flag = ars_moriendi }
+	}
+	
+	weight_multiplier = {
+		days = 1	
+		modifier = {
+			factor = 1.5
+			age = 58
+		}
+		modifier = {
+			factor = 2.0
+			age = 62
+		}
+		modifier = {
+			factor = 100.0
+			age = 65
+		}
+		modifier = {
+			factor = 5.0
+			trait = zealous
+		}
+		
+		
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 1.1
+			trait = ill
+		}
+		modifier = {
+			factor = 1.25
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 1.25
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 2.0
+			trait = leper
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			trait = maimed
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}
+		modifier = {
+			factor = 1.1
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 1.1
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 1.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 1.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 1.1
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 1.1
+			trait = has_small_pox
+		}		
+	}
+	
+	immediate = {
+		set_character_flag = ars_moriendi
+	}
+	
+	option = {
+		name = EVTOPTA73011 #I am avoiding tempration.
+		trigger = {
+			NOT = { trait = cynical }
+			NOT = { trait = lustful }
+			NOT = { trait = gluttonous }
+			NOT = { trait = greedy }
+			NOT = { trait = slothful }
+			NOT = { trait = envious }
+			NOT = { trait = wroth }
+			NOT = { trait = proud }
+			
+		}
+		health = -1
+		piety = 100
+	}
+	option = {
+		name = EVTOPTB73011 #Forgive me father, for I have sinned.
+		trigger = {
+			NOT = { trait = cynical }
+			OR = {
+				trait = lustful
+				trait = gluttonous
+				trait = greedy
+				trait = slothful
+				trait = envious
+				trait = wroth
+				trait = proud
+			}
+		}
+		if = {
+			limit = {
+				trait = lustful
+			}
+			remove_trait = lustful
+			piety = -20
+		}
+		if = {
+			limit = {
+				trait = gluttonous
+			}
+			remove_trait = gluttonous
+			piety = -20
+		}
+		if = {
+			limit = {
+				trait = greedy
+			}
+			remove_trait = greedy
+			piety = -20
+		}		
+		if = {
+			limit = {
+				trait = slothful
+			}
+			remove_trait = slothful
+			piety = -20
+		}		
+		if = {
+			limit = {
+				trait = envious
+			}
+			remove_trait = envious
+			piety = -20
+		}		
+		if = {
+			limit = {
+				trait = wroth
+			}
+			remove_trait = wroth
+			piety = -20
+		}
+		if = {
+			limit = {
+				trait = proud
+			}
+			remove_trait = proud
+			piety = -20
+		}				
+	}
+	option = {
+		name = EVTOPTC73011 	#I do not fear death...
+		tooltip_info = cynical
+		trigger = { 
+			trait = cynical 
+			NOT = { trait = craven }
+		}
+		piety = -5
+		prestige = 5
+		health = -2
+	}
+	option = {
+		name = EVTOPTD73011 #I am just a poor sinner..
+		piety = -10
+		health = -2
+	}
+}
+
+
+
+#####################################
+# Ask for a job if I am good!
+#####################################
+
+
+### MARSHAL ###
+character_event = {
+	id = 73200
+	desc = EVTDESC73200	#I want to be marshal, I am better...
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_war
+	
+	#only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_ruler = no
+		is_councillor = no
+		independent = no
+		NOT = { liege = { has_character_flag = asked_marshal_petition } }
+		NOT = { has_character_flag = asked_for_job }
+		liege = {
+			job_marshal = {
+				same_liege = ROOT
+				NOT = { martial = ROOT }
+				NOT = { has_minor_title = title_regent }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+	}
+	
+	immediate = {
+		set_character_flag = asked_for_job
+		liege = {  set_character_flag = asked_marshal_petition }
+	}
+	
+	option = {
+		name = EVTOPTA73200 
+		liege = { letter_event = { id = 73201 tooltip = EVTTOOLTIP73201 } }
+	}
+}
+
+#Someone wants to be my marshal
+letter_event = {
+	id = 73201
+	desc = EVTDESC73201
+	border = GFX_event_letter_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73201 
+		job_marshal = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_marshal
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_marshal
+			hidden_tooltip = {  letter_event = { id = 73205  } }
+		}
+		clr_character_flag = asked_marshal_petition
+		
+	}
+	option = {
+		name = EVTOPTB73201 
+		trigger = {
+			job_marshal = { 
+				NOT = { trait = stressed } 
+				NOT = { trait = depressed } 
+			}
+		}
+		job_marshal = {
+			letter_event = { id = 73202 tooltip = EVTTOOLTIP73202 }
+		}
+		hidden_tooltip = { FROM  = { character_event = { id = 73203 days = 128 random = 63  }	} }
+	}
+	option = {
+		name = EVTOPTC73201 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_marshal_petition
+	}
+}
+
+#I am being replaced...
+letter_event = {
+	id = 73202
+	desc = EVTDESC73202
+	picture = GFX_evt_spymaster
+	border = GFX_event_letter_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_job_title = job_marshal
+	}
+
+	option = {
+		name = EVTOPTA73202 
+		random_list = {
+			50 = {}
+			30 = { change_martial = 1 }
+			20 = { add_trait = stressed hidden_tooltip = { character_event = { id = 38282 }} }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB73202 
+		trigger = {
+			NOT = { trait = ambitious }
+			NOT = { trait = proud }
+		}
+		prestige = -5
+	}
+}
+
+#Ask again
+character_event = {
+	id = 73203
+	desc = EVTDESC73203
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_war
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = asked_for_job
+		independent = no
+		NOT = { has_job_title = job_marshal }
+		liege = {
+			job_marshal = { 
+				NOT = { martial = prev } 
+				same_liege = ROOT
+				NOT = {
+					ROOT = {
+						is_liege_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA73203 
+		liege = { letter_event = { id = 73204 tooltip = EVTTOOLTIP73204 } }
+	}
+}
+
+#Asking again...
+letter_event = {
+	id = 73204
+	desc = EVTDESC73204
+	picture = GFX_evt_spymaster
+	border = GFX_event_letter_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73204 
+		job_marshal = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_marshal
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_marshal
+			hidden_tooltip = {  letter_event = { id = 73205  } }
+		}
+		clr_character_flag = asked_marshal_petition
+		
+	}
+	option = {
+		name = EVTOPTC73204 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_marshal_petition
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73205
+	desc = EVTDESC73205
+	picture = GFX_evt_spymaster
+	border = GFX_event_letter_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73205 
+		prestige = -5
+	}
+}
+
+### Spymaster ###
+character_event = {
+	id = 73210
+	desc = EVTDESC73210	#I want to be spymaster, I am better...
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
+	
+	#only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		is_ruler = no
+		independent = no
+		is_councillor = no
+		NOT = { liege = { has_character_flag = asked_spymaster_petition } }
+		NOT = { has_character_flag = asked_for_job }
+		liege = {
+			job_spymaster = {
+				same_liege = ROOT
+				NOT = { intrigue = ROOT }
+				NOT = { has_minor_title = title_regent }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+	}
+	immediate = {
+		set_character_flag = asked_for_job
+		liege = {  set_character_flag = asked_spymaster_petition }
+	}
+	
+	option = {
+		name = EVTOPTA73210 
+		liege = { letter_event = { id = 73211 tooltip = EVTTOOLTIP73211 } }
+	}
+}
+
+#Someone wants to be my spymaster
+letter_event = {
+	id = 73211
+	desc = EVTDESC73211
+	picture = GFX_evt_spymaster
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA73211 
+		job_spymaster = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_spymaster
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_spymaster
+			hidden_tooltip = {  letter_event = { id = 73215  } }
+		}
+		clr_character_flag = asked_spymaster_petition
+	}
+	option = {
+		name = EVTOPTB73211 
+		trigger = {
+			job_spymaster = { 
+				NOT = { trait = stressed } 
+				NOT = { trait = depressed } 
+			}
+		}
+		job_spymaster = {
+			letter_event = { id = 73212 tooltip = EVTTOOLTIP73212 }
+		}
+		hidden_tooltip = { FROM  = { character_event = { id = 73213 days = 128 random = 63  }	} }
+	}
+	option = {
+		name = EVTOPTC73211 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_spymaster_petition
+	}
+}
+
+#I am being replaced...
+letter_event = {
+	id = 73212
+	desc = EVTDESC73212
+	picture = GFX_evt_spymaster
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_job_title = job_spymaster
+	}
+
+	option = {
+		name = EVTOPTA73212 
+		random_list = {
+			50 = {}
+			30 = { change_intrigue = 1 }
+			20 = { add_trait = stressed hidden_tooltip = { character_event = { id = 38282 }} }
+		}
+	}
+	option = {
+		name = EVTOPTB73212 
+		trigger = {
+			NOT = { trait = ambitious }
+			NOT = { trait = proud }
+		}
+		prestige = -5
+	}
+}
+
+#Ask again
+character_event = {
+	id = 73213
+	desc = EVTDESC73213
+	picture = GFX_evt_spymaster
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = asked_for_job
+		independent = no
+		NOT = { has_job_title = job_spymaster }
+		liege = {
+			job_spymaster = {
+				NOT = { intrigue = prev }
+				same_liege = ROOT
+				NOT = {
+					ROOT = {
+						is_liege_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA73213 
+		liege = { letter_event = { id = 73214 tooltip = EVTTOOLTIP73214 } }
+	}
+}
+
+#Asking again...
+letter_event = {
+	id = 73214
+	desc = EVTDESC73214
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73214 
+		job_spymaster = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_spymaster
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_spymaster
+			hidden_tooltip = {  letter_event = { id = 73215  } }
+		}
+		clr_character_flag = asked_spymaster_petition
+	}
+	option = {
+		name = EVTOPTC73214 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_spymaster_petition
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73215
+	desc = EVTDESC73215
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73215 
+		prestige = -5
+	}
+}
+
+### Treasurer ###
+character_event = {
+	id = 73220
+	desc = EVTDESC73220	#I want to be treasurer, I am better...
+	picture = GFX_evt_spymaster
+
+	#only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_ruler = no
+		independent = no
+		is_councillor = no
+		NOT = { liege = { has_character_flag = asked_treasurer_petition } }
+		NOT = { has_character_flag = asked_for_job }
+		liege = {
+			job_treasurer = {
+				same_liege = ROOT
+				NOT = { stewardship = ROOT }
+				NOT = { has_minor_title = title_regent }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+	}
+	immediate = {
+		set_character_flag = asked_for_job
+		liege = {  set_character_flag = asked_treasurer_petition }
+	}
+	
+	option = {
+		name = EVTOPTA73220 
+		liege = { letter_event = { id = 73221 tooltip = EVTTOOLTIP73221 } }
+	}
+}
+
+#Someone wants to be my treasurer
+letter_event = {
+	id = 73221
+	desc = EVTDESC73221
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73221 
+		job_treasurer = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_treasurer
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_treasurer
+			hidden_tooltip = {  letter_event = { id = 73225  } }
+		}
+		clr_character_flag = asked_treasurer_petition
+		
+	}
+	option = {
+		name = EVTOPTB73221 
+		trigger = {
+			job_treasurer = { 
+				NOT = { trait = stressed } 
+				NOT = { trait = depressed } 
+			}
+		}
+		job_treasurer = {
+			letter_event = { id = 73222 tooltip = EVTTOOLTIP73222 }
+		}
+		hidden_tooltip = { FROM  = { character_event = { id = 73223 days = 128 random = 63  }	} }
+	}
+	option = {
+		name = EVTOPTC73221 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_treasurer_petition
+	}
+}
+
+#I am being replaced...
+letter_event = {
+	id = 73222
+	desc = EVTDESC73222
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_job_title = job_treasurer
+	}
+
+	option = {
+		name = EVTOPTA73222 
+		random_list = {
+			50 = {}
+			30 = { change_stewardship = 1 }
+			20 = { add_trait = stressed hidden_tooltip = { character_event = { id = 38282 }} }
+		}
+	}
+	option = {
+		name = EVTOPTB73222 
+		trigger = {
+			NOT = { trait = ambitious }
+			NOT = { trait = proud }
+		}
+		prestige = -5
+	}
+}
+
+#Ask again
+character_event = {
+	id = 73223
+	desc = EVTDESC73223
+	picture = GFX_evt_spymaster
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = asked_for_job
+		independent = no
+		NOT = { has_job_title = job_treasurer }
+		liege = {
+			job_treasurer = { 
+				NOT = { stewardship = prev }
+				same_liege = ROOT
+				NOT = {
+					ROOT = {
+						is_liege_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA73223 
+		liege = { letter_event = { id = 73224 tooltip = EVTTOOLTIP73224 } }
+	}
+}
+
+#Asking again...
+letter_event = {
+	id = 73224
+	desc = EVTDESC73224
+	picture = GFX_evt_spymaster
+		
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73224 
+		job_treasurer = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_treasurer
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_treasurer
+			hidden_tooltip = { letter_event = { id = 73225 } }
+		}
+		clr_character_flag = asked_treasurer_petition
+		
+	}
+	option = {
+		name = EVTOPTC73224 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_treasurer_petition
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73225
+	desc = EVTDESC73225
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73225 
+		prestige = -5
+	}
+}
+
+### Lord Spiritual ###
+character_event = {
+	id = 73230
+	desc = EVTDESC73230	#I want to be lord_spiritual, I am better...
+	picture = GFX_evt_spymaster
+
+	#only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		NOT = {
+			religion_group = rastullah_group
+		}
+		OR = {
+			is_theocracy = yes
+			AND = {
+				is_ruler = no
+				#NOT = { religion = orthodox }
+				#NOT = { is_heresy_of = orthodox }
+				#NOT = { religion = miaphysite }
+				#NOT = { is_heresy_of = miaphysite }
+				#couldnt this just be limited to liege's religion?
+			}
+		}
+		independent = no
+		is_councillor = no
+		NOT = { liege = { has_character_flag = asked_lord_spiritual_petition } }
+		NOT = { has_character_flag = asked_for_job }
+		liege = {
+			NOT = { character = ROOT }
+			job_spiritual = {
+				same_liege = ROOT
+				NOT = { learning = ROOT }
+				NOT = { has_minor_title = title_regent }
+			}
+			religion = ROOT
+			NOT = {
+				ROOT = {
+					is_liege_of = PREV
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+	}
+	immediate = {
+		set_character_flag = asked_for_job
+		liege = {  set_character_flag = asked_lord_spiritual_petition }
+	}
+	
+	option = {
+		name = EVTOPTA73230
+		if = {
+			limit = {
+				NOT = {
+					religion_group = rastullah_group
+				}
+			}
+			liege = { letter_event = { id = 73231 tooltip = EVTTOOLTIP73231 } }
+		}
+	}
+}
+
+#Someone wants to be my Lord Spiritual
+letter_event = {
+	id = 73231
+	desc = EVTDESC73231
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73231 
+		job_spiritual = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_spiritual
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_spiritual
+			hidden_tooltip = {  letter_event = { id = 73235  } }
+		}
+		clr_character_flag = asked_lord_spiritual_petition
+		
+	}
+	option = {
+		name = EVTOPTB73231 
+		trigger = {
+			job_spiritual = { 
+				NOT = { trait = stressed } 
+				NOT = { trait = depressed } 
+			}
+		}
+		job_spiritual = {
+			letter_event = { id = 73232 tooltip = EVTTOOLTIP73232 }
+		}
+		hidden_tooltip = { FROM  = { character_event = { id = 73233 days = 128 random = 63  }	} }
+	}
+	option = {
+		name = EVTOPTC73231 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_lord_spiritual_petition
+	}
+}
+
+#I am being replaced...
+letter_event = {
+	id = 73232
+	desc = EVTDESC73232
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_job_title = job_spiritual
+	}
+
+	option = {
+		name = EVTOPTA73232 
+		random_list = {
+			50 = {}
+			30 = { change_learning = 1 }
+			20 = { add_trait = stressed hidden_tooltip = { character_event = { id = 38282 }} }
+		}
+	}
+	option = {
+		name = EVTOPTB73232 
+		trigger = {
+			NOT = { trait = ambitious }
+			NOT = { trait = proud }
+		}
+		prestige = -5
+	}
+}
+
+#Ask again
+character_event = {
+	id = 73233
+	desc = EVTDESC73233
+	picture = GFX_evt_spymaster
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = asked_for_job
+		independent = no
+		NOT = { has_job_title = job_spiritual }
+		liege = {
+			NOT = { character = ROOT }
+			job_spiritual = { 
+				NOT = { learning = prev } 
+				same_liege = ROOT
+				NOT = { has_minor_title = title_regent }
+				NOT = {
+					ROOT = {
+						is_liege_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA73233 
+		liege = { letter_event = { id = 73234 tooltip = EVTTOOLTIP73234 } }
+	}
+}
+
+#Asking again...
+letter_event = {
+	id = 73234
+	desc = EVTDESC73234
+	picture = GFX_evt_spymaster
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = EVTOPTA73234 
+		job_spiritual = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_spiritual
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_spiritual
+			hidden_tooltip = {  letter_event = { id = 73235  } }
+		}
+		clr_character_flag = asked_lord_spiritual_petition
+		
+	}
+	option = {
+		name = EVTOPTC73234 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_lord_spiritual_petition
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73235
+	desc = EVTDESC73235
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA73235 
+		prestige = -5
+	}
+}
+
+### Chancellor ###
+character_event = {
+	id = 73240
+	desc = EVTDESC73240	#I want to be Chancellor, I am better...
+	picture = GFX_evt_spymaster
+	
+	#only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_ruler = no
+		independent = no
+		is_councillor = no
+		NOT = { liege = { has_character_flag = asked_chancellor_petition } }
+		NOT = { has_character_flag = asked_for_job }
+		liege = {
+			job_chancellor = {
+				same_liege = ROOT
+				NOT = { diplomacy = ROOT }
+				NOT = { has_minor_title = title_regent }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+	}
+	immediate = {
+		set_character_flag = asked_for_job
+		liege = {  set_character_flag = asked_chancellor_petition }
+	}
+	
+	option = {
+		name = EVTOPTA73240 
+		liege = { letter_event = { id = 73241 tooltip = EVTTOOLTIP73241 } }
+	}
+}
+
+#Someone wants to be my Chancellor
+letter_event = {
+	id = 73241
+	desc = EVTDESC73241
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73241 
+		job_chancellor = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_chancellor
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_chancellor
+			hidden_tooltip = {  letter_event = { id = 73245  } }
+		}
+		clr_character_flag = asked_chancellor_petition
+		
+	}
+	option = {
+		name = EVTOPTB73241 
+		trigger = {
+			job_chancellor = { 
+				NOT = { trait = stressed } 
+				NOT = { trait = depressed } 
+			}
+		}
+		job_chancellor = {
+			letter_event = { id = 73242 tooltip = EVTTOOLTIP73242 }
+		}
+		hidden_tooltip = { FROM  = { character_event = { id = 73243 days = 128 random = 63  }	} }
+	}
+	option = {
+		name = EVTOPTC73241 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_chancellor_petition
+	}
+}
+
+#I am being replaced...
+letter_event = {
+	id = 73242
+	desc = EVTDESC73242
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_job_title = job_chancellor
+	}
+
+	option = {
+		name = EVTOPTA73242 
+		random_list = {
+			50 = {}
+			30 = { change_diplomacy = 1 }
+			20 = { add_trait = stressed hidden_tooltip = { character_event = { id = 38282 }} }
+		}
+	}
+	option = {
+		name = EVTOPTB73242 
+		trigger = {
+			NOT = { trait = ambitious }
+			NOT = { trait = proud }
+		}
+		prestige = -5
+	}
+}
+
+#Ask again
+character_event = {
+	id = 73243
+	desc = EVTDESC73243
+	picture = GFX_evt_spymaster
+	
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = asked_for_job
+		independent = no
+		NOT = { has_job_title = job_chancellor }
+		liege = {
+			job_chancellor = { 
+				NOT = { diplomacy = prev } 
+				same_liege = ROOT
+				NOT = {
+					ROOT = {
+						is_liege_of = PREV
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA73243 
+		liege = { letter_event = { id = 73244 tooltip = EVTTOOLTIP73244 } }
+	}
+}
+
+#Asking again...
+letter_event = {
+	id = 73244
+	desc = EVTDESC73244
+	picture = GFX_evt_spymaster
+		
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73244 
+		job_chancellor = {
+			opinion = {
+				modifier = opinion_fired_from_council
+				who = ROOT
+				years = 5
+			}
+			remove_title = job_chancellor
+		}
+		FROM = {
+			clr_character_flag = asked_for_job
+			give_job_title = job_chancellor
+			hidden_tooltip = {  letter_event = { id = 73245  } }
+		}
+		clr_character_flag = asked_chancellor_petition
+		
+	}
+	option = {
+		name = EVTOPTC73244 
+		FROM = {
+			prestige = -10
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_council
+			}
+		}
+		clr_character_flag = asked_chancellor_petition
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73245
+	desc = EVTDESC73245
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73245 
+		prestige = -5
+	}
+}
+#################################################
+#
+# CULTURAL CONVERSION EVENTS
+#
+#################################################
+
+# Province culture changes
+province_event = {
+	id = 55000
+	desc = "EVTDESC55000"
+	picture = GFX_evt_stone_church
+	
+	trigger = {
+		owner = {
+			top_liege = {
+				culture = PREV
+			}
+			NOT = { culture = ROOT }
+			religion = ROOT
+		}
+		any_neighbor_province = {
+			has_owner = yes
+			ROOT = {
+				owner = {
+					culture = PREVPREV
+				}
+			}
+			owner = {
+				ROOT = {
+					owner = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+		#NOT = { # No flipping back to Norse culture before 1150
+			#AND = {
+				#owner = { culture = norse }
+				#ROOT = {
+					#OR = {
+						#culture = swedish
+						#culture = norwegian
+						#culture = danish
+						#culture = norman
+					#}
+				#}
+				#NOT = {	has_global_flag = norse_culture_flipping }
+			#}
+		#}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 9 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 15 }
+		}
+		#modifier = {
+			#factor = 0.4 # Altaic nomad steppe bonus vs non-Altaics
+			#owner = {
+				#culture_group = altaic
+			#}
+			#OR = {
+				#owner = {
+					#is_capital = ROOT
+				#}
+				#AND = {
+					#NOT = { culture_group = altaic }
+					#terrain = steppe
+				#}
+			#}
+		#}
+		modifier = {
+			factor = 0.75
+			owner = {
+				OR = {
+					primary_title = {
+						conquest_culture = PREV
+					}
+					ROOT = {
+						county = {
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						duchy = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						kingdom = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						empire = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55000"
+		owner = {
+			ROOT = {
+				culture = PREV
+			}
+		}
+	}
+}
+
+# Bring in some settlers
+province_event = {
+	id = 55001
+	desc = "EVTDESC55001"
+	picture = GFX_evt_stone_church
+	
+	only_rulers = yes
+	
+	trigger = {
+		owner = {
+			top_liege = {
+				culture = PREV
+			}
+			NOT = { culture = ROOT }
+			capital_scope = {
+				province_id = ROOT
+			}
+			
+			OR = {
+				primary_title = {
+					conquest_culture = PREV
+				}
+				ROOT = {
+					county = {
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					duchy = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					kingdom = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					empire = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+			}
+		}
+		
+		NOT = { # Exclude provinces covered by event 55000
+			any_neighbor_province = {
+				has_owner = yes
+				ROOT = {
+					owner = {
+						culture = PREVPREV
+					}
+				}
+				owner = {
+					ROOT = {
+						owner = {
+							culture = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		
+		#NOT = { # No flipping back to Norse culture before 1150
+			#AND = {
+				#owner = { culture = norse }
+				#ROOT = {
+					#OR = {
+						#culture = swedish
+						#culture = norwegian
+						#culture = danish
+						#culture = norman
+					#}
+				#}
+				#NOT = {	has_global_flag = norse_culture_flipping }
+			#}
+		#}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 9 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 15 }
+		}
+		#modifier = {
+			#factor = 0.5 # Altaic nomad steppe bonus vs non-Altaics
+			#owner = {
+				#culture_group = altaic
+			#}
+			#OR = {
+				#owner = {
+					#is_capital = ROOT
+				#}
+				#AND = {
+					#NOT = { culture_group = altaic }
+					#terrain = steppe
+				#}
+			#}
+		#}
+	}
+
+	option = {
+		name = "EVTOPTA55001"
+		owner = {
+			ROOT = {
+				culture = PREV
+				if = {
+					limit = {
+						NOT = { religion = PREV }
+					}
+					religion = PREV
+				}
+			}
+		}
+	}
+}
+
+# A ruler is assimilated by the local culture
+character_event = {
+	id = 55010
+	desc = "EVTDESC55010"
+	picture = GFX_evt_stone_church
+	
+	only_rulers = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		NOT = { has_dlc = "Rajas of India" } # Controlled by Decision: convert_to_local_culture
+		primary_title = { 
+			NOT = { conquest_culture = ROOT } 
+			NOT = { culture = ROOT }
+			any_previous_holder = {
+				NOT = { character = ROOT } # The first holder of a title does not convert
+			}
+		}
+		capital_scope = {
+			NOT = { culture = ROOT }
+			#OR = {
+				#NOT = { culture = saxon }
+				#NOT = { ROOT = { culture = norman } }
+			#}
+			
+			#OR = { # Not when Norman culture should appear
+				#ROOT = { NOT = { culture = norse } }
+				#AND = {
+					#NOT = { culture = frankish }
+					#NOT = {	culture = breton }
+					#NOT = { culture = occitan }
+				#}
+				#NOT = { has_dlc = "The Old Gods" }
+			#}
+		}
+		top_liege = {
+			OR = {
+				character = ROOT
+				ROOT = { 
+					capital_scope = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				NOT = { character = ROOT }
+				ROOT = { 
+					capital_scope = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			primary_title = {
+				ROOT = {
+					capital_scope = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			capital_scope = {
+				culture_group = ROOT # Same culture group: slower assimilation
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55010"
+		
+		# Piss off the appropriate vassals
+		any_vassal = {
+			limit = {
+				culture = ROOT
+				age = 16
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_adopted_foreign_ways
+				years = 10
+			}
+			hidden_tooltip = { character_event = { id = 55011 days = 0 } }
+		}
+		
+		capital_scope = {
+			reverse_culture = ROOT
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB55010"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+character_event = {
+	id = 55011
+	desc = "EVTDESC55011"
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA55011"
+		tooltip = {
+			opinion = {
+				who = FROM
+				modifier = opinion_adopted_foreign_ways
+				years = 10
+			}
+		}
+	}
+}
+################################################
+#
+# Events for Dynasty requests
+#
+# ID 66000 - 66999 are reserved
+#
+##################################################
+# Written by Johan Andersson
+
+#Ask for claim on title if a dynasty member is older and is childless
+character_event = {
+	id = 66000
+	desc = EVTDESC66000
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		age = 16
+		num_of_children = 1
+		#is_female = no
+		has_landed_title = no
+		NOT = { trait = eunuch }
+		any_dynasty_member = {
+			demesne_size = 1
+			NOT = { num_of_children = 1 }
+			age = 35
+			NOT = { has_law = succ_feudal_elective }
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+			}
+			NOT = { any_demesne_title = { claimed_by = root	} }
+		}
+		OR = {
+			diplomacy = 12
+			intrigue = 12
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 10
+			trait = ambitious
+		}
+		modifier = {
+			factor = 5
+			trait = proud
+		}		
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+				
+	}
+	
+	option = {
+		name = EVTOPTA66000 #ask for a claim
+		ai_chance = {
+			factor = 1
+		}
+		
+		random_dynasty_member = {
+			limit = {
+				demesne_size = 1
+				NOT = { num_of_children = 1 }
+				age = 35
+				NOT = { has_law = succ_feudal_elective }
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
+				NOT = { any_demesne_title = { claimed_by = root	} }
+			}
+			character_event = {	id = 66010  days = 17	tooltip = EVTTOOLTIP66010 }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB66000 #ask for the actual title
+		ai_chance = {
+			factor = 1000
+		}
+		trigger = {
+			any_dynasty_member = {
+				NOT = { num_of_children = 1 }
+				age = 35
+				demesne_size = 2
+				NOT = { has_law = succ_feudal_elective }
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
+				NOT = { any_demesne_title = { claimed_by = root	} }
+			}
+		}
+		
+		random_dynasty_member = {
+			limit = {
+				NOT = { num_of_children = 1 }
+				age = 35
+				NOT = { has_law = succ_feudal_elective }
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
+				NOT = { any_demesne_title = { claimed_by = root	} }
+				demesne_size = 2
+			}
+			character_event = {	id = 66020 tooltip = EVTTOOLTIP66020 }
+		}
+	}
+}	
+
+
+#Dynasty member asks for a claim
+character_event = {
+	id = 66010
+	desc = EVTDESC66010
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	#no need for notifactions back, landless character gets it anyway.
+	option = {
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				from = { diplomacy = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { martial = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { intrigue = 14 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = from value =  25 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = from value =  50 }
+			}
+			modifier = {
+				factor = 3
+				opinion = { who = from value =  75 }
+			}
+		}
+		name = EVTOPTA66010 #accept demand for claim
+		prestige = -5
+		random_demesne_title = {
+			add_claim = FROM
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				opinion = { who = from value =  80 }
+			}
+		}
+		name = EVTOPTB66010 #refuse outrageous demands.
+		FROM = {
+			opinion = {
+				modifier = dynastic_refused_claim
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+
+
+#Dynasty member asks for a title
+character_event = {
+	id = 66020
+	desc = EVTDESC66020
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	#no need for notifactions back, landless character gets it anyway.
+	option = {
+		name = EVTOPTA66020 #accept demand for title
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				from = { diplomacy = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { martial = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { intrigue = 14 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = from value =  25 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = from value =  50 }
+			}
+			modifier = {
+				factor = 3
+				opinion = { who = from value =  75 }
+			}
+		}		
+		prestige = -5
+		random_demesne_title = {
+			limit = {
+				NOT = {	tier = duke }
+				NOT = {	tier = king }
+				NOT = {	tier = emperor }
+			}
+			grant_title = FROM
+		}
+		
+	}
+	
+	option = {
+		name = EVTOPTB66020 #refuse outrageous demands.
+		FROM = {
+			opinion = {
+				modifier = dynastic_refused_title
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+#if someone in dynasty has 2+ king titles.
+character_event = {
+	id = 66050
+	desc = EVTDESC66050
+	picture = GFX_evt_son_asking_father
+	
+	min_age = 16
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = no
+		NOT = { trait = eunuch }
+		NOT = {
+			num_of_king_titles = 1
+		}
+		any_dynasty_member = {
+			demesne_size = 1
+			num_of_king_titles = 2
+		}
+		OR = {
+			martial = 12
+			intrigue = 12
+			diplomacy = 12
+			stewardship = 12
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 10
+			trait = ambitious
+		}
+		modifier = {
+			factor = 5
+			trait = proud
+		}		
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+	}
+	
+	option = {
+		name = EVTOPTA66050 # ask for the title!
+		random_dynasty_member = {
+			limit = {
+				demesne_size = 1
+				num_of_king_titles = 2
+			}
+			character_event = {	id = 66051	days = 1 tooltip = EVTTOOLTIP66051 }
+		}		
+	}
+}
+
+character_event = {
+	id = 66051
+	desc = EVTDESC66051
+	picture = GFX_evt_son_asking_father
+	
+	is_triggered_only = yes
+	
+	#no need for notifactions back, landless character gets it anyway.
+	option = {
+		name = EVTOPTA66051 #accept demand for title
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				from = { diplomacy = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { martial = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { intrigue = 14 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = from value =  25 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = from value =  50 }
+			}
+			modifier = {
+				factor = 3
+				opinion = { who = from value =  75 }
+			}
+		}		
+		prestige = -5
+		random_demesne_title = {
+			limit = {
+				tier = king
+				NOT = { is_primary_holder_title = yes }
+			}
+			grant_kingdom_w_adjudication = FROM
+		}
+		
+	}
+	
+	option = {
+		name = EVTOPTB66051 #refuse outrageous demands.
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				opinion = { who = from value =  80 }
+			}
+		}
+		
+		FROM = {
+			opinion = {
+				modifier = dynastic_refused_title
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+# if you have a claim, and are landless, ask dynasty head to fight the war for you.
+character_event = {
+	id = 66100
+	desc = EVTDESC66100
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		age = 16
+		has_landed_title = no
+		opinion = { who = top_liege value = 0 }
+		
+		num_of_claims = 1
+		
+		any_claim = {
+			NOT = { holder_scope = { same_realm = root } }
+		}
+		
+		top_liege = {
+			dynasty = root
+			war = no
+		}
+
+		OR = {
+			martial = 12
+			diplomacy = 12
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 10
+			trait = ambitious
+		}
+		modifier = {
+			factor = 5
+			trait = proud
+		}		
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+				
+	}
+	
+	option = {
+		name = EVTOPTA66100 #ask for the war!
+
+		top_liege = {
+			character_event = {	id = 66110 	days = 9 tooltip = EVTTOOLTIP66110 }
+		}		
+	}
+}
+character_event = {
+	id = 66110
+	desc = EVTDESC66110
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA66110 #go to war!
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				from = { diplomacy = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { martial = 14 }
+			}
+			modifier = {
+				factor = 2
+				from = { intrigue = 14 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = from value =  25 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = from value =  50 }
+			}
+			modifier = {
+				factor = 3
+				opinion = { who = from value =  75 }
+			}
+		}		
+		FROM = {
+			random_claim = {
+				reverse_war = {
+					target = from
+					casus_belli = other_claim
+					thirdparty = root
+				}
+			}
+		}
+	
+	}	
+	
+	option = {
+		name = EVTOPTB66110 #refuse outrageous demands.
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				opinion = { who = from value =  80 }
+			}
+		}
+		
+		FROM = {
+			opinion = {
+				modifier = dynastic_refused_war
+				who = ROOT
+				years = 5
+			}
+		}
+		prestige = -10
+	}	
+}
+#############################################
+#
+# Evil events
+#
+# Event ID 68000-68999 is reserved
+#
+#############################################
+# Written by Johan Andersson
+# Adjusted by Henrik Fåhraeus
+
+#If in the red  => increase revolt risk in a province.
+province_event = {
+	id = 68000
+	desc = "EVTDESC68000"
+	picture = "GFX_evt_bandits"
+	
+	notification = yes
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		NOT = { has_province_modifier = incompetent_rule } 
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		#lower if really bad demesne efficiency
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+
+		#modify by stewardship and intrigue	
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 5 } }
+		}	
+		modifier = {
+			factor = 2.0
+			owner = { realm_stewardship = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_intrigue = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_intrigue = 20 }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = incompetent_rule
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68000"
+	}
+}
+
+province_event = {
+	id = 68001
+	desc = "EVTDESC68001"
+	picture = "GFX_evt_council"
+	
+	notification = yes
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = incompetent_rule
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}			
+	}
+	
+	immediate = {
+		remove_province_modifier = incompetent_rule
+	}
+
+	option = {
+		name = "EVTOPTA68001"
+		trigger = {
+			owner = {
+				religion_group = twelve
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB68001"
+		trigger = {
+			owner = {
+				religion_group = rastullah_group
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA88283"
+		trigger = {
+			owner = {
+				NOT = { religion_group = twelve }
+				NOT = { religion_group = rastullah_group }
+			}
+		}
+	}
+}
+
+# Establishment of thieves_guild in a province, if budget in the red
+province_event = {
+	id = 68010
+	desc = "EVTDESC68010"
+	picture = "GFX_evt_bandits"
+	
+	notification = yes
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		NOT = { has_province_modifier = thieves_guild } 
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		#lower if really bad demesne efficiency
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+		
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 5 } }
+		}
+		
+		modifier = {
+			factor = 1.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_stewardship = 25 }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = thieves_guild
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68010"
+	}
+}
+
+# Destruction of thieves_guild in a province
+province_event = {
+	id = 68011
+	desc = "EVTDESC68011"
+	
+	picture = "GFX_evt_burning_house"
+	
+	notification = yes
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = thieves_guild
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}			
+	}
+	
+	immediate = {
+		remove_province_modifier = thieves_guild
+	}
+
+	option = {
+		name = "EVTOPTA68011"
+	}
+}
+
+# Establishment of smugglers_ring in a province, if red budget
+province_event = {
+	id = 68020
+	desc = "EVTDESC68020"
+	
+	notification = yes
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		NOT = { has_province_modifier = smugglers_ring }
+	}
+	
+	picture = "GFX_evt_bandits"
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		#lower if really bad demesne efficiency
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_diplomacy = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_diplomacy = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_diplomacy = 5 } }
+		}
+		
+		modifier = {
+			factor = 1.5
+			owner = { realm_diplomacy = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_diplomacy = 25 }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = smugglers_ring
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68020"
+	}
+}
+
+# Destruction of smugglers_ring in a province
+province_event = {
+	id = 68021
+	desc = "EVTDESC68021"
+	
+	notification = yes
+	
+	picture = "GFX_evt_burning_house"
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = smugglers_ring
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_diplomacy = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}			
+	}
+	
+	immediate = {
+		remove_province_modifier = smugglers_ring
+	}
+
+	option = {
+		name = "EVTOPTA68021"
+	}
+}
+
+#Establishment of highway_robber_band in a province, if red budget
+province_event = {
+	id = 68030
+	desc = "EVTDESC68030"
+	
+	notification = yes
+	
+	picture = "GFX_evt_bandits"
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		NOT = { has_province_modifier = highway_robber_band } 
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+		
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_martial = 25 }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = highway_robber_band
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68030"
+	}
+}
+
+# Destruction of highway_robber_band in a province
+province_event = {
+	id = 68031
+	desc = "EVTDESC68031"
+	picture = "GFX_evt_burning_house"
+	
+	notification = yes
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = highway_robber_band
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}			
+	}
+	
+	immediate = {
+		remove_province_modifier = highway_robber_band
+	}
+
+	option = {
+		name = "EVTOPTA68031"
+	}
 }
