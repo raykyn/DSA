@@ -1,4 +1,4 @@
-#LEFT OUT: ACHIEVEMENT EVENTS, BYZANTINE, ALL CM EVENTS, CRITICAL, CRUSADE, DECADENCE, FATWA, FURUSIYYA, HASHSHASHIN, 
+#LEFT OUT: ACHIEVEMENT EVENTS, BYZANTINE, ALL CM EVENTS, CRITICAL, CRUSADE, DECADENCE, FATWA, FURUSIYYA, HASHSHASHIN, HORSE LORDS, INTERESTING MUSLIMS, 
 #########################################################
 #
 # Landless Character Adventures for The Old Gods DLC
@@ -64570,3 +64570,3709 @@ character_event = {
 		add_character_modifier = { name = "killed_an_old_one" duration = -1 }
 	}	
 }
+#############################################
+#
+# Hedge Knights Event Series
+#
+# Event ID 71000-71999 is reserved
+#
+#############################################
+#Written by Johan Andersson
+
+#Group of Hedge Knights visiting
+character_event = {
+	id = 71000
+	desc = EVTDESC71000	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_emissary
+
+	trigger = {
+		war = no
+		in_command = no
+		religion_group = twelve
+		NOT = { has_character_flag = hedge_knights_visiting }
+		NOT = { has_character_flag = hates_hedge_knights }
+		any_courtier = {
+			has_job_title = job_chancellor
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2.0
+			prestige = 100
+		}
+		modifier = {
+			factor = 2.0
+			tier = count
+		}
+		modifier = {
+			factor = 0.5
+			tier = king
+		}
+		modifier = {
+			factor = 0.2
+			tier = emperor
+		}
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+				
+	}	
+	
+	option = {
+		name = EVTOPTA71000 #Welcome them with a lavish feast
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = gregarious
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 0
+				trait = greedy
+			}
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+		}
+		set_character_flag = hedge_knights_visiting
+		prestige = 10
+		if = {
+			limit = {
+				not = { trait = gregarious }
+			}
+			add_trait = gregarious
+		}
+		if = {
+			limit = {
+				NOT = { trait = greedy }
+			}
+			scaled_wealth = -0.2
+		}
+		if = {
+			limit = {
+				trait = greedy
+			}
+			scaled_wealth = -0.4
+			remove_trait = greedy
+		}
+		
+	}
+	option = {
+		name = EVTOPTB71000 #Welcome them reluctantly
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					trait = gregarious
+					trait = proud
+					trait = ambitious
+					trait = charitable
+				}
+			}
+			
+		}
+		prestige = 1
+		scaled_wealth = -0.05
+		set_character_flag = hedge_knights_visiting
+	}
+	option = {
+		name = EVTOPTC71000 #Refuse them Access
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = greedy }
+			}
+		}
+		prestige = -5
+		any_courtier = {
+			opinion = {
+				modifier = tight_ruler
+				who = ROOT
+			}
+		}
+	}
+}
+	
+#Minor Tournament Hedge Knight Injured
+character_event = {
+	id = 71001
+	desc = EVTDESC71001	
+	
+	only_playable = yes
+	prisoner = no
+
+	has_character_flag = hedge_knights_visiting
+	
+	picture = GFX_evt_joust
+	trigger = {
+		NOT = {	has_character_flag = hedge_knight_recruited }
+		NOT = {	has_character_flag = hedge_knight_woman_seduced	}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}	
+	
+	immediate = {
+		clr_character_flag = hedge_knights_visiting
+		clr_character_flag = hedge_knight_recruited	
+		clr_character_flag = hedge_knight_woman_seduced
+	}
+	
+	option = {
+		name = EVTOPTA71001 	# pay for their expenses, and send them on their way
+		scaled_wealth = -0.05
+		piety = 5
+		
+	}
+	option = {
+		name = EVTOPTB71001 #let them stay at the castle while recovering.
+		prestige = -5
+		piety = 5
+		if = {
+			limit = { NOT = { personality_traits = 5 } }
+			add_trait = just
+		}
+	}
+}	
+
+#One hedge knight distinguishes himself
+character_event = {
+	id = 71002
+	desc = EVTDESC71002	
+	
+	only_playable = yes
+	prisoner = no
+
+	has_character_flag = hedge_knights_visiting
+	
+	picture = GFX_evt_joust
+	
+	trigger =  {
+		NOT = {	has_character_flag = hedge_knight_recruited }
+		NOT = {	has_character_flag = hedge_knight_woman_seduced	}
+	}
+	immediate = {
+		set_character_flag = hedge_knight_recruited	
+	}
+
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}	
+	
+	option = {
+		name = EVTOPTA71002  #take him in your service.
+		create_character = {
+			random_traits = no
+			dynasty = random
+			female = no
+			age = 16
+			trait = brave
+			trait = ambitious
+			trait = humble
+			health = 10
+			attributes = {
+				martial = 10
+			}
+		}	
+		scaled_wealth = -0.1
+	}
+	option = {
+		name = EVTOPTB71002 #give him lavish praise.
+		prestige = 5
+	}
+}	
+
+#Male courtier insulted by hedge knights
+character_event = {
+	id = 71003
+	desc = EVTDESC71003	
+	
+	
+	only_playable = yes
+	prisoner = no
+
+	has_character_flag = hedge_knights_visiting
+	
+	picture = GFX_evt_joust
+	trigger = {
+	 	any_courtier = {
+	 		age = 16
+	 		is_female = no
+	 		OR = {
+	 			trait = cruel
+	 			trait = proud
+	 			trait = wroth
+	 			trait = zealous
+	 			trait = envious
+	 			prestige = 100
+	 		}
+	 	}
+	}	
+
+	mean_time_to_happen = {
+		days = 30
+		modifier = {
+			factor = 0.9
+			trait = arbitrary
+		}
+		
+		modifier = {
+			factor = 5
+			has_character_flag = hedge_knight_recruited	
+		}
+		
+		modifier = {
+			factor = 5
+			has_character_flag = hedge_knight_woman_seduced	
+		}		
+		
+	}	
+	option = {
+		name = EVTOPTA71003  #Throw them out.
+		clr_character_flag = hedge_knights_visiting
+		clr_character_flag = hedge_knight_recruited	
+		clr_character_flag = hedge_knight_woman_seduced
+		piety = -10 
+	}
+	option = {
+		name = EVTOPTB71003 #Ignore the complaints
+	 	random_courtier = {
+	 		limit = {
+	 			age = 16
+	 			is_female = no
+	 			OR = {
+		 			trait = cruel
+		 			trait = proud
+		 			trait = wroth
+		 			trait = zealous
+		 			trait = envious
+		 			prestige = 100
+		 		}
+		 	}
+			opinion = {
+				modifier = ruler_not_respect_rank
+				who = ROOT
+				months = 60
+			}
+	 	}		
+	}
+	
+}	
+
+#A young woman has been seduced by a hedge knight
+character_event = {
+	id = 71004
+	desc = EVTDESC71004	
+	
+	only_playable = yes
+	prisoner = no
+
+	has_character_flag = hedge_knights_visiting
+	
+	picture = GFX_evt_lovers
+	
+	trigger = {
+		has_lover = no
+		NOT = {	has_character_flag = hedge_knight_recruited }
+		NOT = {	has_character_flag = hedge_knight_woman_seduced	}
+		any_courtier = {
+	 		age = 16
+	 		not = { age = 20 }
+	 		is_female = yes	
+	 		is_married = no
+	 		is_pregnant = no
+			fertility = 0.3
+	 	}	 	
+	}	
+	
+	immediate = {
+		set_character_flag = hedge_knight_woman_seduced
+	}
+
+	mean_time_to_happen = {
+		days = 20
+		
+		modifier = {
+			factor = 5
+			has_character_flag = hedge_knight_recruited	
+		}		
+	}	
+	option = {
+		name = EVTOPTA71004 #stay
+ 		
+ 		
+		random_courtier = {
+	 		limit = {
+	 			age = 16
+	 			not = { age = 20 }
+	 			is_female = yes	
+	 			is_married = no
+	 			is_pregnant = no
+				has_lover = no
+	 		}
+	 		add_trait = lustful
+	 		create_character = {
+				random_traits = yes
+				dynasty = random
+				fertility = 0.6
+				female = no
+				age = 24
+	 		}
+			new_character = {
+	 			impregnate = PREV
+	 			add_lover = PREV
+				add_trait = lustful
+	 		}
+	 	}
+	 	piety = -10
+	}
+	option = {
+		name = EVTOPTB71004 #dungeon
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				OR = {
+					trait = cruel
+					trait = zealous
+				 }
+			}
+		}
+		random_courtier = {
+	 		limit = {
+	 			age = 16
+	 			not = { age = 20 }
+	 			is_female = yes	
+	 			is_married = no
+	 			is_pregnant = no
+	 		}
+	 		add_trait = lustful
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				fertility = 0.6
+				female = no
+				age = 24
+	 		}
+			new_character = {
+	 			impregnate = PREV
+	 			add_lover = PREV
+				add_trait = lustful
+				imprison = root
+	 		}
+	 	}		
+	}
+}
+
+#Hedge knights leaving
+character_event = {
+	id = 71005
+	desc = EVTDESC71005	
+	
+	only_playable = yes
+	prisoner = no
+	has_character_flag = hedge_knights_visiting
+	
+	trigger = {
+	 	always = yes
+	}	
+	immediate = {
+		clr_character_flag = hedge_knights_visiting
+		clr_character_flag = hedge_knight_woman_seduced
+		clr_character_flag = hedge_knight_recruited	
+	}
+	
+	picture = GFX_evt_feast
+
+	mean_time_to_happen = {
+		days = 40
+		modifier = {
+			factor = 0.1
+			has_character_flag = hedge_knight_recruited	
+		}		
+	}	
+	option = {
+		name = EVTOPTA71005 #give them a farewell feast
+		prestige = 10
+		scaled_wealth = -0.05
+
+	}
+	option = {
+		name = EVTOPTB71005 #let them leave quitely
+		prestige = -5
+	}
+}
+
+#Marshal has arrested a hedge knight
+character_event = {
+	id = 71006
+	desc = EVTDESC71006	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	religion_group = twelve
+	
+	picture = GFX_evt_melee
+	
+	trigger = {
+		war = no
+		in_command = no
+		NOT = { has_character_flag = hedge_knights_visiting }
+		any_courtier = {
+			has_job_title = job_marshal
+		}
+	}
+	
+	option = {
+		name = EVTOPTA71006  #order him released
+		job_marshal = {
+			opinion = {
+				modifier = marshal_overruled
+				who = ROOT
+			}
+		}
+		piety = 5
+		clr_character_flag = hates_hedge_knights
+	}
+	option = {
+		name = EVTOPTB71006 #it is not my concern
+		job_marshal = {
+			prestige = 10
+		}
+		prestige = -5
+		set_character_flag = hates_hedge_knights
+	}
+}	
+#######################################
+#
+# Hippodrome Events
+#
+# Event ID LoR.400 - LoR.799 reserved
+#
+#######################################
+
+# Written by Henrik Eklund
+
+namespace = LoR
+
+### Foul Play
+
+# Approached Sabotage
+narrative_event = {
+	id = LoR.400
+	title = EVTNAMELoR.400
+	desc = EVTDESCLoR.400
+	picture = GFX_evt_emissary_byzantine
+	
+	capable_only = yes
+	only_playable = yes
+	prisoner = no
+	#only_men = yes
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		OR = {
+			has_landed_title = e_byzantium
+			has_landed_title = e_roman_empire
+		}
+		NOT = { has_global_flag = hippodrome_scheme }
+		age = 16
+		NOT = { age = 60 }
+		in_command = no
+		capital_scope = { province_id = 496 }
+		religion_group = twelve
+		NOT = { trait = in_hiding }
+	}
+	
+	mean_time_to_happen = {
+		months = 780
+	}
+	
+	option = { # Agree
+		name = EVTOPTALoR.400
+		narrative_event = { id = LoR.401 days = 32 tooltip = EVTTOOLTIPLoR.401 }
+		set_global_flag = hippodrome_scheme
+		set_global_flag = hippodrome_scheme_ongoing
+	}
+	option = { # Refuse
+		name = EVTOPTBLoR.400
+		custom_tooltip = { text = hippodrome_refuse }
+		set_global_flag = hippodrome_scheme
+	}
+}
+
+# Sabotage
+narrative_event = {
+	id = LoR.401
+	title = EVTNAMELoR.401
+	desc = EVTDESCLoR.401
+	picture = GFX_evt_shadowy_cabal
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.401
+		change_martial = 1
+		custom_tooltip = {
+			text = hippodrome_tooltip
+			hidden_tooltip = {
+				random_list = {
+					40 = {
+						narrative_event = { id = LoR.402 }
+					}
+					40 = {
+						narrative_event = { id = LoR.403 }
+					}
+					20 = {
+						narrative_event = { id = LoR.404 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# Sabotage Win
+narrative_event = {
+	id = LoR.402
+	title = EVTNAMELoR.402
+	desc = EVTDESCLoR.402
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.402
+		prestige = 100
+		wealth = 25
+		narrative_event = { id = LoR.405 days = 280 random = 50 tooltip = EVTTOOLTIPLoR.405 }
+	}
+}
+
+# Sabotage Lose
+narrative_event = {
+	id = LoR.403
+	title = EVTNAMELoR.403
+	desc = EVTDESCLoR.403
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.403
+		prestige = -50
+		narrative_event = { id = LoR.405 days = 280 random = 50 tooltip = EVTTOOLTIPLoR.405 }
+	}
+}
+
+# Sabotage Riots
+narrative_event = {
+	id = LoR.404
+	title = EVTNAMELoR.404
+	desc = EVTDESCLoR.404
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.404
+		narrative_event = { id = LoR.417 tooltip = EVTTOOLTIPLoR.417 }
+		hidden_tooltip = {
+			narrative_event = { id = LoR.405 days = 280 random = 50 }
+		}
+	}
+}
+
+# Approached Poison
+narrative_event = {
+	id = LoR.405
+	title = EVTNAMELoR.405
+	desc = EVTDESCLoR.405
+	picture = GFX_evt_emissary_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = { # Agree
+		name = EVTOPTALoR.405
+		narrative_event = { id = LoR.406 days = 32 tooltip = EVTTOOLTIPLoR.406 }
+	}
+	option = { # Refuse
+		name = EVTOPTBLoR.405
+		custom_tooltip = { text = hippodrome_refuse_second }
+	}
+}
+
+# Poison
+narrative_event = {
+	id = LoR.406
+	title = EVTNAMELoR.406
+	desc = EVTDESCLoR.406
+	picture = GFX_evt_shadowy_cabal
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.406
+		change_intrigue = 1
+		custom_tooltip = {
+			text = hippodrome_tooltip
+			hidden_tooltip = {
+				random_list = {
+					35 = {
+						narrative_event = { id = LoR.407 }
+					}
+					35 = {
+						narrative_event = { id = LoR.408 }
+					}
+					30 = {
+						narrative_event = { id = LoR.409 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# Poison Win
+narrative_event = {
+	id = LoR.407
+	title = EVTNAMELoR.407
+	desc = EVTDESCLoR.407
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.407
+		prestige = 100
+		wealth = 25
+		narrative_event = { id = LoR.410 days = 280 random = 50 tooltip = EVTTOOLTIPLoR.405 }
+	}
+}
+
+# Poison Lose
+narrative_event = {
+	id = LoR.408
+	title = EVTNAMELoR.408
+	desc = EVTDESCLoR.408
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.408
+		prestige = -50
+		narrative_event = { id = LoR.410 days = 280 random = 50 tooltip = EVTTOOLTIPLoR.405 }
+	}
+}
+
+# Poison Riots
+narrative_event = {
+	id = LoR.409
+	title = EVTNAMELoR.409
+	desc = EVTDESCLoR.409
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.409
+		narrative_event = { id = LoR.417 tooltip = EVTTOOLTIPLoR.417 }
+		hidden_tooltip = {
+			narrative_event = { id = LoR.405 days = 280 random = 50 }
+		}
+	}
+}
+
+# Approached Weapon
+narrative_event = {
+	id = LoR.410
+	title = EVTNAMELoR.410
+	desc = EVTDESCLoR.410
+	picture = GFX_evt_garden
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = { # Agree
+		name = EVTOPTALoR.410
+		narrative_event = { id = LoR.411 days = 32 tooltip = EVTTOOLTIPLoR.406 }
+	}
+	option = { # Refuse
+		name = EVTOPTBLoR.410
+		custom_tooltip = { text = hippodrome_refuse_second }
+	}
+}
+
+# Weapon
+narrative_event = {
+	id = LoR.411
+	title = EVTNAMELoR.411
+	desc = EVTDESCLoR.411
+	picture = GFX_evt_market_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.411
+		change_martial = 1
+		narrative_event = { id = LoR.412 tooltip = hippodrome_tooltip }
+	}
+}
+
+# Weapon Race
+narrative_event = {
+	id = LoR.412
+	title = EVTNAMELoR.412
+	desc = EVTDESCLoR.412
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = { # Give Chase
+		name = EVTOPTALoR.412
+		narrative_event = { id = LoR.414 tooltip = EVTTOOLTIPLoR.414 }
+	}
+	option = { # Stay
+		name = EVTOPTBLoR.412
+		narrative_event = { id = LoR.413 tooltip = EVTTOOLTIPLoR.413 }
+	}
+}
+
+# Stay
+narrative_event = {
+	id = LoR.413
+	title = EVTNAMELoR.413
+	desc = EVTDESCLoR.413
+	picture = GFX_evt_battle_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.413
+		prestige = 100
+		if = {
+			limit = { 
+				NOT = { can_have_more_leadership_traits = no }
+				NOT = { trait = cavalry_leader }
+			}
+			add_trait = cavalry_leader
+		}
+		clr_global_flag = hippodrome_scheme_ongoing
+	}
+}
+
+# The Chase
+narrative_event = {
+	id = LoR.414
+	title = EVTNAMELoR.414
+	desc = EVTDESCLoR.414
+	picture = GFX_evt_hagia_sofia
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = { # Kill
+		name = EVTOPTALoR.414
+		narrative_event = { id = LoR.415 tooltip = EVTTOOLTIPLoR.415 }
+	}
+	option = { # Spare
+		name = EVTOPTBLoR.414
+		narrative_event = { id = LoR.416 tooltip = EVTTOOLTIPLoR.416 }
+	}
+}
+
+# Killed
+narrative_event = {
+	id = LoR.415
+	title = EVTNAMELoR.415
+	desc = EVTDESCLoR.415
+	picture = GFX_evt_market_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.415
+		prestige = 100
+		piety = -50
+		if = {
+			limit = { 
+				NOT = { can_have_more_leadership_traits = no }
+				NOT = { trait = cavalry_leader }
+			}
+			add_trait = cavalry_leader
+		}
+		clr_global_flag = hippodrome_scheme_ongoing
+	}
+}
+
+# Spared
+#narrative_event = {
+#	id = LoR.416
+#	title = EVTNAMELoR.416
+#	desc = EVTDESCLoR.416
+#	picture = GFX_evt_market_byzantine
+#	
+#	hide_from = yes
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTALoR.416
+#		piety = 100
+#		if = {
+#			limit = { 
+#				NOT = { can_have_more_leadership_traits = no }
+#				NOT = { trait = cavalry_leader }
+#			}
+#			add_trait = cavalry_leader
+#		}
+#		clr_global_flag = hippodrome_scheme_ongoing
+#		create_character = {
+#			name = Anaximandros
+#			random_traits = no
+#			dynasty = NONE
+#			female = no
+#			age = 57
+#			religion = orthodox
+#			culture = greek
+#			trait = dwarf
+#			trait = ugly
+#			trait = quick
+#			trait = deceitful
+#			trait = craven
+#			trait = flamboyant_schemer
+#		}
+#		new_character = {
+#			prisoner = yes
+#		}
+#	}
+#}
+
+# Riots
+narrative_event = {
+	id = LoR.417
+	title = EVTNAMELoR.417
+	desc = EVTDESCLoR.417
+	picture = GFX_evt_riots_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.417
+		custom_tooltip = { 
+			text = hippodrome_riots
+			hidden_tooltip = {
+				496 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = ROOT
+						culture = ROOT
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = prev
+							home = prev
+							troops = {
+								light_infantry = { 750 750 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### Random Hippodrome Events
+
+# Hippodrome Race
+character_event = {
+	id = LoR.500
+	desc = EVTDESCLoR.500
+	picture = GFX_evt_hippodrome_byzantine
+
+	capable_only = yes
+	only_playable = yes
+	prisoner = no
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		age = 16
+		in_command = no
+		OR = {
+			has_landed_title = e_byzantium
+			has_landed_title = e_roman_empire
+		}
+		religion_group = twelve
+		NOT = { has_global_flag = hippodrome_scheme_ongoing }
+		NOT = { trait = in_hiding }
+	}
+	
+	mean_time_to_happen = {
+		months = 230
+	}
+	
+	option = { # Support Blue Team
+		name = EVTOPTALoR.500
+		wealth = -25
+		random_list = {
+			50 = {
+				character_event = { id = LoR.501 days = 8 tooltip = EVTTOOLTIPLoR.501 }
+			}
+			50 = {
+				character_event = { id = LoR.502 days = 8 tooltip = EVTTOOLTIPLoR.502 }
+			}
+		}
+	}
+	option = { # Support Green Team
+		name = EVTOPTBLoR.500
+		wealth = -25
+		random_list = {
+			50 = {
+				character_event = { id = LoR.503 days = 8 tooltip = EVTTOOLTIPLoR.503 }
+			}
+			50 = {
+				character_event = { id = LoR.504 days = 8 tooltip = EVTTOOLTIPLoR.504 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCLoR.500
+		custom_tooltip = { text = hippodrome_nobet }
+	}
+}
+
+# Blue Victorious (With Your Support)
+character_event = {
+	id = LoR.501
+	desc = EVTDESCLoR.501
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.501
+		wealth = 50
+		prestige = 50
+	}
+}
+
+# Blue Loses (With Your Support)
+character_event = {
+	id = LoR.502
+	desc = EVTDESCLoR.502
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.502
+		prestige = -25
+	}
+}
+
+# Green Victorious (With Your Support)
+character_event = {
+	id = LoR.503
+	desc = EVTDESCLoR.503
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.503
+		wealth = 50
+		prestige = 50
+	}
+}
+
+# Green Loses (With Your Support)
+character_event = {
+	id = LoR.504
+	desc = EVTDESCLoR.504
+	picture = GFX_evt_hippodrome_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.504
+		prestige = -25
+	}
+}
+#############################################
+#
+# Events for Hunting
+#
+# Event ID 36000-36999 is reserved
+#
+# Deer Park ID: 4075
+#
+#############################################
+#Written by Johan Andersson, Chris King & Sara Wendel-Örtqvist
+
+
+#A Majestic Stag
+character_event = {
+	id = 36000
+	desc = "EVTDESC36000"
+	picture = "GFX_evt_hunt"
+
+	min_age =  16
+	#only_men = yes
+	capable_only = yes
+	prisoner = no
+	only_playable = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		NOT = {	health_traits = 1 }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+	
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+		modifier = {
+			factor = 0.8
+			trait = hunter
+		}
+		modifier = {
+			factor = 5.0
+			martial = 15
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			has_character_flag = hunt_good_hounds
+		}
+		modifier = {
+			factor = 1.25
+			trait = craven
+		}
+
+	}
+
+	option = {
+		name = "EVTOPTA36000"
+		trigger = {
+			NOT = {
+				trait = craven
+			}
+		}
+		prestige = 5
+	}
+
+	option = {
+		name = "EVTOPTB36000"
+		tooltip_info = craven
+		trigger = {
+			trait = craven
+		}
+		prestige = -10
+	}
+	option = {
+		name = "EVTOPTC36000"
+		trigger = {
+			NOT = { trait = greedy }
+			NOT = { trait = arbitrary }
+			NOT = { trait = envious }
+			NOT = { trait = craven }
+			NOT = { trait = cruel }
+		}
+		add_trait = kind
+	}
+
+	option = {
+		name = "EVTOPTD36000"
+		trigger = {
+			NOT = { trait = craven }
+			NOT = { trait = humble }
+			NOT = { trait = content }
+		}
+		random_list = {
+			50 = { }
+			10 = { 
+				if = {
+					limit = {
+						NOT = { trait = diligent }
+					}
+					add_trait = diligent
+					hidden_tooltip = {
+						character_event = {
+							id = 38256 #Notify Diligent
+						}
+					}
+				}
+				if = {
+					limit = {
+						trait = diligent
+					}
+					prestige = 10
+				}						
+			}
+			20 = { change_martial = 1 }
+			14 = {
+				add_trait = wounded
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			4 = {
+				add_trait = maimed
+				hidden_tooltip = { character_event = { id = 38281 } }
+			}
+			1 = {
+				death = { death_reason = death_accident }
+			}
+		}
+		set_character_flag = hunt_killed_something
+		prestige = 20
+	}
+}
+
+#Paranoia in the hunt
+character_event = {
+	id = 36001
+	desc = "EVTDESC36001"
+	picture = "GFX_evt_hunt"
+
+	prisoner = no
+	capable_only = yes
+	only_playable = yes
+
+	trigger = {
+		NOT = { has_character_flag = hunt_paranoia }
+		trait = paranoid
+		NOT = {	health_traits = 1 }
+		has_character_modifier = holding_grand_hunt
+		any_courtier = {
+			has_plot = plot_kill_character
+			plot_target_char = {
+				character = root
+			}
+		}
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+	
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_paranoia
+	}
+
+	option = {
+		name = "EVTOPTA36001"
+		random_list = {
+			75 = {}
+			20 = {
+				add_trait = wounded
+				character_event = {
+					id = 36003
+					days = 1
+				}
+			}
+			4 = {
+				add_trait = maimed
+				character_event = {
+					id = 36003
+					days = 1
+				}
+			}
+			1 = {
+				death = { death_reason = death_accident }
+				any_courtier = {
+					limit = {
+						has_plot = plot_kill_character
+						plot_target_char = {
+							character = root
+						}
+					}
+					character_event = {
+						id = 36002
+						days = 1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB36001"
+		trigger = {
+			trait = patient
+		}
+		random_list = {
+			85 = {}
+			5 = {
+				any_courtier = {
+					limit = {
+						is_adult = yes
+						NOT = {
+							has_plot = plot_kill_character
+							plot_target_char = {
+								character = root
+							}
+						}
+					}
+					character_event = {
+						id = 36005
+						days = 1
+						tooltip = "EVTTOOLTIP36004"
+					}
+				}
+			}
+			5 = {
+				any_courtier = {
+					limit = {
+						has_plot = plot_kill_character
+						plot_target_char = {
+							character = root
+						}
+					}
+					character_event = {
+						id = 36004
+						days = 1
+						tooltip = "EVTTOOLTIP36004"
+					}
+				}
+			}
+			5 = {
+				death = { death_reason = death_accident }
+				any_courtier = {
+					limit = {
+						has_plot = plot_kill_character
+						plot_target_char = {
+							character = root
+						}
+					}
+					character_event = {
+						id = 36002
+						days = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 36002
+	desc = "EVTDESC36002"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36002"
+		prestige = 250
+	}
+}
+
+character_event = {
+	id = 36003
+	desc = "EVTDESC36003"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36003"
+		prestige = 25
+	}
+}
+
+character_event = {
+	id = 36004
+	desc = "EVTDESC36004"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36004"
+		death = { death_reason = death_accident }
+	}
+}
+
+character_event = {
+	id = 36005
+	desc = "EVTDESC36005"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36005"
+		death = { death_reason = death_accident }
+	}
+}
+
+
+#Deer Hunter, The White Hart
+character_event = {
+	id = 36010
+	desc = "EVTDESC36010"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		NOT = {	health_traits = 1 }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+
+	mean_time_to_happen = {
+		days = 100
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = craven
+		}
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.75
+			trait = hunter
+		}
+
+		modifier = {
+			factor = 0.5
+			has_character_flag = hunt_good_hounds
+		}
+	}
+
+	option = {
+		name = "EVTOPTA36010"
+		trigger = {
+			NOT = { trait = greedy }
+			NOT = { trait = cruel }
+		}
+		random_courtier = {
+			limit = {
+				trait = brave
+				war = no
+				prisoner = no
+				is_adult = yes
+				in_command = no
+				is_abroad = no
+			}
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 10
+			}
+		}
+		piety = 25
+	}
+
+	option = {
+		name = "EVTOPTB36010"
+		trigger = {
+			any_courtier = {
+				is_female = no
+				OR = {
+					martial = 10
+					trait = hunter
+					has_job_title = job_marshal
+				}
+			}
+		}
+		random_courtier = {
+			limit = {
+				is_female = no
+				OR = {
+					martial = 10
+					trait = hunter
+					has_job_title = job_marshal
+				}
+			}
+			opinion = {
+				modifier = opinion_delighted
+				who = ROOT
+				years = 10
+			}
+			prestige = 20
+		}
+	}
+
+	option = {
+		name = "EVTOPTC36010"
+		trigger = {
+			NOT = {	trait = craven }
+		}
+		random_list = {
+			65 = {}
+			10 = { 
+				if = {
+					limit = {
+						NOT = { trait = diligent }
+					}
+					add_trait = diligent
+					hidden_tooltip = {
+						character_event = {
+							id = 38256 #Notify Diligent
+						}
+					}
+				}
+				if = {
+					limit = {
+						trait = diligent
+					}
+					prestige = 10
+				}					
+			}		
+			10 = { change_martial = 1 }
+			10 = {
+				add_trait = wounded
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			5 = {
+				add_trait = maimed
+				hidden_tooltip = { character_event = { id = 38281 } }
+			}
+		}
+		prestige = 10
+		set_character_flag = hunt_killed_something
+	}
+}
+
+
+#Boars
+character_event = {
+	id = 36015
+	desc = "EVTDESC36015"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		NOT = {	health_traits = 1 }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+
+	mean_time_to_happen = {
+		days = 100
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.75
+			trait = hunter
+		}
+		modifier = {
+			factor = 1.5
+			trait = craven
+		}
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+
+
+		modifier = {
+			factor = 0.5
+			has_character_flag = hunt_good_hounds
+		}
+
+	}
+
+
+	option = {
+		name = "EVTOPTA36015"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					trait = brave
+					trait = ambitious
+					trait = proud
+				}
+			}
+			modifier = {
+				factor = 0
+				martial = 9
+			}
+		}
+
+		prestige = 5
+		random_list = {
+			70 = {}
+			30 = { add_trait = craven hidden_tooltip = { character_event = { id = 38257 } } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB36015"
+		trigger = {
+			NOT = { trait = craven }
+		}
+		random_list = {
+			65 = {}
+			10 = { 
+				if = {
+					limit = {
+						NOT = { trait = diligent }
+					}
+					add_trait = diligent
+					hidden_tooltip = {
+						character_event = {
+							id = 38256 #Notify Diligent
+						}
+					}
+				}
+				if = {
+					limit = {
+						trait = diligent
+					}
+					prestige = 10
+				}						
+			}			
+			10 = { change_martial = 1 }
+			10 = {
+				add_trait = wounded
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			5 = {
+				add_trait = maimed
+				hidden_tooltip = { character_event = { id = 38281 } }
+			}
+		}
+
+		prestige = 10
+		set_character_flag = hunt_killed_something
+
+	}
+}
+
+
+#Bear
+character_event = {
+	id = 36020
+	desc = "EVTDESC36020"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		NOT = {	health_traits = 1 }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}	
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = craven
+		}
+		modifier = {
+			factor = 0.75
+			trait = hunter
+		}
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+		modifier = {
+			factor = 5.0
+			martial = 15
+		}
+
+	}
+
+	option = {
+		name = "EVTOPTA36020"
+		trigger = {
+			NOT = {	trait = craven }
+		}
+		prestige = 5
+	}
+
+	option = {
+		name = "EVTOPTB36020"
+		trigger = {
+			NOT = {	trait = craven }
+		}
+		random_list = {
+			65 = {}
+			10 = { 
+				if = {
+					limit = {
+						NOT = { trait = diligent }
+					}
+					add_trait = diligent
+					hidden_tooltip = {
+						character_event = {
+							id = 38256 #Notify Diligent
+						}
+					}
+				}
+				if = {
+					limit = {
+						trait = diligent
+					}
+					prestige = 10
+				}					
+			}			
+			10 = { change_martial = 1 }
+			10 = {
+				add_trait = wounded
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			5 = {
+				add_trait = maimed
+				hidden_tooltip = { character_event = { id = 38281 } }
+			}
+		}
+		set_character_flag = hunt_killed_something
+		prestige = 10
+
+	}
+
+	option = {
+		name = "EVTOPTC36020"
+		tooltip_info = craven
+		trigger = {
+			trait = craven
+		}
+		any_courtier = {
+			limit = {
+				is_abroad = no
+				martial = 10
+			}
+			opinion = {
+				modifier = craven_neg
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+
+#Hound
+character_event = {
+	id = 36025
+	desc = "EVTDESC36025"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		NOT = { has_character_flag = hunt_good_hounds }
+		has_character_modifier = holding_grand_hunt
+		NOT = { trait = craven }
+		NOT = { trait = content }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}	
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+	
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = craven
+		}
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+	}
+
+	option = {
+		name = "EVTOPTA36025"
+		set_character_flag = hunt_good_hounds
+		prestige = 10
+		random = {
+			chance = 15
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTC36025"
+		set_character_flag = hunt_good_hounds
+		prestige = 10
+		random = {
+			chance = 25
+			character_event = { id = 36026 days = 1 random = 2 tooltip = "EVTTOOLTIP36026" }
+		}
+	}
+
+	option = {
+		name = "EVTOPTD36025"
+		prestige = -10
+	}
+}
+
+character_event = {
+	id = 36026
+	desc = "EVTDESC36026"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36026"
+		treasury = -15
+		prestige = -10
+	}
+	option = {
+		name = "EVTOPTB36026"
+		piety = -50
+		add_trait = cruel
+	}
+}
+
+
+
+#Horse
+character_event = {
+	id = 36030
+	desc = "EVTDESC36030"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+	
+	mean_time_to_happen = {
+		days = 100
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2.0
+			has_character_flag = hunt_good_hounds
+		}
+
+	}
+
+	option = {
+		name = "EVTOPTA36030"
+		trigger = {
+			NOT = { trait = slothful }
+		}
+		piety = 10
+	}
+
+	option = {
+		name = "EVTOPTB36030"
+		tooltip_info = slothful
+		trigger = {
+			trait = slothful
+		}
+		piety = -10
+	}
+}
+
+#Hare
+character_event = {
+	id = 36035
+	desc = "EVTDESC36035"
+	picture = "GFX_evt_hunt"
+
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}		
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+	
+	mean_time_to_happen = {
+		days = 100
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = craven
+		}
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+	}
+
+	option = {
+		name = "EVTOPTA36035"
+		prestige = 5
+	}
+}
+
+
+#Low martial guy, inability to kill something.
+character_event = {
+	id = 36040
+	desc = "EVTDESC36040"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+		NOT = { martial = 8 }
+		NOT = { trait = hunter }
+		NOT = { has_character_flag = hunt_killed_something }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+	
+	mean_time_to_happen = {
+		days = 100
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.8
+			trait = craven
+		}
+		modifier = {
+			factor = 0.8
+			trait = content
+		}
+		modifier = {
+			factor = 0.8
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.8
+			trait = poet
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { martial = 4 }
+		}
+	}
+
+	immediate = {
+		set_character_flag = hunt_killed_something
+
+	}
+
+	option = {
+		name = "EVTOPTA36040"
+		prestige = -20
+	}
+	option = {
+		name = "EVTOPTB36040"
+		random_courtier = {
+			limit = {
+				is_adult = yes
+				is_female = no
+				martial = 8
+			}
+			opinion = {
+				modifier = opinion_disgruntled
+				who = ROOT
+				years = 10
+			}
+		}
+		prestige = -10
+
+	}
+
+}
+
+
+#High Martial, Overconfidence
+character_event = {
+	id = 36045
+	desc = "EVTDESC36045"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+
+	trigger = {
+		martial = 10
+		NOT = {	health_traits = 1 }
+		NOT = { has_character_flag = hunt_killed_something }
+		has_character_modifier = holding_grand_hunt
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+	
+	mean_time_to_happen = {
+		days = 400
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.8
+			trait = brave
+		}
+		modifier = {
+			factor = 0.8
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.8
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.75
+			trait = hunter
+		}
+
+	}
+
+	immediate = {
+		set_character_flag = hunt_killed_something
+
+	}
+
+	option = {
+		name = "EVTOPTA36045"
+		random_list = {
+			50 = {}
+			10 = { 
+				if = {
+					limit = {
+						NOT = { trait = diligent }
+					}
+					add_trait = diligent
+					hidden_tooltip = {
+						character_event = {
+							id = 38256 #Notify Diligent
+						}
+					}
+				}
+				if = {
+					limit = {
+						trait = diligent
+					}
+					prestige = 10
+				}						
+			}			
+			25 = {
+				add_trait = wounded
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			10 = {
+				add_trait = maimed
+				hidden_tooltip = { character_event = { id = 38281 } }
+			}
+			5 = {
+				death = { death_reason = death_accident }
+			}
+		}
+		set_character_flag = hunt_killed_something
+		prestige = 20
+
+	}
+	option = {
+		name = "EVTOPTB36045"
+		add_trait = craven
+	}
+
+}
+
+# courtier/vassal with hunter trait kills something,
+character_event = {
+	id = 36050
+	desc = "EVTDESC36050"
+	picture = "GFX_evt_hunt"
+
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		is_adult = yes
+		trait = hunter
+		liege = { has_character_modifier = holding_grand_hunt }
+		in_command = no
+		independent = no
+		war = no
+		NOT = { liege = { has_character_flag = hunt_killed_something } }
+		NOT = {	health_traits = 1 }
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}		
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+	
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+
+		modifier = {
+			factor = 0.8
+			trait = brave
+		}
+		modifier = {
+			factor = 0.8
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.8
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.75
+			trait = hunter
+		}
+
+	}
+
+	option = {
+		name = "EVTOPTA36050"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = content
+			}
+			modifier = {
+				factor = 0
+				trait = humble
+			}
+		}
+		prestige = 5
+		random = {
+			chance = 10
+			liege = { character_event = { id = 36051 } }
+		}
+	}
+	option = {
+		name = "EVTOPTB36050"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0
+				trait = proud
+			}
+		}
+		liege = { character_event = { id = 36052 } }
+	}
+}
+
+character_event = {
+	id = 36051
+	desc = "EVTDESC36051"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36051"
+		FROM = {
+			imprison = ROOT
+		}
+		prestige = -5
+	}
+	option = {
+		name = "EVTOPTB36051"
+		piety = 5
+	}
+}
+
+character_event = {
+	id = 36052
+	desc = "EVTDESC36052"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA36052"
+		prestige = 5
+		FROM = {
+			opinion = {
+				modifier = opinion_proud
+				who = root
+				years = 10
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 36080
+	picture = "GFX_evt_hunt"
+	desc = "EVTDESC36080"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = hunt_begin
+	}	
+
+	option = {
+		name = "EVTOPTA36080"
+	}
+}
+
+
+#end if we go to war.
+character_event = {
+	id = 36089
+	desc = "EVTDESC36089"
+	picture = "GFX_evt_hunt"
+
+	only_playable = yes
+
+	trigger = {
+		war = yes
+		has_character_modifier = holding_grand_hunt
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		remove_character_modifier = holding_grand_hunt
+		clr_character_flag = hunt_paranoia
+		clr_character_flag = hunt_good_hounds
+		clr_character_flag = hunt_killed_something
+		clr_character_flag = do_not_disturb
+		clr_character_flag = hunt_event_happened
+		clr_character_flag = hunt_begin
+	}
+
+	option = {
+		name = "EVTOPTA36089"
+	}
+}
+
+#Normal end.
+character_event = {
+	id = 36090
+	desc = "EVTDESC36090"
+	picture = "GFX_evt_hunt"
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+	}
+
+	immediate = {
+		remove_character_modifier = holding_grand_hunt
+		clr_character_flag = hunt_paranoia
+		clr_character_flag = hunt_good_hounds
+		clr_character_flag = hunt_killed_something
+		clr_character_flag = do_not_disturb
+		clr_character_flag = hunt_event_happened
+		clr_character_flag = hunt_begin
+	}
+
+	option = {
+		name = "EVTOPTA36090"
+		prestige = 10
+	}
+}
+
+#Deer Park
+character_event = {
+	id = 4075
+	desc = "EVTDESC4075"
+	picture = GFX_evt_hunt
+
+	min_age = 20
+	only_playable = yes
+	#only_men = yes
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		war = no
+		in_command = no
+		has_character_modifier = holding_grand_hunt
+		NOT = { has_character_flag = hunt_killed_something }
+		job_treasurer = {
+			NOT = {
+				trait = greedy
+			}
+			NOT = {
+				trait = deceitful
+			}
+		}
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}	
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}
+	}
+	
+	immediate = {
+		set_character_flag = hunt_event_happened
+	}	
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = hunt_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = hunt_event_happened
+		}		
+		
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		
+		modifier = {
+			factor = 2
+			trait = content
+		}
+	}
+
+	option = {
+		name = "EVTOPTA4075"
+		trigger = {
+			NOT = {
+				trait = greedy
+				trait = content
+			}
+		}
+		random_vassal = {
+			opinion = {
+				modifier = opinion_irritated
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB4075"
+		trigger = {
+			NOT = {
+				trait = greedy
+				trait = content
+			}
+		}
+		treasury = -10
+		random_vassal = {
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTC4075"
+		trigger = {
+			OR = {
+				trait = greedy
+				trait = content
+			}
+		}
+		random_vassal = {
+			limit = {
+				war = no
+				prisoner = no
+				is_adult = yes
+				OR = {
+					trait = diligent
+					trait = ambitious
+					NOT = {
+						trait = slothful
+					}
+				}
+			}
+			opinion = {
+				modifier = content_neg
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+}
+
+###########################################
+# Flag management                         #
+###########################################
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = 36999
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_grand_hunt
+		clr_character_flag = hunt_paranoia
+		clr_character_flag = hunt_good_hounds
+		clr_character_flag = hunt_killed_something
+		clr_character_flag = do_not_disturb
+		clr_character_flag = hunt_event_happened
+		clr_character_flag = hunt_begin
+	}
+}
+################################################
+#
+# Imprisoned Events
+#
+# ID 50000 - 54999 are reserved
+#
+##################################################
+#
+# Written by Sara Wendel-Örtqvist & Henrik Fåhraeus
+
+#Escape from prison: Rope in flagon of wine
+character_event = {
+	id = 50000
+	desc = "EVTDESC50000"
+	picture = "GFX_evt_into_the_dungeon"
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = yes
+	
+	trigger = {
+		NOT = { trait = craven }
+		NOT = { religion_group = rastullah_group }
+		has_character_modifier = house_arrest
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.75
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.75
+			intrigue = 7
+		}
+		modifier = {
+			factor = 0.75
+			intrigue = 9
+		}
+		modifier = {
+			factor = 0.75
+			intrigue = 11
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { intrigue = 5 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { intrigue = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = content
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA50000"
+		trigger = {
+			NOT = { trait = brave }
+		}
+		add_trait = craven
+	}
+	
+	option = {
+		name = "EVTOPTB50000" #Do I risk it? Yes!
+		hidden_tooltip = {
+			random_list = {
+				30 = {
+					host = {
+						character_event = {
+							id = 50040
+						}
+					}
+					character_event = {
+						id = 50001
+					}
+				}
+				70 = {
+					host = {
+						character_event = {
+							id = 50002
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#I'm free!
+character_event = {
+	id = 50001
+	desc = "EVTDESC50001"
+	picture = "GFX_evt_into_the_dungeon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50001"
+		prestige = 10
+		hidden_tooltip = {
+			if = {
+				limit = {
+					is_ruler = no
+					employer = {
+						ROOT = {
+							host = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+				prisoner = no
+				banish = yes
+				break = yes
+			}
+		}
+		prisoner = no
+	}
+}
+
+# The host is notified of the escape
+character_event = {
+	id = 50040
+	desc = "EVTDESC50040"
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50040"
+		prestige = -10
+	}
+}
+
+#A prisoner tried to escape!
+character_event = {
+	id = 50002
+	desc = "EVTDESC50002"
+	picture = "GFX_evt_into_the_dungeon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50002"
+		ai_chance = { factor = 20 }
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 50003
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50002"
+		ai_chance = { factor = 20 }
+		
+		FROM = {
+			hidden_tooltip = {
+				remove_character_modifier = house_arrest
+				remove_character_modifier = the_oubliette
+				remove_character_modifier = the_dungeon
+			}
+			add_character_modifier = { 
+				name = the_dungeon
+				duration = -1
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 50003
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC50002"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 5
+				trait = wroth
+			}
+			modifier = {
+				factor = 5
+				trait = cruel
+			}
+		}
+		
+		FROM = {
+			hidden_tooltip = {
+				remove_character_modifier = house_arrest
+				remove_character_modifier = the_dungeon
+				remove_character_modifier = the_oubliette
+			}
+			add_character_modifier = { 
+				name = the_oubliette
+				duration = -1
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 50003
+				}
+			}
+		}
+	}
+}
+
+#Failed to escape!
+character_event = {
+	id = 50003
+	desc = "EVTDESC50003"
+	picture = "GFX_evt_into_the_dungeon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50003"
+		trigger = {
+			has_character_modifier = house_arrest
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50003"
+		trigger = {
+			has_character_modifier = the_oubliette
+		}
+		random = {
+			chance = 25
+			add_trait = stressed
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC50003"
+		trigger = {
+			has_character_modifier = the_dungeon
+		}
+		random = {
+			chance = 25
+			add_trait = depressed
+		}
+	}
+}
+
+###############################################
+
+# Request better accomodations
+character_event = {
+	id = 50005
+	desc = "EVTDESC50005"
+	picture = "GFX_evt_into_the_dungeon"
+	border = GFX_event_normal_frame_intrigue
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = yes
+	
+	trigger = {
+		NOT = { has_character_modifier = zun_judgement }
+		NOT = { has_character_modifier = the_oubliette }
+		NOT = { has_character_modifier = house_arrest }
+		NOT = { has_character_flag = asked_for_better_prison }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2.0
+			trait = content
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA50005"
+		set_character_flag = asked_for_better_prison
+		hidden_tooltip = {
+			host = {
+				character_event = {
+					id = 50006
+					days = 2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50005" #I deserve this
+		set_character_flag = asked_for_better_prison
+	}
+}
+
+#Host responds to the prisoner's request
+character_event = {
+	id = 50006
+	desc = "EVTDESC50006"
+	picture = "GFX_evt_into_the_dungeon"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50006" # Denied
+		trigger = {
+			FROM = {
+				prisoner = yes
+			}
+		}
+		ai_chance = { factor = 34 }
+	}
+	
+	option = {
+		name = "EVTOPTB50006" # Granted
+		trigger = {
+			FROM = {
+				prisoner = yes
+			}
+		}
+		ai_chance = { 
+			factor = 33 
+			modifier = {
+				factor = 0
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0
+				trait = wroth
+			}
+			modifier = {
+				factor = 5
+				trait = kind
+			}
+		}
+		tooltip = {
+			FROM = {	
+				add_character_modifier = { 
+					name = house_arrest
+					duration = -1
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 50007
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC50006" # The Oubliette!
+		trigger = {
+			FROM = {
+				prisoner = yes
+			}
+		}
+		ai_chance = { 
+			factor = 33 
+			modifier = {
+				factor = 0
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 5
+				trait = paranoid
+			}
+			modifier = {
+				factor = 5
+				trait = cruel
+			}
+			modifier = {
+				factor = 5
+				trait = wroth
+			}
+		}
+		
+		tooltip = {
+			FROM = {	
+				add_character_modifier = {
+					name = the_oubliette
+					duration = -1
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 50008
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTD50006" # Already released
+		trigger = {
+			FROM = {
+				prisoner = no
+			}
+		}
+	}
+}
+
+# House Arrest
+character_event = {
+	id = 50007
+	desc = "EVTDESC50007"
+	picture = "GFX_evt_into_the_dungeon"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50007"
+		clr_character_flag = asked_for_better_prison
+		hidden_tooltip = {
+			remove_character_modifier = house_arrest
+			remove_character_modifier = the_dungeon
+			remove_character_modifier = the_oubliette
+		}
+		if = {
+			limit = {
+				prisoner = yes
+			}
+			add_character_modifier = { 
+				name = house_arrest
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Oubliette
+character_event = {
+	id = 50008
+	desc = "EVTDESC50008"
+	picture = "GFX_evt_into_the_dungeon"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50008"
+		clr_character_flag = asked_for_better_prison
+		remove_character_modifier = the_dungeon
+		hidden_tooltip = {
+			remove_character_modifier = house_arrest
+			remove_character_modifier = the_dungeon
+			remove_character_modifier = the_oubliette
+		}
+		if = {
+			limit = {
+				prisoner = yes
+			}
+			add_character_modifier = {
+				name = the_oubliette
+				duration = -1
+			}
+		}
+	}
+}
+
+###############################################
+
+# Torture a prisoner!
+character_event = {
+	id = 50010
+	desc = "EVTDESC50010"
+	picture = "GFX_evt_torture"
+	border = GFX_event_normal_frame_intrigue
+	
+	min_age = 14
+	only_rulers = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		NOT = { trait = kind }
+		NOT = { trait = just }
+		OR = {
+			trait = envious
+			trait = wroth
+			trait = arbitrary
+			trait = lunatic
+			trait = possessed
+			trait = paranoid
+			trait = impaler
+			trait = cruel
+		}
+		any_courtier = {
+			age = 14
+			prisoner = yes
+			host = { character = ROOT }
+			NOT = { has_character_modifier = house_arrest }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.25
+			trait = impaler
+		}
+		modifier = {
+			factor = 0.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.75
+			trait = paranoid
+		}
+		modifier = {
+			factor = 3.0
+			trait = slothful
+		}
+	}
+	
+	option = {
+		name = EVTOPTA50010 # Resist my foul impulse
+		piety = 10
+		trigger = {
+			NOT = { has_character_flag = demon_child_non_pagan }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB50010 # Oil up the rack!
+		#if = {
+			#limit = { NOT = { religion = jain } }
+			#piety = -10
+		#}
+		#if = {
+			#limit = { religion = jain }
+			#piety = -30
+			#custom_tooltip = { text = jain_ahimsa_tooltip }
+		#}
+		random_courtier = {
+			limit = {
+				age = 14
+				prisoner = yes
+				host = { character = ROOT }
+				NOT = { has_character_modifier = house_arrest }
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 50011
+						tooltip = "EVTTOOLTIP50011"
+					}
+				}
+				30 = {
+					character_event = {
+						id = 50012
+						tooltip = "EVTTOOLTIP50012"
+					}
+				}
+				30 = {
+					character_event = {
+						id = 50013
+						tooltip = "EVTTOOLTIP50013"
+					}
+				}
+				10 = {
+					character_event = {
+						id = 50014
+						tooltip = "EVTTOOLTIP50014"
+					}
+				}
+			}
+		}
+	}
+}
+
+# Tortured
+character_event = {
+	id = 50011
+	desc = "EVTDESC50011"
+	picture = "GFX_evt_torture"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50011"
+		
+		add_character_modifier = { 
+			name = tortured
+			duration = 60
+		}
+	}
+}
+
+# Wounded
+character_event = {
+	id = 50012
+	desc = "EVTDESC50012"
+	picture = "GFX_evt_torture"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50012"
+		add_trait = wounded
+	}
+}
+
+# Maimed
+character_event = {
+	id = 50013
+	desc = "EVTDESC50013"
+	picture = "GFX_evt_torture"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50013"
+		add_trait = maimed
+	}
+}
+
+# Killed
+character_event = {
+	id = 50014
+	desc = "EVTDESC50014"
+	picture = "GFX_evt_death"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50014"
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 50015
+				}
+			}
+		}
+		death = {
+			death_reason = death_dungeon
+			killer = FROM
+		}
+	}
+}
+
+# Host notified of death
+character_event = {
+	id = 50015
+	desc = "EVTDESC50015"
+	picture = "GFX_evt_death"
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50015"
+		prestige = -10
+	}
+}
+
+
+###############################################
+
+# Ruler is notified of the capture of an enemy commander
+character_event = {
+	id = 50020
+	desc = "EVTDESC50020"
+	picture = "GFX_evt_battle"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50020"
+	}
+}
+
+###############################################
+
+#Petition liege to release prisoner
+character_event = {
+	id = 50025
+	desc = "EVTDESC50025"
+	picture = GFX_evt_emissary
+	
+	only_rulers = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		independent = no
+		liege = {
+			num_of_prisoners = 1
+			NOT = { character = ROOT }
+			any_realm_lord = {
+				prisoner = yes
+				host = { 
+					character = PREV
+				}
+				is_friend = ROOT
+				NOT = {
+					has_character_modifier = petition_release_prisoner_timer
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+		name = "EVTOPTA50025"
+		liege = {
+			random_realm_lord = {
+				limit = {
+					host = {
+						character = PREV
+					}
+					prisoner = yes
+					is_friend = ROOT
+				}
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = petition_release_prisoner_timer
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+		liege = {
+			character_event = {
+				id = 50026
+				tooltip = "EVTTOOLTIP50026"
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50025"
+		liege = {
+			random_realm_lord = {
+				limit = {
+					host = {
+						character = PREV
+					}
+					prisoner = yes
+					OR = {
+						opinion = { who = ROOT value = 25 }
+						reverse_opinion = { who = ROOT value = 25 }
+					}
+				}
+				opinion = {
+					modifier = opinion_disgruntled
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+	}
+}
+
+#Liege responds
+character_event = {
+	id = 50026
+	desc = "EVTDESC50026"
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50026"
+		prestige = -50
+		random_realm_lord = {
+			limit = {
+				prisoner = yes
+				has_character_modifier = petition_release_prisoner_timer
+			}
+			prisoner = no
+		}
+		any_vassal = {
+			limit = {
+				prisoner = no
+			}
+			opinion = {
+				modifier = opinion_released_prisoner
+				who = ROOT
+				months = 30
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB50026"
+		any_vassal = {
+			limit = {
+				liege = {
+					character = ROOT
+				}
+			}
+			opinion = {
+				modifier = opinion_not_release_prisoner
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
