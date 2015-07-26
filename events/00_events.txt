@@ -1,5 +1,5 @@
 #LEFT OUT: ACHIEVEMENT EVENTS, BYZANTINE, ALL CM EVENTS, CRITICAL, CRUSADE, DECADENCE, FATWA, FURUSIYYA, HASHSHASHIN, HORSE LORDS, INTERESTING MUSLIMS, KNIGHTS OF ST JOHN, KNIGHTS TEMPLAR,
-#LEARNING SCENARIO, LEGENDS, MISC OLD GODS, MONGOL, MUSLIM, NEWS FLAVOR, OLD GODS, PILGRIM,
+#LEARNING SCENARIO, LEGENDS, MISC OLD GODS, MONGOL, MUSLIM, NEWS FLAVOR, OLD GODS, PILGRIM, RAMADAN, ALL REBELS, 
 #########################################################
 #
 # Landless Character Adventures for The Old Gods DLC
@@ -122365,6 +122365,9411 @@ letter_event = {
 				target = ROOT
 				casus_belli = cb_install_khan
 				faction = faction_overthrow
+			}
+		}
+	}
+}
+######################################
+#
+# Polygamy Events
+#
+# Event ID 89000 - 89249 reserved
+#
+######################################
+
+### Wives fall in love with each other
+character_event = {
+	id = 89000
+	desc = "EVTDESC89000"
+	picture = GFX_evt_lovers
+	
+	trigger = {
+		religion_group = rastullah_group
+		is_female = yes
+		is_married = yes
+		trait = homosexual
+		spouse = {
+			any_spouse = {
+				NOT = { character = ROOT }
+				trait = homosexual
+				is_alive = yes
+				at_location = ROOT
+			}
+		}
+		NOT = {
+			has_character_flag = thelma
+			has_character_flag = louise
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+		
+	option = {
+		name = "EVTOPTA89000"
+		set_character_flag = thelma
+		spouse = {
+			any_spouse = {
+				limit = {
+					trait = homosexual
+					NOT = { character = ROOT }
+				}
+				set_character_flag = louise
+				add_lover = ROOT
+			}
+			hidden_tooltip = {
+				character_event = { id = 89001 days = 14 }
+			}
+		}
+	}
+}
+					
+# Husband finds out
+character_event = {
+	id = 89001
+	desc = "EVTDESC89001"
+	picture = GFX_evt_lovers
+	
+	is_triggered_only = yes
+	
+	option = { # Accept it.
+		name = "EVTOPTA89001"
+		decadence = 2
+		any_spouse = {
+			limit = { has_character_flag = thelma }
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				months = 12
+			}
+		}
+		any_spouse = {
+			limit = { has_character_flag = louise }
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				months = 12
+			}
+		}
+	}
+	option = { # Order them to stop.
+		name = "EVTOPTB89001"
+		hidden_tooltip = {
+			character_event = { id = 89002 days = 30 }
+		}
+		piety = 20
+	}
+	option = { # Execute them
+		name = "EVTOPTC89001"
+		any_spouse = {
+			limit = { has_character_flag = thelma }
+			death = { death_reason = death_execution killer = ROOT }
+		}
+		any_spouse = {
+			limit = { has_character_flag = louise }
+			death = { death_reason = death_execution killer = ROOT }
+		}
+	}
+}
+
+# Husband finds out they've fled!
+character_event = {
+	id = 89002
+	desc = "EVTDESC89002"
+	picture = GFX_evt_bad_news
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89002"
+		character_event = { id = 89003 tooltip = "EVTTOOLTIP89003" }
+	}
+}
+
+# The wives drive their carriage over a cliff
+character_event = {
+	id = 89003
+	desc = "EVTDESC89003"
+	picture = GFX_evt_moors
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89003"
+		any_spouse = {
+			limit = { has_character_flag = thelma }
+			death = { death_reason = death_suicide }
+		}
+		any_spouse = {
+			limit = { has_character_flag = louise }
+			death = { death_reason = death_suicide }
+		}
+	}
+}
+
+### Secondary Wife schemes to become First Wife
+
+# Secondary Wife thinks she should be First Wife
+character_event = {
+	id = 89005
+	desc = "EVTDESC89005"
+	picture = GFX_evt_quarrel
+	
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_female = yes
+		age = 16
+		is_married = yes
+		is_pregnant = no
+		NOT = { trait = in_hiding }
+		is_main_spouse = no
+		religion_group = rastullah_group
+	}
+	
+	mean_time_to_happen = {
+	months = 420
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = shy
+		}
+		modifier = {
+			factor = 4.0
+			trait = content
+		}
+	}
+	
+	option = { # Kill First Wife!
+		name = "EVTOPTA89005"
+		#tooltip_info = 
+		trigger = {
+			OR = {
+				trait = cruel
+				trait = deceitful
+				trait = lunatic
+			}
+		}
+		set_character_flag = plotting_second_wife
+		ai_chance = { factor = 40 }
+		random_list = {
+			50 = {
+				spouse = {
+					random_spouse = {
+						limit = { is_main_spouse = yes }
+						death = {
+							death_reason = death_murder
+							killer = ROOT
+						}
+					}
+					character_event = { id = 89006 days = 4 tooltip = "EVTTOOLTIP89007" }
+				}
+			}
+			50 = {
+				spouse = {
+					random_spouse = {
+						limit = { is_main_spouse = yes }
+						character_event = { id = 89007 days = 4 tooltip = "EVTTOOLTIP89007" }
+					}
+				}
+			}
+		}
+	}
+	option = { # Woo husband
+		name = "EVTOPTB89005"
+		set_character_flag = plotting_second_wife
+		ai_chance = { factor = 40 }
+		spouse = {
+			character_event = { id = 89010 days = 4 tooltip = "EVTTOOLTIP89010" }
+		}
+	}
+	option = { # Do nothing
+		name = "EVTOPTC89005"
+		ai_chance = { factor = 20 }
+		random_list = {
+			50 = { 
+				if = {
+					limit = {
+						NOT = {
+							trait = content
+							trait = ambitious
+						}
+					}
+					add_trait = content
+					piety = 20
+				}
+			}
+			50 = {
+				piety = 20
+			}
+		}
+	}
+}
+
+# First Wife is murdered by Second Wife
+character_event = {
+	id = 89006
+	desc = "EVTDESC89006"
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = { # Accept it
+		name = "EVTOPTA89006"
+	}
+	option = { # Send killer to prison
+		name = "EVTOPTB89006"
+		random_spouse = {
+			limit = { has_character_flag = plotting_second_wife }
+			imprison = yes
+			clr_character_flag = plotting_second_wife
+		}
+	}
+	option = { # Have killer executed
+		name = "EVTOPTC89006"
+		random_spouse = {
+			limit = { has_character_flag = plotting_second_wife }
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+			clr_character_flag = plotting_second_wife
+		}
+	}
+}
+
+# First Wife is informed of failed murder attempt
+character_event = {
+	id = 89007
+	desc = "EVTDESC89007"
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89007"
+		spouse = {
+			character_event = { id = 89008 days = 4 tooltip = "EVTTOOLTIP89008" }
+		}
+	}
+}
+
+# Husband is informed of failed murder attempt
+character_event = {
+	id = 89008
+	desc = "EVTDESC89008"
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	option = { # Execute wife
+		name = "EVTOPTA89008"
+		random_spouse = {
+			limit = { has_character_flag = plotting_second_wife }
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+			clr_character_flag = plotting_second_wife
+		}
+	}
+	option = { # Imprison wife
+		name = "EVTOPTB89008" 
+		random_spouse = {
+			limit = { has_character_flag = plotting_second_wife }
+			imprison = yes
+			clr_character_flag = plotting_second_wife
+		}
+	}
+	option = { # Tell wife to fight own battles
+		name = "EVTOPTC89008"
+		random_spouse = {
+			limit = { is_main_spouse = yes }
+			hidden_tooltip = {
+				character_event = { id = 89009 days = 4 tooltip = "EVTTOOLTIP89009" }
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_very_disappointed
+				years = 2
+			}
+		}
+	}
+}
+
+# First Wife told to fight her own battles.
+character_event = {
+	id = 89009
+	desc = "EVTDESC89009"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89009"
+	}
+}
+
+# Second Wife tries to manipulate Husband
+character_event = {
+	id = 89010
+	desc = "EVTDESC89010"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89010"
+		random_spouse = {
+			limit = { is_main_spouse = yes }
+			opinion = {
+				who = ROOT
+				modifier = opinion_very_disappointed
+				years = 4
+			}
+			hidden_tooltip = {
+				character_event = { id = 89011 days = 16 }
+			}
+		}
+		FROM = {
+			make_primary_spouse = yes
+			opinion = {
+				who = ROOT
+				modifier = opinion_happy
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB89010"
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_disappointed
+				years = 2
+			}
+		}
+	}
+}
+
+# Former First Wife schemes against new First Wife
+character_event = {
+	id = 89011
+	desc = "EVTDESC89011"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89011"
+		ai_chance = { factor = 30 }
+		random_list = {
+			30 = {
+				spouse = {
+					random_spouse = {
+						limit = { is_main_spouse = yes }
+						death = {
+							death_reason = death_murder
+							killer = ROOT
+						}
+					}
+					hidden_tooltip = {
+						character_event = { id = 89012 }
+					}
+				}
+			}
+			70 = {
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB89011"
+		ai_chance = { factor = 70 }
+	}
+}
+
+# Former First Wife murders new First Wife
+character_event = {
+	id = 89012
+	desc = "EVTDESC89012"
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89012"
+		decadence = 5
+	}
+	option = {
+		name = "EVTOPTB89012"
+		FROM = { imprison = yes }
+	}
+	option = {
+		name = "EVTOPTC89012"
+		FROM = {
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+		}
+	}
+}
+
+### First Wife thinks her son should get a county if he is not heir
+character_event = {
+	id = 89015
+	desc = "EVTDESC89015"
+	picture = GFX_evt_quarrel
+	
+	capable_only = yes
+	prisoner = no
+	religion_group = rastullah_group
+	
+	trigger = {
+		is_female = yes
+		num_of_children = 1
+		age = 16
+		is_married = yes
+		is_pregnant = no
+		is_main_spouse = yes
+		spouse = { demesne_size = 5 }
+		spouse = { religion_group = rastullah_group }
+		NOT = { has_character_flag = envious_mother }
+		any_child = {
+			is_female = no
+			is_primary_heir = no
+			is_alive = yes
+			age = 14
+		}
+		NOT = { any_child = { is_primary_heir = yes } }
+		NOT = { any_child = { has_character_flag = first_wife_son } }
+	}
+	
+	mean_time_to_happen = {
+		months = 320
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 4.0
+			trait = content
+		}
+	}
+		
+	
+	option = { # Speak to husband
+		name = "EVTOPTA89015"
+		ai_chance = { factor = 100 }
+		set_character_flag = envious_mother
+		any_child = {
+			limit = { 
+				is_female = no
+				age = 14
+				is_primary_heir = no
+			}
+			set_character_flag = first_wife_son
+			character_event = { id = 89016 days = 2 tooltip = "EVTTOOLTIP89016" }
+		}
+	}
+	option = { # Do nothing
+		ai_chance = { factor = 0 }
+		name = "EVTOPTB89015"
+	}
+}
+
+# Son informed
+character_event = {
+	id = 89016
+	desc = "EVTDESC89016"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89016"
+		father = { character_event = { id = 89017 days = 2 tooltip = "EVTTOOLTIP89017" } }
+	}
+}
+
+# Husband informed
+character_event = {
+	id = 89017
+	desc = "EVTDESC89017"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = { # Grant county
+		name = "EVTOPTA89017"
+		random_demesne_title = {
+			limit = {
+				NOT = {	tier = duke }
+				NOT = {	tier = king }
+				NOT = {	tier = emperor }
+				NOT = {	location = { is_capital = yes }	}
+			}
+			ROOT = {
+				any_child = {
+					limit = { has_character_flag = first_wife_son }
+					grant_title = PREVPREV
+				}
+			}
+		}
+	}
+	option = { # Say no
+		name = "EVTOPTB89017"
+		FROM = {
+			mother = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_very_disappointed
+					years = 2
+				}
+			}
+		}
+		hidden_tooltip = {
+			any_child = {
+				limit = { has_character_flag = first_wife_son }
+				character_event = { id = 89018 days = 2 }
+			}
+		}
+	}
+}
+
+# Son informed he is not getting county
+character_event = {
+	id = 89018
+	desc = "EVTDESC89018"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89018"
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_disappointed
+				years = 2
+			}
+		}
+	}
+}
+		
+
+### Secondary Wife plots to kill heir
+character_event = {
+	id = 89020
+	desc = "EVTDESC89020"
+	picture = GFX_evt_quarrel
+	
+	capable_only = yes
+	prisoner = no
+	religion_group = rastullah_group
+
+	trigger = {
+		is_female = yes
+		num_of_children = 1
+		age = 16
+		is_married = yes
+		is_pregnant = no
+		NOT = { trait = in_hiding }
+		spouse = {
+			is_ruler = yes
+			any_child = { 
+				is_primary_heir = yes
+				ai = yes
+				is_alive = yes
+				NOT = { age = 16 }
+				mother = { NOT = { character = ROOT } }
+				at_location = ROOT
+			}
+		}
+		any_child = {
+			is_female = no
+			is_alive = yes
+			is_primary_heir = no
+			is_pretender = yes
+		}
+		NOT = {
+			any_child = { is_primary_heir = yes	}
+			has_character_flag = murdering_wife
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 4.0
+			trait = content
+		}
+	}
+	
+	option = { # Murder heir
+		name = "EVTOPTA89020"
+		ai_chance = { factor = 100 }
+		set_character_flag = murdering_wife
+		random_list = {
+			35 = {
+				spouse = {
+					any_child = {
+						limit = { is_primary_heir = yes }
+						character_event = { id = 89023 days = 4 tooltip = "EVTTOOLTIP89023" }
+					}
+					hidden_tooltip = {
+						random_list = {
+							50 = {
+								character_event = { id = 89024 tooltip = "EVTTOOLTIP89024" }
+								any_child = {
+									limit = { is_primary_heir = yes }
+									death = { death_reason = death_murder_unknown }
+								}
+							}
+							50 = {
+								character_event = { id = 89025 tooltip = "EVTTOOLTIP89025" }
+								any_child = {
+									limit = { is_primary_heir = yes }
+									death = { death_reason = death_murder killer = ROOT }
+								}
+							}
+						}
+					}
+				}
+			}
+			65 = {
+				spouse = {
+					any_child = {
+						limit = { is_primary_heir = yes }
+						character_event = { id = 89021 days = 4 tooltip = "EVTTOOLTIP89021" }
+					}
+					hidden_tooltip = {
+						character_event = { id = 89022 tooltip = "EVTTOOLTIP89022" }
+					}
+				}
+			}
+		}
+	}
+	option = { # Do nothing
+		ai_chance = { factor = 0 }
+		name = "EVTOPTB89020"
+	}
+}
+
+# Heir is informed of failed attempt
+character_event = {
+	id = 89021
+	desc = "EVTDESC89021"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89021"
+	}
+}
+
+# Husband is informed of failed attempt
+character_event = {
+	id = 89022
+	desc = "EVTDESC89022"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = { # Kill wife
+		name = "EVTOPTA89022"
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = { # Imprison wife
+		name = "EVTOPTB89022"
+		FROM = { imprison = yes }
+		hidden_tooltip = {
+			any_child = {
+				limit = { is_primary_heir = yes }
+				opinion = {
+					who = FROM
+					modifier = attempted_murder
+					years = 30
+				}
+				mother = {
+					opinion = {
+						who = FROM
+						modifier = attempted_murder
+						years = 30
+					}
+				}
+			}
+		}
+	}
+	option = { # Do nothing
+		name = "EVTOPTC89022"
+		any_child = {
+			limit = { is_primary_heir = yes }
+			opinion = {
+				who = ROOT
+				modifier = opinion_very_disappointed
+				years = 2
+			}
+			mother = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_very_disappointed
+					years = 2
+				}
+			}
+		}
+		hidden_tooltip = {
+			any_child = {
+				limit = { is_primary_heir = yes }
+				opinion = {
+					who = FROM
+					modifier = attempted_murder
+					years = 30
+				}
+				mother = {
+					opinion = {
+						who = FROM
+						modifier = attempted_murder
+						years = 30
+					}
+				}
+			}
+		}
+	}
+}
+
+# Heir is killed
+character_event = {
+	id = 89023
+	desc = "EVTDESC89023"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89023"
+	}
+}
+
+# Husband informed heir is killed, killer is unknown
+character_event = {
+	id = 89024
+	desc = "EVTDESC89024"
+	picture = GFX_evt_quarrel
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89024"
+	}
+}
+
+# Husband informed heir is killed, killer is known
+character_event = {
+	id = 89025
+	desc = "EVTDESC89025"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = { # Kill wife
+		name = "EVTOPTA89025"
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = { # Imprison wife
+		name = "EVTOPTB89025"
+		FROM = { imprison = yes }
+		hidden_tooltip = {
+			any_spouse = {
+				limit = {
+					NOT = { character = FROM }
+				}
+				opinion = {
+					who = FROM
+					modifier = evil_murderer
+					years = 40
+				}
+			}
+		}
+	}
+	option = { # Do nothing
+		name = "EVTOPTC89025"
+		any_spouse = {
+			limit = {
+				NOT = { character = FROM }
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_very_disappointed
+				years = 8
+			}
+			opinion = {
+				who = FROM
+				modifier = evil_murderer
+				years = 40
+			}
+		}
+	}
+}
+
+### Evil wife plots to kill sons that aren't hers
+character_event = {
+	id = 89030
+	desc = "EVTDESC89030"
+	picture = GFX_evt_quarrel
+	
+	capable_only = yes
+	prisoner = no
+	religion_group = rastullah_group
+	
+	trigger = {
+		is_female = yes
+		num_of_children = 1
+		age = 16
+		is_married = yes
+		is_pregnant = no
+		NOT = { trait = in_hiding }
+		any_child = {
+			is_female = no
+			is_alive = yes
+		}
+		spouse = {
+			any_child = {
+				ai = yes
+				is_alive = yes
+				is_female = no
+				NOT = { age = 16 }
+				mother = { NOT = { character = ROOT } }
+				is_primary_heir = no
+				at_location = ROOT
+			}
+		}
+		NOT = { trait = kind }
+	}
+	
+	mean_time_to_happen = {
+		months = 820
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.25
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.75
+			trait = greedy
+		}
+		modifier = {
+			factor = 5.0
+			trait = honest
+		}
+		modifier = {
+			factor = 5.0
+			trait = just
+		}
+		modifier = {
+			factor = 5.0
+			trait = content
+		}
+	}
+	
+	option = { # Murder son
+		name = "EVTOPTA89020"
+		ai_chance = { factor = 100 }
+		random_list = {
+			50 = {
+				spouse = {
+					random_child = {
+						limit = {
+							NOT = { age = 16 }
+							is_female = no
+							mother = { NOT = { character = ROOT } }
+							is_primary_heir = no
+							is_alive = yes
+						}
+						set_character_flag = victim_son
+						character_event = { id = 89033 days = 4 tooltip = "EVTTOOLTIP89023" }
+					}
+					hidden_tooltip = {
+						random_list = {
+							50 = {
+								character_event = { id = 89034 tooltip = "EVTTOOLTIP89024" }
+								any_child = {
+									limit = { has_character_flag = victim_son }
+									death = { death_reason = death_murder_unknown }
+								}
+							}
+							50 = {
+								character_event = { id = 89035 tooltip = "EVTTOOLTIP89025" }
+								any_child = {
+									limit = { has_character_flag = victim_son }
+									death = { death_reason = death_murder killer = ROOT }
+								}
+							}
+						}
+					}
+				}
+			}
+			50 = {
+				spouse = {
+					random_child = {
+						limit = {
+							NOT = { age = 16 }
+							is_female = no
+							mother = { NOT = { character = ROOT } }
+							is_primary_heir = no
+							is_alive = yes
+						}
+						character_event = { id = 89031 days = 4 tooltip = "EVTTOOLTIP89021" }
+					}
+					hidden_tooltip = {
+						character_event = { id = 89032 tooltip = "EVTTOOLTIP89022" }
+					}
+				}
+			}
+		}
+	}
+	option = { # Do nothing
+		ai_chance = { factor = 0 }
+		name = "EVTOPTB89020"
+	}
+}
+
+# Son is informed of failed attempt
+character_event = {
+	id = 89031
+	desc = "EVTDESC89021"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89021"
+		clr_character_flag = victim_son
+	}
+}
+
+# Husband is informed of failed attempt
+character_event = {
+	id = 89032
+	desc = "EVTDESC89032"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = { # Kill wife
+		name = "EVTOPTA89022"
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = { # Imprison wife
+		name = "EVTOPTB89022"
+		FROM = { imprison = yes }
+		hidden_tooltip = {
+			any_child = {
+				limit = { has_character_flag = victim_son }
+				opinion = {
+					who = FROM
+					modifier = attempted_murder
+					years = 30
+				}
+				mother = {
+					opinion = {
+						who = FROM
+						modifier = attempted_murder
+						years = 30
+					}
+				}
+			}
+		}
+	}
+	option = { # Do nothing
+		name = "EVTOPTC89022"
+		any_child = {
+			limit = { has_character_flag = victim_son }
+			opinion = {
+				who = ROOT
+				modifier = opinion_very_disappointed
+				years = 2
+			}
+			mother = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_very_disappointed
+					years = 2
+				}
+			}
+		}
+		hidden_tooltip = {
+			any_child = {
+				limit = { has_character_flag = victim_son }
+				opinion = {
+					who = FROM
+					modifier = attempted_murder
+					years = 30
+				}
+				mother = {
+					opinion = {
+						who = FROM
+						modifier = attempted_murder
+						years = 30
+					}
+				}
+			}
+		}
+	}
+}
+
+# Son is killed
+character_event = {
+	id = 89033
+	desc = "EVTDESC89023"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89023"
+		clr_character_flag = victim_son
+	}
+}
+
+# Husband informed son is killed, killer is unknown
+character_event = {
+	id = 89034
+	desc = "EVTDESC89034"
+	picture = GFX_evt_quarrel
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA89024"
+	}
+}
+
+# Husband informed son is killed, killer is known
+character_event = {
+	id = 89035
+	desc = "EVTDESC89035"
+	picture = GFX_evt_quarrel
+	
+	is_triggered_only = yes
+	
+	option = { # Kill wife
+		name = "EVTOPTA89025"
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = { # Imprison wife
+		name = "EVTOPTB89025"
+		FROM = { imprison = yes }
+		hidden_tooltip = {
+			any_spouse = {
+				limit = {
+					NOT = { character = FROM }
+				}
+				opinion = {
+					who = FROM
+					modifier = evil_murderer
+					years = 40
+				}
+			}
+		}
+	}
+	option = { # Do nothing
+		name = "EVTOPTC89025"
+		any_spouse = {
+			limit = {
+				NOT = { character = FROM }
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_very_disappointed
+				years = 8
+			}
+			opinion = {
+				who = FROM
+				modifier = evil_murderer
+				years = 40
+			}
+		}
+	}
+}
+################################################
+#
+# Events for Pope vs Free Investiture
+#
+# ID 67000 - 67999 are reserved
+#
+##################################################
+# Written by Johan Andersson
+
+
+# The Pope singles out a Kingdom with Free Investiture (unless he has already targetted one)
+character_event = {
+	id = 67000
+	desc = EVTDESC67000
+	picture = GFX_evt_icon
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	religion_group = twelve
+	min_age = 16
+	#only_men = yes
+	prisoner = no
+	only_capable = yes
+	
+	trigger = {
+		year = 1000
+		OR = {
+			religion = twelve
+			#religion = fraticelli
+		}
+		controls_religion = yes
+		war = no
+		religion_authority = 0.35
+		NOT = {	has_character_flag = pope_currently_demanding	}
+		any_independent_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			NOT = {	has_character_flag = pope_wants_our_law_changed }
+			NOT = {	has_character_flag = pope_respects_our_law }
+			primary_title = {
+				OR = {
+					tier = KING
+					tier = EMPEROR
+				}
+				has_law = investiture_law_1 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+	}
+
+	option = {
+		name = EVTOPTA67000
+		ai_chance = {	factor = 100 }
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				NOT = {	has_character_flag = pope_wants_our_law_changed }
+				NOT = {	has_character_flag = pope_respects_our_law }
+				primary_title = {
+					OR = {
+						tier = KING
+						tier = EMPEROR
+					}
+					has_law = investiture_law_1 
+				}
+			}
+			character_event = { id = 67001 days = 14 tooltip = EVTTOOLTIP67001 }
+			set_character_flag = pope_wants_our_law_changed
+		}
+		set_character_flag = pope_currently_demanding
+	}
+
+	option = {
+		name = EVTOPTB67000
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+# King/Emperor gets the papal emissary asking them to change laws!
+character_event = {
+	id = 67001
+	desc = EVTDESC67001
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67001 # Fold to demand
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+		}
+		
+		FROM = { clr_character_flag = pope_currently_demanding }
+		
+		primary_title = {
+			revoke_law = investiture_law_1
+			add_law_w_cooldown = investiture_law_0
+		}
+		piety = 25
+		religion_authority = {
+			modifier = ruler_bowed_to_pope
+			years = 10
+		}
+		
+		clr_character_flag = pope_wants_our_law_changed
+		
+		FROM = {
+			opinion = {
+				modifier = pope_invest_approve
+				who = ROOT
+				years = 4
+			}
+		}
+		
+		hidden_tooltip = {
+			FROM = { character_event = { id = 67002 } }
+		}
+	}
+	
+	option = {
+		name = EVTOPTB67001 # Refuse
+		ai_chance = {
+			factor = 1
+		}
+		piety = -25
+		religion_authority = {
+			modifier = ruler_defied_pope
+			years = 10
+		}
+		
+		set_character_flag = pope_we_refuse_law_changed
+		
+		FROM = {
+			opinion = {
+				modifier = pope_invest_dislike
+				who = ROOT
+				years = 5
+			}
+		}
+		
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 67003 } }
+		}			
+	}
+	
+	option = {
+		name = EVTOPTC67001 # Give gold to Pope
+		trigger = {
+			wealth = 200
+		}
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+		
+		wealth = -200
+		FROM = { clr_character_flag = pope_currently_demanding }
+		set_character_flag = pope_respects_our_law
+		clr_character_flag = pope_wants_our_law_changed
+		hidden_tooltip = {
+			FROM = { character_event = { id = 67004  } }
+		}		
+	}
+	
+	option = {
+		name = EVTOPTD67001 # Impress with Learning
+		tooltip_info = learning
+		trigger = {
+			learning = 16
+		}
+		ai_chance = {
+			factor = 5
+		}
+		piety = 1
+		FROM = { clr_character_flag = pope_currently_demanding }
+		set_character_flag = pope_respects_our_law
+		clr_character_flag = pope_wants_our_law_changed
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 67005 } }
+		}	
+	}
+}
+
+#king accepts
+character_event = {
+	id = 67002
+	desc = EVTDESC67002
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67002
+		prestige = 5
+	}
+}
+
+#king refuses us
+character_event = {
+	id = 67003
+	desc = EVTDESC67003
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67003
+		prestige = -5
+		opinion = {
+			modifier = pope_invest_dislike
+			who = FROM
+		}
+	}
+}
+
+#king bribes us"
+character_event = {
+	id = 67004
+	desc = EVTDESC67004
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA67004"
+		wealth = 200
+	}
+}
+
+#king outwits us.
+character_event = {
+	id = 67005
+	desc = EVTDESC67005
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67005
+		piety = -5
+	}
+}
+
+# The Pope sends a delegate to a Bishop whose top liege has refused to change investiture Law
+character_event = {
+	id = 67010
+	desc = EVTDESC67010
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	religion_group = twelve
+	min_age = 16
+	#only_men = yes
+	prisoner = no
+	only_capable = yes
+	
+	has_character_flag = pope_currently_demanding
+	
+	trigger = {
+		year = 1000
+		OR = {
+			religion = twelve
+			#religion = fraticelli
+		}
+		controls_religion = yes
+		war = no
+		wealth = 20
+		any_independent_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			has_character_flag = pope_we_refuse_law_changed
+			primary_title = {
+				OR = {
+					tier = KING
+					tier = EMPEROR
+				}
+				has_law = investiture_law_1 
+			}
+			any_realm_lord = {
+				is_theocracy = yes
+				NOT = { has_character_flag = pope_bribing }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+	}
+
+	option = {
+		name = EVTOPTA67010
+		ai_chance = { factor = 100 }
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				has_character_flag = pope_we_refuse_law_changed
+				primary_title = {
+					OR = {
+						tier = KING
+						tier = EMPEROR
+					}
+					has_law = investiture_law_1 
+				}
+			}
+			random_realm_lord = {
+				limit = {
+					is_theocracy = yes
+	    			NOT = { has_character_flag = pope_bribing }				
+				}
+				set_character_flag = pope_bribing
+			
+				character_event = { id = 67011 days = 14 tooltip = EVTTOOLTIP67011 }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB67010
+		ai_chance = { factor = 0 }
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				has_character_flag = pope_we_refuse_law_changed
+			}
+			clr_character_flag = pope_we_refuse_law_changed
+		}
+		clr_character_flag = pope_currently_demanding
+	}
+
+}
+
+# The Bishop receives the Papal emissary
+character_event = {
+	id = 67011
+	desc = EVTDESC67011
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67011
+		wealth = 20
+		opinion = {
+			modifier = bishop_bribed_by_pope
+			who = FROM
+			years = 5
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.1
+				opinion = { who = top_liege value = 75 }
+			}
+		}
+		random = {
+			chance = 33
+			top_liege = {
+				character_event = { id = 67012 days = 14 tooltip = EVTTOOLTIP67012 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB67011
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				opinion = { who = top_liege value = 20 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = top_liege value = 40 }
+			}
+			modifier = {
+				factor = 4
+				opinion = { who = top_liege value =  60 }
+			}
+			modifier = {
+				factor = 100
+				opinion = { who = top_liege value =  90 }
+			}
+		}
+		prestige = 1
+	}
+}
+
+#King knows of bishop getting bribed
+character_event = {
+	id = 67012
+	desc = EVTDESC67012
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67012
+		opinion = {
+			modifier = opinion_dishonorable
+			who = FROM
+			months = 60
+		}
+	}
+}
+
+# The Pope contacts a powerful (preferably rebellious) vassal of a liege who has refused to change investiture Law
+character_event = {
+	id = 67020
+	desc = EVTDESC67020
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	religion_group = twelve
+	min_age = 16
+	#only_men = yes
+	prisoner = no
+	only_capable = yes
+	
+	has_character_flag = pope_currently_demanding
+	
+	trigger = {
+		year = 1000
+		OR = {
+			religion = twelve
+			#religion = fraticelli
+		}
+		controls_religion = yes
+		war = no
+		any_independent_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			has_character_flag = pope_we_refuse_law_changed
+			primary_title = {
+				OR = { tier = KING tier = EMPEROR }
+				has_law = investiture_law_1 
+			}
+			any_realm_lord = {
+				OR = { tier = KING tier = DUKE    }
+				NOT = { has_character_flag = pope_vassal_approached }
+				relative_power_to_liege = 0.1
+			}
+		}
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+	}	
+	option = {
+		name = EVTOPTA67020
+		ai_chance = { factor = 100 }
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				has_character_flag = pope_we_refuse_law_changed
+				primary_title = {
+					OR = { tier = KING tier = EMPEROR }
+					has_law = investiture_law_1 
+				}
+			}
+			random_realm_lord = {
+				limit = {
+					OR = { tier = KING tier = DUKE }
+					NOT = { has_character_flag = pope_vassal_approached }
+					religion = ROOT
+					relative_power_to_liege = 0.1
+				}	
+			
+				set_character_flag = pope_vassal_approached 
+				character_event = { id = 67021 days = 14 tooltip = EVTTOOLTIP67021 }
+			}
+			
+		}
+		clr_character_flag = pope_currently_demanding
+	}
+	
+	option = {
+		name = EVTOPTB67020
+		ai_chance = { factor = 0 }
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				has_character_flag = pope_we_refuse_law_changed
+			}
+			clr_character_flag = pope_we_refuse_law_changed
+		}
+		clr_character_flag = pope_currently_demanding
+	}	
+}
+
+
+#- The vassal receives the claim
+character_event = {
+	id = 67021
+	desc = EVTDESC67021
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA67021"
+		opinion = {
+			modifier = bishop_bribed_by_pope
+			who = FROM
+			years = 5
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.1
+				opinion = { who = top_liege value = 75 }
+			}
+		}
+		piety = 10
+		top_liege = { primary_title = { add_pressed_claim = ROOT  }}
+		random = {
+			chance = 33
+			top_liege = {
+				character_event = { id = 67022 days = 14 tooltip = EVTTOOLTIP67022 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB67021
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { opinion = { who = top_liege value = 50 } }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = top_liege value = 55 }
+			}
+			modifier = {
+				factor = 4
+				opinion = { who = top_liege value =  60 }
+			}
+			modifier = {
+				factor = 100
+				opinion = { who = top_liege value =  80 }
+			}
+		}
+		piety = -20
+		opinion = {
+			modifier = loyal_vassal_against_pope
+			who = top_liege
+			years = 5
+		}
+	}
+}
+
+character_event = {
+	id = 67022
+	desc = EVTDESC67022
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA67022
+		prestige = -5
+		opinion = {
+			modifier = my_vassal_bribed_by_pope
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			opinion = {
+				modifier = my_vassal_bribed_by_pope
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+###################################
+#
+# Province Lordship Events
+#
+# Id 77000 - 77999 is reserved
+#
+###################################
+#
+# Designed by Johan Andersson
+# Written by Sara Wendel-Örtqvist
+
+# The Clergy demands a stop to commerce in all church squares
+province_event = {
+	id = 77000
+	desc = EVTDESC77000
+	picture = GFX_evt_market
+	
+	trigger = {
+		religion_group = twelve
+		owner = {
+			religion_group = twelve
+		}
+		NOT = {
+			has_province_modifier = stop_commerce
+		}
+		any_province_lord = {
+			is_theocracy = yes
+		}
+		any_province_lord = {
+			is_republic = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+	}
+	
+	option = {
+		name = EVTOPTA77000
+		owner = {
+			piety = 5
+		}
+		add_province_modifier = {
+			name = stop_commerce
+			duration = 3650
+		}
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB77000
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# Burghers demands that city laws is set higher than canonical law
+province_event = {
+	id = 77001
+	desc = EVTDESC77001
+	picture = GFX_evt_cathedral
+	
+	trigger = {
+		religion_group = twelve
+		owner = {
+			religion_group = twelve
+		}
+		any_province_lord = {
+			is_theocracy = yes
+		}
+		any_province_lord = {
+			is_republic = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+	}
+	
+	option = {
+		name = EVTOPTA77001
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB77001
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# The Nobility demands Prima Noctae rights
+province_event = {
+	id = 77002
+	desc = EVTDESC77002
+	picture = GFX_evt_peasants
+	
+	trigger = {
+		religion_group = twelve
+		NOT = {
+			has_province_modifier = prima_noctae
+		}
+		any_province_lord = {
+			is_female = no
+			is_feudal = yes
+			ROOT = {
+				owner = {
+					NOT = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+	}
+	
+	option = {
+		name = EVTOPTA77002
+		random_province_lord = {
+			limit = {
+				is_feudal = yes
+				is_female = no
+				ROOT = {
+					owner = {
+						NOT = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		add_province_modifier = {
+			name = prima_noctae
+			duration = 3650
+		}
+	}
+	option = {
+		name = EVTOPTB77002
+		random_province_lord = {
+			limit = {
+				is_feudal = yes
+				is_female = no
+				ROOT = {
+					owner = {
+						NOT = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# The Burgers demands that peasants be forbidden to sell goods within the city walls
+province_event = {
+	id = 77003
+	desc = EVTDESC77003
+	picture = GFX_evt_market
+	
+	trigger = {
+		owner = {
+			NOT = { religion_group = rastullah_group }
+			#NOT = { religion_group = jewish_group }
+		}
+		any_province_lord = {
+			is_republic = yes
+		}
+		NOT = {
+			has_province_modifier = peasants_forbidden_sale
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+		
+	}
+	
+	option = {
+		name = EVTOPTA77003
+		add_province_modifier = {
+			name = peasants_forbidden_sale
+			duration = 3650
+		}
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB77003
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# The Nobles demands hunting rights on church lands
+province_event = {
+	id = 77004
+	desc = EVTDESC77004
+	picture = GFX_evt_hunt
+	
+	trigger = {
+		religion_group = twelve
+		owner = {
+			religion_group = twelve
+		}
+		any_province_lord = {
+			is_feudal = yes
+			is_female = no
+		}
+		any_province_lord = {
+			is_theocracy = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+		
+	}
+	
+	option = {
+		name = EVTOPTA77004
+		random_province_lord = {
+			limit = {
+				is_feudal = yes
+				is_female = no
+			}
+			opinion = {	
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion = {	
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB77004
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion = {	
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_feudal = yes
+				is_female = no
+			}
+			opinion = {	
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# The Clergy demands right to collect extra tithe on free peasants
+province_event = {
+	id = 77005
+	desc = EVTDESC77005
+	picture = GFX_evt_stone_church
+	
+	trigger = {
+		religion_group = twelve
+		owner = {
+			religion_group = twelve
+		}
+		NOT = {
+			has_province_modifier = clergy_extra_tithe
+		}
+		any_province_lord = {
+			is_theocracy = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+		
+	}
+	
+	option = {
+		name = EVTOPTA77005
+		add_province_modifier = {
+			name = clergy_extra_tithe
+			duration = 3650
+		}
+	}
+	option = {
+		name = EVTOPTB77005
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# Sell titles to rich merchants
+province_event = {
+	id = 77006
+	desc = EVTDESC77006
+	picture = GFX_evt_market
+	
+	trigger = {
+		any_province_lord = {
+			is_feudal = yes
+			ROOT = {
+				owner = {
+					NOT = {
+						character = PREVPREV
+					}
+				}
+			}
+		}
+		any_province_lord = {
+			is_republic = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+		
+	}
+	
+	option = {
+		name = EVTOPTA77006
+		owner = {
+			scaled_wealth = 0.25
+		}
+		random_province_lord = {
+			limit = {
+				is_feudal = yes
+				ROOT = {
+					owner = {
+						NOT = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB77006
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+}
+
+# Rights to spoils from shipwrecks
+province_event = {
+	id = 77007
+	desc = EVTDESC77007
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	
+	trigger = {
+		port = yes
+		religion_group = twelve
+		owner = {
+			religion_group = twelve
+		}
+		any_province_lord = {
+			is_feudal = yes
+		}
+		any_province_lord = {
+			is_republic = yes
+		}
+		any_province_lord = {
+			is_theocracy = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36000
+		
+	}
+	
+	option = {
+		name = EVTOPTA77007
+		trigger = {
+			owner = {
+				NOT = {
+					is_theocracy = yes
+				}
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_theocracy = yes
+			}
+			opinion ={
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB77007
+		trigger = {
+			owner = {
+				NOT = {
+					is_republic = yes
+				}
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_republic = yes
+			}
+			opinion ={
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC77007
+		trigger = {
+			owner = {
+				NOT = {
+					is_feudal = yes
+				}
+			}
+		}
+		random_province_lord = {
+			limit = {
+				is_feudal = yes
+				ROOT = {
+					owner = {
+						NOT = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			opinion ={
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD77007
+		owner = {
+			scaled_wealth = 0.05
+		}
+	}
+}
+###################################
+#
+# Regency Events: 61000 - 61999
+#
+###################################
+# by Henrik Fåhraeus
+# and Henrik Eklund
+###################################
+
+# Regent embezzles money
+character_event = {
+	id = 61000
+	desc = EVTDESC61000
+	
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_economy
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		independent = no
+		liege = { wealth = 20 }
+		NOT = { trait = charitable }
+		NOT = { trait = honest }
+	}
+	
+	mean_time_to_happen = {
+		months = 280
+		modifier = {
+			factor = 0.25
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.25
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 0.75
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61000 # Embezzle
+		ai_chance = { factor = 100 }
+		liege = { wealth = -20 }
+		wealth = 20
+		random_list = {
+			50 = {
+				# Got away with it!
+			}
+			40 = {
+				liege = { character_event = { id = 61001 days = 4 tooltip = EVTTOOLTIP61001 } } # Liege suspects
+				if = {
+					limit = { NOT = { has_job_title = job_treasurer }  }
+					liege = { job_treasurer = { character_event = { id = 61002 days = 4 tooltip = EVTTOOLTIP61002 } } } # The Steward suspects
+				}
+			}
+			10 = {
+				liege = { character_event = { id = 61003 days = 4 tooltip = EVTTOOLTIP61003 } } # Liege has proof
+				if = {
+					limit = { NOT = { has_job_title = job_treasurer }  }
+					liege = { job_treasurer = { character_event = { id = 61004 days = 4 tooltip = EVTTOOLTIP61004 } } } # The Steward has proof
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB61000 # I dare not!
+		ai_chance = { factor = 0 }
+		piety = 1
+	}
+}
+
+character_event = {
+	id = 61001
+	desc = EVTDESC61001
+	
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_economy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61001 # But there is no proof...
+		opinion = { who = FROM modifier = opinion_corrupt years = 5  }
+	}
+}
+
+character_event = {
+	id = 61002
+	desc = EVTDESC61002
+	
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_economy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61001 # But there is no proof...
+		opinion = { who = FROM modifier = opinion_corrupt years = 5  }
+	}
+}
+
+character_event = {
+	id = 61003
+	desc = EVTDESC61003
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_economy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61003 # Treachery!
+		opinion = { who = FROM modifier = opinion_dishonorable years = 6  }
+	}
+}
+
+character_event = {
+	id = 61004
+	desc = EVTDESC61004
+	
+	picture = GFX_evt_shadowy_cabal
+	border = GFX_event_normal_frame_economy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61003 # Treachery!
+		opinion = { who = FROM modifier = opinion_dishonorable years = 6  }
+	}
+}
+
+### NEW REGENCY EVENTS ###
+
+#Regency: Regent steals holding.
+character_event = {
+	id = 61100
+	desc = EVTDESC61100
+	picture = GFX_evt_lunatic
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		is_feudal = yes
+		independent = no
+		NOT = { trait = honest }
+		liege = { 
+			demesne_size = 5
+			age = 16
+			trait = incapable
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 380
+		modifier = {
+			factor = 0.25
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.25
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 0.75
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61100 #Grab holding.
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61101 tooltip = EVTTOOLTIP61101 }
+		}
+	}
+	option = {
+		name = EVTOPTB61100 #Do not grab holding.
+		ai_chance = { factor = 0 }
+		ROOT = { piety = 40 }
+	}
+}
+
+#Regency: Ruler informed of holding loss.
+character_event = {
+	id = 61101
+	desc = EVTDESC61101
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61101
+		random_demesne_title = {
+			limit = {
+				NOT = {	tier = duke }
+				NOT = {	tier = king }
+				NOT = {	tier = emperor }
+				NOT = {
+					location = { is_capital = yes }
+				}
+			}
+		grant_title = FROM
+		}
+	}
+	option = {
+		name = EVTOPTB61101
+		random_demesne_title = {
+			limit = {
+				NOT = {	tier = duke }
+				NOT = {	tier = king }
+				NOT = {	tier = emperor }
+				NOT = {
+					location = { is_capital = yes }
+				}
+			}
+		grant_title = FROM
+		}
+	}
+}
+
+#Regency: Regent gives Ruler's money to charity.
+character_event = {
+	id = 61105
+	desc = EVTDESC61105
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_economy
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		independent = no
+		liege = { 
+			wealth = 50
+			age = 16
+			trait = incapable
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 280
+		modifier = {
+			factor = 0.25
+			trait = charitable
+		}
+		modifier = {
+			factor = 0.25
+			trait = kind
+		}
+		modifier = {
+			factor = 0.75
+			trait = just
+		}
+		modifier = {
+			factor = 2.0
+			trait = cruel
+		}
+		modifier = {
+			factor = 2.0
+			trait = greedy
+		}
+	}
+		
+	option = {
+		name = EVTOPTA61105 #Give the money.
+		ai_chance = { factor = 100 }
+		ROOT = { piety = 30 }
+			liege = {
+				character_event = {	id = 61106 tooltip = EVTTOOLTIP61106 }
+			}
+	}
+	option = {
+		name = EVTOPTB61105 #Do not give the money.
+		ai_chance = { factor = 0 }
+		ROOT = { piety = -30 }
+	}
+}
+
+#Regency: Ruler is informed of Regent giving money to charity.
+character_event = {
+	id = 61106
+	desc = EVTDESC61106
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_economy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61106
+		ROOT = { scaled_wealth = -0.25 }
+		ROOT = { piety = 60 }
+	}
+}
+
+#Regency: Regent is a better administrator than you ever were.
+character_event = {
+	id = 61110
+	desc = EVTDESC61110
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_economy
+	
+	min_age = 16
+	prisoner = no
+	only_rulers = yes
+	
+	trigger = {
+		any_courtier = {
+			has_minor_title = title_regent
+		stewardship = 13
+		}
+		NOT = { stewardship = 6 }
+		trait = incapable
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.25
+			trait = diligent
+		}
+		modifier = {
+			factor = 2.0
+			trait = greedy
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61110
+		scaled_wealth = 0.25
+	}
+}
+
+### REGENCY SERIES, OLD RULER HUMILIATED ###
+
+#Regency: Regent humiliates Ruler.
+character_event = {
+	id = 61120
+	desc = EVTDESC61120
+	picture = GFX_evt_lunatic
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		independent = no
+		NOT = {
+			opinion = { who = liege value = -30 }
+			has_character_flag = mean_regent
+		}
+		liege = { 
+			age = 16
+			trait = incapable
+			NOT = { trait = in_hiding }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 280
+		modifier = {
+			factor = 0.25
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.50
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.50
+			trait = greedy
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61120
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61121 tooltip = EVTTOOLTIP61121 }
+			random_courtier = {
+				limit = {
+					opinion = { who = liege value = -25 }
+				}
+				opinion = {
+					modifier = opinion_approves
+					who = ROOT
+					years = 1
+				}
+			}
+		}
+		hidden_tooltip = {
+			ROOT = { set_character_flag = mean_regent }
+		}
+	}
+	option = {
+		name = EVTOPTB61120
+		ai_chance = { factor = 0 }
+		root = { piety = 30 }
+	}
+}
+
+#Regency: Ruler is humiliated by Regent.
+character_event = {
+	id = 61121
+	desc = EVTDESC61121
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61121
+		add_character_modifier = {
+			name = mod_ashamed
+			duration = 365
+		}
+		if = {
+			limit = {
+				any_courtier = {
+					NOT = { has_character_flag = mean_regent }
+					trait = just
+					opinion = { who = liege value = 10 	}
+				}
+			}
+			random_courtier = {
+				limit = {
+					trait = just
+					NOT = { has_character_flag = mean_regent }
+					opinion = { who = liege value = 10 	}
+				}
+				character_event = {	id = 61122 days = 14 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61121
+		add_character_modifier = {
+			name = mod_ashamed
+			duration = 365
+		}
+		if = {
+			limit = {
+				any_courtier = {
+					NOT = { has_character_flag = mean_regent }
+					trait = just
+					opinion = { who = liege value = 10 	}
+				}
+			}
+			random_courtier = {
+				limit = {
+					trait = just
+					NOT = { has_character_flag = mean_regent }
+					opinion = { who = liege value = 10 	}
+				}
+				character_event = {	id = 61122 days = 14 }
+			}
+		}
+	}
+}
+
+#Regency: Vassal upset at treatment of Ruler.
+character_event = {
+	id = 61122
+	desc = EVTDESC61122
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61122
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61123 tooltip = EVTTOOLTIP61123 }
+		hidden_tooltip = {
+			ROOT = { set_character_flag = valiant_vassal }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61122
+		ai_chance = { factor = 0 }
+		root = { piety = -40 }
+	}
+}
+
+#Regency: Ruler approached by vassal.
+character_event = {
+	id = 61123
+	desc = EVTDESC61123
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61123
+		ai_chance = { factor = 100 }
+		FROM = {
+			character_event = {	id = 61124 days = 14 tooltip = EVTTOOLTIP61124 }
+		}
+	}
+	option = {
+		name = EVTOPTB61123
+		ai_chance = { factor = 0 }
+		random_courtier = {
+			limit = { has_character_flag = valiant_vassal }
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 1
+			}
+		}
+	}
+}
+
+#Regency: Vassal gets approval, makes move.
+character_event = {
+	id = 61124
+	desc = EVTDESC61124
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61124
+		random_list = {
+			60 = {
+				character_event = {	id = 61125 tooltip = EVTTOOLTIP61125 }
+			}
+			40 = {
+				character_event = {	id = 61127 tooltip = EVTTOOLTIP61127 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61124
+		random_list = {
+			60 = {
+				character_event = {	id = 61126 tooltip = EVTTOOLTIP61126 }
+			}
+			40 = {
+				character_event = {	id = 61127 tooltip = EVTTOOLTIP61127 }
+			}
+		}
+	}
+}
+
+#Regency: Vassal defeats Regent, becomes new Regent.
+character_event = {
+	id = 61125
+	desc = EVTDESC61125
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61125
+		clr_character_flag = valiant_vassal
+		liege = {
+			random_courtier = {
+				limit = { has_character_flag = mean_regent }
+				character_event = {	id = 61129 tooltip = EVTTOOLTIP61129 }
+			}
+			character_event = {	id = 61131 }
+			random_courtier = {
+				limit = { has_character_flag = valiant_vassal }
+				give_minor_title = title_regent
+			}
+		}
+	}
+}
+
+#Regency: Vassal defeats Regent, Regent loses title, goes to next in Regent succession.
+character_event = {
+	id = 61126
+	desc = EVTDESC61125
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61125
+		clr_character_flag = valiant_vassal
+		liege = {
+			random_courtier = {
+				limit = { has_character_flag = mean_regent }
+				character_event = {	id = 61129 tooltip = EVTTOOLTIP61129 }
+			}
+			character_event = {	id = 61131 }
+			random_courtier = {
+				limit = {
+					NOT = { has_minor_title = title_regent }
+					prisoner = no 
+					age = 16
+				}
+				give_minor_title = title_regent
+			}
+		}
+	}
+}
+
+#Regency: Vassal fails, is jailed.
+character_event = {
+	id = 61127
+	desc = EVTDESC61127
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61127
+			liege = {
+				random_courtier = {
+					limit = {
+						has_character_flag = mean_regent
+					}
+					character_event = {	id = 61128 }
+				}
+				character_event = {	id = 61130 }
+			}
+	}
+}
+
+#Regency: Regent successful in keeping title.
+character_event = {
+	id = 61128
+	desc = EVTDESC61128
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61128
+		clr_character_flag = mean_regent
+		liege = {
+			random_courtier = {
+				limit = { has_character_flag = valiant_vassal }
+				imprison = yes
+				clr_character_flag = valiant_vassal
+			}
+		}
+	}
+}
+
+#Regency: Regent is jailed.
+character_event = {
+	id = 61129
+	desc = EVTDESC61129
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61129
+		imprison = yes
+		clr_character_flag = mean_regent
+	}
+}
+
+#Regency: Ruler informed of failure to replace Regent.
+character_event = {
+	id = 61130
+	desc = EVTDESC61130
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61130
+		ROOT = { prestige = -50 }
+	}
+	option = {
+		name = EVTOPTB61130
+		ROOT = { prestige = -50 }
+	}
+}
+
+#Regency: Ruler informed of success in replacing Regent.
+character_event = {
+	id = 61131
+	desc = EVTDESC61131
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61131
+		prestige = 50
+	}
+	option = {
+		name = EVTOPTB61131
+		prestige = 50
+	}
+}
+
+#Regency: Ruler, if child, kills Regent.
+character_event = {
+	id = 61135
+	desc = EVTDESC61135
+	picture = GFX_evt_child_sword
+
+	min_age = 4
+	max_age = 15
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		NOT = { has_character_flag = pushed_regent }
+		is_nomadic = no
+	}
+	
+	mean_time_to_happen = {
+		months = 280
+		modifier = {
+			factor = 0.25
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.50
+			trait = wroth
+		}
+		modifier = {
+			factor = 0.75
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61135
+		ai_chance = { factor = 0 }
+		set_character_flag = pushed_regent
+		random_list = {
+			50 = {
+				random_courtier = {
+					limit = { has_minor_title = title_regent }
+					death = {
+						death_reason = death_accident
+						}
+				}
+			}
+			50 = { 
+				random_courtier = {
+					limit = { has_minor_title = title_regent }
+					add_trait = wounded
+					opinion = {
+						modifier = opinion_mad_as_hell
+						who = ROOT
+						years = 1
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61135
+		ai_chance = { factor = 100 }
+		set_character_flag = pushed_regent
+		piety = 30
+	}
+}
+
+### REGENCY SERIES, YOUNG RULER DECLARED INSANE ###
+
+#Regency: Regent attempts to declare ruler insane when he's not.
+character_event = {
+	id = 61140
+	desc = EVTDESC61140
+	picture = GFX_evt_child_play
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		diplomacy = 10
+		intrigue = 10
+		NOT = {
+			opinion = { who = liege value = -15 }
+		}
+		liege = {
+			age = 5
+			NOT = { 
+				trait = lunatic
+				age = 16 
+			}
+		}
+		NOT = {
+			has_character_flag = declared_ruler_insane
+			has_minor_title = title_ruler_consort
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 340
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.25
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.50
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.75
+			trait = greedy
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+		modifier = {
+			factor = 2.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61140
+		ai_chance = { factor = 100 }
+		set_character_flag = declared_ruler_insane
+		random_list = {
+			35 = {
+				character_event = {	id = 61145 tooltip = EVTTOOLTIP61145 }
+				hidden_tooltip = {
+					liege = {
+						character_event = {	id = 61151 }
+						}
+				}
+			}
+			65 = {
+				character_event = {	id = 61146 tooltip = EVTTOOLTIP61146 }
+				hidden_tooltip = {
+					liege = {
+						character_event = {	id = 61150 }
+						}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61140
+		ai_chance = { factor = 0 }
+		set_character_flag = declared_ruler_insane
+		piety = 30
+	}
+}
+
+#Regency: Regent attempts to declare ruler insane.
+character_event = {
+	id = 61141
+	desc = EVTDESC61141
+	picture = GFX_evt_child_play
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		independent = no
+		NOT = { 
+			trait = lunatic 
+			has_character_flag = declared_ruler_insane
+		}
+		liege = {
+			age = 5
+			NOT = { age = 16 }
+			trait = lunatic
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.25
+			trait = just
+		}
+		modifier = {
+			factor = 0.25
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.75
+			trait = honest
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = shy
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61141
+		ai_chance = { factor = 100 }
+		set_character_flag = declared_ruler_insane
+		random_list = {
+			35 = {
+				character_event = {	id = 61142 tooltip = EVTTOOLTIP61145 }
+				hidden_tooltip = {
+					liege = {
+						character_event = {	id = 61151 }
+						}
+				}
+			}
+			65 = {
+				character_event = {	id = 61146 tooltip = EVTTOOLTIP61146 }
+				hidden_tooltip = {
+					liege = {
+						character_event = {	id = 61150 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61141
+		ai_chance = { factor = 0 }
+		set_character_flag = declared_ruler_insane
+		liege = {
+			opinion = {
+				modifier = opinion_defended_me
+				who = ROOT
+				years = 4
+			}
+		}
+	}
+}
+
+#Regency: The insane ruler is imprisoned.
+character_event = {
+	id = 61142
+	desc = EVTDESC61142
+	picture = GFX_evt_castle_construction
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61142
+		liege = {
+			add_trait = incapable
+			add_character_modifier = { 
+				name = house_arrest
+				duration = -1
+			}
+		}
+	}
+}
+
+#Regency: The non-insane ruler is imprisoned.
+character_event = {
+	id = 61145
+	desc = EVTDESC61145
+	picture = GFX_evt_castle_construction
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61145
+		liege = {
+			add_trait = incapable
+			add_character_modifier = { 
+					name = house_arrest
+					duration = -1
+				}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = 61155
+				days = 5500
+			}
+		}
+	}
+}
+
+#Regency: Regent informed attempt to have ruler declared insane fails.
+character_event = {
+	id = 61146
+	desc = EVTDESC61146
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61146
+		trigger = {
+			liege = {
+				NOT = { trait = lunatic }
+			}
+		}
+		liege = {
+			opinion = {
+				modifier = scheming_bastard
+				who = ROOT
+				years = 30
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61146
+		trigger = {
+			liege = { trait = lunatic }
+		}
+		liege = {
+			opinion = {
+				modifier = scheming_bastard
+				who = ROOT
+				years = 30
+			}
+		}
+	}
+}
+
+#Regency: Ruler informed attempt to have ruler declared insane fails.
+character_event = {
+	id = 61150
+	desc = EVTDESC61150
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61150
+		prestige = 30
+	}
+	option = {
+		name = EVTOPTB61150
+		tooltip_info = lunatic
+		trigger = { trait = lunatic }
+		prestige = 30
+	}
+}
+
+#Regency: Ruler informed he has been declared insane.
+character_event = {
+	id = 61151
+	desc = EVTDESC61151
+	picture = GFX_evt_castle_construction
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61151
+		set_character_flag = imprisoned_by_regent
+		prestige = -30
+	}
+	option = {
+		name = EVTOPTB61151
+		tooltip_info = lunatic
+		trigger = { trait = lunatic }
+		set_character_flag = imprisoned_by_regent
+		prestige = -30
+	}
+}
+
+#Regency: Regent replaced, Ruler is set free.
+character_event = {
+	id = 61152
+	desc = EVTDESC61152
+	picture = GFX_evt_emissary
+	
+	trigger = {
+		any_courtier = {
+			has_minor_title = title_regent
+			NOT = { has_character_flag = declared_ruler_insane }
+		}
+		has_character_flag = imprisoned_by_regent
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA61152
+		remove_trait = incapable
+		remove_character_modifier = house_arrest
+		clr_character_flag = imprisoned_by_regent
+		any_courtier = {
+			limit = { has_character_flag = declared_ruler_insane }
+			clr_character_flag = declared_ruler_insane
+		}
+	}
+	option = {
+		name = EVTOPTB61152
+		tooltip_info = lunatic
+		trigger = { trait = lunatic }
+		remove_trait = incapable
+		remove_character_modifier = house_arrest
+		clr_character_flag = imprisoned_by_regent
+		any_courtier = {
+			limit = { has_character_flag = declared_ruler_insane }
+			clr_character_flag = declared_ruler_insane
+		}
+	}
+}
+
+#Regency: Regent has opportunity to steal throne.
+character_event = {
+	id = 61155
+	desc = EVTDESC61155
+	picture = GFX_evt_shadowy_cabal
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		independent = no
+		liege = { has_character_flag = imprisoned_by_regent }
+	}
+	
+	option = {
+		name = EVTOPTA61155
+		ai_chance = { factor = 0 }
+		random_list = {
+			40 = {
+				character_event = {	id = 61156 tooltip = EVTTOOLTIP61156 }
+			}
+			60 = {
+				character_event = {	id = 61157 tooltip = EVTTOOLTIP61157 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61155
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = EVTOPTC61155
+		ai_chance = { factor = 0 }
+		liege = {
+			remove_trait = incapable
+			remove_character_modifier = house_arrest
+			clr_character_flag = imprisoned_by_regent
+		}
+	}
+}
+
+#Regency: Regent informed he has stolen throne.
+character_event = {
+	id = 61156
+	desc = EVTDESC61156
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61156
+		liege = {
+			character_event = {	id = 61161 tooltip = EVTTOOLTIP61161 }
+		}
+	}
+}
+
+#Regency: Regent informed he failed to steal throne.
+character_event = {
+	id = 61157
+	desc = EVTDESC61157
+	picture = GFX_evt_scandal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61157
+		liege = {
+			character_event = {	id = 61160 tooltip = EVTTOOLTIP61160 }
+		}
+	}
+}
+
+#Regency: Ruler informed Regent failed to steal throne.
+character_event = {
+	id = 61160
+	desc = EVTDESC61160
+	picture = GFX_evt_recovery
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61160
+		remove_trait = incapable
+		remove_character_modifier = house_arrest
+		clr_character_flag = imprisoned_by_regent
+	}
+}
+
+#Regency: Ruler informed Regent stole throne.
+character_event = {
+	id = 61161
+	desc = EVTDESC61161
+	picture = GFX_evt_drunk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61161
+		random_courtier = {
+			limit = { has_minor_title = title_regent }
+			inherit = ROOT
+		}
+		clr_character_flag = imprisoned_by_regent
+		remove_character_modifier = house_arrest
+		imprison = FROM
+	}
+}
+
+#Regency: Ruler escapes from tower.
+character_event = {
+	id = 61165
+	desc = EVTDESC61165
+	picture = GFX_evt_emissary
+	
+	min_age = 16
+	capable_only = no
+	
+	trigger = { has_character_flag = imprisoned_by_regent }
+	
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.15
+			trait = genius
+		}
+		modifier = {
+			factor = 0.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.50
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.50
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = craven
+		}
+		modifier = {
+			factor = 3.0
+			trait = slow
+		}
+		modifier = {
+			factor = 5.0
+			trait = imbecile
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61165
+		remove_trait = incapable
+		remove_character_modifier = house_arrest
+		clr_character_flag = imprisoned_by_regent
+		random_courtier = {
+			limit = { has_minor_title = title_regent }
+			imprison = yes
+			hidden_tooltip = { 
+				character_event = {	id = 61170 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61165
+		tooltip_info = lunatic
+		trigger = { trait = lunatic }
+		character_event = {	id = 61166 tooltip = EVTTOOLTIP61166 }
+	}
+}
+
+#Regency: Ruler escorted back to tower.
+character_event = {
+	id = 61166
+	desc = EVTDESC61166
+	picture = GFX_evt_castle_construction
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61166
+		random_list = {
+			50 = { add_trait = possessed }
+			50 = { }
+		}
+	}
+}
+
+#Regency: Regent informed Ruler is reinstated after escaping.
+character_event = {
+	id = 61170
+	desc = EVTDESC61170
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61170
+		imprison = yes
+	}
+}
+
+### REGENCY SERIES, REGENT TRIES TO KILL YOUNG RULER ###
+
+## Regent sends Ruler to scrub roof.
+character_event = {
+	id = 61190
+	desc = EVTDESC61190
+	picture = GFX_evt_castle_construction
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		OR = {
+			is_primary_heir = yes
+			any_child = { is_primary_heir = yes }
+		}
+		NOT = {
+			opinion = { who = liege value = -5 }
+			has_character_flag = regent_schemer
+			has_minor_title = title_queen_mother
+			has_minor_title = title_ruler_consort
+		}
+		liege = {
+			age = 5
+			NOT = { age = 16 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 160
+		modifier = {
+			factor = 0.25
+			trait = envious
+		}
+		modifier = {
+			factor = 0.25
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.50
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = kind
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61190
+		ai_chance = { factor = 100 }
+		set_character_flag = regent_schemer
+		liege = {
+			character_event = {	id = 61191 tooltip = EVTTOOLTIP61191 }
+		}
+	}
+	option = {
+		name = EVTOPTB61190
+		ai_chance = { factor = 0 }
+		piety = 20
+	}
+}
+
+## Ruler is sent to scrub roof.
+character_event = {
+	id = 61191
+	desc = EVTDESC61191
+	picture = GFX_evt_castle_construction
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61191
+		random_list = {
+			80 = {
+				character_event = {	id = 61192 tooltip = EVTTOOLTIP61192 }
+			}
+			20 = {
+				death = { death_reason = death_accident }
+			}
+		}
+	}
+}
+
+## Ruler scrubs roof successfully.
+character_event = {
+	id = 61192
+	desc = EVTDESC61192
+	picture = GFX_evt_castle_construction
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61192
+		hidden_tooltip = {
+			random_courtier = {
+				limit = {
+					has_minor_title = title_regent
+					has_character_flag = regent_schemer
+				}
+				character_event = {
+					id = 61195
+					days = 18
+					random = 10
+				}
+			}
+		}
+		piety = 20
+	}
+}
+
+## Regent sends Ruler into forest.
+character_event = {
+	id = 61195
+	desc = EVTDESC61195
+	picture = GFX_evt_bandits
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_minor_title = title_regent
+		liege = { character = FROM }
+	}
+	
+	option = {
+		name = EVTOPTA61195
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61196 tooltip = EVTTOOLTIP61191 }
+		}
+	}
+	option = {
+		name = EVTOPTB61195
+		ai_chance = { factor = 0 }
+		clr_character_flag = regent_schemer
+		piety = 20
+	}
+}
+
+## Ruler is sent to forest.
+character_event = {
+	id = 61196
+	desc = EVTDESC61196
+	picture = GFX_evt_bandits
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61196
+		random_list = {
+			80 = {
+				character_event = {	id = 61197 tooltip = EVTTOOLTIP61197 }
+			}
+			20 = {
+				death = { death_reason = death_accident }
+			}
+		}
+	}
+}
+
+## Ruler returns from forest.
+character_event = {
+	id = 61197
+	desc = EVTDESC61197
+	picture = GFX_evt_bandits
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61197
+		hidden_tooltip = {
+			random_courtier = {
+				limit = {
+					has_minor_title = title_regent
+					has_character_flag = regent_schemer
+				}
+				character_event = {
+					id = 61200
+					days = 18
+					random = 10
+				}
+			}
+		}
+		prestige = 20
+	}
+}
+
+## Regent sends Ruler away by carriage.
+character_event = {
+	id = 61200
+	desc = EVTDESC61200
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_minor_title = title_regent
+		liege = { character = FROM }
+	}
+	
+	option = {
+		name = EVTOPTA61200
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61201 tooltip = EVTTOOLTIP61191 }
+		}
+	}
+	option = {
+		name = EVTOPTB61200
+		ai_chance = { factor = 0 }
+		clr_character_flag = regent_schemer
+		piety = 20
+	}
+}
+
+## Ruler is sent away on the carriage.
+character_event = {
+	id = 61201
+	desc = EVTDESC61201
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61201
+		random_list = {
+			80 = {
+				character_event = {	id = 61202 tooltip = EVTTOOLTIP61202 }
+			}
+			20 = {
+				death = { death_reason = death_accident }
+			}
+		}
+	}
+}
+
+## Ruler survives the carriage ride.
+character_event = {
+	id = 61202
+	desc = EVTDESC61202
+	picture = GFX_evt_carriage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61202
+		hidden_tooltip = {
+			random_courtier = {
+				limit = {
+					has_minor_title = title_regent
+					has_character_flag = regent_schemer
+				}
+				character_event = {
+					id = 61205
+					days = 18
+					random = 10
+				}
+			}
+		}
+		prestige = 20
+	}
+}
+
+## Regent pushes guard on Ruler.
+character_event = {
+	id = 61205
+	desc = EVTDESC61205
+	picture = GFX_evt_large_army
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		liege = { character = FROM }
+	}
+
+	option = {
+		name = EVTOPTA61205
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61206 tooltip = EVTTOOLTIP61191 }
+		}
+	}
+	option = {
+		name = EVTOPTB61205
+		ai_chance = { factor = 0 }
+		clr_character_flag = regent_schemer
+		piety = 20
+	}
+}
+
+## Ruler has guard pushed on him.
+character_event = {
+	id = 61206
+	desc = EVTDESC61206
+	picture = GFX_evt_large_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61206
+		random_list = {
+			80 = {
+				character_event = {	id = 61207 tooltip = EVTTOOLTIP61207 }
+			}
+			20 = {
+				death = { death_reason = death_accident }
+			}
+		}
+	}
+}
+
+## Ruler survives guard.
+character_event = {
+	id = 61207
+	desc = EVTDESC61207
+	picture = GFX_evt_large_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61207
+		hidden_tooltip = {
+			random_courtier = {
+				limit = {
+					has_minor_title = title_regent
+					has_character_flag = regent_schemer
+				}
+				character_event = {
+					id = 61210
+					days = 18
+					random = 10
+				}
+			}
+		}
+		prestige = 20
+	}
+}
+
+## Regent storms Ruler's room with dagger.
+character_event = {
+	id = 61210
+	desc = EVTDESC61210
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_minor_title = title_regent
+		liege = { character = FROM }
+	}
+
+	option = {
+		name = EVTOPTA61210
+		ai_chance = { factor = 100 }
+		liege = {
+			character_event = {	id = 61211 tooltip = EVTTOOLTIP61211 }
+		}
+	}
+	option = {
+		name = EVTOPTB61210
+		ai_chance = { factor = 0 }
+		clr_character_flag = regent_schemer
+		piety = 20
+	}
+}
+
+## Ruler is attacked by Regent.
+character_event = {
+	id = 61211
+	desc = EVTDESC61211
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61211
+		random_list = {
+			80 = {
+				character_event = {	id = 61212 tooltip = EVTTOOLTIP61212 }
+			}
+			20 = {
+				death = {
+					death_reason = death_murder
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+## Ruler survives.
+character_event = {
+	id = 61212
+	desc = EVTDESC61212
+	picture = GFX_evt_shadow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61212
+		random_courtier = {
+			limit = {
+				NOT = { has_minor_title = title_regent }
+				prisoner = no 
+				age = 16
+			}
+			give_minor_title = title_regent
+		}
+		random_courtier = {
+			limit = { has_character_flag = regent_schemer }
+			character_event = {	id = 61213 tooltip = EVTTOOLTIP61213 }
+			clr_character_flag = regent_schemer
+		}
+	}
+}
+
+## Regent is imprisoned.
+character_event = {
+	id = 61213
+	desc = EVTDESC61213
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		imprison = FROM
+	}
+	
+	option = {
+		name = EVTOPTA61213
+		random = {
+			chance = 80
+			add_trait = lunatic
+			hidden_tooltip = {
+				character_event = { id = 38304 } # notify lunatic
+			}
+		}
+	}
+}
+
+## REGENCY SERIES, COURTIER WANTS TO REPLACE REGENT ##
+
+## Courtier thinks he/she would do a better job than current Regent.
+character_event = {
+	id = 61215
+	desc = EVTDESC61215
+	picture = GFX_evt_emissary
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	#only_men = yes
+	
+	trigger = {
+		war = no
+		OR = {
+			liege = {
+				age = 1
+				NOT = { age = 14 }
+			}
+			liege = { trait = incapable }
+		}
+		
+		in_command = no
+		NOT = { has_minor_title = title_regent }
+		host = { character = liege }
+		is_ill = no
+	}
+	
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.25
+			trait = duelist
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2.0
+			trait = shy
+		}
+		modifier = {
+			factor = 3.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 4.0
+			trait = content
+		}
+	}
+	
+	option = { # Challenge to duel
+		name = EVTOPTA61215
+		tooltip_info = duelist
+		trigger = { trait = duelist }
+		ai_chance = { factor = 60 }
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				character_event = {	
+					id = 61221 
+					tooltip = EVTTOOLTIP61221
+					days = 2
+				}
+			}
+		}
+	}
+	option = { # Try to grab Regency
+		name = EVTOPTB61215
+		ai_chance = { factor = 30 }
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				character_event = {	id = 61216 tooltip = EVTTOOLTIP61216 }
+			}
+		}
+	}
+	option = { # Never mind
+		name = EVTOPTC61215
+		ai_chance = { factor = 10 }
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				opinion = {
+					who = ROOT
+					modifier = opinion_glad
+					years = 2
+				}
+			}
+		}
+	}
+}
+
+## Regent is informed that Courtier is trying to plead case at court.
+character_event = {
+	id = 61216
+	desc = EVTDESC61216
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61216
+		tooltip_info = duelist
+		trigger = { trait = duelist }
+		ai_chance = {
+			factor = 80
+		}
+		FROM = {
+			character_event = {	id = 61222 tooltip = EVTTOOLTIP61221 }
+		}
+	}
+	option = {
+		name = EVTOPTB61216
+		ai_chance = {
+			factor = 20
+		}
+		random_list = {
+			50 = { # Remains Regent
+				character_event = {	id = 61219 tooltip = EVTTOOLTIP61219 }
+				hidden_tooltip = {
+					FROM = {
+						character_event = {	id = 61218 }
+					}
+				}
+			}
+			50 = { # Loses Regency
+				character_event = {	id = 61220 tooltip = EVTTOOLTIP61220 }
+				hidden_tooltip = {
+					FROM = {
+						character_event = {	id = 61217 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC61216
+		ai_chance = {
+			factor = 0
+		}
+		FROM = {
+			character_event = {	id = 61217 tooltip = EVTTOOLTIP61217 }
+		}
+	}
+}
+
+## Courtier informed he/she won the case and is now new regent.	
+character_event = {
+	id = 61217
+	desc = EVTDESC61217
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61217
+		give_minor_title = title_regent
+		hidden_tooltip = {
+			liege = {
+				character_event = {	id = 61236 }
+			}
+		}
+	}
+}
+
+## Courtier informed he/she lost the case at court.	
+character_event = {
+	id = 61218
+	desc = EVTDESC61218
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61218
+		prestige = -40
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				opinion = {
+					who = ROOT
+					modifier = opinion_angry
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+## Regent informed he/she won the case and remains regent.
+character_event = {
+	id = 61219
+	desc = EVTDESC61219
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61219
+		prestige = 40
+	}
+}
+
+## Regent informed he/she lost the case and has been replaced.
+character_event = {
+	id = 61220
+	desc = EVTDESC61220
+	picture = GFX_evt_throne_room
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61220
+		prestige = -30
+	}
+}
+
+## Regent informed courtier has challenged him to duel over regency.
+character_event = {
+	id = 61221
+	desc = EVTDESC61221
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = EVTOPTA61221
+		ai_chance = { factor = 80 }
+		FROM = {
+			character_event = {	id = 61223 tooltip = EVTTOOLTIP61223 }
+			set_character_flag = duelist_courtier
+		}
+	}
+	option = { # Refuse
+		name = EVTOPTB61221
+		ai_chance = { factor = 0 }
+		prestige = -60
+		liege = {
+			any_courtier = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_coward
+					years = 1
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {	id = 61245 }
+			}
+		}
+	}
+	option = { # Surrender regency
+		name = EVTOPTC61221
+		ai_chance = { factor = 20 }
+		prestige = -20
+		FROM = { give_minor_title = title_regent }
+		hidden_tooltip = {
+			FROM = {
+				character_event = {	id = 61246 }
+			}
+		}
+	}
+}
+
+## Courtier informed Regent challenges to duel.	
+character_event = {
+	id = 61222
+	desc = EVTDESC61222
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61222
+		ai_chance = { factor = 100 }
+		set_character_flag = duelist_courtier
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				character_event = {	
+					id = 61224 
+					tooltip = EVTTOOLTIP61223
+					days = 2
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61222
+		ai_chance = { factor = 0 }
+		prestige = -40
+	}
+}
+
+## Courtier informed Regent accepts duel, they fight!
+character_event = {
+	id = 61223
+	desc = EVTDESC61223
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61224
+		ai_chance = { factor = 80 }
+		if = {					#HAS 15+ MARTIAL, OPPONENT HAS 1 - 6
+		 	limit = { 
+		 		martial = 15
+				FROM = {
+					NOT = { martial = 7 }
+				}
+		 	}
+			random_list = {
+				10 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				10 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				40 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				40 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 15+ MARTIAL, OPPONENT HAS 7 - 14
+		 	limit = { 
+		 		martial = 15
+				FROM = {
+					martial = 7
+					NOT = { martial = 15 }
+				}
+		 	}
+			random_list = {
+				17 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				17 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				33 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				33 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 15+ MARTIAL, OPPONENT HAS 15+
+		 	limit = { 
+		 		martial = 15
+				FROM = {
+					martial = 15
+				}
+		 	}
+			random_list = {
+				25 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				25 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				25 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				25 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 7 - 14 MARTIAL, OPPONENT HAS 1 - 6
+		 	limit = { 
+				NOT = { martial = 15 }
+		 		martial = 7
+				FROM = {
+					NOT = { martial = 7 }
+				}
+			}
+			random_list = {
+				17 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				17 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				33 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				33 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 7 - 14 MARTIAL, OPPONENT HAS 7 - 14
+			limit = { 
+				NOT = { martial = 15 }
+		 		martial = 7
+				FROM = {
+					martial = 7
+					NOT = { martial = 15 }
+				}
+		 	}
+			random_list = {
+				25 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				25 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				25 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				25 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 7 - 14 MARTIAL, OPPONENT HAS 15+
+		 	limit = { 
+				NOT = { martial = 15 }
+		 		martial = 7
+				FROM = {
+					martial = 15
+				}
+		 	}
+			random_list = {
+				33 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				33 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				17 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				17 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 1 - 6 MARTIAL, OPPONENT HAS 1 - 6
+		 	limit = { 
+				NOT = { martial = 7 }
+				FROM = {
+					NOT = { martial = 7 }
+				}
+		 	}
+			random_list = {
+				25 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				25 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				25 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				25 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 1 - 6 MARTIAL, OPPONENT HAS 7 - 14
+		 	limit = { 
+				NOT = { martial = 7 }
+				FROM = {
+					martial = 7
+					NOT = { martial = 15 }
+				}
+		 	}
+			random_list = {
+				33 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				33 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				17 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				17 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 1 - 6 MARTIAL, OPPONENT HAS 15+
+		 	limit = { 
+				NOT = { martial = 7 }
+				FROM = {
+					martial = 15
+				}
+		 	}
+			random_list = {
+				40 = {
+					FROM = {
+						character_event = {	id = 61225 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				40 = {
+					FROM = {
+						character_event = {	id = 61226 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				10 = {
+					character_event = {	id = 61228 tooltip = EVTTOOLTIP61228 }
+				}
+				10 = {
+					character_event = {	id = 61229 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61223
+		ai_chance = { factor = 20 }
+		FROM = {
+			character_event = {	id = 61231 tooltip = EVTTOOLTIP61231 }
+		}
+	}
+}
+
+## Regent informed courtier accepts duel, they fight!	
+character_event = {
+	id = 61224
+	desc = EVTDESC61224
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61224
+		ai_chance = { factor = 80 }
+		if = {					#HAS 15+ MARTIAL, OPPONENT HAS 1 - 6
+		 	limit = { 
+		 		martial = 15
+				FROM = {
+					NOT = { martial = 7 }
+				}
+		 	}
+			random_list = {
+				10 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				10 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				40 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				40 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 15+ MARTIAL, OPPONENT HAS 7 - 14
+		 	limit = { 
+		 		martial = 15
+				FROM = {
+					martial = 7
+					NOT = { martial = 15 }
+				}
+		 	}
+			random_list = {
+				17 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				17 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				33 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				33 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 15+ MARTIAL, OPPONENT HAS 15+
+		 	limit = { 
+		 		martial = 15
+				FROM = {
+					martial = 15
+				}
+		 	}
+			random_list = {
+				25 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				25 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				25 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				25 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 7 - 14 MARTIAL, OPPONENT HAS 1 - 6
+		 	limit = { 
+				NOT = { martial = 15 }
+		 		martial = 7
+				FROM = {
+					NOT = { martial = 7 }
+				}
+			}
+			random_list = {
+				17 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				17 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				33 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				33 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 7 - 14 MARTIAL, OPPONENT HAS 7 - 14
+			limit = { 
+				NOT = { martial = 15 }
+		 		martial = 7
+				FROM = {
+					martial = 7
+					NOT = { martial = 15 }
+				}
+		 	}
+			random_list = {
+				25 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				25 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				25 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				25 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 7 - 14 MARTIAL, OPPONENT HAS 15+
+		 	limit = { 
+				NOT = { martial = 15 }
+		 		martial = 7
+				FROM = {
+					martial = 15
+				}
+		 	}
+			random_list = {
+				33 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				33 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				17 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				17 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 1 - 6 MARTIAL, OPPONENT HAS 1 - 6
+		 	limit = { 
+				NOT = { martial = 7 }
+				FROM = {
+					NOT = { martial = 7 }
+				}
+		 	}
+			random_list = {
+				25 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				25 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				25 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				25 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 1 - 6 MARTIAL, OPPONENT HAS 7 - 14
+		 	limit = { 
+				NOT = { martial = 7 }
+				FROM = {
+					martial = 7
+					NOT = { martial = 15 }
+				}
+		 	}
+			random_list = {
+				33 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				33 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				17 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				17 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+		if = {					#HAS 1 - 6 MARTIAL, OPPONENT HAS 15+
+		 	limit = { 
+				NOT = { martial = 7 }
+				FROM = {
+					martial = 15
+				}
+		 	}
+			random_list = {
+				40 = {
+					FROM = {
+						character_event = {	id = 61228 tooltip = EVTTOOLTIP61225 }
+					}
+				}
+				40 = {
+					FROM = {
+						character_event = {	id = 61229 tooltip = EVTTOOLTIP61226 }
+					}
+				}
+				10 = {
+					character_event = {	id = 61225 tooltip = EVTTOOLTIP61228 }
+				}
+				10 = {
+					character_event = {	id = 61226 tooltip = EVTTOOLTIP61229 }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB61224
+		ai_chance = { factor = 20 }
+		FROM = {
+			character_event = {	id = 61231 tooltip = EVTTOOLTIP61231 }
+		}
+	}
+}
+
+## Regent informed he wins.
+character_event = {
+	id = 61225
+	desc = EVTDESC61225
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61225
+		liege = {
+			random_courtier = {
+				limit = { has_character_flag = duelist_courtier }
+				character_event = {	id = 61232 tooltip = EVTTOOLTIP61232 }
+				clr_character_flag = duelist_courtier
+			}
+		}
+		prestige = 20
+	}
+}
+
+## Regent informed he wins, courtier maimed.
+character_event = {
+	id = 61226
+	desc = EVTDESC61226
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61226 #Spare opponent
+		ai_chance = { factor = 80 }
+		liege = {
+			random_courtier = {
+				limit = { has_character_flag = duelist_courtier }
+				character_event = {	id = 61230 tooltip = EVTTOOLTIP61230 }
+				clr_character_flag = duelist_courtier
+			}
+		}
+		piety = 40
+	}
+	option = {
+		name = EVTOPTB61226 #Kill opponent
+		ai_chance = { factor = 20 }
+		liege = {
+			random_courtier = {
+				limit = { has_character_flag = duelist_courtier }
+				character_event = {	id = 61232 tooltip = EVTTOOLTIP61232 }
+				clr_character_flag = duelist_courtier
+			}
+		}
+		prestige = 20
+	}
+}
+
+## Regent loses, is maimed.
+character_event = {
+	id = 61227
+	desc = EVTDESC61227
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61227
+		add_trait = maimed
+		prestige = -20
+	}
+}
+
+## Courtier informed he wins.
+character_event = {
+	id = 61228
+	desc = EVTDESC61225
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61228
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				character_event = {	id = 61232 tooltip = EVTTOOLTIP61232 }
+			}
+		}
+		hidden_tooltip = {
+			liege = {
+				character_event = {	id = 61235 }
+			}
+		}
+		give_minor_title = title_regent
+		clr_character_flag = duelist_courtier
+		prestige = 20
+	}
+}
+
+## Courtier informed he wins, regent maimed.
+character_event = {
+	id = 61229
+	desc = EVTDESC61226
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61229 #Spare opponent
+		ai_chance = { factor = 80 }
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				character_event = {	id = 61227 tooltip = EVTTOOLTIP61230 }
+			}
+		}
+		hidden_tooltip = {
+			liege = {
+				character_event = {	id = 61235 }
+			}
+		}
+		give_minor_title = title_regent
+		clr_character_flag = duelist_courtier
+		piety = 40
+	}
+	option = {
+		name = EVTOPTB61229 #Kill opponent
+		ai_chance = { factor = 20 }
+		liege = {
+			random_courtier = {
+				limit = { has_minor_title = title_regent }
+				character_event = {	id = 61232 tooltip = EVTTOOLTIP61232 }
+			}
+		}
+		hidden_tooltip = {
+			liege = {
+				character_event = {	id = 61235 }
+			}
+		}
+		give_minor_title = title_regent
+		clr_character_flag = duelist_courtier
+		prestige = 20
+	}
+}
+
+## Courtier loses, is maimed.
+character_event = {
+	id = 61230
+	desc = EVTDESC61230
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61230
+		add_trait = maimed
+		prestige = -20
+	}
+}
+
+## Opponent doesn't show up for duel.
+character_event = {
+	id = 61231
+	desc = EVTDESC61231
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61231
+		prestige = 20
+	}
+}
+
+## Is killed in duel.
+character_event = {
+	id = 61232
+	desc = EVTDESC61232
+	picture = GFX_evt_bloody_man
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61232
+		death = {
+			death_reason = death_duel
+			killer = FROM
+		}
+	}
+}
+
+## Ruler informed about the new Regent after duel.
+character_event = {
+	id = 61235
+	desc = EVTDESC61235
+	picture = GFX_evt_melee
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA4017
+	}
+}
+
+## Ruler informed about the new Regent after intrigue.
+character_event = {
+	id = 61236
+	desc = EVTDESC61236
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA4017
+	}
+}
+
+## Courtier informed Regent refuses challenge.
+character_event = {
+	id = 61245
+	desc = EVTDESC61245
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61245
+		prestige = 20
+	}
+}
+
+## Courtier informed Regent voluntarily abdicates title.
+character_event = {
+	id = 61246
+	desc = EVTDESC61246
+	picture = GFX_evt_shadowy_cabal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61246
+		prestige = 20
+	}
+}
+
+## Queen or Queen Mother takes over Regency ##
+
+## Queen takes over regency.
+character_event = {
+	id = 61237
+	desc = EVTDESC61237
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	only_women = yes
+	
+	trigger = {
+		NOT = { has_minor_title = title_regent }
+		has_minor_title = title_ruler_consort
+		is_married = yes
+		spouse = {
+			prisoner = no
+			is_alive = yes
+			is_abroad = no
+			is_ruler = yes
+		}
+		spouse = {
+			OR = {
+				NOT = { age = 15 }
+				trait = incapable
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 3.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 5.0
+			trait = content
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61237
+		give_minor_title = title_regent
+		hidden_tooltip = {
+			spouse = {
+				character_event = { id = 61239 }
+			}
+		}
+	}
+}
+
+## Queen Mother takes over regency.
+character_event = {
+	id = 61238
+	desc = EVTDESC61238
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	only_women = yes
+	
+	trigger = {
+		NOT = { has_minor_title = title_regent }
+		has_minor_title = title_queen_mother
+		liege = {
+			OR = {
+				NOT = { age = 15 }
+				trait = incapable
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 3.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 5.0
+			trait = content
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61238
+		give_minor_title = title_regent
+		hidden_tooltip = {
+			liege = {
+				character_event = { id = 61240 }
+			}
+		}
+	}
+}
+
+## Ruler informed that Queen takes over regency.
+character_event = {
+	id = 61239
+	desc = EVTDESC61239
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTB61239
+	}
+}
+
+## Ruler informed that Queen Mother is taking over regency.
+character_event = {
+	id = 61240
+	desc = EVTDESC61240
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}
+
+## The Regent Lowers Crown Authority in a Kingdom
+character_event = {
+	id = 61300
+	desc = EVTDESC61300
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	only_playable = yes # Only titled Regents do this
+	
+	trigger = {
+		is_landed = yes
+		has_minor_title = title_regent
+		NOT = { trait = content }
+		liege = {
+			higher_tier_than = DUKE
+			NOT = { has_character_flag = regent_lowered_CA }
+			any_demesne_title = {
+				tier = KING
+				OR = {
+					has_law = crown_authority_1
+					has_law = crown_authority_2
+					has_law = crown_authority_3
+					has_law = crown_authority_4
+				}
+				ROOT = {
+					primary_title = {
+						kingdom = {
+							title = PREVPREVPREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.25
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2.0
+			trait = charitable
+		}
+		modifier = {
+			factor = 3.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61300
+		ai_chance = { factor = 100 }
+		liege = {
+			random_demesne_title = {
+				limit = {
+					tier = KING
+					OR = {
+						has_law = crown_authority_1
+						has_law = crown_authority_2
+						has_law = crown_authority_3
+						has_law = crown_authority_4
+					}
+					ROOT = {
+						primary_title = {
+							kingdom = {
+								title = PREVPREVPREV
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_law = crown_authority_1 }
+					add_law = crown_authority_0
+				}
+				if = {
+					limit = { has_law = crown_authority_2 }
+					add_law = crown_authority_1
+				}
+				if = {
+					limit = { has_law = crown_authority_3 }
+					add_law = crown_authority_2
+				}
+				if = {
+					limit = { has_law = crown_authority_4 }
+					add_law = crown_authority_3
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = 61301 }
+				set_character_flag = regent_lowered_CA
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB61300
+		ai_chance = { factor = 0 }
+	}
+}
+
+## Ruler informed that Regent has Lowered CA in a Kingdom
+character_event = {
+	id = 61301
+	desc = EVTDESC61301
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61301
+		opinion = {
+			who = FROM
+			modifier = opinion_regent_lowered_CA
+		}
+	}
+}
+
+## The Regent Lowers Crown Authority in an Empire
+character_event = {
+	id = 61302
+	desc = EVTDESC61302
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	only_playable = yes # Only titled Regents do this
+	
+	trigger = {
+		is_landed = yes
+		has_minor_title = title_regent
+		NOT = { trait = content }
+		liege = {
+			higher_tier_than = DUKE
+			NOT = { has_character_flag = regent_lowered_CA }
+			any_demesne_title = {
+				tier = EMPEROR
+				OR = {
+					has_law = crown_authority_1
+					has_law = crown_authority_2
+					has_law = crown_authority_3
+					has_law = crown_authority_4
+				}
+				ROOT = {
+					primary_title = {
+						empire = {
+							title = PREVPREVPREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.25
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2.0
+			trait = charitable
+		}
+		modifier = {
+			factor = 3.0
+			trait = just
+		}
+	}
+	
+	option = {
+		name = EVTOPTA61300
+		ai_chance = { factor = 100 }
+		liege = {
+			random_demesne_title = {
+				limit = {
+					tier = EMPEROR
+					OR = {
+						has_law = crown_authority_1
+						has_law = crown_authority_2
+						has_law = crown_authority_3
+						has_law = crown_authority_4
+					}
+					ROOT = {
+						primary_title = {
+							empire= {
+								title = PREVPREVPREV
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_law = crown_authority_1 }
+					add_law = crown_authority_0
+				}
+				if = {
+					limit = { has_law = crown_authority_2 }
+					add_law = crown_authority_1
+				}
+				if = {
+					limit = { has_law = crown_authority_3 }
+					add_law = crown_authority_2
+				}
+				if = {
+					limit = { has_law = crown_authority_4 }
+					add_law = crown_authority_3
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = 61303 }
+				set_character_flag = regent_lowered_CA
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB61300
+		ai_chance = { factor = 0 }
+	}
+}
+
+## Ruler informed that Regent has Lowered CA in an Empire
+character_event = {
+	id = 61303
+	desc = EVTDESC61303
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA61301
+		opinion = {
+			who = FROM
+			modifier = opinion_regent_lowered_CA
+		}
+	}
+}
+###################################
+#
+# Events for Religion
+#
+# Id 39000 - 39999 is reserved
+#
+###################################
+
+# Written by Henrik Fåhraeus, Johan Andersson & Niklas Strid
+
+########################################
+# HERESIES
+########################################
+
+# Heresy appears out of "nowhere"
+province_event = {
+	id = 39000
+	desc = "EVTDESC39000"
+	picture = "GFX_evt_stone_church"
+	border = "GFX_event_normal_frame_religion"
+	
+	trigger = {
+		is_heretic = no
+		has_heresies = yes
+		NOT = { province_id = 333 } # Rome
+		NOT = { province_id = 497 } # Thrace
+		NOT = { province_id = 719 } # Mecca
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+	}
+	
+	mean_time_to_happen = {
+		months = 9600
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.4 }
+		}
+	}
+	
+	immediate = {
+		become_heretic = yes
+		set_province_flag = heresy_in_province
+		add_province_modifier = {
+			name = religious_unrest
+			duration = 730
+		}
+		owner = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_HERESY_SPREAD
+					picture = GFX_evt_heretic
+				}
+			}
+		}
+		owner = {
+			any_liege = {
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_HERESY_SPREAD
+						picture = GFX_evt_heretic
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39000"
+		trigger = { owner = { NOT = { religion = ROOT } } }
+		if = {
+			limit = { 
+				ruler = { is_parent_religion = ROOT }
+			}
+			ruler = { piety = -10 }
+		}
+		if = {
+			limit = {
+				owner = {
+					top_liege = {
+						NOT = {
+							any_realm_province = {
+								religion = ROOT
+								has_province_modifier = heretic_stronghold
+							}
+						}
+					}
+				}
+			}
+			add_province_modifier = {
+				name = heretic_stronghold
+				duration = 3650
+			}
+		}
+		# News spread
+		hidden_tooltip = {
+			owner = {
+				top_liege = {
+					if = {
+						limit = {
+							NOT = { character = PREV }
+						}
+						character_event = { id = 39400 days = 2 }
+					}
+					any_vassal = {
+						limit = {
+							OR = {
+								is_parent_religion = FROM
+								religion = FROM
+							}
+						}
+						character_event = { id = 39400 days = 2 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB39000"
+		trigger = { owner = { religion = ROOT } }
+		if = {
+			limit = { 
+				ruler = { is_parent_religion = ROOT }
+			}
+			ruler = { piety = -10 }
+		}
+		if = {
+			limit = {
+				owner = {
+					top_liege = {
+						NOT = {
+							any_realm_province = {
+								religion = ROOT
+								has_province_modifier = heretic_stronghold
+							}
+						}
+					}
+				}
+			}
+			add_province_modifier = {
+				name = heretic_stronghold
+				duration = -1
+			}
+		}
+		# News spread
+		hidden_tooltip = {
+			owner = {
+				top_liege = {
+					if = {
+						limit = {
+							NOT = { character = PREV }
+						}
+						character_event = { id = 39400 days = 2 }
+					}
+					any_vassal = {
+						limit = {
+							OR = {
+								is_parent_religion = FROM
+								religion = FROM
+							}
+						}
+						character_event = { id = 39400 days = 2 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# News spread in realm
+character_event = {
+	id = 39400
+	desc = "EVTDESC39400"
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39400"
+		trigger = {
+			NOT = { religion = FROM }
+		}
+	}
+	option = {
+		name = "EXCELLENT"
+		trigger = {
+			religion = FROM
+		}
+	}
+}
+
+# Pope disappointed about allowing heresy
+character_event = {
+	id = 39401
+	desc = "EVTDESC39401"
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	only_men = yes
+	
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+		
+		any_playable_ruler = {
+			religion = ROOT
+			any_demesne_province = {
+				religion_group = twelve
+				is_heretic = yes
+				has_province_flag = heresy_in_province
+				NOT = { has_province_modifier = religious_unrest }
+				owner = {
+					NOT = {
+						any_courtier = {
+							location = {
+								province_id = PREVPREVPREV
+							}
+							has_job_action = action_inquisition
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA39401"
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				any_demesne_province = {
+					religion_group = twelve
+					is_heretic = yes
+					has_province_flag = heresy_in_province
+					NOT = { has_province_modifier = religious_unrest }
+				}
+			}
+			random_demesne_province = {
+				limit = {
+					religion_group = twelve
+					is_heretic = yes
+					has_province_flag = heresy_in_province
+					NOT = { has_province_modifier = religious_unrest }
+				}
+				clr_province_flag = heresy_in_province
+				province_event = { id = 39402 days = 1 }
+			}
+		}
+	}
+}
+
+# Message from the Pope
+province_event = {
+	id = 39402
+	desc = "EVTDESC39402"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39402"
+		owner = {
+			religion_head = {
+				opinion = {
+					modifier = pope_disappointed_over_heretic_province
+					who = PREV
+					months = 60
+				}
+			}
+		}
+	}
+}
+
+# Pope urges to root out heresy in province
+character_event = {
+	id = 39403
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	only_men = yes
+	
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+		
+		any_playable_ruler = {
+			religion = ROOT
+			any_demesne_province = {
+				religion_group = twelve
+				is_heretic = yes
+				owner = {
+					NOT = {
+						any_courtier = {
+							location = {
+								province_id = PREVPREVPREV
+							}
+							has_job_action = action_inquisition
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				any_demesne_province = {
+					religion_group = twelve
+					is_heretic = yes
+				}
+			}
+			random_demesne_province = {
+				limit = {
+					religion_group = twelve
+					is_heretic = yes
+				}
+				province_event = { id = 39404 days = 1 }
+			}
+		}
+	}
+}
+
+# Message from the Pope
+province_event = {
+	id = 39404
+	desc = "EVTDESC39404"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39404"
+		add_province_modifier = {
+			name = force_converting
+			duration = 365
+		}
+		owner = { piety = 10 }
+	}
+	option = {
+		name = "EVTOPTB39404"
+		owner = { piety = -50 }
+	}
+}
+
+# Pope learns that a catholic ruler has a heretic advisor
+character_event = {
+	id = 39410
+	desc = "EVTDESC39410"
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	only_men = yes
+	
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+
+		any_playable_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			any_courtier = {
+				prisoner = no
+				religion_group = twelve
+				is_heretic = yes
+				OR = {
+					has_job_title = job_chancellor
+					has_job_title = job_marshal
+					has_job_title = job_treasurer
+					has_job_title = job_spymaster
+					has_job_title = job_spiritual
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+	}
+
+	option = {
+		name = "EVTOPTA39410"
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				any_courtier = {
+					prisoner = no
+					religion_group = twelve
+					is_heretic = yes
+					OR = {
+						has_job_title = job_chancellor
+						has_job_title = job_marshal
+						has_job_title = job_treasurer
+						has_job_title = job_spymaster
+						has_job_title = job_spiritual
+					}
+				}
+			}
+			letter_event = { id = 39441 days = 7 }
+		}
+	}
+}
+
+# Letter from the pope
+letter_event = {
+	id = 39441
+	desc = "EVTDESC39441"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_courtier = {
+			limit = {
+				prisoner = no
+				religion_group = twelve
+				is_heretic = yes
+				OR = {
+					has_job_title = job_chancellor
+					has_job_title = job_marshal
+					has_job_title = job_treasurer
+					has_job_title = job_spymaster
+					has_job_title = job_spiritual
+				} 
+			}
+			set_character_flag = heretic_to_target
+		}
+	}
+
+	option = {
+		name = "EVTOPTA39441"	# Imprison
+		ai_chance = {
+			factor = 90
+		}
+		random_courtier = {
+			limit = { has_character_flag = heretic_to_target }
+			clr_character_flag = heretic_to_target
+			imprison = yes
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion_modifier = {
+							modifier = pope_heretic_removal_approve
+							who = ROOT
+						}
+					}
+				}
+			}
+			FROM = {
+				opinion = {
+					modifier = pope_heretic_removal_approve
+					who = ROOT
+					months = 36
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB39441"	#Ignore Pope
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor =  0
+				NOT = {
+					trait = cynical
+					trait = excommunicated
+				}
+			}
+		}
+		FROM = {
+			opinion = {
+				modifier = pope_heretic_removal_disapprove
+				who = ROOT
+				months = 36
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = heretic_to_target }
+			clr_character_flag = heretic_to_target
+			opinion = {
+				modifier = opinion_defended_me
+				who = ROOT
+				years = 5
+			}
+		}
+		piety = -50
+	}
+}
+
+# Vassal disappointed in liege having heretic advisor
+character_event = {
+	id = 39445
+	desc = "EVTDESC39445"
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_religion
+
+	only_rulers = yes
+	
+	trigger = {
+		independent = no
+		is_heretic = no
+		religion_group = twelve
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+		
+		liege = {
+			religion = ROOT
+			
+			any_courtier = {
+				is_heretic = yes
+				religion_group = twelve
+				prisoner = no
+				is_councillor = yes
+			}
+			
+			ROOT = {
+				NOT = { has_opinion_modifier = { who = PREV modifier = opinion_disappointed } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39445"
+		hidden_tooltip = {
+			liege = { letter_event = { id = 39446 } }
+		}
+	}
+	option = {
+		name = "EVTOPTB39445"
+	}
+}
+
+# Vassal lets the liege know about his disappointment
+letter_event = {
+	id = 39446
+	desc = "EVTDESC39446"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39446"
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+# Heresy spreads to a neighboring province
+province_event = {
+	id = 39001
+	desc = "EVTDESC39001"
+	picture = "GFX_evt_stone_church"
+	border = "GFX_event_normal_frame_religion"
+	
+	trigger = {
+		is_heretic = no
+		has_heresies = yes
+		owner = { is_heretic = no }
+		NOT = { province_id = 333 } # Rome
+		NOT = { province_id = 497 } # Thrace
+		NOT = { province_id = 719 } # Mecca
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+		
+		any_neighbor_province = {
+			has_owner = yes
+			is_heresy_of = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				has_owner = yes
+				is_heresy_of = ROOT
+				ROOT = {
+					any_neighbor_province = {
+						is_heresy_of = ROOT
+						NOT = { province_id = PREVPREV }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_neighbor_province = {
+				has_owner = yes
+				is_heresy_of = ROOT
+				has_province_modifier = heretic_stronghold
+			}
+		}
+	}
+	
+	immediate = {
+		random_neighbor_province = {
+			limit = {
+				is_heresy_of = ROOT
+			}
+			reverse_religion = ROOT
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39001"
+		if = {
+			limit = { 
+				ruler = { is_parent_religion = ROOT }
+			}
+			ruler = { piety = -10 }
+		}
+	}
+}
+
+# Character picks up the provincial heresy
+character_event = {
+	id = 39010
+	desc = "EVTDESC39010"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+	
+		is_heretic = no
+		OR = {
+			is_ruler = no
+			is_theocracy = no
+		}
+		location = {
+			is_heresy_of = ROOT
+		}
+		
+		can_change_religion = yes
+		NOT = { trait = in_hiding }
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.25
+			trait = cynical
+		}
+		modifier = {
+			factor = 5.0
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.4 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39010"
+		ai_chance = { factor = 100 }
+		location = {
+			reverse_religion = ROOT
+		}
+	}
+	option = {
+		name = "EVTOPTB39010"
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Heretic character attempts to spread the faith
+character_event = {
+	id = 39020
+	desc = "EVTDESC39020"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_ruler = no
+		
+		NOT = { has_dlc = "Sons of Abraham" }
+		
+		is_heretic = yes
+		employer = {
+			NOT = { religion = ROOT }
+		}
+		any_courtier = {
+			age = 16
+			is_parent_religion = ROOT
+			is_heretic = no
+			prisoner = no
+			NOT = { trait = incapable }
+			reverse_opinion = { who = ROOT value = 25 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 10.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 3.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.8
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39020"
+		random_courtier = {
+			limit = {
+				age = 16
+				is_parent_religion = ROOT
+				is_heretic = no
+				prisoner = no
+				NOT = { trait = incapable }
+				reverse_opinion = { who = ROOT value = 25 }
+			}
+			character_event = { id = 39021 tooltip = EVTTOOLTIP39021 }
+		}
+	}
+}
+
+# A heretic character approaches me
+character_event = {
+	id = 39021
+	desc = "EVTDESC39021"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39021" # Embrace the heresy
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				independent = yes
+			}
+			modifier = {
+				factor = 0.25
+				tier = KING
+			}
+			modifier = {
+				factor = 0.25
+				tier = EMPEROR
+			}
+		}
+		hidden_tooltip = {
+			FROM = { character_event = { id = 39022 days = 4 } }
+		}
+		religion = FROM
+	}
+	option = {
+		name = "EVTOPTB39021" # Demand abandonment of heresy
+		tooltip_info = diplomacy
+		trigger = {
+			is_liege_of = FROM
+			diplomacy = 6
+		}
+		ai_chance = { factor = 25 }
+		hidden_tooltip = {
+			FROM = { character_event = { id = 39023 days = 3 } }
+		}
+	}
+	option = {
+		name = "EVTOPTC39021" # Have the heretic jailed!
+		#tooltip_info = 
+		trigger = {
+			is_liege_of = FROM
+			OR = {
+				trait = wroth
+				trait = zealous
+				trait = lunatic
+			}
+			OR = {
+				NOT = { is_close_relative = FROM }
+				trait = lunatic
+			}
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 10
+				trait = zealous
+			}
+		}
+		piety = 10
+		hidden_tooltip = {
+			FROM = { character_event = { id = 39024 days = 2 } }
+		}
+	}
+	option = {
+		name = "EVTOPTD39021" # Just say no
+		ai_chance = { factor = 25 }
+		hidden_tooltip = {
+			FROM = { character_event = { id = 39025 days = 4 } }
+		}
+	}
+}
+
+# The heretic succeeded
+character_event = {
+	id = 39022
+	desc = "EVTDESC39022"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39022" # Good news!
+		piety = 10
+		opinion = {
+			modifier = opinion_successful_conversion
+			who = FROM
+			years = 5
+		}
+	}
+}
+
+# The heretic is asked to abandon the heresy
+character_event = {
+	id = 39023
+	desc = "EVTDESC39023"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39023" # Never!
+		hidden_tooltip = {
+			FROM = { character_event = { id = 39025 days = 4 } }
+		}
+	}
+	option = {
+		name = "EVTOPTB39023" # Very well
+		religion = FROM
+		hidden_tooltip = {
+			FROM = { character_event = { id = 39026 days = 4 } }
+		}
+	}
+}
+
+# Guards come to arrest the heretic
+character_event = {
+	id = 39024
+	desc = "EVTDESC39024"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39024" # Accept judgement
+		opinion = {
+			modifier = opinion_betrayed
+			who = FROM
+			years = 10
+		}
+		imprison = FROM
+	}
+	option = {
+		name = "EVTOPTB39024" # Attempt to escape
+		tooltip_info = intrigue
+		trigger = {
+			intrigue = 6
+		}
+		opinion = {
+			modifier = opinion_betrayed
+			who = FROM
+			years = 10
+		}
+		random_list = {
+			67 = { imprison = FROM }
+			33 = { banish = yes }
+		}
+	}
+}
+
+# One character failed to convert the other
+character_event = {
+	id = 39025
+	desc = "EVTDESC39025"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39025"
+		opinion = {
+			modifier = opinion_failed_conversion
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+# The heretic accepts reconversion
+character_event = {
+	id = 39026
+	desc = "EVTDESC39026"
+	picture = GFX_evt_heretic
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39026"
+		piety = 10
+		opinion = {
+			modifier = opinion_successful_conversion
+			who = FROM
+			years = 5
+		}
+	}
+}
+
+
+########################################
+# Formation of the Orders
+########################################
+
+# Formation of the Teutonic Order
+##placeholder for order formations
+#narrative_event = {
+	#id = 39102
+	#title = "EVTNAME39102"
+	#desc = "EVTDESC39102"
+	#picture = "GFX_evt_crusaders"
+	#border = "GFX_event_narrative_frame_religion"
+	
+	#major = yes
+	#only_playable = yes
+	#only_men = yes
+	#religion_group = twelve
+	
+	#trigger = {
+		#OR = {
+			#religion = catholic
+			#religion = cathar
+			#religion = fraticelli
+			#religion = waldensian
+			#religion = lollard
+		}
+		#is_heretic = no
+		
+		#NOT = { is_title_active = d_teutonic_order }
+		
+		#has_global_flag = christian_crusades_unlocked
+		
+		#OR = {
+			#year = 1192	# Historical
+			#221 = { # Provence
+				#NOT = { owner = { religion_group = twelve } }
+			#}
+			#214 = { # Toulouse
+				#NOT = { owner = { religion_group = twelve } }
+			#}
+			#112 = { # Paris
+				#NOT = { owner = { religion_group = twelve } }
+			#}
+			#119 = { # Cologne
+				#NOT = { owner = { religion_group = twelve } }
+			#}
+			#257 = { # Braunschweig
+				#NOT = { owner = { religion_group = twelve } }
+			#}
+		#}
+	#}
+	
+	#mean_time_to_happen = {
+		#months = 4
+	#}
+	
+	#immediate = {
+		#activate_title = { title = d_teutonic_order status = yes }
+		#create_random_soldier = {
+			#dynasty = none
+			#random_traits = yes
+			#religion = ROOT
+		#}
+		#new_character = {
+			#d_teutonic_order = {
+				#grant_title = PREV
+			#}
+			#set_defacto_liege = THIS
+			#wealth = 500
+		#}
+		
+		#religion_authority = {
+			#modifier = religious_order_formed
+			#years = 10
+		#}
+	#}
+	#option = {
+		#name = "EVTOPTA39102"
+		#trigger = {
+			#religion = ROOT
+		#}
+	#}
+	#option = {
+		#name = "EVTOPTB39102"
+		#trigger = {
+			#NOT = { religion_group = twelve }
+		#}
+	#}
+	#option = {
+		#name = "EVTOPTC39100"
+		#trigger = {
+			#religion_group = twelve
+			#NOT = { religion = ROOT }
+		#}
+	#}
+#}
+
+########################################
+# PAPAL EVENTS
+########################################
+
+# The Pope gives money to someone fighting the Infidel
+character_event = {
+	id = 39200
+	desc = "EVTDESC39200"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_religion"
+	
+	only_rulers = yes
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		
+		wealth = 500
+		war = no
+		any_playable_ruler = {
+			religion = ROOT
+			NOT = { wealth = 500 }
+			religion_head = {
+				character = ROOT
+			}
+			NOT = { excommunicated_for = ROOT }
+			any_current_enemy = {
+				NOT = { religion_group = PREV }
+			}
+			NOT = { war_with = ROOT }
+			reverse_opinion = { who = ROOT value = 0 }
+			OR = {
+				NOT = { has_character_flag = money_from_the_pope }
+				OR = {
+					had_character_flag = { flag = money_from_the_pope days = 730 }
+					AND = {
+						ai = yes
+						had_character_flag = { flag = money_from_the_pope days = 365 }
+						any_war = {
+							using_cb = religious
+							OR = {
+								attacker = {
+									character = PREVPREV
+									NOT = { war_score = -15 }
+								}
+								defender = {
+									character = PREVPREV
+									war_score = 15
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			wealth = 1000
+		}
+		modifier = {
+			factor = 0.5
+			wealth = 2000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39200"
+		ai_chance = { factor = 100 }
+		wealth = -200
+		
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				NOT = { wealth = 500 }
+				religion_head = {
+					character = ROOT
+				}
+				NOT = { excommunicated_for = ROOT }
+				any_current_enemy = {
+					NOT = { religion_group = PREV }
+				}
+				NOT = { war_with = ROOT }
+				reverse_opinion = {
+					who = ROOT
+					value = 0
+				}
+			}
+			
+			letter_event = { id = 39201 tooltip = EVTTOOLTIP39201 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB39200"
+		ai_chance = { factor = 0 }
+	}
+}
+
+letter_event = {
+	id = 39201
+	desc = "EVTDESC39201"
+	border = "GFX_event_letter_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39201"
+		wealth = 200
+		set_character_flag = money_from_the_pope
+	}
+}
+
+
+
+#Pope offers absolution for Kinslaying
+character_event = {
+	id = 39210
+	desc = "EVTDESC39210"
+	picture = GFX_evt_pope
+	border = "GFX_event_normal_frame_religion"
+	
+	only_rulers = yes
+	
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		war = no
+		
+		any_independent_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			trait = kinslayer
+			piety = 100
+			reverse_opinion  = { who = ROOT value = 0 }
+			NOT = { has_character_flag = kinslaying_offered }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				trait = kinslayer
+				piety = 100
+				reverse_opinion  = { who = ROOT value = 0 }
+			}
+			set_character_flag = kinslaying_offered
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39210"
+		ai_chance = { factor = 100 }
+		
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				trait = kinslayer
+				piety = 100
+				reverse_opinion  = { who = ROOT value = 0 }
+			}
+			
+			character_event = { id = 39211 tooltip = EVTTOOLTIP39211 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB39210"	#incase someone plays the pope.. players will mod it in, so might as well give them a fun option here..
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+character_event = {
+	id = 39211
+	desc = "EVTDESC39211"
+	picture = GFX_evt_pope
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39211"
+		ai_chance = { factor = 100 }
+		piety = -100
+		wealth = -50
+		remove_trait = kinslayer
+		FROM = { character_event = { id = 39212 days = 1 tooltip = EVTTOOLTIP39212 } }
+	}
+	
+	option = {
+		name = "EVTOPTB39211"
+		ai_chance = { factor = 0 }
+		add_trait = cynical
+		FROM = { character_event = { id = 39213 days = 1  tooltip = EVTTOOLTIP39213 } }
+	}
+}
+
+
+character_event = {
+	id = 39212
+	desc = "EVTDESC39212"
+	picture = GFX_evt_knight_kneeling
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA39212"
+		prestige = 10
+	}
+}
+
+
+character_event = {
+	id = 39213
+	desc = "EVTDESC39213"
+	picture = GFX_evt_torture
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39213"
+		prestige = -10
+	}
+}
+
+
+########################################
+#Bishops don't like being in prison events...
+########################################
+
+#CATHOLIC CHAIN
+character_event = {
+	id = 39220
+	desc = "EVTDESC39220"	#Bishops in prison whine to pope..		
+	picture = GFX_evt_into_the_dungeon
+	border = "GFX_event_normal_frame_religion"
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = twelve
+	
+	trigger = {
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		prisoner = yes
+		is_theocracy = yes
+		imprisoned_days = 14
+		host = { religion = ROOT }
+		NOT = { rightful_religious_head = ROOT }
+		religion_head = {
+			reverse_opinion = { who = ROOT value = 25 }		#not grovel if we dont like the pope.
+		}
+		NOT = {
+			has_character_flag = nag_pope_to_help_me
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 180
+		modifier = {
+			factor = 0.90
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.50
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.75
+			piety = 25
+		}
+		modifier = {
+			factor = 0.75
+			religion_head = {
+				reverse_opinion = { who = ROOT value = 25 }		
+			}
+		}
+	}	
+
+	immediate = {
+		set_character_flag = nag_pope_to_help_me
+	}
+
+	
+	option = {
+		name = "EVTOPTA39220" # Write a letter to the pope.
+		religion_head = { character_event = { id = 39221 days = 5 random = 10 tooltip = EVTTOOLTIP39221 } }
+		if = {
+			limit = {
+				host = { realm_intrigue = 15 }
+			}
+			random = {
+				chance = 25
+				host = { character_event = { id = 39222 days = 3 tooltip = EVTTOOLTIP39222 }  }
+			}
+		}
+		
+	}	
+	option = {
+		name = "EVTOPTB39220" # Pray for Divine Help
+		piety = 10
+		hidden_tooltip = {	
+			host = { character_event = { id = 39223 days = 5 } 	}
+		}
+	}	
+}	
+
+#Pope gets letter.
+character_event = {
+	id = 39221
+	desc = "EVTDESC39221"
+	picture = GFX_evt_into_the_dungeon
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39221"	#try to help bishop
+		from = {
+			character_event = { id = 39224 days = 5 random = 10 tooltip = EVTTOOLTIP39224 }
+		}
+		prestige = 5
+	}
+	option = {
+		name = "EVTOPTB39221"	#not my problem
+		ai_chance = {
+			factor = 0
+		}
+		from = {
+			character_event = { id = 39225 days = 5 random = 10 tooltip = EVTTOOLTIP39225 }
+		}
+		religion_authority = {
+			modifier = head_of_religion_neglect
+			years = 10
+		}
+		prestige = -5
+	}
+}
+
+
+#We discover bishop writing to pope
+character_event = {
+	id = 39222
+	desc = "EVTDESC39222"
+	picture = GFX_evt_recieve_letter
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39222" #kill
+		#tooltip_info = 
+		trigger = {
+			OR = {
+				trait = cruel
+				trait = impaler
+				trait = wroth
+			}
+		}
+		piety = -50
+		FROM = {
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+		}
+	}	
+	option = {
+		name = "EVTOPTB39222" #this is bad news
+		trigger = {
+			NOT = { trait = cruel }
+			NOT = { trait = impaler }
+			NOT = { trait = wroth }				
+		}
+		piety = -5
+	}	
+}
+
+#pious bishop praying for it..
+character_event = {
+	id = 39223
+	desc = "EVTDESC39223"
+	picture = GFX_evt_into_the_dungeon
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39223" #kind and release him
+		trigger = {
+			NOT = { trait = cruel }
+			NOT = { trait = impaler }
+			NOT = { trait = wroth }				
+			NOT = { trait = cynical }				
+			
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				trait = kind
+			}
+		}
+		piety = 10
+		FROM = { 
+			prisoner = no 
+			clr_character_flag = nag_pope_to_help_me
+		}
+	}	
+	option = {
+		name = "EVTOPTB39223" #nopes
+		ai_chance = {
+			factor = 10
+		}
+		piety = -5
+	}	
+}
+
+#bishop hears pope is helping him.
+character_event = {
+	id = 39224
+	desc = "EVTDESC39224"
+	picture = GFX_evt_pope
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		host = { character_event = { id = 39226 days = 1 random = 2 tooltip = EVTTOOLTIP39226 } }
+	}
+	option = {
+		name = "EVTOPTA39224"	#good news
+		piety = 1
+	}	
+}
+
+#bad news, pope tells you no
+character_event = {
+	id = 39225
+	desc = "EVTDESC39225"
+	picture = GFX_evt_knight_kneeling
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39225"	#bad news
+		piety = -5
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 2
+		}		
+	}	
+}
+
+#deal with papal demands
+character_event = {
+	id = 39226
+	desc = "EVTDESC39226"
+	picture = GFX_evt_pope
+	border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39226"	#let him go
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				trait = kind
+			}
+		}
+		FROM = { 
+			prisoner = no 
+			clr_character_flag = nag_pope_to_help_me
+		}
+		piety = 10
+		religion_authority = {
+			modifier = ruler_bowed_to_pope
+			years = 10
+		}
+	}	
+	option = {
+		name = "EVTOPTB39226"	#no
+		trigger = {
+			NOT = {
+				trait = zealous 
+			}
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 20
+				NOT = {
+					opinion = { who = FROM value = 20 }
+				}
+			}
+		}
+		piety = -25
+		religion_authority = {
+			modifier = ruler_defied_pope
+			years = 10
+		}
+		religion_head = {
+			opinion = {
+				modifier = opinion_ignore_papal_demands
+				who = ROOT
+				years = 2
+			}
+		}
+		
+	}	
+}
+
+
+########################################################################
+#Religious Head does not like it when you have heathens in your employ
+########################################################################
+
+character_event = {
+	id = 39240
+	desc = "EVTDESC39240"	#Pope asks a ruler that they should not have heathens employed.
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+		
+		war = no
+		religion_authority = 0.20
+
+		any_playable_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			NOT = { has_character_flag = pope_dislikes_heathen_employed }
+			any_courtier = {
+				prisoner = no
+				OR = {
+					religion_group = rastullah_group
+					religion_group = pagan_group
+				}
+				OR = {
+					has_job_title = job_chancellor
+					has_job_title = job_marshal
+					has_job_title = job_treasurer
+					has_job_title = job_spymaster
+					has_job_title = job_spiritual
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+	}
+
+	option = {
+		name = "EVTOPTA39240"	#ask them
+		ai_chance = { factor = 100 }
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				NOT = { has_character_flag = pope_dislikes_heathen_employed }
+
+				any_courtier = {
+					prisoner = no
+					OR = {
+						religion_group = rastullah_group
+						religion_group = pagan_group
+					}
+					OR = {
+						has_job_title = job_chancellor
+						has_job_title = job_marshal
+						has_job_title = job_treasurer
+						has_job_title = job_spymaster
+						has_job_title = job_spiritual
+					} 
+				}
+			}
+			character_event = { id = 39241 days = 14 tooltip = EVTTOOLTIP392401 }
+			set_character_flag = pope_dislikes_heathen_employed
+		}
+	}
+
+	option = {
+		name = "EVTOPTB39240"	#ignore it.
+		ai_chance = { factor = 0 }
+		religion_authority = {
+			modifier = head_of_religion_neglect
+			years = 10
+		}
+	}
+}
+
+#Demands is coming on us about
+character_event = {
+	id = 39241
+	desc = "EVTDESC39241"	
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_courtier = {
+			limit = {
+				prisoner = no
+				OR = {
+					religion_group = rastullah_group
+					religion_group = pagan_group
+				}
+				OR = {
+					has_job_title = job_chancellor
+					has_job_title = job_marshal
+					has_job_title = job_treasurer
+					has_job_title = job_spymaster
+					has_job_title = job_spiritual
+				} 
+			}
+			set_character_flag = heathen_to_target
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB39241" #imprison
+		tooltip_info = intrigue
+		trigger = {
+			realm_intrigue = 15
+		}
+		random_courtier = {
+			limit = { has_character_flag = heathen_to_target }
+			clr_character_flag = heathen_to_target
+			imprison = yes
+		}
+		FROM = {
+			opinion = {
+				modifier = pope_heathen_removal_approve_2
+				who = ROOT
+				months = 36
+			}
+		}
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39243 days = 1  } }
+		}	
+		clr_character_flag = pope_dislikes_heathen_employed
+	}
+	option = {
+		name = "EVTOPTC39241"	#Ignore Pope
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor =  0
+				NOT = {
+					trait = cynical
+					trait = excommunicated
+				}
+			}
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_ignore_papal_demands
+				who = ROOT
+				months = 60
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = heathen_to_target }
+			clr_character_flag = heathen_to_target
+			
+			opinion = {
+				modifier = opinion_defended_me
+				who = ROOT
+				years = 5
+			}
+		}
+		piety = -50
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39244 days = 1 } }
+		}
+	}
+}
+
+#they imprisoned the heathen
+character_event = {
+	id = 39243
+	desc = "EVTDESC39243"
+	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39243" 
+		prestige = 5
+	}
+}
+
+#they ignored us.
+character_event = {
+	id = 39244
+	desc = "EVTDESC39244"
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39244" 
+		prestige = -10
+	}
+}
+
+#Demands is coming on us about
+character_event = {
+	id = 39261
+	desc = "EVTDESC39261"
+	picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_courtier = {
+			limit = {
+				prisoner = no
+				OR = {
+					religion_group = rastullah_group
+					religion_group = pagan_group
+				}
+				OR = {
+					has_job_title = job_chancellor
+					has_job_title = job_marshal
+					has_job_title = job_treasurer
+					has_job_title = job_spymaster
+					has_job_title = job_spiritual
+				} 
+			}
+			set_character_flag = heathen_to_target
+		}
+	}
+	
+	
+	option = {
+		name = "EVTOPTA39261" #banish
+		ai_chance = {
+			factor = 2
+		}
+		random_courtier = {
+			limit = { has_character_flag = heathen_to_target }
+			clr_character_flag = heathen_to_target
+			banish = yes
+		}
+		
+		FROM = {
+			opinion = {
+				modifier = pope_heathen_removal_approve
+				who = ROOT
+				years = 5
+			}
+		}
+
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39262 days = 1   } }
+		}	
+		clr_character_flag = patriarch_dislikes_heathen_employed
+	}
+	option = {
+		name = "EVTOPTB39261"	#imprison
+		tooltip_info = intrigue
+		trigger = {
+			realm_intrigue = 15
+		}
+		random_courtier = {
+			limit = { has_character_flag = heathen_to_target }
+			clr_character_flag = heathen_to_target
+			imprison = yes
+		}
+		FROM = {
+			opinion = {
+				modifier = pope_heathen_removal_approve_2
+				who = ROOT
+				years = 5
+			}
+		}
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39263 days = 1  } }
+		}	
+		clr_character_flag = patriarch_dislikes_heathen_employed
+	}
+	option = {
+		name = "EVTOPTC39261"	#Ignore the Patriarch
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor =  0
+				NOT = {
+					trait = cynical
+				}
+			}
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_ignore_patriarch_request
+				who = ROOT
+				years = 5
+			}
+		}
+		
+		
+		random_courtier = {
+			limit = { has_character_flag = heathen_to_target }
+			clr_character_flag = heathen_to_target
+			
+			opinion = {
+				modifier = opinion_defended_me
+				who = ROOT
+				years = 5
+			}
+
+		}
+		piety = -50
+		
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39264 days = 1 } }
+		}
+	}
+}
+
+#they banished the heathen
+character_event = {
+	id = 39262
+	desc = "EVTDESC39262"
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39262" 
+		prestige = 10
+	}
+}
+
+#they imprisoned the heathen
+character_event = {
+	id = 39263
+	desc = "EVTDESC39263"
+	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39263" 
+		prestige = 5
+	}
+}
+
+#they ignored us
+character_event = {
+	id = 39264
+	desc = "EVTDESC39264"	
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39264" 
+		prestige = -10
+	}
+}
+
+###############################################################
+# Interactions from decisions
+###############################################################
+
+#Character purchases indulgence
+character_event = {
+	id = 39250
+	desc = "EVTDESC39250"	
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39250" 
+		FROM = {
+			character_event = { id = 39251 days = 3 random = 7 tooltip = "EVTTOOLTIP39251" }
+		}
+	}
+}
+
+#Character gets approval
+character_event = {
+	id = 39251
+	desc = "EVTDESC39251"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39251"
+		trigger = {
+			reverse_opinion = { who = FROM value = 75 }
+		}
+		if = {
+			limit = { piety = 500 }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -0.9
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		if = {
+			limit = { NOT = { piety = 500 } }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.0
+			}
+			if = {
+				limit = { NOT = { yearly_income= 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = bought_indulgences
+				years = 5
+			}
+		}
+#		clr_character_flag  = ask_for_indulgence	
+	}
+	option = {
+		name = "EVTOPTA39251"
+		trigger = {
+			NOT = { reverse_opinion = { who = FROM value = 75 } }
+			reverse_opinion = { who = FROM value = 0 }
+		}
+		if = {
+			limit = { piety = 400 }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.15
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		if = {
+			limit = { NOT = { piety = 400 } }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.25
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = bought_indulgences
+				years = 5
+			}
+		}
+#		clr_character_flag  = ask_for_indulgence	
+	}
+	option = {
+		name = "EVTOPTA39251"
+		trigger = {
+			NOT = { reverse_opinion = { who = FROM value = 0 } }
+			reverse_opinion = { who = FROM value = -75 }
+		}
+		
+		if = {
+			limit = { piety = 400 }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.4
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		if = {
+			limit = { NOT = { piety = 400 } }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.5
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = bought_indulgences
+				years = 5
+			}
+		}
+#		clr_character_flag  = ask_for_indulgence	
+	}
+	option = {
+		name = "EVTOPTA39251"
+		trigger = {
+			NOT = { reverse_opinion = { who = FROM value = -75 } }
+		}
+		
+		if = {
+			limit = { piety = 400 }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.65
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		if = {
+			limit = { NOT = { piety = 400 } }
+			if = {
+				limit = { yearly_income = 25 }
+				scaled_wealth = -1.75
+			}
+			if = {
+				limit = { NOT = { yearly_income = 25 } }
+				wealth = -25
+			}
+			
+			piety = 50
+		}
+		
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = bought_indulgences
+				years = 5
+			}
+		}
+#		clr_character_flag  = ask_for_indulgence	
+	}
+	option = {
+		name = "EVTOPTB39251"
+		ai_chance = { factor = 0 }
+		FROM = {
+			opinion = {
+				who = FROM
+				modifier = refused_indulgences
+				years = 5
+			}
+		}
+		clr_character_flag  = ask_for_indulgence	
+	}
+}
+
+#Character purchases lift of excommunication
+character_event = {
+	id = 39252
+	desc = "EVTDESC39252"	
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39252" 
+		FROM = {
+			character_event = { id = 39253 days = 3 random = 7 tooltip = "EVTTOOLTIP39253" }
+		}
+	}
+}
+
+#Character gets approval
+character_event = {
+	id = 39253
+	desc = "EVTDESC39253"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39253"
+		trigger = {
+			reverse_opinion = { who = FROM value = 75 }
+		}
+		if = {
+			limit = { piety = 500 }
+			scaled_wealth = -1.9
+			excommunicate = no
+		}
+		if = {
+			limit = { NOT = { piety = 500 } }
+			scaled_wealth = -2.0
+			excommunicate = no
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_repented_sins
+				years = 10
+			}
+		}
+		clr_character_flag  = ask_for_repentance	
+	}
+	option = {
+		name = "EVTOPTA39253"
+		trigger = {
+			NOT = { reverse_opinion = { who = FROM value = 75 } }
+			reverse_opinion = { who = FROM value = 0 }
+		}
+		if = {
+			limit = { piety = 400 }
+			scaled_wealth = -2.15
+			excommunicate = no
+		}
+		if = {
+			limit = { NOT = { piety = 400 } }
+			scaled_wealth = -2.25
+			excommunicate = no
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_repented_sins
+				years = 10
+			}
+		}
+		clr_character_flag  = ask_for_repentance	
+	}
+	option = {
+		name = "EVTOPTA39253"
+		trigger = {
+			NOT = { reverse_opinion = { who = FROM value = 0 } }
+			reverse_opinion = { who = FROM value = -75 }
+		}
+		if = {
+			limit = { piety = 400 }
+			scaled_wealth = -2.4
+			excommunicate = no
+		}
+		if = {
+			limit = { NOT = { piety = 400 } }
+			scaled_wealth = -2.5
+			excommunicate = no
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_repented_sins
+				years = 10
+			}
+		}
+		clr_character_flag  = ask_for_repentance	
+	}
+	option = {
+		name = "EVTOPTA39253"
+		trigger = {
+			NOT = { reverse_opinion = { who = FROM value = -75 } }
+		}
+		if = {
+			limit = { piety = 400 }
+			scaled_wealth = -2.65
+			excommunicate = no
+		}
+		if = {
+			limit = { NOT = { piety = 400 } }
+			scaled_wealth = -2.75
+			excommunicate = no
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_repented_sins
+				years = 10
+			}
+		}
+		clr_character_flag  = ask_for_repentance	
+	}
+	option = {
+		name = "EVTOPTB39253"
+		ai_chance = { factor = 0 }
+		FROM = {
+			opinion = {
+				who = FROM
+				modifier = refused_making_repentance
+				years = 5
+			}
+		}
+		clr_character_flag  = ask_for_repentance	
+	}
+}
+
+#####################################################################################
+# You have a bishop as your vassal, and the the vassal likes you more than the pope.
+#####################################################################################
+
+character_event = {
+	id = 39270
+	desc = "EVTDESC39270"
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+	
+		war = no
+		religion_authority = 0.30
+		prestige = 20
+
+		any_playable_ruler = {
+			independent = yes
+			religion = ROOT
+			rightful_religious_head = ROOT
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+			}
+			any_vassal = {
+				is_theocracy = yes
+				religion = ROOT
+				opinion = { who = liege value = 50 }
+				not = { opinion = { who = ROOT value = 20 } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.33
+			trait = zealous
+		}
+	}
+
+	option = {
+		name = "EVTOPTA39270"	#ask them
+		ai_chance = {	factor = 100 }
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+					is_nomadic = yes
+				}
+				any_vassal = {
+					is_theocracy = yes
+					religion = ROOT
+					opinion = { who = liege value = 50 }
+					not = { opinion = { who = ROOT value = 20 } }
+				}
+			}
+			character_event = { id = 39271 tooltip = EVTTOOLTIP39271 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB39270"	#ignore it.
+		ai_chance = {	factor = 0 }
+		religion_authority = {
+			modifier = head_of_religion_neglect
+			years = 10
+		}
+	}
+}
+
+#Demands is coming on us about
+character_event = {
+	id = 39271
+	desc = "EVTDESC39271"
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_vassal = {
+			limit = {
+				is_theocracy = yes
+				religion = ROOT
+				opinion = { who = liege value = 50 }
+				not = { opinion = { who = from value = 20 } }
+			}
+			set_character_flag = loyal_bishop
+		}
+	}
+	
+	
+	option = {
+		name = "EVTOPTA39271" #replace him.
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				any_vassal = {
+					has_character_flag = loyal_bishop
+					OR = {
+						demesne_size = 2
+						any_demesne_title = {
+							NOT = { tier = baron }
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+		}
+		random_vassal = {
+			limit = { has_character_flag = loyal_bishop }
+			clr_character_flag = loyal_bishop
+			any_demesne_title = {
+				grant_title = FROM
+			}
+		}
+		piety = 50
+		
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39272 days = 13   } }
+		}	
+	}
+	option = {
+		name = "EVTOPTB39271"	#Ignore the demand
+		ai_chance = {
+			factor = 1
+		}
+		piety = -50
+		hidden_tooltip = {
+			FROM = {  character_event = { id = 39273 days = 13 } }
+			
+			random_vassal = {
+				limit = { has_character_flag = loyal_bishop }
+				clr_character_flag = loyal_bishop
+			}
+		}
+	}
+}
+
+#This was good
+character_event = {
+	id = 39272
+	desc = "EVTDESC39272"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39272" 
+		prestige = 5
+	}	
+}
+
+#This was bad
+character_event = {
+	id = 39273
+	desc = "EVTDESC39273"	
+	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39273" 
+		prestige = -20
+	}	
+}
+
+#Give back bishoprics...
+character_event = {
+	id = 39275
+	desc = "EVTDESC39275"
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	
+	religion_group = twelve
+	
+	trigger = {
+		controls_religion = yes
+		OR = {
+			religion = puniner
+			religion = horas
+			religion = alanfaner
+		}
+	
+		war = no
+		any_vassal = {
+			tier = baron
+			is_theocracy = yes
+			opinion = { who = ROOT value = 75 }
+			NOT = { de_jure_liege = ROOT  }
+		}
+
+
+	}
+	
+	mean_time_to_happen = {
+		months = 64
+	}
+
+	option = {
+		name = "EVTOPTA39275"
+		random_vassal = {
+			limit = {
+				tier = baron
+				is_theocracy = yes
+				opinion = { who = ROOT value = 75 }
+				NOT = { de_jure_liege = ROOT }
+			}
+
+			dejure_liege_title = {
+				holder_scope = {
+					set_defacto_vassal = prevprev
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = 39276 } 
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB39275"	#ignore it.
+		ai_chance = {	factor = 0 }
+		prestige = -5
+	}
+}
+
+
+#We get new liege
+character_event = {
+	id = 39276
+	desc = "EVTDESC39276"
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39276" 
+		prestige = 5
+		liege = {  letter_event = { id = 39277 }  }
+	}	
+}
+
+#Inform liege!
+letter_event = {
+	id = 39277
+	desc = "EVTDESC39277"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39277" 
+		prestige = 5
+	}	
+}
+
+
+########################################
+# A True Knight of christendom.
+########################################
+
+#True Knight
+character_event = {
+	id = 39310
+	desc = "EVTDESC39310"
+	picture = GFX_evt_melee
+	border = "GFX_event_normal_frame_religion"
+	
+	min_age = 16
+	only_men = yes
+
+	trigger = {
+		religion_group = twelve
+		is_heretic = no
+		NOT = {	has_character_modifier = true_christian_knight	}
+		NOT = { trait = cynical }
+		NOT = { trait = lustful }
+		NOT = { trait = gluttonous }
+		NOT = { trait = greedy }
+		NOT = { trait = slothful }
+		NOT = { trait = envious }
+		NOT = { trait = wroth }
+		NOT = { trait = proud }
+		NOT = { trait = cruel }
+		
+		martial = 8
+		trait = humble
+		trait = diligent
+		trait = brave
+		
+		piety = 25
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.75
+			trait = crusader
+		}
+		modifier = {
+			factor = 0.75
+			piety = 100
+		}
+	}
+	option = {
+		name = "EVTOPTA39310"	#
+		add_character_modifier = { name = true_christian_knight duration = -1 }
+		prestige = 50
+	} 
+
+}
+
+#Losing status
+character_event = {
+	id = 39311
+	desc = "EVTDESC39311"
+	picture = GFX_evt_knight_kneeling
+	border = "GFX_event_normal_frame_religion"
+	
+	min_age = 16
+	only_men = yes
+
+	trigger = {
+		has_character_modifier = true_christian_knight
+		OR = {
+			NOT = { religion_group = twelve }
+			is_heretic = yes 
+			trait = cynical
+			trait = lustful
+			trait = gluttonous
+			trait = greedy
+			trait = slothful
+			trait = envious
+			trait = wroth
+			trait = proud
+			trait = cruel
+			trait = craven
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "EVTOPTA39311"	#
+		remove_character_modifier =  true_christian_knight
+		prestige = -50
+	}
+}
+
+# County population converts to Islam
+province_event = {
+	id = 39500
+	desc = "EVTDESC39500"
+	picture = "GFX_evt_bishop"
+	border = "GFX_event_normal_frame_religion"
+	
+	trigger = {
+		NOT = { religion_group = rastullah_group }
+		owner = {
+			religion_group = rastullah_group
+			top_liege = { religion_group = rastullah_group } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.5
+			owner = { trait = zealous }
+		}
+		modifier = {
+			factor = 0.8
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 0.8
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 0.8
+			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 0.8
+			religion_authority = 0.9
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religion_authority = 0.5 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religion_authority = 0.3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { trait = cynical }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {
+				any_neighbor_province = {
+					has_owner = yes
+					religion = ROOT
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		owner = {
+			ROOT = {
+				religion = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA39500"
+		owner = {
+			piety = 10
+		}
+		
+		hidden_tooltip = {
+			owner = {
+				top_liege = {
+					if = {
+						limit = {
+							NOT = { character = PREV }
+						}
+						character_event = { id = 39501 days = 1 }
+					}
+					any_vassal = {
+						limit = {
+							NOT = { character = PREVPREV }
+							higher_tier_than = baron
+						}
+						character_event = { id = 39501 days = 1 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# News of the conversion spreads in realm
+character_event = {
+	id = 39501
+	desc = "EVTDESC39501"
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA39501"
+		trigger = {
+			NOT = { religion = FROM }
+		}
+	}
+	option = {
+		name = "EVTOPTA39500"
+		trigger = {
+			religion = FROM
+		}
+	}
+}
+
+##########################
+### Proselytize Events ###
+##########################
+
+# Preacher Arrives
+character_event = {
+	id = 39600
+	desc = EVTDESC39600
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39600 # Throw the preacher in jail
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 5
+				any_vassal = { controls_religion = yes }
+			}
+			
+			modifier = {
+				factor = 5
+				NOT = { year = 930 }
+				NOT = { culture_group = magyar }
+			}
+			modifier = {
+				factor = 5
+				culture_group = baltic # The most stubborn pagans
+			}
+			modifier = {
+				factor = 3
+				culture_group = east_slavic # Angry at Muslim Tatars, also like alcohol
+				FROM = {
+					religion_group = rastullah_group
+				}
+			}
+			modifier = {
+				factor = 5
+				culture_group = north_germanic # Vikings do like their alcohol
+				FROM = {
+					religion_group = rastullah_group
+				}
+			}
+			modifier = {
+				factor = 10
+				any_war = {
+					using_cb = religious
+					attacker = {
+						character = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_war = {
+					using_cb = pagan_holy_war
+					attacker = {
+						character = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_war = {
+					using_cb = viking_invasion
+					attacker = {
+						character = ROOT
+					}
+				}
+			}
+		}
+		FROM = {
+			imprison = ROOT
+			liege = {
+				set_character_flag = ai_failed_mission # AI flag - used in the code
+				opinion = {
+					modifier = opinion_imprisoned_missionary
+					who = ROOT
+				}
+				hidden_tooltip = {
+					reverse_opinion = {
+						modifier = opinion_sent_preacher
+						who = ROOT
+					}
+					character_event = { id = 39605 days = 1 }
+				}
+			}
+		}
+		custom_tooltip = { text = preacher_imprisoned }
+	}
+	#####################
+	###CHANGE THESE
+	####################
+	option = {
+		name = EVTOPTB39600
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 4
+				NOT = { year = 930 }
+				culture_group = north_germanic # Historical outcome
+				FROM = {
+					religion = catholic
+				}
+			}
+			modifier = {
+				factor = 3
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 3
+				culture_group = east_slavic # Historical outcome
+				FROM = {
+					religion = orthodox
+				}
+			}
+			modifier = {
+				factor = 4
+				any_war = {
+					using_cb = religious
+					defender = {
+						character = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				any_war = {
+					using_cb = crusade
+					defender = {
+						character = ROOT
+					}
+				}
+			}
+		}
+		FROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_allowed_missionary
+					who = ROOT
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = 39612 days = 1 }
+			}
+		}
+		custom_tooltip = { text = preacher_allowed }
+	}
+}
+
+# Convert?
+character_event = {
+	id = 39601
+	desc = EVTDESC39601
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39601
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				culture_group = east_slavic # Historical
+				FROM = {
+					religion = orthodox
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = cynical
+				NOT = { trait = zealous }
+				age = 12
+			}
+			random = {
+				chance = 60
+				add_trait = sympathy_pagans
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					trait = cynical
+					trait = zealous
+				}
+				age = 12
+			}
+			random = {
+				chance = 50
+				add_trait = sympathy_pagans
+			}
+		}		
+		
+		prestige = -500
+		religion = FROM
+		piety = 250
+		
+		any_courtier = {
+			limit = { is_close_relative = ROOT }
+			religion = FROM
+		}
+		any_spouse = {
+			limit = { is_consort = no }
+			religion = FROM
+		}
+		create_random_priest = {
+			random_traits = yes
+			dynasty = random
+			culture = ROOT
+			religion = FROM
+			female = no
+			age = 32
+			attributes = {
+				learning = 6
+			}
+		}
+		new_character = {
+			give_job_title = job_spiritual
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = 39614 days = 1 }
+			}
+		}
+		custom_tooltip = { text = preacher_convert }
+	}
+	option = {
+		name = EVTOPTB39601
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				culture_group = baltic # The most stubborn pagans
+			}
+			modifier = {
+				factor = 3
+				culture_group = east_slavic # Angry at Muslim Tatars, also like alcohol
+				FROM = {
+					religion_group = rastullah_group
+				}
+			}
+			modifier = {
+				factor = 5
+				culture_group = north_germanic # Vikings like their alcohol
+				FROM = {
+					religion_group = rastullah_group
+				}
+			}
+			modifier = {
+				factor = 5
+				any_vassal = { controls_religion = yes }
+			}
+			modifier = {
+				factor = 5
+				is_reformed_religion = yes
+			}
+		}
+		FROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_banished_missionary
+					who = ROOT
+				}
+				hidden_tooltip = {
+					reverse_opinion = {
+						modifier = opinion_sent_preacher
+						who = ROOT
+					}
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = 39613 days = 1 }
+			}
+		}
+		custom_tooltip = { text = preacher_banished }
+	}
+}
+
+# Courtier Converts
+character_event = {
+	id = 39602
+	desc = EVTDESC39602
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39602
+		FROMFROM = {
+			imprison = ROOT
+			hidden_tooltip = {
+				character_event = { id = 39615 days = 1 }
+			}
+			liege = {
+				opinion = {
+					modifier = opinion_imprisoned_missionary
+					who = ROOT
+				}
+				hidden_tooltip = {
+					reverse_opinion = {
+						modifier = opinion_sent_preacher
+						who = ROOT
+					}
+				}
+			}
+		}
+		custom_tooltip = { text = preacher_imprisoned }
+	}
+	option = {
+		name = EVTOPTB39602
+		custom_tooltip = { text = preacher_allowed }
+	}
+}
+
+# Preachers Squabbling
+character_event = {
+	id = 39603
+	desc = EVTDESC39603
+	picture = GFX_evt_child_sword
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39603
+		hidden_tooltip = {
+			FROMFROM = {
+				character_event = { id = 39616 days = 1 }
+			}
+		}
+		FROMFROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_banished_missionary
+					who = ROOT
+				}
+				hidden_tooltip = {
+					reverse_opinion = {
+						modifier = opinion_sent_preacher
+						who = ROOT
+					}
+				}
+			}
+		}
+		FROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_supported_preacher
+					who = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB39603
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = 39616 days = 1 }
+			}
+		}
+		FROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_banished_missionary
+					who = ROOT
+				}
+				hidden_tooltip = {
+					reverse_opinion = {
+						modifier = opinion_sent_preacher
+						who = ROOT
+					}
+				}
+			}
+		}
+		FROMFROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_supported_preacher
+					who = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC39603
+		FROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_did_not_support_preacher
+					who = ROOT
+				}
+			}
+		}
+		FROMFROM = {
+			liege = {
+				opinion = {
+					modifier = opinion_did_not_support_preacher
+					who = ROOT
+				}
+			}
+		}
+	}
+}
+
+# Liege informed of Chaplain's arrival
+letter_event = {
+	id = 39604
+	desc = EVTDESC39604
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39604
+		piety = 20
+	}
+}
+
+# Liege informed Chaplain imprisoned on arrival
+character_event = {
+	id = 39605
+	desc = EVTDESC39605
+	picture = GFX_evt_torture
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39605
+		opinion = {
+			modifier = opinion_imprisoned_missionary
+			who = FROM
+		}
+	}
+}
+
+# Liege informed of Chaplain's success
+letter_event = {
+	id = 39606
+	desc = EVTDESC39606
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39606
+		tooltip = {
+			FROMFROM = {
+				religion = FROM
+			}
+		}
+		FROM = { cancel_job_action = action_inquisition }
+		piety = 200
+	}
+}
+
+# Liege informed of Chaplain's failure
+letter_event = {
+	id = 39607
+	desc = EVTDESC39607
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39607
+		FROM = { cancel_job_action = action_inquisition }
+	}
+}
+
+# Liege informed Chaplain imprisoned after converting courtier
+character_event = {
+	id = 39608
+	desc = EVTDESC39608
+	picture = GFX_evt_torture
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39608
+	}
+}
+
+# Liege informed Chaplain banished after quarrel
+letter_event = {
+	id = 39609
+	desc = EVTDESC39609
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39609
+		FROM = { cancel_job_action = action_inquisition }
+	}
+}
+
+# Courtier converts (hidden)
+character_event = {
+	id = 39610
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				trait = cynical
+				NOT = { trait = zealous }
+				age = 12
+			}
+			random = {
+				chance = 60
+				add_trait = sympathy_pagans
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					trait = cynical 
+					trait = zealous 
+				}
+				age = 12
+			}
+			random = {
+				chance = 50
+				add_trait = sympathy_pagans
+			}
+		}
+		religion = FROM
+		liege = {
+			character_event = { id = 39602 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Chaplain fights with other Chaplain
+character_event = {
+	id = 39611
+	desc = EVTDESC39653
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA39653
+		hidden_tooltip = {
+			location = {
+				owner = {
+					character_event = { id = 39603 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+# Chaplain arrives (hidden)
+character_event = {
+	id = 39612
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		liege = {
+			letter_event = { id = 39604 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Liege informed of Chaplain's failure (hidden)
+character_event = {
+	id = 39613
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		liege = {
+			letter_event = { id = 39607 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Liege informed of Chaplain's success (hidden)
+character_event = {
+	id = 39614
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		liege = {
+			letter_event = { id = 39606 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Liege informed Chaplain imprisoned after converting courtier (hidden)
+character_event = {
+	id = 39615
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		liege = {
+			character_event = { id = 39608 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Liege informed Chaplain banished after quarrel (hidden)
+character_event = {
+	id = 39616
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		liege = {
+			letter_event = { id = 39609 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+
+# Vassal accepts religious conversion demand. 
+# Fired from 'on_vassal_accepts_religious_conversion'
+# FROMFROM is the demander. FROM is the vassal. ROOT is the character. Fires for the vassal and each of his courtiers and vassals.
+character_event = {
+	id = 39700
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = FROMFROM }
+		OR = {
+			AND = {
+				is_ruler = no
+				NOT = { trait = zealous }
+				religion = FROM # Will not change religion if already different from the vassal's
+			}
+			character = FROM
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				character = FROM
+			}
+			opinion = {
+				who = FROMFROM
+				modifier = opinion_demanded_conversion
+			}
+			if = {
+				limit = {
+					prisoner = yes
+					host = {
+						character = FROMFROM
+					}
+				}
+				imprison = no
+			}
+		}
+	}
+	
+	option = { # No sympathy for the old religion
+		ai_chance = {
+			factor = 100
+		}
+		religion = FROMFROM
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			character_event = { id = RoI.120 } # Assign Indian religion branch
+		}
+	}
+	
+	option = { # Sympathy for the old religion
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					trait = zealous
+					NOT = { age = 12 }
+				}
+			}
+			modifier = {
+				factor = 10
+				trait = cynical
+				age = 12
+			}
+		}
+		if = {
+			limit = {
+				religion_group = twelve
+			}
+			add_trait = sympathy_christendom
+		}
+		if = {
+			limit = {
+				religion_group = rastullah_group
+			}
+			add_trait = sympathy_islam
+		}
+		if = {
+			limit = {
+				religion_group = pagan_group
+			}
+			add_trait = sympathy_pagans
+		}
+		if = {
+			limit = {
+				religion_group = zoroastrian_group
+			}
+			add_trait = sympathy_zoroastrianism
+		}
+		if = {
+			limit = {
+				religion_group = jewish_group
+			}
+			add_trait = sympathy_judaism
+		}
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			add_trait = sympathy_indian
+		}
+		
+		religion = FROMFROM
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			character_event = { id = RoI.120 } # Assign Indian religion branch
+		}
+	}
+}
+
+# Catholic antipope immediately loses claim if he or liege is no longer catholic
+character_event = {
+	id = 39701
+
+	hide_window = yes
+
+	only_rulers = yes
+	
+	trigger = {
+		k_papal_state = {
+			any_claimant = {
+				OR = {
+					NOT = { religion = puniner }
+					any_liege = { NOT = { religion = puniner } }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		k_twelve = {
+			any_claimant = {
+				limit = {
+					OR ={
+						NOT = { religion = puniner }
+						any_liege = { NOT = { religion = puniner } }
+					}
+				}
+				remove_claim = k_twelve
 			}
 		}
 	}
