@@ -12,18 +12,21 @@ tree_definition = "trees.bmp"
 continent = "continent.txt"
 adjacencies = "adjacencies.csv"
 climate = "climate.txt"
-region = "region.txt"
+region = "island_region.txt"
+geographical_region = "geographical_region.txt"
 static = "static.txt"
 seasons = "seasons.txt"
+externals = {
+}
 
-sea_zones = { 1000 1000 }
 sea_zones = { 87 88 }
+sea_zones = { 1000 1000 }
 
-ocean_region = {	# farmlands
+ocean_region = {	# OCEAN
 	sea_zones = { 1 }
 }
 
-ocean_region = {	# OCEAN
+ocean_region = {	# farmlands
 	sea_zones = { 2 }
 }
 
@@ -32,8 +35,8 @@ tree = { 3 4 7 10 }
 
 major_rivers = 
 {
-	# farmlands
-	1000 
 	# OCEAN
 	
+	# farmlands
+	1000 
 }

@@ -12,7 +12,7 @@ b_feqabab = castle
 #b_feqabab_4 = castle
 
 # Misc
-culture = maraskani
+culture = maraskan
 religion = rur_gror
 terrain = farmlands
 #History

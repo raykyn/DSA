@@ -12,7 +12,7 @@ b_betrozag = castle
 #b_betrozag_4 = castle
 
 # Misc
-culture = maraskani
+culture = maraskan
 religion = rur_gror
 terrain = farmlands
 #History

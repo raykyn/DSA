@@ -12,7 +12,7 @@ b_obogyn = castle
 #b_obogyn_4 = castle
 
 # Misc
-culture = maraskani
+culture = maraskan
 religion = rur_gror
 terrain = farmlands
 #History
