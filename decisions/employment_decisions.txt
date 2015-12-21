@@ -13,11 +13,21 @@ decisions = {
 		effect = {
 			prestige = -10
 			scaled_wealth = -0.2
-			create_random_soldier = {
-				random_traits = yes
-				dynasty = random
-			}
-			new_character = {
+			random_list = {
+				50 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						female = no
+					}
+				}
+				50 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						female = yes
+					}	
+				}
 			}
 		}
 		revoke_allowed = {
@@ -37,11 +47,21 @@ decisions = {
 		}
 		effect = {
 			piety = -5
-			create_random_priest = {
-				random_traits = yes
-				dynasty = random
-			}
-			new_character = {
+			random_list = {
+				50 = {
+					create_random_priest = {
+						random_traits = yes
+						dynasty = random
+						female = no
+					}
+				}
+				50 = {
+					create_random_priest = {
+						random_traits = yes
+						dynasty = random
+						female = yes
+					}	
+				}
 			}
 		}
 		revoke_allowed = {
@@ -61,11 +81,21 @@ decisions = {
 		}
 		effect = {
 			scaled_wealth = -0.2
-			create_random_steward = {
-				random_traits = yes
-				dynasty = random
-			}
-			new_character = {
+			random_list = {
+				50 = {
+					create_random_steward = {
+						random_traits = yes
+						dynasty = random
+						female = no
+					}
+				}
+				50 = {
+					create_random_steward = {
+						random_traits = yes
+						dynasty = random
+						female = yes
+					}	
+				}
 			}
 		}
 		revoke_allowed = {
