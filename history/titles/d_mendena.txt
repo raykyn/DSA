@@ -3,6 +3,6 @@
 	law = agnatic_succession
 	law = succ_gavelkind
 }
-1060.1.1={ holder=1
+1060.1.1={ 
 	liege=k_tobrien
 }
