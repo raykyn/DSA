@@ -3,6 +3,6 @@
 	law = agnatic_succession
 	law = succ_gavelkind
 }
-1060.1.1={ 
-	liege=e_middlerealm
+1030.1.1={
+	holder=13
 }

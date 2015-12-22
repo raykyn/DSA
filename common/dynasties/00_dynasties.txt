@@ -1,0 +1,5 @@
+1 = {
+	name = "von Gareth"
+	culture = garethi
+	used_for_random = no
+}

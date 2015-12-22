@@ -1,6 +1,5 @@
 1 = {
 	name=William
-	dynasty=752
 	
 	religion=puniner
 	culture=garethi
@@ -23,7 +22,6 @@
 
 3 = {
 	name=Rohaja
-	dynasty=753
 	
 	religion=puniner
 	culture=garethi
