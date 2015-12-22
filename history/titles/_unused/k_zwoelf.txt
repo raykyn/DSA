@@ -1,6 +1,0 @@
-# e_middlerealm
-800.1.1={
-	law = succ_papal_succession
-}
-1060.1.1={ holder=2
-}

@@ -20,3 +20,16 @@
 	1027.01.15 = { birth=yes }
 	1087.09.09 = { death=yes}
 }
+
+3 = {
+	name=Rohaja
+	dynasty=753
+	
+	religion=puniner
+	culture=garethi
+	add_trait="depressed"#for testing decisions
+	female = yes
+	
+	1027.01.15 = { birth=yes }
+	1087.09.09 = { death=yes}
+}

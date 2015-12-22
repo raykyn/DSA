@@ -1,3 +1,5 @@
+#WIP
+
 decisions = {
 
 	hold_a_epic_tournament  = {
@@ -5,11 +7,6 @@ decisions = {
 		potential = {
 			NOT = {
 				has_character_flag = epic_tournament
-			}
-			OR = {
-				religion_group = christian
-				religion_group = jewish_group
-				religion_group = zoroastrian_group
 			}
 			independent = yes
 			NOT = { is_nomadic = yes }
