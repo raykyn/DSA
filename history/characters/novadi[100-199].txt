@@ -1,0 +1,27 @@
+100 = {
+	name = Malkillah
+	dynasty = 2
+
+	religion = rastullah
+	culture = beni_novad
+	
+	female = no
+	
+	985.01.15 = { birth=yes}
+	1085.09.09 = { death=yes}
+}
+
+101 = {
+	name = Tulameth
+	dynasty = 2
+
+	religion = rastullah
+	culture = beni_novad
+	
+	female = yes
+	father=100
+	
+	1015.01.15 = { birth=yes}
+	1027.01.01 = { add_spouse=13}
+	1115.09.09 = { death=yes}
+}

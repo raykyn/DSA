@@ -2,9 +2,9 @@ import sys
 import re
 import glob
 
-input = "\n\tholder=10\n"
-new = ""
-titleToChange = "k_almada"
+input = "1060"
+new = "1030"
+titleToChange = "e_caliphate"
 searchFor = "liege=" + titleToChange
 nextTier = []
 nextTier2 = []

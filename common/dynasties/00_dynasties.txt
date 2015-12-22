@@ -3,3 +3,9 @@
 	culture = garethi
 	used_for_random = no
 }
+
+2 = {
+	name = "Maugirid"
+	culture = beni_novad
+	used_for_random = no
+}

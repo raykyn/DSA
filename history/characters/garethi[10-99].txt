@@ -60,6 +60,7 @@
 	father = 11
 	
 	1011.01.15 = { birth=yes}
+	1027.01.01 = { add_spouse=101} #How to make it a betrothal?
 	1034.09.09 = { death=yes}
 }
 

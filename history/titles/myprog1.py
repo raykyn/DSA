@@ -2,9 +2,9 @@ import sys
 import re
 import glob
 
-input = "\n\tholder=13\n"
-titleToChange = "k_almada"
-dateToFind = "1030.1.1={"
+input = "\n\tholder=100\n"
+titleToChange = "e_caliphate"
+dateToFind = "1060.1.1={"
 searchFor = "liege=" + titleToChange
 nextTier = []
 nextTier2 = []
