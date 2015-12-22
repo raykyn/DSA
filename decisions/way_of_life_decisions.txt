@@ -1,3 +1,5 @@
+#Work done
+
 # Targetted decisions are possible vs _all_ other characters and shown are in the Diplomacy View, not the Intrigue View. The taker is in the FROM scope.
 #
 # filter = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] ('self' MUST be set for decisions targetting only the taker, the other filter types can be set to lessen CPU load)
@@ -135,8 +137,6 @@ targetted_decisions = {
 					if = {
 						limit = {
 							is_close_relative = ROOT
-							NOT = { religion = messalian }
-							NOT = { religion = zoroastrian }
 						}
 						character_event = { id = WoL.102 days = 1 } # Warning - Incest scandal risk
 						break = yes
@@ -672,7 +672,6 @@ targetted_decisions = {
 				
 				NOT = { has_character_modifier = party_timer }
 				OR = {
-					NOT = { religion_group = muslim }
 					trait = decadent
 					trait = hedonist
 					trait = drunkard
@@ -737,29 +736,15 @@ targetted_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					is_female = no
 					NOT = { trait = craven }
 					NOT = { trait = content }
 				}
-			}
-			OR = {
-				is_female = no
-				religion_group = pagan_group
-				is_nomadic = yes
-				religion = cathar
-				religion = buddhist
-				religion = bogomilist
-				religion = messalian
 			}
 		}
 		
 		potential = {
 			is_adult = yes
 			prisoner = no
-			OR = {
-				is_female = no
-				FROM = { is_female = yes }
-			}
 			NOT = { character = FROM }
 			is_ill = no
 			NOT = { trait = incapable }
@@ -780,7 +765,6 @@ targetted_decisions = {
 						}
 					}
 					AND = {
-						religion_group = muslim
 						trait = zealous
 						ROOT = {
 							trait = decadent
@@ -814,24 +798,7 @@ targetted_decisions = {
 			}
 			custom_tooltip = {
 				text = duel_tooltip_valid_target
-				hidden_tooltip = { ### Not female or challenger religion accepts female warriors
-					OR = {
-						is_female = no
-						FROM = { 
-							OR = {
-								is_nomadic = yes
-								religion_group = pagan_group
-								religion = cathar
-								religion = buddhist
-								religion = bogomilist
-								religion = messalian
-							}
-						}
-					} ### Not priest or challenger religion is pagan
-					OR = {
-						is_priest = no
-						FROM = { religion_group = pagan_group }
-					}
+				hidden_tooltip = { ### Not female or challenger religion accepts female warriors => Nicht für DSA zutreffend
 				}
 			}
 			custom_tooltip = {
@@ -921,11 +888,6 @@ targetted_decisions = {
 				}
 			}
 			FROM = {
-				if = {
-					limit = { religion = jain }
-					piety = -20
-					custom_tooltip = { text = jain_ahimsa_tooltip }
-				}
 				add_character_modifier = {
 					modifier = recent_duel_timer
 					duration = 365
