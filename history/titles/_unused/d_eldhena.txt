@@ -1,0 +1,10 @@
+# e_middl
+	holder=100
+erealm
+800.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1030.1.1={ 
+	liege=k_thalusia
+}

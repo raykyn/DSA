@@ -1,12 +1,14 @@
 #HORASIA
 technology = {
 	titles = {
-		d_yaquiria
 		d_arivor
 		d_goldrocks
 		d_grangor
+		d_khomwacht
 		d_methumis
+		d_neetha
 		d_yaquirbreak
+		d_yaquiria
 	}
 	769 = {
 		military = 2.0

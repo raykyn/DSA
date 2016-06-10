@@ -2,6 +2,7 @@
 technology = {
 	titles = {
 		d_raschtulswall
+		d_khoram_mountains
 	}
 	769 = {
 		military = 2.0

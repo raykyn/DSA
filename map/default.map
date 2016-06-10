@@ -14,10 +14,8 @@ adjacencies = "adjacencies.csv"
 climate = "climate.txt"
 region = "island_region.txt"
 geographical_region = "geographical_region.txt"
-static = "static.txt"
+static = "00_static.txt"
 seasons = "seasons.txt"
-externals = {
-}
 
 sea_zones = { 87 88 }
 sea_zones = { 1000 1000 }

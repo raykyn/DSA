@@ -1,0 +1,10 @@
+# e_middlerealm
+800.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1030.1.1={
+	holder=10
+ 
+	liege=k_arania
+}
