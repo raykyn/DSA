@@ -1,9 +1,8 @@
-# e_middl
-
-800.1.1={
+# e_caliphate
+500.1.1={
 	law = agnatic_succession
 	law = succ_gavelkind
 }
-1030.1.1={ 
+800.1.1={
 	liege=d_thalusia
 }

@@ -1,0 +1,18 @@
+# c_falkenstein
+
+# County Title
+title = c_falkenstein
+
+# Settlements
+max_settlements = 4
+
+b_falkenstein = castle
+#b_falkenstein_2 = city
+#b_falkenstein_3 = temple
+#b_falkenstein_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

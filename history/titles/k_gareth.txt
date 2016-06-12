@@ -6,3 +6,6 @@
 800.1.1={
 	liege=e_middlerealm
 }
+1020.1.1 = {
+	holder = 1
+}

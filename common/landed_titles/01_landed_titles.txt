@@ -2040,6 +2040,19 @@ e_middlerealm = {
 				b_eslamsgrund_4 = {
 				}
 			}
+			c_falkenstein = { # 10
+				color={ 104 199 140 }
+				color2={ 255 255 255 }
+				
+				b_falkenstein = {
+				}
+				b_falkenstein_2 = {
+				}
+				b_falkenstein_3 = {
+				}
+				b_falkenstein_4 = {
+				}
+			}
 			c_gallstein = { # 13
 				color={ 104 204 72 }
 				color2={ 255 255 255 }
@@ -2077,19 +2090,6 @@ e_middlerealm = {
 				b_hoellenwall_3 = {
 				}
 				b_hoellenwall_4 = {
-				}
-			}
-			c_schlundgau = { # 10
-				color={ 104 199 140 }
-				color2={ 255 255 255 }
-				
-				b_schlundgau = {
-				}
-				b_schlundgau_2 = {
-				}
-				b_schlundgau_3 = {
-				}
-				b_schlundgau_4 = {
 				}
 			}
 		}

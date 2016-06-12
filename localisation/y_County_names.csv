@@ -299,6 +299,8 @@ c_falado;Falado;Falado;Falado;;Falado;;;;;;;;;x
 c_falado_adj;Faladian;;falader;;;;;;;;;;;x
 c_falkenberg;Falkenberg;Falkenberg;Falkenberg;;Falkenberg;;;;;;;;;x
 c_falkenberg_adj;Falkenbergian;;falkenberger;;;;;;;;;;;x
+c_falkenstein;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
+c_falkenstein_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
 c_farsh_uruch;Farsh Uruch;Farsh Uruch;Farsh Uruch;;Farsh Uruch;;;;;;;;;x
 c_farsh_uruch_adj;Farsh Uruchian;;Farsh Urucher;;;;;;;;;;;x
 c_farukand;Farukand;Farukand;Farukand;;Farukand;;;;;;;;;x
@@ -849,8 +851,6 @@ c_schattengrund;Schattengrund;Schattengrund;Schattengrund;;Schattengrund;;;;;;;;
 c_schattengrund_adj;Schattengrundian;;schattengrunder;;;;;;;;;;;x
 c_schelak;Schelak;Schelak;Schelak;;Schelak;;;;;;;;;x
 c_schelak_adj;Schelakian;;schelaker;;;;;;;;;;;x
-c_schlundgau;Schlundgau;Schlundgau;Schlundgau;;Schlundgau;;;;;;;;;x
-c_schlundgau_adj;Schlundgian;;schlundger;;;;;;;;;;;x
 c_schnakensee;Schnakensee;Schnakensee;Schnakensee;;Schnakensee;;;;;;;;;x
 c_schnakensee_adj;Schnakenseean;;schnakenser;;;;;;;;;;;x
 c_schnattermoor;Schnattermoor;Schnattermoor;Schnattermoor;;Schnattermoor;;;;;;;;;x

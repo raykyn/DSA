@@ -1,9 +1,0 @@
-# e_example
-800.1.1={
-	law = agnatic_succession
-	law = succ_gavelkind
-}
-1060.1.1={
-	holder=3
-	liege=k_example
-}

@@ -1179,6 +1179,14 @@ b_falkenberg_3;Falkenberg;Falkenberg;Falkenberg;;Falkenberg;;;;;;;;;x
 b_falkenberg_3_adj;Falkenbergian;;falkenberger;;;;;;;;;;;x
 b_falkenberg_4;Falkenberg;Falkenberg;Falkenberg;;Falkenberg;;;;;;;;;x
 b_falkenberg_4_adj;Falkenbergian;;falkenberger;;;;;;;;;;;x
+b_falkenstein;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
+b_falkenstein_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
+b_falkenstein_2;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
+b_falkenstein_2_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
+b_falkenstein_3;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
+b_falkenstein_3_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
+b_falkenstein_4;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
+b_falkenstein_4_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
 b_farsh_uruch;Farsh Uruch;Farsh Uruch;Farsh Uruch;;Farsh Uruch;;;;;;;;;x
 b_farsh_uruch_adj;Farsh Uruchian;;Farsh Urucher;;;;;;;;;;;x
 b_farsh_uruch_2;Farsh Uruch;Farsh Uruch;Farsh Uruch;;Farsh Uruch;;;;;;;;;x
@@ -3361,14 +3369,6 @@ b_schelak_3;Schelak;Schelak;Schelak;;Schelak;;;;;;;;;x
 b_schelak_3_adj;Schelakian;;schelaker;;;;;;;;;;;x
 b_schelak_4;Schelak;Schelak;Schelak;;Schelak;;;;;;;;;x
 b_schelak_4_adj;Schelakian;;schelaker;;;;;;;;;;;x
-b_schlundgau;Schlundgau;Schlundgau;Schlundgau;;Schlundgau;;;;;;;;;x
-b_schlundgau_adj;Schlundgian;;schlundger;;;;;;;;;;;x
-b_schlundgau_2;Schlundgau;Schlundgau;Schlundgau;;Schlundgau;;;;;;;;;x
-b_schlundgau_2_adj;Schlundgian;;schlundger;;;;;;;;;;;x
-b_schlundgau_3;Schlundgau;Schlundgau;Schlundgau;;Schlundgau;;;;;;;;;x
-b_schlundgau_3_adj;Schlundgian;;schlundger;;;;;;;;;;;x
-b_schlundgau_4;Schlundgau;Schlundgau;Schlundgau;;Schlundgau;;;;;;;;;x
-b_schlundgau_4_adj;Schlundgian;;schlundger;;;;;;;;;;;x
 b_schnakensee;Schnakensee;Schnakensee;Schnakensee;;Schnakensee;;;;;;;;;x
 b_schnakensee_adj;Schnakenseean;;schnakenser;;;;;;;;;;;x
 b_schnakensee_2;Schnakensee;Schnakensee;Schnakensee;;Schnakensee;;;;;;;;;x

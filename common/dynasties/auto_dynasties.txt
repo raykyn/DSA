@@ -1,0 +1,60 @@
+1 = {
+	name = "von Gareth"
+	culture = garethi
+	used_for_random = no
+}
+
+2 = {
+	name = "von Luring"
+	culture = garethi
+	used_for_random = no
+}
+
+3 = {
+	name = "von Hirschfurten"
+	culture = garethi
+	used_for_random = no
+}
+
+4 = {
+	name = "von Zankenblatt"
+	culture = garethi
+	used_for_random = no
+}
+
+5 = {
+	name = "von Waldfang"
+	culture = garethi
+	used_for_random = no
+}
+
+6 = {
+	name = "von Ehrenstein"
+	culture = garethi
+	used_for_random = no
+}
+
+7 = {
+	name = "von Eslamsgrund"
+	culture = garethi
+	used_for_random = no
+}
+
+8 = {
+	name = "Limpurg"
+	culture = garethi
+	used_for_random = no
+}
+
+9 = {
+	name = "von Helburg"
+	culture = garethi
+	used_for_random = no
+}
+
+10 = {
+	name = "von Falkenstein"
+	culture = garethi
+	used_for_random = no
+}
+
