@@ -1,3 +1,4 @@
+﻿
 #mage für Magier-Charaktere
 
 10 = {
@@ -14,7 +15,7 @@
 	add_trait = twin
 	
 	1008.01.15 = { birth=yes}
-	1108.09.09 = { death=yes}
+	1058.09.09 = { death=yes}
 }
 
 11 = {
@@ -46,7 +47,7 @@
 	#mage
 	
 	1008.01.15 = { birth=yes}
-	1108.09.09 = { death=yes}
+	1058.09.09 = { death=yes}
 }
 
 13 = {
@@ -60,7 +61,6 @@
 	father = 11
 	
 	1011.01.15 = { birth=yes}
-	1027.01.01 = { add_spouse=101} #How to make it a betrothal?
 	1034.09.09 = { death=yes}
 }
 
@@ -72,7 +72,6 @@
 	culture=garethi
 
 	female = no
-	father = 11
 	
 	965.01.15 = { birth=yes}
 	1028.09.09 = { death=yes}

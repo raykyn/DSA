@@ -8,7 +8,7 @@
 	female = no
 	
 	985.01.15 = { birth=yes}
-	1085.09.09 = { death=yes}
+	1035.09.09 = { death=yes}
 }
 
 101 = {
@@ -22,6 +22,5 @@
 	father=100
 	
 	1015.01.15 = { birth=yes}
-	1027.01.01 = { add_spouse=13}
-	1115.09.09 = { death=yes}
+	1065.09.09 = { death=yes}
 }

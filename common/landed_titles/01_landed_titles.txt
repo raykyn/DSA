@@ -6,14 +6,14 @@ e_caliphate = {
 	color={ 195 215 21 }
 	color2={ 255 255 20 }
 	
-	capital = 410 # c_unau
+	capital = 408 # c_unau
 	culture = beni_novad
 	
 	k_elem = {
 		color={ 205 205 26 }
 		color2={ 255 255 255 }
 		
-		capital = 410 # c_unau
+		capital = 408 # c_unau
 		culture = beni_novad
 		
 		d_shadif = {
@@ -23,12 +23,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 410 province_id = 411 province_id = 412 province_id = 413 province_id = 414 } }
+					any_demesne_province = { OR = { province_id = 408 province_id = 409 province_id = 410 province_id = 411 province_id = 412 } }
 				}
 			}
-			capital = 410 # c_unau
+			capital = 408 # c_unau
 			
-			c_unau = { # 410
+			c_unau = { # 408
 				color={ 235 175 41 }
 				color2={ 255 255 255 }
 				
@@ -41,7 +41,7 @@ e_caliphate = {
 				b_unau_4 = {
 				}
 			}
-			c_chanebia = { # 412
+			c_chanebia = { # 410
 				color={ 235 111 235 }
 				color2={ 255 255 255 }
 				
@@ -54,7 +54,7 @@ e_caliphate = {
 				b_chanebia_4 = {
 				}
 			}
-			c_divan_bastrabun = { # 414
+			c_divan_bastrabun = { # 412
 				color={ 235 224 92 }
 				color2={ 255 255 255 }
 				
@@ -67,7 +67,7 @@ e_caliphate = {
 				b_divan_bastrabun_4 = {
 				}
 			}
-			c_kannemuende = { # 413
+			c_kannemuende = { # 411
 				color={ 235 39 31 }
 				color2={ 255 255 255 }
 				
@@ -80,7 +80,7 @@ e_caliphate = {
 				b_kannemuende_4 = {
 				}
 			}
-			c_manekh_chanebi = { # 411
+			c_manekh_chanebi = { # 409
 				color={ 235 192 142 }
 				color2={ 255 255 255 }
 				
@@ -101,12 +101,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 420 province_id = 421 province_id = 422 province_id = 423 province_id = 424 province_id = 425 province_id = 426 province_id = 427 province_id = 428 } }
+					any_demesne_province = { OR = { province_id = 418 province_id = 419 province_id = 420 province_id = 421 province_id = 422 province_id = 423 province_id = 424 province_id = 425 province_id = 426 } }
 				}
 			}
-			capital = 420 # c_elarrat
+			capital = 418 # c_elarrat
 			
-			c_elarrat = { # 420
+			c_elarrat = { # 418
 				color={ 144 63 208 }
 				color2={ 255 255 255 }
 				
@@ -119,7 +119,7 @@ e_caliphate = {
 				b_elarrat_4 = {
 				}
 			}
-			c_chababihills = { # 426
+			c_chababihills = { # 424
 				color={ 144 75 55 }
 				color2={ 255 255 255 }
 				
@@ -132,7 +132,7 @@ e_caliphate = {
 				b_chababihills_4 = {
 				}
 			}
-			c_chumbiri = { # 425
+			c_chumbiri = { # 423
 				color={ 144 99 155 }
 				color2={ 255 255 255 }
 				
@@ -145,7 +145,7 @@ e_caliphate = {
 				b_chumbiri_4 = {
 				}
 			}
-			c_osdask = { # 427
+			c_osdask = { # 425
 				color={ 144 61 47 }
 				color2={ 255 255 255 }
 				
@@ -158,7 +158,7 @@ e_caliphate = {
 				b_osdask_4 = {
 				}
 			}
-			c_port_corrad = { # 428
+			c_port_corrad = { # 426
 				color={ 144 163 197 }
 				color2={ 255 255 255 }
 				
@@ -171,7 +171,7 @@ e_caliphate = {
 				b_port_corrad_4 = {
 				}
 			}
-			c_south_arratistan = { # 421
+			c_south_arratistan = { # 419
 				color={ 144 206 116 }
 				color2={ 255 255 255 }
 				
@@ -184,7 +184,7 @@ e_caliphate = {
 				b_south_arratistan_4 = {
 				}
 			}
-			c_vishia = { # 423
+			c_vishia = { # 421
 				color={ 144 87 247 }
 				color2={ 255 255 255 }
 				
@@ -197,7 +197,7 @@ e_caliphate = {
 				b_vishia_4 = {
 				}
 			}
-			c_wagrashaquell = { # 424
+			c_wagrashaquell = { # 422
 				color={ 144 130 195 }
 				color2={ 255 255 255 }
 				
@@ -210,7 +210,7 @@ e_caliphate = {
 				b_wagrashaquell_4 = {
 				}
 			}
-			c_west_eterns = { # 422
+			c_west_eterns = { # 420
 				color={ 144 130 61 }
 				color2={ 255 255 255 }
 				
@@ -231,12 +231,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 415 province_id = 416 province_id = 417 province_id = 418 province_id = 419 } }
+					any_demesne_province = { OR = { province_id = 413 province_id = 414 province_id = 415 province_id = 416 province_id = 417 } }
 				}
 			}
-			capital = 415 # c_selem
+			capital = 413 # c_selem
 			
-			c_selem = { # 415
+			c_selem = { # 413
 				color={ 126 234 44 }
 				color2={ 255 255 255 }
 				
@@ -249,7 +249,7 @@ e_caliphate = {
 				b_selem_4 = {
 				}
 			}
-			c_machsiz = { # 417
+			c_machsiz = { # 415
 				color={ 126 145 68 }
 				color2={ 255 255 255 }
 				
@@ -262,7 +262,7 @@ e_caliphate = {
 				b_machsiz_4 = {
 				}
 			}
-			c_malkillabad = { # 418
+			c_malkillabad = { # 416
 				color={ 126 47 190 }
 				color2={ 255 255 255 }
 				
@@ -275,7 +275,7 @@ e_caliphate = {
 				b_malkillabad_4 = {
 				}
 			}
-			c_nagwa = { # 416
+			c_nagwa = { # 414
 				color={ 126 203 213 }
 				color2={ 255 255 255 }
 				
@@ -288,7 +288,7 @@ e_caliphate = {
 				b_nagwa_4 = {
 				}
 			}
-			c_szintoquell = { # 419
+			c_szintoquell = { # 417
 				color={ 126 204 94 }
 				color2={ 255 255 255 }
 				
@@ -307,7 +307,7 @@ e_caliphate = {
 		color={ 179 254 87 }
 		color2={ 255 255 255 }
 		
-		capital = 462 # c_keft
+		capital = 460 # c_keft
 		culture = beni_novad
 		
 		d_novad = {
@@ -317,12 +317,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 462 province_id = 463 province_id = 464 } }
+					any_demesne_province = { OR = { province_id = 460 province_id = 461 province_id = 462 } }
 				}
 			}
-			capital = 462 # c_keft
+			capital = 460 # c_keft
 			
-			c_keft = { # 462
+			c_keft = { # 460
 				color={ 149 28 72 }
 				color2={ 255 255 255 }
 				
@@ -335,7 +335,7 @@ e_caliphate = {
 				b_keft_4 = {
 				}
 			}
-			c_hayabeth = { # 464
+			c_hayabeth = { # 462
 				color={ 149 112 36 }
 				color2={ 255 255 255 }
 				
@@ -348,7 +348,7 @@ e_caliphate = {
 				b_hayabeth_4 = {
 				}
 			}
-			c_tarfui = { # 463
+			c_tarfui = { # 461
 				color={ 149 57 44 }
 				color2={ 255 255 255 }
 				
@@ -369,12 +369,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 477 province_id = 478 province_id = 479 province_id = 480 province_id = 481 } }
+					any_demesne_province = { OR = { province_id = 475 province_id = 476 province_id = 477 province_id = 478 province_id = 479 } }
 				}
 			}
-			capital = 477 # c_ukuban
+			capital = 475 # c_ukuban
 			
-			c_ukuban = { # 477
+			c_ukuban = { # 475
 				color={ 68 57 132 }
 				color2={ 255 255 255 }
 				
@@ -387,7 +387,7 @@ e_caliphate = {
 				b_ukuban_4 = {
 				}
 			}
-			c_amhallah = { # 478
+			c_amhallah = { # 476
 				color={ 68 151 128 }
 				color2={ 255 255 255 }
 				
@@ -400,7 +400,7 @@ e_caliphate = {
 				b_amhallah_4 = {
 				}
 			}
-			c_amhallassih_summits = { # 480
+			c_amhallassih_summits = { # 478
 				color={ 68 230 107 }
 				color2={ 255 255 255 }
 				
@@ -413,7 +413,7 @@ e_caliphate = {
 				b_amhallassih_summits_4 = {
 				}
 			}
-			c_eslamabad = { # 481
+			c_eslamabad = { # 479
 				color={ 68 230 222 }
 				color2={ 255 255 255 }
 				
@@ -426,7 +426,7 @@ e_caliphate = {
 				b_eslamabad_4 = {
 				}
 			}
-			c_omlad = { # 479
+			c_omlad = { # 477
 				color={ 68 89 231 }
 				color2={ 255 255 255 }
 				
@@ -447,12 +447,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 469 province_id = 470 province_id = 471 } }
+					any_demesne_province = { OR = { province_id = 467 province_id = 468 province_id = 469 } }
 				}
 			}
-			capital = 469 # c_elankhra
+			capital = 467 # c_elankhra
 			
-			c_elankhra = { # 469
+			c_elankhra = { # 467
 				color={ 148 65 76 }
 				color2={ 255 255 255 }
 				
@@ -465,7 +465,7 @@ e_caliphate = {
 				b_elankhra_4 = {
 				}
 			}
-			c_alam_therekh = { # 471
+			c_alam_therekh = { # 469
 				color={ 148 107 63 }
 				color2={ 255 255 255 }
 				
@@ -478,7 +478,7 @@ e_caliphate = {
 				b_alam_therekh_4 = {
 				}
 			}
-			c_virinlassih = { # 470
+			c_virinlassih = { # 468
 				color={ 148 44 87 }
 				color2={ 255 255 255 }
 				
@@ -499,12 +499,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 467 province_id = 468 } }
+					any_demesne_province = { OR = { province_id = 465 province_id = 466 } }
 				}
 			}
-			capital = 467 # c_yiyimris
+			capital = 465 # c_yiyimris
 			
-			c_yiyimris = { # 467
+			c_yiyimris = { # 465
 				color={ 169 143 220 }
 				color2={ 255 255 255 }
 				
@@ -517,7 +517,7 @@ e_caliphate = {
 				b_yiyimris_4 = {
 				}
 			}
-			c_kireh = { # 468
+			c_kireh = { # 466
 				color={ 169 186 198 }
 				color2={ 255 255 255 }
 				
@@ -538,12 +538,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 465 province_id = 466 } }
+					any_demesne_province = { OR = { province_id = 463 province_id = 464 } }
 				}
 			}
-			capital = 465 # c_alrifat
+			capital = 463 # c_alrifat
 			
-			c_alrifat = { # 465
+			c_alrifat = { # 463
 				color={ 113 155 50 }
 				color2={ 255 255 255 }
 				
@@ -556,7 +556,7 @@ e_caliphate = {
 				b_alrifat_4 = {
 				}
 			}
-			c_elkarram = { # 466
+			c_elkarram = { # 464
 				color={ 113 205 103 }
 				color2={ 255 255 255 }
 				
@@ -577,12 +577,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 474 province_id = 475 province_id = 476 } }
+					any_demesne_province = { OR = { province_id = 472 province_id = 473 province_id = 474 } }
 				}
 			}
-			capital = 474 # c_shebah
+			capital = 472 # c_shebah
 			
-			c_shebah = { # 474
+			c_shebah = { # 472
 				color={ 169 82 41 }
 				color2={ 255 255 255 }
 				
@@ -595,7 +595,7 @@ e_caliphate = {
 				b_shebah_4 = {
 				}
 			}
-			c_birscha = { # 476
+			c_birscha = { # 474
 				color={ 169 129 40 }
 				color2={ 255 255 255 }
 				
@@ -608,7 +608,7 @@ e_caliphate = {
 				b_birscha_4 = {
 				}
 			}
-			c_manesh = { # 475
+			c_manesh = { # 473
 				color={ 169 154 53 }
 				color2={ 255 255 255 }
 				
@@ -629,12 +629,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 472 province_id = 473 } }
+					any_demesne_province = { OR = { province_id = 470 province_id = 471 } }
 				}
 			}
-			capital = 472 # c_therekh
+			capital = 470 # c_therekh
 			
-			c_therekh = { # 472
+			c_therekh = { # 470
 				color={ 212 65 193 }
 				color2={ 255 255 255 }
 				
@@ -647,7 +647,7 @@ e_caliphate = {
 				b_therekh_4 = {
 				}
 			}
-			c_achan = { # 473
+			c_achan = { # 471
 				color={ 212 122 221 }
 				color2={ 255 255 255 }
 				
@@ -666,7 +666,7 @@ e_caliphate = {
 		color={ 136 201 40 }
 		color2={ 255 255 255 }
 		
-		capital = 441 # c_mherwed
+		capital = 439 # c_mherwed
 		culture = mhanadistani
 		
 		d_balash = {
@@ -676,12 +676,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 441 province_id = 442 province_id = 443 province_id = 444 } }
+					any_demesne_province = { OR = { province_id = 439 province_id = 440 province_id = 441 province_id = 442 } }
 				}
 			}
-			capital = 441 # c_mherwed
+			capital = 439 # c_mherwed
 			
-			c_mherwed = { # 441
+			c_mherwed = { # 439
 				color={ 106 231 25 }
 				color2={ 255 255 255 }
 				
@@ -694,7 +694,7 @@ e_caliphate = {
 				b_mherwed_4 = {
 				}
 			}
-			c_ashub = { # 442
+			c_ashub = { # 440
 				color={ 106 27 211 }
 				color2={ 255 255 255 }
 				
@@ -707,7 +707,7 @@ e_caliphate = {
 				b_ashub_4 = {
 				}
 			}
-			c_madrashistan = { # 444
+			c_madrashistan = { # 442
 				color={ 106 29 65 }
 				color2={ 255 255 255 }
 				
@@ -720,7 +720,7 @@ e_caliphate = {
 				b_madrashistan_4 = {
 				}
 			}
-			c_tamuristan = { # 443
+			c_tamuristan = { # 441
 				color={ 106 121 119 }
 				color2={ 255 255 255 }
 				
@@ -741,12 +741,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 448 province_id = 449 } }
+					any_demesne_province = { OR = { province_id = 446 province_id = 447 } }
 				}
 			}
-			capital = 448 # c_erkinstein
+			capital = 446 # c_erkinstein
 			
-			c_erkinstein = { # 448
+			c_erkinstein = { # 446
 				color={ 64 204 215 }
 				color2={ 255 255 255 }
 				
@@ -759,7 +759,7 @@ e_caliphate = {
 				b_erkinstein_4 = {
 				}
 			}
-			c_erkin = { # 449
+			c_erkin = { # 447
 				color={ 64 145 50 }
 				color2={ 255 255 255 }
 				
@@ -780,12 +780,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 450 province_id = 451 province_id = 452 province_id = 453 } }
+					any_demesne_province = { OR = { province_id = 448 province_id = 449 province_id = 450 province_id = 451 } }
 				}
 			}
-			capital = 450 # c_malyai
+			capital = 448 # c_malyai
 			
-			c_malyai = { # 450
+			c_malyai = { # 448
 				color={ 122 133 198 }
 				color2={ 255 255 255 }
 				
@@ -798,7 +798,7 @@ e_caliphate = {
 				b_malyai_4 = {
 				}
 			}
-			c_fasar = { # 451
+			c_fasar = { # 449
 				color={ 122 50 152 }
 				color2={ 255 255 255 }
 				
@@ -811,7 +811,7 @@ e_caliphate = {
 				b_fasar_4 = {
 				}
 			}
-			c_habinistan = { # 453
+			c_habinistan = { # 451
 				color={ 122 154 52 }
 				color2={ 255 255 255 }
 				
@@ -824,7 +824,7 @@ e_caliphate = {
 				b_habinistan_4 = {
 				}
 			}
-			c_rasiastan = { # 452
+			c_rasiastan = { # 450
 				color={ 122 111 50 }
 				color2={ 255 255 255 }
 				
@@ -845,12 +845,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 454 province_id = 455 province_id = 456 province_id = 457 province_id = 458 province_id = 459 province_id = 460 province_id = 461 } }
+					any_demesne_province = { OR = { province_id = 452 province_id = 453 province_id = 454 province_id = 455 province_id = 456 province_id = 457 province_id = 458 province_id = 459 } }
 				}
 			}
-			capital = 454 # c_mochistan
+			capital = 452 # c_mochistan
 			
-			c_mochistan = { # 454
+			c_mochistan = { # 452
 				color={ 158 33 38 }
 				color2={ 255 255 255 }
 				
@@ -863,7 +863,7 @@ e_caliphate = {
 				b_mochistan_4 = {
 				}
 			}
-			c_baghtiaristan = { # 460
+			c_baghtiaristan = { # 458
 				color={ 158 91 139 }
 				color2={ 255 255 255 }
 				
@@ -876,7 +876,7 @@ e_caliphate = {
 				b_baghtiaristan_4 = {
 				}
 			}
-			c_hineshipur = { # 456
+			c_hineshipur = { # 454
 				color={ 158 198 246 }
 				color2={ 255 255 255 }
 				
@@ -889,7 +889,7 @@ e_caliphate = {
 				b_hineshipur_4 = {
 				}
 			}
-			c_mahanadibeuge = { # 461
+			c_mahanadibeuge = { # 459
 				color={ 158 203 42 }
 				color2={ 255 255 255 }
 				
@@ -902,7 +902,7 @@ e_caliphate = {
 				b_mahanadibeuge_4 = {
 				}
 			}
-			c_mhakhoramistan = { # 457
+			c_mhakhoramistan = { # 455
 				color={ 158 217 53 }
 				color2={ 255 255 255 }
 				
@@ -915,7 +915,7 @@ e_caliphate = {
 				b_mhakhoramistan_4 = {
 				}
 			}
-			c_mhanessipur = { # 455
+			c_mhanessipur = { # 453
 				color={ 158 216 206 }
 				color2={ 255 255 255 }
 				
@@ -928,7 +928,7 @@ e_caliphate = {
 				b_mhanessipur_4 = {
 				}
 			}
-			c_selicumia = { # 458
+			c_selicumia = { # 456
 				color={ 158 28 207 }
 				color2={ 255 255 255 }
 				
@@ -941,7 +941,7 @@ e_caliphate = {
 				b_selicumia_4 = {
 				}
 			}
-			c_therfasistan = { # 459
+			c_therfasistan = { # 457
 				color={ 158 199 188 }
 				color2={ 255 255 255 }
 				
@@ -962,12 +962,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 445 province_id = 446 province_id = 447 } }
+					any_demesne_province = { OR = { province_id = 443 province_id = 444 province_id = 445 } }
 				}
 			}
-			capital = 445 # c_rashdul
+			capital = 443 # c_rashdul
 			
-			c_rashdul = { # 445
+			c_rashdul = { # 443
 				color={ 208 28 222 }
 				color2={ 255 255 255 }
 				
@@ -980,7 +980,7 @@ e_caliphate = {
 				b_rashdul_4 = {
 				}
 			}
-			c_ahabad = { # 446
+			c_ahabad = { # 444
 				color={ 208 225 39 }
 				color2={ 255 255 255 }
 				
@@ -993,7 +993,7 @@ e_caliphate = {
 				b_ahabad_4 = {
 				}
 			}
-			c_gorian_steppe = { # 447
+			c_gorian_steppe = { # 445
 				color={ 208 196 211 }
 				color2={ 255 255 255 }
 				
@@ -1012,7 +1012,7 @@ e_caliphate = {
 		color={ 204 250 39 }
 		color2={ 255 255 255 }
 		
-		capital = 429 # c_thalusa
+		capital = 427 # c_thalusa
 		culture = thalusian
 		
 		d_thalusia = {
@@ -1022,12 +1022,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 429 province_id = 430 province_id = 431 province_id = 432 } }
+					any_demesne_province = { OR = { province_id = 427 province_id = 428 province_id = 429 province_id = 430 } }
 				}
 			}
-			capital = 429 # c_thalusa
+			capital = 427 # c_thalusa
 			
-			c_thalusa = { # 429
+			c_thalusa = { # 427
 				color={ 234 220 54 }
 				color2={ 255 255 255 }
 				
@@ -1040,7 +1040,7 @@ e_caliphate = {
 				b_thalusa_4 = {
 				}
 			}
-			c_east_thalus_massif = { # 432
+			c_east_thalus_massif = { # 430
 				color={ 234 36 40 }
 				color2={ 255 255 255 }
 				
@@ -1053,7 +1053,7 @@ e_caliphate = {
 				b_east_thalus_massif_4 = {
 				}
 			}
-			c_ronishagen = { # 430
+			c_ronishagen = { # 428
 				color={ 234 41 181 }
 				color2={ 255 255 255 }
 				
@@ -1066,7 +1066,7 @@ e_caliphate = {
 				b_ronishagen_4 = {
 				}
 			}
-			c_thalusim = { # 431
+			c_thalusim = { # 429
 				color={ 234 172 214 }
 				color2={ 255 255 255 }
 				
@@ -1087,12 +1087,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 433 province_id = 434 province_id = 435 } }
+					any_demesne_province = { OR = { province_id = 431 province_id = 432 province_id = 433 } }
 				}
 			}
-			capital = 433 # c_coast_of_tears
+			capital = 431 # c_coast_of_tears
 			
-			c_coast_of_tears = { # 433
+			c_coast_of_tears = { # 431
 				color={ 151 142 136 }
 				color2={ 255 255 255 }
 				
@@ -1105,7 +1105,7 @@ e_caliphate = {
 				b_coast_of_tears_4 = {
 				}
 			}
-			c_eldhena = { # 434
+			c_eldhena = { # 432
 				color={ 151 215 72 }
 				color2={ 255 255 255 }
 				
@@ -1118,7 +1118,7 @@ e_caliphate = {
 				b_eldhena_4 = {
 				}
 			}
-			c_west_thalus_massif = { # 435
+			c_west_thalus_massif = { # 433
 				color={ 151 208 216 }
 				color2={ 255 255 255 }
 				
@@ -1139,12 +1139,12 @@ e_caliphate = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 436 province_id = 437 province_id = 438 province_id = 439 province_id = 440 } }
+					any_demesne_province = { OR = { province_id = 434 province_id = 435 province_id = 436 province_id = 437 province_id = 438 } }
 				}
 			}
-			capital = 436 # c_delta_of_awalakim
+			capital = 434 # c_delta_of_awalakim
 			
-			c_delta_of_awalakim = { # 436
+			c_delta_of_awalakim = { # 434
 				color={ 90 37 144 }
 				color2={ 255 255 255 }
 				
@@ -1157,7 +1157,7 @@ e_caliphate = {
 				b_delta_of_awalakim_4 = {
 				}
 			}
-			c_ongalabad = { # 440
+			c_ongalabad = { # 438
 				color={ 90 192 206 }
 				color2={ 255 255 255 }
 				
@@ -1170,7 +1170,7 @@ e_caliphate = {
 				b_ongalabad_4 = {
 				}
 			}
-			c_ongalo_highlands = { # 437
+			c_ongalo_highlands = { # 435
 				color={ 90 193 61 }
 				color2={ 255 255 255 }
 				
@@ -1183,7 +1183,7 @@ e_caliphate = {
 				b_ongalo_highlands_4 = {
 				}
 			}
-			c_ongalo_swamps = { # 438
+			c_ongalo_swamps = { # 436
 				color={ 90 221 49 }
 				color2={ 255 255 255 }
 				
@@ -1196,7 +1196,7 @@ e_caliphate = {
 				b_ongalo_swamps_4 = {
 				}
 			}
-			c_ongaloquell = { # 439
+			c_ongaloquell = { # 437
 				color={ 90 26 139 }
 				color2={ 255 255 255 }
 				
@@ -1216,14 +1216,14 @@ e_horasia = {
 	color={ 208 9 74 }
 	color2={ 255 255 20 }
 	
-	capital = 510 # c_vinsalt
+	capital = 508 # c_vinsalt
 	culture = yaquiria
 	
 	k_yaquiria = {
 		color={ 198 19 69 }
 		color2={ 255 255 255 }
 		
-		capital = 510 # c_vinsalt
+		capital = 508 # c_vinsalt
 		culture = yaquiria
 		
 		d_yaquiria = {
@@ -1233,12 +1233,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 510 province_id = 511 province_id = 512 province_id = 513 province_id = 514 province_id = 515 province_id = 516 } }
+					any_demesne_province = { OR = { province_id = 508 province_id = 509 province_id = 510 province_id = 511 province_id = 512 province_id = 513 province_id = 514 } }
 				}
 			}
-			capital = 510 # c_vinsalt
+			capital = 508 # c_vinsalt
 			
-			c_vinsalt = { # 510
+			c_vinsalt = { # 508
 				color={ 168 49 54 }
 				color2={ 255 255 255 }
 				
@@ -1251,7 +1251,7 @@ e_horasia = {
 				b_vinsalt_4 = {
 				}
 			}
-			c_bethana = { # 513
+			c_bethana = { # 511
 				color={ 168 130 117 }
 				color2={ 255 255 255 }
 				
@@ -1264,7 +1264,7 @@ e_horasia = {
 				b_bethana_4 = {
 				}
 			}
-			c_bosparan_forest = { # 512
+			c_bosparan_forest = { # 510
 				color={ 168 43 80 }
 				color2={ 255 255 255 }
 				
@@ -1277,7 +1277,7 @@ e_horasia = {
 				b_bosparan_forest_4 = {
 				}
 			}
-			c_kuslik = { # 511
+			c_kuslik = { # 509
 				color={ 168 35 199 }
 				color2={ 255 255 255 }
 				
@@ -1290,7 +1290,7 @@ e_horasia = {
 				b_kuslik_4 = {
 				}
 			}
-			c_pertakis = { # 514
+			c_pertakis = { # 512
 				color={ 168 69 50 }
 				color2={ 255 255 255 }
 				
@@ -1303,7 +1303,7 @@ e_horasia = {
 				b_pertakis_4 = {
 				}
 			}
-			c_ruthor = { # 515
+			c_ruthor = { # 513
 				color={ 168 106 178 }
 				color2={ 255 255 255 }
 				
@@ -1316,7 +1316,7 @@ e_horasia = {
 				b_ruthor_4 = {
 				}
 			}
-			c_shumir = { # 516
+			c_shumir = { # 514
 				color={ 168 51 149 }
 				color2={ 255 255 255 }
 				
@@ -1337,12 +1337,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 526 province_id = 527 province_id = 528 province_id = 529 province_id = 530 } }
+					any_demesne_province = { OR = { province_id = 524 province_id = 525 province_id = 526 province_id = 527 province_id = 528 } }
 				}
 			}
-			capital = 526 # c_arivor
+			capital = 524 # c_arivor
 			
-			c_arivor = { # 526
+			c_arivor = { # 524
 				color={ 0 123 202 }
 				color2={ 255 255 255 }
 				
@@ -1355,7 +1355,7 @@ e_horasia = {
 				b_arivor_4 = {
 				}
 			}
-			c_aldyra = { # 527
+			c_aldyra = { # 525
 				color={ 0 195 211 }
 				color2={ 255 255 255 }
 				
@@ -1368,7 +1368,7 @@ e_horasia = {
 				b_aldyra_4 = {
 				}
 			}
-			c_silver_valley = { # 529
+			c_silver_valley = { # 527
 				color={ 0 42 123 }
 				color2={ 255 255 255 }
 				
@@ -1381,7 +1381,7 @@ e_horasia = {
 				b_silver_valley_4 = {
 				}
 			}
-			c_terubis = { # 528
+			c_terubis = { # 526
 				color={ 0 185 79 }
 				color2={ 255 255 255 }
 				
@@ -1394,7 +1394,7 @@ e_horasia = {
 				b_terubis_4 = {
 				}
 			}
-			c_westfar = { # 530
+			c_westfar = { # 528
 				color={ 0 60 51 }
 				color2={ 255 255 255 }
 				
@@ -1415,12 +1415,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 538 province_id = 539 province_id = 540 } }
+					any_demesne_province = { OR = { province_id = 536 province_id = 537 province_id = 538 } }
 				}
 			}
-			capital = 538 # c_northern_goldrocks
+			capital = 536 # c_northern_goldrocks
 			
-			c_northern_goldrocks = { # 538
+			c_northern_goldrocks = { # 536
 				color={ 191 18 0 }
 				color2={ 255 255 255 }
 				
@@ -1433,7 +1433,7 @@ e_horasia = {
 				b_northern_goldrocks_4 = {
 				}
 			}
-			c_goldrocks = { # 539
+			c_goldrocks = { # 537
 				color={ 191 100 121 }
 				color2={ 255 255 255 }
 				
@@ -1446,7 +1446,7 @@ e_horasia = {
 				b_goldrocks_4 = {
 				}
 			}
-			c_southern_goldrocks = { # 540
+			c_southern_goldrocks = { # 538
 				color={ 191 154 161 }
 				color2={ 255 255 255 }
 				
@@ -1467,12 +1467,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 519 province_id = 520 province_id = 521 province_id = 522 province_id = 523 province_id = 524 province_id = 525 } }
+					any_demesne_province = { OR = { province_id = 517 province_id = 518 province_id = 519 province_id = 520 province_id = 521 province_id = 522 province_id = 523 } }
 				}
 			}
-			capital = 519 # c_grangor
+			capital = 517 # c_grangor
 			
-			c_grangor = { # 519
+			c_grangor = { # 517
 				color={ 191 210 43 }
 				color2={ 255 255 255 }
 				
@@ -1485,7 +1485,7 @@ e_horasia = {
 				b_grangor_4 = {
 				}
 			}
-			c_bomed = { # 525
+			c_bomed = { # 523
 				color={ 191 154 107 }
 				color2={ 255 255 255 }
 				
@@ -1498,7 +1498,7 @@ e_horasia = {
 				b_bomed_4 = {
 				}
 			}
-			c_phecanostein = { # 523
+			c_phecanostein = { # 521
 				color={ 191 214 135 }
 				color2={ 255 255 255 }
 				
@@ -1511,7 +1511,7 @@ e_horasia = {
 				b_phecanostein_4 = {
 				}
 			}
-			c_phecanowald = { # 522
+			c_phecanowald = { # 520
 				color={ 191 149 51 }
 				color2={ 255 255 255 }
 				
@@ -1524,7 +1524,7 @@ e_horasia = {
 				b_phecanowald_4 = {
 				}
 			}
-			c_schradok = { # 524
+			c_schradok = { # 522
 				color={ 191 124 79 }
 				color2={ 255 255 255 }
 				
@@ -1537,7 +1537,7 @@ e_horasia = {
 				b_schradok_4 = {
 				}
 			}
-			c_sewamund = { # 520
+			c_sewamund = { # 518
 				color={ 191 211 158 }
 				color2={ 255 255 255 }
 				
@@ -1550,7 +1550,7 @@ e_horasia = {
 				b_sewamund_4 = {
 				}
 			}
-			c_tikalen = { # 521
+			c_tikalen = { # 519
 				color={ 191 114 95 }
 				color2={ 255 255 255 }
 				
@@ -1571,12 +1571,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 541 province_id = 542 province_id = 543 } }
+					any_demesne_province = { OR = { province_id = 539 province_id = 540 province_id = 541 } }
 				}
 			}
-			capital = 541 # c_khomblick
+			capital = 539 # c_khomblick
 			
-			c_khomblick = { # 541
+			c_khomblick = { # 539
 				color={ 150 149 38 }
 				color2={ 255 255 255 }
 				
@@ -1589,7 +1589,7 @@ e_horasia = {
 				b_khomblick_4 = {
 				}
 			}
-			c_firetail = { # 543
+			c_firetail = { # 541
 				color={ 150 140 202 }
 				color2={ 255 255 255 }
 				
@@ -1602,7 +1602,7 @@ e_horasia = {
 				b_firetail_4 = {
 				}
 			}
-			c_gueldenhang = { # 542
+			c_gueldenhang = { # 540
 				color={ 150 182 42 }
 				color2={ 255 255 255 }
 				
@@ -1623,12 +1623,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 531 province_id = 532 province_id = 533 province_id = 534 province_id = 535 province_id = 536 province_id = 537 } }
+					any_demesne_province = { OR = { province_id = 529 province_id = 530 province_id = 531 province_id = 532 province_id = 533 province_id = 534 province_id = 535 } }
 				}
 			}
-			capital = 531 # c_methumis
+			capital = 529 # c_methumis
 			
-			c_methumis = { # 531
+			c_methumis = { # 529
 				color={ 132 193 58 }
 				color2={ 255 255 255 }
 				
@@ -1641,7 +1641,7 @@ e_horasia = {
 				b_methumis_4 = {
 				}
 			}
-			c_belhanka = { # 536
+			c_belhanka = { # 534
 				color={ 162 140 111 }
 				color2={ 255 255 255 }
 				
@@ -1654,7 +1654,7 @@ e_horasia = {
 				b_belhanka_4 = {
 				}
 			}
-			c_linneth = { # 533
+			c_linneth = { # 531
 				color={ 162 141 193 }
 				color2={ 255 255 255 }
 				
@@ -1667,7 +1667,7 @@ e_horasia = {
 				b_linneth_4 = {
 				}
 			}
-			c_onjaro = { # 532
+			c_onjaro = { # 530
 				color={ 162 77 101 }
 				color2={ 255 255 255 }
 				
@@ -1680,7 +1680,7 @@ e_horasia = {
 				b_onjaro_4 = {
 				}
 			}
-			c_sikram = { # 537
+			c_sikram = { # 535
 				color={ 162 164 195 }
 				color2={ 255 255 255 }
 				
@@ -1693,7 +1693,7 @@ e_horasia = {
 				b_sikram_4 = {
 				}
 			}
-			c_silas = { # 535
+			c_silas = { # 533
 				color={ 162 170 97 }
 				color2={ 255 255 255 }
 				
@@ -1706,7 +1706,7 @@ e_horasia = {
 				b_silas_4 = {
 				}
 			}
-			c_torvilio = { # 534
+			c_torvilio = { # 532
 				color={ 162 159 25 }
 				color2={ 255 255 255 }
 				
@@ -1727,12 +1727,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 544 province_id = 545 province_id = 546 province_id = 547 province_id = 548 province_id = 549 province_id = 550 province_id = 551 } }
+					any_demesne_province = { OR = { province_id = 542 province_id = 543 province_id = 544 province_id = 545 province_id = 546 province_id = 547 province_id = 548 province_id = 549 } }
 				}
 			}
-			capital = 544 # c_neetha
+			capital = 542 # c_neetha
 			
-			c_neetha = { # 544
+			c_neetha = { # 542
 				color={ 206 90 28 }
 				color2={ 255 255 255 }
 				
@@ -1745,7 +1745,7 @@ e_horasia = {
 				b_neetha_4 = {
 				}
 			}
-			c_banchab = { # 546
+			c_banchab = { # 544
 				color={ 206 196 95 }
 				color2={ 255 255 255 }
 				
@@ -1758,7 +1758,7 @@ e_horasia = {
 				b_banchab_4 = {
 				}
 			}
-			c_brelak = { # 545
+			c_brelak = { # 543
 				color={ 206 128 97 }
 				color2={ 255 255 255 }
 				
@@ -1771,7 +1771,7 @@ e_horasia = {
 				b_brelak_4 = {
 				}
 			}
-			c_chababquell = { # 551
+			c_chababquell = { # 549
 				color={ 206 98 52 }
 				color2={ 255 255 255 }
 				
@@ -1784,7 +1784,7 @@ e_horasia = {
 				b_chababquell_4 = {
 				}
 			}
-			c_eldoret = { # 547
+			c_eldoret = { # 545
 				color={ 206 201 97 }
 				color2={ 255 255 255 }
 				
@@ -1797,7 +1797,7 @@ e_horasia = {
 				b_eldoret_4 = {
 				}
 			}
-			c_goetzenzwinge = { # 550
+			c_goetzenzwinge = { # 548
 				color={ 206 35 43 }
 				color2={ 255 255 255 }
 				
@@ -1810,7 +1810,7 @@ e_horasia = {
 				b_goetzenzwinge_4 = {
 				}
 			}
-			c_kabash = { # 548
+			c_kabash = { # 546
 				color={ 206 182 39 }
 				color2={ 255 255 255 }
 				
@@ -1823,7 +1823,7 @@ e_horasia = {
 				b_kabash_4 = {
 				}
 			}
-			c_sunderstein = { # 549
+			c_sunderstein = { # 547
 				color={ 206 40 22 }
 				color2={ 255 255 255 }
 				
@@ -1844,12 +1844,12 @@ e_horasia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 517 province_id = 518 } }
+					any_demesne_province = { OR = { province_id = 515 province_id = 516 } }
 				}
 			}
-			capital = 517 # c_oberfels
+			capital = 515 # c_oberfels
 			
-			c_oberfels = { # 517
+			c_oberfels = { # 515
 				color={ 162 111 132 }
 				color2={ 255 255 255 }
 				
@@ -1862,7 +1862,7 @@ e_horasia = {
 				b_oberfels_4 = {
 				}
 			}
-			c_torrias = { # 518
+			c_torrias = { # 516
 				color={ 162 114 95 }
 				color2={ 255 255 255 }
 				
@@ -2100,12 +2100,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 156 province_id = 157 province_id = 158 province_id = 159 province_id = 160 province_id = 161 province_id = 162 province_id = 163 province_id = 164 province_id = 165 province_id = 166 province_id = 167 province_id = 168 province_id = 169 province_id = 170 province_id = 171 province_id = 172 province_id = 173 province_id = 174 } }
+					any_demesne_province = { OR = { province_id = 154 province_id = 155 province_id = 156 province_id = 157 province_id = 158 province_id = 159 province_id = 160 province_id = 161 province_id = 162 province_id = 163 province_id = 164 province_id = 165 province_id = 166 province_id = 167 province_id = 168 province_id = 169 province_id = 170 province_id = 171 province_id = 172 } }
 				}
 			}
-			capital = 156 # c_finsterkamm
+			capital = 154 # c_finsterkamm
 			
-			c_finsterkamm = { # 156
+			c_finsterkamm = { # 154
 				color={ 55 222 223 }
 				color2={ 255 255 255 }
 				
@@ -2118,7 +2118,7 @@ e_middlerealm = {
 				b_finsterkamm_4 = {
 				}
 			}
-			c_breitenbruck = { # 162
+			c_breitenbruck = { # 160
 				color={ 55 235 136 }
 				color2={ 255 255 255 }
 				
@@ -2131,7 +2131,7 @@ e_middlerealm = {
 				b_breitenbruck_4 = {
 				}
 			}
-			c_dergelstein = { # 160
+			c_dergelstein = { # 158
 				color={ 55 136 116 }
 				color2={ 255 255 255 }
 				
@@ -2144,7 +2144,7 @@ e_middlerealm = {
 				b_dergelstein_4 = {
 				}
 			}
-			c_donfanger = { # 171
+			c_donfanger = { # 169
 				color={ 55 132 27 }
 				color2={ 255 255 255 }
 				
@@ -2157,7 +2157,7 @@ e_middlerealm = {
 				b_donfanger_4 = {
 				}
 			}
-			c_dunkelsfarn = { # 169
+			c_dunkelsfarn = { # 167
 				color={ 55 239 21 }
 				color2={ 255 255 255 }
 				
@@ -2170,7 +2170,7 @@ e_middlerealm = {
 				b_dunkelsfarn_4 = {
 				}
 			}
-			c_eslamsroden = { # 159
+			c_eslamsroden = { # 157
 				color={ 55 30 26 }
 				color2={ 255 255 255 }
 				
@@ -2183,7 +2183,7 @@ e_middlerealm = {
 				b_eslamsroden_4 = {
 				}
 			}
-			c_feldharsch = { # 161
+			c_feldharsch = { # 159
 				color={ 55 219 34 }
 				color2={ 255 255 255 }
 				
@@ -2196,7 +2196,7 @@ e_middlerealm = {
 				b_feldharsch_4 = {
 				}
 			}
-			c_greifenberg = { # 165
+			c_greifenberg = { # 163
 				color={ 55 39 132 }
 				color2={ 255 255 255 }
 				
@@ -2209,7 +2209,7 @@ e_middlerealm = {
 				b_greifenberg_4 = {
 				}
 			}
-			c_greifenfurt = { # 166
+			c_greifenfurt = { # 164
 				color={ 55 33 203 }
 				color2={ 255 255 255 }
 				
@@ -2222,7 +2222,7 @@ e_middlerealm = {
 				b_greifenfurt_4 = {
 				}
 			}
-			c_greifenhorst = { # 170
+			c_greifenhorst = { # 168
 				color={ 55 238 143 }
 				color2={ 255 255 255 }
 				
@@ -2235,7 +2235,7 @@ e_middlerealm = {
 				b_greifenhorst_4 = {
 				}
 			}
-			c_hasenfeld = { # 168
+			c_hasenfeld = { # 166
 				color={ 55 227 227 }
 				color2={ 255 255 255 }
 				
@@ -2248,7 +2248,7 @@ e_middlerealm = {
 				b_hasenfeld_4 = {
 				}
 			}
-			c_helbrache = { # 173
+			c_helbrache = { # 171
 				color={ 55 40 228 }
 				color2={ 255 255 255 }
 				
@@ -2261,7 +2261,7 @@ e_middlerealm = {
 				b_helbrache_4 = {
 				}
 			}
-			c_hesindelburg = { # 172
+			c_hesindelburg = { # 170
 				color={ 55 24 128 }
 				color2={ 255 255 255 }
 				
@@ -2274,7 +2274,7 @@ e_middlerealm = {
 				b_hesindelburg_4 = {
 				}
 			}
-			c_hexenhain = { # 157
+			c_hexenhain = { # 155
 				color={ 55 137 231 }
 				color2={ 255 255 255 }
 				
@@ -2287,7 +2287,7 @@ e_middlerealm = {
 				b_hexenhain_4 = {
 				}
 			}
-			c_kressenburg = { # 163
+			c_kressenburg = { # 161
 				color={ 55 71 48 }
 				color2={ 255 255 255 }
 				
@@ -2300,7 +2300,7 @@ e_middlerealm = {
 				b_kressenburg_4 = {
 				}
 			}
-			c_nebelstein = { # 174
+			c_nebelstein = { # 172
 				color={ 55 219 23 }
 				color2={ 255 255 255 }
 				
@@ -2313,7 +2313,7 @@ e_middlerealm = {
 				b_nebelstein_4 = {
 				}
 			}
-			c_quastenbroich = { # 164
+			c_quastenbroich = { # 162
 				color={ 55 89 190 }
 				color2={ 255 255 255 }
 				
@@ -2326,7 +2326,7 @@ e_middlerealm = {
 				b_quastenbroich_4 = {
 				}
 			}
-			c_weihenhorst = { # 167
+			c_weihenhorst = { # 165
 				color={ 55 216 228 }
 				color2={ 255 255 255 }
 				
@@ -2339,7 +2339,7 @@ e_middlerealm = {
 				b_weihenhorst_4 = {
 				}
 			}
-			c_zalgo = { # 158
+			c_zalgo = { # 156
 				color={ 55 224 107 }
 				color2={ 255 255 255 }
 				
@@ -2865,7 +2865,7 @@ e_middlerealm = {
 		color={ 185 1 71 }
 		color2={ 255 255 255 }
 		
-		capital = 337 # c_havena
+		capital = 335 # c_havena
 		culture = albernian
 		
 		d_havena = {
@@ -2875,12 +2875,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 337 province_id = 338 province_id = 339 } }
+					any_demesne_province = { OR = { province_id = 335 province_id = 336 province_id = 337 } }
 				}
 			}
-			capital = 337 # c_havena
+			capital = 335 # c_havena
 			
-			c_havena = { # 337
+			c_havena = { # 335
 				color={ 215 227 86 }
 				color2={ 255 255 255 }
 				
@@ -2893,7 +2893,7 @@ e_middlerealm = {
 				b_havena_4 = {
 				}
 			}
-			c_berngau = { # 339
+			c_berngau = { # 337
 				color={ 215 22 85 }
 				color2={ 255 255 255 }
 				
@@ -2906,7 +2906,7 @@ e_middlerealm = {
 				b_berngau_4 = {
 				}
 			}
-			c_outer_havena = { # 338
+			c_outer_havena = { # 336
 				color={ 215 132 213 }
 				color2={ 255 255 255 }
 				
@@ -2927,12 +2927,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 351 province_id = 352 province_id = 353 province_id = 354 } }
+					any_demesne_province = { OR = { province_id = 349 province_id = 350 province_id = 351 province_id = 352 } }
 				}
 			}
-			capital = 351 # c_draustein
+			capital = 349 # c_draustein
 			
-			c_draustein = { # 351
+			c_draustein = { # 349
 				color={ 97 33 230 }
 				color2={ 255 255 255 }
 				
@@ -2945,7 +2945,7 @@ e_middlerealm = {
 				b_draustein_4 = {
 				}
 			}
-			c_abagund = { # 354
+			c_abagund = { # 352
 				color={ 97 202 208 }
 				color2={ 255 255 255 }
 				
@@ -2958,7 +2958,7 @@ e_middlerealm = {
 				b_abagund_4 = {
 				}
 			}
-			c_niriansee = { # 352
+			c_niriansee = { # 350
 				color={ 97 217 42 }
 				color2={ 255 255 255 }
 				
@@ -2971,7 +2971,7 @@ e_middlerealm = {
 				b_niriansee_4 = {
 				}
 			}
-			c_traviarim = { # 353
+			c_traviarim = { # 351
 				color={ 97 37 43 }
 				color2={ 255 255 255 }
 				
@@ -2992,12 +2992,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 346 province_id = 347 province_id = 348 province_id = 349 province_id = 350 } }
+					any_demesne_province = { OR = { province_id = 344 province_id = 345 province_id = 346 province_id = 347 province_id = 348 } }
 				}
 			}
-			capital = 346 # c_wallersrain
+			capital = 344 # c_wallersrain
 			
-			c_wallersrain = { # 346
+			c_wallersrain = { # 344
 				color={ 189 40 213 }
 				color2={ 255 255 255 }
 				
@@ -3010,7 +3010,7 @@ e_middlerealm = {
 				b_wallersrain_4 = {
 				}
 			}
-			c_bockshag = { # 349
+			c_bockshag = { # 347
 				color={ 189 210 206 }
 				color2={ 255 255 255 }
 				
@@ -3023,7 +3023,7 @@ e_middlerealm = {
 				b_bockshag_4 = {
 				}
 			}
-			c_bredenhag = { # 350
+			c_bredenhag = { # 348
 				color={ 189 41 30 }
 				color2={ 255 255 255 }
 				
@@ -3036,7 +3036,7 @@ e_middlerealm = {
 				b_bredenhag_4 = {
 				}
 			}
-			c_gemharsbusch = { # 347
+			c_gemharsbusch = { # 345
 				color={ 189 206 175 }
 				color2={ 255 255 255 }
 				
@@ -3049,7 +3049,7 @@ e_middlerealm = {
 				b_gemharsbusch_4 = {
 				}
 			}
-			c_tommeldomm = { # 348
+			c_tommeldomm = { # 346
 				color={ 189 236 29 }
 				color2={ 255 255 255 }
 				
@@ -3070,12 +3070,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 340 province_id = 341 province_id = 342 province_id = 343 province_id = 344 province_id = 345 } }
+					any_demesne_province = { OR = { province_id = 338 province_id = 339 province_id = 340 province_id = 341 province_id = 342 province_id = 343 } }
 				}
 			}
-			capital = 340 # c_ylvidoch
+			capital = 338 # c_ylvidoch
 			
-			c_ylvidoch = { # 340
+			c_ylvidoch = { # 338
 				color={ 74 208 215 }
 				color2={ 255 255 255 }
 				
@@ -3088,7 +3088,7 @@ e_middlerealm = {
 				b_ylvidoch_4 = {
 				}
 			}
-			c_altenfaehr = { # 342
+			c_altenfaehr = { # 340
 				color={ 74 31 35 }
 				color2={ 255 255 255 }
 				
@@ -3101,7 +3101,7 @@ e_middlerealm = {
 				b_altenfaehr_4 = {
 				}
 			}
-			c_fuxwalden = { # 345
+			c_fuxwalden = { # 343
 				color={ 74 132 212 }
 				color2={ 255 255 255 }
 				
@@ -3114,7 +3114,7 @@ e_middlerealm = {
 				b_fuxwalden_4 = {
 				}
 			}
-			c_grenzmarken = { # 341
+			c_grenzmarken = { # 339
 				color={ 74 164 97 }
 				color2={ 255 255 255 }
 				
@@ -3127,7 +3127,7 @@ e_middlerealm = {
 				b_grenzmarken_4 = {
 				}
 			}
-			c_westpforte = { # 343
+			c_westpforte = { # 341
 				color={ 74 223 44 }
 				color2={ 255 255 255 }
 				
@@ -3140,7 +3140,7 @@ e_middlerealm = {
 				b_westpforte_4 = {
 				}
 			}
-			c_yantibair = { # 344
+			c_yantibair = { # 342
 				color={ 74 30 203 }
 				color2={ 255 255 255 }
 				
@@ -3161,12 +3161,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 355 province_id = 356 province_id = 357 province_id = 358 province_id = 359 } }
+					any_demesne_province = { OR = { province_id = 353 province_id = 354 province_id = 355 province_id = 356 province_id = 357 } }
 				}
 			}
-			capital = 355 # c_abilacht
+			capital = 353 # c_abilacht
 			
-			c_abilacht = { # 355
+			c_abilacht = { # 353
 				color={ 97 214 127 }
 				color2={ 255 255 255 }
 				
@@ -3179,7 +3179,7 @@ e_middlerealm = {
 				b_abilacht_4 = {
 				}
 			}
-			c_albentrutz = { # 357
+			c_albentrutz = { # 355
 				color={ 97 49 29 }
 				color2={ 255 255 255 }
 				
@@ -3192,7 +3192,7 @@ e_middlerealm = {
 				b_albentrutz_4 = {
 				}
 			}
-			c_hohenfels = { # 358
+			c_hohenfels = { # 356
 				color={ 97 224 49 }
 				color2={ 255 255 255 }
 				
@@ -3205,7 +3205,7 @@ e_middlerealm = {
 				b_hohenfels_4 = {
 				}
 			}
-			c_honingen = { # 359
+			c_honingen = { # 357
 				color={ 97 126 110 }
 				color2={ 255 255 255 }
 				
@@ -3218,7 +3218,7 @@ e_middlerealm = {
 				b_honingen_4 = {
 				}
 			}
-			c_lyngwyn = { # 356
+			c_lyngwyn = { # 354
 				color={ 97 32 209 }
 				color2={ 255 255 255 }
 				
@@ -3239,12 +3239,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 360 province_id = 361 province_id = 362 province_id = 363 } }
+					any_demesne_province = { OR = { province_id = 358 province_id = 359 province_id = 360 province_id = 361 } }
 				}
 			}
-			capital = 360 # c_winhall
+			capital = 358 # c_winhall
 			
-			c_winhall = { # 360
+			c_winhall = { # 358
 				color={ 158 82 48 }
 				color2={ 255 255 255 }
 				
@@ -3257,7 +3257,7 @@ e_middlerealm = {
 				b_winhall_4 = {
 				}
 			}
-			c_aiwiallsfest = { # 361
+			c_aiwiallsfest = { # 359
 				color={ 158 170 208 }
 				color2={ 255 255 255 }
 				
@@ -3270,7 +3270,7 @@ e_middlerealm = {
 				b_aiwiallsfest_4 = {
 				}
 			}
-			c_eichenwald = { # 363
+			c_eichenwald = { # 361
 				color={ 158 55 147 }
 				color2={ 255 255 255 }
 				
@@ -3283,7 +3283,7 @@ e_middlerealm = {
 				b_eichenwald_4 = {
 				}
 			}
-			c_weyringen = { # 362
+			c_weyringen = { # 360
 				color={ 158 203 54 }
 				color2={ 255 255 255 }
 				
@@ -3302,7 +3302,7 @@ e_middlerealm = {
 		color={ 218 154 144 }
 		color2={ 255 255 255 }
 		
-		capital = 50 # c_dubios
+		capital = 48 # c_dubios
 		culture = almadan
 		
 		d_ragath = {
@@ -3312,12 +3312,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 50 province_id = 51 province_id = 52 province_id = 53 province_id = 54 province_id = 55 province_id = 56 province_id = 57 province_id = 58 province_id = 59 province_id = 60 province_id = 61 } }
+					any_demesne_province = { OR = { province_id = 48 province_id = 49 province_id = 50 province_id = 51 province_id = 52 province_id = 53 province_id = 54 province_id = 55 province_id = 56 province_id = 57 province_id = 58 province_id = 59 } }
 				}
 			}
-			capital = 50 # c_dubios
+			capital = 48 # c_dubios
 			
-			c_dubios = { # 50
+			c_dubios = { # 48
 				color={ 248 124 159 }
 				color2={ 255 255 255 }
 				
@@ -3330,7 +3330,7 @@ e_middlerealm = {
 				b_dubios_4 = {
 				}
 			}
-			c_bosquirien = { # 61
+			c_bosquirien = { # 59
 				color={ 248 220 51 }
 				color2={ 255 255 255 }
 				
@@ -3343,7 +3343,7 @@ e_middlerealm = {
 				b_bosquirien_4 = {
 				}
 			}
-			c_cres = { # 51
+			c_cres = { # 49
 				color={ 248 112 45 }
 				color2={ 255 255 255 }
 				
@@ -3356,7 +3356,7 @@ e_middlerealm = {
 				b_cres_4 = {
 				}
 			}
-			c_falado = { # 57
+			c_falado = { # 55
 				color={ 248 192 47 }
 				color2={ 255 255 255 }
 				
@@ -3369,7 +3369,7 @@ e_middlerealm = {
 				b_falado_4 = {
 				}
 			}
-			c_franfeld = { # 59
+			c_franfeld = { # 57
 				color={ 248 80 69 }
 				color2={ 255 255 255 }
 				
@@ -3382,7 +3382,7 @@ e_middlerealm = {
 				b_franfeld_4 = {
 				}
 			}
-			c_jurios = { # 52
+			c_jurios = { # 50
 				color={ 248 162 158 }
 				color2={ 255 255 255 }
 				
@@ -3395,7 +3395,7 @@ e_middlerealm = {
 				b_jurios_4 = {
 				}
 			}
-			c_khahirios = { # 58
+			c_khahirios = { # 56
 				color={ 248 138 144 }
 				color2={ 255 255 255 }
 				
@@ -3408,7 +3408,7 @@ e_middlerealm = {
 				b_khahirios_4 = {
 				}
 			}
-			c_kornhammer = { # 53
+			c_kornhammer = { # 51
 				color={ 248 214 57 }
 				color2={ 255 255 255 }
 				
@@ -3421,7 +3421,7 @@ e_middlerealm = {
 				b_kornhammer_4 = {
 				}
 			}
-			c_ragathsquell = { # 56
+			c_ragathsquell = { # 54
 				color={ 248 76 63 }
 				color2={ 255 255 255 }
 				
@@ -3434,7 +3434,7 @@ e_middlerealm = {
 				b_ragathsquell_4 = {
 				}
 			}
-			c_schrotenstein = { # 55
+			c_schrotenstein = { # 53
 				color={ 248 181 136 }
 				color2={ 255 255 255 }
 				
@@ -3447,7 +3447,7 @@ e_middlerealm = {
 				b_schrotenstein_4 = {
 				}
 			}
-			c_selaque = { # 54
+			c_selaque = { # 52
 				color={ 248 120 57 }
 				color2={ 255 255 255 }
 				
@@ -3460,7 +3460,7 @@ e_middlerealm = {
 				b_selaque_4 = {
 				}
 			}
-			c_yasamir = { # 60
+			c_yasamir = { # 58
 				color={ 248 198 54 }
 				color2={ 255 255 255 }
 				
@@ -3481,12 +3481,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 77 province_id = 78 province_id = 79 province_id = 80 province_id = 81 province_id = 82 province_id = 83 province_id = 84 province_id = 85 province_id = 86 } }
+					any_demesne_province = { OR = { province_id = 75 province_id = 76 province_id = 77 province_id = 78 province_id = 79 province_id = 80 province_id = 81 province_id = 82 province_id = 83 province_id = 84 } }
 				}
 			}
-			capital = 77 # c_agum
+			capital = 75 # c_agum
 			
-			c_agum = { # 77
+			c_agum = { # 75
 				color={ 248 248 92 }
 				color2={ 255 255 255 }
 				
@@ -3499,7 +3499,7 @@ e_middlerealm = {
 				b_agum_4 = {
 				}
 			}
-			c_brigella = { # 84
+			c_brigella = { # 82
 				color={ 248 130 178 }
 				color2={ 255 255 255 }
 				
@@ -3512,7 +3512,7 @@ e_middlerealm = {
 				b_brigella_4 = {
 				}
 			}
-			c_brindal = { # 80
+			c_brindal = { # 78
 				color={ 248 160 39 }
 				color2={ 255 255 255 }
 				
@@ -3525,7 +3525,7 @@ e_middlerealm = {
 				b_brindal_4 = {
 				}
 			}
-			c_culming = { # 86
+			c_culming = { # 84
 				color={ 248 75 80 }
 				color2={ 255 255 255 }
 				
@@ -3538,7 +3538,7 @@ e_middlerealm = {
 				b_culming_4 = {
 				}
 			}
-			c_geiersgau = { # 79
+			c_geiersgau = { # 77
 				color={ 248 173 150 }
 				color2={ 255 255 255 }
 				
@@ -3551,7 +3551,7 @@ e_middlerealm = {
 				b_geiersgau_4 = {
 				}
 			}
-			c_haffith = { # 83
+			c_haffith = { # 81
 				color={ 248 161 41 }
 				color2={ 255 255 255 }
 				
@@ -3564,7 +3564,7 @@ e_middlerealm = {
 				b_haffith_4 = {
 				}
 			}
-			c_inostal = { # 78
+			c_inostal = { # 76
 				color={ 248 221 73 }
 				color2={ 255 255 255 }
 				
@@ -3577,7 +3577,7 @@ e_middlerealm = {
 				b_inostal_4 = {
 				}
 			}
-			c_mesch = { # 81
+			c_mesch = { # 79
 				color={ 248 204 11 }
 				color2={ 255 255 255 }
 				
@@ -3590,7 +3590,7 @@ e_middlerealm = {
 				b_mesch_4 = {
 				}
 			}
-			c_phecadien = { # 85
+			c_phecadien = { # 83
 				color={ 248 66 83 }
 				color2={ 255 255 255 }
 				
@@ -3603,7 +3603,7 @@ e_middlerealm = {
 				b_phecadien_4 = {
 				}
 			}
-			c_schelak = { # 82
+			c_schelak = { # 80
 				color={ 248 153 213 }
 				color2={ 255 255 255 }
 				
@@ -3624,12 +3624,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 70 province_id = 71 province_id = 72 province_id = 73 province_id = 74 province_id = 75 province_id = 76 } }
+					any_demesne_province = { OR = { province_id = 68 province_id = 69 province_id = 70 province_id = 71 province_id = 72 province_id = 73 province_id = 74 } }
 				}
 			}
-			capital = 70 # c_taladur
+			capital = 68 # c_taladur
 			
-			c_taladur = { # 70
+			c_taladur = { # 68
 				color={ 248 70 195 }
 				color2={ 255 255 255 }
 				
@@ -3642,7 +3642,7 @@ e_middlerealm = {
 				b_taladur_4 = {
 				}
 			}
-			c_bangour = { # 73
+			c_bangour = { # 71
 				color={ 248 183 52 }
 				color2={ 255 255 255 }
 				
@@ -3655,7 +3655,7 @@ e_middlerealm = {
 				b_bangour_4 = {
 				}
 			}
-			c_braast = { # 72
+			c_braast = { # 70
 				color={ 248 185 96 }
 				color2={ 255 255 255 }
 				
@@ -3668,7 +3668,7 @@ e_middlerealm = {
 				b_braast_4 = {
 				}
 			}
-			c_flogglond = { # 75
+			c_flogglond = { # 73
 				color={ 248 149 156 }
 				color2={ 255 255 255 }
 				
@@ -3681,7 +3681,7 @@ e_middlerealm = {
 				b_flogglond_4 = {
 				}
 			}
-			c_herrison = { # 76
+			c_herrison = { # 74
 				color={ 248 196 49 }
 				color2={ 255 255 255 }
 				
@@ -3694,7 +3694,7 @@ e_middlerealm = {
 				b_herrison_4 = {
 				}
 			}
-			c_jannbach = { # 74
+			c_jannbach = { # 72
 				color={ 248 182 168 }
 				color2={ 255 255 255 }
 				
@@ -3707,7 +3707,7 @@ e_middlerealm = {
 				b_jannbach_4 = {
 				}
 			}
-			c_kyrstollen = { # 71
+			c_kyrstollen = { # 69
 				color={ 248 73 41 }
 				color2={ 255 255 255 }
 				
@@ -3728,12 +3728,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 62 province_id = 63 province_id = 64 province_id = 65 province_id = 66 province_id = 67 province_id = 68 province_id = 69 } }
+					any_demesne_province = { OR = { province_id = 60 province_id = 61 province_id = 62 province_id = 63 province_id = 64 province_id = 65 province_id = 66 province_id = 67 } }
 				}
 			}
-			capital = 62 # c_punin
+			capital = 60 # c_punin
 			
-			c_punin = { # 62
+			c_punin = { # 60
 				color={ 248 89 32 }
 				color2={ 255 255 255 }
 				
@@ -3746,7 +3746,7 @@ e_middlerealm = {
 				b_punin_4 = {
 				}
 			}
-			c_artesa = { # 66
+			c_artesa = { # 64
 				color={ 248 219 33 }
 				color2={ 255 255 255 }
 				
@@ -3759,7 +3759,7 @@ e_middlerealm = {
 				b_artesa_4 = {
 				}
 			}
-			c_brig_lo = { # 64
+			c_brig_lo = { # 62
 				color={ 248 105 79 }
 				color2={ 255 255 255 }
 				
@@ -3772,7 +3772,7 @@ e_middlerealm = {
 				b_brig_lo_4 = {
 				}
 			}
-			c_imrah = { # 63
+			c_imrah = { # 61
 				color={ 248 214 47 }
 				color2={ 255 255 255 }
 				
@@ -3785,7 +3785,7 @@ e_middlerealm = {
 				b_imrah_4 = {
 				}
 			}
-			c_khabosa = { # 69
+			c_khabosa = { # 67
 				color={ 248 50 22 }
 				color2={ 255 255 255 }
 				
@@ -3798,7 +3798,7 @@ e_middlerealm = {
 				b_khabosa_4 = {
 				}
 			}
-			c_nemento = { # 68
+			c_nemento = { # 66
 				color={ 248 132 181 }
 				color2={ 255 255 255 }
 				
@@ -3811,7 +3811,7 @@ e_middlerealm = {
 				b_nemento_4 = {
 				}
 			}
-			c_nordhain = { # 65
+			c_nordhain = { # 63
 				color={ 248 65 82 }
 				color2={ 255 255 255 }
 				
@@ -3824,7 +3824,7 @@ e_middlerealm = {
 				b_nordhain_4 = {
 				}
 			}
-			c_thangolforst = { # 67
+			c_thangolforst = { # 65
 				color={ 248 187 161 }
 				color2={ 255 255 255 }
 				
@@ -3843,7 +3843,7 @@ e_middlerealm = {
 		color={ 12 241 206 }
 		color2={ 255 255 255 }
 		
-		capital = 364 # c_zorgan
+		capital = 362 # c_zorgan
 		culture = aranian
 		
 		d_zorgan = {
@@ -3853,12 +3853,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 364 province_id = 365 province_id = 366 } }
+					any_demesne_province = { OR = { province_id = 362 province_id = 363 province_id = 364 } }
 				}
 			}
-			capital = 364 # c_zorgan
+			capital = 362 # c_zorgan
 			
-			c_zorgan = { # 364
+			c_zorgan = { # 362
 				color={ 42 211 221 }
 				color2={ 255 255 255 }
 				
@@ -3871,7 +3871,7 @@ e_middlerealm = {
 				b_zorgan_4 = {
 				}
 			}
-			c_barbrueck = { # 366
+			c_barbrueck = { # 364
 				color={ 42 225 58 }
 				color2={ 255 255 255 }
 				
@@ -3884,7 +3884,7 @@ e_middlerealm = {
 				b_barbrueck_4 = {
 				}
 			}
-			c_narhuabad = { # 365
+			c_narhuabad = { # 363
 				color={ 42 37 66 }
 				color2={ 255 255 255 }
 				
@@ -3905,12 +3905,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 388 province_id = 389 province_id = 390 province_id = 391 province_id = 392 province_id = 393 province_id = 394 province_id = 395 province_id = 396 } }
+					any_demesne_province = { OR = { province_id = 386 province_id = 387 province_id = 388 province_id = 389 province_id = 390 province_id = 391 province_id = 392 province_id = 393 province_id = 394 } }
 				}
 			}
-			capital = 388 # c_higher_goria
+			capital = 386 # c_higher_goria
 			
-			c_higher_goria = { # 388
+			c_higher_goria = { # 386
 				color={ 127 33 223 }
 				color2={ 255 255 255 }
 				
@@ -3923,7 +3923,7 @@ e_middlerealm = {
 				b_higher_goria_4 = {
 				}
 			}
-			c_ankrabad = { # 392
+			c_ankrabad = { # 390
 				color={ 127 49 214 }
 				color2={ 255 255 255 }
 				
@@ -3936,7 +3936,7 @@ e_middlerealm = {
 				b_ankrabad_4 = {
 				}
 			}
-			c_birchalukistan = { # 393
+			c_birchalukistan = { # 391
 				color={ 127 40 41 }
 				color2={ 255 255 255 }
 				
@@ -3949,7 +3949,7 @@ e_middlerealm = {
 				b_birchalukistan_4 = {
 				}
 			}
-			c_bobrastan = { # 395
+			c_bobrastan = { # 393
 				color={ 127 155 112 }
 				color2={ 255 255 255 }
 				
@@ -3962,7 +3962,7 @@ e_middlerealm = {
 				b_bobrastan_4 = {
 				}
 			}
-			c_chalukistan = { # 391
+			c_chalukistan = { # 389
 				color={ 127 215 60 }
 				color2={ 255 255 255 }
 				
@@ -3975,7 +3975,7 @@ e_middlerealm = {
 				b_chalukistan_4 = {
 				}
 			}
-			c_gadang_falls = { # 394
+			c_gadang_falls = { # 392
 				color={ 127 223 27 }
 				color2={ 255 255 255 }
 				
@@ -3988,7 +3988,7 @@ e_middlerealm = {
 				b_gadang_falls_4 = {
 				}
 			}
-			c_lower_goria = { # 390
+			c_lower_goria = { # 388
 				color={ 127 215 223 }
 				color2={ 255 255 255 }
 				
@@ -4001,7 +4001,7 @@ e_middlerealm = {
 				b_lower_goria_4 = {
 				}
 			}
-			c_nerenenha = { # 389
+			c_nerenenha = { # 387
 				color={ 127 32 33 }
 				color2={ 255 255 255 }
 				
@@ -4014,7 +4014,7 @@ e_middlerealm = {
 				b_nerenenha_4 = {
 				}
 			}
-			c_samradistan = { # 396
+			c_samradistan = { # 394
 				color={ 127 213 211 }
 				color2={ 255 255 255 }
 				
@@ -4035,12 +4035,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 367 province_id = 368 province_id = 369 province_id = 370 province_id = 371 province_id = 372 } }
+					any_demesne_province = { OR = { province_id = 365 province_id = 366 province_id = 367 province_id = 368 province_id = 369 province_id = 370 } }
 				}
 			}
-			capital = 367 # c_ulahshan
+			capital = 365 # c_ulahshan
 			
-			c_ulahshan = { # 367
+			c_ulahshan = { # 365
 				color={ 231 47 27 }
 				color2={ 255 255 255 }
 				
@@ -4053,7 +4053,7 @@ e_middlerealm = {
 				b_ulahshan_4 = {
 				}
 			}
-			c_baburin = { # 372
+			c_baburin = { # 370
 				color={ 231 39 23 }
 				color2={ 255 255 255 }
 				
@@ -4066,7 +4066,7 @@ e_middlerealm = {
 				b_baburin_4 = {
 				}
 			}
-			c_northern_aimaristan = { # 370
+			c_northern_aimaristan = { # 368
 				color={ 231 133 133 }
 				color2={ 255 255 255 }
 				
@@ -4079,7 +4079,7 @@ e_middlerealm = {
 				b_northern_aimaristan_4 = {
 				}
 			}
-			c_revennis = { # 369
+			c_revennis = { # 367
 				color={ 231 221 140 }
 				color2={ 255 255 255 }
 				
@@ -4092,7 +4092,7 @@ e_middlerealm = {
 				b_revennis_4 = {
 				}
 			}
-			c_southern_aimaristan = { # 371
+			c_southern_aimaristan = { # 369
 				color={ 231 229 29 }
 				color2={ 255 255 255 }
 				
@@ -4105,7 +4105,7 @@ e_middlerealm = {
 				b_southern_aimaristan_4 = {
 				}
 			}
-			c_tasilimund = { # 368
+			c_tasilimund = { # 366
 				color={ 231 38 210 }
 				color2={ 255 255 255 }
 				
@@ -4126,12 +4126,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 373 province_id = 374 province_id = 375 province_id = 376 province_id = 377 province_id = 378 province_id = 379 } }
+					any_demesne_province = { OR = { province_id = 371 province_id = 372 province_id = 373 province_id = 374 province_id = 375 province_id = 376 province_id = 377 } }
 				}
 			}
-			capital = 373 # c_farukand
+			capital = 371 # c_farukand
 			
-			c_farukand = { # 373
+			c_farukand = { # 371
 				color={ 141 24 200 }
 				color2={ 255 255 255 }
 				
@@ -4144,7 +4144,7 @@ e_middlerealm = {
 				b_farukand_4 = {
 				}
 			}
-			c_elburum = { # 378
+			c_elburum = { # 376
 				color={ 141 37 67 }
 				color2={ 255 255 255 }
 				
@@ -4157,7 +4157,7 @@ e_middlerealm = {
 				b_elburum_4 = {
 				}
 			}
-			c_farsh_uruch = { # 374
+			c_farsh_uruch = { # 372
 				color={ 141 125 144 }
 				color2={ 255 255 255 }
 				
@@ -4170,7 +4170,7 @@ e_middlerealm = {
 				b_farsh_uruch_4 = {
 				}
 			}
-			c_llanka = { # 376
+			c_llanka = { # 374
 				color={ 141 29 196 }
 				color2={ 255 255 255 }
 				
@@ -4183,7 +4183,7 @@ e_middlerealm = {
 				b_llanka_4 = {
 				}
 			}
-			c_ras_nefidim = { # 375
+			c_ras_nefidim = { # 373
 				color={ 141 126 88 }
 				color2={ 255 255 255 }
 				
@@ -4196,7 +4196,7 @@ e_middlerealm = {
 				b_ras_nefidim_4 = {
 				}
 			}
-			c_rathmos = { # 379
+			c_rathmos = { # 377
 				color={ 141 233 55 }
 				color2={ 255 255 255 }
 				
@@ -4209,7 +4209,7 @@ e_middlerealm = {
 				b_rathmos_4 = {
 				}
 			}
-			c_yaisirabad = { # 377
+			c_yaisirabad = { # 375
 				color={ 141 219 52 }
 				color2={ 255 255 255 }
 				
@@ -4230,12 +4230,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 403 province_id = 404 province_id = 405 province_id = 406 province_id = 407 province_id = 408 province_id = 409 } }
+					any_demesne_province = { OR = { province_id = 401 province_id = 402 province_id = 403 province_id = 404 province_id = 405 province_id = 406 province_id = 407 } }
 				}
 			}
-			capital = 403 # c_khunchom
+			capital = 401 # c_khunchom
 			
-			c_khunchom = { # 403
+			c_khunchom = { # 401
 				color={ 229 26 196 }
 				color2={ 255 255 255 }
 				
@@ -4248,7 +4248,7 @@ e_middlerealm = {
 				b_khunchom_4 = {
 				}
 			}
-			c_challef = { # 407
+			c_challef = { # 405
 				color={ 229 218 65 }
 				color2={ 255 255 255 }
 				
@@ -4261,7 +4261,7 @@ e_middlerealm = {
 				b_challef_4 = {
 				}
 			}
-			c_jaiban = { # 408
+			c_jaiban = { # 406
 				color={ 229 45 38 }
 				color2={ 255 255 255 }
 				
@@ -4274,7 +4274,7 @@ e_middlerealm = {
 				b_jaiban_4 = {
 				}
 			}
-			c_mhanerhaven = { # 409
+			c_mhanerhaven = { # 407
 				color={ 229 214 42 }
 				color2={ 255 255 255 }
 				
@@ -4287,7 +4287,7 @@ e_middlerealm = {
 				b_mhanerhaven_4 = {
 				}
 			}
-			c_rabatistan = { # 406
+			c_rabatistan = { # 404
 				color={ 229 195 194 }
 				color2={ 255 255 255 }
 				
@@ -4300,7 +4300,7 @@ e_middlerealm = {
 				b_rabatistan_4 = {
 				}
 			}
-			c_temphis = { # 404
+			c_temphis = { # 402
 				color={ 229 161 211 }
 				color2={ 255 255 255 }
 				
@@ -4313,7 +4313,7 @@ e_middlerealm = {
 				b_temphis_4 = {
 				}
 			}
-			c_yaisiristan = { # 405
+			c_yaisiristan = { # 403
 				color={ 229 82 22 }
 				color2={ 255 255 255 }
 				
@@ -4334,12 +4334,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 380 province_id = 381 province_id = 382 province_id = 383 province_id = 384 province_id = 385 province_id = 386 province_id = 387 } }
+					any_demesne_province = { OR = { province_id = 378 province_id = 379 province_id = 380 province_id = 381 province_id = 382 province_id = 383 province_id = 384 province_id = 385 } }
 				}
 			}
-			capital = 380 # c_muchabad
+			capital = 378 # c_muchabad
 			
-			c_muchabad = { # 380
+			c_muchabad = { # 378
 				color={ 194 232 32 }
 				color2={ 255 255 255 }
 				
@@ -4352,7 +4352,7 @@ e_middlerealm = {
 				b_muchabad_4 = {
 				}
 			}
-			c_awallakand = { # 384
+			c_awallakand = { # 382
 				color={ 194 180 190 }
 				color2={ 255 255 255 }
 				
@@ -4365,7 +4365,7 @@ e_middlerealm = {
 				b_awallakand_4 = {
 				}
 			}
-			c_djeristan = { # 385
+			c_djeristan = { # 383
 				color={ 194 31 40 }
 				color2={ 255 255 255 }
 				
@@ -4378,7 +4378,7 @@ e_middlerealm = {
 				b_djeristan_4 = {
 				}
 			}
-			c_floeszern = { # 387
+			c_floeszern = { # 385
 				color={ 194 221 71 }
 				color2={ 255 255 255 }
 				
@@ -4391,7 +4391,7 @@ e_middlerealm = {
 				b_floeszern_4 = {
 				}
 			}
-			c_ghadanar = { # 383
+			c_ghadanar = { # 381
 				color={ 194 219 41 }
 				color2={ 255 255 255 }
 				
@@ -4404,7 +4404,7 @@ e_middlerealm = {
 				b_ghadanar_4 = {
 				}
 			}
-			c_jindir = { # 386
+			c_jindir = { # 384
 				color={ 194 41 43 }
 				color2={ 255 255 255 }
 				
@@ -4417,7 +4417,7 @@ e_middlerealm = {
 				b_jindir_4 = {
 				}
 			}
-			c_palmyrabad = { # 381
+			c_palmyrabad = { # 379
 				color={ 194 226 219 }
 				color2={ 255 255 255 }
 				
@@ -4430,7 +4430,7 @@ e_middlerealm = {
 				b_palmyrabad_4 = {
 				}
 			}
-			c_tamaristan = { # 382
+			c_tamaristan = { # 380
 				color={ 194 35 217 }
 				color2={ 255 255 255 }
 				
@@ -4451,12 +4451,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 397 province_id = 398 province_id = 399 province_id = 400 province_id = 401 province_id = 402 } }
+					any_demesne_province = { OR = { province_id = 395 province_id = 396 province_id = 397 province_id = 398 province_id = 399 province_id = 400 } }
 				}
 			}
-			capital = 397 # c_amaristan
+			capital = 395 # c_amaristan
 			
-			c_amaristan = { # 397
+			c_amaristan = { # 395
 				color={ 246 40 23 }
 				color2={ 255 255 255 }
 				
@@ -4469,7 +4469,7 @@ e_middlerealm = {
 				b_amaristan_4 = {
 				}
 			}
-			c_aimaristan = { # 398
+			c_aimaristan = { # 396
 				color={ 246 35 205 }
 				color2={ 255 255 255 }
 				
@@ -4482,7 +4482,7 @@ e_middlerealm = {
 				b_aimaristan_4 = {
 				}
 			}
-			c_korushkand = { # 399
+			c_korushkand = { # 397
 				color={ 246 36 199 }
 				color2={ 255 255 255 }
 				
@@ -4495,7 +4495,7 @@ e_middlerealm = {
 				b_korushkand_4 = {
 				}
 			}
-			c_malqistan = { # 402
+			c_malqistan = { # 400
 				color={ 246 231 24 }
 				color2={ 255 255 255 }
 				
@@ -4508,7 +4508,7 @@ e_middlerealm = {
 				b_malqistan_4 = {
 				}
 			}
-			c_pelqananistan = { # 401
+			c_pelqananistan = { # 399
 				color={ 246 143 226 }
 				color2={ 255 255 255 }
 				
@@ -4521,7 +4521,7 @@ e_middlerealm = {
 				b_pelqananistan_4 = {
 				}
 			}
-			c_shariwanistan = { # 400
+			c_shariwanistan = { # 398
 				color={ 246 219 38 }
 				color2={ 255 255 255 }
 				
@@ -4540,7 +4540,7 @@ e_middlerealm = {
 		color={ 16 23 72 }
 		color2={ 255 255 255 }
 		
-		capital = 111 # c_broeckling
+		capital = 109 # c_broeckling
 		culture = darpatian
 		
 		d_wehrheim = {
@@ -4550,12 +4550,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 111 province_id = 112 province_id = 113 province_id = 114 province_id = 115 province_id = 116 province_id = 117 province_id = 118 province_id = 119 province_id = 120 province_id = 121 } }
+					any_demesne_province = { OR = { province_id = 109 province_id = 110 province_id = 111 province_id = 112 province_id = 113 province_id = 114 province_id = 115 province_id = 116 province_id = 117 province_id = 118 province_id = 119 } }
 				}
 			}
-			capital = 111 # c_broeckling
+			capital = 109 # c_broeckling
 			
-			c_broeckling = { # 111
+			c_broeckling = { # 109
 				color={ 242 53 57 }
 				color2={ 255 255 255 }
 				
@@ -4568,7 +4568,7 @@ e_middlerealm = {
 				b_broeckling_4 = {
 				}
 			}
-			c_dergelheim = { # 118
+			c_dergelheim = { # 116
 				color={ 242 233 114 }
 				color2={ 255 255 255 }
 				
@@ -4581,7 +4581,7 @@ e_middlerealm = {
 				b_dergelheim_4 = {
 				}
 			}
-			c_friedwang = { # 116
+			c_friedwang = { # 114
 				color={ 242 63 197 }
 				color2={ 255 255 255 }
 				
@@ -4594,7 +4594,7 @@ e_middlerealm = {
 				b_friedwang_4 = {
 				}
 			}
-			c_galbenburg = { # 113
+			c_galbenburg = { # 111
 				color={ 242 228 37 }
 				color2={ 255 255 255 }
 				
@@ -4607,7 +4607,7 @@ e_middlerealm = {
 				b_galbenburg_4 = {
 				}
 			}
-			c_hallingen = { # 114
+			c_hallingen = { # 112
 				color={ 242 60 63 }
 				color2={ 255 255 255 }
 				
@@ -4620,7 +4620,7 @@ e_middlerealm = {
 				b_hallingen_4 = {
 				}
 			}
-			c_lodenbach = { # 119
+			c_lodenbach = { # 117
 				color={ 242 68 20 }
 				color2={ 255 255 255 }
 				
@@ -4633,7 +4633,7 @@ e_middlerealm = {
 				b_lodenbach_4 = {
 				}
 			}
-			c_mistelhausen = { # 120
+			c_mistelhausen = { # 118
 				color={ 242 232 36 }
 				color2={ 255 255 255 }
 				
@@ -4646,7 +4646,7 @@ e_middlerealm = {
 				b_mistelhausen_4 = {
 				}
 			}
-			c_oppstein = { # 112
+			c_oppstein = { # 110
 				color={ 242 34 4 }
 				color2={ 255 255 255 }
 				
@@ -4659,7 +4659,7 @@ e_middlerealm = {
 				b_oppstein_4 = {
 				}
 			}
-			c_rosenbusch = { # 117
+			c_rosenbusch = { # 115
 				color={ 242 136 183 }
 				color2={ 255 255 255 }
 				
@@ -4672,7 +4672,7 @@ e_middlerealm = {
 				b_rosenbusch_4 = {
 				}
 			}
-			c_wehrheim = { # 121
+			c_wehrheim = { # 119
 				color={ 242 74 52 }
 				color2={ 255 255 255 }
 				
@@ -4685,7 +4685,7 @@ e_middlerealm = {
 				b_wehrheim_4 = {
 				}
 			}
-			c_wehrheimer_mark = { # 115
+			c_wehrheimer_mark = { # 113
 				color={ 242 155 25 }
 				color2={ 255 255 255 }
 				
@@ -4706,12 +4706,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 126 province_id = 127 province_id = 128 province_id = 129 province_id = 130 province_id = 131 province_id = 132 province_id = 134 } }
+					any_demesne_province = { OR = { province_id = 124 province_id = 125 province_id = 126 province_id = 127 province_id = 128 province_id = 129 province_id = 130 province_id = 132 } }
 				}
 			}
-			capital = 126 # c_rommilys
+			capital = 124 # c_rommilys
 			
-			c_rommilys = { # 126
+			c_rommilys = { # 124
 				color={ 225 115 36 }
 				color2={ 255 255 255 }
 				
@@ -4724,7 +4724,7 @@ e_middlerealm = {
 				b_rommilys_4 = {
 				}
 			}
-			c_aschenfeld = { # 127
+			c_aschenfeld = { # 125
 				color={ 225 62 26 }
 				color2={ 255 255 255 }
 				
@@ -4737,7 +4737,7 @@ e_middlerealm = {
 				b_aschenfeld_4 = {
 				}
 			}
-			c_bohlenburg = { # 131
+			c_bohlenburg = { # 129
 				color={ 225 59 166 }
 				color2={ 255 255 255 }
 				
@@ -4750,7 +4750,7 @@ e_middlerealm = {
 				b_bohlenburg_4 = {
 				}
 			}
-			c_dettenhofen = { # 128
+			c_dettenhofen = { # 126
 				color={ 225 35 44 }
 				color2={ 255 255 255 }
 				
@@ -4763,7 +4763,7 @@ e_middlerealm = {
 				b_dettenhofen_4 = {
 				}
 			}
-			c_devensberg = { # 130
+			c_devensberg = { # 128
 				color={ 225 135 164 }
 				color2={ 255 255 255 }
 				
@@ -4776,7 +4776,7 @@ e_middlerealm = {
 				b_devensberg_4 = {
 				}
 			}
-			c_gallys = { # 129
+			c_gallys = { # 127
 				color={ 225 211 86 }
 				color2={ 255 255 255 }
 				
@@ -4789,7 +4789,7 @@ e_middlerealm = {
 				b_gallys_4 = {
 				}
 			}
-			c_neuborn = { # 132
+			c_neuborn = { # 130
 				color={ 225 199 214 }
 				color2={ 255 255 255 }
 				
@@ -4802,7 +4802,7 @@ e_middlerealm = {
 				b_neuborn_4 = {
 				}
 			}
-			c_pulverberg = { # 134
+			c_pulverberg = { # 132
 				color={ 225 232 121 }
 				color2={ 255 255 255 }
 				
@@ -4823,12 +4823,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 133 province_id = 135 province_id = 136 province_id = 137 province_id = 138 province_id = 139 province_id = 140 province_id = 141 province_id = 142 province_id = 143 province_id = 144 province_id = 145 province_id = 146 province_id = 147 province_id = 148 province_id = 149 province_id = 150 province_id = 151 province_id = 152 province_id = 153 province_id = 154 province_id = 155 } }
+					any_demesne_province = { OR = { province_id = 131 province_id = 133 province_id = 134 province_id = 135 province_id = 136 province_id = 137 province_id = 138 province_id = 139 province_id = 140 province_id = 141 province_id = 142 province_id = 143 province_id = 144 province_id = 145 province_id = 146 province_id = 147 province_id = 148 province_id = 149 province_id = 150 province_id = 151 province_id = 152 province_id = 153 } }
 				}
 			}
-			capital = 133 # c_gadang
+			capital = 131 # c_gadang
 			
-			c_gadang = { # 133
+			c_gadang = { # 131
 				color={ 225 95 23 }
 				color2={ 255 255 255 }
 				
@@ -4841,7 +4841,7 @@ e_middlerealm = {
 				b_gadang_4 = {
 				}
 			}
-			c_aehrengatter = { # 135
+			c_aehrengatter = { # 133
 				color={ 15 224 20 }
 				color2={ 255 255 255 }
 				
@@ -4854,7 +4854,7 @@ e_middlerealm = {
 				b_aehrengatter_4 = {
 				}
 			}
-			c_altzoll = { # 154
+			c_altzoll = { # 152
 				color={ 242 199 195 }
 				color2={ 255 255 255 }
 				
@@ -4867,7 +4867,7 @@ e_middlerealm = {
 				b_altzoll_4 = {
 				}
 			}
-			c_arvepass = { # 149
+			c_arvepass = { # 147
 				color={ 242 46 41 }
 				color2={ 255 255 255 }
 				
@@ -4880,7 +4880,7 @@ e_middlerealm = {
 				b_arvepass_4 = {
 				}
 			}
-			c_bergthann = { # 148
+			c_bergthann = { # 146
 				color={ 242 229 32 }
 				color2={ 255 255 255 }
 				
@@ -4893,7 +4893,7 @@ e_middlerealm = {
 				b_bergthann_4 = {
 				}
 			}
-			c_eckelstor = { # 143
+			c_eckelstor = { # 141
 				color={ 15 62 194 }
 				color2={ 255 255 255 }
 				
@@ -4906,7 +4906,7 @@ e_middlerealm = {
 				b_eckelstor_4 = {
 				}
 			}
-			c_efferdstraenen = { # 155
+			c_efferdstraenen = { # 153
 				color={ 242 136 131 }
 				color2={ 255 255 255 }
 				
@@ -4919,7 +4919,7 @@ e_middlerealm = {
 				b_efferdstraenen_4 = {
 				}
 			}
-			c_gluckenhang = { # 146
+			c_gluckenhang = { # 144
 				color={ 242 23 42 }
 				color2={ 255 255 255 }
 				
@@ -4932,7 +4932,7 @@ e_middlerealm = {
 				b_gluckenhang_4 = {
 				}
 			}
-			c_gorbingen = { # 136
+			c_gorbingen = { # 134
 				color={ 242 230 38 }
 				color2={ 255 255 255 }
 				
@@ -4945,7 +4945,7 @@ e_middlerealm = {
 				b_gorbingen_4 = {
 				}
 			}
-			c_gugelforst = { # 142
+			c_gugelforst = { # 140
 				color={ 242 47 33 }
 				color2={ 255 255 255 }
 				
@@ -4958,7 +4958,7 @@ e_middlerealm = {
 				b_gugelforst_4 = {
 				}
 			}
-			c_hengefeldt = { # 141
+			c_hengefeldt = { # 139
 				color={ 242 55 80 }
 				color2={ 255 255 255 }
 				
@@ -4971,7 +4971,7 @@ e_middlerealm = {
 				b_hengefeldt_4 = {
 				}
 			}
-			c_knoppsperg = { # 147
+			c_knoppsperg = { # 145
 				color={ 242 42 205 }
 				color2={ 255 255 255 }
 				
@@ -4984,7 +4984,7 @@ e_middlerealm = {
 				b_knoppsperg_4 = {
 				}
 			}
-			c_ochsenklotz = { # 153
+			c_ochsenklotz = { # 151
 				color={ 15 221 201 }
 				color2={ 255 255 255 }
 				
@@ -4997,7 +4997,7 @@ e_middlerealm = {
 				b_ochsenklotz_4 = {
 				}
 			}
-			c_rechthag = { # 138
+			c_rechthag = { # 136
 				color={ 15 121 49 }
 				color2={ 255 255 255 }
 				
@@ -5010,7 +5010,7 @@ e_middlerealm = {
 				b_rechthag_4 = {
 				}
 			}
-			c_rotenzenn = { # 144
+			c_rotenzenn = { # 142
 				color={ 15 71 55 }
 				color2={ 255 255 255 }
 				
@@ -5023,7 +5023,7 @@ e_middlerealm = {
 				b_rotenzenn_4 = {
 				}
 			}
-			c_trollnase = { # 150
+			c_trollnase = { # 148
 				color={ 242 229 45 }
 				color2={ 255 255 255 }
 				
@@ -5036,7 +5036,7 @@ e_middlerealm = {
 				b_trollnase_4 = {
 				}
 			}
-			c_trollsgau = { # 140
+			c_trollsgau = { # 138
 				color={ 242 189 162 }
 				color2={ 255 255 255 }
 				
@@ -5049,7 +5049,7 @@ e_middlerealm = {
 				b_trollsgau_4 = {
 				}
 			}
-			c_trutzenburg = { # 152
+			c_trutzenburg = { # 150
 				color={ 242 199 42 }
 				color2={ 255 255 255 }
 				
@@ -5062,7 +5062,7 @@ e_middlerealm = {
 				b_trutzenburg_4 = {
 				}
 			}
-			c_vellberg = { # 151
+			c_vellberg = { # 149
 				color={ 242 43 181 }
 				color2={ 255 255 255 }
 				
@@ -5075,7 +5075,7 @@ e_middlerealm = {
 				b_vellberg_4 = {
 				}
 			}
-			c_wassertaelern = { # 145
+			c_wassertaelern = { # 143
 				color={ 242 204 37 }
 				color2={ 255 255 255 }
 				
@@ -5088,7 +5088,7 @@ e_middlerealm = {
 				b_wassertaelern_4 = {
 				}
 			}
-			c_westerklotz = { # 137
+			c_westerklotz = { # 135
 				color={ 242 57 40 }
 				color2={ 255 255 255 }
 				
@@ -5101,7 +5101,7 @@ e_middlerealm = {
 				b_westerklotz_4 = {
 				}
 			}
-			c_zackenberg = { # 139
+			c_zackenberg = { # 137
 				color={ 242 208 201 }
 				color2={ 255 255 255 }
 				
@@ -5122,12 +5122,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 122 province_id = 123 province_id = 124 province_id = 125 } }
+					any_demesne_province = { OR = { province_id = 120 province_id = 121 province_id = 122 province_id = 123 } }
 				}
 			}
-			capital = 122 # c_ochsenweide
+			capital = 120 # c_ochsenweide
 			
-			c_ochsenweide = { # 122
+			c_ochsenweide = { # 120
 				color={ 11 193 183 }
 				color2={ 255 255 255 }
 				
@@ -5140,7 +5140,7 @@ e_middlerealm = {
 				b_ochsenweide_4 = {
 				}
 			}
-			c_grassing = { # 123
+			c_grassing = { # 121
 				color={ 11 64 174 }
 				color2={ 255 255 255 }
 				
@@ -5153,7 +5153,7 @@ e_middlerealm = {
 				b_grassing_4 = {
 				}
 			}
-			c_zweimuehlen = { # 124
+			c_zweimuehlen = { # 122
 				color={ 11 232 42 }
 				color2={ 255 255 255 }
 				
@@ -5166,7 +5166,7 @@ e_middlerealm = {
 				b_zweimuehlen_4 = {
 				}
 			}
-			c_zwerch = { # 125
+			c_zwerch = { # 123
 				color={ 11 76 25 }
 				color2={ 255 255 255 }
 				
@@ -5185,7 +5185,7 @@ e_middlerealm = {
 		color={ 30 41 151 }
 		color2={ 255 255 255 }
 		
-		capital = 552 # c_hylailos
+		capital = 550 # c_hylailos
 		culture = cyclopean
 		
 		d_hylailos = {
@@ -5195,12 +5195,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 552 province_id = 553 province_id = 554 province_id = 555 province_id = 556 } }
+					any_demesne_province = { OR = { province_id = 550 province_id = 551 province_id = 552 province_id = 553 province_id = 554 } }
 				}
 			}
-			capital = 552 # c_hylailos
+			capital = 550 # c_hylailos
 			
-			c_hylailos = { # 552
+			c_hylailos = { # 550
 				color={ 0 71 136 }
 				color2={ 255 255 255 }
 				
@@ -5213,7 +5213,7 @@ e_middlerealm = {
 				b_hylailos_4 = {
 				}
 			}
-			c_baltrea = { # 553
+			c_baltrea = { # 551
 				color={ 142 37 74 }
 				color2={ 255 255 255 }
 				
@@ -5226,7 +5226,7 @@ e_middlerealm = {
 				b_baltrea_4 = {
 				}
 			}
-			c_kutaki = { # 556
+			c_kutaki = { # 554
 				color={ 142 173 42 }
 				color2={ 255 255 255 }
 				
@@ -5239,7 +5239,7 @@ e_middlerealm = {
 				b_kutaki_4 = {
 				}
 			}
-			c_pailos = { # 554
+			c_pailos = { # 552
 				color={ 142 75 35 }
 				color2={ 255 255 255 }
 				
@@ -5252,7 +5252,7 @@ e_middlerealm = {
 				b_pailos_4 = {
 				}
 			}
-			c_phrygaios = { # 555
+			c_phrygaios = { # 553
 				color={ 142 29 201 }
 				color2={ 255 255 255 }
 				
@@ -5271,7 +5271,7 @@ e_middlerealm = {
 		color={ 30 193 73 }
 		color2={ 255 255 255 }
 		
-		capital = 89 # c_fuerstenhort
+		capital = 87 # c_fuerstenhort
 		culture = kosh
 		
 		d_huegellande = {
@@ -5281,12 +5281,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 89 province_id = 90 province_id = 91 province_id = 92 province_id = 93 province_id = 94 province_id = 95 province_id = 96 province_id = 97 } }
+					any_demesne_province = { OR = { province_id = 87 province_id = 88 province_id = 89 province_id = 90 province_id = 91 province_id = 92 province_id = 93 province_id = 94 province_id = 95 } }
 				}
 			}
-			capital = 89 # c_fuerstenhort
+			capital = 87 # c_fuerstenhort
 			
-			c_fuerstenhort = { # 89
+			c_fuerstenhort = { # 87
 				color={ 0 223 58 }
 				color2={ 255 255 255 }
 				
@@ -5299,7 +5299,7 @@ e_middlerealm = {
 				b_fuerstenhort_4 = {
 				}
 			}
-			c_angbar = { # 94
+			c_angbar = { # 92
 				color={ 0 209 174 }
 				color2={ 255 255 255 }
 				
@@ -5312,7 +5312,7 @@ e_middlerealm = {
 				b_angbar_4 = {
 				}
 			}
-			c_baerenfang = { # 90
+			c_baerenfang = { # 88
 				color={ 0 50 65 }
 				color2={ 255 255 255 }
 				
@@ -5325,7 +5325,7 @@ e_middlerealm = {
 				b_baerenfang_4 = {
 				}
 			}
-			c_birnbrosch = { # 96
+			c_birnbrosch = { # 94
 				color={ 0 93 118 }
 				color2={ 255 255 255 }
 				
@@ -5338,7 +5338,7 @@ e_middlerealm = {
 				b_birnbrosch_4 = {
 				}
 			}
-			c_koschgau = { # 97
+			c_koschgau = { # 95
 				color={ 0 193 51 }
 				color2={ 255 255 255 }
 				
@@ -5351,7 +5351,7 @@ e_middlerealm = {
 				b_koschgau_4 = {
 				}
 			}
-			c_metenar = { # 95
+			c_metenar = { # 93
 				color={ 0 79 233 }
 				color2={ 255 255 255 }
 				
@@ -5364,7 +5364,7 @@ e_middlerealm = {
 				b_metenar_4 = {
 				}
 			}
-			c_oberangbar = { # 93
+			c_oberangbar = { # 91
 				color={ 0 202 35 }
 				color2={ 255 255 255 }
 				
@@ -5377,7 +5377,7 @@ e_middlerealm = {
 				b_oberangbar_4 = {
 				}
 			}
-			c_uztrutz = { # 91
+			c_uztrutz = { # 89
 				color={ 0 82 55 }
 				color2={ 255 255 255 }
 				
@@ -5390,7 +5390,7 @@ e_middlerealm = {
 				b_uztrutz_4 = {
 				}
 			}
-			c_zwischenwasser = { # 92
+			c_zwischenwasser = { # 90
 				color={ 0 224 36 }
 				color2={ 255 255 255 }
 				
@@ -5411,12 +5411,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 104 province_id = 105 province_id = 106 province_id = 107 province_id = 108 province_id = 109 province_id = 110 } }
+					any_demesne_province = { OR = { province_id = 102 province_id = 103 province_id = 104 province_id = 105 province_id = 106 province_id = 107 province_id = 108 } }
 				}
 			}
-			capital = 104 # c_roterz
+			capital = 102 # c_roterz
 			
-			c_roterz = { # 104
+			c_roterz = { # 102
 				color={ 15 76 100 }
 				color2={ 255 255 255 }
 				
@@ -5429,7 +5429,7 @@ e_middlerealm = {
 				b_roterz_4 = {
 				}
 			}
-			c_bragahn = { # 108
+			c_bragahn = { # 106
 				color={ 15 138 199 }
 				color2={ 255 255 255 }
 				
@@ -5442,7 +5442,7 @@ e_middlerealm = {
 				b_bragahn_4 = {
 				}
 			}
-			c_ferdok = { # 110
+			c_ferdok = { # 108
 				color={ 15 169 179 }
 				color2={ 255 255 255 }
 				
@@ -5455,7 +5455,7 @@ e_middlerealm = {
 				b_ferdok_4 = {
 				}
 			}
-			c_hammerschlag = { # 107
+			c_hammerschlag = { # 105
 				color={ 15 136 70 }
 				color2={ 255 255 255 }
 				
@@ -5468,7 +5468,7 @@ e_middlerealm = {
 				b_hammerschlag_4 = {
 				}
 			}
-			c_moorbrueck = { # 106
+			c_moorbrueck = { # 104
 				color={ 15 80 59 }
 				color2={ 255 255 255 }
 				
@@ -5481,7 +5481,7 @@ e_middlerealm = {
 				b_moorbrueck_4 = {
 				}
 			}
-			c_nadoret = { # 105
+			c_nadoret = { # 103
 				color={ 15 133 180 }
 				color2={ 255 255 255 }
 				
@@ -5494,7 +5494,7 @@ e_middlerealm = {
 				b_nadoret_4 = {
 				}
 			}
-			c_stanniz = { # 109
+			c_stanniz = { # 107
 				color={ 15 189 137 }
 				color2={ 255 255 255 }
 				
@@ -5515,12 +5515,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 98 province_id = 99 province_id = 100 province_id = 101 province_id = 102 province_id = 103 } }
+					any_demesne_province = { OR = { province_id = 96 province_id = 97 province_id = 98 province_id = 99 province_id = 100 province_id = 101 } }
 				}
 			}
-			capital = 98 # c_wengenholm
+			capital = 96 # c_wengenholm
 			
-			c_wengenholm = { # 98
+			c_wengenholm = { # 96
 				color={ 0 97 30 }
 				color2={ 255 255 255 }
 				
@@ -5533,7 +5533,7 @@ e_middlerealm = {
 				b_wengenholm_4 = {
 				}
 			}
-			c_auersbrueck = { # 103
+			c_auersbrueck = { # 101
 				color={ 0 212 194 }
 				color2={ 255 255 255 }
 				
@@ -5546,7 +5546,7 @@ e_middlerealm = {
 				b_auersbrueck_4 = {
 				}
 			}
-			c_baerenklamm = { # 99
+			c_baerenklamm = { # 97
 				color={ 0 45 146 }
 				color2={ 255 255 255 }
 				
@@ -5559,7 +5559,7 @@ e_middlerealm = {
 				b_baerenklamm_4 = {
 				}
 			}
-			c_geistmark = { # 100
+			c_geistmark = { # 98
 				color={ 0 83 155 }
 				color2={ 255 255 255 }
 				
@@ -5572,7 +5572,7 @@ e_middlerealm = {
 				b_geistmark_4 = {
 				}
 			}
-			c_koschim = { # 101
+			c_koschim = { # 99
 				color={ 0 219 63 }
 				color2={ 255 255 255 }
 				
@@ -5585,7 +5585,7 @@ e_middlerealm = {
 				b_koschim_4 = {
 				}
 			}
-			c_twergentrutz = { # 102
+			c_twergentrutz = { # 100
 				color={ 0 113 47 }
 				color2={ 255 255 255 }
 				
@@ -5604,7 +5604,7 @@ e_middlerealm = {
 		color={ 217 12 39 }
 		color2={ 255 255 255 }
 		
-		capital = 482 # c_tuzak
+		capital = 480 # c_tuzak
 		culture = maraskan
 		
 		d_tuzak = {
@@ -5614,12 +5614,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 482 province_id = 483 province_id = 484 province_id = 485 province_id = 486 } }
+					any_demesne_province = { OR = { province_id = 480 province_id = 481 province_id = 482 province_id = 483 province_id = 484 } }
 				}
 			}
-			capital = 482 # c_tuzak
+			capital = 480 # c_tuzak
 			
-			c_tuzak = { # 482
+			c_tuzak = { # 480
 				color={ 247 238 54 }
 				color2={ 255 255 255 }
 				
@@ -5632,7 +5632,7 @@ e_middlerealm = {
 				b_tuzak_4 = {
 				}
 			}
-			c_alrurdan = { # 486
+			c_alrurdan = { # 484
 				color={ 247 43 211 }
 				color2={ 255 255 255 }
 				
@@ -5645,7 +5645,7 @@ e_middlerealm = {
 				b_alrurdan_4 = {
 				}
 			}
-			c_geran = { # 485
+			c_geran = { # 483
 				color={ 247 194 191 }
 				color2={ 255 255 255 }
 				
@@ -5658,7 +5658,7 @@ e_middlerealm = {
 				b_geran_4 = {
 				}
 			}
-			c_obogyn = { # 483
+			c_obogyn = { # 481
 				color={ 247 218 56 }
 				color2={ 255 255 255 }
 				
@@ -5671,7 +5671,7 @@ e_middlerealm = {
 				b_obogyn_4 = {
 				}
 			}
-			c_talued = { # 484
+			c_talued = { # 482
 				color={ 247 31 33 }
 				color2={ 255 255 255 }
 				
@@ -5692,12 +5692,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 495 province_id = 496 province_id = 497 province_id = 498 province_id = 499 } }
+					any_demesne_province = { OR = { province_id = 493 province_id = 494 province_id = 495 province_id = 496 province_id = 497 } }
 				}
 			}
-			capital = 495 # c_boran
+			capital = 493 # c_boran
 			
-			c_boran = { # 495
+			c_boran = { # 493
 				color={ 84 92 53 }
 				color2={ 255 255 255 }
 				
@@ -5710,7 +5710,7 @@ e_middlerealm = {
 				b_boran_4 = {
 				}
 			}
-			c_charasim = { # 498
+			c_charasim = { # 496
 				color={ 84 78 69 }
 				color2={ 255 255 255 }
 				
@@ -5723,7 +5723,7 @@ e_middlerealm = {
 				b_charasim_4 = {
 				}
 			}
-			c_dinoda = { # 496
+			c_dinoda = { # 494
 				color={ 84 150 74 }
 				color2={ 255 255 255 }
 				
@@ -5736,7 +5736,7 @@ e_middlerealm = {
 				b_dinoda_4 = {
 				}
 			}
-			c_maraskancliff = { # 499
+			c_maraskancliff = { # 497
 				color={ 84 219 63 }
 				color2={ 255 255 255 }
 				
@@ -5749,7 +5749,7 @@ e_middlerealm = {
 				b_maraskancliff_4 = {
 				}
 			}
-			c_usdaran = { # 497
+			c_usdaran = { # 495
 				color={ 84 54 23 }
 				color2={ 255 255 255 }
 				
@@ -5770,12 +5770,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 500 province_id = 501 province_id = 502 province_id = 503 province_id = 504 province_id = 505 province_id = 506 } }
+					any_demesne_province = { OR = { province_id = 498 province_id = 499 province_id = 500 province_id = 501 province_id = 502 province_id = 503 province_id = 504 } }
 				}
 			}
-			capital = 500 # c_jergan
+			capital = 498 # c_jergan
 			
-			c_jergan = { # 500
+			c_jergan = { # 498
 				color={ 158 135 85 }
 				color2={ 255 255 255 }
 				
@@ -5788,7 +5788,7 @@ e_middlerealm = {
 				b_jergan_4 = {
 				}
 			}
-			c_asfar = { # 501
+			c_asfar = { # 499
 				color={ 158 53 132 }
 				color2={ 255 255 255 }
 				
@@ -5801,7 +5801,7 @@ e_middlerealm = {
 				b_asfar_4 = {
 				}
 			}
-			c_feqabab = { # 505
+			c_feqabab = { # 503
 				color={ 158 170 32 }
 				color2={ 255 255 255 }
 				
@@ -5814,7 +5814,7 @@ e_middlerealm = {
 				b_feqabab_4 = {
 				}
 			}
-			c_gipflak = { # 502
+			c_gipflak = { # 500
 				color={ 158 29 60 }
 				color2={ 255 255 255 }
 				
@@ -5827,7 +5827,7 @@ e_middlerealm = {
 				b_gipflak_4 = {
 				}
 			}
-			c_huab = { # 504
+			c_huab = { # 502
 				color={ 158 82 33 }
 				color2={ 255 255 255 }
 				
@@ -5840,7 +5840,7 @@ e_middlerealm = {
 				b_huab_4 = {
 				}
 			}
-			c_praiobab = { # 506
+			c_praiobab = { # 504
 				color={ 158 75 75 }
 				color2={ 255 255 255 }
 				
@@ -5853,7 +5853,7 @@ e_middlerealm = {
 				b_praiobab_4 = {
 				}
 			}
-			c_yerkilan = { # 503
+			c_yerkilan = { # 501
 				color={ 158 124 45 }
 				color2={ 255 255 255 }
 				
@@ -5874,12 +5874,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 507 province_id = 508 province_id = 509 } }
+					any_demesne_province = { OR = { province_id = 505 province_id = 506 province_id = 507 } }
 				}
 			}
-			capital = 507 # c_jilaskan
+			capital = 505 # c_jilaskan
 			
-			c_jilaskan = { # 507
+			c_jilaskan = { # 505
 				color={ 247 67 127 }
 				color2={ 255 255 255 }
 				
@@ -5892,7 +5892,7 @@ e_middlerealm = {
 				b_jilaskan_4 = {
 				}
 			}
-			c_etlaskan = { # 509
+			c_etlaskan = { # 507
 				color={ 247 139 160 }
 				color2={ 255 255 255 }
 				
@@ -5905,7 +5905,7 @@ e_middlerealm = {
 				b_etlaskan_4 = {
 				}
 			}
-			c_jandraskan = { # 508
+			c_jandraskan = { # 506
 				color={ 247 189 223 }
 				color2={ 255 255 255 }
 				
@@ -5926,12 +5926,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 487 province_id = 488 province_id = 489 province_id = 490 province_id = 491 province_id = 492 province_id = 493 province_id = 494 } }
+					any_demesne_province = { OR = { province_id = 485 province_id = 486 province_id = 487 province_id = 488 province_id = 489 province_id = 490 province_id = 491 province_id = 492 } }
 				}
 			}
-			capital = 487 # c_sinoda
+			capital = 485 # c_sinoda
 			
-			c_sinoda = { # 487
+			c_sinoda = { # 485
 				color={ 162 169 44 }
 				color2={ 255 255 255 }
 				
@@ -5944,7 +5944,7 @@ e_middlerealm = {
 				b_sinoda_4 = {
 				}
 			}
-			c_achazak = { # 493
+			c_achazak = { # 491
 				color={ 162 145 30 }
 				color2={ 255 255 255 }
 				
@@ -5957,7 +5957,7 @@ e_middlerealm = {
 				b_achazak_4 = {
 				}
 			}
-			c_betrozag = { # 489
+			c_betrozag = { # 487
 				color={ 162 53 84 }
 				color2={ 255 255 255 }
 				
@@ -5970,7 +5970,7 @@ e_middlerealm = {
 				b_betrozag_4 = {
 				}
 			}
-			c_buli = { # 488
+			c_buli = { # 486
 				color={ 162 185 53 }
 				color2={ 255 255 255 }
 				
@@ -5983,7 +5983,7 @@ e_middlerealm = {
 				b_buli_4 = {
 				}
 			}
-			c_dornak = { # 491
+			c_dornak = { # 489
 				color={ 162 98 59 }
 				color2={ 255 255 255 }
 				
@@ -5996,7 +5996,7 @@ e_middlerealm = {
 				b_dornak_4 = {
 				}
 			}
-			c_maraskanswamps = { # 492
+			c_maraskanswamps = { # 490
 				color={ 162 61 62 }
 				color2={ 255 255 255 }
 				
@@ -6009,7 +6009,7 @@ e_middlerealm = {
 				b_maraskanswamps_4 = {
 				}
 			}
-			c_mherweggyn = { # 494
+			c_mherweggyn = { # 492
 				color={ 162 161 53 }
 				color2={ 255 255 255 }
 				
@@ -6022,7 +6022,7 @@ e_middlerealm = {
 				b_mherweggyn_4 = {
 				}
 			}
-			c_zinobab = { # 490
+			c_zinobab = { # 488
 				color={ 162 100 55 }
 				color2={ 255 255 255 }
 				
@@ -6041,7 +6041,7 @@ e_middlerealm = {
 		color={ 100 62 214 }
 		color2={ 255 255 255 }
 		
-		capital = 175 # c_weidenhag
+		capital = 173 # c_weidenhag
 		culture = meadows
 		
 		d_heldentrutz = {
@@ -6051,12 +6051,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 175 province_id = 176 province_id = 177 province_id = 178 province_id = 179 province_id = 180 province_id = 181 } }
+					any_demesne_province = { OR = { province_id = 173 province_id = 174 province_id = 175 province_id = 176 province_id = 177 province_id = 178 province_id = 179 } }
 				}
 			}
-			capital = 175 # c_weidenhag
+			capital = 173 # c_weidenhag
 			
-			c_weidenhag = { # 175
+			c_weidenhag = { # 173
 				color={ 130 32 229 }
 				color2={ 255 255 255 }
 				
@@ -6069,7 +6069,7 @@ e_middlerealm = {
 				b_weidenhag_4 = {
 				}
 			}
-			c_dergelquell = { # 177
+			c_dergelquell = { # 175
 				color={ 130 234 20 }
 				color2={ 255 255 255 }
 				
@@ -6082,7 +6082,7 @@ e_middlerealm = {
 				b_dergelquell_4 = {
 				}
 			}
-			c_nordhag = { # 179
+			c_nordhag = { # 177
 				color={ 130 122 19 }
 				color2={ 255 255 255 }
 				
@@ -6095,7 +6095,7 @@ e_middlerealm = {
 				b_nordhag_4 = {
 				}
 			}
-			c_reichsend = { # 181
+			c_reichsend = { # 179
 				color={ 130 116 229 }
 				color2={ 255 255 255 }
 				
@@ -6108,7 +6108,7 @@ e_middlerealm = {
 				b_reichsend_4 = {
 				}
 			}
-			c_schneehag = { # 178
+			c_schneehag = { # 176
 				color={ 130 231 132 }
 				color2={ 255 255 255 }
 				
@@ -6121,7 +6121,7 @@ e_middlerealm = {
 				b_schneehag_4 = {
 				}
 			}
-			c_waldleuen = { # 176
+			c_waldleuen = { # 174
 				color={ 130 39 49 }
 				color2={ 255 255 255 }
 				
@@ -6134,7 +6134,7 @@ e_middlerealm = {
 				b_waldleuen_4 = {
 				}
 			}
-			c_weiden = { # 180
+			c_weiden = { # 178
 				color={ 130 219 214 }
 				color2={ 255 255 255 }
 				
@@ -6155,12 +6155,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 182 province_id = 183 province_id = 184 province_id = 185 province_id = 186 province_id = 187 province_id = 188 province_id = 189 } }
+					any_demesne_province = { OR = { province_id = 180 province_id = 181 province_id = 182 province_id = 183 province_id = 184 province_id = 185 province_id = 186 province_id = 187 } }
 				}
 			}
-			capital = 182 # c_moosgrund
+			capital = 180 # c_moosgrund
 			
-			c_moosgrund = { # 182
+			c_moosgrund = { # 180
 				color={ 125 236 139 }
 				color2={ 255 255 255 }
 				
@@ -6173,7 +6173,7 @@ e_middlerealm = {
 				b_moosgrund_4 = {
 				}
 			}
-			c_brachfelde = { # 188
+			c_brachfelde = { # 186
 				color={ 125 219 37 }
 				color2={ 255 255 255 }
 				
@@ -6186,7 +6186,7 @@ e_middlerealm = {
 				b_brachfelde_4 = {
 				}
 			}
-			c_dornstein = { # 187
+			c_dornstein = { # 185
 				color={ 125 222 33 }
 				color2={ 255 255 255 }
 				
@@ -6199,7 +6199,7 @@ e_middlerealm = {
 				b_dornstein_4 = {
 				}
 			}
-			c_hollerheide = { # 189
+			c_hollerheide = { # 187
 				color={ 125 137 20 }
 				color2={ 255 255 255 }
 				
@@ -6212,7 +6212,7 @@ e_middlerealm = {
 				b_hollerheide_4 = {
 				}
 			}
-			c_pallingen = { # 186
+			c_pallingen = { # 184
 				color={ 125 31 29 }
 				color2={ 255 255 255 }
 				
@@ -6225,7 +6225,7 @@ e_middlerealm = {
 				b_pallingen_4 = {
 				}
 			}
-			c_trallop = { # 184
+			c_trallop = { # 182
 				color={ 125 14 94 }
 				color2={ 255 255 255 }
 				
@@ -6238,7 +6238,7 @@ e_middlerealm = {
 				b_trallop_4 = {
 				}
 			}
-			c_urkentrutz = { # 183
+			c_urkentrutz = { # 181
 				color={ 125 21 224 }
 				color2={ 255 255 255 }
 				
@@ -6251,7 +6251,7 @@ e_middlerealm = {
 				b_urkentrutz_4 = {
 				}
 			}
-			c_wolfenbinge = { # 185
+			c_wolfenbinge = { # 183
 				color={ 125 219 227 }
 				color2={ 255 255 255 }
 				
@@ -6272,12 +6272,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 190 province_id = 191 province_id = 192 province_id = 193 province_id = 194 province_id = 195 province_id = 196 province_id = 197 province_id = 198 } }
+					any_demesne_province = { OR = { province_id = 188 province_id = 189 province_id = 190 province_id = 191 province_id = 192 province_id = 193 province_id = 194 province_id = 195 province_id = 196 } }
 				}
 			}
-			capital = 190 # c_baliho
+			capital = 188 # c_baliho
 			
-			c_baliho = { # 190
+			c_baliho = { # 188
 				color={ 125 16 128 }
 				color2={ 255 255 255 }
 				
@@ -6290,7 +6290,7 @@ e_middlerealm = {
 				b_baliho_4 = {
 				}
 			}
-			c_bollinger_heide = { # 197
+			c_bollinger_heide = { # 195
 				color={ 125 225 218 }
 				color2={ 255 255 255 }
 				
@@ -6303,7 +6303,7 @@ e_middlerealm = {
 				b_bollinger_heide_4 = {
 				}
 			}
-			c_espen = { # 193
+			c_espen = { # 191
 				color={ 125 142 21 }
 				color2={ 255 255 255 }
 				
@@ -6316,7 +6316,7 @@ e_middlerealm = {
 				b_espen_4 = {
 				}
 			}
-			c_menzheim = { # 194
+			c_menzheim = { # 192
 				color={ 125 224 29 }
 				color2={ 255 255 255 }
 				
@@ -6329,7 +6329,7 @@ e_middlerealm = {
 				b_menzheim_4 = {
 				}
 			}
-			c_pandlaril = { # 191
+			c_pandlaril = { # 189
 				color={ 125 226 75 }
 				color2={ 255 255 255 }
 				
@@ -6342,7 +6342,7 @@ e_middlerealm = {
 				b_pandlaril_4 = {
 				}
 			}
-			c_perainenstein = { # 192
+			c_perainenstein = { # 190
 				color={ 125 151 32 }
 				color2={ 255 255 255 }
 				
@@ -6355,7 +6355,7 @@ e_middlerealm = {
 				b_perainenstein_4 = {
 				}
 			}
-			c_rotenwasser = { # 196
+			c_rotenwasser = { # 194
 				color={ 125 228 138 }
 				color2={ 255 255 255 }
 				
@@ -6368,7 +6368,7 @@ e_middlerealm = {
 				b_rotenwasser_4 = {
 				}
 			}
-			c_teichenberg = { # 195
+			c_teichenberg = { # 193
 				color={ 125 114 227 }
 				color2={ 255 255 255 }
 				
@@ -6381,7 +6381,7 @@ e_middlerealm = {
 				b_teichenberg_4 = {
 				}
 			}
-			c_zippeldinge = { # 198
+			c_zippeldinge = { # 196
 				color={ 125 21 121 }
 				color2={ 255 255 255 }
 				
@@ -6402,12 +6402,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 199 province_id = 200 province_id = 201 province_id = 202 province_id = 203 province_id = 204 province_id = 205 province_id = 206 province_id = 207 province_id = 208 province_id = 209 province_id = 210 province_id = 211 province_id = 212 } }
+					any_demesne_province = { OR = { province_id = 197 province_id = 198 province_id = 199 province_id = 200 province_id = 201 province_id = 202 province_id = 203 province_id = 204 province_id = 205 province_id = 206 province_id = 207 province_id = 208 province_id = 209 province_id = 210 } }
 				}
 			}
-			capital = 199 # c_sichelwachter_drachenstein
+			capital = 197 # c_sichelwachter_drachenstein
 			
-			c_sichelwachter_drachenstein = { # 199
+			c_sichelwachter_drachenstein = { # 197
 				color={ 125 150 35 }
 				color2={ 255 255 255 }
 				
@@ -6420,7 +6420,7 @@ e_middlerealm = {
 				b_sichelwachter_drachenstein_4 = {
 				}
 			}
-			c_adlerflug = { # 209
+			c_adlerflug = { # 207
 				color={ 125 180 27 }
 				color2={ 255 255 255 }
 				
@@ -6433,7 +6433,7 @@ e_middlerealm = {
 				b_adlerflug_4 = {
 				}
 			}
-			c_altentrallop = { # 206
+			c_altentrallop = { # 204
 				color={ 125 97 240 }
 				color2={ 255 255 255 }
 				
@@ -6446,7 +6446,7 @@ e_middlerealm = {
 				b_altentrallop_4 = {
 				}
 			}
-			c_beonspfort = { # 211
+			c_beonspfort = { # 209
 				color={ 125 210 222 }
 				color2={ 255 255 255 }
 				
@@ -6459,7 +6459,7 @@ e_middlerealm = {
 				b_beonspfort_4 = {
 				}
 			}
-			c_fuchshag = { # 208
+			c_fuchshag = { # 206
 				color={ 125 33 70 }
 				color2={ 255 255 255 }
 				
@@ -6472,7 +6472,7 @@ e_middlerealm = {
 				b_fuchshag_4 = {
 				}
 			}
-			c_hahnfels = { # 205
+			c_hahnfels = { # 203
 				color={ 125 45 236 }
 				color2={ 255 255 255 }
 				
@@ -6485,7 +6485,7 @@ e_middlerealm = {
 				b_hahnfels_4 = {
 				}
 			}
-			c_herzogenthal = { # 203
+			c_herzogenthal = { # 201
 				color={ 125 64 42 }
 				color2={ 255 255 255 }
 				
@@ -6498,7 +6498,7 @@ e_middlerealm = {
 				b_herzogenthal_4 = {
 				}
 			}
-			c_mauterndorf = { # 202
+			c_mauterndorf = { # 200
 				color={ 125 232 210 }
 				color2={ 255 255 255 }
 				
@@ -6511,7 +6511,7 @@ e_middlerealm = {
 				b_mauterndorf_4 = {
 				}
 			}
-			c_rotenforst = { # 200
+			c_rotenforst = { # 198
 				color={ 125 130 226 }
 				color2={ 255 255 255 }
 				
@@ -6524,7 +6524,7 @@ e_middlerealm = {
 				b_rotenforst_4 = {
 				}
 			}
-			c_saldersand = { # 204
+			c_saldersand = { # 202
 				color={ 125 154 19 }
 				color2={ 255 255 255 }
 				
@@ -6537,7 +6537,7 @@ e_middlerealm = {
 				b_saldersand_4 = {
 				}
 			}
-			c_salthel = { # 210
+			c_salthel = { # 208
 				color={ 125 21 68 }
 				color2={ 255 255 255 }
 				
@@ -6550,7 +6550,7 @@ e_middlerealm = {
 				b_salthel_4 = {
 				}
 			}
-			c_schroffenfels = { # 207
+			c_schroffenfels = { # 205
 				color={ 125 35 205 }
 				color2={ 255 255 255 }
 				
@@ -6563,7 +6563,7 @@ e_middlerealm = {
 				b_schroffenfels_4 = {
 				}
 			}
-			c_schwarzenstein = { # 201
+			c_schwarzenstein = { # 199
 				color={ 125 207 206 }
 				color2={ 255 255 255 }
 				
@@ -6576,7 +6576,7 @@ e_middlerealm = {
 				b_schwarzenstein_4 = {
 				}
 			}
-			c_uhdenwald = { # 212
+			c_uhdenwald = { # 210
 				color={ 125 227 32 }
 				color2={ 255 255 255 }
 				
@@ -6595,7 +6595,7 @@ e_middlerealm = {
 		color={ 112 165 61 }
 		color2={ 255 255 255 }
 		
-		capital = 293 # c_klippag
+		capital = 291 # c_klippag
 		culture = northern_marches
 		
 		d_elenvina = {
@@ -6605,12 +6605,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 293 province_id = 294 province_id = 295 } }
+					any_demesne_province = { OR = { province_id = 291 province_id = 292 province_id = 293 } }
 				}
 			}
-			capital = 293 # c_klippag
+			capital = 291 # c_klippag
 			
-			c_klippag = { # 293
+			c_klippag = { # 291
 				color={ 82 195 46 }
 				color2={ 255 255 255 }
 				
@@ -6623,7 +6623,7 @@ e_middlerealm = {
 				b_klippag_4 = {
 				}
 			}
-			c_bollharschen = { # 295
+			c_bollharschen = { # 293
 				color={ 82 40 214 }
 				color2={ 255 255 255 }
 				
@@ -6636,7 +6636,7 @@ e_middlerealm = {
 				b_bollharschen_4 = {
 				}
 			}
-			c_fuchsgau = { # 294
+			c_fuchsgau = { # 292
 				color={ 82 206 189 }
 				color2={ 255 255 255 }
 				
@@ -6657,12 +6657,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 304 province_id = 305 province_id = 306 province_id = 307 province_id = 308 province_id = 309 province_id = 310 } }
+					any_demesne_province = { OR = { province_id = 302 province_id = 303 province_id = 304 province_id = 305 province_id = 306 province_id = 307 province_id = 308 } }
 				}
 			}
-			capital = 304 # c_weidleth
+			capital = 302 # c_weidleth
 			
-			c_weidleth = { # 304
+			c_weidleth = { # 302
 				color={ 169 37 193 }
 				color2={ 255 255 255 }
 				
@@ -6675,7 +6675,7 @@ e_middlerealm = {
 				b_weidleth_4 = {
 				}
 			}
-			c_albengau = { # 309
+			c_albengau = { # 307
 				color={ 169 221 208 }
 				color2={ 255 255 255 }
 				
@@ -6688,7 +6688,7 @@ e_middlerealm = {
 				b_albengau_4 = {
 				}
 			}
-			c_albenhus = { # 308
+			c_albenhus = { # 306
 				color={ 169 215 43 }
 				color2={ 255 255 255 }
 				
@@ -6701,7 +6701,7 @@ e_middlerealm = {
 				b_albenhus_4 = {
 				}
 			}
-			c_gernebruch = { # 305
+			c_gernebruch = { # 303
 				color={ 169 210 46 }
 				color2={ 255 255 255 }
 				
@@ -6714,7 +6714,7 @@ e_middlerealm = {
 				b_gernebruch_4 = {
 				}
 			}
-			c_hluthars_watch = { # 306
+			c_hluthars_watch = { # 304
 				color={ 169 229 217 }
 				color2={ 255 255 255 }
 				
@@ -6727,7 +6727,7 @@ e_middlerealm = {
 				b_hluthars_watch_4 = {
 				}
 			}
-			c_kaldenberg = { # 307
+			c_kaldenberg = { # 305
 				color={ 169 22 32 }
 				color2={ 255 255 255 }
 				
@@ -6740,7 +6740,7 @@ e_middlerealm = {
 				b_kaldenberg_4 = {
 				}
 			}
-			c_liepennstein = { # 310
+			c_liepennstein = { # 308
 				color={ 169 27 45 }
 				color2={ 255 255 255 }
 				
@@ -6761,12 +6761,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 311 province_id = 312 province_id = 313 province_id = 314 province_id = 315 province_id = 316 province_id = 317 province_id = 318 province_id = 319 province_id = 320 province_id = 321 province_id = 322 province_id = 323 province_id = 324 province_id = 325 province_id = 326 } }
+					any_demesne_province = { OR = { province_id = 309 province_id = 310 province_id = 311 province_id = 312 province_id = 313 province_id = 314 province_id = 315 province_id = 316 province_id = 317 province_id = 318 province_id = 319 province_id = 320 province_id = 321 province_id = 322 province_id = 323 province_id = 324 } }
 				}
 			}
-			capital = 311 # c_arraned
+			capital = 309 # c_arraned
 			
-			c_arraned = { # 311
+			c_arraned = { # 309
 				color={ 236 35 26 }
 				color2={ 255 255 255 }
 				
@@ -6779,7 +6779,7 @@ e_middlerealm = {
 				b_arraned_4 = {
 				}
 			}
-			c_ambelmund = { # 318
+			c_ambelmund = { # 316
 				color={ 236 57 228 }
 				color2={ 255 255 255 }
 				
@@ -6792,7 +6792,7 @@ e_middlerealm = {
 				b_ambelmund_4 = {
 				}
 			}
-			c_berg = { # 317
+			c_berg = { # 315
 				color={ 236 32 212 }
 				color2={ 255 255 255 }
 				
@@ -6805,7 +6805,7 @@ e_middlerealm = {
 				b_berg_4 = {
 				}
 			}
-			c_firnholz = { # 313
+			c_firnholz = { # 311
 				color={ 236 14 187 }
 				color2={ 255 255 255 }
 				
@@ -6818,7 +6818,7 @@ e_middlerealm = {
 				b_firnholz_4 = {
 				}
 			}
-			c_galebquell = { # 312
+			c_galebquell = { # 310
 				color={ 236 39 70 }
 				color2={ 255 255 255 }
 				
@@ -6831,7 +6831,7 @@ e_middlerealm = {
 				b_galebquell_4 = {
 				}
 			}
-			c_gratenfels = { # 315
+			c_gratenfels = { # 313
 				color={ 236 228 62 }
 				color2={ 255 255 255 }
 				
@@ -6844,7 +6844,7 @@ e_middlerealm = {
 				b_gratenfels_4 = {
 				}
 			}
-			c_ludgenfels = { # 322
+			c_ludgenfels = { # 320
 				color={ 236 210 46 }
 				color2={ 255 255 255 }
 				
@@ -6857,7 +6857,7 @@ e_middlerealm = {
 				b_ludgenfels_4 = {
 				}
 			}
-			c_meilingen = { # 316
+			c_meilingen = { # 314
 				color={ 236 212 224 }
 				color2={ 255 255 255 }
 				
@@ -6870,7 +6870,7 @@ e_middlerealm = {
 				b_meilingen_4 = {
 				}
 			}
-			c_orgils_home = { # 319
+			c_orgils_home = { # 317
 				color={ 236 221 44 }
 				color2={ 255 255 255 }
 				
@@ -6883,7 +6883,7 @@ e_middlerealm = {
 				b_orgils_home_4 = {
 				}
 			}
-			c_paggenau = { # 325
+			c_paggenau = { # 323
 				color={ 236 212 216 }
 				color2={ 255 255 255 }
 				
@@ -6896,7 +6896,7 @@ e_middlerealm = {
 				b_paggenau_4 = {
 				}
 			}
-			c_rickenhausen = { # 320
+			c_rickenhausen = { # 318
 				color={ 236 191 236 }
 				color2={ 255 255 255 }
 				
@@ -6909,7 +6909,7 @@ e_middlerealm = {
 				b_rickenhausen_4 = {
 				}
 			}
-			c_schnakensee = { # 314
+			c_schnakensee = { # 312
 				color={ 236 220 162 }
 				color2={ 255 255 255 }
 				
@@ -6922,7 +6922,7 @@ e_middlerealm = {
 				b_schnakensee_4 = {
 				}
 			}
-			c_schwertleihe = { # 323
+			c_schwertleihe = { # 321
 				color={ 236 43 220 }
 				color2={ 255 255 255 }
 				
@@ -6935,7 +6935,7 @@ e_middlerealm = {
 				b_schwertleihe_4 = {
 				}
 			}
-			c_tommelsbeuge = { # 326
+			c_tommelsbeuge = { # 324
 				color={ 236 228 173 }
 				color2={ 255 255 255 }
 				
@@ -6948,7 +6948,7 @@ e_middlerealm = {
 				b_tommelsbeuge_4 = {
 				}
 			}
-			c_vairningen = { # 324
+			c_vairningen = { # 322
 				color={ 236 164 33 }
 				color2={ 255 255 255 }
 				
@@ -6961,7 +6961,7 @@ e_middlerealm = {
 				b_vairningen_4 = {
 				}
 			}
-			c_witzichenberg = { # 321
+			c_witzichenberg = { # 319
 				color={ 236 31 24 }
 				color2={ 255 255 255 }
 				
@@ -6982,12 +6982,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 296 province_id = 297 province_id = 298 province_id = 299 province_id = 300 province_id = 301 province_id = 302 province_id = 303 } }
+					any_demesne_province = { OR = { province_id = 294 province_id = 295 province_id = 296 province_id = 297 province_id = 298 province_id = 299 province_id = 300 province_id = 301 } }
 				}
 			}
-			capital = 296 # c_eisenwald
+			capital = 294 # c_eisenwald
 			
-			c_eisenwald = { # 296
+			c_eisenwald = { # 294
 				color={ 135 30 32 }
 				color2={ 255 255 255 }
 				
@@ -7000,7 +7000,7 @@ e_middlerealm = {
 				b_eisenwald_4 = {
 				}
 			}
-			c_angroschsgau = { # 301
+			c_angroschsgau = { # 299
 				color={ 135 103 192 }
 				color2={ 255 255 255 }
 				
@@ -7013,7 +7013,7 @@ e_middlerealm = {
 				b_angroschsgau_4 = {
 				}
 			}
-			c_dohlenfelde = { # 302
+			c_dohlenfelde = { # 300
 				color={ 135 45 89 }
 				color2={ 255 255 255 }
 				
@@ -7026,7 +7026,7 @@ e_middlerealm = {
 				b_dohlenfelde_4 = {
 				}
 			}
-			c_eisenstein = { # 297
+			c_eisenstein = { # 295
 				color={ 135 42 25 }
 				color2={ 255 255 255 }
 				
@@ -7039,7 +7039,7 @@ e_middlerealm = {
 				b_eisenstein_4 = {
 				}
 			}
-			c_rabenstein = { # 298
+			c_rabenstein = { # 296
 				color={ 135 223 59 }
 				color2={ 255 255 255 }
 				
@@ -7052,7 +7052,7 @@ e_middlerealm = {
 				b_rabenstein_4 = {
 				}
 			}
-			c_rodaschquell = { # 299
+			c_rodaschquell = { # 297
 				color={ 135 69 38 }
 				color2={ 255 255 255 }
 				
@@ -7065,7 +7065,7 @@ e_middlerealm = {
 				b_rodaschquell_4 = {
 				}
 			}
-			c_tandosch = { # 300
+			c_tandosch = { # 298
 				color={ 135 208 39 }
 				color2={ 255 255 255 }
 				
@@ -7078,7 +7078,7 @@ e_middlerealm = {
 				b_tandosch_4 = {
 				}
 			}
-			c_wedengraben = { # 303
+			c_wedengraben = { # 301
 				color={ 135 196 36 }
 				color2={ 255 255 255 }
 				
@@ -7099,12 +7099,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 327 province_id = 328 province_id = 329 province_id = 330 province_id = 331 province_id = 332 province_id = 333 province_id = 334 province_id = 335 province_id = 336 } }
+					any_demesne_province = { OR = { province_id = 325 province_id = 326 province_id = 327 province_id = 328 province_id = 329 province_id = 330 province_id = 331 province_id = 332 province_id = 333 province_id = 334 } }
 				}
 			}
-			capital = 327 # c_wettershag
+			capital = 325 # c_wettershag
 			
-			c_wettershag = { # 327
+			c_wettershag = { # 325
 				color={ 58 231 44 }
 				color2={ 255 255 255 }
 				
@@ -7117,7 +7117,7 @@ e_middlerealm = {
 				b_wettershag_4 = {
 				}
 			}
-			c_flachstein = { # 334
+			c_flachstein = { # 332
 				color={ 58 80 49 }
 				color2={ 255 255 255 }
 				
@@ -7130,7 +7130,7 @@ e_middlerealm = {
 				b_flachstein_4 = {
 				}
 			}
-			c_greifenklamm = { # 335
+			c_greifenklamm = { # 333
 				color={ 58 30 213 }
 				color2={ 255 255 255 }
 				
@@ -7143,7 +7143,7 @@ e_middlerealm = {
 				b_greifenklamm_4 = {
 				}
 			}
-			c_osthag = { # 331
+			c_osthag = { # 329
 				color={ 58 32 26 }
 				color2={ 255 255 255 }
 				
@@ -7156,7 +7156,7 @@ e_middlerealm = {
 				b_osthag_4 = {
 				}
 			}
-			c_rondbirge = { # 330
+			c_rondbirge = { # 328
 				color={ 58 220 31 }
 				color2={ 255 255 255 }
 				
@@ -7169,7 +7169,7 @@ e_middlerealm = {
 				b_rondbirge_4 = {
 				}
 			}
-			c_salzsteige = { # 336
+			c_salzsteige = { # 334
 				color={ 58 32 219 }
 				color2={ 255 255 255 }
 				
@@ -7182,7 +7182,7 @@ e_middlerealm = {
 				b_salzsteige_4 = {
 				}
 			}
-			c_schattengrund = { # 333
+			c_schattengrund = { # 331
 				color={ 58 67 56 }
 				color2={ 255 255 255 }
 				
@@ -7195,7 +7195,7 @@ e_middlerealm = {
 				b_schattengrund_4 = {
 				}
 			}
-			c_suedhag = { # 328
+			c_suedhag = { # 326
 				color={ 58 27 58 }
 				color2={ 255 255 255 }
 				
@@ -7208,7 +7208,7 @@ e_middlerealm = {
 				b_suedhag_4 = {
 				}
 			}
-			c_weissengau = { # 329
+			c_weissengau = { # 327
 				color={ 58 212 215 }
 				color2={ 255 255 255 }
 				
@@ -7221,7 +7221,7 @@ e_middlerealm = {
 				b_weissengau_4 = {
 				}
 			}
-			c_widdernhall = { # 332
+			c_widdernhall = { # 330
 				color={ 58 207 41 }
 				color2={ 255 255 255 }
 				
@@ -7240,7 +7240,7 @@ e_middlerealm = {
 		color={ 210 68 196 }
 		color2={ 255 255 255 }
 		
-		capital = 213 # c_drachenstein
+		capital = 211 # c_drachenstein
 		culture = tobrian
 		
 		d_drachenstein = {
@@ -7250,12 +7250,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 213 province_id = 214 province_id = 215 province_id = 216 province_id = 217 province_id = 218 } }
+					any_demesne_province = { OR = { province_id = 211 province_id = 212 province_id = 213 province_id = 214 province_id = 215 province_id = 216 } }
 				}
 			}
-			capital = 213 # c_drachenstein
+			capital = 211 # c_drachenstein
 			
-			c_drachenstein = { # 213
+			c_drachenstein = { # 211
 				color={ 240 38 211 }
 				color2={ 255 255 255 }
 				
@@ -7268,7 +7268,7 @@ e_middlerealm = {
 				b_drachenstein_4 = {
 				}
 			}
-			c_eisenrath = { # 217
+			c_eisenrath = { # 215
 				color={ 240 45 31 }
 				color2={ 255 255 255 }
 				
@@ -7281,7 +7281,7 @@ e_middlerealm = {
 				b_eisenrath_4 = {
 				}
 			}
-			c_erlschwerd = { # 215
+			c_erlschwerd = { # 213
 				color={ 240 94 79 }
 				color2={ 255 255 255 }
 				
@@ -7294,7 +7294,7 @@ e_middlerealm = {
 				b_erlschwerd_4 = {
 				}
 			}
-			c_gueldenharsch = { # 216
+			c_gueldenharsch = { # 214
 				color={ 240 32 217 }
 				color2={ 255 255 255 }
 				
@@ -7307,7 +7307,7 @@ e_middlerealm = {
 				b_gueldenharsch_4 = {
 				}
 			}
-			c_rumpenfels = { # 218
+			c_rumpenfels = { # 216
 				color={ 240 221 41 }
 				color2={ 255 255 255 }
 				
@@ -7320,7 +7320,7 @@ e_middlerealm = {
 				b_rumpenfels_4 = {
 				}
 			}
-			c_ungolfsthann = { # 214
+			c_ungolfsthann = { # 212
 				color={ 240 164 50 }
 				color2={ 255 255 255 }
 				
@@ -7341,12 +7341,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 278 province_id = 279 province_id = 280 province_id = 281 province_id = 282 province_id = 283 province_id = 284 province_id = 285 province_id = 286 province_id = 287 province_id = 288 province_id = 289 province_id = 290 province_id = 291 province_id = 292 } }
+					any_demesne_province = { OR = { province_id = 276 province_id = 277 province_id = 278 province_id = 279 province_id = 280 province_id = 281 province_id = 282 province_id = 283 province_id = 284 province_id = 285 province_id = 286 province_id = 287 province_id = 288 province_id = 289 province_id = 290 } }
 				}
 			}
-			capital = 278 # c_saldersand_2
+			capital = 276 # c_saldersand_2
 			
-			c_saldersand_2 = { # 278
+			c_saldersand_2 = { # 276
 				color={ 103 67 44 }
 				color2={ 255 255 255 }
 				
@@ -7359,7 +7359,7 @@ e_middlerealm = {
 				b_saldersand_8 = {
 				}
 			}
-			c_beilunk = { # 286
+			c_beilunk = { # 284
 				color={ 103 51 59 }
 				color2={ 255 255 255 }
 				
@@ -7372,7 +7372,7 @@ e_middlerealm = {
 				b_beilunk_4 = {
 				}
 			}
-			c_borobunth = { # 284
+			c_borobunth = { # 282
 				color={ 103 196 80 }
 				color2={ 255 255 255 }
 				
@@ -7385,7 +7385,7 @@ e_middlerealm = {
 				b_borobunth_4 = {
 				}
 			}
-			c_drileuen = { # 288
+			c_drileuen = { # 286
 				color={ 103 207 195 }
 				color2={ 255 255 255 }
 				
@@ -7398,7 +7398,7 @@ e_middlerealm = {
 				b_drileuen_4 = {
 				}
 			}
-			c_greifenau = { # 280
+			c_greifenau = { # 278
 				color={ 103 190 196 }
 				color2={ 255 255 255 }
 				
@@ -7411,7 +7411,7 @@ e_middlerealm = {
 				b_greifenau_4 = {
 				}
 			}
-			c_gruenau = { # 290
+			c_gruenau = { # 288
 				color={ 103 52 194 }
 				color2={ 255 255 255 }
 				
@@ -7424,7 +7424,7 @@ e_middlerealm = {
 				b_gruenau_4 = {
 				}
 			}
-			c_ilderasch = { # 292
+			c_ilderasch = { # 290
 				color={ 103 69 213 }
 				color2={ 255 255 255 }
 				
@@ -7437,7 +7437,7 @@ e_middlerealm = {
 				b_ilderasch_4 = {
 				}
 			}
-			c_kurkum = { # 291
+			c_kurkum = { # 289
 				color={ 103 54 46 }
 				color2={ 255 255 255 }
 				
@@ -7450,7 +7450,7 @@ e_middlerealm = {
 				b_kurkum_4 = {
 				}
 			}
-			c_lorgolosch = { # 281
+			c_lorgolosch = { # 279
 				color={ 103 28 137 }
 				color2={ 255 255 255 }
 				
@@ -7463,7 +7463,7 @@ e_middlerealm = {
 				b_lorgolosch_4 = {
 				}
 			}
-			c_lyll = { # 279
+			c_lyll = { # 277
 				color={ 103 203 191 }
 				color2={ 255 255 255 }
 				
@@ -7476,7 +7476,7 @@ e_middlerealm = {
 				b_lyll_4 = {
 				}
 			}
-			c_maich = { # 283
+			c_maich = { # 281
 				color={ 103 195 47 }
 				color2={ 255 255 255 }
 				
@@ -7489,7 +7489,7 @@ e_middlerealm = {
 				b_maich_4 = {
 				}
 			}
-			c_norbeneck = { # 282
+			c_norbeneck = { # 280
 				color={ 103 58 193 }
 				color2={ 255 255 255 }
 				
@@ -7502,7 +7502,7 @@ e_middlerealm = {
 				b_norbeneck_4 = {
 				}
 			}
-			c_ogerbusch = { # 289
+			c_ogerbusch = { # 287
 				color={ 103 218 50 }
 				color2={ 255 255 255 }
 				
@@ -7515,7 +7515,7 @@ e_middlerealm = {
 				b_ogerbusch_4 = {
 				}
 			}
-			c_ring_of_lorgolosch = { # 285
+			c_ring_of_lorgolosch = { # 283
 				color={ 103 171 209 }
 				color2={ 255 255 255 }
 				
@@ -7528,7 +7528,7 @@ e_middlerealm = {
 				b_ring_of_lorgolosch_4 = {
 				}
 			}
-			c_shamaham = { # 287
+			c_shamaham = { # 285
 				color={ 103 196 196 }
 				color2={ 255 255 255 }
 				
@@ -7549,12 +7549,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 225 province_id = 226 province_id = 227 province_id = 228 province_id = 229 province_id = 230 province_id = 231 province_id = 232 province_id = 233 province_id = 234 province_id = 235 province_id = 236 province_id = 237 province_id = 238 } }
+					any_demesne_province = { OR = { province_id = 223 province_id = 224 province_id = 225 province_id = 226 province_id = 227 province_id = 228 province_id = 229 province_id = 230 province_id = 231 province_id = 232 province_id = 233 province_id = 234 province_id = 235 province_id = 236 } }
 				}
 			}
-			capital = 225 # c_zossberg
+			capital = 223 # c_zossberg
 			
-			c_zossberg = { # 225
+			c_zossberg = { # 223
 				color={ 92 206 206 }
 				color2={ 255 255 255 }
 				
@@ -7567,7 +7567,7 @@ e_middlerealm = {
 				b_zossberg_4 = {
 				}
 			}
-			c_borwein = { # 236
+			c_borwein = { # 234
 				color={ 92 26 19 }
 				color2={ 255 255 255 }
 				
@@ -7580,7 +7580,7 @@ e_middlerealm = {
 				b_borwein_4 = {
 				}
 			}
-			c_foehrenhain = { # 229
+			c_foehrenhain = { # 227
 				color={ 142 193 199 }
 				color2={ 255 255 255 }
 				
@@ -7593,7 +7593,7 @@ e_middlerealm = {
 				b_foehrenhain_4 = {
 				}
 			}
-			c_ilsur = { # 226
+			c_ilsur = { # 224
 				color={ 92 228 20 }
 				color2={ 255 255 255 }
 				
@@ -7606,7 +7606,7 @@ e_middlerealm = {
 				b_ilsur_4 = {
 				}
 			}
-			c_keilerau = { # 232
+			c_keilerau = { # 230
 				color={ 142 221 61 }
 				color2={ 255 255 255 }
 				
@@ -7619,7 +7619,7 @@ e_middlerealm = {
 				b_keilerau_4 = {
 				}
 			}
-			c_kohlerungen = { # 230
+			c_kohlerungen = { # 228
 				color={ 142 201 63 }
 				color2={ 255 255 255 }
 				
@@ -7632,7 +7632,7 @@ e_middlerealm = {
 				b_kohlerungen_4 = {
 				}
 			}
-			c_muschelstrand = { # 235
+			c_muschelstrand = { # 233
 				color={ 142 78 34 }
 				color2={ 255 255 255 }
 				
@@ -7645,7 +7645,7 @@ e_middlerealm = {
 				b_muschelstrand_4 = {
 				}
 			}
-			c_quellensprung = { # 228
+			c_quellensprung = { # 226
 				color={ 92 185 59 }
 				color2={ 255 255 255 }
 				
@@ -7658,7 +7658,7 @@ e_middlerealm = {
 				b_quellensprung_4 = {
 				}
 			}
-			c_rallerfeste = { # 227
+			c_rallerfeste = { # 225
 				color={ 92 34 217 }
 				color2={ 255 255 255 }
 				
@@ -7671,7 +7671,7 @@ e_middlerealm = {
 				b_rallerfeste_4 = {
 				}
 			}
-			c_rulat = { # 237
+			c_rulat = { # 235
 				color={ 142 218 16 }
 				color2={ 255 255 255 }
 				
@@ -7684,7 +7684,7 @@ e_middlerealm = {
 				b_rulat_4 = {
 				}
 			}
-			c_sarkdosk = { # 233
+			c_sarkdosk = { # 231
 				color={ 92 180 211 }
 				color2={ 255 255 255 }
 				
@@ -7697,7 +7697,7 @@ e_middlerealm = {
 				b_sarkdosk_4 = {
 				}
 			}
-			c_tesral = { # 231
+			c_tesral = { # 229
 				color={ 142 128 125 }
 				color2={ 255 255 255 }
 				
@@ -7710,7 +7710,7 @@ e_middlerealm = {
 				b_tesral_4 = {
 				}
 			}
-			c_tisal = { # 234
+			c_tisal = { # 232
 				color={ 142 48 147 }
 				color2={ 255 255 255 }
 				
@@ -7723,7 +7723,7 @@ e_middlerealm = {
 				b_tisal_4 = {
 				}
 			}
-			c_ulracht = { # 238
+			c_ulracht = { # 236
 				color={ 142 46 53 }
 				color2={ 255 255 255 }
 				
@@ -7744,12 +7744,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 219 province_id = 220 province_id = 221 province_id = 222 province_id = 223 province_id = 224 } }
+					any_demesne_province = { OR = { province_id = 217 province_id = 218 province_id = 219 province_id = 220 province_id = 221 province_id = 222 } }
 				}
 			}
-			capital = 219 # c_misafelden
+			capital = 217 # c_misafelden
 			
-			c_misafelden = { # 219
+			c_misafelden = { # 217
 				color={ 240 224 46 }
 				color2={ 255 255 255 }
 				
@@ -7762,7 +7762,7 @@ e_middlerealm = {
 				b_misafelden_4 = {
 				}
 			}
-			c_alst = { # 221
+			c_alst = { # 219
 				color={ 240 129 132 }
 				color2={ 255 255 255 }
 				
@@ -7775,7 +7775,7 @@ e_middlerealm = {
 				b_alst_4 = {
 				}
 			}
-			c_firunsschlifen = { # 222
+			c_firunsschlifen = { # 220
 				color={ 240 43 178 }
 				color2={ 255 255 255 }
 				
@@ -7788,7 +7788,7 @@ e_middlerealm = {
 				b_firunsschlifen_4 = {
 				}
 			}
-			c_misamuendel = { # 223
+			c_misamuendel = { # 221
 				color={ 240 47 51 }
 				color2={ 255 255 255 }
 				
@@ -7801,7 +7801,7 @@ e_middlerealm = {
 				b_misamuendel_4 = {
 				}
 			}
-			c_tirandur = { # 224
+			c_tirandur = { # 222
 				color={ 240 209 69 }
 				color2={ 255 255 255 }
 				
@@ -7814,7 +7814,7 @@ e_middlerealm = {
 				b_tirandur_4 = {
 				}
 			}
-			c_vallusa = { # 220
+			c_vallusa = { # 218
 				color={ 240 128 193 }
 				color2={ 255 255 255 }
 				
@@ -7835,12 +7835,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 252 province_id = 253 province_id = 254 province_id = 255 province_id = 256 province_id = 257 province_id = 258 province_id = 259 } }
+					any_demesne_province = { OR = { province_id = 250 province_id = 251 province_id = 252 province_id = 253 province_id = 254 province_id = 255 province_id = 256 province_id = 257 } }
 				}
 			}
-			capital = 252 # c_tobelstein
+			capital = 250 # c_tobelstein
 			
-			c_tobelstein = { # 252
+			c_tobelstein = { # 250
 				color={ 67 218 53 }
 				color2={ 255 255 255 }
 				
@@ -7853,7 +7853,7 @@ e_middlerealm = {
 				b_tobelstein_4 = {
 				}
 			}
-			c_ebersberg = { # 257
+			c_ebersberg = { # 255
 				color={ 67 31 26 }
 				color2={ 255 255 255 }
 				
@@ -7866,7 +7866,7 @@ e_middlerealm = {
 				b_ebersberg_4 = {
 				}
 			}
-			c_freudenberg = { # 256
+			c_freudenberg = { # 254
 				color={ 67 218 226 }
 				color2={ 255 255 255 }
 				
@@ -7879,7 +7879,7 @@ e_middlerealm = {
 				b_freudenberg_4 = {
 				}
 			}
-			c_lauchenwart = { # 258
+			c_lauchenwart = { # 256
 				color={ 67 214 33 }
 				color2={ 255 255 255 }
 				
@@ -7892,7 +7892,7 @@ e_middlerealm = {
 				b_lauchenwart_4 = {
 				}
 			}
-			c_lindenhain = { # 259
+			c_lindenhain = { # 257
 				color={ 67 213 202 }
 				color2={ 255 255 255 }
 				
@@ -7905,7 +7905,7 @@ e_middlerealm = {
 				b_lindenhain_4 = {
 				}
 			}
-			c_schwarzsicheln = { # 254
+			c_schwarzsicheln = { # 252
 				color={ 67 35 61 }
 				color2={ 255 255 255 }
 				
@@ -7918,7 +7918,7 @@ e_middlerealm = {
 				b_schwarzsicheln_4 = {
 				}
 			}
-			c_wetterklamm = { # 255
+			c_wetterklamm = { # 253
 				color={ 67 39 215 }
 				color2={ 255 255 255 }
 				
@@ -7931,7 +7931,7 @@ e_middlerealm = {
 				b_wetterklamm_4 = {
 				}
 			}
-			c_willbergen = { # 253
+			c_willbergen = { # 251
 				color={ 67 22 232 }
 				color2={ 255 255 255 }
 				
@@ -7952,12 +7952,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 239 province_id = 240 province_id = 241 province_id = 242 province_id = 243 province_id = 244 province_id = 245 province_id = 246 province_id = 247 province_id = 248 province_id = 249 province_id = 250 province_id = 251 } }
+					any_demesne_province = { OR = { province_id = 237 province_id = 238 province_id = 239 province_id = 240 province_id = 241 province_id = 242 province_id = 243 province_id = 244 province_id = 245 province_id = 246 province_id = 247 province_id = 248 province_id = 249 } }
 				}
 			}
-			capital = 239 # c_waischenroth
+			capital = 237 # c_waischenroth
 			
-			c_waischenroth = { # 239
+			c_waischenroth = { # 237
 				color={ 78 225 151 }
 				color2={ 255 255 255 }
 				
@@ -7970,7 +7970,7 @@ e_middlerealm = {
 				b_waischenroth_4 = {
 				}
 			}
-			c_aellingen = { # 243
+			c_aellingen = { # 241
 				color={ 78 219 67 }
 				color2={ 255 255 255 }
 				
@@ -7983,7 +7983,7 @@ e_middlerealm = {
 				b_aellingen_4 = {
 				}
 			}
-			c_albersrode = { # 249
+			c_albersrode = { # 247
 				color={ 78 94 172 }
 				color2={ 255 255 255 }
 				
@@ -7996,7 +7996,7 @@ e_middlerealm = {
 				b_albersrode_4 = {
 				}
 			}
-			c_baruns_pappel = { # 248
+			c_baruns_pappel = { # 246
 				color={ 78 161 70 }
 				color2={ 255 255 255 }
 				
@@ -8009,7 +8009,7 @@ e_middlerealm = {
 				b_baruns_pappel_4 = {
 				}
 			}
-			c_becherlingen = { # 251
+			c_becherlingen = { # 249
 				color={ 78 117 205 }
 				color2={ 255 255 255 }
 				
@@ -8022,7 +8022,7 @@ e_middlerealm = {
 				b_becherlingen_4 = {
 				}
 			}
-			c_bergenshus = { # 247
+			c_bergenshus = { # 245
 				color={ 78 75 80 }
 				color2={ 255 255 255 }
 				
@@ -8035,7 +8035,7 @@ e_middlerealm = {
 				b_bergenshus_4 = {
 				}
 			}
-			c_kummersfelden = { # 250
+			c_kummersfelden = { # 248
 				color={ 78 150 25 }
 				color2={ 255 255 255 }
 				
@@ -8048,7 +8048,7 @@ e_middlerealm = {
 				b_kummersfelden_4 = {
 				}
 			}
-			c_maus = { # 245
+			c_maus = { # 243
 				color={ 78 203 176 }
 				color2={ 255 255 255 }
 				
@@ -8061,7 +8061,7 @@ e_middlerealm = {
 				b_maus_4 = {
 				}
 			}
-			c_nordweide = { # 246
+			c_nordweide = { # 244
 				color={ 78 33 171 }
 				color2={ 255 255 255 }
 				
@@ -8074,7 +8074,7 @@ e_middlerealm = {
 				b_nordweide_4 = {
 				}
 			}
-			c_schnattermoor = { # 242
+			c_schnattermoor = { # 240
 				color={ 78 41 129 }
 				color2={ 255 255 255 }
 				
@@ -8087,7 +8087,7 @@ e_middlerealm = {
 				b_schnattermoor_4 = {
 				}
 			}
-			c_schwuerzhofen = { # 240
+			c_schwuerzhofen = { # 238
 				color={ 78 235 128 }
 				color2={ 255 255 255 }
 				
@@ -8100,7 +8100,7 @@ e_middlerealm = {
 				b_schwuerzhofen_4 = {
 				}
 			}
-			c_tizamsquell = { # 244
+			c_tizamsquell = { # 242
 				color={ 78 135 39 }
 				color2={ 255 255 255 }
 				
@@ -8113,7 +8113,7 @@ e_middlerealm = {
 				b_tizamsquell_4 = {
 				}
 			}
-			c_windgau = { # 241
+			c_windgau = { # 239
 				color={ 78 31 111 }
 				color2={ 255 255 255 }
 				
@@ -8134,12 +8134,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 273 province_id = 274 province_id = 275 province_id = 276 province_id = 277 } }
+					any_demesne_province = { OR = { province_id = 271 province_id = 272 province_id = 273 province_id = 274 province_id = 275 } }
 				}
 			}
-			capital = 273 # c_natterngras
+			capital = 271 # c_natterngras
 			
-			c_natterngras = { # 273
+			c_natterngras = { # 271
 				color={ 165 23 53 }
 				color2={ 255 255 255 }
 				
@@ -8152,7 +8152,7 @@ e_middlerealm = {
 				b_natterngras_4 = {
 				}
 			}
-			c_binsenbeck = { # 274
+			c_binsenbeck = { # 272
 				color={ 165 187 211 }
 				color2={ 255 255 255 }
 				
@@ -8165,7 +8165,7 @@ e_middlerealm = {
 				b_binsenbeck_4 = {
 				}
 			}
-			c_rabenfeld = { # 276
+			c_rabenfeld = { # 274
 				color={ 165 210 197 }
 				color2={ 255 255 255 }
 				
@@ -8178,7 +8178,7 @@ e_middlerealm = {
 				b_rabenfeld_4 = {
 				}
 			}
-			c_radromsbusch = { # 275
+			c_radromsbusch = { # 273
 				color={ 165 65 52 }
 				color2={ 255 255 255 }
 				
@@ -8191,7 +8191,7 @@ e_middlerealm = {
 				b_radromsbusch_4 = {
 				}
 			}
-			c_warunk = { # 277
+			c_warunk = { # 275
 				color={ 165 175 48 }
 				color2={ 255 255 255 }
 				
@@ -8212,12 +8212,12 @@ e_middlerealm = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 260 province_id = 261 province_id = 262 province_id = 263 province_id = 264 province_id = 265 province_id = 266 province_id = 267 province_id = 268 province_id = 269 province_id = 270 province_id = 271 province_id = 272 } }
+					any_demesne_province = { OR = { province_id = 258 province_id = 259 province_id = 260 province_id = 261 province_id = 262 province_id = 263 province_id = 264 province_id = 265 province_id = 266 province_id = 267 province_id = 268 province_id = 269 province_id = 270 } }
 				}
 			}
-			capital = 260 # c_falkenberg
+			capital = 258 # c_falkenberg
 			
-			c_falkenberg = { # 260
+			c_falkenberg = { # 258
 				color={ 36 51 39 }
 				color2={ 255 255 255 }
 				
@@ -8230,7 +8230,7 @@ e_middlerealm = {
 				b_falkenberg_4 = {
 				}
 			}
-			c_eichmoor = { # 267
+			c_eichmoor = { # 265
 				color={ 36 33 41 }
 				color2={ 255 255 255 }
 				
@@ -8243,7 +8243,7 @@ e_middlerealm = {
 				b_eichmoor_4 = {
 				}
 			}
-			c_kathenberg = { # 263
+			c_kathenberg = { # 261
 				color={ 36 243 29 }
 				color2={ 255 255 255 }
 				
@@ -8256,7 +8256,7 @@ e_middlerealm = {
 				b_kathenberg_4 = {
 				}
 			}
-			c_kleinwardstein = { # 268
+			c_kleinwardstein = { # 266
 				color={ 36 212 225 }
 				color2={ 255 255 255 }
 				
@@ -8269,7 +8269,7 @@ e_middlerealm = {
 				b_kleinwardstein_4 = {
 				}
 			}
-			c_kuenssberg = { # 262
+			c_kuenssberg = { # 260
 				color={ 36 221 206 }
 				color2={ 255 255 255 }
 				
@@ -8282,7 +8282,7 @@ e_middlerealm = {
 				b_kuenssberg_4 = {
 				}
 			}
-			c_liliengrund = { # 270
+			c_liliengrund = { # 268
 				color={ 36 235 22 }
 				color2={ 255 255 255 }
 				
@@ -8295,7 +8295,7 @@ e_middlerealm = {
 				b_liliengrund_4 = {
 				}
 			}
-			c_mundtbach = { # 265
+			c_mundtbach = { # 263
 				color={ 0 221 194 }
 				color2={ 255 255 255 }
 				
@@ -8308,7 +8308,7 @@ e_middlerealm = {
 				b_mundtbach_4 = {
 				}
 			}
-			c_nevelung = { # 264
+			c_nevelung = { # 262
 				color={ 36 51 205 }
 				color2={ 255 255 255 }
 				
@@ -8321,7 +8321,7 @@ e_middlerealm = {
 				b_nevelung_4 = {
 				}
 			}
-			c_oberdarpatien = { # 272
+			c_oberdarpatien = { # 270
 				color={ 36 44 37 }
 				color2={ 255 255 255 }
 				
@@ -8334,7 +8334,7 @@ e_middlerealm = {
 				b_oberdarpatien_4 = {
 				}
 			}
-			c_ogertrift = { # 269
+			c_ogertrift = { # 267
 				color={ 36 32 228 }
 				color2={ 255 255 255 }
 				
@@ -8347,7 +8347,7 @@ e_middlerealm = {
 				b_ogertrift_4 = {
 				}
 			}
-			c_rauffenberg = { # 271
+			c_rauffenberg = { # 269
 				color={ 0 183 41 }
 				color2={ 255 255 255 }
 				
@@ -8360,7 +8360,7 @@ e_middlerealm = {
 				b_rauffenberg_4 = {
 				}
 			}
-			c_spogelsen = { # 261
+			c_spogelsen = { # 259
 				color={ 36 222 34 }
 				color2={ 255 255 255 }
 				
@@ -8373,7 +8373,7 @@ e_middlerealm = {
 				b_spogelsen_4 = {
 				}
 			}
-			c_winsheym = { # 266
+			c_winsheym = { # 264
 				color={ 0 29 139 }
 				color2={ 255 255 255 }
 				
@@ -8393,7 +8393,7 @@ k_ferkina = {
 	color={ 166 42 53 }
 	color2={ 255 255 255 }
 	
-	capital = 557 # c_bosquirquell
+	capital = 555 # c_bosquirquell
 	culture = ferkina_c
 	
 	d_raschtulswall = {
@@ -8403,12 +8403,12 @@ k_ferkina = {
 		allow = {
 			OR = {
 				lower_tier_than = KING
-				any_demesne_province = { OR = { province_id = 557 province_id = 558 province_id = 559 province_id = 560 province_id = 561 province_id = 562 province_id = 563 province_id = 564 province_id = 565 province_id = 566 } }
+				any_demesne_province = { OR = { province_id = 555 province_id = 556 province_id = 557 province_id = 558 province_id = 559 province_id = 560 province_id = 561 province_id = 562 province_id = 563 province_id = 564 } }
 			}
 		}
-		capital = 557 # c_bosquirquell
+		capital = 555 # c_bosquirquell
 		
-		c_bosquirquell = { # 557
+		c_bosquirquell = { # 555
 			color={ 136 72 38 }
 			color2={ 255 255 255 }
 			
@@ -8417,7 +8417,7 @@ k_ferkina = {
 			b_bosquirquell_2 = {
 			}
 		}
-		c_asboran = { # 562
+		c_asboran = { # 560
 			color={ 136 25 78 }
 			color2={ 255 255 255 }
 			
@@ -8426,7 +8426,7 @@ k_ferkina = {
 			b_asboran_2 = {
 			}
 		}
-		c_drakonia = { # 563
+		c_drakonia = { # 561
 			color={ 136 25 11 }
 			color2={ 255 255 255 }
 			
@@ -8435,7 +8435,7 @@ k_ferkina = {
 			b_drakonia_2 = {
 			}
 		}
-		c_eastern_raschtulswall = { # 559
+		c_eastern_raschtulswall = { # 557
 			color={ 136 25 50 }
 			color2={ 255 255 255 }
 			
@@ -8444,7 +8444,7 @@ k_ferkina = {
 			b_eastern_raschtulswall_2 = {
 			}
 		}
-		c_northern_raschtulswall = { # 566
+		c_northern_raschtulswall = { # 564
 			color={ 136 56 47 }
 			color2={ 255 255 255 }
 			
@@ -8453,7 +8453,7 @@ k_ferkina = {
 			b_northern_raschtulswall_2 = {
 			}
 		}
-		c_raschtuls_tower = { # 560
+		c_raschtuls_tower = { # 558
 			color={ 136 149 103 }
 			color2={ 255 255 255 }
 			
@@ -8462,7 +8462,7 @@ k_ferkina = {
 			b_raschtuls_tower_2 = {
 			}
 		}
-		c_raschtulspass = { # 558
+		c_raschtulspass = { # 556
 			color={ 136 97 55 }
 			color2={ 255 255 255 }
 			
@@ -8471,7 +8471,7 @@ k_ferkina = {
 			b_raschtulspass_2 = {
 			}
 		}
-		c_simiador = { # 565
+		c_simiador = { # 563
 			color={ 136 22 3 }
 			color2={ 255 255 255 }
 			
@@ -8480,7 +8480,7 @@ k_ferkina = {
 			b_simiador_2 = {
 			}
 		}
-		c_southern_raschtulswall = { # 561
+		c_southern_raschtulswall = { # 559
 			color={ 136 40 21 }
 			color2={ 255 255 255 }
 			
@@ -8489,7 +8489,7 @@ k_ferkina = {
 			b_southern_raschtulswall_2 = {
 			}
 		}
-		c_tarfelhazaqur_mor = { # 564
+		c_tarfelhazaqur_mor = { # 562
 			color={ 136 40 30 }
 			color2={ 255 255 255 }
 			
@@ -8506,12 +8506,12 @@ k_ferkina = {
 		allow = {
 			OR = {
 				lower_tier_than = KING
-				any_demesne_province = { OR = { province_id = 567 province_id = 568 province_id = 569 province_id = 570 } }
+				any_demesne_province = { OR = { province_id = 565 province_id = 566 province_id = 567 province_id = 568 } }
 			}
 		}
-		capital = 567 # c_mirina
+		capital = 565 # c_mirina
 		
-		c_mirina = { # 567
+		c_mirina = { # 565
 			color={ 136 27 216 }
 			color2={ 255 255 255 }
 			
@@ -8520,7 +8520,7 @@ k_ferkina = {
 			b_mirina_2 = {
 			}
 		}
-		c_alchuram = { # 570
+		c_alchuram = { # 568
 			color={ 136 25 246 }
 			color2={ 255 255 255 }
 			
@@ -8529,7 +8529,7 @@ k_ferkina = {
 			b_alchuram_2 = {
 			}
 		}
-		c_khoram_mountains = { # 569
+		c_khoram_mountains = { # 567
 			color={ 136 13 165 }
 			color2={ 255 255 255 }
 			
@@ -8538,7 +8538,7 @@ k_ferkina = {
 			b_khoram_mountains_2 = {
 			}
 		}
-		c_khoram_pass = { # 568
+		c_khoram_pass = { # 566
 			color={ 136 21 74 }
 			color2={ 255 255 255 }
 			

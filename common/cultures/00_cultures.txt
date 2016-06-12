@@ -5,7 +5,7 @@ middenrealmian = {
 	graphical_culture = westerngfx
 	
 	proxy = { ##This is only needed to prevent a bug
-		graphical_culture = germangfx
+		graphical_culture = { germangfx }
 		color = { 1 0.85 0 }
 	
 		male_names = {
@@ -71,7 +71,7 @@ middenrealmian = {
 	}
 	
 	garethi = {
-		graphical_culture = germangfx
+		graphical_culture = { germangfx }
 		color = { 1 0.8 0 }
 	
 		male_names = {
@@ -238,7 +238,7 @@ middenrealmian = {
 	}
 
 	nostrian_c = {
-		graphical_culture = germangfx
+		graphical_culture = { germangfx }
 		color = { 1 0.8 0.4 }
 
 		male_names = { 
@@ -454,7 +454,7 @@ middenrealmian = {
     } 
 	
 	kosh = { 
-		graphical_culture = germangfx
+		graphical_culture = { germangfx }
 		color = { 1 1 0.4 }
 	
 	male_names = {
@@ -2219,10 +2219,9 @@ utulus = {
 ###ALL gfx PLACEHOLDERS
 
 dwarves = {
-	graphical_culture = germangfx
+	graphical_culture = { germangfx }
 	
 	ore_d = {
-		graphical_culture = germangfx
 		color = { 0.86 0.86 0.86}
 	
 		male_names = {
@@ -2279,7 +2278,6 @@ dwarves = {
 	}
 	
 	anvil_d = {
-		graphical_culture = germangfx
 		color = { 0.66 0.66 0.66 }
 	
 		male_names = {
@@ -2336,7 +2334,6 @@ dwarves = {
 	}
 	
 	diamond_d = {
-		graphical_culture = germangfx
 		color = { 0.41 0.41 0.41 }
 	
 		male_names = {
@@ -2393,7 +2390,6 @@ dwarves = {
 	}
 	
 	hill_d = {
-		graphical_culture = germangfx
 		color = { 0.18 0.31 0.31 }
 	
 		male_names = {
@@ -2452,7 +2448,6 @@ dwarves = {
 
 ork_culture = {
 	orklander = {
-		graphical_culture = germangfx
 		color = { 0.4 0 0.6 }
 	
 		male_names = {
@@ -2495,7 +2490,6 @@ ork_culture = {
 
 achaz = {
 	tribal_a = {
-		graphical_culture = germangfx
 		color = { 0.2 0.4 0.2 }
 	
 		male_names = {

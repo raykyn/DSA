@@ -31,11 +31,7 @@ title_wahrer_ordnung = {
 	allow = {
 		religion = puniner
 		is_theocracy = yes
-		
-				}
-			}
 		}
-	}
 	
 	gain_effect = {
 	}
