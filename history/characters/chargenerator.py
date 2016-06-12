@@ -7,23 +7,46 @@ import re
 title_starts = "1020.1.1"
 
 def applytitle(id,title):
-    event = "\n\tholder = " + id
-    newcontent = title_starts + " = {" + event + "\n}"
-    
-    
-    with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "r") as f:
-        content = f.read()
-        x = content.find(title_starts)
-        print x
 
-    if x == -1:
-        with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "a") as f:
-            f.write(newcontent)
-    else:
-        with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "w") as f:
-            re.sub(title_starts + r' = {\n.+\n}', newcontent, content)
-            f.write(content)
+    if isinstance(title,str):
+        event = "\n\tholder = " + id
+        newcontent = title_starts + " = {" + event + "\n}\n"
         
+        
+        with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "r") as f:
+            content = f.read()
+            x = content.find(title_starts)
+            print x
+
+        if x == -1:
+            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "a") as f:
+                f.write(newcontent)
+        else:
+            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "w") as f:
+                re.sub(title_starts + r' = {\n.+\n}', newcontent, content)
+                f.write(content)
+                
+    elif isinstance(title,list):
+        titlename = title[0]
+        date = title[1]
+        
+        event = "\n\tholder = " + id
+        newcontent = date + " = {" + event + "\n}\n"
+        
+        
+        with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + titlename + ".txt", "r") as f:
+            content = f.read()
+            x = content.find(date)
+            print x
+
+        if x == -1:
+            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + titlename + ".txt", "a") as f:
+                f.write(newcontent)
+        else:
+            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + titlename + ".txt", "w") as f:
+                re.sub(date + r' = {\n.+\n}', newcontent, content)
+                f.write(content)
+            
     return None
 
 personlist = []
@@ -61,6 +84,8 @@ with open('auto_chars.txt', 'w') as f:
             dna = person[19]
             properties = person[20]
             occluded = person[21]
+            other = person[22]
+            comments = person[23]
             
             f.write('%s = {\n\tname = \"%s\"'%(id,name))
             
@@ -115,6 +140,14 @@ with open('auto_chars.txt', 'w') as f:
                 
             f.write("\n\t%s = {birth=yes}"%(birth))
             
+            if other >= 1:
+                f.write("\n\t" + other + "\n")
+                
+            if comments >= 1:
+                comments = comments.split()
+                for comment in comments:
+                    f.write("#" + comment)
+            
             f.write("\n\t%s = {death=yes}"%(death))
             
             f.write("\n}\n\n")
@@ -122,6 +155,9 @@ with open('auto_chars.txt', 'w') as f:
             if len(titles) >= 1:
                 titles = titles.split()
                 for title in titles:
+                    title = title.split(":")
                     applytitle(id,title)
+            
+            
             
         counter = True

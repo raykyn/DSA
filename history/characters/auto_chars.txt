@@ -6,6 +6,8 @@
 	dynasty = 1
 	father = 11
 	1008.06.26 = {birth=yes}
+	
+
 	1076.12.06 = {death=yes}
 }
 
@@ -15,6 +17,8 @@
 	culture = garethi
 	dynasty = 2
 	967.01.01 = {birth=yes}
+	
+
 	1035.06.13 = {death=yes}
 }
 
@@ -24,6 +28,8 @@
 	culture = garethi
 	dynasty = 3
 	994.11.10 = {birth=yes}
+	
+
 	1063.04.22 = {death=yes}
 }
 
@@ -33,6 +39,8 @@
 	culture = garethi
 	dynasty = 4
 	980.12.05 = {birth=yes}
+	
+
 	1049.05.17 = {death=yes}
 }
 
@@ -44,6 +52,8 @@
 	dynasty = 5
 	father = 12
 	966.05.06 = {birth=yes}
+	
+
 	1033.11.21 = {death=yes}
 }
 
@@ -53,6 +63,8 @@
 	culture = garethi
 	dynasty = 6
 	1004.01.01 = {birth=yes}
+	
+
 	1072.06.12 = {death=yes}
 }
 
@@ -62,6 +74,8 @@
 	culture = garethi
 	dynasty = 7
 	994.08.28 = {birth=yes}
+	
+
 	1063.02.07 = {death=yes}
 }
 
@@ -71,6 +85,8 @@
 	culture = garethi
 	dynasty = 8
 	992.01.25 = {birth=yes}
+	
+
 	1060.07.06 = {death=yes}
 }
 
@@ -80,6 +96,8 @@
 	culture = garethi
 	dynasty = 9
 	994.06.16 = {birth=yes}
+	
+
 	1062.11.26 = {death=yes}
 }
 
@@ -89,6 +107,8 @@
 	culture = garethi
 	dynasty = 10
 	990.01.12 = {birth=yes}
+	
+
 	1058.06.24 = {death=yes}
 }
 
@@ -97,8 +117,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 1
-	988.01.01 = {birth=yes}
-	1038.06.25 = {death=yes}
+	984.06.29 = {birth=yes}
+	
+
+	1021.05.21 = {death=yes}
 }
 
 12 = {
@@ -107,6 +129,8 @@
 	culture = garethi
 	dynasty = 5
 	929.10.13 = {birth=yes}
+	
+
 	979.01.01 = {death=yes}
 }
 
@@ -117,6 +141,8 @@
 	dynasty = 5
 	father = 12
 	969.10.10 = {birth=yes}
+	
+
 	1050.01.01 = {death=yes}
 }
 
@@ -128,6 +154,8 @@
 	dynasty = 5
 	father = 13
 	1009.06.07 = {birth=yes}
+	
+
 	1069.01.01 = {death=yes}
 }
 
