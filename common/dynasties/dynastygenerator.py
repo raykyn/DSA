@@ -3,6 +3,8 @@
 
 import csv
 
+outfile = 'auto_dynasties.txt'
+
 dynastylist = []
 
 with open('dynastyDef.csv', 'rb') as f:
@@ -13,7 +15,7 @@ with open('dynastyDef.csv', 'rb') as f:
         
 counter = False
 
-with open('auto_dynasties.txt', 'w') as f:
+with open(outfile, 'w') as f:
     for dynasty in dynastylist:
         if counter == True:
             id = dynasty[0]

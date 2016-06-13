@@ -4,158 +4,376 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 1
-	father = 11
+	father = 2
+	mother = 3
 	1008.06.26 = {birth=yes}
 	
-
 	1076.12.06 = {death=yes}
 }
 
 2 = {
+	name = "Brin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	984.06.29 = {birth=yes}
+	1004.7.1 = {add_spouse = 3}
+	1021.05.21 = {death=yes}
+}
+
+3 = {
+	name = "Emer"
+	female = yes
+	religion = puniner 
+	culture = albernian
+	dynasty = 11
+	985.08.18 = {birth=yes}
+	1004.7.1 = {add_spouse = 2}
+	1031.11.01 = {death=yes}
+}
+
+4 = {
+	name = "Selindian Hal"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 2
+	mother = 3
+	1011.03.12 = {birth=yes}
+	
+	1034.12.01 = {death=yes}
+}
+
+5 = {
+	name = "Yppolita"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 2
+	mother = 3
+	1008.06.26 = {birth=yes}
+	#mage
+	1076.12.06 = {death=yes}
+}
+
+6 = {
 	name = "Danos"
 	religion = puniner 
 	culture = garethi
 	dynasty = 2
-	967.01.01 = {birth=yes}
-	
-
+	father = 7
+	mother = 8
+	976.01.01 = {birth=yes}
+	995.1.1 = {add_spouse = 11}
 	1035.06.13 = {death=yes}
 }
 
-3 = {
+7 = {
+	name = "Rondger"
+	religion = puniner 
+	culture = garethi
+	dynasty = 2
+	952.01.01 = {birth=yes}
+	975.1.1 = {add_spouse = 8}
+	1003.01.01 = {death=yes}
+}
+
+8 = {
+	name = "Irminde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	955.01.01 = {birth=yes}
+	975.1.1 = {add_spouse = 7}
+	1023.01.01 = {death=yes}
+}
+
+9 = {
+	name = "Firine"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 2
+	father = 7
+	mother = 8
+	981.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+10 = {
+	name = "Praiodan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 2
+	father = 7
+	990.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+11 = {
+	name = "Rumhilde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	977.01.01 = {birth=yes}
+	995.1.1 = {add_spouse = 6}
+	1050.01.01 = {death=yes}
+}
+
+12 = {
+	name = "Drego"
+	religion = puniner 
+	culture = garethi
+	dynasty = 2
+	father = 6
+	mother = 11
+	996.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+13 = {
+	name = "Ederlinde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 2
+	father = 6
+	mother = 11
+	998.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+14 = {
+	name = "Lechmin Rondara"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 2
+	father = 6
+	mother = 11
+	1009.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+15 = {
 	name = "Nimmgalf"
 	religion = puniner 
 	culture = garethi
 	dynasty = 3
 	994.11.10 = {birth=yes}
 	
-
 	1063.04.22 = {death=yes}
 }
 
-4 = {
+16 = {
 	name = "Erlan"
 	religion = puniner 
 	culture = garethi
 	dynasty = 4
 	980.12.05 = {birth=yes}
 	
-
 	1049.05.17 = {death=yes}
 }
 
-5 = {
+17 = {
 	name = "Tsaburga"
 	female = yes
 	religion = puniner 
 	culture = garethi
 	dynasty = 5
-	father = 12
+	father = 23
 	966.05.06 = {birth=yes}
 	
-
 	1033.11.21 = {death=yes}
 }
 
-6 = {
+18 = {
 	name = "Siegeshart"
 	religion = puniner 
 	culture = garethi
 	dynasty = 6
+	mother = 26
 	1004.01.01 = {birth=yes}
 	
-
 	1072.06.12 = {death=yes}
 }
 
-7 = {
+19 = {
 	name = "Olruk"
 	religion = puniner 
 	culture = garethi
 	dynasty = 7
 	994.08.28 = {birth=yes}
 	
-
 	1063.02.07 = {death=yes}
 }
 
-8 = {
+20 = {
 	name = "Yendor"
 	religion = puniner 
 	culture = garethi
 	dynasty = 8
 	992.01.25 = {birth=yes}
 	
-
 	1060.07.06 = {death=yes}
 }
 
-9 = {
+21 = {
 	name = "Malepartus"
 	religion = puniner 
 	culture = garethi
 	dynasty = 9
 	994.06.16 = {birth=yes}
 	
-
 	1062.11.26 = {death=yes}
 }
 
-10 = {
+22 = {
 	name = "Haduwulf"
 	religion = puniner 
 	culture = garethi
 	dynasty = 10
 	990.01.12 = {birth=yes}
 	
-
 	1058.06.24 = {death=yes}
 }
 
-11 = {
-	name = "Brin"
-	religion = puniner 
-	culture = garethi
-	dynasty = 1
-	984.06.29 = {birth=yes}
-	
-
-	1021.05.21 = {death=yes}
-}
-
-12 = {
+23 = {
 	name = "Tsafried"
 	religion = puniner 
 	culture = garethi
 	dynasty = 5
 	929.10.13 = {birth=yes}
 	
-
 	979.01.01 = {death=yes}
 }
 
-13 = {
+24 = {
 	name = "Tsamuel"
 	religion = puniner 
 	culture = garethi
 	dynasty = 5
-	father = 12
+	father = 23
 	969.10.10 = {birth=yes}
 	
-
 	1050.01.01 = {death=yes}
 }
 
-14 = {
+25 = {
 	name = "Tsaiana"
 	female = yes
 	religion = puniner 
 	culture = garethi
 	dynasty = 5
-	father = 13
+	father = 24
 	1009.06.07 = {birth=yes}
 	
-
 	1069.01.01 = {death=yes}
+}
+
+26 = {
+	name = "Efferdane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 6
+	983.01.01 = {birth=yes}
+	
+	1027.01.01 = {death=yes}
+}
+
+27 = {
+	name = "Thalmare"
+	female = yes
+	religion = puniner 
+	culture = albernian
+	dynasty = 14
+	958.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+28 = {
+	name = "Sari"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 14
+	mother = 27
+	1002.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+29 = {
+	name = "Ailyne"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 15
+	971.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+30 = {
+	name = "Allerich"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	1001.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+31 = {
+	name = "Maline"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	985.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+32 = {
+	name = "Elgor Leomar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	mother = 31
+	1005.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+33 = {
+	name = "Allechandriel"
+	female = yes
+	religion = puniner 
+	culture = mead_elves
+	dynasty = 18
+	946.12.24 = {birth=yes}
+	#elf#make_immortal#religion_needs_change
+	1050.01.01 = {death=yes}
+}
+
+34 = {
+	name = "Sequin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 19
+	976.01.01 = {birth=yes}
+	1027.1.1 = {add_trait = in_hiding}
+	1050.01.01 = {death=yes}
 }
 

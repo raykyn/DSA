@@ -2532,3 +2532,37 @@ achaz = {
 		modifier = default_culture_modifier
 	}
 }
+
+elves = { #WIP
+    mead_elves = {
+        graphical_culture = celticgfx
+		color = { 1 0.5 0.82 }
+
+		male_names = { 
+			
+		}
+		female_names = {
+			
+		}
+		dukes_called_kings = no 
+		baron_titles_hidden = yes 
+		count_titles_hidden = yes 
+		 
+		from_dynasty_prefix = "of " 
+		  #Needs to be changed to "ni DYNASTY" and "ui DYNASTY" depending on gender 
+		 
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100. 
+		pat_grf_name_chance = 50 
+		mat_grf_name_chance = 5 
+		father_name_chance = 10 
+		 
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+		pat_grm_name_chance = 10 
+		mat_grm_name_chance = 50 
+		mother_name_chance = 5 
+ 		
+		modifier = default_culture_modifier 
+    
+    }
+
+}

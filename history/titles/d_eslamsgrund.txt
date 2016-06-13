@@ -7,5 +7,7 @@
 	liege=k_gareth
 }
 1027.1.1 = {
-	holder = 6
+	holder = 18
 }
+
+

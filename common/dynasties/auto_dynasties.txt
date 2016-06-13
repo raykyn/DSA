@@ -58,3 +58,57 @@
 	used_for_random = no
 }
 
+11 = {
+	name = "Bennain"
+	culture = albernian
+	used_for_random = no
+}
+
+12 = {
+	name = "vom Berg"
+	culture = garethi
+	used_for_random = no
+}
+
+13 = {
+	name = "von Wetterfels"
+	culture = garethi
+	used_for_random = no
+}
+
+14 = {
+	name = "von Linara"
+	culture = albernian
+	used_for_random = no
+}
+
+15 = {
+	name = "Nemrod"
+	culture = garethi
+	used_for_random = no
+}
+
+16 = {
+	name = "von Falkenwind"
+	culture = garethi
+	used_for_random = no
+}
+
+17 = {
+	name = "von Hohentann"
+	culture = garethi
+	used_for_random = no
+}
+
+18 = {
+	name = "Quellentanz"
+	culture = mead_elves
+	used_for_random = no
+}
+
+19 = {
+	name = "zu Gesselingen"
+	culture = garethi
+	used_for_random = no
+}
+

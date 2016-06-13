@@ -7,5 +7,7 @@
 	liege=d_eslamsgrund
 }
 1008.1.1 = {
-	holder = 8
+	holder = 20
 }
+
+

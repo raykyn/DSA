@@ -7,5 +7,7 @@
 	liege=d_reichsforst
 }
 1000.1.1 = {
-	holder = 4
+	holder = 16
 }
+
+

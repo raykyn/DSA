@@ -6,3 +6,6 @@
 800.1.1={
 	liege=d_waldstein
 }
+1022.1.1 = {
+	holder = 30
+}

@@ -6,6 +6,10 @@ import re
 
 title_starts = "1020.1.1"
 
+titlepath = "C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/"
+
+outfile = 'auto_chars.txt'
+
 def applytitle(id,title):
 
     if isinstance(title,str):
@@ -13,17 +17,16 @@ def applytitle(id,title):
         newcontent = title_starts + " = {" + event + "\n}\n"
         
         
-        with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "r") as f:
+        with open(titlepath + title + ".txt", "r") as f:
             content = f.read()
             x = content.find(title_starts)
-            print x
 
         if x == -1:
-            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "a") as f:
+            with open(titlepath + title + ".txt", "a") as f:
                 f.write(newcontent)
         else:
-            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + title + ".txt", "w") as f:
-                re.sub(title_starts + r' = {\n.+\n}', newcontent, content)
+            with open(titlepath + title + ".txt", "w") as f:
+                re.sub(title_starts + r' = {\n\t.+\n}', newcontent, content)
                 f.write(content)
                 
     elif isinstance(title,list):
@@ -34,18 +37,20 @@ def applytitle(id,title):
         newcontent = date + " = {" + event + "\n}\n"
         
         
-        with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + titlename + ".txt", "r") as f:
+        with open(titlepath + titlename + ".txt", "r") as f:
             content = f.read()
             x = content.find(date)
-            print x
 
         if x == -1:
-            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + titlename + ".txt", "a") as f:
+            with open(titlepath + titlename + ".txt", "a") as f:
                 f.write(newcontent)
         else:
-            with open("C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/DSA/history/titles/" + titlename + ".txt", "w") as f:
-                re.sub(date + r' = {\n.+\n}', newcontent, content)
+            with open(titlepath + titlename + ".txt", "w") as f:
+                pattern = date + r' = {\n\t.+\n}'
+                content = re.sub(pattern, newcontent, content)
                 f.write(content)
+    else:
+        print "something went wrong"
             
     return None
 
@@ -59,7 +64,7 @@ with open('charsDef.csv', 'rb') as f:
 
 counter = False
         
-with open('auto_chars.txt', 'w') as f:
+with open(outfile, 'w') as f:
     for person in personlist:
         if counter == True:
             id = person[0]
@@ -141,7 +146,7 @@ with open('auto_chars.txt', 'w') as f:
             f.write("\n\t%s = {birth=yes}"%(birth))
             
             if other >= 1:
-                f.write("\n\t" + other + "\n")
+                f.write("\n\t" + other)
                 
             if comments >= 1:
                 comments = comments.split()

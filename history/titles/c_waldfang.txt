@@ -7,8 +7,12 @@
 	liege=d_reichsforst
 }
 982.1.1 = {
-	holder = 5
+	holder = 17
 }
+
+
 949.1.1 = {
-	holder = 12
+	holder = 23
 }
+
+
