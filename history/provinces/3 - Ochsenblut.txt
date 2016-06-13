@@ -4,12 +4,15 @@
 title = c_ochsenblut
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_ochsenblut = castle
-#b_ochsenblut_2 = city
-#b_ochsenblut_3 = temple
-#b_ochsenblut_4 = castle
+b_rudes_schild = castle
+b_weyring = city
+b_wagenhalt = city
+b_kaltensporn = city
+b_nesselweil = city
+b_hall_of_sun = temple
+#b_ochsenblut = castle
 
 # Misc
 culture = garethi

@@ -33,6 +33,8 @@ c_albersrode;Albersrode;Albersrode;Albersrode;;Albersrode;;;;;;;;;x
 c_albersrode_adj;Albersrodean;;albersroder;;;;;;;;;;;x
 c_alchuram;Al'Churam;Al'Churam;Al'Churam;;Al'Churam;;;;;;;;;x
 c_alchuram_adj;Al'Churamian;;al'churamer;;;;;;;;;;;x
+c_aldenried;Aldenried;Aldenried;Aldenried;;Aldenried;;;;;;;;;x
+c_aldenried_adj;Aldenriedian;;aldenrieder;;;;;;;;;;;x
 c_aldyra;Aldyra;Aldyra;Aldyra;;Aldyra;;;;;;;;;x
 c_aldyra_adj;Aldyran;;aldyrer;;;;;;;;;;;x
 c_alrifat;Al'Rifat;Al'Rifat;Al'Rifat;;Al'Rifat;;;;;;;;;x
@@ -179,8 +181,6 @@ c_brindal;Brindâl;Brindâl;Brindâl;;Brindâl;;;;;;;;;x
 c_brindal_adj;Brindâlian;;brindâler;;;;;;;;;;;x
 c_broeckling;Bröckling;Bröckling;Bröckling;;Bröckling;;;;;;;;;x
 c_broeckling_adj;Bröcklingian;;bröcklinger;;;;;;;;;;;x
-c_bugenhog;Bugenhog;Bugenhog;Bugenhog;;Bugenhog;;;;;;;;;x
-c_bugenhog_adj;Bugenhogian;;bugenhoger;;;;;;;;;;;x
 c_buli;Buli;Buli;Buli;;Buli;;;;;;;;;x
 c_buli_adj;Bulian;;buler;;;;;;;;;;;x
 c_chababihills;Chababihills;Chababihills;Chababihills;;Chababihills;;;;;;;;;x
@@ -753,8 +753,6 @@ c_port_corrad;Port Corrad;Port Corrad;Port Corrad;;Port Corrad;;;;;;;;;x
 c_port_corrad_adj;Port Corradian;;Port Corrader;;;;;;;;;;;x
 c_praiobab;Praiobab;Praiobab;Praiobab;;Praiobab;;;;;;;;;x
 c_praiobab_adj;Praiobabian;;praiobaber;;;;;;;;;;;x
-c_puleth;Puleth;Puleth;Puleth;;Puleth;;;;;;;;;x
-c_puleth_adj;Pulethian;;pulether;;;;;;;;;;;x
 c_pulverberg;Pulverberg;Pulverberg;Pulverberg;;Pulverberg;;;;;;;;;x
 c_pulverberg_adj;Pulverbergian;;pulverberger;;;;;;;;;;;x
 c_punin;Punin;Punin;Punin;;Punin;;;;;;;;;x
@@ -767,6 +765,8 @@ c_rabatistan;Rabatistan;Rabatistan;Rabatistan;;Rabatistan;;;;;;;;;x
 c_rabatistan_adj;Rabatistanian;;rabatistaner;;;;;;;;;;;x
 c_rabenfeld;Rabenfeld;Rabenfeld;Rabenfeld;;Rabenfeld;;;;;;;;;x
 c_rabenfeld_adj;Rabenfeldian;;rabenfelder;;;;;;;;;;;x
+c_rabensbrueck;Rabensbrück;Rabensbrück;Rabensbrück;;Rabensbrück;;;;;;;;;x
+c_rabensbrueck_adj;Rabensbrückian;;rabensbrücker;;;;;;;;;;;x
 c_rabenstein;Rabenstein;Rabenstein;Rabenstein;;Rabenstein;;;;;;;;;x
 c_rabenstein_adj;Rabensteinian;;rabensteiner;;;;;;;;;;;x
 c_radromsbusch;Radromsbusch;Radromsbusch;Radromsbusch;;Radromsbusch;;;;;;;;;x

@@ -4,12 +4,14 @@
 title = c_neerbusch
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
-b_neerbusch = castle
-#b_neerbusch_2 = city
-#b_neerbusch_3 = temple
-#b_neerbusch_4 = castle
+b_hochnjerburg = castle
+b_brackenfels = castle
+b_neerquell = temple
+b_ulmenhain = castle
+b_essental = temple
+#b_neerbusch = temple
 
 # Misc
 culture = garethi

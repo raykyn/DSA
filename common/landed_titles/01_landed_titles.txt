@@ -1908,84 +1908,114 @@ e_middlerealm = {
 				color={ 104 184 52 }
 				color2={ 255 255 255 }
 				
-				b_gareth = {
+				b_alt_gareth = {
 				}
-				b_raulsmark = {
+				b_alt_gareth_2 = {
 				}
-				b_raulsmark_2 = {
+				b_meilersgrund = {
 				}
-				b_raulsmark_3 = {
+				b_rosskuppel = {
 				}
-				b_raulsmark_4 = {
+				b_neu_gareth = {
 				}
-				b_raulsmark_5 = {
+				b_kronling = {
 				}
-				b_raulsmark_6 = {
+				b_city_of_light = {
 				}
 			}
 			c_alriksmark = { # 5
 				color={ 104 195 83 }
 				color2={ 255 255 255 }
 				
+				b_alrikshorst = {
+				}
+				b_alrikshain = {
+				}
+				b_grossgurvanshof = {
+				}
+				b_finkenbach = {
+				}
 				b_alriksmark = {
 				}
 				b_alriksmark_2 = {
 				}
 				b_alriksmark_3 = {
 				}
-				b_alriksmark_4 = {
-				}
 			}
 			c_gerbaldsmark = { # 6
 				color={ 104 156 47 }
 				color2={ 255 255 255 }
 				
-				b_gerbaldsmark = {
+				b_brachental = {
 				}
-				b_gerbaldsmark_2 = {
+				b_immering = {
 				}
-				b_gerbaldsmark_3 = {
+				b_uilstein = {
 				}
-				b_gerbaldsmark_4 = {
+				b_silkwiesen = {
+				}
+				b_sanct_bulwarth = {
+				}
+				b_ridhausen = {
+				}
+				b_sancta_ancilla = {
 				}
 			}
 			c_halsmark = { # 4
 				color={ 104 147 25 }
 				color2={ 255 255 255 }
 				
+				b_menzelshall = {
+				}
+				b_ackbar = {
+				}
+				b_perainenau = {
+				}
+				b_sanct_vernbald = {
+				}
+				b_gueldenfeldt = {
+				}
+				b_grafenstein = {
+				}
 				b_halsmark = {
-				}
-				b_halsmark_2 = {
-				}
-				b_halsmark_3 = {
-				}
-				b_halsmark_4 = {
 				}
 			}
 			c_ochsenblut = { # 3
 				color={ 104 114 52 }
 				color2={ 255 255 255 }
 				
+				b_rudes_schild = {
+				}
+				b_weyring = {
+				}
+				b_wagenhalt = {
+				}
+				b_kaltensporn = {
+				}
+				b_nesselweil = {
+				}
+				b_hall_of_sun = {
+				}
 				b_ochsenblut = {
-				}
-				b_ochsenblut_2 = {
-				}
-				b_ochsenblut_3 = {
-				}
-				b_ochsenblut_4 = {
 				}
 			}
 			c_retogau = { # 2
 				color={ 104 160 58 }
 				color2={ 255 255 255 }
 				
-				b_retogau = {
+				b_goldenstein = {
 				}
-				b_retogau_2 = {
+				b_nattersquell = {
 				}
-				b_retogau_3 = {
+				b_goldenstein_2 = {
 				}
-				b_retogau_4 = {
+				b_branningsgrund = {
+				}
+				b_quelltempel = {
+				}
+				b_vierok = {
+				}
+				b_hallklee = {
 				}
 			}
 		}
@@ -2005,39 +2035,49 @@ e_middlerealm = {
 				color={ 104 157 196 }
 				color2={ 255 255 255 }
 				
+				b_black_castle = {
+				}
+				b_gorgan = {
+				}
 				b_zagbar = {
 				}
 				b_zagbar_2 = {
-				}
-				b_zagbar_3 = {
-				}
-				b_zagbar_4 = {
 				}
 			}
 			c_dornensee = { # 12
 				color={ 104 218 77 }
 				color2={ 255 255 255 }
 				
+				b_yossenfels = {
+				}
 				b_dornensee = {
+				}
+				b_tannenheim = {
+				}
+				b_praiofold = {
 				}
 				b_dornensee_2 = {
 				}
 				b_dornensee_3 = {
-				}
-				b_dornensee_4 = {
 				}
 			}
 			c_eslamsgrund = { # 11
 				color={ 104 167 130 }
 				color2={ 255 255 255 }
 				
+				b_kreusenburg = {
+				}
+				b_grafenfels = {
+				}
+				b_reinherz = {
+				}
+				b_kaisertal = {
+				}
 				b_eslamsgrund = {
 				}
 				b_eslamsgrund_2 = {
 				}
 				b_eslamsgrund_3 = {
-				}
-				b_eslamsgrund_4 = {
 				}
 			}
 			c_falkenstein = { # 10
@@ -2046,50 +2086,70 @@ e_middlerealm = {
 				
 				b_falkenstein = {
 				}
+				b_rondratrutz = {
+				}
 				b_falkenstein_2 = {
 				}
-				b_falkenstein_3 = {
+				b_liebchengrund = {
 				}
-				b_falkenstein_4 = {
+				b_sanct_cereborn = {
+				}
+				b_rathsamshausen = {
+				}
+				b_falkenstein_3 = {
 				}
 			}
 			c_gallstein = { # 13
 				color={ 104 204 72 }
 				color2={ 255 255 255 }
 				
+				b_mortres = {
+				}
+				b_hahnenfels = {
+				}
+				b_gallestra = {
+				}
+				b_letzenbronn = {
+				}
+				b_hahnendorf = {
+				}
+				b_sancta_ermengild = {
+				}
 				b_gallstein = {
-				}
-				b_gallstein_2 = {
-				}
-				b_gallstein_3 = {
-				}
-				b_gallstein_4 = {
 				}
 			}
 			c_halhof = { # 8
 				color={ 104 136 61 }
 				color2={ 255 255 255 }
 				
+				b_lichterneck = {
+				}
+				b_merun = {
+				}
+				b_steynebruk = {
+				}
+				b_eychgras = {
+				}
+				b_rior = {
+				}
+				b_sanct_therbun = {
+				}
 				b_halhof = {
-				}
-				b_halhof_2 = {
-				}
-				b_halhof_3 = {
-				}
-				b_halhof_4 = {
 				}
 			}
 			c_hoellenwall = { # 9
 				color={ 104 173 163 }
 				color2={ 255 255 255 }
 				
+				b_helburg = {
+				}
 				b_hoellenwall = {
+				}
+				b_marmonte = {
 				}
 				b_hoellenwall_2 = {
 				}
 				b_hoellenwall_3 = {
-				}
-				b_hoellenwall_4 = {
 				}
 			}
 		}
@@ -2371,6 +2431,10 @@ e_middlerealm = {
 				
 				b_feidewald = {
 				}
+				b_orbetreu = {
+				}
+				b_kronbrunn = {
+				}
 				b_feidewald_2 = {
 				}
 				b_feidewald_3 = {
@@ -2378,30 +2442,38 @@ e_middlerealm = {
 				b_feidewald_4 = {
 				}
 			}
+			c_aldenried = { # 39
+				color={ 104 175 63 }
+				color2={ 255 255 255 }
+				
+				b_aldengrund = {
+				}
+				b_puleth = {
+				}
+				b_puleth_2 = {
+				}
+				b_kaiserhain = {
+				}
+				b_tannenheim_2 = {
+				}
+				b_aldenried = {
+				}
+			}
 			c_baerenau = { # 35
 				color={ 104 88 29 }
 				color2={ 255 255 255 }
 				
+				b_praiosburg = {
+				}
 				b_baerenau = {
 				}
 				b_baerenau_2 = {
 				}
+				b_sanct_sighart = {
+				}
 				b_baerenau_3 = {
 				}
 				b_baerenau_4 = {
-				}
-			}
-			c_bugenhog = { # 36
-				color={ 104 152 51 }
-				color2={ 255 255 255 }
-				
-				b_bugenhog = {
-				}
-				b_bugenhog_2 = {
-				}
-				b_bugenhog_3 = {
-				}
-				b_bugenhog_4 = {
 				}
 			}
 			c_hutt = { # 37
@@ -2409,6 +2481,10 @@ e_middlerealm = {
 				color2={ 255 255 255 }
 				
 				b_hutt = {
+				}
+				b_ebenhain = {
+				}
+				b_dorp = {
 				}
 				b_hutt_2 = {
 				}
@@ -2423,37 +2499,49 @@ e_middlerealm = {
 				
 				b_natzungen = {
 				}
+				b_blumenau = {
+				}
+				b_muhlwasser = {
+				}
 				b_natzungen_2 = {
+				}
+				b_nachtdann = {
 				}
 				b_natzungen_3 = {
 				}
-				b_natzungen_4 = {
-				}
 			}
-			c_puleth = { # 39
-				color={ 104 175 63 }
+			c_rabensbrueck = { # 36
+				color={ 104 152 51 }
 				color2={ 255 255 255 }
 				
-				b_puleth = {
+				b_rabensberg = {
 				}
-				b_puleth_2 = {
+				b_bugenhog = {
 				}
-				b_puleth_3 = {
+				b_bugenhog_2 = {
 				}
-				b_puleth_4 = {
+				b_rabensbrueck = {
+				}
+				b_sanct_nadrian = {
+				}
+				b_perainsgarten = {
 				}
 			}
 			c_reichsgau = { # 38
 				color={ 104 101 73 }
 				color2={ 255 255 255 }
 				
+				b_zwingzahn = {
+				}
+				b_weizengrund = {
+				}
+				b_horeth = {
+				}
+				b_gassel = {
+				}
+				b_sancta_noiona = {
+				}
 				b_reichsgau = {
-				}
-				b_reichsgau_2 = {
-				}
-				b_reichsgau_3 = {
-				}
-				b_reichsgau_4 = {
 				}
 			}
 		}
@@ -2590,26 +2678,36 @@ e_middlerealm = {
 				color={ 104 170 132 }
 				color2={ 255 255 255 }
 				
+				b_rallersbruck = {
+				}
+				b_hirschpforten = {
+				}
 				b_waldfang = {
+				}
+				b_silent_watch = {
 				}
 				b_waldfang_2 = {
 				}
 				b_waldfang_3 = {
-				}
-				b_waldfang_4 = {
 				}
 			}
 			c_hirschfurten = { # 19
 				color={ 104 114 31 }
 				color2={ 255 255 255 }
 				
+				b_trollhammer = {
+				}
+				b_talbach = {
+				}
+				b_samlor = {
+				}
+				b_worringen = {
+				}
+				b_marano = {
+				}
 				b_hirschfurten = {
 				}
 				b_hirschfurten_2 = {
-				}
-				b_hirschfurten_3 = {
-				}
-				b_hirschfurten_4 = {
 				}
 			}
 			c_randersburg = { # 18
@@ -2618,44 +2716,66 @@ e_middlerealm = {
 				
 				b_randersburg = {
 				}
+				b_hornbach = {
+				}
+				b_hornbach_2 = {
+				}
+				b_nuzell = {
+				}
 				b_randersburg_2 = {
 				}
-				b_randersburg_3 = {
+				b_trullenheim = {
 				}
-				b_randersburg_4 = {
+				b_sancta_barmhilde = {
 				}
 			}
 			c_rubreth = { # 17
 				color={ 104 201 90 }
 				color2={ 255 255 255 }
 				
+				b_cresseneck = {
+				}
+				b_grollenburg = {
+				}
 				b_rubreth = {
+				}
+				b_waldwiesen = {
+				}
+				b_sonnenau = {
 				}
 				b_rubreth_2 = {
 				}
 				b_rubreth_3 = {
-				}
-				b_rubreth_4 = {
 				}
 			}
 			c_schwarztannen = { # 15
 				color={ 104 197 37 }
 				color2={ 255 255 255 }
 				
+				b_scharfenstein = {
+				}
 				b_schwarztannen = {
+				}
+				b_hexenmuehle = {
+				}
+				b_rallingen = {
+				}
+				b_tannhus = {
 				}
 				b_schwarztannen_2 = {
 				}
 				b_schwarztannen_3 = {
-				}
-				b_schwarztannen_4 = {
 				}
 			}
 			c_syrrenholt = { # 16
 				color={ 104 203 37 }
 				color2={ 255 255 255 }
 				
+				b_zankenblatt = {
+				}
 				b_syrrenholt = {
+				}
+				b_untergras = {
 				}
 				b_syrrenholt_2 = {
 				}
@@ -2683,7 +2803,13 @@ e_middlerealm = {
 				
 				b_mardershoeh = {
 				}
+				b_dragenfels = {
+				}
+				b_mistelhof = {
+				}
 				b_mardershoeh_2 = {
+				}
+				b_sanct_dappertin = {
 				}
 				b_mardershoeh_3 = {
 				}
@@ -2694,65 +2820,87 @@ e_middlerealm = {
 				color={ 104 210 101 }
 				color2={ 255 255 255 }
 				
+				b_freudenstein = {
+				}
+				b_gantersruh = {
+				}
 				b_erlenstamm = {
+				}
+				b_wiesengrund = {
+				}
+				b_sancta_falkhilde = {
 				}
 				b_erlenstamm_2 = {
 				}
 				b_erlenstamm_3 = {
-				}
-				b_erlenstamm_4 = {
 				}
 			}
 			c_hartsteen = { # 32
 				color={ 104 176 119 }
 				color2={ 255 255 255 }
 				
+				b_oberhartsteen = {
+				}
+				b_darpatwacht = {
+				}
+				b_oberhartsteen_2 = {
+				}
+				b_hausen = {
+				}
+				b_gansefried = {
+				}
 				b_hartsteen = {
 				}
 				b_hartsteen_2 = {
-				}
-				b_hartsteen_3 = {
-				}
-				b_hartsteen_4 = {
 				}
 			}
 			c_ingerimmsschlund = { # 31
 				color={ 104 122 66 }
 				color2={ 255 255 255 }
 				
+				b_amselhag = {
+				}
+				b_alberburg = {
+				}
+				b_wandleth = {
+				}
+				b_fandolesch = {
+				}
 				b_ingerimmsschlund = {
 				}
 				b_ingerimmsschlund_2 = {
-				}
-				b_ingerimmsschlund_3 = {
-				}
-				b_ingerimmsschlund_4 = {
 				}
 			}
 			c_ruchin = { # 29
 				color={ 104 121 83 }
 				color2={ 255 255 255 }
 				
+				b_leutrutz = {
+				}
 				b_ruchin = {
+				}
+				b_antalorgol = {
+				}
+				b_greupelwacht = {
+				}
+				b_schlund = {
 				}
 				b_ruchin_2 = {
 				}
 				b_ruchin_3 = {
-				}
-				b_ruchin_4 = {
 				}
 			}
 			c_viehwiesen = { # 30
 				color={ 104 129 47 }
 				color2={ 255 255 255 }
 				
+				b_ox = {
+				}
+				b_oberdachsburg = {
+				}
+				b_sanct_ogdolf = {
+				}
 				b_viehwiesen = {
-				}
-				b_viehwiesen_2 = {
-				}
-				b_viehwiesen_3 = {
-				}
-				b_viehwiesen_4 = {
 				}
 			}
 		}
@@ -2772,7 +2920,13 @@ e_middlerealm = {
 				color={ 54 192 30 }
 				color2={ 255 255 255 }
 				
+				b_seeblick = {
+				}
 				b_schwanenbruch = {
+				}
+				b_seytnach = {
+				}
+				b_uslenried = {
 				}
 				b_schwanenbruch_2 = {
 				}
@@ -2785,52 +2939,66 @@ e_middlerealm = {
 				color={ 104 80 59 }
 				color2={ 255 255 255 }
 				
+				b_rallerwacht = {
+				}
+				b_leustein = {
+				}
+				b_ueberdiebreite = {
+				}
+				b_bitani = {
+				}
+				b_leuental = {
+				}
 				b_linara = {
 				}
 				b_linara_2 = {
-				}
-				b_linara_3 = {
-				}
-				b_linara_4 = {
 				}
 			}
 			c_neerbusch = { # 23
 				color={ 104 202 56 }
 				color2={ 255 255 255 }
 				
+				b_hochnjerburg = {
+				}
+				b_brackenfels = {
+				}
+				b_neerquell = {
+				}
+				b_ulmenhain = {
+				}
+				b_essental = {
+				}
 				b_neerbusch = {
-				}
-				b_neerbusch_2 = {
-				}
-				b_neerbusch_3 = {
-				}
-				b_neerbusch_4 = {
 				}
 			}
 			c_serrinmoor = { # 21
 				color={ 104 212 142 }
 				color2={ 255 255 255 }
 				
+				b_weissenstein = {
+				}
+				b_gesselingen = {
+				}
+				b_breitewacht = {
+				}
 				b_serrinmoor = {
 				}
 				b_serrinmoor_2 = {
-				}
-				b_serrinmoor_3 = {
-				}
-				b_serrinmoor_4 = {
 				}
 			}
 			c_sertis = { # 24
 				color={ 54 126 58 }
 				color2={ 255 255 255 }
 				
+				b_breitenhain = {
+				}
+				b_hornbeil = {
+				}
+				b_falkenwind = {
+				}
 				b_sertis = {
 				}
 				b_sertis_2 = {
-				}
-				b_sertis_3 = {
-				}
-				b_sertis_4 = {
 				}
 			}
 			c_silz = { # 26
@@ -2839,24 +3007,32 @@ e_middlerealm = {
 				
 				b_silz = {
 				}
+				b_alka = {
+				}
+				b_waldshut = {
+				}
+				b_gansbach = {
+				}
 				b_silz_2 = {
 				}
 				b_silz_3 = {
-				}
-				b_silz_4 = {
 				}
 			}
 			c_tannwirk = { # 22
 				color={ 104 151 46 }
 				color2={ 255 255 255 }
 				
+				b_persenburg = {
+				}
 				b_tannwirk = {
+				}
+				b_zweifelsfels = {
+				}
+				b_sancta_henrica = {
 				}
 				b_tannwirk_2 = {
 				}
 				b_tannwirk_3 = {
-				}
-				b_tannwirk_4 = {
 				}
 			}
 		}

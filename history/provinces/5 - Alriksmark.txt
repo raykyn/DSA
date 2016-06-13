@@ -4,12 +4,15 @@
 title = c_alriksmark
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_alriksmark = castle
-#b_alriksmark_2 = city
-#b_alriksmark_3 = temple
-#b_alriksmark_4 = castle
+b_alrikshorst = castle
+b_alrikshain = city
+b_grossgurvanshof = city
+b_finkenbach = city
+#b_alriksmark = city
+#b_alriksmark_2 = temple
+#b_alriksmark_3 = castle
 
 # Misc
 culture = garethi

@@ -4,12 +4,13 @@
 title = c_hoellenwall
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
-b_hoellenwall = castle
-#b_hoellenwall_2 = city
-#b_hoellenwall_3 = temple
-#b_hoellenwall_4 = castle
+b_helburg = castle
+b_hoellenwall = city
+b_marmonte = temple
+#b_hoellenwall_2 = castle
+#b_hoellenwall_3 = city
 
 # Misc
 culture = garethi

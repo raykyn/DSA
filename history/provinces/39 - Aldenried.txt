@@ -1,0 +1,20 @@
+# c_aldenried
+
+# County Title
+title = c_aldenried
+
+# Settlements
+max_settlements = 6
+
+b_aldengrund = castle
+b_puleth = castle
+b_puleth_2 = city
+b_kaiserhain = city
+b_tannenheim_2 = temple
+#b_aldenried = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

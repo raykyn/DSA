@@ -4,12 +4,15 @@
 title = c_gallstein
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_gallstein = castle
-#b_gallstein_2 = city
-#b_gallstein_3 = temple
-#b_gallstein_4 = castle
+b_mortres = castle
+b_hahnenfels = castle
+b_gallestra = city
+b_letzenbronn = city
+b_hahnendorf = city
+b_sancta_ermengild = temple
+#b_gallstein = castle
 
 # Misc
 culture = garethi

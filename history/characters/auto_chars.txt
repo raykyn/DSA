@@ -53,8 +53,9 @@
 	father = 2
 	mother = 3
 	1008.06.26 = {birth=yes}
-	#mage
+	
 	1076.12.06 = {death=yes}
+	#mage
 }
 
 6 = {
@@ -363,8 +364,11 @@
 	culture = mead_elves
 	dynasty = 18
 	946.12.24 = {birth=yes}
-	#elf#make_immortal#religion_needs_change
+	
 	1050.01.01 = {death=yes}
+	#elf
+	#make_immortal
+	#religion_needs_change
 }
 
 34 = {
@@ -375,5 +379,256 @@
 	976.01.01 = {birth=yes}
 	1027.1.1 = {add_trait = in_hiding}
 	1050.01.01 = {death=yes}
+	#verschwunden
+}
+
+35 = {
+	name = "Treumunde Rotha"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 20
+	1003.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+36 = {
+	name = "Werdomar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	996.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+37 = {
+	name = "Geismar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	mother = 38
+	990.01.01 = {birth=yes}
+	
+	1035.01.01 = {death=yes}
+}
+
+38 = {
+	name = "Thuronia"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	969.01.01 = {birth=yes}
+	
+	1030.01.01 = {death=yes}
+}
+
+39 = {
+	name = "Answart"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	mother = 38
+	add_trait = slow
+	992.01.09 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+40 = {
+	name = "Tanira"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 22
+	1007.12.14 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+41 = {
+	name = "Alrik"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	981.05.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+42 = {
+	name = "Alrik"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	984.07.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+43 = {
+	name = "Irian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 24
+	add_trait = greedy
+	956.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+44 = {
+	name = "Ingramm"
+	religion = angrosch 
+	culture = hill_d
+	dynasty = 25
+	father = 45
+	802.12.18 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+	#dwarf
+	#make_immortal
+	#more_health
+}
+
+45 = {
+	name = "Ilkor"
+	religion = angrosch 
+	culture = hill_d
+	dynasty = 25
+	643.01.01 = {birth=yes}
+	
+	880.01.01 = {death=yes}
+	#dwarf
+	#make_immortal
+	#more_health
+}
+
+46 = {
+	name = "Igrolosch"
+	religion = angrosch 
+	culture = hill_d
+	dynasty = 25
+	father = 45
+	840.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+	#dwarf
+	#make_immortal
+	#more_health
+	#priest(Angrosch)
+}
+
+47 = {
+	name = "Luidor"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	977.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+48 = {
+	name = "Thalionmel"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	985.08.18 = {birth=yes}
+	
+	1032.01.01 = {death=yes}
+}
+
+49 = {
+	name = "Rohajan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	mother = 48
+	1025.01.01 = {birth=yes}
+	
+	1032.01.01 = {death=yes}
+}
+
+50 = {
+	name = "Alissa"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	1006.11.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+51 = {
+	name = "Elea"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	977.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+	#priestess(Phex)
+}
+
+52 = {
+	name = "Angreto"
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	mother = 51
+	995.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+53 = {
+	name = "Iriane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	mother = 52
+	1028.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+54 = {
+	name = "Tabur"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 56
+	987.01.01 = {birth=yes}
+	
+	1031.01.01 = {death=yes}
+}
+
+55 = {
+	name = "Anaxios"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 56
+	989.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+	#mage
+}
+
+56 = {
+	name = "Wolfaran"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	963.01.01 = {birth=yes}
+	
+	1003.01.01 = {death=yes}
 }
 

@@ -4,12 +4,15 @@
 title = c_falkenstein
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
 b_falkenstein = castle
-#b_falkenstein_2 = city
-#b_falkenstein_3 = temple
-#b_falkenstein_4 = castle
+b_rondratrutz = castle
+b_falkenstein_2 = city
+b_liebchengrund = city
+b_sanct_cereborn = temple
+b_rathsamshausen = castle
+#b_falkenstein_3 = castle
 
 # Misc
 culture = garethi

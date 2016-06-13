@@ -4,9 +4,12 @@
 title = c_schwanenbruch
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_schwanenbruch = castle
+b_seeblick = castle
+b_schwanenbruch = city
+b_seytnach = city
+b_uslenried = city
 #b_schwanenbruch_2 = city
 #b_schwanenbruch_3 = temple
 #b_schwanenbruch_4 = castle

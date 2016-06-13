@@ -4,12 +4,15 @@
 title = c_hirschfurten
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_hirschfurten = castle
-#b_hirschfurten_2 = city
-#b_hirschfurten_3 = temple
-#b_hirschfurten_4 = castle
+b_trollhammer = castle
+b_talbach = castle
+b_samlor = city
+b_worringen = city
+b_marano = city
+#b_hirschfurten = temple
+#b_hirschfurten_2 = castle
 
 # Misc
 culture = garethi

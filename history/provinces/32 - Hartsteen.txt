@@ -4,12 +4,15 @@
 title = c_hartsteen
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_hartsteen = castle
-#b_hartsteen_2 = city
-#b_hartsteen_3 = temple
-#b_hartsteen_4 = castle
+b_oberhartsteen = castle
+b_darpatwacht = castle
+b_oberhartsteen_2 = city
+b_hausen = city
+b_gansefried = temple
+#b_hartsteen = temple
+#b_hartsteen_2 = castle
 
 # Misc
 culture = garethi

@@ -31,6 +31,8 @@ b_achazak_3;Achazak;Achazak;Achazak;;Achazak;;;;;;;;;x
 b_achazak_3_adj;Achazakian;;achazaker;;;;;;;;;;;x
 b_achazak_4;Achazak;Achazak;Achazak;;Achazak;;;;;;;;;x
 b_achazak_4_adj;Achazakian;;achazaker;;;;;;;;;;;x
+b_ackbar;Ackbar;Ackbar;Ackbar;;Ackbar;;;;;;;;;x
+b_ackbar_adj;Ackbarian;;ackbarer;;;;;;;;;;;x
 b_adlerflug;Adlerflug;Adlerflug;Adlerflug;;Adlerflug;;;;;;;;;x
 b_adlerflug_adj;Adlerflugian;;adlerfluger;;;;;;;;;;;x
 b_adlerflug_2;Adlerflug;Adlerflug;Adlerflug;;Adlerflug;;;;;;;;;x
@@ -119,6 +121,8 @@ b_albentrutz_3;Albentrutz;Albentrutz;Albentrutz;;Albentrutz;;;;;;;;;x
 b_albentrutz_3_adj;Albentrutzian;;albentrutzer;;;;;;;;;;;x
 b_albentrutz_4;Albentrutz;Albentrutz;Albentrutz;;Albentrutz;;;;;;;;;x
 b_albentrutz_4_adj;Albentrutzian;;albentrutzer;;;;;;;;;;;x
+b_alberburg;Alberburg;Alberburg;Alberburg;;Alberburg;;;;;;;;;x
+b_alberburg_adj;Alberburgian;;alberburger;;;;;;;;;;;x
 b_albersrode;Albersrode;Albersrode;Albersrode;;Albersrode;;;;;;;;;x
 b_albersrode_adj;Albersrodean;;albersroder;;;;;;;;;;;x
 b_albersrode_2;Albersrode;Albersrode;Albersrode;;Albersrode;;;;;;;;;x
@@ -131,6 +135,10 @@ b_alchuram;Al'Churam;Al'Churam;Al'Churam;;Al'Churam;;;;;;;;;x
 b_alchuram_adj;Al'Churamian;;al'churamer;;;;;;;;;;;x
 b_alchuram_2;Al'Churam;Al'Churam;Al'Churam;;Al'Churam;;;;;;;;;x
 b_alchuram_2_adj;Al'Churamian;;al'churamer;;;;;;;;;;;x
+b_aldengrund;Aldengrund;Aldengrund;Aldengrund;;Aldengrund;;;;;;;;;x
+b_aldengrund_adj;Aldengrundian;;aldengrunder;;;;;;;;;;;x
+b_aldenried;Aldenried;Aldenried;Aldenried;;Aldenried;;;;;;;;;x
+b_aldenried_adj;Aldenriedian;;aldenrieder;;;;;;;;;;;x
 b_aldyra;Aldyra;Aldyra;Aldyra;;Aldyra;;;;;;;;;x
 b_aldyra_adj;Aldyran;;aldyrer;;;;;;;;;;;x
 b_aldyra_2;Aldyra;Aldyra;Aldyra;;Aldyra;;;;;;;;;x
@@ -139,6 +147,8 @@ b_aldyra_3;Aldyra;Aldyra;Aldyra;;Aldyra;;;;;;;;;x
 b_aldyra_3_adj;Aldyran;;aldyrer;;;;;;;;;;;x
 b_aldyra_4;Aldyra;Aldyra;Aldyra;;Aldyra;;;;;;;;;x
 b_aldyra_4_adj;Aldyran;;aldyrer;;;;;;;;;;;x
+b_alka;Alka;Alka;Alka;;Alka;;;;;;;;;x
+b_alka_adj;Alkan;;alker;;;;;;;;;;;x
 b_alrifat;Al'Rifat;Al'Rifat;Al'Rifat;;Al'Rifat;;;;;;;;;x
 b_alrifat_adj;Al'Rifatian;;al'rifater;;;;;;;;;;;x
 b_alrifat_2;Al'Rifat;Al'Rifat;Al'Rifat;;Al'Rifat;;;;;;;;;x
@@ -147,14 +157,16 @@ b_alrifat_3;Al'Rifat;Al'Rifat;Al'Rifat;;Al'Rifat;;;;;;;;;x
 b_alrifat_3_adj;Al'Rifatian;;al'rifater;;;;;;;;;;;x
 b_alrifat_4;Al'Rifat;Al'Rifat;Al'Rifat;;Al'Rifat;;;;;;;;;x
 b_alrifat_4_adj;Al'Rifatian;;al'rifater;;;;;;;;;;;x
+b_alrikshain;Alrikshain;Alrikshain;Alrikshain;;Alrikshain;;;;;;;;;x
+b_alrikshain_adj;Alrikshainian;;alrikshainer;;;;;;;;;;;x
+b_alrikshorst;Alrikshorst;Alrikshorst;Alrikshorst;;Alrikshorst;;;;;;;;;x
+b_alrikshorst_adj;Alrikshorstian;;alrikshorster;;;;;;;;;;;x
 b_alriksmark;Alriksmark;Alriksmark;Alriksmark;;Alriksmark;;;;;;;;;x
 b_alriksmark_adj;Alriksmarkian;;alriksmarker;;;;;;;;;;;x
 b_alriksmark_2;Alriksmark;Alriksmark;Alriksmark;;Alriksmark;;;;;;;;;x
 b_alriksmark_2_adj;Alriksmarkian;;alriksmarker;;;;;;;;;;;x
 b_alriksmark_3;Alriksmark;Alriksmark;Alriksmark;;Alriksmark;;;;;;;;;x
 b_alriksmark_3_adj;Alriksmarkian;;alriksmarker;;;;;;;;;;;x
-b_alriksmark_4;Alriksmark;Alriksmark;Alriksmark;;Alriksmark;;;;;;;;;x
-b_alriksmark_4_adj;Alriksmarkian;;alriksmarker;;;;;;;;;;;x
 b_alrurdan;Alrurdan;Alrurdan;Alrurdan;;Alrurdan;;;;;;;;;x
 b_alrurdan_adj;Alrurdanian;;alrurdaner;;;;;;;;;;;x
 b_alrurdan_2;Alrurdan;Alrurdan;Alrurdan;;Alrurdan;;;;;;;;;x
@@ -171,6 +183,10 @@ b_alst_3;Alst;Alst;Alst;;Alst;;;;;;;;;x
 b_alst_3_adj;Alstian;;alster;;;;;;;;;;;x
 b_alst_4;Alst;Alst;Alst;;Alst;;;;;;;;;x
 b_alst_4_adj;Alstian;;alster;;;;;;;;;;;x
+b_alt_gareth;Alt-Gareth;Alt-Gareth;Alt-Gareth;;Alt-Gareth;;;;;;;;;x
+b_alt_gareth_adj;Alt-Garethian;;alt-garether;;;;;;;;;;;x
+b_alt_gareth_2;Alt-Gareth;Alt-Gareth;Alt-Gareth;;Alt-Gareth;;;;;;;;;x
+b_alt_gareth_2_adj;Alt-Garethian;;alt-garether;;;;;;;;;;;x
 b_altenfaehr;Altenfaehr;Altenfaehr;Altenfaehr;;Altenfaehr;;;;;;;;;x
 b_altenfaehr_adj;Altenfaehrian;;altenfaehrer;;;;;;;;;;;x
 b_altenfaehr_2;Altenfaehr;Altenfaehr;Altenfaehr;;Altenfaehr;;;;;;;;;x
@@ -227,6 +243,8 @@ b_amhallassih_summits_3;Amhallassih-Summits;Amhallassih-Summits;Amhallassih-Summ
 b_amhallassih_summits_3_adj;Amhallassih-Summitsian;;amhallassih-summitser;;;;;;;;;;;x
 b_amhallassih_summits_4;Amhallassih-Summits;Amhallassih-Summits;Amhallassih-Summits;;Amhallassih-Summits;;;;;;;;;x
 b_amhallassih_summits_4_adj;Amhallassih-Summitsian;;amhallassih-summitser;;;;;;;;;;;x
+b_amselhag;Amselhag;Amselhag;Amselhag;;Amselhag;;;;;;;;;x
+b_amselhag_adj;Amselhagian;;amselhager;;;;;;;;;;;x
 b_angbar;Angbar;Angbar;Angbar;;Angbar;;;;;;;;;x
 b_angbar_adj;Angbarian;;angbarer;;;;;;;;;;;x
 b_angbar_2;Angbar;Angbar;Angbar;;Angbar;;;;;;;;;x
@@ -251,6 +269,8 @@ b_ankrabad_3;Ankrabad;Ankrabad;Ankrabad;;Ankrabad;;;;;;;;;x
 b_ankrabad_3_adj;Ankrabadian;;ankrabader;;;;;;;;;;;x
 b_ankrabad_4;Ankrabad;Ankrabad;Ankrabad;;Ankrabad;;;;;;;;;x
 b_ankrabad_4_adj;Ankrabadian;;ankrabader;;;;;;;;;;;x
+b_antalorgol;Antalorgol;Antalorgol;Antalorgol;;Antalorgol;;;;;;;;;x
+b_antalorgol_adj;Antalorgolian;;antalorgoler;;;;;;;;;;;x
 b_arivor;Arivor;Arivor;Arivor;;Arivor;;;;;;;;;x
 b_arivor_adj;Arivorian;;arivorer;;;;;;;;;;;x
 b_arivor_2;Arivor;Arivor;Arivor;;Arivor;;;;;;;;;x
@@ -527,6 +547,12 @@ b_birscha_3;Birscha;Birscha;Birscha;;Birscha;;;;;;;;;x
 b_birscha_3_adj;Birschan;;birscher;;;;;;;;;;;x
 b_birscha_4;Birscha;Birscha;Birscha;;Birscha;;;;;;;;;x
 b_birscha_4_adj;Birschan;;birscher;;;;;;;;;;;x
+b_bitani;Bitani;Bitani;Bitani;;Bitani;;;;;;;;;x
+b_bitani_adj;Bitanian;;bitaner;;;;;;;;;;;x
+b_black_castle;Black Castle;Black Castle;Black Castle;;Black Castle;;;;;;;;;x
+b_black_castle_adj;Black Castlean;;Black Castler;;;;;;;;;;;x
+b_blumenau;Blumenau;Blumenau;Blumenau;;Blumenau;;;;;;;;;x
+b_blumenau_adj;Blumenian;;blumener;;;;;;;;;;;x
 b_bobrastan;Bobrastan;Bobrastan;Bobrastan;;Bobrastan;;;;;;;;;x
 b_bobrastan_adj;Bobrastanian;;bobrastaner;;;;;;;;;;;x
 b_bobrastan_2;Bobrastan;Bobrastan;Bobrastan;;Bobrastan;;;;;;;;;x
@@ -627,6 +653,8 @@ b_braast_3;Braast;Braast;Braast;;Braast;;;;;;;;;x
 b_braast_3_adj;Braastian;;braaster;;;;;;;;;;;x
 b_braast_4;Braast;Braast;Braast;;Braast;;;;;;;;;x
 b_braast_4_adj;Braastian;;braaster;;;;;;;;;;;x
+b_brachental;Brachental;Brachental;Brachental;;Brachental;;;;;;;;;x
+b_brachental_adj;Brachentalian;;brachentaler;;;;;;;;;;;x
 b_brachfelde;Brachfelde;Brachfelde;Brachfelde;;Brachfelde;;;;;;;;;x
 b_brachfelde_adj;Brachfeldean;;brachfelder;;;;;;;;;;;x
 b_brachfelde_2;Brachfelde;Brachfelde;Brachfelde;;Brachfelde;;;;;;;;;x
@@ -635,6 +663,8 @@ b_brachfelde_3;Brachfelde;Brachfelde;Brachfelde;;Brachfelde;;;;;;;;;x
 b_brachfelde_3_adj;Brachfeldean;;brachfelder;;;;;;;;;;;x
 b_brachfelde_4;Brachfelde;Brachfelde;Brachfelde;;Brachfelde;;;;;;;;;x
 b_brachfelde_4_adj;Brachfeldean;;brachfelder;;;;;;;;;;;x
+b_brackenfels;Brackenfels;Brackenfels;Brackenfels;;Brackenfels;;;;;;;;;x
+b_brackenfels_adj;Brackenfelsian;;brackenfelser;;;;;;;;;;;x
 b_bragahn;Bragahn;Bragahn;Bragahn;;Bragahn;;;;;;;;;x
 b_bragahn_adj;Bragahnian;;bragahner;;;;;;;;;;;x
 b_bragahn_2;Bragahn;Bragahn;Bragahn;;Bragahn;;;;;;;;;x
@@ -643,6 +673,8 @@ b_bragahn_3;Bragahn;Bragahn;Bragahn;;Bragahn;;;;;;;;;x
 b_bragahn_3_adj;Bragahnian;;bragahner;;;;;;;;;;;x
 b_bragahn_4;Bragahn;Bragahn;Bragahn;;Bragahn;;;;;;;;;x
 b_bragahn_4_adj;Bragahnian;;bragahner;;;;;;;;;;;x
+b_branningsgrund;Branningsgrund;Branningsgrund;Branningsgrund;;Branningsgrund;;;;;;;;;x
+b_branningsgrund_adj;Branningsgrundian;;branningsgrunder;;;;;;;;;;;x
 b_bredenhag;Bredenhag;Bredenhag;Bredenhag;;Bredenhag;;;;;;;;;x
 b_bredenhag_adj;Bredenhagian;;bredenhager;;;;;;;;;;;x
 b_bredenhag_2;Bredenhag;Bredenhag;Bredenhag;;Bredenhag;;;;;;;;;x
@@ -659,6 +691,10 @@ b_breitenbruck_3;Breitenbruck;Breitenbruck;Breitenbruck;;Breitenbruck;;;;;;;;;x
 b_breitenbruck_3_adj;Breitenbruckian;;breitenbrucker;;;;;;;;;;;x
 b_breitenbruck_4;Breitenbruck;Breitenbruck;Breitenbruck;;Breitenbruck;;;;;;;;;x
 b_breitenbruck_4_adj;Breitenbruckian;;breitenbrucker;;;;;;;;;;;x
+b_breitenhain;Breitenhain;Breitenhain;Breitenhain;;Breitenhain;;;;;;;;;x
+b_breitenhain_adj;Breitenhainian;;breitenhainer;;;;;;;;;;;x
+b_breitewacht;Breitewacht;Breitewacht;Breitewacht;;Breitewacht;;;;;;;;;x
+b_breitewacht_adj;Breitewachtian;;breitewachter;;;;;;;;;;;x
 b_brelak;Brelak;Brelak;Brelak;;Brelak;;;;;;;;;x
 b_brelak_adj;Brelakian;;brelaker;;;;;;;;;;;x
 b_brelak_2;Brelak;Brelak;Brelak;;Brelak;;;;;;;;;x
@@ -711,10 +747,6 @@ b_bugenhog;Bugenhog;Bugenhog;Bugenhog;;Bugenhog;;;;;;;;;x
 b_bugenhog_adj;Bugenhogian;;bugenhoger;;;;;;;;;;;x
 b_bugenhog_2;Bugenhog;Bugenhog;Bugenhog;;Bugenhog;;;;;;;;;x
 b_bugenhog_2_adj;Bugenhogian;;bugenhoger;;;;;;;;;;;x
-b_bugenhog_3;Bugenhog;Bugenhog;Bugenhog;;Bugenhog;;;;;;;;;x
-b_bugenhog_3_adj;Bugenhogian;;bugenhoger;;;;;;;;;;;x
-b_bugenhog_4;Bugenhog;Bugenhog;Bugenhog;;Bugenhog;;;;;;;;;x
-b_bugenhog_4_adj;Bugenhogian;;bugenhoger;;;;;;;;;;;x
 b_buli;Buli;Buli;Buli;;Buli;;;;;;;;;x
 b_buli_adj;Bulian;;buler;;;;;;;;;;;x
 b_buli_2;Buli;Buli;Buli;;Buli;;;;;;;;;x
@@ -779,6 +811,8 @@ b_chumbiri_3;Chumbiri;Chumbiri;Chumbiri;;Chumbiri;;;;;;;;;x
 b_chumbiri_3_adj;Chumbirian;;chumbirer;;;;;;;;;;;x
 b_chumbiri_4;Chumbiri;Chumbiri;Chumbiri;;Chumbiri;;;;;;;;;x
 b_chumbiri_4_adj;Chumbirian;;chumbirer;;;;;;;;;;;x
+b_city_of_light;City of Light;City of Light;City of Light;;City of Light;;;;;;;;;x
+b_city_of_light_adj;City of Lightian;;City of Lighter;;;;;;;;;;;x
 b_coast_of_tears;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
 b_coast_of_tears_adj;Coast of Tearsian;;Coast of Tearser;;;;;;;;;;;x
 b_coast_of_tears_2;Coast of Tears;Coast of Tears;Coast of Tears;;Coast of Tears;;;;;;;;;x
@@ -795,6 +829,8 @@ b_cres_3;Cres;Cres;Cres;;Cres;;;;;;;;;x
 b_cres_3_adj;Cresian;;creser;;;;;;;;;;;x
 b_cres_4;Cres;Cres;Cres;;Cres;;;;;;;;;x
 b_cres_4_adj;Cresian;;creser;;;;;;;;;;;x
+b_cresseneck;Cresseneck;Cresseneck;Cresseneck;;Cresseneck;;;;;;;;;x
+b_cresseneck_adj;Cresseneckian;;cressenecker;;;;;;;;;;;x
 b_culming;Culming;Culming;Culming;;Culming;;;;;;;;;x
 b_culming_adj;Culmingian;;culminger;;;;;;;;;;;x
 b_culming_2;Culming;Culming;Culming;;Culming;;;;;;;;;x
@@ -803,6 +839,8 @@ b_culming_3;Culming;Culming;Culming;;Culming;;;;;;;;;x
 b_culming_3_adj;Culmingian;;culminger;;;;;;;;;;;x
 b_culming_4;Culming;Culming;Culming;;Culming;;;;;;;;;x
 b_culming_4_adj;Culmingian;;culminger;;;;;;;;;;;x
+b_darpatwacht;Darpatwacht;Darpatwacht;Darpatwacht;;Darpatwacht;;;;;;;;;x
+b_darpatwacht_adj;Darpatwachtian;;darpatwachter;;;;;;;;;;;x
 b_delta_of_awalakim;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
 b_delta_of_awalakim_adj;Delta of Awalakimian;;Delta of Awalakimer;;;;;;;;;;;x
 b_delta_of_awalakim_2;Delta of Awalakim;Delta of Awalakim;Delta of Awalakim;;Delta of Awalakim;;;;;;;;;x
@@ -905,8 +943,6 @@ b_dornensee_2;Dornensee;Dornensee;Dornensee;;Dornensee;;;;;;;;;x
 b_dornensee_2_adj;Dornenseean;;dornenser;;;;;;;;;;;x
 b_dornensee_3;Dornensee;Dornensee;Dornensee;;Dornensee;;;;;;;;;x
 b_dornensee_3_adj;Dornenseean;;dornenser;;;;;;;;;;;x
-b_dornensee_4;Dornensee;Dornensee;Dornensee;;Dornensee;;;;;;;;;x
-b_dornensee_4_adj;Dornenseean;;dornenser;;;;;;;;;;;x
 b_dornstein;Dornstein;Dornstein;Dornstein;;Dornstein;;;;;;;;;x
 b_dornstein_adj;Dornsteinian;;dornsteiner;;;;;;;;;;;x
 b_dornstein_2;Dornstein;Dornstein;Dornstein;;Dornstein;;;;;;;;;x
@@ -915,6 +951,8 @@ b_dornstein_3;Dornstein;Dornstein;Dornstein;;Dornstein;;;;;;;;;x
 b_dornstein_3_adj;Dornsteinian;;dornsteiner;;;;;;;;;;;x
 b_dornstein_4;Dornstein;Dornstein;Dornstein;;Dornstein;;;;;;;;;x
 b_dornstein_4_adj;Dornsteinian;;dornsteiner;;;;;;;;;;;x
+b_dorp;Dorp;Dorp;Dorp;;Dorp;;;;;;;;;x
+b_dorp_adj;Dorpian;;dorper;;;;;;;;;;;x
 b_drachenstein;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 b_drachenstein_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
 b_drachenstein_2;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
@@ -923,6 +961,8 @@ b_drachenstein_3;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 b_drachenstein_3_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
 b_drachenstein_4;Drachenstein;Drachenstein;Drachenstein;;Drachenstein;;;;;;;;;x
 b_drachenstein_4_adj;Drachensteinian;;drachensteiner;;;;;;;;;;;x
+b_dragenfels;Dragenfels;Dragenfels;Dragenfels;;Dragenfels;;;;;;;;;x
+b_dragenfels_adj;Dragenfelsian;;dragenfelser;;;;;;;;;;;x
 b_drakonia;Drakonia;Drakonia;Drakonia;;Drakonia;;;;;;;;;x
 b_drakonia_adj;Drakonian;;drakoner;;;;;;;;;;;x
 b_drakonia_2;Drakonia;Drakonia;Drakonia;;Drakonia;;;;;;;;;x
@@ -979,6 +1019,8 @@ b_eastern_raschtulswall;Eastern Raschtulswall;Eastern Raschtulswall;Eastern Rasc
 b_eastern_raschtulswall_adj;Eastern Raschtulswallian;;Eastern Raschtulswaller;;;;;;;;;;;x
 b_eastern_raschtulswall_2;Eastern Raschtulswall;Eastern Raschtulswall;Eastern Raschtulswall;;Eastern Raschtulswall;;;;;;;;;x
 b_eastern_raschtulswall_2_adj;Eastern Raschtulswallian;;Eastern Raschtulswaller;;;;;;;;;;;x
+b_ebenhain;Ebenhain;Ebenhain;Ebenhain;;Ebenhain;;;;;;;;;x
+b_ebenhain_adj;Ebenhainian;;ebenhainer;;;;;;;;;;;x
 b_ebersberg;Ebersberg;Ebersberg;Ebersberg;;Ebersberg;;;;;;;;;x
 b_ebersberg_adj;Ebersbergian;;ebersberger;;;;;;;;;;;x
 b_ebersberg_2;Ebersberg;Ebersberg;Ebersberg;;Ebersberg;;;;;;;;;x
@@ -1113,8 +1155,6 @@ b_erlenstamm_2;Erlenstamm;Erlenstamm;Erlenstamm;;Erlenstamm;;;;;;;;;x
 b_erlenstamm_2_adj;Erlenstammian;;erlenstammer;;;;;;;;;;;x
 b_erlenstamm_3;Erlenstamm;Erlenstamm;Erlenstamm;;Erlenstamm;;;;;;;;;x
 b_erlenstamm_3_adj;Erlenstammian;;erlenstammer;;;;;;;;;;;x
-b_erlenstamm_4;Erlenstamm;Erlenstamm;Erlenstamm;;Erlenstamm;;;;;;;;;x
-b_erlenstamm_4_adj;Erlenstammian;;erlenstammer;;;;;;;;;;;x
 b_erlschwerd;Erlschwerd;Erlschwerd;Erlschwerd;;Erlschwerd;;;;;;;;;x
 b_erlschwerd_adj;Erlschwerdian;;erlschwerder;;;;;;;;;;;x
 b_erlschwerd_2;Erlschwerd;Erlschwerd;Erlschwerd;;Erlschwerd;;;;;;;;;x
@@ -1137,8 +1177,6 @@ b_eslamsgrund_2;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
 b_eslamsgrund_2_adj;Eslamsgrundian;;eslamsgrunder;;;;;;;;;;;x
 b_eslamsgrund_3;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
 b_eslamsgrund_3_adj;Eslamsgrundian;;eslamsgrunder;;;;;;;;;;;x
-b_eslamsgrund_4;Eslamsgrund;Eslamsgrund;Eslamsgrund;;Eslamsgrund;;;;;;;;;x
-b_eslamsgrund_4_adj;Eslamsgrundian;;eslamsgrunder;;;;;;;;;;;x
 b_eslamsroden;Eslamsroden;Eslamsroden;Eslamsroden;;Eslamsroden;;;;;;;;;x
 b_eslamsroden_adj;Eslamsrodenian;;eslamsrodener;;;;;;;;;;;x
 b_eslamsroden_2;Eslamsroden;Eslamsroden;Eslamsroden;;Eslamsroden;;;;;;;;;x
@@ -1155,6 +1193,8 @@ b_espen_3;Espen;Espen;Espen;;Espen;;;;;;;;;x
 b_espen_3_adj;Espenian;;espener;;;;;;;;;;;x
 b_espen_4;Espen;Espen;Espen;;Espen;;;;;;;;;x
 b_espen_4_adj;Espenian;;espener;;;;;;;;;;;x
+b_essental;Essental;Essental;Essental;;Essental;;;;;;;;;x
+b_essental_adj;Essentalian;;essentaler;;;;;;;;;;;x
 b_etlaskan;Etlaskan;Etlaskan;Etlaskan;;Etlaskan;;;;;;;;;x
 b_etlaskan_adj;Etlaskanian;;etlaskaner;;;;;;;;;;;x
 b_etlaskan_2;Etlaskan;Etlaskan;Etlaskan;;Etlaskan;;;;;;;;;x
@@ -1163,6 +1203,8 @@ b_etlaskan_3;Etlaskan;Etlaskan;Etlaskan;;Etlaskan;;;;;;;;;x
 b_etlaskan_3_adj;Etlaskanian;;etlaskaner;;;;;;;;;;;x
 b_etlaskan_4;Etlaskan;Etlaskan;Etlaskan;;Etlaskan;;;;;;;;;x
 b_etlaskan_4_adj;Etlaskanian;;etlaskaner;;;;;;;;;;;x
+b_eychgras;Eychgras;Eychgras;Eychgras;;Eychgras;;;;;;;;;x
+b_eychgras_adj;Eychgrasian;;eychgraser;;;;;;;;;;;x
 b_falado;Falado;Falado;Falado;;Falado;;;;;;;;;x
 b_falado_adj;Faladian;;falader;;;;;;;;;;;x
 b_falado_2;Falado;Falado;Falado;;Falado;;;;;;;;;x
@@ -1185,8 +1227,10 @@ b_falkenstein_2;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
 b_falkenstein_2_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
 b_falkenstein_3;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
 b_falkenstein_3_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
-b_falkenstein_4;Falkenstein;Falkenstein;Falkenstein;;Falkenstein;;;;;;;;;x
-b_falkenstein_4_adj;Falkensteinian;;falkensteiner;;;;;;;;;;;x
+b_falkenwind;Falkenwind;Falkenwind;Falkenwind;;Falkenwind;;;;;;;;;x
+b_falkenwind_adj;Falkenwindian;;falkenwinder;;;;;;;;;;;x
+b_fandolesch;Fandolesch;Fandolesch;Fandolesch;;Fandolesch;;;;;;;;;x
+b_fandolesch_adj;Fandoleschian;;fandolescher;;;;;;;;;;;x
 b_farsh_uruch;Farsh Uruch;Farsh Uruch;Farsh Uruch;;Farsh Uruch;;;;;;;;;x
 b_farsh_uruch_adj;Farsh Uruchian;;Farsh Urucher;;;;;;;;;;;x
 b_farsh_uruch_2;Farsh Uruch;Farsh Uruch;Farsh Uruch;;Farsh Uruch;;;;;;;;;x
@@ -1243,6 +1287,8 @@ b_ferdok_3;Ferdok;Ferdok;Ferdok;;Ferdok;;;;;;;;;x
 b_ferdok_3_adj;Ferdokian;;ferdoker;;;;;;;;;;;x
 b_ferdok_4;Ferdok;Ferdok;Ferdok;;Ferdok;;;;;;;;;x
 b_ferdok_4_adj;Ferdokian;;ferdoker;;;;;;;;;;;x
+b_finkenbach;Finkenbach;Finkenbach;Finkenbach;;Finkenbach;;;;;;;;;x
+b_finkenbach_adj;Finkenbachian;;finkenbacher;;;;;;;;;;;x
 b_finsterkamm;Finsterkamm;Finsterkamm;Finsterkamm;;Finsterkamm;;;;;;;;;x
 b_finsterkamm_adj;Finsterkammian;;finsterkammer;;;;;;;;;;;x
 b_finsterkamm_2;Finsterkamm;Finsterkamm;Finsterkamm;;Finsterkamm;;;;;;;;;x
@@ -1323,6 +1369,8 @@ b_freudenberg_3;Freudenberg;Freudenberg;Freudenberg;;Freudenberg;;;;;;;;;x
 b_freudenberg_3_adj;Freudenbergian;;freudenberger;;;;;;;;;;;x
 b_freudenberg_4;Freudenberg;Freudenberg;Freudenberg;;Freudenberg;;;;;;;;;x
 b_freudenberg_4_adj;Freudenbergian;;freudenberger;;;;;;;;;;;x
+b_freudenstein;Freudenstein;Freudenstein;Freudenstein;;Freudenstein;;;;;;;;;x
+b_freudenstein_adj;Freudensteinian;;freudensteiner;;;;;;;;;;;x
 b_friedwang;Friedwang;Friedwang;Friedwang;;Friedwang;;;;;;;;;x
 b_friedwang_adj;Friedwangian;;friedwanger;;;;;;;;;;;x
 b_friedwang_2;Friedwang;Friedwang;Friedwang;;Friedwang;;;;;;;;;x
@@ -1395,14 +1443,10 @@ b_galebquell_3;Galebquell;Galebquell;Galebquell;;Galebquell;;;;;;;;;x
 b_galebquell_3_adj;Galebquellian;;galebqueller;;;;;;;;;;;x
 b_galebquell_4;Galebquell;Galebquell;Galebquell;;Galebquell;;;;;;;;;x
 b_galebquell_4_adj;Galebquellian;;galebqueller;;;;;;;;;;;x
+b_gallestra;Gallestra;Gallestra;Gallestra;;Gallestra;;;;;;;;;x
+b_gallestra_adj;Gallestran;;gallestrer;;;;;;;;;;;x
 b_gallstein;Gallstein;Gallstein;Gallstein;;Gallstein;;;;;;;;;x
 b_gallstein_adj;Gallsteinian;;gallsteiner;;;;;;;;;;;x
-b_gallstein_2;Gallstein;Gallstein;Gallstein;;Gallstein;;;;;;;;;x
-b_gallstein_2_adj;Gallsteinian;;gallsteiner;;;;;;;;;;;x
-b_gallstein_3;Gallstein;Gallstein;Gallstein;;Gallstein;;;;;;;;;x
-b_gallstein_3_adj;Gallsteinian;;gallsteiner;;;;;;;;;;;x
-b_gallstein_4;Gallstein;Gallstein;Gallstein;;Gallstein;;;;;;;;;x
-b_gallstein_4_adj;Gallsteinian;;gallsteiner;;;;;;;;;;;x
 b_gallys;Gallys;Gallys;Gallys;;Gallys;;;;;;;;;x
 b_gallys_adj;Gallysian;;gallyser;;;;;;;;;;;x
 b_gallys_2;Gallys;Gallys;Gallys;;Gallys;;;;;;;;;x
@@ -1411,8 +1455,14 @@ b_gallys_3;Gallys;Gallys;Gallys;;Gallys;;;;;;;;;x
 b_gallys_3_adj;Gallysian;;gallyser;;;;;;;;;;;x
 b_gallys_4;Gallys;Gallys;Gallys;;Gallys;;;;;;;;;x
 b_gallys_4_adj;Gallysian;;gallyser;;;;;;;;;;;x
-b_gareth;Gareth;Gareth;Gareth;;Gareth;;;;;;;;;x
-b_gareth_adj;Garethian;;garether;;;;;;;;;;;x
+b_gansbach;Gansbach;Gansbach;Gansbach;;Gansbach;;;;;;;;;x
+b_gansbach_adj;Gansbachian;;gansbacher;;;;;;;;;;;x
+b_gansefried;Gansefried;Gansefried;Gansefried;;Gansefried;;;;;;;;;x
+b_gansefried_adj;Gansefriedian;;gansefrieder;;;;;;;;;;;x
+b_gantersruh;Gantersruh;Gantersruh;Gantersruh;;Gantersruh;;;;;;;;;x
+b_gantersruh_adj;Gantersruhian;;gantersruher;;;;;;;;;;;x
+b_gassel;Gassel;Gassel;Gassel;;Gassel;;;;;;;;;x
+b_gassel_adj;Gasselian;;gasseler;;;;;;;;;;;x
 b_geiersgau;Geiersgau;Geiersgau;Geiersgau;;Geiersgau;;;;;;;;;x
 b_geiersgau_adj;Geiersgian;;geiersger;;;;;;;;;;;x
 b_geiersgau_2;Geiersgau;Geiersgau;Geiersgau;;Geiersgau;;;;;;;;;x
@@ -1445,14 +1495,6 @@ b_geran_3;Geran;Geran;Geran;;Geran;;;;;;;;;x
 b_geran_3_adj;Geranian;;geraner;;;;;;;;;;;x
 b_geran_4;Geran;Geran;Geran;;Geran;;;;;;;;;x
 b_geran_4_adj;Geranian;;geraner;;;;;;;;;;;x
-b_gerbaldsmark;Gerbaldsmark;Gerbaldsmark;Gerbaldsmark;;Gerbaldsmark;;;;;;;;;x
-b_gerbaldsmark_adj;Gerbaldsmarkian;;gerbaldsmarker;;;;;;;;;;;x
-b_gerbaldsmark_2;Gerbaldsmark;Gerbaldsmark;Gerbaldsmark;;Gerbaldsmark;;;;;;;;;x
-b_gerbaldsmark_2_adj;Gerbaldsmarkian;;gerbaldsmarker;;;;;;;;;;;x
-b_gerbaldsmark_3;Gerbaldsmark;Gerbaldsmark;Gerbaldsmark;;Gerbaldsmark;;;;;;;;;x
-b_gerbaldsmark_3_adj;Gerbaldsmarkian;;gerbaldsmarker;;;;;;;;;;;x
-b_gerbaldsmark_4;Gerbaldsmark;Gerbaldsmark;Gerbaldsmark;;Gerbaldsmark;;;;;;;;;x
-b_gerbaldsmark_4_adj;Gerbaldsmarkian;;gerbaldsmarker;;;;;;;;;;;x
 b_gernebruch;Gernebruch;Gernebruch;Gernebruch;;Gernebruch;;;;;;;;;x
 b_gernebruch_adj;Gernebruchian;;gernebrucher;;;;;;;;;;;x
 b_gernebruch_2;Gernebruch;Gernebruch;Gernebruch;;Gernebruch;;;;;;;;;x
@@ -1461,6 +1503,8 @@ b_gernebruch_3;Gernebruch;Gernebruch;Gernebruch;;Gernebruch;;;;;;;;;x
 b_gernebruch_3_adj;Gernebruchian;;gernebrucher;;;;;;;;;;;x
 b_gernebruch_4;Gernebruch;Gernebruch;Gernebruch;;Gernebruch;;;;;;;;;x
 b_gernebruch_4_adj;Gernebruchian;;gernebrucher;;;;;;;;;;;x
+b_gesselingen;Gesselingen;Gesselingen;Gesselingen;;Gesselingen;;;;;;;;;x
+b_gesselingen_adj;Gesselingenian;;gesselingener;;;;;;;;;;;x
 b_ghadanar;Ghadanar;Ghadanar;Ghadanar;;Ghadanar;;;;;;;;;x
 b_ghadanar_adj;Ghadanarian;;ghadanarer;;;;;;;;;;;x
 b_ghadanar_2;Ghadanar;Ghadanar;Ghadanar;;Ghadanar;;;;;;;;;x
@@ -1501,6 +1545,10 @@ b_goetzenzwinge_3;Götzenzwinge;Götzenzwinge;Götzenzwinge;;Götzenzwinge;;;;;;;;;x
 b_goetzenzwinge_3_adj;Götzenzwingean;;götzenzwinger;;;;;;;;;;;x
 b_goetzenzwinge_4;Götzenzwinge;Götzenzwinge;Götzenzwinge;;Götzenzwinge;;;;;;;;;x
 b_goetzenzwinge_4_adj;Götzenzwingean;;götzenzwinger;;;;;;;;;;;x
+b_goldenstein;Goldenstein;Goldenstein;Goldenstein;;Goldenstein;;;;;;;;;x
+b_goldenstein_adj;Goldensteinian;;goldensteiner;;;;;;;;;;;x
+b_goldenstein_2;Goldenstein;Goldenstein;Goldenstein;;Goldenstein;;;;;;;;;x
+b_goldenstein_2_adj;Goldensteinian;;goldensteiner;;;;;;;;;;;x
 b_goldrocks;Goldrocks;Goldrocks;Goldrocks;;Goldrocks;;;;;;;;;x
 b_goldrocks_adj;Goldrocksian;;goldrockser;;;;;;;;;;;x
 b_goldrocks_2;Goldrocks;Goldrocks;Goldrocks;;Goldrocks;;;;;;;;;x
@@ -1517,6 +1565,8 @@ b_gorbingen_3;Gorbingen;Gorbingen;Gorbingen;;Gorbingen;;;;;;;;;x
 b_gorbingen_3_adj;Gorbingenian;;gorbingener;;;;;;;;;;;x
 b_gorbingen_4;Gorbingen;Gorbingen;Gorbingen;;Gorbingen;;;;;;;;;x
 b_gorbingen_4_adj;Gorbingenian;;gorbingener;;;;;;;;;;;x
+b_gorgan;Gorgan;Gorgan;Gorgan;;Gorgan;;;;;;;;;x
+b_gorgan_adj;Gorganian;;gorganer;;;;;;;;;;;x
 b_gorian_steppe;Gorian Steppe;Gorian Steppe;Gorian Steppe;;Gorian Steppe;;;;;;;;;x
 b_gorian_steppe_adj;Gorian Steppean;;Gorian Stepper;;;;;;;;;;;x
 b_gorian_steppe_2;Gorian Steppe;Gorian Steppe;Gorian Steppe;;Gorian Steppe;;;;;;;;;x
@@ -1525,6 +1575,10 @@ b_gorian_steppe_3;Gorian Steppe;Gorian Steppe;Gorian Steppe;;Gorian Steppe;;;;;;
 b_gorian_steppe_3_adj;Gorian Steppean;;Gorian Stepper;;;;;;;;;;;x
 b_gorian_steppe_4;Gorian Steppe;Gorian Steppe;Gorian Steppe;;Gorian Steppe;;;;;;;;;x
 b_gorian_steppe_4_adj;Gorian Steppean;;Gorian Stepper;;;;;;;;;;;x
+b_grafenfels;Grafenfels;Grafenfels;Grafenfels;;Grafenfels;;;;;;;;;x
+b_grafenfels_adj;Grafenfelsian;;grafenfelser;;;;;;;;;;;x
+b_grafenstein;Grafenstein;Grafenstein;Grafenstein;;Grafenstein;;;;;;;;;x
+b_grafenstein_adj;Grafensteinian;;grafensteiner;;;;;;;;;;;x
 b_grangor;Grangor;Grangor;Grangor;;Grangor;;;;;;;;;x
 b_grangor_adj;Grangorian;;grangorer;;;;;;;;;;;x
 b_grangor_2;Grangor;Grangor;Grangor;;Grangor;;;;;;;;;x
@@ -1597,6 +1651,12 @@ b_grenzmarken_3;Grenzmarken;Grenzmarken;Grenzmarken;;Grenzmarken;;;;;;;;;x
 b_grenzmarken_3_adj;Grenzmarkenian;;grenzmarkener;;;;;;;;;;;x
 b_grenzmarken_4;Grenzmarken;Grenzmarken;Grenzmarken;;Grenzmarken;;;;;;;;;x
 b_grenzmarken_4_adj;Grenzmarkenian;;grenzmarkener;;;;;;;;;;;x
+b_greupelwacht;Greupelwacht;Greupelwacht;Greupelwacht;;Greupelwacht;;;;;;;;;x
+b_greupelwacht_adj;Greupelwachtian;;greupelwachter;;;;;;;;;;;x
+b_grollenburg;Grollenburg;Grollenburg;Grollenburg;;Grollenburg;;;;;;;;;x
+b_grollenburg_adj;Grollenburgian;;grollenburger;;;;;;;;;;;x
+b_grossgurvanshof;Grossgurvanshof;Grossgurvanshof;Grossgurvanshof;;Grossgurvanshof;;;;;;;;;x
+b_grossgurvanshof_adj;Grossgurvanshofian;;grossgurvanshofer;;;;;;;;;;;x
 b_gruenau;Grünau;Grünau;Grünau;;Grünau;;;;;;;;;x
 b_gruenau_adj;Grünian;;grüner;;;;;;;;;;;x
 b_gruenau_2;Grünau;Grünau;Grünau;;Grünau;;;;;;;;;x
@@ -1605,6 +1665,8 @@ b_gruenau_3;Grünau;Grünau;Grünau;;Grünau;;;;;;;;;x
 b_gruenau_3_adj;Grünian;;grüner;;;;;;;;;;;x
 b_gruenau_4;Grünau;Grünau;Grünau;;Grünau;;;;;;;;;x
 b_gruenau_4_adj;Grünian;;grüner;;;;;;;;;;;x
+b_gueldenfeldt;Güldenfeldt;Güldenfeldt;Güldenfeldt;;Güldenfeldt;;;;;;;;;x
+b_gueldenfeldt_adj;Güldenfeldtian;;güldenfeldter;;;;;;;;;;;x
 b_gueldenhang;Güldenhang;Güldenhang;Güldenhang;;Güldenhang;;;;;;;;;x
 b_gueldenhang_adj;Güldenhangian;;güldenhanger;;;;;;;;;;;x
 b_gueldenhang_2;Güldenhang;Güldenhang;Güldenhang;;Güldenhang;;;;;;;;;x
@@ -1645,6 +1707,10 @@ b_haffith_3;Haffith;Haffith;Haffith;;Haffith;;;;;;;;;x
 b_haffith_3_adj;Haffithian;;haffither;;;;;;;;;;;x
 b_haffith_4;Haffith;Haffith;Haffith;;Haffith;;;;;;;;;x
 b_haffith_4_adj;Haffithian;;haffither;;;;;;;;;;;x
+b_hahnendorf;Hahnendorf;Hahnendorf;Hahnendorf;;Hahnendorf;;;;;;;;;x
+b_hahnendorf_adj;Hahnendorfian;;hahnendorfer;;;;;;;;;;;x
+b_hahnenfels;Hahnenfels;Hahnenfels;Hahnenfels;;Hahnenfels;;;;;;;;;x
+b_hahnenfels_adj;Hahnenfelsian;;hahnenfelser;;;;;;;;;;;x
 b_hahnfels;Hahnfels;Hahnfels;Hahnfels;;Hahnfels;;;;;;;;;x
 b_hahnfels_adj;Hahnfelsian;;hahnfelser;;;;;;;;;;;x
 b_hahnfels_2;Hahnfels;Hahnfels;Hahnfels;;Hahnfels;;;;;;;;;x
@@ -1655,12 +1721,8 @@ b_hahnfels_4;Hahnfels;Hahnfels;Hahnfels;;Hahnfels;;;;;;;;;x
 b_hahnfels_4_adj;Hahnfelsian;;hahnfelser;;;;;;;;;;;x
 b_halhof;Halhof;Halhof;Halhof;;Halhof;;;;;;;;;x
 b_halhof_adj;Halhofian;;halhofer;;;;;;;;;;;x
-b_halhof_2;Halhof;Halhof;Halhof;;Halhof;;;;;;;;;x
-b_halhof_2_adj;Halhofian;;halhofer;;;;;;;;;;;x
-b_halhof_3;Halhof;Halhof;Halhof;;Halhof;;;;;;;;;x
-b_halhof_3_adj;Halhofian;;halhofer;;;;;;;;;;;x
-b_halhof_4;Halhof;Halhof;Halhof;;Halhof;;;;;;;;;x
-b_halhof_4_adj;Halhofian;;halhofer;;;;;;;;;;;x
+b_hall_of_sun;Hall of Sun;Hall of Sun;Hall of Sun;;Hall of Sun;;;;;;;;;x
+b_hall_of_sun_adj;Hall of Sunian;;Hall of Suner;;;;;;;;;;;x
 b_hallingen;Hallingen;Hallingen;Hallingen;;Hallingen;;;;;;;;;x
 b_hallingen_adj;Hallingenian;;hallingener;;;;;;;;;;;x
 b_hallingen_2;Hallingen;Hallingen;Hallingen;;Hallingen;;;;;;;;;x
@@ -1669,14 +1731,10 @@ b_hallingen_3;Hallingen;Hallingen;Hallingen;;Hallingen;;;;;;;;;x
 b_hallingen_3_adj;Hallingenian;;hallingener;;;;;;;;;;;x
 b_hallingen_4;Hallingen;Hallingen;Hallingen;;Hallingen;;;;;;;;;x
 b_hallingen_4_adj;Hallingenian;;hallingener;;;;;;;;;;;x
+b_hallklee;Hallklee;Hallklee;Hallklee;;Hallklee;;;;;;;;;x
+b_hallklee_adj;Hallkleean;;hallkler;;;;;;;;;;;x
 b_halsmark;Halsmark;Halsmark;Halsmark;;Halsmark;;;;;;;;;x
 b_halsmark_adj;Halsmarkian;;halsmarker;;;;;;;;;;;x
-b_halsmark_2;Halsmark;Halsmark;Halsmark;;Halsmark;;;;;;;;;x
-b_halsmark_2_adj;Halsmarkian;;halsmarker;;;;;;;;;;;x
-b_halsmark_3;Halsmark;Halsmark;Halsmark;;Halsmark;;;;;;;;;x
-b_halsmark_3_adj;Halsmarkian;;halsmarker;;;;;;;;;;;x
-b_halsmark_4;Halsmark;Halsmark;Halsmark;;Halsmark;;;;;;;;;x
-b_halsmark_4_adj;Halsmarkian;;halsmarker;;;;;;;;;;;x
 b_hammerschlag;Hammerschlag;Hammerschlag;Hammerschlag;;Hammerschlag;;;;;;;;;x
 b_hammerschlag_adj;Hammerschlagian;;hammerschlager;;;;;;;;;;;x
 b_hammerschlag_2;Hammerschlag;Hammerschlag;Hammerschlag;;Hammerschlag;;;;;;;;;x
@@ -1689,10 +1747,6 @@ b_hartsteen;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
 b_hartsteen_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
 b_hartsteen_2;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
 b_hartsteen_2_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
-b_hartsteen_3;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
-b_hartsteen_3_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
-b_hartsteen_4;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
-b_hartsteen_4_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
 b_haselhain;Haselhain;Haselhain;Haselhain;;Haselhain;;;;;;;;;x
 b_haselhain_adj;Haselhainian;;haselhainer;;;;;;;;;;;x
 b_haselhain_2;Haselhain;Haselhain;Haselhain;;Haselhain;;;;;;;;;x
@@ -1709,6 +1763,8 @@ b_hasenfeld_3;Hasenfeld;Hasenfeld;Hasenfeld;;Hasenfeld;;;;;;;;;x
 b_hasenfeld_3_adj;Hasenfeldian;;hasenfelder;;;;;;;;;;;x
 b_hasenfeld_4;Hasenfeld;Hasenfeld;Hasenfeld;;Hasenfeld;;;;;;;;;x
 b_hasenfeld_4_adj;Hasenfeldian;;hasenfelder;;;;;;;;;;;x
+b_hausen;Hausen;Hausen;Hausen;;Hausen;;;;;;;;;x
+b_hausen_adj;Hausenian;;hausener;;;;;;;;;;;x
 b_havena;Havena;Havena;Havena;;Havena;;;;;;;;;x
 b_havena_adj;Havenan;;havener;;;;;;;;;;;x
 b_havena_2;Havena;Havena;Havena;;Havena;;;;;;;;;x
@@ -1733,6 +1789,8 @@ b_helbrache_3;Helbrache;Helbrache;Helbrache;;Helbrache;;;;;;;;;x
 b_helbrache_3_adj;Helbrachean;;helbracher;;;;;;;;;;;x
 b_helbrache_4;Helbrache;Helbrache;Helbrache;;Helbrache;;;;;;;;;x
 b_helbrache_4_adj;Helbrachean;;helbracher;;;;;;;;;;;x
+b_helburg;Helburg;Helburg;Helburg;;Helburg;;;;;;;;;x
+b_helburg_adj;Helburgian;;helburger;;;;;;;;;;;x
 b_hengefeldt;Hengefeldt;Hengefeldt;Hengefeldt;;Hengefeldt;;;;;;;;;x
 b_hengefeldt_adj;Hengefeldtian;;hengefeldter;;;;;;;;;;;x
 b_hengefeldt_2;Hengefeldt;Hengefeldt;Hengefeldt;;Hengefeldt;;;;;;;;;x
@@ -1773,6 +1831,8 @@ b_hexenhain_3;Hexenhain;Hexenhain;Hexenhain;;Hexenhain;;;;;;;;;x
 b_hexenhain_3_adj;Hexenhainian;;hexenhainer;;;;;;;;;;;x
 b_hexenhain_4;Hexenhain;Hexenhain;Hexenhain;;Hexenhain;;;;;;;;;x
 b_hexenhain_4_adj;Hexenhainian;;hexenhainer;;;;;;;;;;;x
+b_hexenmuehle;Hexenmühle;Hexenmühle;Hexenmühle;;Hexenmühle;;;;;;;;;x
+b_hexenmuehle_adj;Hexenmühlean;;hexenmühler;;;;;;;;;;;x
 b_higher_goria;Higher Goria;Higher Goria;Higher Goria;;Higher Goria;;;;;;;;;x
 b_higher_goria_adj;Higher Gorian;;Higher Gorer;;;;;;;;;;;x
 b_higher_goria_2;Higher Goria;Higher Goria;Higher Goria;;Higher Goria;;;;;;;;;x
@@ -1793,10 +1853,8 @@ b_hirschfurten;Hirschfurten;Hirschfurten;Hirschfurten;;Hirschfurten;;;;;;;;;x
 b_hirschfurten_adj;Hirschfurtenian;;hirschfurtener;;;;;;;;;;;x
 b_hirschfurten_2;Hirschfurten;Hirschfurten;Hirschfurten;;Hirschfurten;;;;;;;;;x
 b_hirschfurten_2_adj;Hirschfurtenian;;hirschfurtener;;;;;;;;;;;x
-b_hirschfurten_3;Hirschfurten;Hirschfurten;Hirschfurten;;Hirschfurten;;;;;;;;;x
-b_hirschfurten_3_adj;Hirschfurtenian;;hirschfurtener;;;;;;;;;;;x
-b_hirschfurten_4;Hirschfurten;Hirschfurten;Hirschfurten;;Hirschfurten;;;;;;;;;x
-b_hirschfurten_4_adj;Hirschfurtenian;;hirschfurtener;;;;;;;;;;;x
+b_hirschpforten;Hirschpforten;Hirschpforten;Hirschpforten;;Hirschpforten;;;;;;;;;x
+b_hirschpforten_adj;Hirschpfortenian;;hirschpfortener;;;;;;;;;;;x
 b_hluthars_watch;Hlûthars Watch;Hlûthars Watch;Hlûthars Watch;;Hlûthars Watch;;;;;;;;;x
 b_hluthars_watch_adj;Hlûthars Watchian;;Hlûthars Watcher;;;;;;;;;;;x
 b_hluthars_watch_2;Hlûthars Watch;Hlûthars Watch;Hlûthars Watch;;Hlûthars Watch;;;;;;;;;x
@@ -1805,14 +1863,14 @@ b_hluthars_watch_3;Hlûthars Watch;Hlûthars Watch;Hlûthars Watch;;Hlûthars Watch;
 b_hluthars_watch_3_adj;Hlûthars Watchian;;Hlûthars Watcher;;;;;;;;;;;x
 b_hluthars_watch_4;Hlûthars Watch;Hlûthars Watch;Hlûthars Watch;;Hlûthars Watch;;;;;;;;;x
 b_hluthars_watch_4_adj;Hlûthars Watchian;;Hlûthars Watcher;;;;;;;;;;;x
+b_hochnjerburg;Hochnjerburg;Hochnjerburg;Hochnjerburg;;Hochnjerburg;;;;;;;;;x
+b_hochnjerburg_adj;Hochnjerburgian;;hochnjerburger;;;;;;;;;;;x
 b_hoellenwall;Höllenwall;Höllenwall;Höllenwall;;Höllenwall;;;;;;;;;x
 b_hoellenwall_adj;Höllenwallian;;höllenwaller;;;;;;;;;;;x
 b_hoellenwall_2;Höllenwall;Höllenwall;Höllenwall;;Höllenwall;;;;;;;;;x
 b_hoellenwall_2_adj;Höllenwallian;;höllenwaller;;;;;;;;;;;x
 b_hoellenwall_3;Höllenwall;Höllenwall;Höllenwall;;Höllenwall;;;;;;;;;x
 b_hoellenwall_3_adj;Höllenwallian;;höllenwaller;;;;;;;;;;;x
-b_hoellenwall_4;Höllenwall;Höllenwall;Höllenwall;;Höllenwall;;;;;;;;;x
-b_hoellenwall_4_adj;Höllenwallian;;höllenwaller;;;;;;;;;;;x
 b_hohenfels;Hohenfels;Hohenfels;Hohenfels;;Hohenfels;;;;;;;;;x
 b_hohenfels_adj;Hohenfelsian;;hohenfelser;;;;;;;;;;;x
 b_hohenfels_2;Hohenfels;Hohenfels;Hohenfels;;Hohenfels;;;;;;;;;x
@@ -1837,6 +1895,14 @@ b_honingen_3;Honingen;Honingen;Honingen;;Honingen;;;;;;;;;x
 b_honingen_3_adj;Honingenian;;honingener;;;;;;;;;;;x
 b_honingen_4;Honingen;Honingen;Honingen;;Honingen;;;;;;;;;x
 b_honingen_4_adj;Honingenian;;honingener;;;;;;;;;;;x
+b_horeth;Horeth;Horeth;Horeth;;Horeth;;;;;;;;;x
+b_horeth_adj;Horethian;;horether;;;;;;;;;;;x
+b_hornbach;Hornbach;Hornbach;Hornbach;;Hornbach;;;;;;;;;x
+b_hornbach_adj;Hornbachian;;hornbacher;;;;;;;;;;;x
+b_hornbach_2;Hornbach;Hornbach;Hornbach;;Hornbach;;;;;;;;;x
+b_hornbach_2_adj;Hornbachian;;hornbacher;;;;;;;;;;;x
+b_hornbeil;Hornbeil;Hornbeil;Hornbeil;;Hornbeil;;;;;;;;;x
+b_hornbeil_adj;Hornbeilian;;hornbeiler;;;;;;;;;;;x
 b_huab;Huab;Huab;Huab;;Huab;;;;;;;;;x
 b_huab_adj;Huabian;;huaber;;;;;;;;;;;x
 b_huab_2;Huab;Huab;Huab;;Huab;;;;;;;;;x
@@ -1877,6 +1943,8 @@ b_ilsur_3;Ilsur;Ilsur;Ilsur;;Ilsur;;;;;;;;;x
 b_ilsur_3_adj;Ilsurian;;ilsurer;;;;;;;;;;;x
 b_ilsur_4;Ilsur;Ilsur;Ilsur;;Ilsur;;;;;;;;;x
 b_ilsur_4_adj;Ilsurian;;ilsurer;;;;;;;;;;;x
+b_immering;Immering;Immering;Immering;;Immering;;;;;;;;;x
+b_immering_adj;Immeringian;;immeringer;;;;;;;;;;;x
 b_imrah;Imrah;Imrah;Imrah;;Imrah;;;;;;;;;x
 b_imrah_adj;Imrahian;;imraher;;;;;;;;;;;x
 b_imrah_2;Imrah;Imrah;Imrah;;Imrah;;;;;;;;;x
@@ -1889,10 +1957,6 @@ b_ingerimmsschlund;Ingerimmsschlund;Ingerimmsschlund;Ingerimmsschlund;;Ingerimms
 b_ingerimmsschlund_adj;Ingerimmsschlundian;;ingerimmsschlunder;;;;;;;;;;;x
 b_ingerimmsschlund_2;Ingerimmsschlund;Ingerimmsschlund;Ingerimmsschlund;;Ingerimmsschlund;;;;;;;;;x
 b_ingerimmsschlund_2_adj;Ingerimmsschlundian;;ingerimmsschlunder;;;;;;;;;;;x
-b_ingerimmsschlund_3;Ingerimmsschlund;Ingerimmsschlund;Ingerimmsschlund;;Ingerimmsschlund;;;;;;;;;x
-b_ingerimmsschlund_3_adj;Ingerimmsschlundian;;ingerimmsschlunder;;;;;;;;;;;x
-b_ingerimmsschlund_4;Ingerimmsschlund;Ingerimmsschlund;Ingerimmsschlund;;Ingerimmsschlund;;;;;;;;;x
-b_ingerimmsschlund_4_adj;Ingerimmsschlundian;;ingerimmsschlunder;;;;;;;;;;;x
 b_inostal;Inostal;Inostal;Inostal;;Inostal;;;;;;;;;x
 b_inostal_adj;Inostalian;;inostaler;;;;;;;;;;;x
 b_inostal_2;Inostal;Inostal;Inostal;;Inostal;;;;;;;;;x
@@ -1965,6 +2029,10 @@ b_kabash_3;Kabash;Kabash;Kabash;;Kabash;;;;;;;;;x
 b_kabash_3_adj;Kabashian;;kabasher;;;;;;;;;;;x
 b_kabash_4;Kabash;Kabash;Kabash;;Kabash;;;;;;;;;x
 b_kabash_4_adj;Kabashian;;kabasher;;;;;;;;;;;x
+b_kaiserhain;Kaiserhain;Kaiserhain;Kaiserhain;;Kaiserhain;;;;;;;;;x
+b_kaiserhain_adj;Kaiserhainian;;kaiserhainer;;;;;;;;;;;x
+b_kaisertal;Kaisertal;Kaisertal;Kaisertal;;Kaisertal;;;;;;;;;x
+b_kaisertal_adj;Kaisertalian;;kaisertaler;;;;;;;;;;;x
 b_kaldenberg;Kaldenberg;Kaldenberg;Kaldenberg;;Kaldenberg;;;;;;;;;x
 b_kaldenberg_adj;Kaldenbergian;;kaldenberger;;;;;;;;;;;x
 b_kaldenberg_2;Kaldenberg;Kaldenberg;Kaldenberg;;Kaldenberg;;;;;;;;;x
@@ -1973,6 +2041,8 @@ b_kaldenberg_3;Kaldenberg;Kaldenberg;Kaldenberg;;Kaldenberg;;;;;;;;;x
 b_kaldenberg_3_adj;Kaldenbergian;;kaldenberger;;;;;;;;;;;x
 b_kaldenberg_4;Kaldenberg;Kaldenberg;Kaldenberg;;Kaldenberg;;;;;;;;;x
 b_kaldenberg_4_adj;Kaldenbergian;;kaldenberger;;;;;;;;;;;x
+b_kaltensporn;Kaltensporn;Kaltensporn;Kaltensporn;;Kaltensporn;;;;;;;;;x
+b_kaltensporn_adj;Kaltenspornian;;kaltensporner;;;;;;;;;;;x
 b_kannemuende;Kannemünde;Kannemünde;Kannemünde;;Kannemünde;;;;;;;;;x
 b_kannemuende_adj;Kannemündean;;kannemünder;;;;;;;;;;;x
 b_kannemuende_2;Kannemünde;Kannemünde;Kannemünde;;Kannemünde;;;;;;;;;x
@@ -2125,6 +2195,12 @@ b_kressenburg_3;Kressenburg;Kressenburg;Kressenburg;;Kressenburg;;;;;;;;;x
 b_kressenburg_3_adj;Kressenburgian;;kressenburger;;;;;;;;;;;x
 b_kressenburg_4;Kressenburg;Kressenburg;Kressenburg;;Kressenburg;;;;;;;;;x
 b_kressenburg_4_adj;Kressenburgian;;kressenburger;;;;;;;;;;;x
+b_kreusenburg;Kreusenburg;Kreusenburg;Kreusenburg;;Kreusenburg;;;;;;;;;x
+b_kreusenburg_adj;Kreusenburgian;;kreusenburger;;;;;;;;;;;x
+b_kronbrunn;Kronbrunn;Kronbrunn;Kronbrunn;;Kronbrunn;;;;;;;;;x
+b_kronbrunn_adj;Kronbrunnian;;kronbrunner;;;;;;;;;;;x
+b_kronling;Kronling;Kronling;Kronling;;Kronling;;;;;;;;;x
+b_kronling_adj;Kronlingian;;kronlinger;;;;;;;;;;;x
 b_kuenssberg;Künssberg;Künssberg;Künssberg;;Künssberg;;;;;;;;;x
 b_kuenssberg_adj;Künssbergian;;künssberger;;;;;;;;;;;x
 b_kuenssberg_2;Künssberg;Künssberg;Künssberg;;Künssberg;;;;;;;;;x
@@ -2181,6 +2257,18 @@ b_lauchenwart_3;Lauchenwart;Lauchenwart;Lauchenwart;;Lauchenwart;;;;;;;;;x
 b_lauchenwart_3_adj;Lauchenwartian;;lauchenwarter;;;;;;;;;;;x
 b_lauchenwart_4;Lauchenwart;Lauchenwart;Lauchenwart;;Lauchenwart;;;;;;;;;x
 b_lauchenwart_4_adj;Lauchenwartian;;lauchenwarter;;;;;;;;;;;x
+b_letzenbronn;Letzenbronn;Letzenbronn;Letzenbronn;;Letzenbronn;;;;;;;;;x
+b_letzenbronn_adj;Letzenbronnian;;letzenbronner;;;;;;;;;;;x
+b_leuental;Leuental;Leuental;Leuental;;Leuental;;;;;;;;;x
+b_leuental_adj;Leuentalian;;leuentaler;;;;;;;;;;;x
+b_leustein;Leustein;Leustein;Leustein;;Leustein;;;;;;;;;x
+b_leustein_adj;Leusteinian;;leusteiner;;;;;;;;;;;x
+b_leutrutz;Leutrutz;Leutrutz;Leutrutz;;Leutrutz;;;;;;;;;x
+b_leutrutz_adj;Leutrutzian;;leutrutzer;;;;;;;;;;;x
+b_lichterneck;Lichterneck;Lichterneck;Lichterneck;;Lichterneck;;;;;;;;;x
+b_lichterneck_adj;Lichterneckian;;lichternecker;;;;;;;;;;;x
+b_liebchengrund;Liebchengrund;Liebchengrund;Liebchengrund;;Liebchengrund;;;;;;;;;x
+b_liebchengrund_adj;Liebchengrundian;;liebchengrunder;;;;;;;;;;;x
 b_liepennstein;Liepennstein;Liepennstein;Liepennstein;;Liepennstein;;;;;;;;;x
 b_liepennstein_adj;Liepennsteinian;;liepennsteiner;;;;;;;;;;;x
 b_liepennstein_2;Liepennstein;Liepennstein;Liepennstein;;Liepennstein;;;;;;;;;x
@@ -2201,10 +2289,6 @@ b_linara;Linara;Linara;Linara;;Linara;;;;;;;;;x
 b_linara_adj;Linaran;;linarer;;;;;;;;;;;x
 b_linara_2;Linara;Linara;Linara;;Linara;;;;;;;;;x
 b_linara_2_adj;Linaran;;linarer;;;;;;;;;;;x
-b_linara_3;Linara;Linara;Linara;;Linara;;;;;;;;;x
-b_linara_3_adj;Linaran;;linarer;;;;;;;;;;;x
-b_linara_4;Linara;Linara;Linara;;Linara;;;;;;;;;x
-b_linara_4_adj;Linaran;;linarer;;;;;;;;;;;x
 b_lindenhain;Lindenhain;Lindenhain;Lindenhain;;Lindenhain;;;;;;;;;x
 b_lindenhain_adj;Lindenhainian;;lindenhainer;;;;;;;;;;;x
 b_lindenhain_2;Lindenhain;Lindenhain;Lindenhain;;Lindenhain;;;;;;;;;x
@@ -2349,6 +2433,8 @@ b_manesh_3;Manesh;Manesh;Manesh;;Manesh;;;;;;;;;x
 b_manesh_3_adj;Maneshian;;manesher;;;;;;;;;;;x
 b_manesh_4;Manesh;Manesh;Manesh;;Manesh;;;;;;;;;x
 b_manesh_4_adj;Maneshian;;manesher;;;;;;;;;;;x
+b_marano;Marano;Marano;Marano;;Marano;;;;;;;;;x
+b_marano_adj;Maranian;;maraner;;;;;;;;;;;x
 b_maraskancliff;Maraskancliff;Maraskancliff;Maraskancliff;;Maraskancliff;;;;;;;;;x
 b_maraskancliff_adj;Maraskancliffian;;maraskancliffer;;;;;;;;;;;x
 b_maraskancliff_2;Maraskancliff;Maraskancliff;Maraskancliff;;Maraskancliff;;;;;;;;;x
@@ -2373,6 +2459,8 @@ b_mardershoeh_3;Mardershöh;Mardershöh;Mardershöh;;Mardershöh;;;;;;;;;x
 b_mardershoeh_3_adj;Mardershöhian;;mardershöher;;;;;;;;;;;x
 b_mardershoeh_4;Mardershöh;Mardershöh;Mardershöh;;Mardershöh;;;;;;;;;x
 b_mardershoeh_4_adj;Mardershöhian;;mardershöher;;;;;;;;;;;x
+b_marmonte;Marmonte;Marmonte;Marmonte;;Marmonte;;;;;;;;;x
+b_marmonte_adj;Marmontean;;marmonter;;;;;;;;;;;x
 b_maus;Maus;Maus;Maus;;Maus;;;;;;;;;x
 b_maus_adj;Mausian;;mauser;;;;;;;;;;;x
 b_maus_2;Maus;Maus;Maus;;Maus;;;;;;;;;x
@@ -2389,6 +2477,8 @@ b_mauterndorf_3;Mauterndorf;Mauterndorf;Mauterndorf;;Mauterndorf;;;;;;;;;x
 b_mauterndorf_3_adj;Mauterndorfian;;mauterndorfer;;;;;;;;;;;x
 b_mauterndorf_4;Mauterndorf;Mauterndorf;Mauterndorf;;Mauterndorf;;;;;;;;;x
 b_mauterndorf_4_adj;Mauterndorfian;;mauterndorfer;;;;;;;;;;;x
+b_meilersgrund;Meilersgrund;Meilersgrund;Meilersgrund;;Meilersgrund;;;;;;;;;x
+b_meilersgrund_adj;Meilersgrundian;;meilersgrunder;;;;;;;;;;;x
 b_meilingen;Meilingen;Meilingen;Meilingen;;Meilingen;;;;;;;;;x
 b_meilingen_adj;Meilingenian;;meilingener;;;;;;;;;;;x
 b_meilingen_2;Meilingen;Meilingen;Meilingen;;Meilingen;;;;;;;;;x
@@ -2397,6 +2487,8 @@ b_meilingen_3;Meilingen;Meilingen;Meilingen;;Meilingen;;;;;;;;;x
 b_meilingen_3_adj;Meilingenian;;meilingener;;;;;;;;;;;x
 b_meilingen_4;Meilingen;Meilingen;Meilingen;;Meilingen;;;;;;;;;x
 b_meilingen_4_adj;Meilingenian;;meilingener;;;;;;;;;;;x
+b_menzelshall;Menzelshall;Menzelshall;Menzelshall;;Menzelshall;;;;;;;;;x
+b_menzelshall_adj;Menzelshallian;;menzelshaller;;;;;;;;;;;x
 b_menzheim;Menzheim;Menzheim;Menzheim;;Menzheim;;;;;;;;;x
 b_menzheim_adj;Menzheimian;;menzheimer;;;;;;;;;;;x
 b_menzheim_2;Menzheim;Menzheim;Menzheim;;Menzheim;;;;;;;;;x
@@ -2405,6 +2497,8 @@ b_menzheim_3;Menzheim;Menzheim;Menzheim;;Menzheim;;;;;;;;;x
 b_menzheim_3_adj;Menzheimian;;menzheimer;;;;;;;;;;;x
 b_menzheim_4;Menzheim;Menzheim;Menzheim;;Menzheim;;;;;;;;;x
 b_menzheim_4_adj;Menzheimian;;menzheimer;;;;;;;;;;;x
+b_merun;Merun;Merun;Merun;;Merun;;;;;;;;;x
+b_merun_adj;Merunian;;meruner;;;;;;;;;;;x
 b_mesch;Mesch;Mesch;Mesch;;Mesch;;;;;;;;;x
 b_mesch_adj;Meschian;;mescher;;;;;;;;;;;x
 b_mesch_2;Mesch;Mesch;Mesch;;Mesch;;;;;;;;;x
@@ -2497,6 +2591,8 @@ b_mistelhausen_3;Mistelhausen;Mistelhausen;Mistelhausen;;Mistelhausen;;;;;;;;;x
 b_mistelhausen_3_adj;Mistelhausenian;;mistelhausener;;;;;;;;;;;x
 b_mistelhausen_4;Mistelhausen;Mistelhausen;Mistelhausen;;Mistelhausen;;;;;;;;;x
 b_mistelhausen_4_adj;Mistelhausenian;;mistelhausener;;;;;;;;;;;x
+b_mistelhof;Mistelhof;Mistelhof;Mistelhof;;Mistelhof;;;;;;;;;x
+b_mistelhof_adj;Mistelhofian;;mistelhofer;;;;;;;;;;;x
 b_mochistan;Mochistan;Mochistan;Mochistan;;Mochistan;;;;;;;;;x
 b_mochistan_adj;Mochistanian;;mochistaner;;;;;;;;;;;x
 b_mochistan_2;Mochistan;Mochistan;Mochistan;;Mochistan;;;;;;;;;x
@@ -2521,6 +2617,8 @@ b_moosgrund_3;Moosgrund;Moosgrund;Moosgrund;;Moosgrund;;;;;;;;;x
 b_moosgrund_3_adj;Moosgrundian;;moosgrunder;;;;;;;;;;;x
 b_moosgrund_4;Moosgrund;Moosgrund;Moosgrund;;Moosgrund;;;;;;;;;x
 b_moosgrund_4_adj;Moosgrundian;;moosgrunder;;;;;;;;;;;x
+b_mortres;Mor'Tres;Mor'Tres;Mor'Tres;;Mor'Tres;;;;;;;;;x
+b_mortres_adj;Mor'Tresian;;mor'treser;;;;;;;;;;;x
 b_muchabad;Muchabad;Muchabad;Muchabad;;Muchabad;;;;;;;;;x
 b_muchabad_adj;Muchabadian;;muchabader;;;;;;;;;;;x
 b_muchabad_2;Muchabad;Muchabad;Muchabad;;Muchabad;;;;;;;;;x
@@ -2529,6 +2627,8 @@ b_muchabad_3;Muchabad;Muchabad;Muchabad;;Muchabad;;;;;;;;;x
 b_muchabad_3_adj;Muchabadian;;muchabader;;;;;;;;;;;x
 b_muchabad_4;Muchabad;Muchabad;Muchabad;;Muchabad;;;;;;;;;x
 b_muchabad_4_adj;Muchabadian;;muchabader;;;;;;;;;;;x
+b_muhlwasser;Muhlwasser;Muhlwasser;Muhlwasser;;Muhlwasser;;;;;;;;;x
+b_muhlwasser_adj;Muhlwasserian;;muhlwasserer;;;;;;;;;;;x
 b_mundtbach;Mundtbach;Mundtbach;Mundtbach;;Mundtbach;;;;;;;;;x
 b_mundtbach_adj;Mundtbachian;;mundtbacher;;;;;;;;;;;x
 b_mundtbach_2;Mundtbach;Mundtbach;Mundtbach;;Mundtbach;;;;;;;;;x
@@ -2545,6 +2645,8 @@ b_muschelstrand_3;Muschelstrand;Muschelstrand;Muschelstrand;;Muschelstrand;;;;;;
 b_muschelstrand_3_adj;Muschelstrandian;;muschelstrander;;;;;;;;;;;x
 b_muschelstrand_4;Muschelstrand;Muschelstrand;Muschelstrand;;Muschelstrand;;;;;;;;;x
 b_muschelstrand_4_adj;Muschelstrandian;;muschelstrander;;;;;;;;;;;x
+b_nachtdann;Nachtdann;Nachtdann;Nachtdann;;Nachtdann;;;;;;;;;x
+b_nachtdann_adj;Nachtdannian;;nachtdanner;;;;;;;;;;;x
 b_nadoret;Nadoret;Nadoret;Nadoret;;Nadoret;;;;;;;;;x
 b_nadoret_adj;Nadoretian;;nadoreter;;;;;;;;;;;x
 b_nadoret_2;Nadoret;Nadoret;Nadoret;;Nadoret;;;;;;;;;x
@@ -2577,14 +2679,14 @@ b_natterngras_3;Natterngras;Natterngras;Natterngras;;Natterngras;;;;;;;;;x
 b_natterngras_3_adj;Natterngrasian;;natterngraser;;;;;;;;;;;x
 b_natterngras_4;Natterngras;Natterngras;Natterngras;;Natterngras;;;;;;;;;x
 b_natterngras_4_adj;Natterngrasian;;natterngraser;;;;;;;;;;;x
+b_nattersquell;Nattersquell;Nattersquell;Nattersquell;;Nattersquell;;;;;;;;;x
+b_nattersquell_adj;Nattersquellian;;nattersqueller;;;;;;;;;;;x
 b_natzungen;Natzungen;Natzungen;Natzungen;;Natzungen;;;;;;;;;x
 b_natzungen_adj;Natzungenian;;natzungener;;;;;;;;;;;x
 b_natzungen_2;Natzungen;Natzungen;Natzungen;;Natzungen;;;;;;;;;x
 b_natzungen_2_adj;Natzungenian;;natzungener;;;;;;;;;;;x
 b_natzungen_3;Natzungen;Natzungen;Natzungen;;Natzungen;;;;;;;;;x
 b_natzungen_3_adj;Natzungenian;;natzungener;;;;;;;;;;;x
-b_natzungen_4;Natzungen;Natzungen;Natzungen;;Natzungen;;;;;;;;;x
-b_natzungen_4_adj;Natzungenian;;natzungener;;;;;;;;;;;x
 b_nebelstein;Nebelstein;Nebelstein;Nebelstein;;Nebelstein;;;;;;;;;x
 b_nebelstein_adj;Nebelsteinian;;nebelsteiner;;;;;;;;;;;x
 b_nebelstein_2;Nebelstein;Nebelstein;Nebelstein;;Nebelstein;;;;;;;;;x
@@ -2595,12 +2697,8 @@ b_nebelstein_4;Nebelstein;Nebelstein;Nebelstein;;Nebelstein;;;;;;;;;x
 b_nebelstein_4_adj;Nebelsteinian;;nebelsteiner;;;;;;;;;;;x
 b_neerbusch;Neerbusch;Neerbusch;Neerbusch;;Neerbusch;;;;;;;;;x
 b_neerbusch_adj;Neerbuschian;;neerbuscher;;;;;;;;;;;x
-b_neerbusch_2;Neerbusch;Neerbusch;Neerbusch;;Neerbusch;;;;;;;;;x
-b_neerbusch_2_adj;Neerbuschian;;neerbuscher;;;;;;;;;;;x
-b_neerbusch_3;Neerbusch;Neerbusch;Neerbusch;;Neerbusch;;;;;;;;;x
-b_neerbusch_3_adj;Neerbuschian;;neerbuscher;;;;;;;;;;;x
-b_neerbusch_4;Neerbusch;Neerbusch;Neerbusch;;Neerbusch;;;;;;;;;x
-b_neerbusch_4_adj;Neerbuschian;;neerbuscher;;;;;;;;;;;x
+b_neerquell;Neerquell;Neerquell;Neerquell;;Neerquell;;;;;;;;;x
+b_neerquell_adj;Neerquellian;;neerqueller;;;;;;;;;;;x
 b_neetha;Neetha;Neetha;Neetha;;Neetha;;;;;;;;;x
 b_neetha_adj;Neethan;;neether;;;;;;;;;;;x
 b_neetha_2;Neetha;Neetha;Neetha;;Neetha;;;;;;;;;x
@@ -2625,6 +2723,10 @@ b_nerenenha_3;Nerenenha;Nerenenha;Nerenenha;;Nerenenha;;;;;;;;;x
 b_nerenenha_3_adj;Nerenenhan;;nerenenher;;;;;;;;;;;x
 b_nerenenha_4;Nerenenha;Nerenenha;Nerenenha;;Nerenenha;;;;;;;;;x
 b_nerenenha_4_adj;Nerenenhan;;nerenenher;;;;;;;;;;;x
+b_nesselweil;Nesselweil;Nesselweil;Nesselweil;;Nesselweil;;;;;;;;;x
+b_nesselweil_adj;Nesselweilian;;nesselweiler;;;;;;;;;;;x
+b_neu_gareth;Neu-Gareth;Neu-Gareth;Neu-Gareth;;Neu-Gareth;;;;;;;;;x
+b_neu_gareth_adj;Neu-Garethian;;neu-garether;;;;;;;;;;;x
 b_neuborn;Neuborn;Neuborn;Neuborn;;Neuborn;;;;;;;;;x
 b_neuborn_adj;Neubornian;;neuborner;;;;;;;;;;;x
 b_neuborn_2;Neuborn;Neuborn;Neuborn;;Neuborn;;;;;;;;;x
@@ -2701,6 +2803,8 @@ b_northern_raschtulswall;Northern Raschtulswall;Northern Raschtulswall;Northern 
 b_northern_raschtulswall_adj;Northern Raschtulswallian;;Northern Raschtulswaller;;;;;;;;;;;x
 b_northern_raschtulswall_2;Northern Raschtulswall;Northern Raschtulswall;Northern Raschtulswall;;Northern Raschtulswall;;;;;;;;;x
 b_northern_raschtulswall_2_adj;Northern Raschtulswallian;;Northern Raschtulswaller;;;;;;;;;;;x
+b_nuzell;Nuzell;Nuzell;Nuzell;;Nuzell;;;;;;;;;x
+b_nuzell_adj;Nuzellian;;nuzeller;;;;;;;;;;;x
 b_oberangbar;Oberangbar;Oberangbar;Oberangbar;;Oberangbar;;;;;;;;;x
 b_oberangbar_adj;Oberangbarian;;oberangbarer;;;;;;;;;;;x
 b_oberangbar_2;Oberangbar;Oberangbar;Oberangbar;;Oberangbar;;;;;;;;;x
@@ -2709,6 +2813,8 @@ b_oberangbar_3;Oberangbar;Oberangbar;Oberangbar;;Oberangbar;;;;;;;;;x
 b_oberangbar_3_adj;Oberangbarian;;oberangbarer;;;;;;;;;;;x
 b_oberangbar_4;Oberangbar;Oberangbar;Oberangbar;;Oberangbar;;;;;;;;;x
 b_oberangbar_4_adj;Oberangbarian;;oberangbarer;;;;;;;;;;;x
+b_oberdachsburg;Oberdachsburg;Oberdachsburg;Oberdachsburg;;Oberdachsburg;;;;;;;;;x
+b_oberdachsburg_adj;Oberdachsburgian;;oberdachsburger;;;;;;;;;;;x
 b_oberdarpatien;Oberdarpatien;Oberdarpatien;Oberdarpatien;;Oberdarpatien;;;;;;;;;x
 b_oberdarpatien_adj;Oberdarpatienian;;oberdarpatiener;;;;;;;;;;;x
 b_oberdarpatien_2;Oberdarpatien;Oberdarpatien;Oberdarpatien;;Oberdarpatien;;;;;;;;;x
@@ -2725,6 +2831,10 @@ b_oberfels_3;Oberfels;Oberfels;Oberfels;;Oberfels;;;;;;;;;x
 b_oberfels_3_adj;Oberfelsian;;oberfelser;;;;;;;;;;;x
 b_oberfels_4;Oberfels;Oberfels;Oberfels;;Oberfels;;;;;;;;;x
 b_oberfels_4_adj;Oberfelsian;;oberfelser;;;;;;;;;;;x
+b_oberhartsteen;Oberhartsteen;Oberhartsteen;Oberhartsteen;;Oberhartsteen;;;;;;;;;x
+b_oberhartsteen_adj;Oberhartsteenian;;oberhartsteener;;;;;;;;;;;x
+b_oberhartsteen_2;Oberhartsteen;Oberhartsteen;Oberhartsteen;;Oberhartsteen;;;;;;;;;x
+b_oberhartsteen_2_adj;Oberhartsteenian;;oberhartsteener;;;;;;;;;;;x
 b_obogyn;Obogyn;Obogyn;Obogyn;;Obogyn;;;;;;;;;x
 b_obogyn_adj;Obogynian;;obogyner;;;;;;;;;;;x
 b_obogyn_2;Obogyn;Obogyn;Obogyn;;Obogyn;;;;;;;;;x
@@ -2735,12 +2845,6 @@ b_obogyn_4;Obogyn;Obogyn;Obogyn;;Obogyn;;;;;;;;;x
 b_obogyn_4_adj;Obogynian;;obogyner;;;;;;;;;;;x
 b_ochsenblut;Ochsenblut;Ochsenblut;Ochsenblut;;Ochsenblut;;;;;;;;;x
 b_ochsenblut_adj;Ochsenblutian;;ochsenbluter;;;;;;;;;;;x
-b_ochsenblut_2;Ochsenblut;Ochsenblut;Ochsenblut;;Ochsenblut;;;;;;;;;x
-b_ochsenblut_2_adj;Ochsenblutian;;ochsenbluter;;;;;;;;;;;x
-b_ochsenblut_3;Ochsenblut;Ochsenblut;Ochsenblut;;Ochsenblut;;;;;;;;;x
-b_ochsenblut_3_adj;Ochsenblutian;;ochsenbluter;;;;;;;;;;;x
-b_ochsenblut_4;Ochsenblut;Ochsenblut;Ochsenblut;;Ochsenblut;;;;;;;;;x
-b_ochsenblut_4_adj;Ochsenblutian;;ochsenbluter;;;;;;;;;;;x
 b_ochsenklotz;Ochsenklotz;Ochsenklotz;Ochsenklotz;;Ochsenklotz;;;;;;;;;x
 b_ochsenklotz_adj;Ochsenklotzian;;ochsenklotzer;;;;;;;;;;;x
 b_ochsenklotz_2;Ochsenklotz;Ochsenklotz;Ochsenklotz;;Ochsenklotz;;;;;;;;;x
@@ -2829,6 +2933,8 @@ b_oppstein_3;Oppstein;Oppstein;Oppstein;;Oppstein;;;;;;;;;x
 b_oppstein_3_adj;Oppsteinian;;oppsteiner;;;;;;;;;;;x
 b_oppstein_4;Oppstein;Oppstein;Oppstein;;Oppstein;;;;;;;;;x
 b_oppstein_4_adj;Oppsteinian;;oppsteiner;;;;;;;;;;;x
+b_orbetreu;Orbetreu;Orbetreu;Orbetreu;;Orbetreu;;;;;;;;;x
+b_orbetreu_adj;Orbetrian;;orbetrer;;;;;;;;;;;x
 b_orgils_home;Orgils Home;Orgils Home;Orgils Home;;Orgils Home;;;;;;;;;x
 b_orgils_home_adj;Orgils Homean;;Orgils Homer;;;;;;;;;;;x
 b_orgils_home_2;Orgils Home;Orgils Home;Orgils Home;;Orgils Home;;;;;;;;;x
@@ -2861,6 +2967,8 @@ b_outer_havena_3;Outer Havena;Outer Havena;Outer Havena;;Outer Havena;;;;;;;;;x
 b_outer_havena_3_adj;Outer Havenan;;Outer Havener;;;;;;;;;;;x
 b_outer_havena_4;Outer Havena;Outer Havena;Outer Havena;;Outer Havena;;;;;;;;;x
 b_outer_havena_4_adj;Outer Havenan;;Outer Havener;;;;;;;;;;;x
+b_ox;Ox;Ox;Ox;;Ox;;;;;;;;;x
+b_ox_adj;Oxian;;oxer;;;;;;;;;;;x
 b_paggenau;Paggenau;Paggenau;Paggenau;;Paggenau;;;;;;;;;x
 b_paggenau_adj;Paggenian;;paggener;;;;;;;;;;;x
 b_paggenau_2;Paggenau;Paggenau;Paggenau;;Paggenau;;;;;;;;;x
@@ -2909,6 +3017,8 @@ b_pelqananistan_3;Pelqananistan;Pelqananistan;Pelqananistan;;Pelqananistan;;;;;;
 b_pelqananistan_3_adj;Pelqananistanian;;pelqananistaner;;;;;;;;;;;x
 b_pelqananistan_4;Pelqananistan;Pelqananistan;Pelqananistan;;Pelqananistan;;;;;;;;;x
 b_pelqananistan_4_adj;Pelqananistanian;;pelqananistaner;;;;;;;;;;;x
+b_perainenau;Perainenau;Perainenau;Perainenau;;Perainenau;;;;;;;;;x
+b_perainenau_adj;Perainenian;;perainener;;;;;;;;;;;x
 b_perainenstein;Perainenstein;Perainenstein;Perainenstein;;Perainenstein;;;;;;;;;x
 b_perainenstein_adj;Perainensteinian;;perainensteiner;;;;;;;;;;;x
 b_perainenstein_2;Perainenstein;Perainenstein;Perainenstein;;Perainenstein;;;;;;;;;x
@@ -2917,6 +3027,8 @@ b_perainenstein_3;Perainenstein;Perainenstein;Perainenstein;;Perainenstein;;;;;;
 b_perainenstein_3_adj;Perainensteinian;;perainensteiner;;;;;;;;;;;x
 b_perainenstein_4;Perainenstein;Perainenstein;Perainenstein;;Perainenstein;;;;;;;;;x
 b_perainenstein_4_adj;Perainensteinian;;perainensteiner;;;;;;;;;;;x
+b_perainsgarten;Perainsgarten;Perainsgarten;Perainsgarten;;Perainsgarten;;;;;;;;;x
+b_perainsgarten_adj;Perainsgartenian;;perainsgartener;;;;;;;;;;;x
 b_perrinmarsch;Perrinmarsch;Perrinmarsch;Perrinmarsch;;Perrinmarsch;;;;;;;;;x
 b_perrinmarsch_adj;Perrinmarschian;;perrinmarscher;;;;;;;;;;;x
 b_perrinmarsch_2;Perrinmarsch;Perrinmarsch;Perrinmarsch;;Perrinmarsch;;;;;;;;;x
@@ -2925,6 +3037,8 @@ b_perrinmarsch_3;Perrinmarsch;Perrinmarsch;Perrinmarsch;;Perrinmarsch;;;;;;;;;x
 b_perrinmarsch_3_adj;Perrinmarschian;;perrinmarscher;;;;;;;;;;;x
 b_perrinmarsch_4;Perrinmarsch;Perrinmarsch;Perrinmarsch;;Perrinmarsch;;;;;;;;;x
 b_perrinmarsch_4_adj;Perrinmarschian;;perrinmarscher;;;;;;;;;;;x
+b_persenburg;Persenburg;Persenburg;Persenburg;;Persenburg;;;;;;;;;x
+b_persenburg_adj;Persenburgian;;persenburger;;;;;;;;;;;x
 b_pertakis;Pertakis;Pertakis;Pertakis;;Pertakis;;;;;;;;;x
 b_pertakis_adj;Pertakisian;;pertakiser;;;;;;;;;;;x
 b_pertakis_2;Pertakis;Pertakis;Pertakis;;Pertakis;;;;;;;;;x
@@ -2981,14 +3095,14 @@ b_praiobab_3;Praiobab;Praiobab;Praiobab;;Praiobab;;;;;;;;;x
 b_praiobab_3_adj;Praiobabian;;praiobaber;;;;;;;;;;;x
 b_praiobab_4;Praiobab;Praiobab;Praiobab;;Praiobab;;;;;;;;;x
 b_praiobab_4_adj;Praiobabian;;praiobaber;;;;;;;;;;;x
+b_praiofold;Praiofold;Praiofold;Praiofold;;Praiofold;;;;;;;;;x
+b_praiofold_adj;Praiofoldian;;praiofolder;;;;;;;;;;;x
+b_praiosburg;Praiosburg;Praiosburg;Praiosburg;;Praiosburg;;;;;;;;;x
+b_praiosburg_adj;Praiosburgian;;praiosburger;;;;;;;;;;;x
 b_puleth;Puleth;Puleth;Puleth;;Puleth;;;;;;;;;x
 b_puleth_adj;Pulethian;;pulether;;;;;;;;;;;x
 b_puleth_2;Puleth;Puleth;Puleth;;Puleth;;;;;;;;;x
 b_puleth_2_adj;Pulethian;;pulether;;;;;;;;;;;x
-b_puleth_3;Puleth;Puleth;Puleth;;Puleth;;;;;;;;;x
-b_puleth_3_adj;Pulethian;;pulether;;;;;;;;;;;x
-b_puleth_4;Puleth;Puleth;Puleth;;Puleth;;;;;;;;;x
-b_puleth_4_adj;Pulethian;;pulether;;;;;;;;;;;x
 b_pulverberg;Pulverberg;Pulverberg;Pulverberg;;Pulverberg;;;;;;;;;x
 b_pulverberg_adj;Pulverbergian;;pulverberger;;;;;;;;;;;x
 b_pulverberg_2;Pulverberg;Pulverberg;Pulverberg;;Pulverberg;;;;;;;;;x
@@ -3021,6 +3135,8 @@ b_quellensprung_3;Quellensprung;Quellensprung;Quellensprung;;Quellensprung;;;;;;
 b_quellensprung_3_adj;Quellensprungian;;quellensprunger;;;;;;;;;;;x
 b_quellensprung_4;Quellensprung;Quellensprung;Quellensprung;;Quellensprung;;;;;;;;;x
 b_quellensprung_4_adj;Quellensprungian;;quellensprunger;;;;;;;;;;;x
+b_quelltempel;Quelltempel;Quelltempel;Quelltempel;;Quelltempel;;;;;;;;;x
+b_quelltempel_adj;Quelltempelian;;quelltempeler;;;;;;;;;;;x
 b_rabatistan;Rabatistan;Rabatistan;Rabatistan;;Rabatistan;;;;;;;;;x
 b_rabatistan_adj;Rabatistanian;;rabatistaner;;;;;;;;;;;x
 b_rabatistan_2;Rabatistan;Rabatistan;Rabatistan;;Rabatistan;;;;;;;;;x
@@ -3037,6 +3153,10 @@ b_rabenfeld_3;Rabenfeld;Rabenfeld;Rabenfeld;;Rabenfeld;;;;;;;;;x
 b_rabenfeld_3_adj;Rabenfeldian;;rabenfelder;;;;;;;;;;;x
 b_rabenfeld_4;Rabenfeld;Rabenfeld;Rabenfeld;;Rabenfeld;;;;;;;;;x
 b_rabenfeld_4_adj;Rabenfeldian;;rabenfelder;;;;;;;;;;;x
+b_rabensberg;Rabensberg;Rabensberg;Rabensberg;;Rabensberg;;;;;;;;;x
+b_rabensberg_adj;Rabensbergian;;rabensberger;;;;;;;;;;;x
+b_rabensbrueck;Rabensbrück;Rabensbrück;Rabensbrück;;Rabensbrück;;;;;;;;;x
+b_rabensbrueck_adj;Rabensbrückian;;rabensbrücker;;;;;;;;;;;x
 b_rabenstein;Rabenstein;Rabenstein;Rabenstein;;Rabenstein;;;;;;;;;x
 b_rabenstein_adj;Rabensteinian;;rabensteiner;;;;;;;;;;;x
 b_rabenstein_2;Rabenstein;Rabenstein;Rabenstein;;Rabenstein;;;;;;;;;x
@@ -3069,14 +3189,16 @@ b_rallerfeste_3;Rallerfeste;Rallerfeste;Rallerfeste;;Rallerfeste;;;;;;;;;x
 b_rallerfeste_3_adj;Rallerfestean;;rallerfester;;;;;;;;;;;x
 b_rallerfeste_4;Rallerfeste;Rallerfeste;Rallerfeste;;Rallerfeste;;;;;;;;;x
 b_rallerfeste_4_adj;Rallerfestean;;rallerfester;;;;;;;;;;;x
+b_rallersbruck;Rallersbruck;Rallersbruck;Rallersbruck;;Rallersbruck;;;;;;;;;x
+b_rallersbruck_adj;Rallersbruckian;;rallersbrucker;;;;;;;;;;;x
+b_rallerwacht;Rallerwacht;Rallerwacht;Rallerwacht;;Rallerwacht;;;;;;;;;x
+b_rallerwacht_adj;Rallerwachtian;;rallerwachter;;;;;;;;;;;x
+b_rallingen;Rallingen;Rallingen;Rallingen;;Rallingen;;;;;;;;;x
+b_rallingen_adj;Rallingenian;;rallingener;;;;;;;;;;;x
 b_randersburg;Randersburg;Randersburg;Randersburg;;Randersburg;;;;;;;;;x
 b_randersburg_adj;Randersburgian;;randersburger;;;;;;;;;;;x
 b_randersburg_2;Randersburg;Randersburg;Randersburg;;Randersburg;;;;;;;;;x
 b_randersburg_2_adj;Randersburgian;;randersburger;;;;;;;;;;;x
-b_randersburg_3;Randersburg;Randersburg;Randersburg;;Randersburg;;;;;;;;;x
-b_randersburg_3_adj;Randersburgian;;randersburger;;;;;;;;;;;x
-b_randersburg_4;Randersburg;Randersburg;Randersburg;;Randersburg;;;;;;;;;x
-b_randersburg_4_adj;Randersburgian;;randersburger;;;;;;;;;;;x
 b_ras_nefidim;Ras Nefidim;Ras Nefidim;Ras Nefidim;;Ras Nefidim;;;;;;;;;x
 b_ras_nefidim_adj;Ras Nefidimian;;Ras Nefidimer;;;;;;;;;;;x
 b_ras_nefidim_2;Ras Nefidim;Ras Nefidim;Ras Nefidim;;Ras Nefidim;;;;;;;;;x
@@ -3117,6 +3239,8 @@ b_rathmos_3;Rathmos;Rathmos;Rathmos;;Rathmos;;;;;;;;;x
 b_rathmos_3_adj;Rathmosian;;rathmoser;;;;;;;;;;;x
 b_rathmos_4;Rathmos;Rathmos;Rathmos;;Rathmos;;;;;;;;;x
 b_rathmos_4_adj;Rathmosian;;rathmoser;;;;;;;;;;;x
+b_rathsamshausen;Rathsamshausen;Rathsamshausen;Rathsamshausen;;Rathsamshausen;;;;;;;;;x
+b_rathsamshausen_adj;Rathsamshausenian;;rathsamshausener;;;;;;;;;;;x
 b_rauffenberg;Rauffenberg;Rauffenberg;Rauffenberg;;Rauffenberg;;;;;;;;;x
 b_rauffenberg_adj;Rauffenbergian;;rauffenberger;;;;;;;;;;;x
 b_rauffenberg_2;Rauffenberg;Rauffenberg;Rauffenberg;;Rauffenberg;;;;;;;;;x
@@ -3125,18 +3249,6 @@ b_rauffenberg_3;Rauffenberg;Rauffenberg;Rauffenberg;;Rauffenberg;;;;;;;;;x
 b_rauffenberg_3_adj;Rauffenbergian;;rauffenberger;;;;;;;;;;;x
 b_rauffenberg_4;Rauffenberg;Rauffenberg;Rauffenberg;;Rauffenberg;;;;;;;;;x
 b_rauffenberg_4_adj;Rauffenbergian;;rauffenberger;;;;;;;;;;;x
-b_raulsmark;Raulsmark;Raulsmark;Raulsmark;;Raulsmark;;;;;;;;;x
-b_raulsmark_adj;Raulsmarkian;;raulsmarker;;;;;;;;;;;x
-b_raulsmark_2;Raulsmark;Raulsmark;Raulsmark;;Raulsmark;;;;;;;;;x
-b_raulsmark_2_adj;Raulsmarkian;;raulsmarker;;;;;;;;;;;x
-b_raulsmark_3;Raulsmark;Raulsmark;Raulsmark;;Raulsmark;;;;;;;;;x
-b_raulsmark_3_adj;Raulsmarkian;;raulsmarker;;;;;;;;;;;x
-b_raulsmark_4;Raulsmark;Raulsmark;Raulsmark;;Raulsmark;;;;;;;;;x
-b_raulsmark_4_adj;Raulsmarkian;;raulsmarker;;;;;;;;;;;x
-b_raulsmark_5;Raulsmark;Raulsmark;Raulsmark;;Raulsmark;;;;;;;;;x
-b_raulsmark_5_adj;Raulsmarkian;;raulsmarker;;;;;;;;;;;x
-b_raulsmark_6;Raulsmark;Raulsmark;Raulsmark;;Raulsmark;;;;;;;;;x
-b_raulsmark_6_adj;Raulsmarkian;;raulsmarker;;;;;;;;;;;x
 b_rechthag;Rechthag;Rechthag;Rechthag;;Rechthag;;;;;;;;;x
 b_rechthag_adj;Rechthagian;;rechthager;;;;;;;;;;;x
 b_rechthag_2;Rechthag;Rechthag;Rechthag;;Rechthag;;;;;;;;;x
@@ -3155,20 +3267,8 @@ b_reichsend_4;Reichsend;Reichsend;Reichsend;;Reichsend;;;;;;;;;x
 b_reichsend_4_adj;Reichsendian;;reichsender;;;;;;;;;;;x
 b_reichsgau;Reichsgau;Reichsgau;Reichsgau;;Reichsgau;;;;;;;;;x
 b_reichsgau_adj;Reichsgian;;reichsger;;;;;;;;;;;x
-b_reichsgau_2;Reichsgau;Reichsgau;Reichsgau;;Reichsgau;;;;;;;;;x
-b_reichsgau_2_adj;Reichsgian;;reichsger;;;;;;;;;;;x
-b_reichsgau_3;Reichsgau;Reichsgau;Reichsgau;;Reichsgau;;;;;;;;;x
-b_reichsgau_3_adj;Reichsgian;;reichsger;;;;;;;;;;;x
-b_reichsgau_4;Reichsgau;Reichsgau;Reichsgau;;Reichsgau;;;;;;;;;x
-b_reichsgau_4_adj;Reichsgian;;reichsger;;;;;;;;;;;x
-b_retogau;Retogau;Retogau;Retogau;;Retogau;;;;;;;;;x
-b_retogau_adj;Retogian;;retoger;;;;;;;;;;;x
-b_retogau_2;Retogau;Retogau;Retogau;;Retogau;;;;;;;;;x
-b_retogau_2_adj;Retogian;;retoger;;;;;;;;;;;x
-b_retogau_3;Retogau;Retogau;Retogau;;Retogau;;;;;;;;;x
-b_retogau_3_adj;Retogian;;retoger;;;;;;;;;;;x
-b_retogau_4;Retogau;Retogau;Retogau;;Retogau;;;;;;;;;x
-b_retogau_4_adj;Retogian;;retoger;;;;;;;;;;;x
+b_reinherz;Reinherz;Reinherz;Reinherz;;Reinherz;;;;;;;;;x
+b_reinherz_adj;Reinherzian;;reinherzer;;;;;;;;;;;x
 b_revennis;Revennis;Revennis;Revennis;;Revennis;;;;;;;;;x
 b_revennis_adj;Revennisian;;revenniser;;;;;;;;;;;x
 b_revennis_2;Revennis;Revennis;Revennis;;Revennis;;;;;;;;;x
@@ -3185,6 +3285,8 @@ b_rickenhausen_3;Rickenhausen;Rickenhausen;Rickenhausen;;Rickenhausen;;;;;;;;;x
 b_rickenhausen_3_adj;Rickenhausenian;;rickenhausener;;;;;;;;;;;x
 b_rickenhausen_4;Rickenhausen;Rickenhausen;Rickenhausen;;Rickenhausen;;;;;;;;;x
 b_rickenhausen_4_adj;Rickenhausenian;;rickenhausener;;;;;;;;;;;x
+b_ridhausen;Ridhausen;Ridhausen;Ridhausen;;Ridhausen;;;;;;;;;x
+b_ridhausen_adj;Ridhausenian;;ridhausener;;;;;;;;;;;x
 b_ring_of_lorgolosch;Ring Of Lorgolosch;Ring Of Lorgolosch;Ring Of Lorgolosch;;Ring Of Lorgolosch;;;;;;;;;x
 b_ring_of_lorgolosch_adj;Ring Of Lorgoloschian;;Ring Of Lorgoloscher;;;;;;;;;;;x
 b_ring_of_lorgolosch_2;Ring Of Lorgolosch;Ring Of Lorgolosch;Ring Of Lorgolosch;;Ring Of Lorgolosch;;;;;;;;;x
@@ -3193,6 +3295,8 @@ b_ring_of_lorgolosch_3;Ring Of Lorgolosch;Ring Of Lorgolosch;Ring Of Lorgolosch;
 b_ring_of_lorgolosch_3_adj;Ring Of Lorgoloschian;;Ring Of Lorgoloscher;;;;;;;;;;;x
 b_ring_of_lorgolosch_4;Ring Of Lorgolosch;Ring Of Lorgolosch;Ring Of Lorgolosch;;Ring Of Lorgolosch;;;;;;;;;x
 b_ring_of_lorgolosch_4_adj;Ring Of Lorgoloschian;;Ring Of Lorgoloscher;;;;;;;;;;;x
+b_rior;Rior;Rior;Rior;;Rior;;;;;;;;;x
+b_rior_adj;Riorian;;riorer;;;;;;;;;;;x
 b_rodaschquell;Rodaschquell;Rodaschquell;Rodaschquell;;Rodaschquell;;;;;;;;;x
 b_rodaschquell_adj;Rodaschquellian;;rodaschqueller;;;;;;;;;;;x
 b_rodaschquell_2;Rodaschquell;Rodaschquell;Rodaschquell;;Rodaschquell;;;;;;;;;x
@@ -3217,6 +3321,8 @@ b_rondbirge_3;Rondbirge;Rondbirge;Rondbirge;;Rondbirge;;;;;;;;;x
 b_rondbirge_3_adj;Rondbirgean;;rondbirger;;;;;;;;;;;x
 b_rondbirge_4;Rondbirge;Rondbirge;Rondbirge;;Rondbirge;;;;;;;;;x
 b_rondbirge_4_adj;Rondbirgean;;rondbirger;;;;;;;;;;;x
+b_rondratrutz;Rondratrutz;Rondratrutz;Rondratrutz;;Rondratrutz;;;;;;;;;x
+b_rondratrutz_adj;Rondratrutzian;;rondratrutzer;;;;;;;;;;;x
 b_ronishagen;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
 b_ronishagen_adj;Ronishagenian;;ronishagener;;;;;;;;;;;x
 b_ronishagen_2;Ronishagen;Ronishagen;Ronishagen;;Ronishagen;;;;;;;;;x
@@ -3233,6 +3339,8 @@ b_rosenbusch_3;Rosenbusch;Rosenbusch;Rosenbusch;;Rosenbusch;;;;;;;;;x
 b_rosenbusch_3_adj;Rosenbuschian;;rosenbuscher;;;;;;;;;;;x
 b_rosenbusch_4;Rosenbusch;Rosenbusch;Rosenbusch;;Rosenbusch;;;;;;;;;x
 b_rosenbusch_4_adj;Rosenbuschian;;rosenbuscher;;;;;;;;;;;x
+b_rosskuppel;Rosskuppel;Rosskuppel;Rosskuppel;;Rosskuppel;;;;;;;;;x
+b_rosskuppel_adj;Rosskuppelian;;rosskuppeler;;;;;;;;;;;x
 b_rotenforst;Rotenforst;Rotenforst;Rotenforst;;Rotenforst;;;;;;;;;x
 b_rotenforst_adj;Rotenforstian;;rotenforster;;;;;;;;;;;x
 b_rotenforst_2;Rotenforst;Rotenforst;Rotenforst;;Rotenforst;;;;;;;;;x
@@ -3271,16 +3379,14 @@ b_rubreth_2;Rubreth;Rubreth;Rubreth;;Rubreth;;;;;;;;;x
 b_rubreth_2_adj;Rubrethian;;rubrether;;;;;;;;;;;x
 b_rubreth_3;Rubreth;Rubreth;Rubreth;;Rubreth;;;;;;;;;x
 b_rubreth_3_adj;Rubrethian;;rubrether;;;;;;;;;;;x
-b_rubreth_4;Rubreth;Rubreth;Rubreth;;Rubreth;;;;;;;;;x
-b_rubreth_4_adj;Rubrethian;;rubrether;;;;;;;;;;;x
 b_ruchin;Ruchin;Ruchin;Ruchin;;Ruchin;;;;;;;;;x
 b_ruchin_adj;Ruchinian;;ruchiner;;;;;;;;;;;x
 b_ruchin_2;Ruchin;Ruchin;Ruchin;;Ruchin;;;;;;;;;x
 b_ruchin_2_adj;Ruchinian;;ruchiner;;;;;;;;;;;x
 b_ruchin_3;Ruchin;Ruchin;Ruchin;;Ruchin;;;;;;;;;x
 b_ruchin_3_adj;Ruchinian;;ruchiner;;;;;;;;;;;x
-b_ruchin_4;Ruchin;Ruchin;Ruchin;;Ruchin;;;;;;;;;x
-b_ruchin_4_adj;Ruchinian;;ruchiner;;;;;;;;;;;x
+b_rudes_schild;Rudes Schild;Rudes Schild;Rudes Schild;;Rudes Schild;;;;;;;;;x
+b_rudes_schild_adj;Rudes Schildian;;Rudes Schilder;;;;;;;;;;;x
 b_rulat;Rulat;Rulat;Rulat;;Rulat;;;;;;;;;x
 b_rulat_adj;Rulatian;;rulater;;;;;;;;;;;x
 b_rulat_2;Rulat;Rulat;Rulat;;Rulat;;;;;;;;;x
@@ -3337,6 +3443,8 @@ b_salzsteige_3;Salzsteige;Salzsteige;Salzsteige;;Salzsteige;;;;;;;;;x
 b_salzsteige_3_adj;Salzsteigean;;salzsteiger;;;;;;;;;;;x
 b_salzsteige_4;Salzsteige;Salzsteige;Salzsteige;;Salzsteige;;;;;;;;;x
 b_salzsteige_4_adj;Salzsteigean;;salzsteiger;;;;;;;;;;;x
+b_samlor;Samlor;Samlor;Samlor;;Samlor;;;;;;;;;x
+b_samlor_adj;Samlorian;;samlorer;;;;;;;;;;;x
 b_samradistan;Samradistan;Samradistan;Samradistan;;Samradistan;;;;;;;;;x
 b_samradistan_adj;Samradistanian;;samradistaner;;;;;;;;;;;x
 b_samradistan_2;Samradistan;Samradistan;Samradistan;;Samradistan;;;;;;;;;x
@@ -3345,6 +3453,34 @@ b_samradistan_3;Samradistan;Samradistan;Samradistan;;Samradistan;;;;;;;;;x
 b_samradistan_3_adj;Samradistanian;;samradistaner;;;;;;;;;;;x
 b_samradistan_4;Samradistan;Samradistan;Samradistan;;Samradistan;;;;;;;;;x
 b_samradistan_4_adj;Samradistanian;;samradistaner;;;;;;;;;;;x
+b_sanct_bulwarth;Sanct Bulwarth;Sanct Bulwarth;Sanct Bulwarth;;Sanct Bulwarth;;;;;;;;;x
+b_sanct_bulwarth_adj;Sanct Bulwarthian;;Sanct Bulwarther;;;;;;;;;;;x
+b_sanct_cereborn;Sanct Cereborn;Sanct Cereborn;Sanct Cereborn;;Sanct Cereborn;;;;;;;;;x
+b_sanct_cereborn_adj;Sanct Cerebornian;;Sanct Cereborner;;;;;;;;;;;x
+b_sanct_dappertin;Sanct Dappertin;Sanct Dappertin;Sanct Dappertin;;Sanct Dappertin;;;;;;;;;x
+b_sanct_dappertin_adj;Sanct Dappertinian;;Sanct Dappertiner;;;;;;;;;;;x
+b_sanct_nadrian;Sanct Nadrian;Sanct Nadrian;Sanct Nadrian;;Sanct Nadrian;;;;;;;;;x
+b_sanct_nadrian_adj;Sanct Nadrianian;;Sanct Nadrianer;;;;;;;;;;;x
+b_sanct_ogdolf;Sanct Ogdolf;Sanct Ogdolf;Sanct Ogdolf;;Sanct Ogdolf;;;;;;;;;x
+b_sanct_ogdolf_adj;Sanct Ogdolfian;;Sanct Ogdolfer;;;;;;;;;;;x
+b_sanct_sighart;Sanct Sighart;Sanct Sighart;Sanct Sighart;;Sanct Sighart;;;;;;;;;x
+b_sanct_sighart_adj;Sanct Sighartian;;Sanct Sigharter;;;;;;;;;;;x
+b_sanct_therbun;Sanct Therbûn;Sanct Therbûn;Sanct Therbûn;;Sanct Therbûn;;;;;;;;;x
+b_sanct_therbun_adj;Sanct Therbûnian;;Sanct Therbûner;;;;;;;;;;;x
+b_sanct_vernbald;Sanct Vernbald;Sanct Vernbald;Sanct Vernbald;;Sanct Vernbald;;;;;;;;;x
+b_sanct_vernbald_adj;Sanct Vernbaldian;;Sanct Vernbalder;;;;;;;;;;;x
+b_sancta_ancilla;Sancta Ancilla;Sancta Ancilla;Sancta Ancilla;;Sancta Ancilla;;;;;;;;;x
+b_sancta_ancilla_adj;Sancta Ancillan;;Sancta Anciller;;;;;;;;;;;x
+b_sancta_barmhilde;Sancta Barmhilde;Sancta Barmhilde;Sancta Barmhilde;;Sancta Barmhilde;;;;;;;;;x
+b_sancta_barmhilde_adj;Sancta Barmhildean;;Sancta Barmhilder;;;;;;;;;;;x
+b_sancta_ermengild;Sancta Ermengild;Sancta Ermengild;Sancta Ermengild;;Sancta Ermengild;;;;;;;;;x
+b_sancta_ermengild_adj;Sancta Ermengildian;;Sancta Ermengilder;;;;;;;;;;;x
+b_sancta_falkhilde;Sancta Falkhilde;Sancta Falkhilde;Sancta Falkhilde;;Sancta Falkhilde;;;;;;;;;x
+b_sancta_falkhilde_adj;Sancta Falkhildean;;Sancta Falkhilder;;;;;;;;;;;x
+b_sancta_henrica;Sancta Henrica;Sancta Henrica;Sancta Henrica;;Sancta Henrica;;;;;;;;;x
+b_sancta_henrica_adj;Sancta Henrican;;Sancta Henricer;;;;;;;;;;;x
+b_sancta_noiona;Sancta Noiona;Sancta Noiona;Sancta Noiona;;Sancta Noiona;;;;;;;;;x
+b_sancta_noiona_adj;Sancta Noionan;;Sancta Noioner;;;;;;;;;;;x
 b_sarkdosk;Sarkdosk;Sarkdosk;Sarkdosk;;Sarkdosk;;;;;;;;;x
 b_sarkdosk_adj;Sarkdoskian;;sarkdosker;;;;;;;;;;;x
 b_sarkdosk_2;Sarkdosk;Sarkdosk;Sarkdosk;;Sarkdosk;;;;;;;;;x
@@ -3353,6 +3489,8 @@ b_sarkdosk_3;Sarkdosk;Sarkdosk;Sarkdosk;;Sarkdosk;;;;;;;;;x
 b_sarkdosk_3_adj;Sarkdoskian;;sarkdosker;;;;;;;;;;;x
 b_sarkdosk_4;Sarkdosk;Sarkdosk;Sarkdosk;;Sarkdosk;;;;;;;;;x
 b_sarkdosk_4_adj;Sarkdoskian;;sarkdosker;;;;;;;;;;;x
+b_scharfenstein;Scharfenstein;Scharfenstein;Scharfenstein;;Scharfenstein;;;;;;;;;x
+b_scharfenstein_adj;Scharfensteinian;;scharfensteiner;;;;;;;;;;;x
 b_schattengrund;Schattengrund;Schattengrund;Schattengrund;;Schattengrund;;;;;;;;;x
 b_schattengrund_adj;Schattengrundian;;schattengrunder;;;;;;;;;;;x
 b_schattengrund_2;Schattengrund;Schattengrund;Schattengrund;;Schattengrund;;;;;;;;;x
@@ -3369,6 +3507,8 @@ b_schelak_3;Schelak;Schelak;Schelak;;Schelak;;;;;;;;;x
 b_schelak_3_adj;Schelakian;;schelaker;;;;;;;;;;;x
 b_schelak_4;Schelak;Schelak;Schelak;;Schelak;;;;;;;;;x
 b_schelak_4_adj;Schelakian;;schelaker;;;;;;;;;;;x
+b_schlund;Schlund;Schlund;Schlund;;Schlund;;;;;;;;;x
+b_schlund_adj;Schlundian;;schlunder;;;;;;;;;;;x
 b_schnakensee;Schnakensee;Schnakensee;Schnakensee;;Schnakensee;;;;;;;;;x
 b_schnakensee_adj;Schnakenseean;;schnakenser;;;;;;;;;;;x
 b_schnakensee_2;Schnakensee;Schnakensee;Schnakensee;;Schnakensee;;;;;;;;;x
@@ -3447,8 +3587,6 @@ b_schwarztannen_2;Schwarztannen;Schwarztannen;Schwarztannen;;Schwarztannen;;;;;;
 b_schwarztannen_2_adj;Schwarztannenian;;schwarztannener;;;;;;;;;;;x
 b_schwarztannen_3;Schwarztannen;Schwarztannen;Schwarztannen;;Schwarztannen;;;;;;;;;x
 b_schwarztannen_3_adj;Schwarztannenian;;schwarztannener;;;;;;;;;;;x
-b_schwarztannen_4;Schwarztannen;Schwarztannen;Schwarztannen;;Schwarztannen;;;;;;;;;x
-b_schwarztannen_4_adj;Schwarztannenian;;schwarztannener;;;;;;;;;;;x
 b_schwertleihe;Schwertleihe;Schwertleihe;Schwertleihe;;Schwertleihe;;;;;;;;;x
 b_schwertleihe_adj;Schwertleihean;;schwertleiher;;;;;;;;;;;x
 b_schwertleihe_2;Schwertleihe;Schwertleihe;Schwertleihe;;Schwertleihe;;;;;;;;;x
@@ -3465,6 +3603,8 @@ b_schwuerzhofen_3;Schwürzhofen;Schwürzhofen;Schwürzhofen;;Schwürzhofen;;;;;;;;;x
 b_schwuerzhofen_3_adj;Schwürzhofenian;;schwürzhofener;;;;;;;;;;;x
 b_schwuerzhofen_4;Schwürzhofen;Schwürzhofen;Schwürzhofen;;Schwürzhofen;;;;;;;;;x
 b_schwuerzhofen_4_adj;Schwürzhofenian;;schwürzhofener;;;;;;;;;;;x
+b_seeblick;Seeblick;Seeblick;Seeblick;;Seeblick;;;;;;;;;x
+b_seeblick_adj;Seeblickian;;seeblicker;;;;;;;;;;;x
 b_selaque;Selaque;Selaque;Selaque;;Selaque;;;;;;;;;x
 b_selaque_adj;Selaquean;;selaqer;;;;;;;;;;;x
 b_selaque_2;Selaque;Selaque;Selaque;;Selaque;;;;;;;;;x
@@ -3493,18 +3633,10 @@ b_serrinmoor;Serrinmoor;Serrinmoor;Serrinmoor;;Serrinmoor;;;;;;;;;x
 b_serrinmoor_adj;Serrinmoorian;;serrinmoorer;;;;;;;;;;;x
 b_serrinmoor_2;Serrinmoor;Serrinmoor;Serrinmoor;;Serrinmoor;;;;;;;;;x
 b_serrinmoor_2_adj;Serrinmoorian;;serrinmoorer;;;;;;;;;;;x
-b_serrinmoor_3;Serrinmoor;Serrinmoor;Serrinmoor;;Serrinmoor;;;;;;;;;x
-b_serrinmoor_3_adj;Serrinmoorian;;serrinmoorer;;;;;;;;;;;x
-b_serrinmoor_4;Serrinmoor;Serrinmoor;Serrinmoor;;Serrinmoor;;;;;;;;;x
-b_serrinmoor_4_adj;Serrinmoorian;;serrinmoorer;;;;;;;;;;;x
 b_sertis;Sertis;Sertis;Sertis;;Sertis;;;;;;;;;x
 b_sertis_adj;Sertisian;;sertiser;;;;;;;;;;;x
 b_sertis_2;Sertis;Sertis;Sertis;;Sertis;;;;;;;;;x
 b_sertis_2_adj;Sertisian;;sertiser;;;;;;;;;;;x
-b_sertis_3;Sertis;Sertis;Sertis;;Sertis;;;;;;;;;x
-b_sertis_3_adj;Sertisian;;sertiser;;;;;;;;;;;x
-b_sertis_4;Sertis;Sertis;Sertis;;Sertis;;;;;;;;;x
-b_sertis_4_adj;Sertisian;;sertiser;;;;;;;;;;;x
 b_sewamund;Sewamund;Sewamund;Sewamund;;Sewamund;;;;;;;;;x
 b_sewamund_adj;Sewamundian;;sewamunder;;;;;;;;;;;x
 b_sewamund_2;Sewamund;Sewamund;Sewamund;;Sewamund;;;;;;;;;x
@@ -3513,6 +3645,8 @@ b_sewamund_3;Sewamund;Sewamund;Sewamund;;Sewamund;;;;;;;;;x
 b_sewamund_3_adj;Sewamundian;;sewamunder;;;;;;;;;;;x
 b_sewamund_4;Sewamund;Sewamund;Sewamund;;Sewamund;;;;;;;;;x
 b_sewamund_4_adj;Sewamundian;;sewamunder;;;;;;;;;;;x
+b_seytnach;Seytnach;Seytnach;Seytnach;;Seytnach;;;;;;;;;x
+b_seytnach_adj;Seytnachian;;seytnacher;;;;;;;;;;;x
 b_shamaham;Shamaham;Shamaham;Shamaham;;Shamaham;;;;;;;;;x
 b_shamaham_adj;Shamahamian;;shamahamer;;;;;;;;;;;x
 b_shamaham_2;Shamaham;Shamaham;Shamaham;;Shamaham;;;;;;;;;x
@@ -3569,6 +3703,10 @@ b_silas_3;Silas;Silas;Silas;;Silas;;;;;;;;;x
 b_silas_3_adj;Silasian;;silaser;;;;;;;;;;;x
 b_silas_4;Silas;Silas;Silas;;Silas;;;;;;;;;x
 b_silas_4_adj;Silasian;;silaser;;;;;;;;;;;x
+b_silent_watch;Silent Watch;Silent Watch;Silent Watch;;Silent Watch;;;;;;;;;x
+b_silent_watch_adj;Silent Watchian;;Silent Watcher;;;;;;;;;;;x
+b_silkwiesen;Silkwiesen;Silkwiesen;Silkwiesen;;Silkwiesen;;;;;;;;;x
+b_silkwiesen_adj;Silkwiesenian;;silkwiesener;;;;;;;;;;;x
 b_silver_valley;Silver Valley;Silver Valley;Silver Valley;;Silver Valley;;;;;;;;;x
 b_silver_valley_adj;Silver Valleian;;Silver Valleer;;;;;;;;;;;x
 b_silver_valley_2;Silver Valley;Silver Valley;Silver Valley;;Silver Valley;;;;;;;;;x
@@ -3583,8 +3721,6 @@ b_silz_2;Silz;Silz;Silz;;Silz;;;;;;;;;x
 b_silz_2_adj;Silzian;;silzer;;;;;;;;;;;x
 b_silz_3;Silz;Silz;Silz;;Silz;;;;;;;;;x
 b_silz_3_adj;Silzian;;silzer;;;;;;;;;;;x
-b_silz_4;Silz;Silz;Silz;;Silz;;;;;;;;;x
-b_silz_4_adj;Silzian;;silzer;;;;;;;;;;;x
 b_simiador;Simiador;Simiador;Simiador;;Simiador;;;;;;;;;x
 b_simiador_adj;Simiadorian;;simiadorer;;;;;;;;;;;x
 b_simiador_2;Simiador;Simiador;Simiador;;Simiador;;;;;;;;;x
@@ -3597,6 +3733,8 @@ b_sinoda_3;Sinoda;Sinoda;Sinoda;;Sinoda;;;;;;;;;x
 b_sinoda_3_adj;Sinodan;;sinoder;;;;;;;;;;;x
 b_sinoda_4;Sinoda;Sinoda;Sinoda;;Sinoda;;;;;;;;;x
 b_sinoda_4_adj;Sinodan;;sinoder;;;;;;;;;;;x
+b_sonnenau;Sonnenau;Sonnenau;Sonnenau;;Sonnenau;;;;;;;;;x
+b_sonnenau_adj;Sonnenian;;sonnener;;;;;;;;;;;x
 b_south_arratistan;South-Arratistan;South-Arratistan;South-Arratistan;;South-Arratistan;;;;;;;;;x
 b_south_arratistan_adj;South-Arratistanian;;south-arratistaner;;;;;;;;;;;x
 b_south_arratistan_2;South-Arratistan;South-Arratistan;South-Arratistan;;South-Arratistan;;;;;;;;;x
@@ -3641,6 +3779,8 @@ b_stanniz_3;Stanniz;Stanniz;Stanniz;;Stanniz;;;;;;;;;x
 b_stanniz_3_adj;Stannizian;;stannizer;;;;;;;;;;;x
 b_stanniz_4;Stanniz;Stanniz;Stanniz;;Stanniz;;;;;;;;;x
 b_stanniz_4_adj;Stannizian;;stannizer;;;;;;;;;;;x
+b_steynebruk;Steynebruk;Steynebruk;Steynebruk;;Steynebruk;;;;;;;;;x
+b_steynebruk_adj;Steynebrukian;;steynebruker;;;;;;;;;;;x
 b_sturmfels;Sturmfels;Sturmfels;Sturmfels;;Sturmfels;;;;;;;;;x
 b_sturmfels_adj;Sturmfelsian;;sturmfelser;;;;;;;;;;;x
 b_sturmfels_2;Sturmfels;Sturmfels;Sturmfels;;Sturmfels;;;;;;;;;x
@@ -3689,6 +3829,8 @@ b_taladur_3;Taladur;Taladur;Taladur;;Taladur;;;;;;;;;x
 b_taladur_3_adj;Taladurian;;taladurer;;;;;;;;;;;x
 b_taladur_4;Taladur;Taladur;Taladur;;Taladur;;;;;;;;;x
 b_taladur_4_adj;Taladurian;;taladurer;;;;;;;;;;;x
+b_talbach;Talbach;Talbach;Talbach;;Talbach;;;;;;;;;x
+b_talbach_adj;Talbachian;;talbacher;;;;;;;;;;;x
 b_talued;Talued;Talued;Talued;;Talued;;;;;;;;;x
 b_talued_adj;Taluedian;;talueder;;;;;;;;;;;x
 b_talued_2;Talued;Talued;Talued;;Talued;;;;;;;;;x
@@ -3721,14 +3863,18 @@ b_tandosch_3;Tandosch;Tandosch;Tandosch;;Tandosch;;;;;;;;;x
 b_tandosch_3_adj;Tandoschian;;tandoscher;;;;;;;;;;;x
 b_tandosch_4;Tandosch;Tandosch;Tandosch;;Tandosch;;;;;;;;;x
 b_tandosch_4_adj;Tandoschian;;tandoscher;;;;;;;;;;;x
+b_tannenheim;Tannenheim;Tannenheim;Tannenheim;;Tannenheim;;;;;;;;;x
+b_tannenheim_adj;Tannenheimian;;tannenheimer;;;;;;;;;;;x
+b_tannenheim_2;Tannenheim;Tannenheim;Tannenheim;;Tannenheim;;;;;;;;;x
+b_tannenheim_2_adj;Tannenheimian;;tannenheimer;;;;;;;;;;;x
+b_tannhus;Tannhus;Tannhus;Tannhus;;Tannhus;;;;;;;;;x
+b_tannhus_adj;Tannhusian;;tannhuser;;;;;;;;;;;x
 b_tannwirk;Tannwirk;Tannwirk;Tannwirk;;Tannwirk;;;;;;;;;x
 b_tannwirk_adj;Tannwirkian;;tannwirker;;;;;;;;;;;x
 b_tannwirk_2;Tannwirk;Tannwirk;Tannwirk;;Tannwirk;;;;;;;;;x
 b_tannwirk_2_adj;Tannwirkian;;tannwirker;;;;;;;;;;;x
 b_tannwirk_3;Tannwirk;Tannwirk;Tannwirk;;Tannwirk;;;;;;;;;x
 b_tannwirk_3_adj;Tannwirkian;;tannwirker;;;;;;;;;;;x
-b_tannwirk_4;Tannwirk;Tannwirk;Tannwirk;;Tannwirk;;;;;;;;;x
-b_tannwirk_4_adj;Tannwirkian;;tannwirker;;;;;;;;;;;x
 b_tarfelhazaqur_mor;Tarf'El'Hazaqur Mor;Tarf'El'Hazaqur Mor;Tarf'El'Hazaqur Mor;;Tarf'El'Hazaqur Mor;;;;;;;;;x
 b_tarfelhazaqur_mor_adj;Tarf'El'Hazaqur Morian;;Tarf'El'Hazaqur Morer;;;;;;;;;;;x
 b_tarfelhazaqur_mor_2;Tarf'El'Hazaqur Mor;Tarf'El'Hazaqur Mor;Tarf'El'Hazaqur Mor;;Tarf'El'Hazaqur Mor;;;;;;;;;x
@@ -3909,6 +4055,8 @@ b_traviarim_3;Traviarim;Traviarim;Traviarim;;Traviarim;;;;;;;;;x
 b_traviarim_3_adj;Traviarimian;;traviarimer;;;;;;;;;;;x
 b_traviarim_4;Traviarim;Traviarim;Traviarim;;Traviarim;;;;;;;;;x
 b_traviarim_4_adj;Traviarimian;;traviarimer;;;;;;;;;;;x
+b_trollhammer;Trollhammer;Trollhammer;Trollhammer;;Trollhammer;;;;;;;;;x
+b_trollhammer_adj;Trollhammerian;;trollhammerer;;;;;;;;;;;x
 b_trollnase;Trollnase;Trollnase;Trollnase;;Trollnase;;;;;;;;;x
 b_trollnase_adj;Trollnasean;;trollnaser;;;;;;;;;;;x
 b_trollnase_2;Trollnase;Trollnase;Trollnase;;Trollnase;;;;;;;;;x
@@ -3925,6 +4073,8 @@ b_trollsgau_3;Trollsgau;Trollsgau;Trollsgau;;Trollsgau;;;;;;;;;x
 b_trollsgau_3_adj;Trollsgian;;trollsger;;;;;;;;;;;x
 b_trollsgau_4;Trollsgau;Trollsgau;Trollsgau;;Trollsgau;;;;;;;;;x
 b_trollsgau_4_adj;Trollsgian;;trollsger;;;;;;;;;;;x
+b_trullenheim;Trullenheim;Trullenheim;Trullenheim;;Trullenheim;;;;;;;;;x
+b_trullenheim_adj;Trullenheimian;;trullenheimer;;;;;;;;;;;x
 b_trutzenburg;Trutzenburg;Trutzenburg;Trutzenburg;;Trutzenburg;;;;;;;;;x
 b_trutzenburg_adj;Trutzenburgian;;trutzenburger;;;;;;;;;;;x
 b_trutzenburg_2;Trutzenburg;Trutzenburg;Trutzenburg;;Trutzenburg;;;;;;;;;x
@@ -3949,6 +4099,8 @@ b_twergentrutz_3;Twergentrutz;Twergentrutz;Twergentrutz;;Twergentrutz;;;;;;;;;x
 b_twergentrutz_3_adj;Twergentrutzian;;twergentrutzer;;;;;;;;;;;x
 b_twergentrutz_4;Twergentrutz;Twergentrutz;Twergentrutz;;Twergentrutz;;;;;;;;;x
 b_twergentrutz_4_adj;Twergentrutzian;;twergentrutzer;;;;;;;;;;;x
+b_ueberdiebreite;Überdiebreite;Überdiebreite;Überdiebreite;;Überdiebreite;;;;;;;;;x
+b_ueberdiebreite_adj;Überdiebreitean;;überdiebreiter;;;;;;;;;;;x
 b_uhdenwald;Uhdenwald;Uhdenwald;Uhdenwald;;Uhdenwald;;;;;;;;;x
 b_uhdenwald_adj;Uhdenwaldian;;uhdenwalder;;;;;;;;;;;x
 b_uhdenwald_2;Uhdenwald;Uhdenwald;Uhdenwald;;Uhdenwald;;;;;;;;;x
@@ -3957,6 +4109,8 @@ b_uhdenwald_3;Uhdenwald;Uhdenwald;Uhdenwald;;Uhdenwald;;;;;;;;;x
 b_uhdenwald_3_adj;Uhdenwaldian;;uhdenwalder;;;;;;;;;;;x
 b_uhdenwald_4;Uhdenwald;Uhdenwald;Uhdenwald;;Uhdenwald;;;;;;;;;x
 b_uhdenwald_4_adj;Uhdenwaldian;;uhdenwalder;;;;;;;;;;;x
+b_uilstein;Uilstein;Uilstein;Uilstein;;Uilstein;;;;;;;;;x
+b_uilstein_adj;Uilsteinian;;uilsteiner;;;;;;;;;;;x
 b_ukuban;Ukuban;Ukuban;Ukuban;;Ukuban;;;;;;;;;x
 b_ukuban_adj;Ukubanian;;ukubaner;;;;;;;;;;;x
 b_ukuban_2;Ukuban;Ukuban;Ukuban;;Ukuban;;;;;;;;;x
@@ -3973,6 +4127,8 @@ b_ulahshan_3;Ulahshan;Ulahshan;Ulahshan;;Ulahshan;;;;;;;;;x
 b_ulahshan_3_adj;Ulahshanian;;ulahshaner;;;;;;;;;;;x
 b_ulahshan_4;Ulahshan;Ulahshan;Ulahshan;;Ulahshan;;;;;;;;;x
 b_ulahshan_4_adj;Ulahshanian;;ulahshaner;;;;;;;;;;;x
+b_ulmenhain;Ulmenhain;Ulmenhain;Ulmenhain;;Ulmenhain;;;;;;;;;x
+b_ulmenhain_adj;Ulmenhainian;;ulmenhainer;;;;;;;;;;;x
 b_ulracht;Ulracht;Ulracht;Ulracht;;Ulracht;;;;;;;;;x
 b_ulracht_adj;Ulrachtian;;ulrachter;;;;;;;;;;;x
 b_ulracht_2;Ulracht;Ulracht;Ulracht;;Ulracht;;;;;;;;;x
@@ -3997,6 +4153,8 @@ b_ungolfsthann_3;Ungolfsthann;Ungolfsthann;Ungolfsthann;;Ungolfsthann;;;;;;;;;x
 b_ungolfsthann_3_adj;Ungolfsthannian;;ungolfsthanner;;;;;;;;;;;x
 b_ungolfsthann_4;Ungolfsthann;Ungolfsthann;Ungolfsthann;;Ungolfsthann;;;;;;;;;x
 b_ungolfsthann_4_adj;Ungolfsthannian;;ungolfsthanner;;;;;;;;;;;x
+b_untergras;Untergras;Untergras;Untergras;;Untergras;;;;;;;;;x
+b_untergras_adj;Untergrasian;;untergraser;;;;;;;;;;;x
 b_urkentrutz;Urkentrutz;Urkentrutz;Urkentrutz;;Urkentrutz;;;;;;;;;x
 b_urkentrutz_adj;Urkentrutzian;;urkentrutzer;;;;;;;;;;;x
 b_urkentrutz_2;Urkentrutz;Urkentrutz;Urkentrutz;;Urkentrutz;;;;;;;;;x
@@ -4013,6 +4171,8 @@ b_usdaran_3;Usdaran;Usdaran;Usdaran;;Usdaran;;;;;;;;;x
 b_usdaran_3_adj;Usdaranian;;usdaraner;;;;;;;;;;;x
 b_usdaran_4;Usdaran;Usdaran;Usdaran;;Usdaran;;;;;;;;;x
 b_usdaran_4_adj;Usdaranian;;usdaraner;;;;;;;;;;;x
+b_uslenried;Uslenried;Uslenried;Uslenried;;Uslenried;;;;;;;;;x
+b_uslenried_adj;Uslenriedian;;uslenrieder;;;;;;;;;;;x
 b_uztrutz;Uztrutz;Uztrutz;Uztrutz;;Uztrutz;;;;;;;;;x
 b_uztrutz_adj;Uztrutzian;;uztrutzer;;;;;;;;;;;x
 b_uztrutz_2;Uztrutz;Uztrutz;Uztrutz;;Uztrutz;;;;;;;;;x
@@ -4047,12 +4207,8 @@ b_vellberg_4;Vellberg;Vellberg;Vellberg;;Vellberg;;;;;;;;;x
 b_vellberg_4_adj;Vellbergian;;vellberger;;;;;;;;;;;x
 b_viehwiesen;Viehwiesen;Viehwiesen;Viehwiesen;;Viehwiesen;;;;;;;;;x
 b_viehwiesen_adj;Viehwiesenian;;viehwiesener;;;;;;;;;;;x
-b_viehwiesen_2;Viehwiesen;Viehwiesen;Viehwiesen;;Viehwiesen;;;;;;;;;x
-b_viehwiesen_2_adj;Viehwiesenian;;viehwiesener;;;;;;;;;;;x
-b_viehwiesen_3;Viehwiesen;Viehwiesen;Viehwiesen;;Viehwiesen;;;;;;;;;x
-b_viehwiesen_3_adj;Viehwiesenian;;viehwiesener;;;;;;;;;;;x
-b_viehwiesen_4;Viehwiesen;Viehwiesen;Viehwiesen;;Viehwiesen;;;;;;;;;x
-b_viehwiesen_4_adj;Viehwiesenian;;viehwiesener;;;;;;;;;;;x
+b_vierok;Vierok;Vierok;Vierok;;Vierok;;;;;;;;;x
+b_vierok_adj;Vierokian;;vieroker;;;;;;;;;;;x
 b_vinsalt;Vinsalt;Vinsalt;Vinsalt;;Vinsalt;;;;;;;;;x
 b_vinsalt_adj;Vinsaltian;;vinsalter;;;;;;;;;;;x
 b_vinsalt_2;Vinsalt;Vinsalt;Vinsalt;;Vinsalt;;;;;;;;;x
@@ -4077,6 +4233,8 @@ b_vishia_3;Vishia;Vishia;Vishia;;Vishia;;;;;;;;;x
 b_vishia_3_adj;Vishian;;visher;;;;;;;;;;;x
 b_vishia_4;Vishia;Vishia;Vishia;;Vishia;;;;;;;;;x
 b_vishia_4_adj;Vishian;;visher;;;;;;;;;;;x
+b_wagenhalt;Wagenhalt;Wagenhalt;Wagenhalt;;Wagenhalt;;;;;;;;;x
+b_wagenhalt_adj;Wagenhaltian;;wagenhalter;;;;;;;;;;;x
 b_wagrashaquell;Wagrashaquell;Wagrashaquell;Wagrashaquell;;Wagrashaquell;;;;;;;;;x
 b_wagrashaquell_adj;Wagrashaquellian;;wagrashaqueller;;;;;;;;;;;x
 b_wagrashaquell_2;Wagrashaquell;Wagrashaquell;Wagrashaquell;;Wagrashaquell;;;;;;;;;x
@@ -4099,8 +4257,6 @@ b_waldfang_2;Waldfang;Waldfang;Waldfang;;Waldfang;;;;;;;;;x
 b_waldfang_2_adj;Waldfangian;;waldfanger;;;;;;;;;;;x
 b_waldfang_3;Waldfang;Waldfang;Waldfang;;Waldfang;;;;;;;;;x
 b_waldfang_3_adj;Waldfangian;;waldfanger;;;;;;;;;;;x
-b_waldfang_4;Waldfang;Waldfang;Waldfang;;Waldfang;;;;;;;;;x
-b_waldfang_4_adj;Waldfangian;;waldfanger;;;;;;;;;;;x
 b_waldleuen;Waldleuen;Waldleuen;Waldleuen;;Waldleuen;;;;;;;;;x
 b_waldleuen_adj;Waldleuenian;;waldleuener;;;;;;;;;;;x
 b_waldleuen_2;Waldleuen;Waldleuen;Waldleuen;;Waldleuen;;;;;;;;;x
@@ -4109,6 +4265,10 @@ b_waldleuen_3;Waldleuen;Waldleuen;Waldleuen;;Waldleuen;;;;;;;;;x
 b_waldleuen_3_adj;Waldleuenian;;waldleuener;;;;;;;;;;;x
 b_waldleuen_4;Waldleuen;Waldleuen;Waldleuen;;Waldleuen;;;;;;;;;x
 b_waldleuen_4_adj;Waldleuenian;;waldleuener;;;;;;;;;;;x
+b_waldshut;Waldshut;Waldshut;Waldshut;;Waldshut;;;;;;;;;x
+b_waldshut_adj;Waldshutian;;waldshuter;;;;;;;;;;;x
+b_waldwiesen;Waldwiesen;Waldwiesen;Waldwiesen;;Waldwiesen;;;;;;;;;x
+b_waldwiesen_adj;Waldwiesenian;;waldwiesener;;;;;;;;;;;x
 b_wallersrain;Wallersrain;Wallersrain;Wallersrain;;Wallersrain;;;;;;;;;x
 b_wallersrain_adj;Wallersrainian;;wallersrainer;;;;;;;;;;;x
 b_wallersrain_2;Wallersrain;Wallersrain;Wallersrain;;Wallersrain;;;;;;;;;x
@@ -4117,6 +4277,8 @@ b_wallersrain_3;Wallersrain;Wallersrain;Wallersrain;;Wallersrain;;;;;;;;;x
 b_wallersrain_3_adj;Wallersrainian;;wallersrainer;;;;;;;;;;;x
 b_wallersrain_4;Wallersrain;Wallersrain;Wallersrain;;Wallersrain;;;;;;;;;x
 b_wallersrain_4_adj;Wallersrainian;;wallersrainer;;;;;;;;;;;x
+b_wandleth;Wandleth;Wandleth;Wandleth;;Wandleth;;;;;;;;;x
+b_wandleth_adj;Wandlethian;;wandlether;;;;;;;;;;;x
 b_warunk;Warunk;Warunk;Warunk;;Warunk;;;;;;;;;x
 b_warunk_adj;Warunkian;;warunker;;;;;;;;;;;x
 b_warunk_2;Warunk;Warunk;Warunk;;Warunk;;;;;;;;;x
@@ -4213,6 +4375,10 @@ b_weissengau_3;Weissengau;Weissengau;Weissengau;;Weissengau;;;;;;;;;x
 b_weissengau_3_adj;Weissengian;;weissenger;;;;;;;;;;;x
 b_weissengau_4;Weissengau;Weissengau;Weissengau;;Weissengau;;;;;;;;;x
 b_weissengau_4_adj;Weissengian;;weissenger;;;;;;;;;;;x
+b_weissenstein;Weissenstein;Weissenstein;Weissenstein;;Weissenstein;;;;;;;;;x
+b_weissenstein_adj;Weissensteinian;;weissensteiner;;;;;;;;;;;x
+b_weizengrund;Weizengrund;Weizengrund;Weizengrund;;Weizengrund;;;;;;;;;x
+b_weizengrund_adj;Weizengrundian;;weizengrunder;;;;;;;;;;;x
 b_wengenholm;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
 b_wengenholm_adj;Wengenholmian;;wengenholmer;;;;;;;;;;;x
 b_wengenholm_2;Wengenholm;Wengenholm;Wengenholm;;Wengenholm;;;;;;;;;x
@@ -4277,6 +4443,8 @@ b_wettershag_3;Wettershag;Wettershag;Wettershag;;Wettershag;;;;;;;;;x
 b_wettershag_3_adj;Wettershagian;;wettershager;;;;;;;;;;;x
 b_wettershag_4;Wettershag;Wettershag;Wettershag;;Wettershag;;;;;;;;;x
 b_wettershag_4_adj;Wettershagian;;wettershager;;;;;;;;;;;x
+b_weyring;Weyring;Weyring;Weyring;;Weyring;;;;;;;;;x
+b_weyring_adj;Weyringian;;weyringer;;;;;;;;;;;x
 b_weyringen;Weyringen;Weyringen;Weyringen;;Weyringen;;;;;;;;;x
 b_weyringen_adj;Weyringenian;;weyringener;;;;;;;;;;;x
 b_weyringen_2;Weyringen;Weyringen;Weyringen;;Weyringen;;;;;;;;;x
@@ -4293,6 +4461,8 @@ b_widdernhall_3;Widdernhall;Widdernhall;Widdernhall;;Widdernhall;;;;;;;;;x
 b_widdernhall_3_adj;Widdernhallian;;widdernhaller;;;;;;;;;;;x
 b_widdernhall_4;Widdernhall;Widdernhall;Widdernhall;;Widdernhall;;;;;;;;;x
 b_widdernhall_4_adj;Widdernhallian;;widdernhaller;;;;;;;;;;;x
+b_wiesengrund;Wiesengrund;Wiesengrund;Wiesengrund;;Wiesengrund;;;;;;;;;x
+b_wiesengrund_adj;Wiesengrundian;;wiesengrunder;;;;;;;;;;;x
 b_willbergen;Willbergen;Willbergen;Willbergen;;Willbergen;;;;;;;;;x
 b_willbergen_adj;Willbergenian;;willbergener;;;;;;;;;;;x
 b_willbergen_2;Willbergen;Willbergen;Willbergen;;Willbergen;;;;;;;;;x
@@ -4341,6 +4511,8 @@ b_wolfenbinge_3;Wolfenbinge;Wolfenbinge;Wolfenbinge;;Wolfenbinge;;;;;;;;;x
 b_wolfenbinge_3_adj;Wolfenbingean;;wolfenbinger;;;;;;;;;;;x
 b_wolfenbinge_4;Wolfenbinge;Wolfenbinge;Wolfenbinge;;Wolfenbinge;;;;;;;;;x
 b_wolfenbinge_4_adj;Wolfenbingean;;wolfenbinger;;;;;;;;;;;x
+b_worringen;Worringen;Worringen;Worringen;;Worringen;;;;;;;;;x
+b_worringen_adj;Worringenian;;worringener;;;;;;;;;;;x
 b_yaisirabad;Yaisirabad;Yaisirabad;Yaisirabad;;Yaisirabad;;;;;;;;;x
 b_yaisirabad_adj;Yaisirabadian;;yaisirabader;;;;;;;;;;;x
 b_yaisirabad_2;Yaisirabad;Yaisirabad;Yaisirabad;;Yaisirabad;;;;;;;;;x
@@ -4397,6 +4569,8 @@ b_ylvidoch_3;Ylvidoch;Ylvidoch;Ylvidoch;;Ylvidoch;;;;;;;;;x
 b_ylvidoch_3_adj;Ylvidochian;;ylvidocher;;;;;;;;;;;x
 b_ylvidoch_4;Ylvidoch;Ylvidoch;Ylvidoch;;Ylvidoch;;;;;;;;;x
 b_ylvidoch_4_adj;Ylvidochian;;ylvidocher;;;;;;;;;;;x
+b_yossenfels;Yossenfels;Yossenfels;Yossenfels;;Yossenfels;;;;;;;;;x
+b_yossenfels_adj;Yossenfelsian;;yossenfelser;;;;;;;;;;;x
 b_zackenberg;Zackenberg;Zackenberg;Zackenberg;;Zackenberg;;;;;;;;;x
 b_zackenberg_adj;Zackenbergian;;zackenberger;;;;;;;;;;;x
 b_zackenberg_2;Zackenberg;Zackenberg;Zackenberg;;Zackenberg;;;;;;;;;x
@@ -4409,10 +4583,6 @@ b_zagbar;Zagbar;Zagbar;Zagbar;;Zagbar;;;;;;;;;x
 b_zagbar_adj;Zagbarian;;zagbarer;;;;;;;;;;;x
 b_zagbar_2;Zagbar;Zagbar;Zagbar;;Zagbar;;;;;;;;;x
 b_zagbar_2_adj;Zagbarian;;zagbarer;;;;;;;;;;;x
-b_zagbar_3;Zagbar;Zagbar;Zagbar;;Zagbar;;;;;;;;;x
-b_zagbar_3_adj;Zagbarian;;zagbarer;;;;;;;;;;;x
-b_zagbar_4;Zagbar;Zagbar;Zagbar;;Zagbar;;;;;;;;;x
-b_zagbar_4_adj;Zagbarian;;zagbarer;;;;;;;;;;;x
 b_zalgo;Zalgo;Zalgo;Zalgo;;Zalgo;;;;;;;;;x
 b_zalgo_adj;Zalgian;;zalger;;;;;;;;;;;x
 b_zalgo_2;Zalgo;Zalgo;Zalgo;;Zalgo;;;;;;;;;x
@@ -4421,6 +4591,8 @@ b_zalgo_3;Zalgo;Zalgo;Zalgo;;Zalgo;;;;;;;;;x
 b_zalgo_3_adj;Zalgian;;zalger;;;;;;;;;;;x
 b_zalgo_4;Zalgo;Zalgo;Zalgo;;Zalgo;;;;;;;;;x
 b_zalgo_4_adj;Zalgian;;zalger;;;;;;;;;;;x
+b_zankenblatt;Zankenblatt;Zankenblatt;Zankenblatt;;Zankenblatt;;;;;;;;;x
+b_zankenblatt_adj;Zankenblattian;;zankenblatter;;;;;;;;;;;x
 b_zinobab;Zinobab;Zinobab;Zinobab;;Zinobab;;;;;;;;;x
 b_zinobab_adj;Zinobabian;;zinobaber;;;;;;;;;;;x
 b_zinobab_2;Zinobab;Zinobab;Zinobab;;Zinobab;;;;;;;;;x
@@ -4453,6 +4625,8 @@ b_zossberg_3;Zossberg;Zossberg;Zossberg;;Zossberg;;;;;;;;;x
 b_zossberg_3_adj;Zossbergian;;zossberger;;;;;;;;;;;x
 b_zossberg_4;Zossberg;Zossberg;Zossberg;;Zossberg;;;;;;;;;x
 b_zossberg_4_adj;Zossbergian;;zossberger;;;;;;;;;;;x
+b_zweifelsfels;Zweifelsfels;Zweifelsfels;Zweifelsfels;;Zweifelsfels;;;;;;;;;x
+b_zweifelsfels_adj;Zweifelsfelsian;;zweifelsfelser;;;;;;;;;;;x
 b_zweimuehlen;Zweimühlen;Zweimühlen;Zweimühlen;;Zweimühlen;;;;;;;;;x
 b_zweimuehlen_adj;Zweimühlenian;;zweimühlener;;;;;;;;;;;x
 b_zweimuehlen_2;Zweimühlen;Zweimühlen;Zweimühlen;;Zweimühlen;;;;;;;;;x
@@ -4469,6 +4643,8 @@ b_zwerch_3;Zwerch;Zwerch;Zwerch;;Zwerch;;;;;;;;;x
 b_zwerch_3_adj;Zwerchian;;zwercher;;;;;;;;;;;x
 b_zwerch_4;Zwerch;Zwerch;Zwerch;;Zwerch;;;;;;;;;x
 b_zwerch_4_adj;Zwerchian;;zwercher;;;;;;;;;;;x
+b_zwingzahn;Zwingzahn;Zwingzahn;Zwingzahn;;Zwingzahn;;;;;;;;;x
+b_zwingzahn_adj;Zwingzahnian;;zwingzahner;;;;;;;;;;;x
 b_zwischenwasser;Zwischenwasser;Zwischenwasser;Zwischenwasser;;Zwischenwasser;;;;;;;;;x
 b_zwischenwasser_adj;Zwischenwasserian;;zwischenwasserer;;;;;;;;;;;x
 b_zwischenwasser_2;Zwischenwasser;Zwischenwasser;Zwischenwasser;;Zwischenwasser;;;;;;;;;x

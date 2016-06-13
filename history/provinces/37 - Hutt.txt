@@ -4,12 +4,14 @@
 title = c_hutt
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
 b_hutt = castle
-#b_hutt_2 = city
-#b_hutt_3 = temple
-#b_hutt_4 = castle
+b_ebenhain = castle
+b_dorp = city
+b_hutt_2 = city
+b_hutt_3 = temple
+#b_hutt_4 = temple
 
 # Misc
 culture = garethi

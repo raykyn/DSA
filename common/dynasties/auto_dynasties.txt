@@ -112,3 +112,57 @@
 	used_for_random = no
 }
 
+20 = {
+	name = "von Eychgras"
+	culture = garethi
+	used_for_random = no
+}
+
+21 = {
+	name = "von Quintian-Quandt"
+	culture = garethi
+	used_for_random = no
+}
+
+22 = {
+	name = "von Natzungen"
+	culture = garethi
+	used_for_random = no
+}
+
+23 = {
+	name = "von Hartsteen"
+	culture = garethi
+	used_for_random = no
+}
+
+24 = {
+	name = "Vierock"
+	culture = garethi
+	used_for_random = no
+}
+
+25 = {
+	name = "Zweihammer"
+	culture = hill_d
+	used_for_random = no
+}
+
+26 = {
+	name = "von Erlenstamm"
+	culture = garethi
+	used_for_random = no
+}
+
+27 = {
+	name = "von Ruchin"
+	culture = garethi
+	used_for_random = no
+}
+
+28 = {
+	name = "von Ochs"
+	culture = garethi
+	used_for_random = no
+}
+

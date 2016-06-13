@@ -4,12 +4,14 @@
 title = c_ingerimmsschlund
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
-b_ingerimmsschlund = castle
-#b_ingerimmsschlund_2 = city
-#b_ingerimmsschlund_3 = temple
-#b_ingerimmsschlund_4 = castle
+b_amselhag = castle
+b_alberburg = castle
+b_wandleth = city
+b_fandolesch = city
+#b_ingerimmsschlund = city
+#b_ingerimmsschlund_2 = temple
 
 # Misc
 culture = garethi

@@ -4,12 +4,14 @@
 title = c_reichsgau
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
-b_reichsgau = castle
-#b_reichsgau_2 = city
-#b_reichsgau_3 = temple
-#b_reichsgau_4 = castle
+b_zwingzahn = castle
+b_weizengrund = castle
+b_horeth = city
+b_gassel = city
+b_sancta_noiona = temple
+#b_reichsgau = temple
 
 # Misc
 culture = garethi

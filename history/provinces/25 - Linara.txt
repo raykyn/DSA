@@ -4,12 +4,15 @@
 title = c_linara
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_linara = castle
-#b_linara_2 = city
-#b_linara_3 = temple
-#b_linara_4 = castle
+b_rallerwacht = castle
+b_leustein = castle
+b_ueberdiebreite = city
+b_bitani = city
+b_leuental = castle
+#b_linara = temple
+#b_linara_2 = castle
 
 # Misc
 culture = garethi

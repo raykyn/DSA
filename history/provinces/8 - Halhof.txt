@@ -4,12 +4,15 @@
 title = c_halhof
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_halhof = castle
-#b_halhof_2 = city
-#b_halhof_3 = temple
-#b_halhof_4 = castle
+b_lichterneck = castle
+b_merun = city
+b_steynebruk = city
+b_eychgras = city
+b_rior = city
+b_sanct_therbun = temple
+#b_halhof = castle
 
 # Misc
 culture = garethi

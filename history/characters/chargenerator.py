@@ -12,12 +12,12 @@ outfile = 'auto_chars.txt'
 
 def applytitle(id,title):
 
-    if isinstance(title,str):
+    if len(title) == 1:
         event = "\n\tholder = " + id
         newcontent = title_starts + " = {" + event + "\n}\n"
         
         
-        with open(titlepath + title + ".txt", "r") as f:
+        with open(titlepath + title[0] + ".txt", "r") as f:
             content = f.read()
             x = content.find(title_starts)
 
@@ -29,7 +29,7 @@ def applytitle(id,title):
                 re.sub(title_starts + r' = {\n\t.+\n}', newcontent, content)
                 f.write(content)
                 
-    elif isinstance(title,list):
+    elif len(title) == 2:
         titlename = title[0]
         date = title[1]
         
@@ -147,13 +147,13 @@ with open(outfile, 'w') as f:
             
             if other >= 1:
                 f.write("\n\t" + other)
-                
+            
+            f.write("\n\t%s = {death=yes}"%(death))
+            
             if comments >= 1:
                 comments = comments.split()
                 for comment in comments:
-                    f.write("#" + comment)
-            
-            f.write("\n\t%s = {death=yes}"%(death))
+                    f.write("\n\t#" + comment)
             
             f.write("\n}\n\n")
             

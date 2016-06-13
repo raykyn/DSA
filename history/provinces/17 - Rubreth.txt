@@ -4,12 +4,15 @@
 title = c_rubreth
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_rubreth = castle
-#b_rubreth_2 = city
-#b_rubreth_3 = temple
-#b_rubreth_4 = castle
+b_cresseneck = castle
+b_grollenburg = castle
+b_rubreth = city
+b_waldwiesen = city
+b_sonnenau = temple
+#b_rubreth_2 = temple
+#b_rubreth_3 = castle
 
 # Misc
 culture = garethi

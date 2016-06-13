@@ -6,10 +6,10 @@ title = c_viehwiesen
 # Settlements
 max_settlements = 4
 
-b_viehwiesen = castle
-#b_viehwiesen_2 = city
-#b_viehwiesen_3 = temple
-#b_viehwiesen_4 = castle
+b_ox = castle
+b_oberdachsburg = castle
+b_sanct_ogdolf = temple
+#b_viehwiesen = castle
 
 # Misc
 culture = garethi
