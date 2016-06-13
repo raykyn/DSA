@@ -1,0 +1,28 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_trait_race_elf"
+        texturefile = "gfx/traits/race_elf.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    
+    spriteType = {
+        name = "GFX_trait_race_dwarf"
+        texturefile = "gfx/traits/race_dwarf.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_trait_mage"
+        texturefile = "gfx/traits/mage.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+
+}

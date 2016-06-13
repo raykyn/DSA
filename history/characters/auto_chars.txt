@@ -52,10 +52,10 @@
 	dynasty = 1
 	father = 2
 	mother = 3
+	add_trait = mage
 	1008.06.26 = {birth=yes}
 	
 	1076.12.06 = {death=yes}
-	#mage
 }
 
 6 = {
@@ -363,11 +363,10 @@
 	religion = puniner 
 	culture = mead_elves
 	dynasty = 18
+	add_trait = race_elf
 	946.12.24 = {birth=yes}
 	
 	1050.01.01 = {death=yes}
-	#elf
-	#make_immortal
 	#religion_needs_change
 }
 
@@ -485,12 +484,10 @@
 	culture = hill_d
 	dynasty = 25
 	father = 45
+	add_trait = race_dwarf
 	802.12.18 = {birth=yes}
 	
 	1050.01.01 = {death=yes}
-	#dwarf
-	#make_immortal
-	#more_health
 }
 
 45 = {
@@ -498,12 +495,10 @@
 	religion = angrosch 
 	culture = hill_d
 	dynasty = 25
+	add_trait = race_dwarf
 	643.01.01 = {birth=yes}
 	
 	880.01.01 = {death=yes}
-	#dwarf
-	#make_immortal
-	#more_health
 }
 
 46 = {
@@ -512,13 +507,10 @@
 	culture = hill_d
 	dynasty = 25
 	father = 45
+	add_trait = race_dwarf
 	840.01.01 = {birth=yes}
 	
 	1050.01.01 = {death=yes}
-	#dwarf
-	#make_immortal
-	#more_health
-	#priest(Angrosch)
 }
 
 47 = {
@@ -573,7 +565,6 @@
 	977.01.01 = {birth=yes}
 	
 	1050.01.01 = {death=yes}
-	#priestess(Phex)
 }
 
 52 = {
@@ -616,10 +607,10 @@
 	culture = garethi
 	dynasty = 28
 	father = 56
+	add_trait = mage
 	989.01.01 = {birth=yes}
 	
 	1050.01.01 = {death=yes}
-	#mage
 }
 
 56 = {

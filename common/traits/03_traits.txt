@@ -1,0 +1,61 @@
+########################################################################################################
+# WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
+########################################################################################################
+
+race_elf = {
+    inherit_chance = 50
+    
+    both_parent_has_trait_inherit_chance = 100
+    
+    immortal = yes
+    
+    sex_appeal_opinion = 30
+
+    fertility = -0.5 #To be discussed
+    
+    diplomacy = 1
+    
+    same_opinion = 10
+    
+    health = 2.0
+	
+	female_compliment = COMPL_BEAUTY
+	female_compliment_adj = COMPL_FAIR
+	male_compliment = COMPL_CHARMER
+	male_compliment_adj = COMPL_HANDSOME
+	child_compliment_adj = COMPL_PRETTY
+    
+    random = no
+}
+
+race_dwarf = {
+    inherit_chance = 50
+    
+    both_parent_has_trait_inherit_chance = 100
+
+    immortal = yes
+    
+    same_opinion = 10
+    
+    fertility = -0.5 #To be discussed
+    
+    health = 2.0
+    
+    random = no
+}
+
+mage = { #maybe differentiate the guilds?
+    diplomacy = 1
+    martial = 1
+    intrigue = 2
+    learning = 5
+
+    same_opinion = 5
+    
+    ai_ambition = 10
+    
+    male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	male_compliment_adj = COMPL_WISE
+	female_compliment_adj = COMPL_WISE
+}
