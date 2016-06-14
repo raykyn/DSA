@@ -1,0 +1,18 @@
+# c_zalgo
+
+# County Title
+title = c_zalgo
+
+# Settlements
+max_settlements = 4
+
+b_schmalfurt = castle
+b_schmalfurt_2 = city
+#b_zalgo = temple
+#b_zalgo_2 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

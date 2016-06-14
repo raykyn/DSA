@@ -1,0 +1,19 @@
+# c_quastenbroich
+
+# County Title
+title = c_quastenbroich
+
+# Settlements
+max_settlements = 5
+
+b_quastenbroich = castle
+b_quastenbroich_2 = city
+#b_quastenbroich_3 = temple
+#b_quastenbroich_4 = castle
+#b_quastenbroich_5 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

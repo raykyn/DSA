@@ -1,0 +1,20 @@
+# c_greifenberg
+
+# County Title
+title = c_greifenberg
+
+# Settlements
+max_settlements = 6
+
+b_pechackern = castle
+b_hundsgrab = city
+b_brandons_honor = temple
+b_greifenberg = city
+#b_greifenberg_2 = city
+#b_greifenberg_3 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

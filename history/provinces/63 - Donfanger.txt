@@ -1,0 +1,19 @@
+# c_donfanger
+
+# County Title
+title = c_donfanger
+
+# Settlements
+max_settlements = 5
+
+b_donfanger = castle
+b_donfanger_2 = city
+#b_donfanger_3 = temple
+#b_donfanger_4 = castle
+#b_donfanger_5 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

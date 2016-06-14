@@ -1,0 +1,20 @@
+# c_weihenhorst
+
+# County Title
+title = c_weihenhorst
+
+# Settlements
+max_settlements = 6
+
+b_weihenhorst = castle
+b_kraehenhorst = castle
+b_schattenberg = castle
+b_foehrenstein = castle
+#b_weihenhorst_2 = city
+#b_weihenhorst_3 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

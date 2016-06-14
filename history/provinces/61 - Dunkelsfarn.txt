@@ -1,0 +1,20 @@
+# c_dunkelsfarn
+
+# County Title
+title = c_dunkelsfarn
+
+# Settlements
+max_settlements = 6
+
+b_dunkelsfarn = castle
+b_reichsweg = city
+b_dunkelsfarn_2 = city
+#b_dunkelsfarn_3 = castle
+#b_dunkelsfarn_4 = city
+#b_dunkelsfarn_5 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

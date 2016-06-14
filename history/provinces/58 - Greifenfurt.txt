@@ -1,0 +1,18 @@
+# c_greifenfurt
+
+# County Title
+title = c_greifenfurt
+
+# Settlements
+max_settlements = 4
+
+b_halmengarth = castle
+b_greifenfurt = city
+b_syllenwies = city
+#b_greifenfurt_2 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

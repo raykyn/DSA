@@ -1,0 +1,20 @@
+# c_hasenfeld
+
+# County Title
+title = c_hasenfeld
+
+# Settlements
+max_settlements = 6
+
+b_haagenstein = castle
+b_haagenrode = city
+b_waldalriksrode = city
+#b_hasenfeld = castle
+#b_hasenfeld_2 = city
+#b_hasenfeld_3 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

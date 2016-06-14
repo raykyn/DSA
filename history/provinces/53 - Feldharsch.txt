@@ -1,0 +1,19 @@
+# c_feldharsch
+
+# County Title
+title = c_feldharsch
+
+# Settlements
+max_settlements = 5
+
+b_kaiserley = castle
+b_feldharsch = city
+b_perainefried = temple
+#b_feldharsch_2 = castle
+#b_feldharsch_3 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

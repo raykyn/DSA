@@ -1,0 +1,19 @@
+# c_greifenhorst
+
+# County Title
+title = c_greifenhorst
+
+# Settlements
+max_settlements = 5
+
+b_orkenwacht = castle
+b_greifenhorst = city
+#b_greifenhorst_2 = temple
+#b_greifenhorst_3 = castle
+#b_greifenhorst_4 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

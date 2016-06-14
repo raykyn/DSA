@@ -1,0 +1,19 @@
+# c_hesindelburg
+
+# County Title
+title = c_hesindelburg
+
+# Settlements
+max_settlements = 5
+
+b_hesindelburg = castle
+b_rabenhorst = temple
+#b_hesindelburg_2 = temple
+#b_hesindelburg_3 = castle
+#b_hesindelburg_4 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

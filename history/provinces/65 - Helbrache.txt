@@ -1,0 +1,20 @@
+# c_helbrache
+
+# County Title
+title = c_helbrache
+
+# Settlements
+max_settlements = 6
+
+b_helberge = castle
+b_waldrast = city
+b_emmeranstreu = temple
+#b_helbrache = castle
+#b_helbrache_2 = city
+#b_helbrache_3 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

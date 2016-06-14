@@ -1,0 +1,20 @@
+# c_kressenburg
+
+# County Title
+title = c_kressenburg
+
+# Settlements
+max_settlements = 6
+
+b_kressenburg = castle
+b_kressenburg_2 = city
+b_sanct_therbun_2 = temple
+#b_kressenburg_3 = castle
+#b_kressenburg_4 = city
+#b_kressenburg_5 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

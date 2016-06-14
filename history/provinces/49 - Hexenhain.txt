@@ -1,0 +1,20 @@
+# c_hexenhain
+
+# County Title
+title = c_hexenhain
+
+# Settlements
+max_settlements = 6
+
+b_weissenfels = castle
+b_hexenhain = city
+b_scraan_on_the_blue_laach = temple
+#b_hexenhain_2 = castle
+#b_hexenhain_3 = city
+#b_hexenhain_4 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

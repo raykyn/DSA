@@ -1,0 +1,19 @@
+# c_finsterkamm
+
+# County Title
+title = c_finsterkamm
+
+# Settlements
+max_settlements = 5
+
+b_finster = castle
+b_beldenheim = city
+#b_finsterkamm = temple
+#b_finsterkamm_2 = castle
+#b_finsterkamm_3 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

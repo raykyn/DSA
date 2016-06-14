@@ -1,0 +1,19 @@
+# c_nebelstein
+
+# County Title
+title = c_nebelstein
+
+# Settlements
+max_settlements = 5
+
+b_orkentrutz = castle
+b_keilholtz = castle
+#b_nebelstein = temple
+#b_nebelstein_2 = castle
+#b_nebelstein_3 = city
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

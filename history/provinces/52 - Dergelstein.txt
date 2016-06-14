@@ -1,0 +1,20 @@
+# c_dergelstein
+
+# County Title
+title = c_dergelstein
+
+# Settlements
+max_settlements = 6
+
+b_gruenwarte = castle
+b_dergelstein = city
+b_pilzhain = castle
+b_schnayttach = city
+#b_dergelstein_2 = city
+#b_dergelstein_3 = temple
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History

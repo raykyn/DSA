@@ -1,0 +1,21 @@
+# c_eslamsroden
+
+# County Title
+title = c_eslamsroden
+
+# Settlements
+max_settlements = 7
+
+b_eslamsroden = castle
+b_eslamsroden_2 = city
+b_orkenwall = castle
+b_orkenwall_2 = city
+b_the_four_merciful_sisters = temple
+#b_eslamsroden_3 = temple
+#b_eslamsroden_4 = castle
+
+# Misc
+culture = garethi
+religion = puniner
+terrain = farmlands
+#History
