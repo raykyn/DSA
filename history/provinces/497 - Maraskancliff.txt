@@ -12,7 +12,7 @@ b_maraskancliff = castle
 #b_maraskancliff_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History

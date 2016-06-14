@@ -4,15 +4,17 @@
 title = c_weissbarun
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
-b_weissbarun = castle
-#b_weissbarun_2 = city
-#b_weissbarun_3 = temple
-#b_weissbarun_4 = castle
+b_ferkinaschreck = castle
+b_barbenwehr = castle
+b_hordenberg = city
+b_gerbental = city
+#b_weissbarun = city
+#b_weissbarun_2 = temple
 
 # Misc
-culture = garethi
+culture = nebachot
 religion = puniner
 terrain = farmlands
 #History

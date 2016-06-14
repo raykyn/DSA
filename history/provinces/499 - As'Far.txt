@@ -12,7 +12,7 @@ b_asfar = castle
 #b_asfar_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History

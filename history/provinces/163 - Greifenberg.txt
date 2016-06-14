@@ -4,12 +4,14 @@
 title = c_greifenberg
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
-b_greifenberg = castle
+b_pechackern = castle
+b_hundsgrab = city
+b_brandons_honor = temple
+b_greifenberg = city
 #b_greifenberg_2 = city
 #b_greifenberg_3 = temple
-#b_greifenberg_4 = castle
 
 # Misc
 culture = meadows

@@ -4,12 +4,14 @@
 title = c_sturmfels
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
+b_zillingen = castle
 b_sturmfels = castle
+b_alriksburg = city
+b_silent_keepers = temple
 #b_sturmfels_2 = city
 #b_sturmfels_3 = temple
-#b_sturmfels_4 = castle
 
 # Misc
 culture = garethi

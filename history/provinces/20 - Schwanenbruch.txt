@@ -7,12 +7,12 @@ title = c_schwanenbruch
 max_settlements = 7
 
 b_seeblick = castle
+b_hirschfurt = city
 b_schwanenbruch = city
 b_seytnach = city
 b_uslenried = city
-#b_schwanenbruch_2 = city
-#b_schwanenbruch_3 = temple
-#b_schwanenbruch_4 = castle
+#b_schwanenbruch_2 = temple
+#b_schwanenbruch_3 = castle
 
 # Misc
 culture = garethi

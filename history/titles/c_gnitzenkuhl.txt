@@ -6,3 +6,7 @@
 800.1.1={
 	liege=d_perricum
 }
+1026.1.1 = {
+	holder = 95
+}
+

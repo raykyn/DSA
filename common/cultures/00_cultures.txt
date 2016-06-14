@@ -1333,6 +1333,42 @@ aranians = {
 
     	modifier = default_culture_modifier
 	}
+    
+    nebachot = {
+		color = { 0.79 0.08 0.52 }
+	
+		male_names = {
+			Abubrecht Abdulon Amirwolf Beyhelm Djafardeon Dscheridan Farukol Hamarbald Harunian Jikhbald Marwamir Melekhelm Mukarribald
+			Narebold Omjaralf Retoban Rohaldor Selimwar Shabobert Shafifiro	Sultanor Tullefried Yussufried
+		}
+	
+		female_names = {
+			Aischanka Aylalind Ayshulianne Azizelis Dunjanild Emerbeth Fayrieke Gazalinde Halimyanis Hildebeth Ishannah Jushiberta Lailalinde
+			Nedimsira Neraidane Perainibith Rashpatane Rhayadaque Shilaldara Shulamunde Shulinai Sulajmaid
+			Sybia Yullabethild Zulhaminai
+		}
+	
+		dukes_called_kings = no
+    	baron_titles_hidden = yes
+    	count_titles_hidden = yes
+        
+    	from_dynasty_prefix = "han "
+    	male_patronym = "son "
+    	female_patronym = "son "
+    	prefix = yes 
+    
+    	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    	pat_grf_name_chance = 0
+    	mat_grf_name_chance = 0
+    	father_name_chance = 0
+        
+    	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    	pat_grm_name_chance = 0
+    	mat_grm_name_chance = 0
+    	mother_name_chance = 0
+
+    	modifier = default_culture_modifier
+	}
 }	
 	
 tulamids = {

@@ -4,12 +4,13 @@
 title = c_finsterkamm
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
-b_finsterkamm = castle
-#b_finsterkamm_2 = city
-#b_finsterkamm_3 = temple
-#b_finsterkamm_4 = castle
+b_finster = castle
+b_beldenheim = city
+#b_finsterkamm = temple
+#b_finsterkamm_2 = castle
+#b_finsterkamm_3 = city
 
 # Misc
 culture = meadows

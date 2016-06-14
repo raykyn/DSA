@@ -6,3 +6,13 @@
 800.1.1={
 	liege=d_greifenfurt
 }
+1027.1.1 = {
+	holder = 73
+}
+
+
+1035.1.1 = {
+	holder = 74
+}
+
+

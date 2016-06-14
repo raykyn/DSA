@@ -4,12 +4,14 @@
 title = c_dunkelsfarn
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 
 b_dunkelsfarn = castle
-#b_dunkelsfarn_2 = city
-#b_dunkelsfarn_3 = temple
-#b_dunkelsfarn_4 = castle
+b_reichsweg = city
+b_dunkelsfarn_2 = city
+#b_dunkelsfarn_3 = castle
+#b_dunkelsfarn_4 = city
+#b_dunkelsfarn_5 = temple
 
 # Misc
 culture = meadows

@@ -4,12 +4,13 @@
 title = c_hesindelburg
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
 b_hesindelburg = castle
-#b_hesindelburg_2 = city
-#b_hesindelburg_3 = temple
-#b_hesindelburg_4 = castle
+b_rabenhorst = temple
+#b_hesindelburg_2 = temple
+#b_hesindelburg_3 = castle
+#b_hesindelburg_4 = city
 
 # Misc
 culture = meadows

@@ -4,12 +4,13 @@
 title = c_greifenhorst
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
-b_greifenhorst = castle
-#b_greifenhorst_2 = city
-#b_greifenhorst_3 = temple
-#b_greifenhorst_4 = castle
+b_orkenwacht = castle
+b_greifenhorst = city
+#b_greifenhorst_2 = temple
+#b_greifenhorst_3 = castle
+#b_greifenhorst_4 = city
 
 # Misc
 culture = meadows

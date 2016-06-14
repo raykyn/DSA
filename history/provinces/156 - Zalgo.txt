@@ -6,10 +6,10 @@ title = c_zalgo
 # Settlements
 max_settlements = 4
 
-b_zalgo = castle
-#b_zalgo_2 = city
-#b_zalgo_3 = temple
-#b_zalgo_4 = castle
+b_schmalfurt = castle
+b_schmalfurt_2 = city
+#b_zalgo = temple
+#b_zalgo_2 = castle
 
 # Misc
 culture = meadows

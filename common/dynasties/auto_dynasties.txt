@@ -166,3 +166,171 @@
 	used_for_random = no
 }
 
+29 = {
+	name = "von Hasenfeld"
+	culture = garethi
+	used_for_random = no
+}
+
+30 = {
+	name = "von Arpitz"
+	culture = meadows
+	used_for_random = no
+}
+
+31 = {
+	name = "von Quastenbroich"
+	culture = garethi
+	used_for_random = no
+}
+
+32 = {
+	name = "von Keilholtz"
+	culture = garethi
+	used_for_random = no
+}
+
+33 = {
+	name = "vom Greifener Land"
+	culture = garethi
+	used_for_random = no
+}
+
+34 = {
+	name = "von Schelentorff"
+	culture = garethi
+	used_for_random = no
+}
+
+35 = {
+	name = "von Reiffenberg"
+	culture = garethi
+	used_for_random = no
+}
+
+36 = {
+	name = "Bernigandh"
+	culture = garethi
+	used_for_random = no
+}
+
+37 = {
+	name = "von Bredenhag"
+	culture = albernian
+	used_for_random = no
+}
+
+38 = {
+	name = "von Wertlingen"
+	culture = garethi
+	used_for_random = no
+}
+
+39 = {
+	name = "von Greifenhorst"
+	culture = garethi
+	used_for_random = no
+}
+
+40 = {
+	name = "von Nebelstein"
+	culture = garethi
+	used_for_random = no
+}
+
+41 = {
+	name = "von Eisslingern"
+	culture = garethi
+	used_for_random = no
+}
+
+42 = {
+	name = "von Radulfshausen"
+	culture = garethi
+	used_for_random = no
+}
+
+43 = {
+	name = "von Espengrund"
+	culture = garethi
+	used_for_random = no
+}
+
+44 = {
+	name = "von Dergelstein"
+	culture = garethi
+	used_for_random = no
+}
+
+45 = {
+	name = "Adersin"
+	culture = garethi
+	used_for_random = no
+}
+
+46 = {
+	name = "von Breitenquell"
+	culture = garethi
+	used_for_random = no
+}
+
+47 = {
+	name = "von Greifenberg"
+	culture = garethi
+	used_for_random = no
+}
+
+48 = {
+	name = "von Rabenmund"
+	culture = garethi
+	used_for_random = no
+}
+
+49 = {
+	name = "von Tikaris"
+	culture = garethi
+	used_for_random = no
+}
+
+50 = {
+	name = "von Sturmfels"
+	culture = garethi
+	used_for_random = no
+}
+
+51 = {
+	name = "von Waltern"
+	culture = garethi
+	used_for_random = no
+}
+
+52 = {
+	name = "Gizien'Chul"
+	culture = nebachot
+	used_for_random = no
+}
+
+53 = {
+	name = "Daren'Far"
+	culture = nebachot
+	used_for_random = no
+}
+
+54 = {
+	name = "Fir'Enock"
+	culture = nebachot
+	used_for_random = no
+}
+
+55 = {
+	name = "Beshir a Danal"
+	culture = nebachot
+	used_for_random = no
+}
+
+56 = {
+	name = "Paligan"
+	culture = garethi
+	used_for_random = no
+}
+

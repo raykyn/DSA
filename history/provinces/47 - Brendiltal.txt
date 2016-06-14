@@ -4,15 +4,18 @@
 title = c_brendiltal
 
 # Settlements
-max_settlements = 4
+max_settlements = 7
 
-b_brendiltal = castle
-#b_brendiltal_2 = city
-#b_brendiltal_3 = temple
-#b_brendiltal_4 = castle
+b_mantikorszahn = castle
+b_efferdsblick = castle
+b_brendiltal = city
+b_reichsgart = city
+b_praiseneck = temple
+#b_brendiltal_2 = temple
+#b_brendiltal_3 = castle
 
 # Misc
-culture = garethi
+culture = nebachot
 religion = puniner
 terrain = farmlands
 #History

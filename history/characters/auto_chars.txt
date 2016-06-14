@@ -618,8 +618,573 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 28
+	father = 92
 	963.01.01 = {birth=yes}
 	
 	1003.01.01 = {death=yes}
+}
+
+57 = {
+	name = "Yadvige"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 29
+	992.02.14 = {birth=yes}
+	
+	1034.02.04 = {death=yes}
+}
+
+58 = {
+	name = "Thargrîn"
+	female = yes
+	religion = puniner 
+	culture = meadows
+	dynasty = 30
+	1004.07.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+59 = {
+	name = "Felian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 31
+	1003.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+60 = {
+	name = "Faralda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 29
+	1000.05.19 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+61 = {
+	name = "Ardo"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	1009.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+62 = {
+	name = "Palinor"
+	religion = puniner 
+	culture = garethi
+	dynasty = 33
+	991.04.22 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+63 = {
+	name = "Tyrian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 34
+	993.08.28 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+64 = {
+	name = "Gerbald"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	975.09.24 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+65 = {
+	name = "Hilla"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 36
+	971.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+66 = {
+	name = "Renzi"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 36
+	mother = 65
+	1008.09.28 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+67 = {
+	name = "Avrok"
+	religion = puniner 
+	culture = garethi
+	dynasty = 37
+	994.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+68 = {
+	name = "Irmenella"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	999.09.15 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+	#nickname_die_Greifin
+}
+
+69 = {
+	name = "Otwin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 39
+	985.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+70 = {
+	name = "Gerion"
+	religion = puniner 
+	culture = garethi
+	dynasty = 39
+	father = 69
+	1015.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+71 = {
+	name = "Tilldan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 40
+	984.07.12 = {birth=yes}
+	
+	1034.01.01 = {death=yes}
+}
+
+72 = {
+	name = "Fürchtewol"
+	religion = puniner 
+	culture = garethi
+	dynasty = 41
+	989.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+73 = {
+	name = "Herdan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	996.01.01 = {birth=yes}
+	
+	1034.01.01 = {death=yes}
+}
+
+74 = {
+	name = "Karminia"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 42
+	1005.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+75 = {
+	name = "Duana"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 43
+	1011.09.18 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+76 = {
+	name = "Gunilde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 44
+	994.12.09 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+77 = {
+	name = "Jasline"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 44
+	mother = 76
+	1022.04.02 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+78 = {
+	name = "Bernhelm"
+	religion = puniner 
+	culture = garethi
+	dynasty = 45
+	father = 80
+	1008.07.14 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+79 = {
+	name = "Fredo"
+	religion = puniner 
+	culture = garethi
+	dynasty = 45
+	add_trait = zealous
+	957.01.07 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+80 = {
+	name = "Gaismar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 45
+	father = 79
+	979.06.05 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+81 = {
+	name = "Greifwin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	1007.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+82 = {
+	name = "Trär"
+	religion = puniner 
+	culture = garethi
+	dynasty = 46
+	973.01.01 = {birth=yes}
+	
+	1032.01.01 = {death=yes}
+}
+
+83 = {
+	name = "Thorn"
+	religion = puniner 
+	culture = garethi
+	dynasty = 46
+	father = 82
+	992.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+84 = {
+	name = "Duridanya"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 47
+	994.01.01 = {birth=yes}
+	1014.1.1 = {add_spouse=85}
+	1050.01.01 = {death=yes}
+}
+
+85 = {
+	name = "Ucurian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 48
+	997.07.14 = {birth=yes}
+	1014.1.1 = {add_spouse=84}
+	1050.01.01 = {death=yes}
+}
+
+86 = {
+	name = "Amrei"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 48
+	father = 85
+	mother = 84
+	1015.08.14 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+87 = {
+	name = "Zordian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 49
+	1009.10.12 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+88 = {
+	name = "Korhilda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 50
+	997.05.10 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+89 = {
+	name = "Alrik"
+	religion = puniner 
+	culture = garethi
+	dynasty = 50
+	973.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+90 = {
+	name = "Wolfaran"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 91
+	mother = 88
+	1014.06.20 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+91 = {
+	name = "Leobrecht"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 92
+	976.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+92 = {
+	name = "Leobur"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	936.01.01 = {birth=yes}
+	
+	984.01.01 = {death=yes}
+}
+
+93 = {
+	name = "Gidiane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 51
+	990.03.21 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+94 = {
+	name = "Grimhild"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 51
+	mother = 93
+	1011.05.07 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+95 = {
+	name = "Geshla"
+	female = yes
+	religion = puniner 
+	culture = nebachot
+	dynasty = 52
+	1005.04.10 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+96 = {
+	name = "Ruffina"
+	female = yes
+	religion = puniner 
+	culture = nebachot
+	dynasty = 53
+	965.07.22 = {birth=yes}
+	
+	1037.01.01 = {death=yes}
+}
+
+97 = {
+	name = "Praiosmar"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 53
+	mother = 96
+	1003.01.01 = {birth=yes}
+	
+	1036.01.01 = {death=yes}
+}
+
+98 = {
+	name = "Rimiona"
+	female = yes
+	religion = puniner 
+	culture = nebachot
+	dynasty = 53
+	mother = 96
+	1004.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+99 = {
+	name = "Thorondir"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 53
+	mother = 99
+	1019.08.25 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+100 = {
+	name = "Simold"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 54
+	father = 101
+	997.07.02 = {birth=yes}
+	
+	1037.01.01 = {death=yes}
+}
+
+101 = {
+	name = "Kasim"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 54
+	973.07.12 = {birth=yes}
+	
+	1021.07.25 = {death=yes}
+}
+
+102 = {
+	name = "Ariana"
+	female = yes
+	religion = puniner 
+	culture = nebachot
+	dynasty = 54
+	father = 101
+	995.06.30 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+103 = {
+	name = "Siyandor"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 54
+	mother = 102
+	1025.08.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+104 = {
+	name = "Eslam"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 55
+	975.07.08 = {birth=yes}
+	
+	1039.01.01 = {death=yes}
+}
+
+105 = {
+	name = "Martok"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 55
+	father = 104
+	1005.02.17 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+106 = {
+	name = "Rondrigan"
+	religion = alanfaner 
+	culture = garethi
+	dynasty = 56
+	father = 108
+	1005.12.02 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+107 = {
+	name = "Maia"
+	female = yes
+	religion = alanfaner 
+	culture = garethi
+	dynasty = 56
+	father = 108
+	add_trait = bastard
+	997.05.16 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
+108 = {
+	name = "Timshal"
+	religion = alanfaner 
+	culture = garethi
+	dynasty = 56
+	983.07.07 = {birth=yes}
+	
+	1021.01.01 = {death=yes}
 }
 

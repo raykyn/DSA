@@ -4,12 +4,13 @@
 title = c_breitenbruck
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
 b_breitenbruck = castle
-#b_breitenbruck_2 = city
+b_breitenbruck_2 = city
 #b_breitenbruck_3 = temple
 #b_breitenbruck_4 = castle
+#b_breitenbruck_5 = city
 
 # Misc
 culture = meadows

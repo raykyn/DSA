@@ -12,7 +12,7 @@ b_charasim = castle
 #b_charasim_4 = castle
 
 # Misc
-culture = maraskan
+culture = maraskani
 religion = rur_gror
 terrain = farmlands
 #History
