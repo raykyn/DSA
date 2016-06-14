@@ -12,45 +12,50 @@ outfile = 'auto_chars.txt'
 
 def applytitle(id,title):
 
-    if len(title) == 1:
-        event = "\n\tholder = " + id
-        newcontent = title_starts + " = {" + event + "\n}\n"
-        
-        
-        with open(titlepath + title[0] + ".txt", "r") as f:
-            content = f.read()
-            x = content.find(title_starts)
+    try:
+        if len(title) == 1:
+            event = "\n\tholder = " + id
+            newcontent = title_starts + " = {" + event + "\n}\n"
+            
+            
+            with open(titlepath + title[0] + ".txt", "r") as f:
+                content = f.read()
+                x = content.find(title_starts)
 
-        if x == -1:
-            with open(titlepath + title + ".txt", "a") as f:
-                f.write(newcontent)
-        else:
-            with open(titlepath + title + ".txt", "w") as f:
-                re.sub(title_starts + r' = {\n\t.+\n}', newcontent, content)
-                f.write(content)
-                
-    elif len(title) == 2:
-        titlename = title[0]
-        date = title[1]
-        
-        event = "\n\tholder = " + id
-        newcontent = date + " = {" + event + "\n}\n"
-        
-        
-        with open(titlepath + titlename + ".txt", "r") as f:
-            content = f.read()
-            x = content.find(date)
+            if x == -1:
+                with open(titlepath + title + ".txt", "a") as f:
+                    f.write(newcontent)
+            else:
+                with open(titlepath + title + ".txt", "w") as f:
+                    re.sub(title_starts + r' = {\n\t.+\n}', newcontent, content)
+                    f.write(content)
+                    
+        elif len(title) == 2:
+            titlename = title[0]
+            date = title[1]
+            
+            event = "\n\tholder = " + id
+            newcontent = date + " = {" + event + "\n}\n"
+            
+            
+            with open(titlepath + titlename + ".txt", "r") as f:
+                content = f.read()
+                x = content.find(date)
 
-        if x == -1:
-            with open(titlepath + titlename + ".txt", "a") as f:
-                f.write(newcontent)
+            if x == -1:
+                with open(titlepath + titlename + ".txt", "a") as f:
+                    f.write(newcontent)
+            else:
+                with open(titlepath + titlename + ".txt", "w") as f:
+                    pattern = date + r' = {\n\t.+\n}'
+                    content = re.sub(pattern, newcontent, content)
+                    f.write(content)
         else:
-            with open(titlepath + titlename + ".txt", "w") as f:
-                pattern = date + r' = {\n\t.+\n}'
-                content = re.sub(pattern, newcontent, content)
-                f.write(content)
-    else:
-        print "something went wrong"
+            print "something went wrong"
+            
+    except:
+        with open("titlesnotfound.txt", "a") as f:
+            f.write("The title " + title[0] + " could not be found.\n")
             
     return None
 
