@@ -1,0 +1,149 @@
+
+decisions = {
+	recruit_troops_norse = {
+		potential = {
+			has_character_flag = raiding_adventurer
+			ai = yes
+			war = no
+			wealth = 100
+			NOT = { realm_levies = 6000 }
+			NOT = { government = nomadic_government }
+			OR = {
+				AND = {
+					year = 700
+					NOT = { year = 900 }
+					NOT = { realm_levies = 5500 }
+				}
+				AND = {
+					year = 900
+					NOT = { year = 1000 }
+					NOT = { realm_levies = 6100 }
+				}
+				AND = {
+					year = 1000
+					NOT = { year = 1100 }
+					NOT = { realm_levies = 6500 }
+				}
+				AND = {
+					year = 1100
+					NOT = { year = 1150 }
+					NOT = { realm_levies = 6800 }
+				}
+				AND = {
+					year = 1150
+					NOT = { year = 1200 }
+					NOT = { realm_levies = 7100 }
+				}
+				AND = {
+					year = 1200
+					NOT = { year = 1250 }
+					NOT = { realm_levies = 8500 }
+				}
+				AND = {
+					year = 1250
+					NOT = { realm_levies = 9800 }
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -75
+			spawn_unit = {
+				province = ROOT
+				owner = ROOT
+				leader = none
+				attrition = 0
+#				disband_on_peace = yes
+				reinforces = yes
+				is_looter = yes
+				can_toggle_looting = no
+				cannot_inherit = yes
+				troops = {
+					light_infantry = { 1 500 }
+					heavy_infantry = { 1 40 }
+					archers = { 1 200 }
+				}
+				merge = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+			}
+		}
+	}
+	recruit_troops_nomad = {
+		potential = {
+			has_character_flag = raiding_adventurer
+			ai = yes
+			war = no
+			wealth = 100
+			government = nomadic_government
+			OR = {
+				AND = {
+					year = 700
+					NOT = { year = 900 }
+					NOT = { realm_levies = 4000 }
+				}
+				AND = {
+					year = 900
+					NOT = { year = 1000 }
+					NOT = { realm_levies = 4400 }
+				}
+				AND = {
+					year = 1000
+					NOT = { year = 1100 }
+					NOT = { realm_levies = 4700 }
+				}
+				AND = {
+					year = 1100
+					NOT = { year = 1150 }
+					NOT = { realm_levies = 4900 }
+				}
+				AND = {
+					year = 1150
+					NOT = { year = 1200 }
+					NOT = { realm_levies = 5300 }
+				}
+				AND = {
+					year = 1200
+					NOT = { year = 1250 }
+					NOT = { realm_levies = 6100 }
+				}
+				AND = {
+					year = 1250
+					NOT = { realm_levies = 7600 }
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -75
+			spawn_unit = {
+				province = ROOT
+				owner = ROOT
+				leader = none
+				attrition = 0
+#				disband_on_peace = yes
+				reinforces = yes
+				is_looter = yes
+				can_toggle_looting = no
+				cannot_inherit = yes
+				troops = {
+					light_cavalry = { 1 250 }
+					horse_archers = { 1 250 }
+				}
+				merge = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+			}
+		}
+	}
+}

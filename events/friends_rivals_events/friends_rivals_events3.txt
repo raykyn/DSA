@@ -1,0 +1,4107 @@
+### My rival is homosexual! ###
+character_event = {
+	id = 100460
+	desc = EVTDESC100460
+	picture = GFX_evt_scandal
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_rivals = 1
+		any_rival = {
+			war = no
+			age = 16
+			in_command = no
+			prisoner = no
+			is_ruler = yes
+			OR = {
+				AND = {
+					is_female = no
+					ROOT = {
+						is_female = no
+					}
+				}
+				AND = {
+					is_female = yes
+					ROOT = {
+						is_female = yes
+					}
+				}
+			}		
+			trait = homosexual
+			num_of_vassals = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 2
+			trait = charitable
+		}
+	}
+	
+	option = {
+		name = EVTOTPA100460
+		random_rival = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				is_ruler = yes
+				OR = {
+					AND = {
+						is_female = no
+						ROOT = {
+							is_female = no
+						}
+					}
+					AND = {
+						is_female = yes
+						ROOT = {
+							is_female = yes
+						}
+					}
+				}
+				prisoner = no
+				trait = homosexual
+			}
+			any_vassal = {
+				limit = {
+					NOT = {
+						trait = homosexual
+					}
+				}
+				opinion = {
+					modifier = opinion_lost_respect
+					who = PREV
+					years = 5
+				}
+			}
+			character_event = {
+				id = 100461
+				tooltip = EVTTOOLTIP100461
+			}
+		}
+	}
+	option = {
+		name = EVTOTPB100460
+		if = {
+			limit = {
+				NOT = {
+					num_of_traits = 5
+				}
+				NOT = {
+					trait = kind
+				}
+			}
+			random = {
+				chance = 10
+				add_trait = kind
+				hidden_tooltip = {
+					character_event = {
+						id = 38268 #Notify Kind
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = kind
+				NOT = {
+					trait = patient
+				}
+			}
+			random = {
+				chance = 10
+				add_trait = patient
+				hidden_tooltip = {
+					character_event = {
+						id = 38264 #Notify Patient
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = kind
+				trait = patient
+			}
+			piety = 10
+		}
+	}
+	option = {
+		name = EVTOTPC100460
+		tooltip_info = homosexual
+		trigger = {
+			trait = homosexual
+		}
+		random_rival = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				is_ruler = yes
+				prisoner = no
+				trait = homosexual
+				OR = {
+					AND = {
+						is_female = no
+						ROOT = {
+							is_female = no
+						}
+					}
+					AND = {
+						is_female = yes
+						ROOT = {
+							is_female = yes
+						}
+					}
+				}
+			}
+			remove_rival = ROOT
+			character_event = {
+				id = 100462
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100462
+			}
+		}
+	}
+}
+
+#Rival is told about ROOT spreading rumours
+character_event = {
+	id = 100461
+	desc = EVTDESC100461
+	picture = GFX_evt_scandal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100461
+		opinion = {
+			modifier = opinion_revenge_seeker
+			who = FROM
+			years = 10
+		}
+	}
+}
+
+#No longer rivals
+character_event = {
+	id = 100462
+	desc = EVTDESC100462
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100462
+		remove_rival = FROM
+		opinion = {
+			modifier = opinion_very_grateful
+			who = FROM
+			years = 10
+		}
+	}
+}
+	
+### A rival of yours is so much beneath you that it seems a bit silly of you to hold him as an enemy ###	
+character_event = {
+	id = 100470
+	desc = EVTDESC100470
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 16
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_rivals = 1
+		NOT = {
+			has_character_modifier = recalculate_rivalry_modifier
+		}
+		any_rival = {
+			war = no
+			age = 16
+			in_command = no
+			is_ruler = yes
+			prisoner = no
+			same_sex = ROOT
+			lower_tier_than = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = recalculate_rivalry_modifier
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100470
+		random_rival = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				is_ruler = yes
+				prisoner = no
+				same_sex = ROOT
+				lower_tier_than = ROOT
+			}
+			remove_rival = ROOT
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+				}
+				reverse_remove_opinion = { who = ROOT modifier = opinion_revenge_seeker }
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 100471
+					days = 7
+					random = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100470
+		prestige = 10
+	}
+}
+
+#Rivals are no longer rivals?
+character_event = {
+	id = 100471
+	desc = EVTDESC100471
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {	
+		name = EVTOPTA100471
+		remove_rival = FROM
+	}
+	option = {	
+		name = EVTOPTB100471
+		FROM = {
+			character_event = {
+				id = 100472
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100472
+			}
+		}
+	}
+}
+
+#Rivalry continues
+character_event = {
+	id = 100472
+	desc = EVTDESC100472
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {	
+		name = EVTOPTA100472
+		add_rival = FROM
+	}
+}
+
+### Your rivalry to your liege is straining your commitment to your feudal duties ###
+character_event = {
+	id = 100480
+	desc = EVTDESC100480
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 16
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_rivals = 1
+		independent = no
+		liege = {
+			war = no
+			age = 16
+			in_command = no
+			prisoner = no
+			num_of_rivals = 1
+			any_rival = {
+				character = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		
+		modifier = {
+			factor = 2
+			trait = envious
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100480
+		any_liege = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				num_of_rivals = 1
+				prisoner = no
+				any_rival = {
+					character = ROOT
+				}
+			}
+			opinion = {
+				modifier = opinion_stubborn_rival
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100480
+		any_liege = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				num_of_rivals = 1
+				prisoner = no
+				any_rival = {
+					character = ROOT
+				}
+			}
+			reverse_opinion = {
+				modifier = opinion_respects_liege
+				who = ROOT
+				years = 10
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100480
+		any_liege = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				num_of_rivals = 1
+				prisoner = no
+				any_rival = {
+					character = ROOT
+				}
+			}
+			remove_rival = ROOT
+			letter_event = {
+				id = 100481
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100481
+			}				
+		}
+	}
+}
+
+#ROOT and Liege are no longer Rivals
+letter_event = {
+	id = 100481
+	desc = EVTDESC100481
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100481
+		remove_rival = FROM
+	}
+}
+
+### You have been made aware that your fierce rival is planning rebellious acts ###
+character_event = {
+	id = 100490
+	desc = EVTDESC100490
+	picture = GFX_evt_council
+	
+	min_age = 16
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		always = no # v1.07 Does not work with the new faction system
+		
+		war = no
+		in_command = no
+		num_of_rivals = 1
+		independent = no
+		is_plot_active = no
+		any_rival = {
+			war = no
+			age = 16
+			in_command = no
+			prisoner = no
+			is_plot_active = yes
+			is_ruler = yes
+			same_liege = ROOT
+			OR = {
+				leads_faction = faction_succ_seniority
+				leads_faction = faction_succ_primogeniture
+				leads_faction = faction_succ_gavelkind
+				leads_faction = faction_succ_feudal_elective
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		
+		modifier = {
+			factor = 2
+			trait = envious
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100490
+		random = {
+			chance = 10
+			if = {
+				limit = {
+					NOT = {
+						num_of_traits = 5
+					}
+					NOT = {
+							trait = ambitious
+						}
+					}
+				add_trait = ambitious
+				hidden_tooltip = {
+					character_event = {
+						id = 38278 #Notify Ambitious
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						num_of_traits = 5
+					}
+					trait = ambitious
+					NOT = {
+						trait = diligent
+					}
+				}
+				add_trait = diligent
+				hidden_tooltip = {
+					character_event = {
+						id = 38256 #Notify diligent
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							trait = ambitious
+							trait = diligent
+						}
+						num_of_traits = 4
+					}
+				}
+				change_intrigue = 1				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100490
+		random_rival = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				is_ruler = yes
+				same_liege = ROOT
+				prisoner = no
+				
+				OR = {
+					leads_faction = faction_succ_seniority
+					leads_faction = faction_succ_primogeniture
+					leads_faction = faction_succ_gavelkind
+					leads_faction = faction_succ_feudal_elective
+				}
+			}
+			if = {
+				limit = {
+					leads_faction = faction_succ_seniority
+				}
+				ROOT = {
+					back_plot = PREV
+				}
+			}
+			if = {
+				limit = {
+					leads_faction = faction_succ_primogeniture
+				}
+				ROOT = {
+					back_plot = PREV
+				}
+			}
+			if = {
+				limit = {
+					leads_faction = faction_succ_gavelkind
+				}
+				ROOT = {
+					back_plot = PREV
+				}
+			}
+			if = {
+				limit = {
+					leads_faction = faction_succ_feudal_elective
+				}
+				ROOT = {
+					back_plot = PREV
+				}
+			}
+			character_event = {
+				id = 100491
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100491
+			}
+		}
+	}
+}
+
+#Rival is told about ROOT backing the plot
+character_event = {
+	id = 100491
+	desc = EVTDESC100491
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100491
+		opinion = {
+			modifier = opinion_irritated
+			who = FROM
+			years = 2
+		}
+		FROM = {
+			character_event = {
+				id = 100492
+				tooltip = EVTTOOLTIP100492
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100491
+		tooltip = {
+			FROM = {
+				back_plot = ROOT
+			}
+		}
+		opinion = {
+			modifier = opinion_gained_respect
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+#ROOT leaves Rival's plot
+character_event = {
+	id = 100492
+	desc = EVTDESC100492
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100492
+		leave_plot = FROM
+	}
+}
+
+#Christian Rival decides if rivalry continues
+character_event = {
+	id = 100501
+	desc = EVTDESC100501
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100501
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.01
+				trait = cynical
+			}
+		}
+		remove_rival = FROM
+		FROM = {
+			character_event = {
+				id = 100502
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100502
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100501
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0.01
+				trait = zealous
+			}
+			modifier = {
+				factor = 10
+				trait = cynical
+			}
+		}
+		opinion = {
+			modifier = opinion_continued_rivalry
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			character_event = {
+				id = 100503
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100503
+			}
+		}
+	}
+}
+
+#ROOT learns Christian Rival decided rivalry discontinues
+character_event = {
+	id = 100502
+	desc = EVTDESC100502
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100502
+		remove_rival = FROM
+	}
+}
+
+#ROOT learns Christian Rival decided rivalry continues
+character_event = {
+	id = 100503
+	desc = EVTDESC100503
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100503
+		opinion = {
+			modifier = opinion_continued_rivalry
+			who = FROM
+			years = 5
+		}
+	}
+}
+
+### Root tries to wound rival during hunt ###
+character_event = {
+	id = 100510
+	desc = EVTDESC100510
+	picture = GFX_evt_hunt
+	
+	min_age = 16
+	capable_only = yes
+	only_rulers = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_rivals = 1
+		independent = no
+		NOT = {
+			has_character_flag = holding_grand_hunt
+		}
+		NOT = {
+			has_character_modifier = hunting_rival_timer
+		}
+		liege = {
+			war = no
+			in_command = no
+			is_abroad = no
+			has_character_flag = holding_grand_hunt
+		}
+		any_rival = {
+			war = no
+			age = 16
+			in_command = no
+			prisoner = no
+			same_liege = ROOT
+			NOT = {
+				trait = wounded
+			}
+			NOT = {
+				trait = maimed
+			}
+			NOT = {
+				has_character_flag = holding_grand_hunt
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		
+		modifier = {
+			factor = 2
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = hunting_rival_timer
+				duration = 2000
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100510
+		random_rival = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				prisoner = no
+				same_liege = ROOT
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				NOT = {
+					has_character_flag = holding_grand_hunt
+				}
+			}
+			random_list = {
+				65 = {
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+							days = 7
+							random = 7
+						}
+					}
+				}
+				20 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+				10 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+				5 = {
+					tooltip = {
+						death = {
+							death_reason = death_accident
+						}
+					}
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+			}
+		}	
+	}
+	option = {
+		name = EVTOPTB100510
+		trigger = {
+			scaled_wealth = 0.5
+			NOT = {
+				martial = 10
+			}
+			any_courtier = {
+				war = no
+				in_command = no
+				is_abroad = no
+				martial = 15
+			}
+		}
+		random_courtier = {
+			limit = {
+				war = no
+				in_command = no
+				is_abroad = no
+				martial = 15
+			}
+			ROOT = {
+				transfer_scaled_wealth = {
+					to = PREV
+					value = 0.25
+				}
+			}
+			tooltip = {
+				character_event = {
+					id = 100511
+					tooltip = EVTTOOLTIP100511
+				}
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				age = 16
+				in_command = no
+				prisoner = no
+				same_liege = ROOT
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				NOT = {
+					has_character_flag = holding_grand_hunt
+				}
+			}
+			random_list = {
+				40 = {
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+				30 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+				20 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+				10 = {
+					set_character_flag = rival_killed_me
+					tooltip = {
+						death = {
+							death_reason = death_accident
+						}
+					}
+					hidden_tooltip = {
+						character_event = {
+							id = 100511
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100510
+		random = {
+			chance = 10
+			character_event = {
+				id = 36010
+				days = 2
+				random = 8
+				tooltip = EVTTOOLTIP36010
+			}
+		}
+	}
+}
+
+#Rival is wounded/maimed/killed
+character_event = {
+	id = 100511
+	desc = EVTDESC100511
+	picture = GFX_evt_hunt
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100511
+		tooltip_info = wounded
+		trigger = {
+			trait = wounded
+		}
+		if = {
+			limit = {
+				intrigue = 10
+			}
+			opinion = {
+				modifier = opinion_revenge_seeker
+				who = FROM
+				years = 10
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100512
+						days = 7
+						random = 7
+						tooltip = EVTTOOLTIPA100512
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100512
+					days = 7
+					random = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100511
+		tooltip_info = maimed
+		trigger = {
+			trait = maimed
+		}
+		if = {
+			limit = {
+				intrigue = 10
+			}
+			opinion = {
+				modifier = opinion_revenge_seeker
+				who = FROM
+				years = 10
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100512
+						days = 7
+						random = 7
+						tooltip = EVTTOOLTIPA100512
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100512
+					days = 7
+					random = 7
+				}
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTC100511
+		trigger = {
+			has_character_flag = rival_killed_me
+		}
+		death = {
+			death_reason = death_accident
+		}
+		clr_character_flag = rival_killed_me
+		FROM = {
+			character_event = {
+				id = 100513
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPA100512
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD100511
+		trigger = {
+			NOT = {
+				trait = wounded
+			}
+			NOT = {
+				trait = maimed
+			}
+			NOT = {
+				has_character_flag = rival_killed_me
+			}
+		}
+		if = {
+			limit = {
+				intrigue = 10
+			}
+			opinion = {
+				modifier = opinion_revenge_seeker
+				who = FROM
+				years = 10
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100512
+						days = 7
+						random = 7
+						tooltip = EVTTOOLTIPB100512
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100512
+					days = 7
+					random = 7
+				}
+			}
+		}
+	}
+}
+
+#The arrow missed its target OR wounded/maimed rival
+character_event = {
+	id = 100512
+	desc = EVTDESC100512
+	picture = GFX_evt_hunt
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA100512
+		trigger = {
+			FROM ={
+				trait = wounded
+			}
+		}
+		prestige = 10
+	}
+	option = {
+		name = EVTOPTB100512
+		trigger = {
+			FROM ={
+				trait = maimed
+			}
+		}
+		prestige = 50
+	}
+	option = {
+		name = EVTOPTC100512
+		trigger = {
+			FROM ={
+				NOT = {
+					trait = maimed
+				}
+				NOT = {
+					trait = wounded
+				}
+			}
+		}
+		prestige = -5
+	}
+}
+
+#Rival is killed
+character_event = {
+	id = 100513
+	desc = EVTDESC100513
+	picture = GFX_evt_hunt
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA100513
+		prestige = 55
+		if = {
+			limit = {
+				FROM = {
+					any_child = {
+						is_primary_heir = yes
+						is_abroad = no
+						age = 10
+					}
+				}
+			}
+			FROM = {
+				random_child = {
+					limit = {
+						is_primary_heir = yes
+						is_abroad = no
+						age = 10
+					}
+				}
+				random = {
+					chance = 25
+					opinion = {
+						modifier = opinion_killed_father
+						who = ROOT
+						years = 100
+					}
+					character_event = {
+						id = 100514
+						days = 1
+						random = 7
+						tooltip = EVTTOOLTIP100514
+					}
+				}
+			}
+		}
+	}
+}
+
+#Rival's son swears revenge
+character_event = {
+	id = 100514
+	desc = EVTDESC100514
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100514
+		tooltip = {
+			opinion = {
+				modifier = opinion_killed_father
+				who = FROM
+				years = 100
+			}
+		}
+		add_rival = FROM
+		opinion = {
+			modifier = grievously_offended
+			who = FROM
+			years = 10
+		}
+	}
+}
+
+### Poison rival during liege's feast ###
+character_event = {
+	id = 100520
+	desc = EVTDESC100520
+	picture = GFX_evt_feast
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	has_character_flag = guest_feast_started
+	
+	trigger = {
+		war = no
+		in_command = no
+		NOT = {
+			has_character_modifier = master_poisoner
+		}
+		NOT = {
+			has_character_modifier = the_content
+		}
+		any_rival = {
+			war = no
+			in_command = no
+			prisoner = no
+			same_liege = ROOT
+			has_character_flag = guest_feast_started
+		}
+		liege = {
+			has_character_flag = host_feast_started
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.9
+			intrigue = 10
+		}
+		modifier = {
+			factor = 0.9
+			intrigue = 15
+		}
+		modifier = {
+			factor = 0.9
+			intrigue = 20
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100520
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				same_liege = ROOT
+				has_character_flag = guest_feast_started
+			}
+			random_list = {
+				50 = {
+					hidden_tooltip = {
+						ROOT = {
+							character_event = {
+								id = 100521
+							}
+						}
+					}
+				}
+				20 = {
+					tooltip = { add_trait = ill }
+					set_character_flag = poisoned_ill
+					hidden_tooltip = {
+						character_event = {
+							id = 100522
+						}
+					}
+				}
+				15 = {
+					tooltip = { add_trait = infirm }
+					set_character_flag = poisoned_infirm
+					hidden_tooltip = {
+						character_event = {
+							id = 100522
+						}
+					}
+				}
+				10 = {
+					tooltip = { 
+						death = {
+							death_reason = death_accident
+						}
+					}
+					set_character_flag = poisoned_killed
+					hidden_tooltip = {
+						character_event = {
+							id = 100522
+						}
+					}
+				}
+				5 = {
+					liege = {
+						add_trait = ill
+						character_event = {
+							id = 100523
+							tooltip = EVTTOOLTIP100523
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100520
+		add_character_modifier = {
+			name = the_content
+			duration = 365
+		}
+	}
+}
+
+#Nothing happened
+character_event = {
+	id = 100521
+	desc = EVTDESC100521
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100521
+		add_character_modifier = {
+			name = the_failed_poisoner
+			duration = 365
+		}
+	}
+}
+	
+#Rival is poisoned!
+character_event = {
+	id = 100522
+	desc = EVTDESC100522
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100522
+		trigger = {
+			has_character_flag = death_accident
+		}
+		if = {
+			limit = {
+				intrigue = 15
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100524
+						tooltip = EVTTOOLTIP100524
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100524
+					days = 1
+					random = 1
+				}
+			}
+		}
+		death = {
+			death_reason = death_accident
+		}
+	}
+	
+	option = {
+		name = EVTOPTB100522
+		trigger = {
+			has_character_flag = poisoned_infirm
+		}
+		add_trait = infirm
+		if = {
+			limit = {
+				intrigue = 15
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100524
+						tooltip = EVTTOOLTIP100524
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100524
+					days = 1
+					random = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC100522
+		trigger = {
+			has_character_flag = poisoned_ill
+		}
+		add_trait = ill
+		if = {
+			limit = {
+				intrigue = 15
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100524
+						tooltip = EVTTOOLTIP100524
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100524
+					days = 1
+					random = 1
+				}
+			}
+		}
+	}
+}
+
+#Liege is poisoned
+character_event = {
+	id = 100523
+	desc = EVTDESC100523
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA100523
+		add_trait = ill
+		if = {
+			limit = {
+				NOT = { num_of_vassals = 2 }
+			}
+			random_vassal = {
+				limit = {
+					age = 40
+					has_character_flag = guest_feast_started
+				}
+				add_trait = ill
+				set_character_flag = poisoned_at_feast
+			}
+		}
+		if = {
+			limit = {
+				NOT = { num_of_vassals = 3 }
+			}
+			random_vassal = {
+				limit = {
+					age = 16
+					trait = drunkard
+					has_character_flag = guest_feast_started
+				}
+				add_trait = ill
+				set_character_flag = poisoned_at_feast
+			}
+		}
+		if = {
+			limit = {
+				num_of_vassals = 4
+			}
+			random_vassal = {
+				limit = {
+					age = 16
+					trait = gluttonous
+					has_character_flag = guest_feast_started
+				}
+				add_trait = ill
+				set_character_flag = poisoned_at_feast
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { intrigue = 15 }
+					NOT = {
+						any_courtier = {
+							has_job_title = job_spymaster
+							intrigue = 15
+						}
+					}
+				}
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = guest_feast_started
+				}
+				opinion = {
+					modifier = opinion_poisoner
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					any_courtier = {
+						has_job_title = job_spymaster
+						intrigue = 15
+					}
+				}
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100525
+						tooltip = EVTTOOLTIP100525
+					}
+				}
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 100525
+					tooltip = EVTTOOLTIP100525
+				}
+			}
+		}
+	}
+}
+
+#ROOT gets news about success: Rival is ill/infirm or dead
+character_event = {
+	id = 100524
+	desc = EVTDESC100524
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100524
+		trigger = {
+			FROM = {
+				has_character_flag = death_accident
+			}
+		}
+		FROM = {
+			clr_character_flag = death_accident
+		}
+		add_character_modifier = {
+			name = master_poisoner
+			duration = 1095
+		}
+		if = {
+			limit = {
+				FROM = {
+					any_child = {
+						is_primary_heir = yes
+						is_abroad = no
+						age = 10
+					}
+				}
+			}
+			FROM = {
+				random_child = {
+					limit = {
+						is_primary_heir = yes
+						is_abroad = no
+						age = 10
+					}
+				}
+				random = {
+					chance = 25
+					opinion = {
+						modifier = opinion_killed_father
+						who = ROOT
+						years = 100
+					}
+					character_event = {
+						id = 100526
+						days = 1
+						random = 7
+						tooltip = EVTTOOLTIP100526
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100524
+		trigger = {
+			FROM = {
+				has_character_flag = poisoned_infirm
+			}
+		}
+		FROM = {
+			clr_character_flag = poisoned_infirm
+		}
+		add_character_modifier = {
+			name = master_poisoner
+			duration = 730
+		}
+	}
+	option = {
+		name = EVTOPTC100524
+		trigger = {
+			FROM = {
+				has_character_flag = poisoned_ill
+			}
+		}
+		FROM = {
+			clr_character_flag = poisoned_ill
+		}
+		add_character_modifier = {
+			name = master_poisoner
+			duration = 365
+		}
+	}
+}
+
+#Liege discovers ROOT was behind the poisoning
+character_event = {
+	id = 100525
+	desc = EVTDESC100525
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100525
+		ai_chance = {
+			factor = 10
+		}
+		FROM = {
+			any_vassal = {
+				limit = {
+					OR = {
+						has_character_flag = poisoned_at_feast
+						has_character_flag = guest_feast_started
+					}
+				}
+				clr_character_flag = poisoned_at_feast
+				opinion = {
+					modifier = opinion_poisoner
+					who = ROOT
+					years = 10
+				}
+			}
+			opinion = {
+				modifier = opinion_poisoner
+				who = ROOT
+				years = 10
+			}
+		}
+		random_vassal = {
+			limit = {
+				has_character_flag = liege_knows_poison
+			}
+			clr_character_flag = liege_knows_poison
+			imprison = ROOT
+			hidden_tooltip = {
+				set_character_flag = imprisoned_poisoner
+				character_event = {
+					id = 100527
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100525
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			any_vassal = {
+				limit = {
+					OR = {
+						has_character_flag = poisoned_at_feast
+						has_character_flag = guest_feast_started
+					}
+				}
+				clr_character_flag = poisoned_at_feast
+				opinion = {
+					modifier = opinion_poisoner
+					who = ROOT
+					years = 10
+				}
+			}
+			opinion = {
+				modifier = opinion_poisoner
+				who = ROOT
+				years = 10
+			}
+		}
+		random_vassal = {
+			limit = {
+				has_character_flag = liege_knows_poison
+			}
+			clr_character_flag = liege_knows_poison
+			banish = yes
+			hidden_tooltip = {
+				set_character_flag = banished_poisoner
+				character_event = {
+					id = 100527
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100525
+		ai_chance = {
+			factor = 61
+		}
+		add_character_modifier = {
+			name = mod_forgives_poisoner
+			duration = 365
+		}
+		FROM = {
+			any_vassal = {
+				limit = {
+					OR = {
+						has_character_flag = poisoned_at_feast
+						has_character_flag = guest_feast_started
+					}
+				}
+				clr_character_flag = poisoned_at_feast
+				opinion = {
+					modifier = opinion_poisoner
+					who = ROOT
+					years = 10
+				}
+			}
+			opinion = {
+				modifier = opinion_poisoner
+				who = ROOT
+				years = 10
+			}
+		}
+		hidden_tooltip = {
+			random_vassal = {
+				limit = {
+					has_character_flag = liege_knows_poison
+				}
+				clr_character_flag = liege_knows_poison
+			}
+		}
+	}
+}
+
+#Rival's son swears revenge
+character_event = {
+	id = 100526
+	desc = EVTDESC100526
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOTPA100526
+		tooltip = {
+			opinion = {
+				modifier = opinion_killed_father
+				who = FROM
+				years = 100
+			}
+		}
+		add_rival = FROM
+		opinion = {
+			modifier = grievously_offended
+			who = FROM
+			years = 10
+		}
+	}
+}
+
+#ROOT is imprisoned/banished
+character_event = {
+	id = 100527
+	desc = EVTDESC100527
+	picture = GFX_evt_into_the_dungeon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOTPA100527
+		trigger = {
+			has_character_flag = imprisoned_poisoner
+		}
+		clr_character_flag = imprisoned_poisoner
+		tooltip = {
+			imprison = FROM
+		}
+	}
+	option = {
+		name = EVTOTPB100527
+		trigger = {
+			has_character_flag = banished_poisoner
+		}
+		clr_character_flag = banished_poisoner
+		tooltip = {
+			banish = yes
+		}
+	}
+}
+
+### Revenge seeker seeks revenge ###
+character_event = {
+	id = 100530
+	desc = EVTDESC100530
+	picture = GFX_evt_council
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		NOT = {
+			has_character_modifier = revenge_seeker_timer
+		}
+		any_rival = {
+			war = no
+			in_command = no
+			prisoner = no
+			reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.5
+			trait = impaler
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 2
+			trait = poet
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = revenge_seeker_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100530 #Rumours
+		trigger = {
+			is_ruler = yes
+			any_rival = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_ruler = yes
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_ruler = yes
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+			}
+			random_list = {
+				50 = {
+					any_vassal = {
+						opinion = {
+							modifier = opinion_lost_respect
+							who = PREV
+							years = 5
+						}
+					}
+					character_event = {
+						id = 100531
+						days = 7
+						random = 7
+						tooltip = EVTTOOLTIP100531
+					}
+				}
+				50 = {
+					ROOT = {
+						character_event = {
+							id = 100532
+							days = 7
+							random = 7
+							tooltip = EVTTOOLTIP100532
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100530 #Kill
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = maimed
+			}
+			modifier = {
+				factor = 5
+				trait = wounded
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+			}
+			character_event = {
+				id = 100533
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100533
+			}			
+		}
+	}
+	option = {
+		name = EVTOPTC100530 #Maim/wound
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = maimed
+			}
+			modifier = {
+				factor = 5
+				trait = wounded
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_female = no
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+			}
+			character_event = {
+				id = 100534
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100534
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD100530 #Ignore
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				same_liege = ROOT
+				is_female = no
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_revenge_seeker }
+			}
+			reverse_remove_opinion = { who = ROOT modifier = opinion_revenge_seeker }
+		}
+	}
+}
+
+#Rival is slandered
+character_event = {
+	id = 100531
+	desc = EVTDESC100531
+	picture = GFX_evt_scandal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100531
+		any_vassal = {
+			opinion = {
+				modifier = opinion_lost_respect
+				who = ROOT
+				years = 5
+			}
+		}
+		prestige = -10
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_revenge_seeker
+				who = FROM
+				years = 100
+			}
+			FROM = {
+				set_character_flag = rival_discovered_slanderer
+				tooltip = {
+					character_event = {
+						id = 100537
+						tooltip = EVTTOOLTIP100537
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100537
+					days = 7
+					random = 7
+				}
+			}
+		}
+	}
+}
+
+#ROOT: Rival got away
+character_event = {
+	id = 100532
+	desc = EVTDESC100532
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100532
+		add_character_modifier = {
+			name = poor_revenge_seeker
+			duration = 365
+		}
+	}
+}
+
+#Rival is killed/got away
+character_event = {
+	id = 100533
+	desc = EVTDESC100533
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100533
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				25 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				15 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				10 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				70 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				20 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				10 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				15 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				30 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				20 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				trait = maimed
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				70 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_revenge_seeker
+				who = FROM
+				years = 100
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100535
+						tooltip = EVTTOOLTIP100535
+					}
+				}
+			}
+		}
+	}
+}
+
+#Rival is maimed/wounded
+character_event = {
+	id = 100534
+	desc = EVTDESC100534
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100534
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				25 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				15 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				10 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				70 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				20 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				10 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				15 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				30 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				20 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				trait = maimed
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100535
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				70 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100535
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100536
+						tooltip = EVTTOOLTIP100535
+					}
+				}
+			}
+		}
+	}
+}
+
+#ROOT tried to kill Rival
+character_event = {
+	id = 100535
+	desc = EVTDESC100535
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100535
+		trigger = {
+			has_character_flag = revenge_killer
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		clr_character_flag = revenge_killer
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1825
+		}
+	}
+	option = {
+		name = EVTOPTB100535
+		trigger = {
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		add_character_modifier = {
+			name = poor_revenge_seeker
+			duration = 365
+		}
+	}
+	option = {
+		name = EVTOPTC100535
+		trigger = {
+			has_character_flag = revenge_wound
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+		}
+		clr_character_flag = revenge_wound
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 730
+		}
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	}
+	option = {
+		name = EVTOPTD100535
+		trigger = {
+			has_character_flag = revenge_maim
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		clr_character_flag = revenge_maim
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1095
+		}
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	}
+}
+
+#ROOT tried to wound/maim Rival
+character_event = {
+	id = 100536
+	desc = EVTDESC100536
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100536
+		trigger = {
+			has_character_flag = revenge_killer
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		clr_character_flag = revenge_killer
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1825
+		}
+	}
+	option = {
+		name = EVTOPTB100536
+		trigger = {
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		add_character_modifier = {
+			name = poor_revenge_seeker
+			duration = 365
+		}
+	}
+	option = {
+		name = EVTOPTC100536
+		trigger = {
+			has_character_flag = revenge_wound
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+		}
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 730
+		}
+		clr_character_flag = revenge_wound
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	}
+	option = {
+		name = EVTOPTD100536
+		trigger = {
+			has_character_flag = revenge_maim
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		clr_character_flag = revenge_maim
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1095
+		}
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	}
+}
+
+#ROOT: Rival is slandered
+character_event = {
+	id = 100537
+	desc = EVTDESC100537
+	picture = GFX_evt_scandal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100537
+		trigger = {
+			NOT = {
+				has_character_flag = rival_discovered_slanderer
+			}
+		}
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1095
+		}
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	}
+	option = {
+		name = EVTOPTB100537
+		trigger = {
+			has_character_flag = rival_discovered_slanderer
+		}
+		clr_character_flag = rival_discovered_slanderer
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 730
+		}
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	}
+}
+
+#Rival escaped!
+character_event = {
+	id = 100538
+	desc = EVTDESC100538
+	picture = GFX_evt_courier
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100538
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100536
+						tooltip = EVTTOOLTIP100535
+					}
+				}
+			}
+		}
+	}
+}
+
+### Son seeks revenge for his father ###
+character_event = {
+	id = 100540
+	desc = EVTDESC100540
+	picture = GFX_evt_council
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		NOT = {
+			has_character_modifier = killed_father_timer
+		}
+		NOT = {
+			has_character_flag = avenged_father
+		}
+		any_rival = {
+			war = no
+			in_command = no
+			prisoner = no
+			reverse_has_opinion_modifier = { who = ROOT modifier = opinion_killed_father }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.5
+			trait = impaler
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 2
+			trait = poet
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = killed_father_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100540 #Rumours
+		trigger = {
+			is_ruler = yes
+			any_rival = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_ruler = yes
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_killed_father }
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_ruler = yes
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_killed_father }
+			}
+			random_list = {
+				50 = {
+					any_vassal = {
+						opinion = {
+							modifier = evil_murderer
+							who = PREV
+							years = 5
+						}
+					}
+					character_event = {
+						id = 100541
+						days = 7
+						random = 7
+						tooltip = EVTTOOLTIP100541
+					}
+				}
+				50 = {
+					ROOT = {
+						character_event = {
+							id = 100542
+							days = 7
+							random = 7
+							tooltip = EVTTOOLTIP100532
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100540 #Kill
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = maimed
+			}
+			modifier = {
+				factor = 5
+				trait = wounded
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_killed_father }
+			}
+			character_event = {
+				id = 100543
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100543
+			}			
+		}
+	}
+	option = {
+		name = EVTOPTC100540 #Maim/wound
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = maimed
+			}
+			modifier = {
+				factor = 5
+				trait = wounded
+			}
+		}
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_killed_father }
+			}
+			character_event = {
+				id = 100544
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100544
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD100540 #Ignore
+		random_rival = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				same_liege = ROOT
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_killed_father }
+			}
+		}
+	}
+}
+
+#Father's Murderer is slandered
+character_event = {
+	id = 100541
+	desc = EVTDESC100541
+	picture = GFX_evt_scandal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100541
+		any_vassal = {
+			opinion = {
+				modifier = evil_murderer
+				who = ROOT
+				years = 5
+			}
+		}
+		prestige = -10
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			add_rival = FROM
+			FROM = {
+				set_character_flag = discovered_murderer
+				tooltip = {
+					character_event = {
+						id = 100547
+						tooltip = EVTTOOLTIP100547
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = {
+					id = 100547
+					days = 7
+					random = 7
+				}
+			}
+		}
+	}
+}
+
+#ROOT: Father's Murderer got away
+character_event = {
+	id = 100542
+	desc = EVTDESC100542
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100542
+		add_character_modifier = {
+			name = poor_revenge_seeker
+			duration = 365
+		}
+	}
+}
+
+#Father's Murderer is killed/got away
+character_event = {
+	id = 100543
+	desc = EVTDESC100543
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100543
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				25 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				15 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				10 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100545
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				70 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				20 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				10 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				15 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100545
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				30 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				20 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100545
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				trait = maimed
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100545
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				70 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100545
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			opinion = {
+				modifier = opinion_revenge_seeker
+				who = FROM
+				years = 100
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100545
+						tooltip = EVTTOOLTIP100545
+					}
+				}
+			}
+		}
+	}
+}
+
+#Father's Murderer is maimed/wounded
+character_event = {
+	id = 100544
+	desc = EVTDESC100544
+	picture = GFX_evt_peasants
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100544
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				25 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				15 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				10 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100546
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				70 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				20 = {
+					add_trait = wounded
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_wound
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38280 #Notify Wounded
+						}
+					}
+				}
+				10 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				15 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100546
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+				NOT = {
+					trait = maimed
+				}
+				FROM = {
+					OR = {
+						intrigue = 15
+						job_spymaster = {
+							intrigue = 15
+						}
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				30 = {
+					add_trait = maimed
+					hidden_tooltip = {
+						FROM = {
+							set_character_flag = revenge_maim
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+						character_event = {
+							id = 38281 #Notify Maimed
+						}
+					}
+				}
+				20 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100546
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = wounded
+				}
+				trait = maimed
+				FROM = {
+					OR = {
+						NOT = {
+							intrigue = 15
+						}
+						NOT = {
+							job_spymaster = {
+								intrigue = 15
+							}
+						}
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					character_event = {
+						id = 100538
+						days = 1
+						random = 1
+						tooltip = EVTTOOLTIP100538
+					}
+					hidden_tooltip = {
+						FROM = {
+							character_event = {
+								id = 100546
+								days = 7
+								random = 7
+							}
+						}
+					}
+				}
+				70 = {
+					death = {
+						death_reason = death_rabble
+					}
+					FROM = {
+						set_character_flag = revenge_killer
+						character_event = {
+							id = 100546
+							days = 7
+							random = 7
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					intrigue = 15
+					job_spymaster = {
+						intrigue = 15
+					}
+				}
+			}
+			tooltip = {
+				FROM = {
+					character_event = {
+						id = 100546
+						tooltip = EVTTOOLTIP100545
+					}
+				}
+			}
+		}
+	}
+}
+
+#ROOT: Father's Murderer got away/is killed
+character_event = {
+	id = 100545
+	desc = EVTDESC100545
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100545
+		trigger = {
+			has_character_flag = revenge_killer
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		set_character_flag = avenged_father
+		clr_character_flag = revenge_killer
+		remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1825
+		}
+	}
+	option = {
+		name = EVTOPTB100545
+		trigger = {
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		add_character_modifier = {
+			name = poor_revenge_seeker
+			duration = 365
+		}
+	}
+	option = {
+		name = EVTOPTC100545
+		trigger = {
+			has_character_flag = revenge_wound
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+		}
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 730
+		}
+		clr_character_flag = revenge_wound
+		set_character_flag = avenged_father
+	}
+	option = {
+		name = EVTOPTD100545
+		trigger = {
+			has_character_flag = revenge_maim
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1095
+		}
+		clr_character_flag = revenge_maim
+		set_character_flag = avenged_father
+	}
+}
+
+#ROOT: Father's Murderer got away/is wounded/maimed
+character_event = {
+	id = 100546
+	desc = EVTDESC100546
+	picture = GFX_evt_spymaster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100546
+		trigger = {
+			has_character_flag = revenge_killer
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		set_character_flag = avenged_father
+		clr_character_flag = revenge_killer
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1825
+		}
+	}
+	option = {
+		name = EVTOPTB100546
+		trigger = {
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		add_character_modifier = {
+			name = poor_revenge_seeker
+			duration = 365
+		}
+	}
+	option = {
+		name = EVTOPTC100546
+		trigger = {
+			has_character_flag = revenge_wound
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_maim
+			}
+		}
+		tooltip = {
+			FROM = {
+				add_trait = wounded
+			}
+		}
+		clr_character_flag = revenge_wound
+		set_character_flag = avenged_father
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 730
+		}
+	}
+	option = {
+		name = EVTOPTD100546
+		trigger = {
+			has_character_flag = revenge_maim
+			NOT = {
+				has_character_flag = revenge_killer
+			}
+			NOT = {
+				has_character_flag = revenge_wound
+			}
+		}
+		tooltip = {
+			FROM = {
+				add_trait = maimed
+			}
+		}
+		clr_character_flag = revenge_maim
+		set_character_flag = avenged_father
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1095
+		}
+	}
+}
+
+#ROOT: Father's Murderer is slandered
+character_event = {
+	id = 100547
+	desc = EVTDESC100547
+	picture = GFX_evt_scandal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100547
+		trigger = {
+			NOT = {
+				has_character_flag = discovered_murderer
+			}
+		}
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 1095
+		}
+		set_character_flag = avenged_father
+	}
+	option = {
+		name = EVTOPTB100547
+		trigger = {
+			has_character_flag = discovered_murderer
+		}
+		clr_character_flag = discovered_murderer
+		add_character_modifier = {
+			name = hot_revenge
+			duration = 730
+		}
+		set_character_flag = avenged_father
+	}
+}

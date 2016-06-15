@@ -1,0 +1,2138 @@
+### My friend has much better martial stats than me, ask for help? ### 
+character_event = {
+	id = 100200
+	desc = EVTDESC100200
+	picture = GFX_evt_courtiers_talking
+	
+	only_men = yes
+	prisoner = no
+	min_age = 16
+	capable_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_friends = 1
+		martial = 5
+		NOT = {
+			martial = 10
+		}
+		NOT = {
+			has_job_title = job_marshal
+		}
+		NOT = {
+			has_character_modifier = friend_martial_timer
+		}
+		NOT = {
+			trait = brilliant_strategist
+		}
+		any_friend = {
+			war = no
+			in_command = no
+			is_female = no
+			prisoner = no
+			OR = {
+				trait = duelist
+				martial = 11
+			}
+			NOT = {
+				has_job_title = job_marshal
+			}
+			NOT = {
+				trait = misguided_warrior
+			}
+		}		
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		modifier = {
+			factor = 0.5
+			trait = misguided_warrior
+		}
+		modifier = {
+			factor = 2
+			trait = tough_soldier
+		}
+		modifier = {
+			factor = 100
+			trait = skilled_tactician
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = friend_martial_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100200
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				is_female = no
+				OR = {
+					trait = duelist
+					martial = 11
+				}
+			}
+			character_event = {
+				id = 100201
+				days = 15
+				random = 15
+				tooltip = EVTTOOLTIP100201
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100200
+		if = {
+			limit = {
+				NOT = {
+					num_of_traits = 5
+				}
+				trait = diligent
+				NOT = {
+					trait = ambitious
+				}
+			}
+			add_trait = ambitious
+		}
+		if = {
+			limit = {
+				NOT = {
+					num_of_traits = 5
+				}
+				trait = ambitious
+				NOT = {
+					trait = diligent
+				}
+			}
+			add_trait = diligent
+		}
+		if = {
+			limit = {
+				trait = diligent
+				trait = ambitious
+			}
+			prestige = 10
+		}
+	}
+}
+
+#Friend is asked by ROOT for help
+character_event = {
+	id = 100201
+	desc = EVTDESC100201
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100201
+		FROM = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100202
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100202
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100201
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100203
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100203
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100201
+		FROM = {
+			character_event = {
+				id = 100204
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100204
+			}
+		}
+	}
+}
+
+#ROOT gets help from friend
+character_event = {
+	id = 100202
+	desc = EVTDESC100202
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100202
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		change_martial = 1
+	}
+}
+
+#ROOT did not get help from friend
+character_event = {
+	id = 100203
+	desc = EVTDESC100203
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100203
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+#ROOT only gets help from friend if friend is paid
+character_event = {
+	id = 100204
+	desc = EVTDESC100204
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100204
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0.01
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			character_event = {
+				id = 100205
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPA100205
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100204
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 0.01
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}
+		change_martial = 1
+		tooltip = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 0.25
+			}
+		}
+		FROM = {
+			set_character_flag = paid_martial
+			character_event = {
+				id = 100205
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPB100205
+			}
+		}
+	}
+}
+
+#Friend is/n't paid by ROOT
+character_event = {
+	id = 100205
+	desc = EVTDESC100205
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100205
+		trigger = {
+			NOT = {
+				has_character_flag = paid_martial
+			}
+		}
+		tooltip = {
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = FROM
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100205
+		trigger = {
+			has_character_flag = paid_martial
+		}
+		clr_character_flag = paid_martial
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.25
+			}
+			tooltip = {
+				character_event = { 
+					id = 100205
+					tooltip = EVTTOOLTIPC100205
+				}
+			}
+		}
+	}
+}
+
+### My friend has much better stewardship stats than me, ask for help? ###
+character_event = {
+	id = 100210
+	desc = EVTDESC100210
+	picture = GFX_evt_courtiers_talking
+	
+	prisoner = no
+	min_age = 16
+	capable_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_friends = 1
+		stewardship = 5
+		is_abroad = no
+		NOT = {
+			stewardship = 10
+		}
+		OR = {
+			is_ruler = yes
+			is_councillor = yes
+		}
+		NOT = {
+			has_character_modifier = friend_stewardship_timer
+		}
+		location = {
+			NOT = {
+				has_province_modifier = friendly_innovations
+			}
+		}
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			stewardship = 11
+			OR = {
+				is_ruler = yes
+				is_councillor = yes
+			}
+		}		
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		
+		modifier = {
+			factor = 0.5
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		
+		modifier = {
+			factor = 2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = friend_stewardship_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100210
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				stewardship = 11
+				OR = {
+					is_ruler = yes
+					is_councillor = yes
+				}
+			}
+			character_event = {
+				id = 100211
+				days = 15
+				random = 15
+				tooltip = EVTTOOLTIP100211
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100210
+		if = {
+			limit = {
+				NOT = {
+					num_of_traits = 5
+				}
+				NOT = {
+					trait = ambitious
+				}
+			}
+			add_trait = ambitious
+		}
+		if = {
+			limit = {
+				NOT = {
+					num_of_traits = 5
+				}
+				NOT = {
+					trait = diligent
+				}
+			}
+			add_trait = diligent
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						trait = diligent
+						trait = ambitious
+					}
+					num_of_traits = 4
+				}
+			}
+			prestige = 10
+		}
+	}
+}
+
+#Friend is asked by ROOT for help
+character_event = {
+	id = 100211
+	desc = EVTDESC100211
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100211
+		FROM = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100212
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100212
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100211
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100213
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100213
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100211
+		FROM = {
+			character_event = {
+				id = 100214
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100214
+			}
+		}
+	}
+}
+
+#ROOT gets help from friend
+character_event = {
+	id = 100212
+	desc = EVTDESC100212
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100212
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		change_stewardship = 1
+		location = {
+			add_province_modifier = {
+				name = friendly_innovations
+				duration = 1460
+			}
+		}			
+	}
+}
+
+#ROOT did not get help from friend
+character_event = {
+	id = 100213
+	desc = EVTDESC100213
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100213
+		tooltip = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+#ROOT only gets help from friend if friend is paid
+character_event = {
+	id = 100214
+	desc = EVTDESC100214
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100214
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0.01
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			character_event = {
+				id = 100215
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPA100215
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100214
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 0.01
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}		
+		tooltip = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 0.25
+			}
+		}
+		change_stewardship = 1
+		location = {
+			add_province_modifier = {
+				name = friendly_innovations
+				duration = 730
+			}
+		}
+		FROM = {
+			set_character_flag = paid_stewardship
+			character_event = {
+				id = 100215
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPB100215
+			}
+		}
+	}
+}
+
+#Friend is/n't paid by ROOT
+character_event = {
+	id = 100215
+	desc = EVTDESC100215
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100215
+		trigger = {
+			NOT = {
+				has_character_flag = paid_stewardship
+			}
+		}
+		tooltip = {
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = FROM
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100215
+		trigger = {
+			has_character_flag = paid_stewardship
+		}
+		clr_character_flag = paid_stewardship
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.25
+			}
+		}
+	}
+}
+
+### My friend has much better intrigue stats than me, ask for help? ###
+character_event = {
+	id = 100220
+	desc = EVTDESC100220
+	picture = GFX_evt_courtiers_talking
+	
+	prisoner = no
+	min_age = 16
+	capable_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_friends = 1
+		intrigue = 5
+		NOT = {
+			intrigue = 10
+		}
+		NOT = {
+			has_character_modifier = friend_intrigue_timer
+		}
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			intrigue = 11
+		}		
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		
+		modifier = {
+			factor = 0.5
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		
+		modifier = {
+			factor = 2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = friend_intrigue_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100220
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				intrigue = 11
+			}
+			character_event = {
+				id = 100221
+				days = 15
+				random = 15
+				tooltip = EVTTOOLTIP100221
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100220
+		if = {
+			limit = {
+				trait = paranoid
+			}
+			remove_trait = paranoid
+		}
+		if = {
+			limit = {
+				trait = temperate
+			}
+			remove_trait = temperate
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = temperate
+				}
+				NOT = {
+					trait = paranoid
+				}
+			}
+			prestige = 10
+		}
+		random = {
+			chance = 10
+			add_trait = ill
+			hidden_tooltip = {
+				character_event = {
+					id = 38290
+				}
+			}
+		}
+	}
+}
+
+#Friend is asked by ROOT for help
+character_event = {
+	id = 100221
+	desc = EVTDESC100221
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100221
+		FROM = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100222
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100222
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100221
+		random = {
+			chance = 10
+			add_trait = ill
+			hidden_tooltip = {
+				character_event = {
+					id = 38290
+				}
+			}
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100223
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100223
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100221
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.1
+				trait = charitable
+			}
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100224
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100224
+			}
+		}
+	}
+}
+
+#ROOT gets help from friend
+character_event = {
+	id = 100222
+	desc = EVTDESC100222
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100222
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		change_intrigue = 1
+	}
+}
+
+#ROOT did not get help from friend
+character_event = {
+	id = 100223
+	desc = EVTDESC100223
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100223
+		tooltip = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = paranoid
+				}
+			}
+			add_trait = paranoid
+		}
+	}
+}
+
+#ROOT only gets help from friend if friend is paid
+character_event = {
+	id = 100224
+	desc = EVTDESC100224
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100224
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0.01
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			character_event = {
+				id = 100225
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPA100225
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100224
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 0.01
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}		
+		tooltip = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 0.25
+			}
+		}
+		FROM = { 
+			set_character_flag = paid_intrigue
+			character_event = {
+				id = 100225
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPB100225
+			}
+		}
+	}
+}
+
+#Friend is/n't paid by ROOT
+character_event = {
+	id = 100225
+	desc = EVTDESC100225
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100225
+		trigger = {
+			NOT = {
+				has_character_flag = paid_intrigue
+			}
+		}
+		tooltip = {
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = FROM
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100225
+		trigger = {
+			has_character_flag = paid_intrigue
+		}
+		clr_character_flag = paid_intrigue
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.25
+			}
+			character_event = {
+				id = 100226
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100226
+			}
+		}
+	}
+}
+
+#ROOT gets help from friend
+character_event = {
+	id = 100226
+	desc = EVTDESC100226
+	picture = GFX_evt_courtiers_talking
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100226
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		change_intrigue = 1
+	}
+}
+
+### My friend has much better learning stats than me, ask for help? ###
+character_event = {
+	id = 100230
+	desc = EVTDESC100230
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+	
+	prisoner = no
+	min_age = 16
+	capable_only = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_friends = 1
+		learning = 5
+		NOT = {
+			learning = 10
+		}
+		NOT = {
+			has_character_modifier = friend_learning_timer
+		}
+		NOT = {
+			has_character_modifier = pious_priests
+		}
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			learning = 11
+			OR = {
+				piety = 100
+				trait = zealous
+			}
+			religion = ROOT
+			is_heretic = no
+		}		
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		
+		modifier = {
+			factor = 0.5
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		
+		modifier = {
+			factor = 2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = friend_learning_timer
+				duration = 1825
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100230
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				learning = 11
+			}
+			character_event = {
+				id = 100231
+				days = 15
+				random = 15
+				tooltip = EVTTOOLTIP100231
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100230
+		piety = 10
+	}
+}
+
+#Friend is asked by ROOT for help
+character_event = {
+	id = 100231
+	desc = EVTDESC100231
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100231
+		FROM = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100232
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100232
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100231
+		FROM = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100233
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100233
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100231
+		FROM = {
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}
+			character_event = {
+				id = 100234
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100234
+			}
+		}
+	}
+}
+
+#ROOT gets help from friend
+character_event = {
+	id = 100232
+	desc = EVTDESC100232
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100232
+		trigger = {
+			NOT = {
+				has_character_flag = paid_advice
+			}
+		}
+		tooltip = {
+			opinion = {
+				modifier = opinion_very_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		change_learning = 1
+		add_character_modifier = {
+			name = pious_priests
+			duration = 1095
+		}
+	}
+	option = {
+		name = EVTOPTB100232
+		trigger = {
+			has_character_flag = paid_advice
+		}
+		clr_character_flag = paid_advice
+		tooltip = {
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+		change_learning = 1
+		add_character_modifier = {
+			name = pious_priests
+			duration = 1095
+		}
+	}
+}
+
+#ROOT did not get help from friend
+character_event = {
+	id = 100233
+	desc = EVTDESC100233
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100233
+		tooltip = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = stressed
+				}
+			}
+			add_trait = stressed
+		}
+	}
+}
+
+#ROOT only gets help from friend if friend is paid
+character_event = {
+	id = 100234
+	desc = EVTDESC100234
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100234
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0.01
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_disappointed
+			who = FROM
+			years = 5
+		}
+		FROM = {
+			character_event = {
+				id = 100235
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPA100235
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100234
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 0.01
+				NOT = {
+					scaled_wealth = 0.5
+				}
+			}
+		}		
+		tooltip = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 0.25
+			}
+		}
+		FROM = {
+			set_character_flag = paid_learning
+			character_event = {
+				id = 100235
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIPB100235
+			}
+		}
+	}
+}
+
+#Friend is/n't paid by ROOT
+character_event = {
+	id = 100235
+	desc = EVTDESC100235
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100235
+		trigger = {
+			NOT = {
+				has_character_flag = paid_learning
+			}
+		}
+		tooltip = {
+			reverse_opinion = {
+				modifier = opinion_disappointed
+				who = FROM
+				years = 5
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100235
+		trigger = {
+			has_character_flag = paid_learning
+		}
+		clr_character_flag = paid_learning
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.25
+			}
+			set_character_flag = paid_advice
+			character_event = {
+				id = 100232
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100232
+			}
+		}
+	}
+}
+
+### My friend is celibate ###
+character_event = {
+	id = 100240
+	desc = EVTDESC100240
+	picture = GFX_evt_courtiers_talking
+	
+	min_age = 23
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_friends = 1
+		NOT = {
+			uses_decadence = yes
+		}
+		NOT = {
+			lifestyle_traits = 1
+		}
+		NOT = {
+			has_character_flag = LE_ST
+		}
+		num_of_children = 2
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			trait = celibate
+			OR = {
+				AND = {
+					is_female = no
+					ROOT = {
+						is_female = no
+					}
+				}
+				AND = {
+					is_female = yes
+					ROOT = {
+						is_female = yes
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100240
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				trait = celibate
+			}
+			character_event = {
+				id = 100241
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100241
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100240
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				trait = celibate
+			}
+			tooltip = {
+				opinion = {
+					modifier = opinion_irritated
+					who = ROOT
+					years = 2
+				}
+			}
+			character_event = {
+				id = 100242
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100242
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100240
+		prestige = 5
+		if = {
+			limit = {
+				trait = lustful
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 5061 #Hedonism
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
+}
+
+#Friend is asked by ROOT about Celibacy
+character_event = {
+	id = 100241
+	desc = EVTDESC100241
+	picture = GFX_evt_bishop
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100241
+		FROM = {
+			opinion = {
+				modifier = opinion_sad
+				who = ROOT
+				years = 2
+			}
+			character_event = {
+				id = 100243
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100243
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100241
+		FROM = {
+			character_event = {
+				id = 100244
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100244
+			}
+		}		
+	}
+}
+
+#Friend is irritated about ROOT bedraggling his/her lifestyle
+character_event = {
+	id = 100242
+	desc = EVTDESC100242
+	picture = GFX_evt_bishop
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100242
+		opinion = {
+			modifier = opinion_irritated
+			who = FROM
+			years = 5
+		}
+	}
+}
+
+#ROOT is discouraged by friend
+character_event = {
+	id = 100243
+	desc = EVTDESC100243
+	picture = GFX_evt_bishop
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100243
+		opinion = {
+			modifier = opinion_sad
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+#ROOT is told about celibacy by friend
+character_event = {
+	id = 100244
+	desc = EVTDESC100244
+	picture = GFX_evt_bishop
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100244
+		character_event = {
+			id = 5062
+			days = 7
+			random = 7
+			tooltip = EVTTOOLTIP5062 #Onwards - to celibacy!
+		}
+	}
+	option = {
+		name = EVTOPTB100243
+		prestige = 5
+	}
+}
+
+### My friend is a hedonist ###
+character_event = {
+	id = 100250
+	desc = EVTDESC100250
+	picture = GFX_evt_feast
+	
+	min_age = 23
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		num_of_friends = 1
+		NOT = {
+			uses_decadence = yes
+		}
+		NOT = {
+			lifestyle_traits = 1
+		}
+		NOT = {
+			has_character_flag = LE_ST
+		}
+		num_of_children = 2
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			trait = hedonist
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		
+		modifier = {
+			factor = 2
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100250
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				trait = hedonist
+			}
+			character_event = {
+				id = 100251
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100251
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100250
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				trait = hedonist
+			}
+			tooltip = {
+				opinion = {
+					modifier = opinion_irritated
+					who = ROOT
+					years = 2
+				}
+			}
+			character_event = {
+				id = 100252
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100252
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100250
+		prestige = 5
+		if = {
+			limit = {
+				trait = chaste
+				NOT = {
+					uses_decadence = yes
+				}
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 5060 #Celibacy/Hedonism
+					days = 30
+					random = 30
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = chaste
+				uses_decadence = yes
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 5070 #Hedonism/Poetry
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
+}
+
+#Friend is asked by ROOT about hedonism
+character_event = {
+	id = 100251
+	desc = EVTDESC100251
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100251
+		FROM = {
+			opinion = {
+				modifier = opinion_confused
+				who = ROOT
+				years = 2
+			}
+			character_event = {
+				id = 100253
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100253
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100251
+		FROM = {
+			character_event = {
+				id = 100254
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100254
+			}
+		}		
+	}
+}
+
+#Friend is irritated about ROOT bedraggling his/her lifestyle
+character_event = {
+	id = 100252
+	desc = EVTDESC100252
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100252
+		opinion = {
+			modifier = opinion_irritated
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+#ROOT is discouraged by friend
+character_event = {
+	id = 100253
+	desc = EVTDESC100253
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100253
+		opinion = {
+			modifier = opinion_confused
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+#ROOT is told about hedonism by friend
+character_event = {
+	id = 100254
+	desc = EVTDESC100254
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100254
+		character_event = {
+			id = 5061 #Hedonism
+			days = 7
+			random = 7
+			tooltip = EVTTOOLTIP5061 #Onwards - to hedonism!
+		}
+	}
+	option = {
+		name = EVTOPTB100253
+		prestige = 5
+	}
+}
+
+### My friend is a scholar ###
+character_event = {
+	id = 100260
+	desc = EVTDESC100260
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 23
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		NOT = { has_dlc = "Way of Life" }
+		war = no
+		in_command = no
+		num_of_friends = 1
+		NOT = {
+			lifestyle_traits = 1
+		}
+		NOT = {
+			has_character_flag = LE_ST
+		}
+		#num_of_children = 1
+		any_friend = {
+			war = no
+			in_command = no
+			prisoner = no
+			trait = scholar 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			learning = 15
+		}
+		
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = content
+		}
+	}
+	
+	option = {
+		name = EVTOPTA100260
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				trait = scholar
+			}
+			character_event = {
+				id = 100261
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100261
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100260
+		random_friend = {
+			limit = {
+				war = no
+				in_command = no
+				prisoner = no
+				trait = scholar
+			}
+			tooltip = {
+				opinion = {
+					modifier = opinion_irritated
+					who = ROOT
+					years = 2
+				}
+			}
+			character_event = {
+				id = 100262
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100262
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC100260
+		prestige = 5
+		if = {
+			limit = {
+				learning = 15
+			}
+			hidden_tooltip = {
+				character_event = {
+					id = 5000 #Scholar/Mystic
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
+}
+
+
+#Friend is asked by ROOT about being a scholar
+character_event = {
+	id = 100261
+	desc = EVTDESC100261
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100261
+		FROM = {
+			opinion = {
+				modifier = opinion_sad
+				who = ROOT
+				years = 2
+			}
+			character_event = {
+				id = 100263
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100263
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB100261
+		FROM = {
+			character_event = {
+				id = 100264
+				days = 7
+				random = 7
+				tooltip = EVTTOOLTIP100264
+			}
+		}		
+	}
+}
+
+#Friend is irritated about ROOT bedraggling his/her lifestyle
+character_event = {
+	id = 100262
+	desc = EVTDESC100262
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100262
+		opinion = {
+			modifier = opinion_irritated
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+#ROOT is discouraged by friend
+character_event = {
+	id = 100263
+	desc = EVTDESC100263
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100263
+		tooltip = {
+			opinion = {
+				modifier = opinion_sad
+				who = FROM
+				years = 2
+			}
+		}
+	}
+}
+
+#ROOT is told about about scholar by friend
+character_event = {
+	id = 100264
+	desc = EVTDESC100264
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA100264
+		character_event = {
+			id = 5000
+			days = 7
+			random = 7
+			tooltip = EVTTOOLTIP5000 #Scholar/Mystic!
+		}
+	}
+	option = {
+		name = EVTOPTB100263
+		prestige = 5
+	}
+}
