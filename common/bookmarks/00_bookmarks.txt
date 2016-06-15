@@ -3,4 +3,21 @@ bm_arivor =
 	name = "BM_PEACE_OF_ARIVOR"
 	desc = "BM_PEACE_OF_ARIVOR_DESC"
 	date = 1030.8.28
+    
+    selectable_character = {
+        id = 1
+        age = 22
+        name = ERA_CHAR_NAME_1
+        title = e_middlerealm
+        title_name = MIDDLEREALM
+        character = {
+            female = yes
+			dna = tmlsklzfrhj
+			properties = ac0bi0000000
+			religion="puniner"
+			culture="garethi"
+			government = feudal_government
+			dynasty=1
+		}
+    }
 }
