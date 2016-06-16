@@ -18852,40 +18852,6 @@ letter_event = {
 					add_law_w_cooldown = investiture_law_0
 				}
 			}
-			hidden_tooltip = {
-				if = {
-					limit = {
-						religion = catholic
-					}
-					k_papal_state = {
-						holder_scope = {
-							opinion = {
-								who = PREVPREV
-								modifier = opinion_deposed_antipope
-							}
-						}
-					}
-				}
-				if = {
-					limit = {
-						religion = fraticelli
-					}
-					d_fraticelli = {
-						holder_scope = {
-							opinion = {
-								who = PREVPREV
-								modifier = opinion_deposed_antipope
-							}
-						}
-					}
-				}
-			}
-		}
-		hidden_tooltip = {
-			rightful_religious_head_scope = {
-				remove_claim = k_papal_state
-				remove_claim = d_fraticelli
-			}
 		}
 		
 		primary_title = {
