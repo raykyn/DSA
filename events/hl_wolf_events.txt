@@ -1,0 +1,17 @@
+###########################################
+#                                         #
+# Horse Lords wolf's blood events         #
+# ID HL.1000-HL.1999                      #
+#                                         #
+###########################################
+
+# Written by Tobias Bodlund
+
+namespace = HL
+
+###########################################
+# The Wolf Child                          #
+# ID HL.1000-HL.1099                      #
+###########################################
+
+#Copy these events for Nivesen
