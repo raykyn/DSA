@@ -1,0 +1,20 @@
+
+###########################################
+#                                         #
+# SoA minor religious events              #             
+#                                         #
+# ID SoA.5200-SoA.5399                    #
+#                                         #
+###########################################
+
+# Written by Tobias Bodlund
+
+namespace = SoA
+
+###########################################
+#                                         #
+# Relics - ID SoA.5200-SoA.5209           #
+#                                         #
+###########################################
+
+#Placeholder: Immoral Priest Events adapted for Aventuria needed! Miracle events and so on...
