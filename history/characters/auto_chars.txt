@@ -1188,3 +1188,14 @@
 	1021.01.01 = {death=yes}
 }
 
+109 = {
+	name = "Hilberian"
+	religion = puniner 
+	culture = northern_marches
+	dynasty = 57
+	add_trait = mystic
+	961.01.01 = {birth=yes}
+	
+	1050.01.01 = {death=yes}
+}
+
