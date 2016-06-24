@@ -319,6 +319,7 @@ twelve = {
 		intermarry = shaman_n
 		intermarry = shaman_s
 		short_reign_opinion_year_mult = 3
+        long_reign_opinion_year_mult = 0
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
