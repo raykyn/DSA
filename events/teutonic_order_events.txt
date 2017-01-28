@@ -1,0 +1,32 @@
+###########################################
+#
+# Holy Order Events
+#
+# ID 8700-9999 is reserved
+#
+###########################################
+
+
+########################################
+# The Teutonic Order
+########################################
+
+#Obviously, catholic specific events are not needed
+
+########################################
+# General Holy Order Events
+########################################
+
+### No Religious Orders Allowed ###
+
+letter_event = {
+	id = 8800
+	desc = "EVTDESC8800"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA8800"
+	}
+}
