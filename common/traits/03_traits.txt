@@ -227,10 +227,10 @@ sympathy_demonic = {
 	}
 	
 	potential = {
-		NOT = { religion_group = sympathy_demonic }
+		NOT = { religion_group = demonic }
 	}
 
-	tolerates_demonic = yes		# Tolerates and is tolerated by Christians
+	tolerates_demonic = yes
 	
 	same_opinion_if_same_religion = 5
 
