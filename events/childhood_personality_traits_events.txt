@@ -5516,122 +5516,6 @@ character_event = {
 	}
 }
 
-# Female Child is playing with swords instead of sewing
-character_event = {
-	id = 1921
-	desc = "EVTDESC1921"
-	picture = "GFX_evt_child_play"
-	
-	min_age = 6
-	max_age = 16
-	only_women = yes
-
-	is_triggered_only = yes
-	
-	trigger = {
-		NOT = { has_dlc = "Zeus" }
-		has_guardian = yes
-		NOT = {
-			trait = brave
-		}
-		NOT = {
-			trait = humble
-		}
-		NOT = {
-			trait = just
-		}
-		NOT = {
-			trait = wounded
-		}
-	}
-	
-	weight_multiplier = {
-		days = 1
-		modifier = {
-			religion = cathar
-			factor = 3
-		}
-		modifier = {
-			trait = clubfooted
-			factor = 0.8
-		}
-		modifier = {
-			trait = harelip
-			factor = 0.9
-		}
-		modifier = {
-			trait = hunchback
-			factor = 0.7
-		}
-		modifier = {
-			trait = lisp
-			factor = 0.95
-		}
-		modifier = {
-			trait = stutter
-			factor = 0.95
-		}
-		modifier = {
-			trait = fair
-			factor = 0.8
-		}
-		modifier = {
-			trait = ugly
-			factor = 1.25
-		}
-		modifier = {
-			trait = dwarf
-			factor = 0.9
-		}		
-		modifier = {
-			trait = genius
-			factor = 1.05
-		}
-		modifier = {
-			OR = {
-				trait = quick
-				trait = shrewd
-			}
-			factor = 1.05
-		}	
-		modifier = {
-			OR = {
-				trait = slow
-				trait = dull
-			}
-			factor = 0.95
-		}
-		
-		modifier = {
-			trait = imbecile
-			factor = 0.5
-		}
-		modifier = {
-			trait = inbred
-			factor = 0.05
-		}
-		modifier = {
-			is_strong_trigger = yes
-			factor = 5.0
-		}
-		modifier = {
-			is_weak_trigger = yes
-			factor = 0.05
-		}	
-	}
-	
-	option = {
-		name = "EVTOPTA1921"
-		guardian = {
-			character_event = {
-				id = 38221
-				days = 3
-				tooltip = "EVTOOLTIP38221"
-			}
-		}
-	}
-}
-
 # Child is ridiculed for cowardness
 character_event = {
 	id = 1922
@@ -6287,7 +6171,6 @@ character_event = {
 	
 	min_age = 6
 	max_age = 16
-	only_men = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -6523,7 +6406,6 @@ character_event = {
 	
 	min_age = 6
 	max_age = 16
-	only_men = yes
 	
 	is_triggered_only = yes
 	
