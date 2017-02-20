@@ -8,7 +8,7 @@ max_settlements = 7
 
 b_rallerwacht = castle
 b_leustein = castle
-b_ueberdiebreite = city
+b_uberdiebreite = city
 b_bitani = city
 b_leuental = castle
 #b_linara = temple

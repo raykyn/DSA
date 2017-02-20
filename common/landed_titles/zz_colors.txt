@@ -1,2 +1,1 @@
-e_middlerealm = { color = { 144 144 72 } }
-k_gareth = { color = { 134 154 67 } }
+k_middlerealm = { color = { 134 154 67 } }

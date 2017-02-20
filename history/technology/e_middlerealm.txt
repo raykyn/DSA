@@ -1,68 +1,21 @@
 #MIDDLEREALM
 technology = {
 	titles = {
-		d_abagund
-		d_albenhus
-		d_anchopal
-		d_baburin
-		d_baerwalde
-		d_baliho
-		d_beilunk
-		d_boran
-		d_bredenhag
-		d_drachenstein
-		d_elburum
-		d_elenvina
 		d_eslamsgrund
-		d_ferdok
 		d_gareth
-		d_gratenfels
-		d_great_river
 		d_greifenfurt
 		d_hartsteen
-		d_havena
-		d_heldentrutz
-		d_honingen
-		d_huegellande
-		d_hylailos
-		d_isenhag
-		d_jergan
-		d_jilaskan
-		d_khunchom
-		d_mendena
-		d_misamund
-		d_ochsenwasser
-		d_osterfelden
-		d_palmyramis
 		d_perricum
-		d_ragath
 		d_reichsforst
 		d_schlund
-		d_sichelwacht
-		d_sinoda
-		d_suedpforte
-		d_tobimora
-		d_trollzacken
-		d_tuzak
 		d_waldstein
-		d_waldwacht
-		d_warunk
-		d_wehrheim
-		d_wengenholm
-		d_windhag
-		d_winhall
-		d_yalalaid
-		d_yaquirtal
-		d_ysilia
-		d_zorgan
-		d_zweimuehlen
 	}
-	769 = {
+	990 = {
 		military = 2.0
 		economy = 2.0
 		culture = 2.0
 	}
-	1453 = {
+	2000 = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0

@@ -1,4 +1,4 @@
-###### AUTO GENERATED CONTENT (c) CKTools v18 ######
+###### AUTO GENERATED CONTENT (c) CKTools v19 ######
 
 
 
@@ -45,7 +45,6 @@ e_middlerealm = {
 				b_kronling = {
 				}
 				b_city_of_light = {
-                    holy_site = twelve
 				}
 			}
 			c_alriksmark = { # 5
@@ -144,7 +143,6 @@ e_middlerealm = {
 				}
 			}
 		}
-        
 		d_eslamsgrund = {
 			color={ 94 167 191 }
 			color2={ 255 255 255 }
@@ -279,14 +277,9 @@ e_middlerealm = {
 				}
 			}
 		}
-        
 		d_greifenfurt = {
 			color={ 45 232 218 }
 			color2={ 255 255 255 }
-            
-            title = "MARGRAVE"
-            title_female = "MARGRAVINE"
-            
 			
 			allow = {
 				OR = {
@@ -598,7 +591,6 @@ e_middlerealm = {
 				}
 			}
 		}
-        
 		d_hartsteen = {
 			color={ 114 180 53 }
 			color2={ 255 255 255 }
@@ -733,14 +725,9 @@ e_middlerealm = {
 				}
 			}
 		}
-        
-        
 		d_perricum = {
 			color={ 109 209 58 }
 			color2={ 255 255 255 }
-            
-            title = "MARGRAVE"
-            title_female = "MARGRAVINE"
 			
 			allow = {
 				OR = {
@@ -1172,7 +1159,7 @@ e_middlerealm = {
 				}
 				b_leustein = {
 				}
-				b_ueberdiebreite = {
+				b_uberdiebreite = {
 				}
 				b_bitani = {
 				}

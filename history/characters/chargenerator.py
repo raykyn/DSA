@@ -62,7 +62,7 @@ def applytitle(id,title):
 personlist = []
 
 with open('charsDef.csv', 'rb') as f:
-    reader = csv.reader(f)
+    reader = csv.reader(f,delimiter=';')
     for row in reader:
         person = row
         personlist.append(person)
@@ -73,6 +73,7 @@ with open(outfile, 'w') as f:
     for person in personlist:
         if counter == True:
             id = person[0]
+            print person[1]
             name = person[1]
             religion = person[2]
             culture = person[3]
