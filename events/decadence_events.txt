@@ -2111,25 +2111,6 @@ character_event = {
 	}
 }
 
-
-# The decadent character joined a holy order
-character_event = {
-	id = 91361
-	desc = EVTDESC91361
-	picture = GFX_evt_melee
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA91361
-		opinion = {
-			modifier = opinion_straightened_up
-			who = FROM
-			months = 120
-		}
-	}
-}
-
 # The decadent character went on the Hajj
 character_event = {
 	id = 91362
@@ -2701,30 +2682,5 @@ character_event = {
 				}
 			}
 		}
-	}
-}
-
-# Spouse notified of divorce due to husband going off to join holy order
-character_event = {
-	id = 91377
-	desc = EVTDESC_91377
-	picture = GFX_evt_melee
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ALAS
-		trigger = {
-			opinion = { who = FROM value = 0 }
-		}
-		tooltip = { remove_spouse = FROM }
-	}
-	option = {
-		name = GOOD_RIDDANCE
-		trigger = {
-			NOT = { opinion = { who = FROM value = 0 } }
-		}
-		tooltip = { remove_spouse = FROM }
 	}
 }

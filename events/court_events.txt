@@ -213,9 +213,6 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTC73001 # These are books created by satan!
-		trigger = {
-			religion_group = christian
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -223,40 +220,7 @@ character_event = {
 				NOT= { trait = zealous }
 			}
 		}
-		if = {
-			limit = {
-				spouse = {
-					NOT = {
-						religion_group = muslim
-					}
-				}
-			}
-			spouse = { add_trait = chaste }
-		}
-		piety = 10
-	}
-	option = {
-		name = EVTOPTD73001 # These are books created by Shaytan!
-		trigger = {
-			religion_group = muslim
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT= { trait = zealous }
-			}
-		}
-		if = {
-			limit = {
-				spouse = {
-					NOT = {
-						religion_group = muslim
-					}
-				}
-			}
-			spouse = { add_trait = chaste }
-		}
+		spouse = { add_trait = chaste }
 		piety = 10
 	}
 }	
@@ -705,9 +669,6 @@ character_event = {
 	}	
 	option = {
 		name = EVTOPTB73007 #Let's go to the church instead, darling
-		trigger = {
-			religion_group = christian
-		}
 		if = {
 			limit = { trait = cynical }
 			prestige = -5
@@ -1604,18 +1565,9 @@ character_event = {
 	
 	trigger = {
 		NOT = { has_dlc = "Zeus" }
-		NOT = {
-			religion_group = muslim
-		}
 		OR = {
 			is_theocracy = yes
-			AND = {
-				is_ruler = no
-				NOT = { religion = orthodox }
-				NOT = { is_heresy_of = orthodox }
-				NOT = { religion = miaphysite }
-				NOT = { is_heresy_of = miaphysite }
-			}
+			is_ruler = no
 		}
 		independent = no
 		is_councillor = no
@@ -1654,14 +1606,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA73230
-		if = {
-			limit = {
-				NOT = {
-					religion_group = muslim
-				}
-			}
-			liege = { letter_event = { id = 73231 tooltip = EVTTOOLTIP73231 } }
-		}
+        liege = { letter_event = { id = 73231 tooltip = EVTTOOLTIP73231 } }
 	}
 }
 

@@ -5037,7 +5037,6 @@ character_event = {
 				}
 			}
 			40 = {
-				if = {
 					FROM = {
 						add_trait = lustful
 						hidden_tooltip = {
@@ -5051,7 +5050,6 @@ character_event = {
 							} 
 						}
 					}
-				}
 			}
 		}
 	}
@@ -5087,7 +5085,6 @@ character_event = {
 				}
 			}
 			40 = {
-				if = {
 					FROM = { 
 						add_trait = chaste
 						hidden_tooltip = {
@@ -5101,7 +5098,6 @@ character_event = {
 							}
 						}
 					}
-				}
 			}
 		}
 	}
@@ -5369,7 +5365,6 @@ character_event = {
 		
 		random_list = {
 			50 = {
-				if = {
 					FROM = { 
 						add_trait = chaste
 						hidden_tooltip = {
@@ -5383,7 +5378,6 @@ character_event = {
 							}
 						}
 					}
-				}
 			}
 			50 = {	FROM = { add_trait = temperate	hidden_tooltip = { ROOT = { character_event = { id = 38176}} character_event = { id = 38276 } }}}
 		}
