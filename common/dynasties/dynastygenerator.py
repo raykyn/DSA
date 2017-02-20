@@ -8,7 +8,7 @@ outfile = 'auto_dynasties.txt'
 dynastylist = []
 
 with open('dynastyDef.csv', 'rb') as f:
-    reader = csv.reader(f)
+    reader = csv.reader(f,delimiter=";")
     for row in reader:
         dynasty = row
         dynastylist.append(dynasty)
