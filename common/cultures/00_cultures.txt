@@ -2299,6 +2299,7 @@ dwarves = {
 		
 		male_patronym = "Sohn des " 
 		female_patronym = "Tochter der " 
+		prefix = yes
  
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 5
@@ -2354,7 +2355,8 @@ dwarves = {
 		from_dynasty_prefix = "of "
 		
 		male_patronym = "Sohn des " 
-		female_patronym = "Tochter der " 
+		female_patronym = "Tochter der "
+		prefix = yes 
  
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 5
@@ -2411,6 +2413,7 @@ dwarves = {
 		
 		male_patronym = "Sohn des " 
 		female_patronym = "Tochter der " 
+		prefix = yes
  
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 5
@@ -2466,7 +2469,8 @@ dwarves = {
 		from_dynasty_prefix = "of "
 		
 		male_patronym = "Sohn des " 
-		female_patronym = "Tochter der " 
+		female_patronym = "Tochter der "
+		prefix = yes 
  
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 5
