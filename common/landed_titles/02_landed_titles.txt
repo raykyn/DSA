@@ -561,3 +561,29 @@ d_sahabiyat = {
 	# Extra income due to banking, etc
 	monthly_income = 10 # (Must be an integer between 1 and 512)
 }
+
+####SPECIAL TITLES
+
+e_rebels = {
+	rebel = yes
+	landless = yes
+	primary = yes
+
+	culture = tobrian
+	tribe = yes
+
+	color={ 0 0 0 }
+	color2={ 0 0 0 }
+}
+
+e_pirates = {
+	pirate = yes
+	landless = yes
+	primary = yes
+
+	culture = tobrian
+	tribe = yes
+
+	color={ 0 0 0 }
+	color2={ 0 0 0 }
+}
