@@ -33,18 +33,6 @@ can_be_mercenary_leader_potential_trigger = {
 	same_realm = FROM
 	OR = {
 		is_female = no
-		AND = {
-			religion = cathar
-			FROM = {
-				religion = cathar
-			}
-		}
-		AND = {
-			religion = messalian
-			FROM = {
-				religion = messalian
-			}
-		}
 		FROM = {
 			has_law = true_cognatic_succession
 		}
@@ -91,13 +79,6 @@ replace_mercenary_captain_allow_trigger = {
 #Used with character interaction to swap council job. DO NOT REMOVE
 change_council_job_potential_trigger = {
 	liege = { character = FROM }
-	NOT = {
-		AND = {
-			has_job_title = job_spiritual
-			liege = { religion_group = muslim }
-			religion = FROM
-		}
-	}
 	OR = {
 		AND = {
 			OR = {
@@ -109,10 +90,7 @@ change_council_job_potential_trigger = {
 				can_be_marshal_trigger = yes
 				can_be_treasurer_trigger = yes
 				can_be_spymaster_trigger = yes
-				AND = {
-					can_be_spiritual_trigger = yes
-					ROOT = { NOT = { religion_group = muslim } }
-				}
+				can_be_spiritual_trigger = yes
 			}
 		}
 		AND = {
@@ -158,14 +136,6 @@ can_be_chancellor_trigger = {
 				is_female = no
 				trait = horse # So we can have female glitterhoofs! :D
 				AND = {
-					religion = cathar
-					liege = { religion = cathar }
-				}
-				AND = {
-					religion = messalian
-					liege = { religion = messalian }
-				}
-				AND = {
 					liege = {
 						primary_title = {
 							OR = {
@@ -210,16 +180,6 @@ can_be_marshal_trigger = {
 			OR = {
 				is_female = no
 				trait = horse # So we can have female glitterhoofs! :D
-				OR = {
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-					AND = {
-						religion = messalian
-						liege = { religion = messalian }
-					}
-				}
 				AND = {
 					liege = {
 						primary_title = {
@@ -247,10 +207,6 @@ can_be_marshal_trigger = {
 	}
 }
 			}
-			OR = {
-				NOT = { religion = hindu }
-				trait = kshatriya
-			}
 			is_adult = yes
 		}
 		has_character_flag = special_marshal
@@ -268,14 +224,6 @@ can_be_treasurer_trigger = {
 			OR = {
 				is_female = no
 				trait = horse # So we can have female glitterhoofs! :D
-				AND = {
-					religion = cathar
-					liege = { religion = cathar }
-				}
-				AND = {
-					religion = messalian
-					liege = { religion = messalian }
-				}
 				AND = {
 					liege = {
 						primary_title = {
@@ -327,21 +275,7 @@ can_be_spymaster_trigger = {
 						any_spouse = { character = ROOT }
 					}
 				}
-				AND = {
-					religion_group = pagan_group
-					liege = {
-						religion_group = pagan_group
-					}
-				}
-				AND = {
-					religion = cathar
-					liege = { religion = cathar }
-				}
-				AND = {
-					religion = messalian
-					liege = { religion = messalian }
-				}
-				AND = {
+				OR = {
 					liege = {
 						primary_title = {
 							OR = {
@@ -396,10 +330,6 @@ can_be_spiritual_trigger = {
 				is_female = no
 				religion_allows_female_temple_holders = yes
 			}
-			OR = {
-				NOT = { religion = hindu }
-				trait = brahmin
-			}
 		}
 		has_character_flag = special_spiritual
 	}
@@ -410,7 +340,6 @@ can_be_spiritual_trigger = {
 			liege = { is_tribal = yes }
 			is_ruler = no
 		}
-		liege = { religion_group = muslim }
 		AND = {
 			clan = yes
 			liege = {
@@ -431,8 +360,6 @@ can_be_spiritual_trigger = {
 	}
 	
 	OR = {
-		NOT = { religion_group = muslim }
-		NOT = { liege = { religion_group = muslim } }
 		trait = detached_priest
 		trait = martial_cleric
 		trait = scholarly_theologian
@@ -447,24 +374,14 @@ can_be_councilmember_king_trigger = {
 	AND = {
 		OR = {
 			is_female = no
-			AND = {
-				OR = {
-					religion = cathar
-					religion = messalian
-				}
-				liege = { religion = ROOT }
-			}
-			AND = {
-				liege = {
-					primary_title = {
-						OR = {
-							has_law = status_of_women_1
-							has_law = status_of_women_2
-							has_law = status_of_women_3
-						}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_1
+						has_law = status_of_women_2
+						has_law = status_of_women_3
 					}
 				}
-				is_landed = yes
 			}
 			liege = { primary_title = { has_law = status_of_women_4 } }
 		}
@@ -480,25 +397,14 @@ can_be_councilmember_emperor_trigger = {
 		AND = {
 			OR = {
 				is_female = no
-				AND = {
-					religion = cathar
-					liege = { religion = cathar }
-				}
-				AND = {
-					religion = messalian
-					liege = { religion = messalian }
-				}
-				AND = {
-					liege = {
-						primary_title = {
-							OR = {
-								has_law = status_of_women_1
-								has_law = status_of_women_2
-								has_law = status_of_women_3
-							}
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = status_of_women_1
+							has_law = status_of_women_2
+							has_law = status_of_women_3
 						}
 					}
-					is_landed = yes
 				}
 				liege = { primary_title = { has_law = status_of_women_4 } }
 			}
