@@ -6,6 +6,7 @@ k_zwoelf = {
 	capital = 2
 	
 	title = "HELIODAN"
+	title_female = "HELIODANA"
 	foa = "HELIODAN_FOA"
 	short_name = yes
 	location_ruler_title = yes
@@ -15,6 +16,8 @@ k_zwoelf = {
 	
 	# Controls a religion
 	controls_religion = puniner
+
+	religion = puniner
 	
 	dignity = 90
 	

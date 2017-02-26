@@ -1,3 +1,8 @@
+500.1.1={
+	law = true_cognatic_succession
+	law = succ_papal_succession
+	law = status_of_women_3
+}
 1021.1.1 = {
 	holder = 109
 }
