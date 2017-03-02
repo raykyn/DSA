@@ -6,6 +6,7 @@
 	dynasty = 1
 	father = 2
 	mother = 3
+	add_trait = twin
 	1008.06.26 = {birth=yes}
 	
 	1076.12.06 = {death=yes}
@@ -53,6 +54,7 @@
 	father = 2
 	mother = 3
 	add_trait = mage
+	add_trait = twin
 	1008.06.26 = {birth=yes}
 	
 	1076.12.06 = {death=yes}
@@ -584,7 +586,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 27
-	mother = 52
+	father = 52
 	1028.01.01 = {birth=yes}
 	
 	1050.01.01 = {death=yes}
@@ -1083,7 +1085,7 @@
 	religion = puniner 
 	culture = nebachot
 	dynasty = 53
-	mother = 99
+	mother = 98
 	1019.08.25 = {birth=yes}
 	
 	1050.01.01 = {death=yes}

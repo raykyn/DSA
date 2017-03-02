@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #Written by Raikin, June 2016
 
 import csv
+import sys
 import re
 
 title_starts = "1020.1.1"
@@ -11,6 +12,9 @@ titlepath = "C:/Users/Rayan/Documents/Paradox Interactive/Crusader Kings II/mod/
 outfile = 'auto_chars.txt'
 
 def applytitle(id,title):
+
+    print id
+    print title
 
     try:
         if len(title) == 1:
@@ -54,6 +58,7 @@ def applytitle(id,title):
             print "something went wrong"
             
     except:
+        print("Unexpected error:", sys.exc_info()[0])
         with open("titlesnotfound.txt", "a") as f:
             f.write("The title " + title[0] + " could not be found.\n")
             
