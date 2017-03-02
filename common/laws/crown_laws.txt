@@ -154,10 +154,7 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
-						}
+						is_reformed_religion = yes
 					}
 				}
 			}
@@ -250,10 +247,7 @@ de_jure_laws = {
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
-						}
+                        is_reformed_religion = yes
 					}
 				}
 			}
@@ -443,8 +437,7 @@ de_jure_laws = {
 		potential = {
 			holder_scope = {
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					religion = puniner
 				}
 				is_tribal = no
 				is_nomadic = no
@@ -481,8 +474,7 @@ de_jure_laws = {
 		potential = {
 			holder_scope = {
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					religion = puniner
 				}
 				is_tribal = no
 				is_nomadic = no

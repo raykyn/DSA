@@ -622,28 +622,6 @@ settlement_decisions = {
 					religion = FROM
 				}
 			}
-		
-			# Change name of Avaria to Hungary if relevant.
-			if = {
-				limit = {
-					FROM = {
-						culture = hungarian
-					}
-					location = {
-						kingdom = { title = k_hungary }
-					}
-					k_hungary = {
-						has_holder = no
-					}
-				}
-				set_global_flag = avar_khaganate_renamed
-				k_hungary = {
-					reset_coa = THIS
-					set_name=""
-					adjective=""
-					grant_title = FROM
-				}
-			}
 			
 			if = {
 				limit = { NOT = { holder = FROM } }
@@ -1367,19 +1345,6 @@ settlement_decisions = {
 							first_count_vassals = yes
 							second_type = none
 							value = 1.5
-						}
-					}
-				}
-			}
-			
-			modifier = {
-				factor = 0
-				FROM = {
-					any_demesne_title = {
-						OR = {
-							title = e_mongol_empire
-							title = e_golden_horde
-							title = e_chagatai
 						}
 					}
 				}
@@ -2140,20 +2105,6 @@ settlement_decisions = {
 				factor = 2.0
 				FROM = {
 					stewardship = 10
-				}
-			}
-			
-			modifier = {
-				factor = 0
-				FROM =
-				{
-					any_demesne_title = {
-						OR = {
-							title = e_mongol_empire
-							title = e_golden_horde
-							title = e_chagatai
-						}
-					}
 				}
 			}
 		}

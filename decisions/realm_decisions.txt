@@ -814,7 +814,6 @@ decisions = {
 				factor = 0.01
 				liege = {
 					religion_group = ROOT
-					NOT = { religion_group = pagan_group }
 					NOT = { religion = ROOT }
 				}
 			}

@@ -186,13 +186,6 @@ decisions = {
 			is_ruler = yes
 			age = 16
 			prisoner = no
-			NOT = {
-				OR = {
-					has_landed_title = e_mongol_empire
-					has_landed_title = e_golden_horde
-					has_landed_title = e_il-khanate
-				}
-			}
 			NOT = {	has_character_modifier = holding_grand_hunt }
 			OR = {
 				NOT = { has_dlc = "Way of Life" }

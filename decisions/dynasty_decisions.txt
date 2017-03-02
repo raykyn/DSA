@@ -123,6 +123,7 @@ targetted_decisions = {
 	}
 	
 	# Muslim ruler tries to convince a dynasty member to lose the 'Decadent' Trait
+    # No decadence => Not needed anymore
 	convince_to_straighten_up = {
 		filter = dynasty
 		ai_target_filter = dynasty
@@ -131,7 +132,6 @@ targetted_decisions = {
 		
 		from_potential = {
 			is_playable = yes
-			religion_group = muslim
 			father_even_if_dead = {
 				OR = {
 					is_alive = no
