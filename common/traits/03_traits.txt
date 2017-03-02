@@ -11,13 +11,13 @@ race_elf = {
     
     sex_appeal_opinion = 30
 
-    fertility = -0.5 #To be discussed
+    fertility = -50.0 # Getting pregnant will be done through events
     
     diplomacy = 1
     
     same_opinion = 10
     
-    health = 2.0
+    health = 10.0
 	
 	female_compliment = COMPL_BEAUTY
 	female_compliment_adj = COMPL_FAIR
@@ -37,9 +37,9 @@ race_dwarf = {
     
     same_opinion = 10
     
-    fertility = -0.5 #To be discussed
+    fertility = -50.0 # Getting pregnant will be done through events
     
-    health = 2.0
+    health = 5.0
     
     random = no
 }

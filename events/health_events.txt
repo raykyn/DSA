@@ -1094,6 +1094,8 @@ character_event = {
 	trigger = {
 		NOT = { trait = infirm }
 		NOT = { trait = incapable }
+        NOT = { trait = race_elf }
+        NOT = { trait = race_dwarf }
 	}
 	
 	mean_time_to_happen = {
@@ -1152,6 +1154,8 @@ character_event = {
 			trait = inbred
 		}
 		NOT = { trait = incapable }
+        NOT = { trait = race_elf }
+        NOT = { trait = race_dwarf }
 	}
 	
 	mean_time_to_happen = {
