@@ -18,7 +18,6 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 				OR = {
@@ -46,12 +45,6 @@ succession_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
-			holder_scope = {
-				OR = {
-					is_tribal = no
-					NOT = { religion_group = pagan_group }
-				}
-			}
 			NAND = { 
 				has_law = succession_voting_power_1
 				has_law = succ_feudal_elective
@@ -80,7 +73,6 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 				OR = {
@@ -140,16 +132,6 @@ succession_laws = {
 					primary_title = {
 						NOT = { title = PREVPREV }
 					}
-				}
-				
-				NOT = { religion_group = muslim }
-				NOT = { religion_group = indian_group }
-				
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-					religion = hellenic_pagan
-					is_patrician = yes
 				}
 				
 				OR = {
@@ -237,7 +219,6 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
-				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -256,11 +237,6 @@ succession_laws = {
 									holy_order = yes
 								}
 							}
-						}
-						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
-							religion = hellenic_pagan
 						}
 					}
 					OR = {
@@ -337,21 +313,9 @@ succession_laws = {
 						}
 					}
 				}
-				OR = {
-					NOR = { 
-						religion_group = muslim
-						religion_group = indian_group
-					}
-					has_law = succession_voting_power_1
-				}
 				is_merchant_republic = no
 				is_patrician = no
 				
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-					religion = hellenic_pagan
-				}
 				OR = {
 					independent = yes
 					NOT = {
@@ -393,10 +357,9 @@ succession_laws = {
 						}
 					}
 				}
-				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				culture_group = celtic
+				culture = albernian
 				OR = {
 					independent = yes
 					NOT = {
@@ -415,7 +378,7 @@ succession_laws = {
 			NOT = { tier = baron }
 			OR = {
 				holder_scope = { 
-					culture_group = celtic
+					culture = albernian
 				}
 				AND = {
 					tier = baron
@@ -465,21 +428,6 @@ succession_laws = {
 						}
 					}
 				}
-				OR = {
-					culture = mongol
-					AND = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = pagan }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = west_african_pagan }
-					}
-				}
-				
-				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 				OR = {
@@ -551,7 +499,7 @@ succession_laws = {
 #		dynasty_opinion = 10
 		potential = {
 			holder_scope = {
-				religion_group = muslim
+				religion_group = rastullah_group
 				is_republic = no
 				is_merchant_republic = no
 				is_nomadic = no
@@ -593,6 +541,7 @@ succession_laws = {
 			always = no
 		}			
 	}
+    
 	succ_papal_succession = {
 		potential = {
 			title = k_zwoelf
@@ -628,7 +577,7 @@ succession_laws = {
 	
 	succ_open_elective = {
 		potential = {
-			NOT = { title = k_twelve }
+			NOT = { title = k_zwoelf }
 			temporary = no
 			OR = {
 				is_primary_type_title = yes

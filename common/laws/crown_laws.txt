@@ -153,9 +153,6 @@ de_jure_laws = {
 				
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
-					hidden_tooltip = {
-						is_reformed_religion = yes
-					}
 				}
 			}
 			OR = {
@@ -246,9 +243,6 @@ de_jure_laws = {
 				is_republic = no 
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
-					hidden_tooltip = {
-                        is_reformed_religion = yes
-					}
 				}
 			}
 			OR = {
@@ -343,12 +337,6 @@ de_jure_laws = {
 				is_republic = no 
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
-					hidden_tooltip = {
-						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
-						}
-					}
 				}
 			}
 			has_law = crown_authority_3
