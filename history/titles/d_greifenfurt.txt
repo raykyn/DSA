@@ -5,7 +5,7 @@
 	law = status_of_women_3
 }
 800.1.1={
-	liege=k_gareth
+	liege=e_middlerealm
 }
 1014.1.1 = {
 	holder = 68
