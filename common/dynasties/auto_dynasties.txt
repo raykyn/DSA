@@ -341,7 +341,7 @@
 }
 
 58 = {
-	name = "von Mersingen"
+	name = "von Becherstolz"
 	culture = garethi
 	used_for_random = no
 }

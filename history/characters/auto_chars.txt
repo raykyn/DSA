@@ -1109,10 +1109,10 @@
 	name = "Barduron"
 	religion = puniner 
 	culture = garethi
-	dynasty = 58
+	dynasty = 1
 	add_trait = ambitious
-	01.01.876 = {birth=yes}
-	01.01.30 = {death=yes}
+	876.01.01 = {birth=yes}
+	930.01.01 = {death=yes}
 }
 
 111 = {
@@ -1121,8 +1121,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 110
-	01.01.96 = {birth=yes}
-	01.01.48 = {death=yes}
+	896.01.01 = {birth=yes}
+	948.01.01 = {death=yes}
 	#nickname_der_Grausame
 }
 
@@ -1132,8 +1132,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 111
-	01.01.28 = {birth=yes}
-	01.01.95 = {death=yes}
+	928.01.01 = {birth=yes}
+	995.01.01 = {death=yes}
 }
 
 113 = {
@@ -1143,8 +1143,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 111
-	01.01.28 = {birth=yes}
-	01.01.21 = {death=yes}
+	928.01.01 = {birth=yes}
+	1021.01.01 = {death=yes}
 }
 
 114 = {
@@ -1154,8 +1154,8 @@
 	dynasty = 1
 	father = 112
 	add_trait = mage
-	01.01.55 = {birth=yes}
-	01.01.00 = {death=yes}
+	955.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 115 = {
@@ -1165,8 +1165,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 110
-	01.01.06 = {birth=yes}
-	01.01.65 = {death=yes}
+	906.01.01 = {birth=yes}
+	965.01.01 = {death=yes}
 }
 
 116 = {
@@ -1177,8 +1177,8 @@
 	mother = 115
 	add_trait = ambitious
 	add_trait = smart
-	01.01.40 = {birth=yes}
-	01.01.93 = {death=yes}
+	940.01.01 = {birth=yes}
+	993.01.01 = {death=yes}
 	#nickname_der_Erneuerer
 }
 
@@ -1188,8 +1188,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 116
-	01.01.65 = {birth=yes}
-	01.01.10 = {death=yes}
+	965.01.01 = {birth=yes}
+	1010.01.01 = {death=yes}
 }
 
 118 = {
@@ -1199,8 +1199,8 @@
 	culture = garethi
 	dynasty = 1
 	mother = 115
-	01.01.41 = {birth=yes}
-	01.01.95 = {death=yes}
+	941.01.01 = {birth=yes}
+	995.01.01 = {death=yes}
 }
 
 119 = {
@@ -1208,11 +1208,12 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 48
+	father = 143
 	mother = 118
 	add_trait = ambitious
 	add_trait = smart
-	01.01.56 = {birth=yes}
-	01.01.28 = {death=yes}
+	956.01.01 = {birth=yes}
+	1028.01.01 = {death=yes}
 }
 
 120 = {
@@ -1221,8 +1222,8 @@
 	culture = garethi
 	dynasty = 48
 	father = 119
-	01.01.75 = {birth=yes}
-	01.01.00 = {death=yes}
+	975.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 121 = {
@@ -1231,8 +1232,8 @@
 	culture = garethi
 	dynasty = 48
 	father = 120
-	01.01.95 = {birth=yes}
-	01.01.00 = {death=yes}
+	995.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 122 = {
@@ -1241,9 +1242,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 48
+	father = 143
 	mother = 118
-	01.01.60 = {birth=yes}
-	01.01.11 = {death=yes}
+	960.01.01 = {birth=yes}
+	1011.01.01 = {death=yes}
 }
 
 123 = {
@@ -1253,8 +1255,8 @@
 	dynasty = 48
 	father = 85
 	mother = 84
-	01.01.18 = {birth=yes}
-	01.01.00 = {death=yes}
+	1018.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 124 = {
@@ -1264,8 +1266,8 @@
 	dynasty = 1
 	mother = 115
 	add_trait = smart
-	01.01.52 = {birth=yes}
-	01.01.00 = {death=yes}
+	952.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 125 = {
@@ -1274,8 +1276,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 110
-	01.01.07 = {birth=yes}
-	01.01.32 = {death=yes}
+	907.01.01 = {birth=yes}
+	932.01.01 = {death=yes}
 }
 
 126 = {
@@ -1285,8 +1287,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 125
-	01.01.25 = {birth=yes}
-	01.01.03 = {death=yes}
+	925.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
 }
 
 127 = {
@@ -1294,9 +1296,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 1
+	father = 135
 	mother = 126
-	01.01.51 = {birth=yes}
-	01.01.28 = {death=yes}
+	951.01.01 = {birth=yes}
+	1028.01.01 = {death=yes}
 }
 
 128 = {
@@ -1304,9 +1307,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 1
+	father = 135
 	mother = 126
-	01.01.58 = {birth=yes}
-	01.01.03 = {death=yes}
+	958.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
 }
 
 129 = {
@@ -1316,8 +1320,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 128
-	01.01.98 = {birth=yes}
-	01.01.00 = {death=yes}
+	998.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 130 = {
@@ -1326,9 +1330,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 1
+	father = 135
 	mother = 126
-	01.01.69 = {birth=yes}
-	01.01.21 = {death=yes}
+	969.01.01 = {birth=yes}
+	1021.01.01 = {death=yes}
 }
 
 131 = {
@@ -1337,8 +1342,8 @@
 	culture = garethi
 	dynasty = 1
 	mother = 130
-	01.01.94 = {birth=yes}
-	01.01.00 = {death=yes}
+	994.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 132 = {
@@ -1348,8 +1353,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 131
-	01.01.19 = {birth=yes}
-	01.01.00 = {death=yes}
+	1019.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 133 = {
@@ -1358,8 +1363,8 @@
 	culture = garethi
 	dynasty = 1
 	father = 131
-	01.01.21 = {birth=yes}
-	02.01.00 = {death=yes}
+	1021.01.01 = {birth=yes}
+	1100.01.02 = {death=yes}
 }
 
 134 = {
@@ -1369,7 +1374,96 @@
 	culture = garethi
 	dynasty = 1
 	father = 131
-	01.01.27 = {birth=yes}
-	03.01.00 = {death=yes}
+	1027.01.01 = {birth=yes}
+	1100.01.03 = {death=yes}
+}
+
+135 = {
+	name = "Viburn"
+	religion = puniner 
+	culture = garethi
+	dynasty = 58
+	father = 136
+	926.01.01 = {birth=yes}
+	1002.01.01 = {death=yes}
+}
+
+136 = {
+	name = "Kordan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 58
+	950.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+137 = {
+	name = "Dirion"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 125
+	932.01.01 = {birth=yes}
+	994.01.01 = {death=yes}
+}
+
+138 = {
+	name = "Sighelm"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 137
+	966.01.01 = {birth=yes}
+	1022.01.01 = {death=yes}
+}
+
+139 = {
+	name = "Alarich"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 138
+	995.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+140 = {
+	name = "Elissa Alara"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 139
+	1028.01.01 = {birth=yes}
+	1100.01.02 = {death=yes}
+}
+
+141 = {
+	name = "Dirion Hakaan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 139
+	1029.01.01 = {birth=yes}
+	1100.01.03 = {death=yes}
+}
+
+142 = {
+	name = "Sigman"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 139
+	1026.01.01 = {birth=yes}
+	1100.01.04 = {death=yes}
+}
+
+143 = {
+	name = "Egilmar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 48
+	940.01.01 = {birth=yes}
+	984.01.01 = {death=yes}
 }
 
