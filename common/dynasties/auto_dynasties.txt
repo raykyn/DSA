@@ -340,3 +340,9 @@
 	used_for_random = no
 }
 
+58 = {
+	name = "von Mersingen"
+	culture = garethi
+	used_for_random = no
+}
+
