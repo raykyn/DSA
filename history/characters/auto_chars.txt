@@ -1121,6 +1121,7 @@
 	culture = garethi
 	dynasty = 1
 	father = 110
+	add_trait = cruel
 	896.01.01 = {birth=yes}
 	948.01.01 = {death=yes}
 	#nickname_der_Grausame
@@ -1176,7 +1177,7 @@
 	dynasty = 1
 	mother = 115
 	add_trait = ambitious
-	add_trait = smart
+	add_trait = quick
 	940.01.01 = {birth=yes}
 	993.01.01 = {death=yes}
 	#nickname_der_Erneuerer
@@ -1211,7 +1212,7 @@
 	father = 143
 	mother = 118
 	add_trait = ambitious
-	add_trait = smart
+	add_trait = quick
 	956.01.01 = {birth=yes}
 	1028.01.01 = {death=yes}
 }
@@ -1265,7 +1266,7 @@
 	culture = garethi
 	dynasty = 1
 	mother = 115
-	add_trait = smart
+	add_trait = quick
 	952.01.01 = {birth=yes}
 	1100.01.01 = {death=yes}
 }

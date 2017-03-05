@@ -1,10 +1,56 @@
+bm_zweiter_ogerzug = 
+{
+	name = "BM_ZW_OGERZUG"
+	desc = "BM_ZW_OGERZUG_DESC"
+	date = 1002.1.1
+	era = yes
+}
+
+bm_rabe_loewe = 
+{
+	name = "BM_RABE_LOEWE"
+	desc = "BM_RABE_LOEWE_DESC"
+	date = 1008.1.1
+}
+
+bm_dritt_orkensturm = 
+{
+	name = "BM_DRITT_ORK"
+	desc = "BM_DRITT_ORK_DESC"
+	date = 1010.1.1
+}
+
+bm_daemonenmeister =
+{
+	name = "BM_BORBARAD"
+	desc = "BM_BORBARAD_DESC"
+	date = 1016.1.1
+}
+
+bm_zwoelftes_zeitalter =
+{
+	name = "BM_ZWOELFTE_ERA"
+	desc = "BM_ZWOELFTE_ERA_DESC"
+	date = 1022.1.1
+	era = yes
+}
+
+bm_krieg_der_drachen = 
+{
+	name = "BM_KRIEG_FIRDAYON"
+	desc = "BM_KRIEG_FIRDAYON_DESC"
+	date = 1028.1.1
+}
+
 bm_arivor =
 {
 	name = "BM_PEACE_OF_ARIVOR"
 	desc = "BM_PEACE_OF_ARIVOR_DESC"
 	date = 1030.8.28
+	era = yes
+	custom_start = yes
     
-    selectable_character = {
+    	selectable_character = {
         id = 1
         age = 22
         name = ERA_CHAR_NAME_1
@@ -18,6 +64,6 @@ bm_arivor =
 			culture="garethi"
 			government = feudal_government
 			dynasty=1
-		}
+	}
     }
 }
