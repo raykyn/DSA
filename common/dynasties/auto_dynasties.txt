@@ -346,3 +346,9 @@
 	used_for_random = no
 }
 
+59 = {
+	name = "von Stippwitz"
+	culture = garethi
+	used_for_random = no
+}
+
