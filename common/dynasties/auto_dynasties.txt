@@ -352,3 +352,9 @@
 	used_for_random = no
 }
 
+60 = {
+	name = "von Zweifelsfels"
+	culture = garethi
+	used_for_random = no
+}
+

@@ -176,6 +176,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 7
+	father = 174
 	980.12.05 = {birth=yes}
 	1049.05.17 = {death=yes}
 }
@@ -1783,5 +1784,68 @@
 	dynasty = 59
 	994.01.01 = {birth=yes}
 	1020.01.01 = {death=yes}
+}
+
+174 = {
+	name = "Hilbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 7
+	950.01.01 = {birth=yes}
+	1014.01.01 = {death=yes}
+}
+
+175 = {
+	name = "Eberich"
+	religion = puniner 
+	culture = garethi
+	dynasty = 7
+	father = 16
+	1000.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+176 = {
+	name = "Ernbrecht"
+	religion = puniner 
+	culture = garethi
+	dynasty = 7
+	father = 16
+	1007.01.01 = {birth=yes}
+	1035.1.1 = {add_spouse=177}
+	1100.01.01 = {death=yes}
+}
+
+177 = {
+	name = "Rondriga"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 60
+	01.01.12 = {birth=yes}
+	1035.1.1 = {add_spouse=176}
+	01.01.00 = {death=yes}
+}
+
+178 = {
+	name = "Erlan Leowyn"
+	religion = puniner 
+	culture = garethi
+	dynasty = 60
+	father = 176
+	mother = 177
+	01.01.35 = {birth=yes}
+	02.01.00 = {death=yes}
+}
+
+179 = {
+	name = "Thisdan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 60
+	father = 176
+	mother = 177
+	01.01.36 = {birth=yes}
+	03.01.00 = {death=yes}
 }
 
