@@ -1,0 +1,18 @@
+# c_ragathsquell
+
+# County Title
+title = c_ragathsquell
+
+# Settlements
+max_settlements = 4
+
+b_ragathsquell = castle
+#b_ragathsquell_2 = city
+#b_ragathsquell_3 = temple
+#b_ragathsquell_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

@@ -1,0 +1,18 @@
+# c_agum
+
+# County Title
+title = c_agum
+
+# Settlements
+max_settlements = 4
+
+b_agum = castle
+#b_agum_2 = city
+#b_agum_3 = temple
+#b_agum_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

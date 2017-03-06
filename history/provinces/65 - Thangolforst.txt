@@ -1,0 +1,18 @@
+# c_thangolforst
+
+# County Title
+title = c_thangolforst
+
+# Settlements
+max_settlements = 4
+
+b_thangolforst = castle
+#b_thangolforst_2 = city
+#b_thangolforst_3 = temple
+#b_thangolforst_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

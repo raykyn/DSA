@@ -1,0 +1,18 @@
+# c_punin
+
+# County Title
+title = c_punin
+
+# Settlements
+max_settlements = 4
+
+b_punin = castle
+#b_punin_2 = city
+#b_punin_3 = temple
+#b_punin_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

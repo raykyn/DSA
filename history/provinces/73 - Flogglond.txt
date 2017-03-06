@@ -1,0 +1,18 @@
+# c_flogglond
+
+# County Title
+title = c_flogglond
+
+# Settlements
+max_settlements = 4
+
+b_flogglond = castle
+#b_flogglond_2 = city
+#b_flogglond_3 = temple
+#b_flogglond_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

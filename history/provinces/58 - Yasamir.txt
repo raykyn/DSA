@@ -1,0 +1,18 @@
+# c_yasamir
+
+# County Title
+title = c_yasamir
+
+# Settlements
+max_settlements = 4
+
+b_yasamir = castle
+#b_yasamir_2 = city
+#b_yasamir_3 = temple
+#b_yasamir_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

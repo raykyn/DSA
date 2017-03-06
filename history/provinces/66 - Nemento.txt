@@ -1,0 +1,18 @@
+# c_nemento
+
+# County Title
+title = c_nemento
+
+# Settlements
+max_settlements = 4
+
+b_nemento = castle
+#b_nemento_2 = city
+#b_nemento_3 = temple
+#b_nemento_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

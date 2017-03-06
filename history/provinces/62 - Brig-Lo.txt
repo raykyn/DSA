@@ -1,0 +1,18 @@
+# c_brig_lo
+
+# County Title
+title = c_brig_lo
+
+# Settlements
+max_settlements = 4
+
+b_brig_lo = castle
+#b_brig_lo_2 = city
+#b_brig_lo_3 = temple
+#b_brig_lo_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History

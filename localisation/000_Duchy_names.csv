@@ -9,9 +9,17 @@ d_hartsteen;Hartsteen;Hartsteen;Hartsteen;;Hartsteen;;;;;;;;;x
 d_hartsteen_adj;Hartsteenian;;hartsteener;;;;;;;;;;;x
 d_perricum;Perricum;Perricum;Perricum;;Perricum;;;;;;;;;x
 d_perricum_adj;Perricumian;;perricumer;;;;;;;;;;;x
+d_ragath;Ragath;Ragath;Ragath;;Ragath;;;;;;;;;x
+d_ragath_adj;Ragathian;;ragather;;;;;;;;;;;x
 d_reichsforst;Reichsforst;Reichsforst;Reichsforst;;Reichsforst;;;;;;;;;x
 d_reichsforst_adj;Reichsforstian;;reichsforster;;;;;;;;;;;x
 d_schlund;Schlund;Schlund;Schlund;;Schlund;;;;;;;;;x
 d_schlund_adj;Schlundian;;schlunder;;;;;;;;;;;x
+d_suedpforte;Südpforte;Südpforte;Südpforte;;Südpforte;;;;;;;;;x
+d_suedpforte_adj;Südpfortean;;südpforter;;;;;;;;;;;x
 d_waldstein;Waldstein;Waldstein;Waldstein;;Waldstein;;;;;;;;;x
 d_waldstein_adj;Waldsteinian;;waldsteiner;;;;;;;;;;;x
+d_waldwacht;Waldwacht;Waldwacht;Waldwacht;;Waldwacht;;;;;;;;;x
+d_waldwacht_adj;Waldwachtian;;waldwachter;;;;;;;;;;;x
+d_yaquirtal;Yaquirtal;Yaquirtal;Yaquirtal;;Yaquirtal;;;;;;;;;x
+d_yaquirtal_adj;Yaquirtalian;;yaquirtaler;;;;;;;;;;;x

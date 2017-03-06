@@ -1,0 +1,18 @@
+# c_cres
+
+# County Title
+title = c_cres
+
+# Settlements
+max_settlements = 4
+
+b_cres = castle
+#b_cres_2 = city
+#b_cres_3 = temple
+#b_cres_4 = castle
+
+# Misc
+culture = almadan
+religion = puniner
+terrain = farmlands
+#History
