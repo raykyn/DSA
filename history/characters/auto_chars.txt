@@ -201,8 +201,12 @@
 	culture = garethi
 	dynasty = 9
 	mother = 26
+	add_trait = arbitrary
+	add_trait = zealous
 	1004.01.01 = {birth=yes}
 	1072.06.12 = {death=yes}
+	#sehr
+	#praios-gläubig
 }
 
 19 = {
@@ -210,6 +214,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 10
+	mother = 198
 	994.08.28 = {birth=yes}
 	1063.02.07 = {death=yes}
 }
@@ -279,6 +284,9 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 9
+	father = 188
+	add_trait = attractive
+	add_trait = smart
 	983.01.01 = {birth=yes}
 	1027.01.01 = {death=yes}
 }
@@ -1930,5 +1938,178 @@
 	1026.01.01 = {birth=yes}
 	1100.01.01 = {death=yes}
 	#Borongeweihter
+}
+
+187 = {
+	name = "Yesatan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 195
+	add_trait = quick
+	add_trait = scholar
+	944.01.01 = {birth=yes}
+	1006.01.01 = {death=yes}
+	#Daimokrat
+}
+
+188 = {
+	name = "Sieggewiss"
+	religion = puniner 
+	culture = tobrian
+	dynasty = 9
+	952.01.01 = {birth=yes}
+	1006.01.01 = {death=yes}
+}
+
+189 = {
+	name = "Raulgard"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 9
+	father = 188
+	add_trait = proud
+	984.01.01 = {birth=yes}
+	1008.1.1 = {add_spouse=47}
+	1036.01.01 = {death=yes}
+}
+
+190 = {
+	name = "Seginhardt"
+	religion = puniner 
+	culture = garethi
+	dynasty = 9
+	father = 188
+	986.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+191 = {
+	name = "Leuwald"
+	religion = puniner 
+	culture = garethi
+	dynasty = 9
+	father = 188
+	add_trait = mage
+	994.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Weissmagier
+	#Kampfmagier
+}
+
+192 = {
+	name = "Danos"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 47
+	mother = 189
+	1010.01.01 = {birth=yes}
+	1031.01.01 = {death=yes}
+}
+
+193 = {
+	name = "Odilbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 47
+	mother = 189
+	1021.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+194 = {
+	name = "Rudane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 47
+	mother = 189
+	1027.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Praiosgeweihte
+}
+
+195 = {
+	name = "Quinian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	925.01.01 = {birth=yes}
+	989.01.01 = {death=yes}
+}
+
+196 = {
+	name = "Alrik"
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 195
+	952.01.01 = {birth=yes}
+	1036.01.01 = {death=yes}
+}
+
+197 = {
+	name = "Nanduriane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 195
+	956.01.01 = {birth=yes}
+	1019.01.01 = {death=yes}
+	#Nandusgeweihte
+}
+
+198 = {
+	name = "Simiane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 196
+	976.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+199 = {
+	name = "Udbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 196
+	980.01.01 = {birth=yes}
+	1037.01.01 = {death=yes}
+}
+
+200 = {
+	name = "Mechtessa"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	mother = 198
+	add_trait = chaste
+	1003.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#sehr
+	#travia-gläubig
+}
+
+201 = {
+	name = "Neetya"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 199
+	add_trait = mage
+	1002.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Weissmagier
+	#Beherrschung
 }
 
