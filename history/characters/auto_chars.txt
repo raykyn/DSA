@@ -67,7 +67,8 @@
 	mother = 8
 	976.01.01 = {birth=yes}
 	995.1.1 = {add_spouse = 11}
-	1035.06.13 = {death=yes}
+	1039.01.01 = {death=yes}
+	#nickname_der_Ritterliche
 }
 
 7 = {
@@ -131,6 +132,8 @@
 	dynasty = 3
 	father = 6
 	mother = 11
+	add_trait = slothful
+	add_trait = lustful
 	996.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -188,7 +191,7 @@
 	culture = garethi
 	dynasty = 8
 	father = 23
-	966.05.06 = {birth=yes}
+	966.01.01 = {birth=yes}
 	1033.11.21 = {death=yes}
 }
 
@@ -244,7 +247,7 @@
 	culture = garethi
 	dynasty = 8
 	929.10.13 = {birth=yes}
-	979.01.01 = {death=yes}
+	1020.01.01 = {death=yes}
 }
 
 24 = {
@@ -266,6 +269,8 @@
 	father = 24
 	1009.06.07 = {birth=yes}
 	1069.01.01 = {death=yes}
+	#sehr
+	#tsa-gläubig
 }
 
 26 = {
@@ -1822,9 +1827,9 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 60
-	01.01.12 = {birth=yes}
+	1012.01.01 = {birth=yes}
 	1035.1.1 = {add_spouse=176}
-	01.01.00 = {death=yes}
+	1100.01.01 = {death=yes}
 }
 
 178 = {
@@ -1834,8 +1839,8 @@
 	dynasty = 60
 	father = 176
 	mother = 177
-	01.01.35 = {birth=yes}
-	02.01.00 = {death=yes}
+	1035.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
 179 = {
@@ -1845,7 +1850,85 @@
 	dynasty = 60
 	father = 176
 	mother = 177
-	01.01.36 = {birth=yes}
-	03.01.00 = {death=yes}
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+180 = {
+	name = "Tsadan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 8
+	father = 23
+	971.01.01 = {birth=yes}
+	994.1.1 = {add_spouse=180}
+	1010.01.01 = {death=yes}
+}
+
+181 = {
+	name = "Emmeran"
+	religion = puniner 
+	culture = garethi
+	dynasty = 61
+	father = 180
+	mother = 182
+	995.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+182 = {
+	name = "Sinarya"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 61
+	970.01.01 = {birth=yes}
+	994.1.1 = {add_spouse=182}
+	1023.01.01 = {death=yes}
+}
+
+183 = {
+	name = "Perainidane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 61
+	father = 181
+	1025.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Perainegeweihte
+}
+
+184 = {
+	name = "Aurentian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 61
+	father = 181
+	add_trait = quick
+	1027.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+185 = {
+	name = "Edelbrecht"
+	religion = puniner 
+	culture = garethi
+	dynasty = 61
+	father = 180
+	mother = 182
+	997.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+186 = {
+	name = "Efferdan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 61
+	father = 185
+	1026.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Borongeweihter
 }
 

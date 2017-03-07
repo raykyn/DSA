@@ -67,3 +67,10 @@ bm_arivor =
 	}
     }
 }
+
+bm_neuzeit = 
+{
+	name = "BM_NEUZEIT"
+	desc = "BM_NEUZEIT"
+	date = 1039.1.1
+}

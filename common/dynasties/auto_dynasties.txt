@@ -358,3 +358,9 @@
 	used_for_random = no
 }
 
+61 = {
+	name = "von Erlenfall"
+	culture = garethi
+	used_for_random = no
+}
+
