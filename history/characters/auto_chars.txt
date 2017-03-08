@@ -2113,3 +2113,41 @@
 	#Beherrschung
 }
 
+202 = {
+	name = "Gorsch"
+	religion = puniner 
+	culture = garethi
+	dynasty = 62
+	add_trait = race_dwarf
+	667.01.01 = {birth=yes}
+	1020.01.01 = {death=yes}
+}
+
+203 = {
+	name = "Gorbon"
+	religion = puniner 
+	culture = garethi
+	dynasty = 62
+	father = 202
+	add_trait = race_dwarf
+	add_trait = ambitious
+	935.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Hat
+	#sein
+	#eigenes
+	#Bergkönigreich
+	#gegründet
+}
+
+204 = {
+	name = "Gromax"
+	religion = puniner 
+	culture = garethi
+	dynasty = 62
+	father = 202
+	add_trait = race_dwarf
+	945.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+

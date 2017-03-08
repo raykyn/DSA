@@ -364,3 +364,9 @@
 	used_for_random = no
 }
 
+62 = {
+	name = "Zagrosch"
+	culture = garethi
+	used_for_random = no
+}
+

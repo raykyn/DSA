@@ -9,11 +9,25 @@ technology = {
 		d_reichsforst
 		d_schlund
 		d_waldstein
+        d_ragath
+        d_waldwacht
+        d_yaquirtal
+        d_suedpforte
 	}
-	990 = {
+    950 = {
 		military = 2.0
 		economy = 2.0
 		culture = 2.0
+	}
+    1000 = {
+		military = 2.5
+		economy = 2.5
+		culture = 2.5
+	}
+	1023 = {
+		military = 3.0
+		economy = 3.0
+		culture = 3.0
 	}
 	2000 = {
 		military = 5.0
