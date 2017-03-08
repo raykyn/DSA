@@ -3,10 +3,6 @@
 ########################################################################################################
 
 race_elf = {
-    inherit_chance = 50
-    
-    both_parent_has_trait_inherit_chance = 100
-    
     immortal = yes
     
     sex_appeal_opinion = 30
@@ -15,9 +11,14 @@ race_elf = {
     
     diplomacy = 1
     
+    intrigue = -1
+    
     same_opinion = 10
     
     health = 10.0
+    
+    ai_ambition = -40
+    ai_zeal = -40
 	
 	female_compliment = COMPL_BEAUTY
 	female_compliment_adj = COMPL_FAIR
@@ -29,10 +30,6 @@ race_elf = {
 }
 
 race_dwarf = {
-    inherit_chance = 50
-    
-    both_parent_has_trait_inherit_chance = 100
-
     immortal = yes
     
     same_opinion = 10
