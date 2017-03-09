@@ -2249,3 +2249,43 @@
 	979.01.01 = {death=yes}
 }
 
+214 = {
+	name = "Malebor"
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	father = 21
+	add_trait = proud
+	1024.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+215 = {
+	name = "Sylvius"
+	religion = puniner 
+	culture = garethi
+	dynasty = 63
+	father = 216
+	1000.01.01 = {birth=yes}
+	1021.01.01 = {death=yes}
+}
+
+216 = {
+	name = "Sylvius"
+	religion = puniner 
+	culture = garethi
+	dynasty = 63
+	father = 217
+	942.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
+}
+
+217 = {
+	name = "Sylvius"
+	religion = puniner 
+	culture = garethi
+	dynasty = 63
+	880.01.01 = {birth=yes}
+	955.01.01 = {death=yes}
+}
+

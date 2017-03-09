@@ -370,3 +370,9 @@
 	used_for_random = no
 }
 
+63 = {
+	name = "von Nym"
+	culture = garethi
+	used_for_random = no
+}
+
