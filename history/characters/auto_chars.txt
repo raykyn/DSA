@@ -224,8 +224,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 11
+	father = 205
 	992.01.25 = {birth=yes}
 	1060.07.06 = {death=yes}
+	#pulethaner
 }
 
 21 = {
@@ -439,6 +441,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 23
+	father = 212
 	981.05.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -500,6 +503,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 23
+	father = 212
 	977.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -2149,5 +2153,99 @@
 	add_trait = race_dwarf
 	945.01.01 = {birth=yes}
 	1100.01.01 = {death=yes}
+}
+
+205 = {
+	name = "Corvan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 11
+	965.01.01 = {birth=yes}
+	1013.01.01 = {death=yes}
+}
+
+206 = {
+	name = "Cordovan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 11
+	father = 205
+	985.01.01 = {birth=yes}
+	1022.01.01 = {death=yes}
+}
+
+207 = {
+	name = "Alena"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 11
+	father = 20
+	1010.01.01 = {birth=yes}
+	1026.1.1 = {add_spouse=208}
+	1032.01.01 = {death=yes}
+	#Hexe
+}
+
+208 = {
+	name = "Hilbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 211
+	1000.01.01 = {birth=yes}
+	1026.1.1 = {add_spouse=207}
+	1100.01.01 = {death=yes}
+}
+
+209 = {
+	name = "Cordovan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 208
+	mother = 207
+	1028.01.01 = {birth=yes}
+	1032.01.01 = {death=yes}
+}
+
+210 = {
+	name = "Danos"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 208
+	mother = 207
+	1029.01.01 = {birth=yes}
+	1032.01.01 = {death=yes}
+}
+
+211 = {
+	name = "Odilbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 213
+	968.01.01 = {birth=yes}
+	1023.01.01 = {death=yes}
+}
+
+212 = {
+	name = "Sighart"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 213
+	953.01.01 = {birth=yes}
+	1028.01.01 = {death=yes}
+}
+
+213 = {
+	name = "Greifhold"
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	926.01.01 = {birth=yes}
+	979.01.01 = {death=yes}
 }
 
