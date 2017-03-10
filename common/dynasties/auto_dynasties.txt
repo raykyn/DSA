@@ -382,3 +382,9 @@
 	used_for_random = no
 }
 
+65 = {
+	name = "von Waldstein"
+	culture = garethi
+	used_for_random = no
+}
+

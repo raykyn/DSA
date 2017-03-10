@@ -325,7 +325,7 @@
 	female = yes
 	religion = puniner 
 	culture = garethi
-	dynasty = 15
+	dynasty = 65
 	971.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -2473,7 +2473,7 @@
 	culture = garethi
 	dynasty = 64
 	974.01.01 = {birth=yes}
-	1011.1.1 = {add_rival=27}
+	1011.1.1 = {add_claim=c_linara}
 	1100.01.01 = {death=yes}
 }
 
@@ -2485,5 +2485,17 @@
 	father = 233
 	1001.01.01 = {birth=yes}
 	1100.01.01 = {death=yes}
+}
+
+235 = {
+	name = "Dexter"
+	religion = puniner 
+	culture = garethi
+	dynasty = 65
+	add_trait = genius
+	957.01.01 = {birth=yes}
+	1000.1.1 = {add_spouse=29}
+	1027.01.01 = {death=yes}
+	#Reichsgrossgeheimrat
 }
 
