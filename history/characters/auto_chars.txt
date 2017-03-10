@@ -244,8 +244,11 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 13
+	father = 218
 	990.01.12 = {birth=yes}
 	1058.06.24 = {death=yes}
+	#hesindianisch
+	#veranlagt
 }
 
 23 = {
@@ -2287,5 +2290,120 @@
 	dynasty = 63
 	880.01.01 = {birth=yes}
 	955.01.01 = {death=yes}
+}
+
+218 = {
+	name = "Hedegar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	father = 219
+	960.01.01 = {birth=yes}
+	1013.01.01 = {death=yes}
+}
+
+219 = {
+	name = "Udalbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	940.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
+}
+
+220 = {
+	name = "Emmerich"
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	father = 219
+	add_trait = mage
+	962.01.01 = {birth=yes}
+	1037.01.01 = {death=yes}
+	#Graumagier
+	#Heilmagier
+}
+
+221 = {
+	name = "Caldare"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	father = 218
+	993.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+222 = {
+	name = "Selfina"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	father = 218
+	1005.01.01 = {birth=yes}
+	1034.1.1 = {add_spouse=30}
+	1100.01.01 = {death=yes}
+}
+
+223 = {
+	name = "Elida"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 30
+	mother = 222
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+	#familie_hält_es_geheim
+}
+
+224 = {
+	name = "Rondriane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 187
+	969.01.01 = {birth=yes}
+	1038.01.01 = {death=yes}
+}
+
+225 = {
+	name = "Halminde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 10
+	father = 224
+	996.01.01 = {birth=yes}
+	1017.1.1 = {add_spouse=22}
+	1100.01.01 = {death=yes}
+}
+
+226 = {
+	name = "Siegwart"
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	father = 22
+	mother = 225
+	1019.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+227 = {
+	name = "Lobhilde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 13
+	father = 22
+	mother = 225
+	1022.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
 }
 
