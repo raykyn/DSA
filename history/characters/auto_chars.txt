@@ -235,6 +235,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 12
+	father = 229
 	994.06.16 = {birth=yes}
 	1062.11.26 = {death=yes}
 }
@@ -297,13 +298,15 @@
 }
 
 27 = {
-	name = "Thalmare"
+	name = "Tahlmare"
 	female = yes
 	religion = puniner 
 	culture = albernian
 	dynasty = 14
+	add_trait = race_elf
 	958.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
+	#elfe
 }
 
 28 = {
@@ -2404,6 +2407,83 @@
 	father = 22
 	mother = 225
 	1022.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+228 = {
+	name = "Martus"
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	father = 229
+	1002.01.01 = {birth=yes}
+	1036.1.1 = {add_spouse=27}
+	1100.01.01 = {death=yes}
+}
+
+229 = {
+	name = "Mulziber"
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	972.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
+}
+
+230 = {
+	name = "Magnus"
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	father = 229
+	add_trait = mage
+	990.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Gilde_nicht_bekannt
+}
+
+231 = {
+	name = "Magnata"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	father = 229
+	996.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Magiedilettant
+}
+
+232 = {
+	name = "Morgana"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	father = 229
+	1000.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Kriegerin
+	#Söldnerin
+}
+
+233 = {
+	name = "Irberod"
+	religion = puniner 
+	culture = garethi
+	dynasty = 64
+	974.01.01 = {birth=yes}
+	1011.1.1 = {add_rival=27}
+	1100.01.01 = {death=yes}
+}
+
+234 = {
+	name = "Randolph"
+	religion = puniner 
+	culture = garethi
+	dynasty = 64
+	father = 233
+	1001.01.01 = {birth=yes}
 	1100.01.01 = {death=yes}
 }
 

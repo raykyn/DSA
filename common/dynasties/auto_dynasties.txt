@@ -376,3 +376,9 @@
 	used_for_random = no
 }
 
+64 = {
+	name = "von Leustein"
+	culture = garethi
+	used_for_random = no
+}
+
