@@ -388,3 +388,15 @@
 	used_for_random = no
 }
 
+66 = {
+	name = "von Gobelstein"
+	culture = garethi
+	used_for_random = no
+}
+
+67 = {
+	name = "von Gesselingen"
+	culture = garethi
+	used_for_random = no
+}
+

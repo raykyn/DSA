@@ -335,6 +335,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 16
+	father = 236
 	1001.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -354,6 +355,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 17
+	father = 243
 	mother = 31
 	1005.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
@@ -375,7 +377,8 @@
 	name = "Sequin"
 	religion = puniner 
 	culture = garethi
-	dynasty = 19
+	dynasty = 67
+	father = 261
 	976.01.01 = {birth=yes}
 	1027.1.1 = {add_trait = in_hiding}
 	1050.01.01 = {death=yes}
@@ -2497,5 +2500,332 @@
 	1000.1.1 = {add_spouse=29}
 	1027.01.01 = {death=yes}
 	#Reichsgrossgeheimrat
+}
+
+236 = {
+	name = "Greifbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 237
+	978.01.01 = {birth=yes}
+	1022.01.01 = {death=yes}
+}
+
+237 = {
+	name = "Raulbrecht"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	mother = 238
+	954.01.01 = {birth=yes}
+	1004.01.01 = {death=yes}
+}
+
+238 = {
+	name = "Ayana"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 256
+	929.01.01 = {birth=yes}
+	1001.01.01 = {death=yes}
+}
+
+239 = {
+	name = "Celissa"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 236
+	add_trait = attractive
+	1007.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+240 = {
+	name = "Sattiva"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	mother = 239
+	1031.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+241 = {
+	name = "Eyala"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	mother = 239
+	1033.01.01 = {birth=yes}
+	1100.01.02 = {death=yes}
+}
+
+242 = {
+	name = "Albion"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	mother = 239
+	1034.01.01 = {birth=yes}
+	1100.01.03 = {death=yes}
+}
+
+243 = {
+	name = "Odalbrecht"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 237
+	981.01.01 = {birth=yes}
+	1000.1.1 = {add_matrilineal_spouse=31}
+	1020.01.01 = {death=yes}
+}
+
+244 = {
+	name = "Mirya"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	father = 243
+	mother = 31
+	add_trait = twin
+	1007.01.01 = {birth=yes}
+	1100.0.01 = {death=yes}
+}
+
+245 = {
+	name = "Fiana"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	father = 243
+	mother = 31
+	add_trait = twin
+	add_trait = content
+	1007.01.01 = {birth=yes}
+	1100.0.02 = {death=yes}
+}
+
+246 = {
+	name = "Movert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	father = 243
+	mother = 31
+	1008.01.01 = {birth=yes}
+	1100.0.03 = {death=yes}
+}
+
+247 = {
+	name = "Yassia"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	father = 243
+	mother = 31
+	1010.01.01 = {birth=yes}
+	1100.0.04 = {death=yes}
+}
+
+248 = {
+	name = "Bosper"
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	mother = 31
+	1021.01.01 = {birth=yes}
+	1100.0.05 = {death=yes}
+}
+
+249 = {
+	name = "Celissa"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 17
+	mother = 31
+	1024.01.01 = {birth=yes}
+	1100.0.06 = {death=yes}
+}
+
+250 = {
+	name = "Palinai"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 237
+	982.01.01 = {birth=yes}
+	1100.0.07 = {death=yes}
+}
+
+251 = {
+	name = "Vallbart"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	mother = 250
+	1002.01.01 = {birth=yes}
+	1100.0.08 = {death=yes}
+	#Elfenfreund
+}
+
+252 = {
+	name = "Traviane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 237
+	984.01.01 = {birth=yes}
+	1023.01.01 = {death=yes}
+	#Traviageweihte
+}
+
+253 = {
+	name = "Gundomir"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 256
+	932.01.01 = {birth=yes}
+	961.01.01 = {death=yes}
+}
+
+254 = {
+	name = "Aneste"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 253
+	953.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Halbelfe
+}
+
+255 = {
+	name = "Falkwin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	father = 256
+	934.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
+}
+
+256 = {
+	name = "Sumudir"
+	religion = puniner 
+	culture = garethi
+	dynasty = 16
+	902.01.01 = {birth=yes}
+	950.01.01 = {death=yes}
+}
+
+257 = {
+	name = "Linnert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 66
+	940.01.01 = {birth=yes}
+	1000.01.01 = {death=yes}
+}
+
+258 = {
+	name = "Griselda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 66
+	father = 257
+	979.01.01 = {birth=yes}
+	1013.01.01 = {death=yes}
+}
+
+259 = {
+	name = "Naheniel"
+	female = yes
+	religion = puniner 
+	culture = mead_elves
+	dynasty = 18
+	add_trait = race_elf
+	900.01.01 = {birth=yes}
+	1023.01.01 = {death=yes}
+}
+
+260 = {
+	name = "Jermorane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 67
+	father = 34
+	1009.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+261 = {
+	name = "Alderan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 67
+	947.01.01 = {birth=yes}
+	1011.01.01 = {death=yes}
+}
+
+262 = {
+	name = "Vitus"
+	religion = puniner 
+	culture = garethi
+	dynasty = 67
+	father = 261
+	978.01.01 = {birth=yes}
+	1021.01.01 = {death=yes}
+}
+
+263 = {
+	name = "Alrik"
+	religion = puniner 
+	culture = garethi
+	dynasty = 67
+	father = 262
+	add_trait = ambitious
+	1007.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Krieger
+}
+
+264 = {
+	name = "Answin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 67
+	father = 261
+	979.01.01 = {birth=yes}
+	1038.01.01 = {death=yes}
+	#Hesindegeweihter
+}
+
+265 = {
+	name = "Cordovan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 67
+	father = 261
+	996.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Samtene_Hand_in_Xeeranien
 }
 
