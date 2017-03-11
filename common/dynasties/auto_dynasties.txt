@@ -400,3 +400,14 @@
 	used_for_random = no
 }
 
+68 = {
+	name = "Praioslieb"
+    culture = garethi
+	used_for_random = yes
+}
+
+69 = {
+	name = "Rahjalieb"
+    culture = almadan
+	used_for_random = yes
+}
