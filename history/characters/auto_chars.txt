@@ -400,6 +400,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 21
+	father = 283
 	996.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -420,6 +421,8 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 21
+	father = 281
+	add_trait = twin
 	969.01.01 = {birth=yes}
 	1030.01.01 = {death=yes}
 }
@@ -2847,7 +2850,7 @@
 	culture = garethi
 	dynasty = 70
 	967.01.01 = {birth=yes}
-	1011.1.1 = {effect={imprison=1}}
+	1033.1.1 = {effect={imprison=1}}
 	1100.01.01 = {death=yes}
 }
 
@@ -2981,5 +2984,108 @@
 	999.01.01 = {birth=yes}
 	1032.01.01 = {death=yes}
 	#Namenlosengeweihte
+	#Religion_ändern
+}
+
+279 = {
+	name = "Felan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 72
+	1005.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+280 = {
+	name = "Praiodan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 281
+	add_trait = twin
+	969.01.01 = {birth=yes}
+	1022.01.01 = {death=yes}
+}
+
+281 = {
+	name = "Adalbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 287
+	912.01.01 = {birth=yes}
+	997.01.01 = {death=yes}
+}
+
+282 = {
+	name = "Praiodane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 280
+	1001.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+283 = {
+	name = "Udina"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 284
+	971.01.01 = {birth=yes}
+	1032.01.01 = {death=yes}
+}
+
+284 = {
+	name = "Eberhelm"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 285
+	949.01.01 = {birth=yes}
+	1014.01.01 = {death=yes}
+}
+
+285 = {
+	name = "Helmarius"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	mother = 286
+	913.01.01 = {birth=yes}
+	1009.01.01 = {death=yes}
+}
+
+286 = {
+	name = "Phexania"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 288
+	887.01.01 = {birth=yes}
+	932.01.01 = {death=yes}
+}
+
+287 = {
+	name = "Geismar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 288
+	851.01.01 = {birth=yes}
+	915.01.01 = {death=yes}
+}
+
+288 = {
+	name = "Quintus"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	825.01.01 = {birth=yes}
+	860.01.01 = {death=yes}
 }
 

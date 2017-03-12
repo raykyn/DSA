@@ -423,3 +423,9 @@
 	used_for_random = no
 }
 
+72 = {
+	name = "von Schallenberg"
+	culture = garethi
+	used_for_random = no
+}
+
