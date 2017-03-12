@@ -411,3 +411,15 @@
     culture = almadan
 	used_for_random = yes
 }
+70 = {
+	name = "von Bärenau"
+	culture = garethi
+	used_for_random = no
+}
+
+71 = {
+	name = "di Silastide"
+	culture = yaquiria
+	used_for_random = no
+}
+

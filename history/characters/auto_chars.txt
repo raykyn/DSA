@@ -941,6 +941,7 @@
 	father = 91
 	mother = 88
 	1014.06.20 = {birth=yes}
+	1034.1.1 = {add_spouse=270}
 	1050.01.01 = {death=yes}
 }
 
@@ -951,6 +952,7 @@
 	dynasty = 28
 	father = 92
 	976.01.01 = {birth=yes}
+	1033.1.1 = {add_spouse=88}
 	1050.01.01 = {death=yes}
 }
 
@@ -2827,5 +2829,157 @@
 	996.01.01 = {birth=yes}
 	1100.01.01 = {death=yes}
 	#Samtene_Hand_in_Xeeranien
+}
+
+266 = {
+	name = "Brander"
+	religion = puniner 
+	culture = garethi
+	dynasty = 70
+	father = 267
+	987.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+267 = {
+	name = "Gerwulf"
+	religion = puniner 
+	culture = garethi
+	dynasty = 70
+	967.01.01 = {birth=yes}
+	1011.1.1 = {effect={imprison=1}}
+	1100.01.01 = {death=yes}
+}
+
+268 = {
+	name = "Ceres"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 70
+	father = 267
+	993.01.01 = {birth=yes}
+	1021.01.01 = {death=yes}
+}
+
+269 = {
+	name = "Baduar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 70
+	father = 266
+	1011.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+270 = {
+	name = "Iralda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 70
+	father = 266
+	1014.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Ehemalige_Magierin
+	#Weissmagierin
+}
+
+271 = {
+	name = "Rohaja"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 90
+	mother = 270
+	add_trait = twin
+	1034.01.01 = {birth=yes}
+	1100.01.02 = {death=yes}
+}
+
+272 = {
+	name = "Leobrecht"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 90
+	mother = 270
+	add_trait = twin
+	1034.01.01 = {birth=yes}
+	1100.01.03 = {death=yes}
+}
+
+273 = {
+	name = "Ophelia"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 90
+	mother = 270
+	add_trait = twin
+	1034.01.01 = {birth=yes}
+	1100.01.04 = {death=yes}
+}
+
+274 = {
+	name = "Trisdhan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 90
+	mother = 270
+	1035.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+275 = {
+	name = "Lechmin"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 90
+	mother = 270
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+}
+
+276 = {
+	name = "Idamil"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 90
+	mother = 270
+	1037.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+277 = {
+	name = "Alderan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 70
+	father = 266
+	1017.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Phexgeweihter(geheim)
+}
+
+278 = {
+	name = "Simiona"
+	female = yes
+	religion = puniner 
+	culture = yaquiria
+	dynasty = 71
+	add_trait = ambitious
+	add_trait = attractive
+	add_trait = mystic
+	999.01.01 = {birth=yes}
+	1032.01.01 = {death=yes}
+	#Namenlosengeweihte
 }
 
