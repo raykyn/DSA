@@ -516,6 +516,7 @@
 	culture = garethi
 	dynasty = 23
 	father = 212
+	add_trait = just
 	977.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -3087,5 +3088,35 @@
 	dynasty = 21
 	825.01.01 = {birth=yes}
 	860.01.01 = {death=yes}
+}
+
+289 = {
+	name = "Udalbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 287
+	895.01.01 = {birth=yes}
+	932.01.01 = {death=yes}
+}
+
+290 = {
+	name = "Answin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 289
+	928.01.01 = {birth=yes}
+	977.01.01 = {death=yes}
+}
+
+291 = {
+	name = "Udalbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 21
+	father = 290
+	966.01.01 = {birth=yes}
+	996.01.01 = {death=yes}
 }
 
