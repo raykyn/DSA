@@ -429,3 +429,21 @@
 	used_for_random = no
 }
 
+73 = {
+	name = "von Vierock"
+	culture = garethi
+	used_for_random = no
+}
+
+74 = {
+	name = "von Schellenpfort"
+	culture = garethi
+	used_for_random = no
+}
+
+75 = {
+	name = "von Borstenfeld"
+	culture = garethi
+	used_for_random = no
+}
+
