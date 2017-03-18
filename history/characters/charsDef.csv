@@ -310,3 +310,6 @@ id;name;religion;culture;female;dynasty;titles;birth;death;father;mother;traits;
 309;Hartmunde;puniner;garethi;yes;von Borstenfeld;;1003.01.01;1050.01.01;;308;attractive;1036.1.1 = {add_spouse=155};;;;;;;;;;;
 310;Leuwyn;puniner;garethi;no;von Borstenfeld;;1007.01.01;1027.01.01;;308;attractive;;;;;;;;;;;;
 311;Patricia;puniner;garethi;yes;von Hirschfurten;;1036.01.01;1050.01.01;155;309;;;;;;;;;;;;;
+312;Alwene;puniner;garethi;yes;von Hartsteen;c_hartsteen:979.1.1;955.01.01;1027.01.01;213;;;;;;;;;;;;;;
+313;Tsalinda;puniner;garethi;yes;von Gareth;;980.01.01;1021.01.01;314;312;;;;;;;;;;;;;
+314;Gorthan;puniner;garethi;no;von Gareth;;932.01.01;1003.01.01;125;;;978.1.1 = {add_spouse=312};;;;;;;;;;;

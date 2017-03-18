@@ -3333,3 +3333,37 @@
 	1050.01.01 = {death=yes}
 }
 
+312 = {
+	name = "Alwene"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 23
+	father = 213
+	955.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+313 = {
+	name = "Tsalinda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 314
+	mother = 312
+	980.01.01 = {birth=yes}
+	1021.01.01 = {death=yes}
+}
+
+314 = {
+	name = "Gorthan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 1
+	father = 125
+	932.01.01 = {birth=yes}
+	978.1.1 = {add_spouse=312}
+	1003.01.01 = {death=yes}
+}
+
