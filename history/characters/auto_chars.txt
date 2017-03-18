@@ -529,7 +529,7 @@
 	culture = garethi
 	dynasty = 26
 	985.08.18 = {birth=yes}
-	1032.01.01 = {death=yes}
+	1034.01.01 = {death=yes}
 }
 
 49 = {
@@ -548,7 +548,9 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 26
+	mother = 315
 	1006.11.01 = {birth=yes}
+	1031.1.1 = {add_matrilineal_spouse=318}
 	1050.01.01 = {death=yes}
 }
 
@@ -3365,5 +3367,103 @@
 	932.01.01 = {birth=yes}
 	978.1.1 = {add_spouse=312}
 	1003.01.01 = {death=yes}
+}
+
+315 = {
+	name = "Imina"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	mother = 316
+	986.01.01 = {birth=yes}
+	1020.01.01 = {death=yes}
+}
+
+316 = {
+	name = "Adelmunde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	father = 317
+	963.01.01 = {birth=yes}
+	1019.01.01 = {death=yes}
+}
+
+317 = {
+	name = "Alarich"
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	934.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
+}
+
+318 = {
+	name = "Mort"
+	religion = puniner 
+	culture = garethi
+	dynasty = 12
+	father = 229
+	1000.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+319 = {
+	name = "Leomar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	father = 318
+	mother = 50
+	1033.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+320 = {
+	name = "Imina"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	father = 318
+	mother = 50
+	1034.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+321 = {
+	name = "Gerion"
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	father = 318
+	mother = 50
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+322 = {
+	name = "Greifdane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	mother = 315
+	add_trait = deceitful
+	add_trait = envious
+	1004.01.01 = {birth=yes}
+	1032.01.01 = {death=yes}
+}
+
+323 = {
+	name = "Rahjaro"
+	religion = puniner 
+	culture = garethi
+	dynasty = 26
+	mother = 48
+	1029.01.01 = {birth=yes}
+	1033.01.01 = {death=yes}
 }
 
