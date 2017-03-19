@@ -528,6 +528,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 26
+	mother = 316
 	985.08.18 = {birth=yes}
 	1034.01.01 = {death=yes}
 }
@@ -560,8 +561,10 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 27
+	father = 324
 	977.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
+	#Phexgeweihte(geheim)
 }
 
 52 = {
@@ -571,7 +574,7 @@
 	dynasty = 27
 	mother = 51
 	995.01.01 = {birth=yes}
-	1050.01.01 = {death=yes}
+	1039.01.01 = {death=yes}
 }
 
 53 = {
@@ -1089,6 +1092,7 @@
 	religion = puniner 
 	culture = nebachot
 	dynasty = 55
+	father = 342
 	975.07.08 = {birth=yes}
 	1039.01.01 = {death=yes}
 }
@@ -3465,5 +3469,222 @@
 	mother = 48
 	1029.01.01 = {birth=yes}
 	1033.01.01 = {death=yes}
+}
+
+324 = {
+	name = "Ehrfried"
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	946.01.01 = {birth=yes}
+	1011.01.01 = {death=yes}
+}
+
+325 = {
+	name = "Lanzeslaus"
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 324
+	981.01.01 = {birth=yes}
+	1027.1.1 = {add_trait = maimed add_trait = depressed}
+	1040.01.01 = {death=yes}
+}
+
+326 = {
+	name = "Celissa"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 325
+	1000.01.01 = {birth=yes}
+	1039.01.01 = {death=yes}
+}
+
+327 = {
+	name = "Eborian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 325
+	1007.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+328 = {
+	name = "Dana"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	mother = 326
+	1018.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+329 = {
+	name = "Elea"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 327
+	1038.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+330 = {
+	name = "Angreto"
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 327
+	1040.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+331 = {
+	name = "Holduin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 52
+	1031.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+332 = {
+	name = "Rhodena"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 51
+	996.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Phexgeweihte(geheim)
+}
+
+333 = {
+	name = "Ulmia"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 76
+	father = 336
+	mother = 332
+	1020.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+334 = {
+	name = "Fenia"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 76
+	father = 336
+	mother = 332
+	1021.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+335 = {
+	name = "Leomar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 76
+	father = 336
+	mother = 332
+	1023.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+336 = {
+	name = "Sigman"
+	religion = puniner 
+	culture = garethi
+	dynasty = 76
+	999.01.01 = {birth=yes}
+	1018.1.1 = {add_spouse=332}
+	1100.01.01 = {death=yes}
+}
+
+337 = {
+	name = "Firnhilde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 27
+	father = 51
+	1006.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+338 = {
+	name = "Chaliba"
+	female = yes
+	religion = puniner 
+	culture = nebachot
+	dynasty = 55
+	father = 341
+	1000.01.01 = {birth=yes}
+	1035.1.1 = {add_spouse=55}
+	1100.01.01 = {death=yes}
+}
+
+339 = {
+	name = "Ruben"
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 55
+	mother = 338
+	add_trait = twin
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+340 = {
+	name = "Yasmina"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 28
+	father = 55
+	mother = 338
+	add_trait = twin
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+341 = {
+	name = "Remudin"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 55
+	father = 343
+	980.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+342 = {
+	name = "Byrik"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 55
+	father = 343
+	950.01.01 = {birth=yes}
+	995.01.01 = {death=yes}
+}
+
+343 = {
+	name = "A'urel"
+	religion = puniner 
+	culture = nebachot
+	dynasty = 55
+	930.01.01 = {birth=yes}
+	985.01.01 = {death=yes}
 }
 

@@ -447,3 +447,9 @@
 	used_for_random = no
 }
 
+76 = {
+	name = "von Weyringhaus"
+	culture = garethi
+	used_for_random = no
+}
+
