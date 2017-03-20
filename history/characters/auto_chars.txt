@@ -625,6 +625,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 29
+	mother = 344
 	992.02.14 = {birth=yes}
 	1034.02.04 = {death=yes}
 }
@@ -653,7 +654,7 @@
 	female = yes
 	religion = puniner 
 	culture = garethi
-	dynasty = 29
+	dynasty = 77
 	1000.05.19 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -3686,5 +3687,47 @@
 	dynasty = 55
 	930.01.01 = {birth=yes}
 	985.01.01 = {death=yes}
+}
+
+344 = {
+	name = "Grenulda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 29
+	966.01.01 = {birth=yes}
+	1014.01.01 = {death=yes}
+}
+
+345 = {
+	name = "Granold"
+	religion = puniner 
+	culture = garethi
+	dynasty = 29
+	mother = 57
+	1013.01.01 = {birth=yes}
+	1034.01.01 = {death=yes}
+}
+
+346 = {
+	name = "Hunold"
+	religion = puniner 
+	culture = garethi
+	dynasty = 29
+	mother = 57
+	1014.01.01 = {birth=yes}
+	1034.01.01 = {death=yes}
+}
+
+347 = {
+	name = "Yorinde"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 29
+	mother = 57
+	1016.01.01 = {birth=yes}
+	1034.01.01 = {death=yes}
+	#Perainegeweihte
 }
 

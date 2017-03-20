@@ -453,3 +453,9 @@
 	used_for_random = no
 }
 
+77 = {
+	name = "von Kressenburg"
+	culture = garethi
+	used_for_random = no
+}
+
