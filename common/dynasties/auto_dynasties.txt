@@ -471,3 +471,27 @@
 	used_for_random = no
 }
 
+80 = {
+	name = "von Schellentorff"
+	culture = garethi
+	used_for_random = no
+}
+
+81 = {
+	name = "Eisinger"
+	culture = garethi
+	used_for_random = no
+}
+
+82 = {
+	name = "von Weissenfels"
+	culture = garethi
+	used_for_random = no
+}
+
+83 = {
+	name = "vom Eberstamm"
+	culture = kosh
+	used_for_random = no
+}
+

@@ -676,6 +676,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 33
+	mother = 385
 	991.04.22 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -685,6 +686,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 34
+	father = 386
 	993.08.28 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -724,6 +726,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 37
+	father = 406
 	994.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -734,6 +737,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 38
+	father = 413
 	999.09.15 = {birth=yes}
 	1050.01.01 = {death=yes}
 	#nickname_die_Greifin
@@ -784,6 +788,7 @@
 	father = 366
 	996.01.01 = {birth=yes}
 	1034.01.01 = {death=yes}
+	#eigentlich_adoptiert
 }
 
 74 = {
@@ -862,6 +867,7 @@
 	religion = puniner 
 	culture = garethi
 	dynasty = 32
+	father = 378
 	1007.01.01 = {birth=yes}
 	1050.01.01 = {death=yes}
 }
@@ -4064,5 +4070,424 @@
 	mother = 377
 	976.01.01 = {birth=yes}
 	1029.01.01 = {death=yes}
+}
+
+379 = {
+	name = "Redenhardt"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	father = 366
+	986.01.01 = {birth=yes}
+	1022.01.01 = {death=yes}
+}
+
+380 = {
+	name = "Ysilda"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	father = 366
+	987.01.01 = {birth=yes}
+	1003.01.01 = {death=yes}
+}
+
+381 = {
+	name = "Ogdan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	father = 366
+	988.01.01 = {birth=yes}
+	1011.01.01 = {death=yes}
+}
+
+382 = {
+	name = "Gumbald"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	father = 366
+	1034.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+383 = {
+	name = "Arwen"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	father = 366
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+}
+
+384 = {
+	name = "Dermar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 32
+	father = 73
+	add_trait = content
+	add_trait = coward
+	add_trait = frail
+	1020.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+385 = {
+	name = "Praiodane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 33
+	975.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+386 = {
+	name = "Wolfgrimm"
+	religion = puniner 
+	culture = garethi
+	dynasty = 34
+	975.01.01 = {birth=yes}
+	1019.01.01 = {death=yes}
+}
+
+387 = {
+	name = "Praionor"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	995.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Krieger_Baliho
+}
+
+388 = {
+	name = "Alrike"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	996.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Verheiratetet_mit_unb_almad_Ritter
+}
+
+389 = {
+	name = "Urion"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	997.01.01 = {birth=yes}
+	1030.1.1 = {add_spouse=66}
+	1100.01.01 = {death=yes}
+	#Offizier_Wehrheim
+}
+
+390 = {
+	name = "Meran"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	add_trait = mage
+	999.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Weissmagier
+	#Kampfmagier
+}
+
+391 = {
+	name = "Heline"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	1001.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Perainegeweihte
+}
+
+392 = {
+	name = "Hesindiane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	1002.01.01 = {birth=yes}
+	1040.01.01 = {death=yes}
+}
+
+393 = {
+	name = "Rondrian"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 64
+	mother = 394
+	1004.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Rondrageweihter
+}
+
+394 = {
+	name = "Rondriane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 4
+	976.01.01 = {birth=yes}
+	995.1.1 = {add_matrilineal_spouse=64}
+	1012.01.01 = {death=yes}
+}
+
+395 = {
+	name = "Baradur"
+	religion = puniner 
+	culture = garethi
+	dynasty = 81
+	998.01.01 = {birth=yes}
+	1025.1.1 = {add_matrilineal_spouse=390}
+	1100.01.01 = {death=yes}
+	#Hesindegeweihter
+	#Draconiter
+}
+
+396 = {
+	name = "Praiolin"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 395
+	mother = 390
+	add_trait = twin
+	1026.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+397 = {
+	name = "Madalieb"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 395
+	mother = 390
+	add_trait = twin
+	1026.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+}
+
+398 = {
+	name = "Eslam"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 395
+	mother = 390
+	1035.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+}
+
+399 = {
+	name = "Imladris"
+	religion = puniner 
+	culture = garethi
+	dynasty = 82
+	add_trait = race_elf
+	922.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+400 = {
+	name = "Praiodan"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 389
+	mother = 66
+	1031.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+401 = {
+	name = "Hilla"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 389
+	mother = 66
+	add_trait = twin
+	1032.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+402 = {
+	name = "Reto"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 389
+	mother = 66
+	add_trait = twin
+	1032.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+403 = {
+	name = "Ardo"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 389
+	mother = 66
+	1034.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+404 = {
+	name = "Hildelind"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 389
+	mother = 66
+	add_trait = twin
+	1035.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+}
+
+405 = {
+	name = "Waldemar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 35
+	father = 389
+	mother = 66
+	add_trait = twin
+	1035.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+406 = {
+	name = "Adalbert"
+	religion = puniner 
+	culture = garethi
+	dynasty = 37
+	975.01.01 = {birth=yes}
+	1010.01.01 = {death=yes}
+}
+
+407 = {
+	name = "Ulfried"
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	father = 412
+	mother = 68
+	1027.01.01 = {birth=yes}
+	1034.01.01 = {death=yes}
+}
+
+408 = {
+	name = "Madalieb"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	father = 412
+	mother = 68
+	add_trait = twin
+	1032.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+409 = {
+	name = "Aldec"
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	father = 412
+	mother = 68
+	add_trait = twin
+	1032.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+410 = {
+	name = "Raul"
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	father = 412
+	mother = 68
+	1035.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+411 = {
+	name = "Ludalf"
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	father = 412
+	mother = 68
+	1036.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#magisch_begabt
+}
+
+412 = {
+	name = "Edelbrecht"
+	religion = puniner 
+	culture = kosh
+	dynasty = 83
+	998.01.01 = {birth=yes}
+	1026.1.1 = {add_matrilineal_spouse=68}
+	1100.01.01 = {death=yes}
+}
+
+413 = {
+	name = "Shazar"
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	mother = 414
+	973.01.01 = {birth=yes}
+	1014.1.1 = {effect={imprison=2}}
+	1025.01.01 = {death=yes}
+	#1014_verbannt
+}
+
+414 = {
+	name = "Madalieb"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 38
+	947.01.01 = {birth=yes}
+	1004.01.01 = {death=yes}
 }
 
