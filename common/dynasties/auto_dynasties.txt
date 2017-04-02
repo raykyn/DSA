@@ -459,3 +459,15 @@
 	used_for_random = no
 }
 
+78 = {
+	name = "von Kieselholm"
+	culture = garethi
+	used_for_random = no
+}
+
+79 = {
+	name = "Adler"
+	culture = garethi
+	used_for_random = no
+}
+
