@@ -495,3 +495,15 @@
 	used_for_random = no
 }
 
+84 = {
+	name = "von Altnardesfeld"
+	culture = garethi
+	used_for_random = no
+}
+
+85 = {
+	name = "von Weidensee"
+	culture = garethi
+	used_for_random = no
+}
+
