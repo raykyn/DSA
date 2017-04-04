@@ -507,3 +507,51 @@
 	used_for_random = no
 }
 
+86 = {
+	name = "von Hartwalden"
+	culture = garethi
+	used_for_random = no
+}
+
+87 = {
+	name = "von Wasserburg"
+	culture = garethi
+	used_for_random = no
+}
+
+88 = {
+	name = "von Halmenwerth"
+	culture = garethi
+	used_for_random = no
+}
+
+89 = {
+	name = "Chall'Bercha"
+	culture = nebachot
+	used_for_random = no
+}
+
+90 = {
+	name = "von Gnitzenkuhl"
+	culture = garethi
+	used_for_random = no
+}
+
+91 = {
+	name = "von der Roten Hand"
+	culture = garethi
+	used_for_random = no
+}
+
+92 = {
+	name = "Darben-Dürsten"
+	culture = garethi
+	used_for_random = no
+}
+
+93 = {
+	name = "von Revennis"
+	culture = meadows
+	used_for_random = no
+}
+
