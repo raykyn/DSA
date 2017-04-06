@@ -352,7 +352,7 @@
 }
 
 32 = {
-	name = "Elgor Leomar"
+	name = "haduwulf"
 	religion = puniner 
 	culture = garethi
 	dynasty = 17
@@ -1504,7 +1504,7 @@
 }
 
 140 = {
-	name = "Elissa Alara"
+	name = "Elissa"
 	female = yes
 	religion = puniner 
 	culture = garethi
@@ -1515,7 +1515,7 @@
 }
 
 141 = {
-	name = "Dirion Hakaan"
+	name = "Dirion"
 	religion = puniner 
 	culture = garethi
 	dynasty = 1
@@ -2016,6 +2016,7 @@
 	religion = puniner 
 	culture = tobrian
 	dynasty = 9
+	mother = 712
 	952.01.01 = {birth=yes}
 	1006.01.01 = {death=yes}
 }

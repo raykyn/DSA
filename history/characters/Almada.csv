@@ -1,0 +1,24 @@
+id;name;religion;culture;female;dynasty;titles;birth;death;father;mother;traits;other events;comments;martial;diplo;intrigue;steward;learning;health;fertility;dna;properties;occluded
+700;Gwain;puniner;almadan;no;von Harmamund;k_almada:1034.01.01 c_phecadien:1034.1.1 c_franfeld:1034.1.1 c_khahirios:1034.1.1 c_selaque:1034.1.1 c_kornhammer:1034.1.1 c_punin:1034.1.1;965.01.01;1100.01.01;;721;quick;;Fuerst_nicht_Koenig_wie_Markgraf?;;;;;;;;;;
+701;Gendahar;puniner;almadan;no;von Streitzig;d_yaquirtal:1034.1.1 c_thangolforst:1034.1.1;992.01.01;1100.01.01;706;;proud attractive;;;;;;;;;;;;
+702;Valdemoro;puniner;almadan;no;von Streitzig;;1024.01.01;1100.01.01;701;;proud;;;;;;;;;;;;
+703;Rohalija;puniner;almadan;yes;von Streitzig;;990.01.01;1100.01.01;706;;ambitious;;;;;;;;;;;;
+704;Galenot;puniner;almadan;no;von Streitzig;;988.01.01;1100.01.01;706;;twin;;Medicus enterbt;;;;;;;;;;
+705;Gerhild;puniner;almadan;yes;von Streitzig;;988.01.01;1027.01.01;706;;twin;;;;;;;;;;;;
+706;Praiodar;puniner;almadan;no;von Streitzig;d_yaquirtal:1028.1.1 c_thangolforst:1028.1.1;963.01.01;1034.01.01;;;;;;;;;;;;;;;
+707;Khorim;rastullah;beni_novad;no;Badawi;d_yaquirtal:1003.1.1 c_thangolforst:1003.1.1;981.01.01;1100.01.01;;;;;;;;;;;;;;;
+708;Brandil;puniner;almadan;no;von Ehrenstein;d_ragath:1014.1.1 c_ragathsquell:1014.1.1;976.01.01;1100.01.01;713;;;1008.1.1 = {add_spouse = 703};;;;;;;;;;;
+709;Concabella;puniner;almadan;yes;von Ehrenstein;;1009.01.01;1100.01.01;708;703;chaste;;Mit_Herzog_Nordmarken_verheiratet;;;;;;;;;;
+710;Rahjada;puniner;almadan;yes;von Ehrenstein;;1010.01.01;1100.01.01;708;703;lustful;;Mit_Baron_von_Dubios_verheiratet;;;;;;;;;;
+711;Romina;puniner;almadan;yes;von Ehrenstein;;1011.01.01;1100.01.01;708;703;;;;;;;;;;;;;
+712;Wulfdane;puniner;garethi;yes;von Ehrenstein;;929.01.01;988.01.01;;;;;;;;;;;;;;;
+713;Ardo;puniner;almadan;no;von Ehrenstein;;950.01.01;983.01.01;;712;;;;;;;;;;;;;
+714;Julka;puniner;almadan;no;von Harmamund;d_ragath:995.1.1 c_ragathsquell:995.1.1;980.01.01;1014.01.01;;720;;;;;;;;;;;;;
+715;Groschka;angrosch;anvil_d;yes;von Waldwacht;d_waldwacht:1027.1.1 c_taladur:1027.1.1;912.01.01;1100.01.01;716;;;;;;;;;;;;;;
+716;Rabosch;angrosch;anvil_d;no;von Waldwacht;d_waldwacht:863.1.1 c_taladur:863.1.1;750.01.01;1100.01.01;;;;;;;;;;;;;;;
+717;Shahane;puniner;almadan;yes;Al'Kasim;d_suedpforte:1000.01.01 c_agum:1000.01.01;980.01.01;1100.01.01;;;;;War_verheiratet_mit_Leomar_vom_Berg;;;;;;;;;;
+718;Parinor;puniner;almadan;no;Al'Kasim;;1006.01.01;1026.01.01;;717;twin;;;;;;;;;;;;
+719;Gujadal;puniner;almadan;no;Al'Kasim;;1006.01.01;1100.01.01;;717;twin;;;;;;;;;;;;
+720;Solivai;puniner;almadan;yes;von Harmamund;k_almada:974.01.01 c_phecadien:974.1.1 c_franfeld:974.1.1 c_khahirios:974.1.1 c_selaque:974.1.1 c_kornhammer:974.1.1 c_punin:974.1.1;950.01.01;983.01.01;722;;;;;;;;;;;;;;
+721;Morena;puniner;almadan;yes;von Harmamund;;940.01.01;980.01.01;722;;;;;;;;;;;;;;
+722;Maquedar;puniner;almadan;no;von Harmamund;;920.01.01;960.01.01;;;;;;;;;;;;;;;

@@ -1,0 +1,255 @@
+700 = {
+	name = "Gwain"
+	religion = puniner 
+	culture = almadan
+	dynasty = 94
+	mother = 721
+	add_trait = quick
+	965.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Fuerst_nicht_Koenig_wie_Markgraf?
+}
+
+701 = {
+	name = "Gendahar"
+	religion = puniner 
+	culture = almadan
+	dynasty = 95
+	father = 706
+	add_trait = proud
+	add_trait = attractive
+	992.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+702 = {
+	name = "Valdemoro"
+	religion = puniner 
+	culture = almadan
+	dynasty = 95
+	father = 701
+	add_trait = proud
+	1024.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+703 = {
+	name = "Rohalija"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 95
+	father = 706
+	add_trait = ambitious
+	990.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+704 = {
+	name = "Galenot"
+	religion = puniner 
+	culture = almadan
+	dynasty = 95
+	father = 706
+	add_trait = twin
+	988.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Medicus
+	#enterbt
+}
+
+705 = {
+	name = "Gerhild"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 95
+	father = 706
+	add_trait = twin
+	988.01.01 = {birth=yes}
+	1027.01.01 = {death=yes}
+}
+
+706 = {
+	name = "Praiodar"
+	religion = puniner 
+	culture = almadan
+	dynasty = 95
+	963.01.01 = {birth=yes}
+	1034.01.01 = {death=yes}
+}
+
+707 = {
+	name = "Khorim"
+	religion = rastullah 
+	culture = beni_novad
+	dynasty = 96
+	981.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+708 = {
+	name = "Brandil"
+	religion = puniner 
+	culture = almadan
+	dynasty = 9
+	father = 713
+	976.01.01 = {birth=yes}
+	1008.1.1 = {add_spouse = 703}
+	1100.01.01 = {death=yes}
+}
+
+709 = {
+	name = "Concabella"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 9
+	father = 708
+	mother = 703
+	add_trait = chaste
+	1009.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Mit_Herzog_Nordmarken_verheiratet
+}
+
+710 = {
+	name = "Rahjada"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 9
+	father = 708
+	mother = 703
+	add_trait = lustful
+	1010.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#Mit_Baron_von_Dubios_verheiratet
+}
+
+711 = {
+	name = "Romina"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 9
+	father = 708
+	mother = 703
+	1011.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+712 = {
+	name = "Wulfdane"
+	female = yes
+	religion = puniner 
+	culture = garethi
+	dynasty = 9
+	929.01.01 = {birth=yes}
+	988.01.01 = {death=yes}
+}
+
+713 = {
+	name = "Ardo"
+	religion = puniner 
+	culture = almadan
+	dynasty = 9
+	mother = 712
+	950.01.01 = {birth=yes}
+	983.01.01 = {death=yes}
+}
+
+714 = {
+	name = "Julka"
+	religion = puniner 
+	culture = almadan
+	dynasty = 94
+	mother = 720
+	980.01.01 = {birth=yes}
+	1014.01.01 = {death=yes}
+}
+
+715 = {
+	name = "Groschka"
+	female = yes
+	religion = angrosch 
+	culture = anvil_d
+	dynasty = 97
+	father = 716
+	912.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+716 = {
+	name = "Rabosch"
+	religion = angrosch 
+	culture = anvil_d
+	dynasty = 97
+	750.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+717 = {
+	name = "Shahane"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 98
+	980.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+	#War_verheiratet_mit_Leomar_vom_Berg
+}
+
+718 = {
+	name = "Parinor"
+	religion = puniner 
+	culture = almadan
+	dynasty = 98
+	mother = 717
+	add_trait = twin
+	1006.01.01 = {birth=yes}
+	1026.01.01 = {death=yes}
+}
+
+719 = {
+	name = "Gujadal"
+	religion = puniner 
+	culture = almadan
+	dynasty = 98
+	mother = 717
+	add_trait = twin
+	1006.01.01 = {birth=yes}
+	1100.01.01 = {death=yes}
+}
+
+720 = {
+	name = "Solivai"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 94
+	father = 722
+	950.01.01 = {birth=yes}
+	983.01.01 = {death=yes}
+}
+
+721 = {
+	name = "Morena"
+	female = yes
+	religion = puniner 
+	culture = almadan
+	dynasty = 94
+	father = 722
+	940.01.01 = {birth=yes}
+	980.01.01 = {death=yes}
+}
+
+722 = {
+	name = "Maquedar"
+	religion = puniner 
+	culture = almadan
+	dynasty = 94
+	920.01.01 = {birth=yes}
+	960.01.01 = {death=yes}
+}
+

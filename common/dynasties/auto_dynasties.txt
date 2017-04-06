@@ -555,3 +555,33 @@
 	used_for_random = no
 }
 
+94 = {
+	name = "von Harmamund"
+	culture = almadan
+	used_for_random = no
+}
+
+95 = {
+	name = "von Streitzig"
+	culture = almadan
+	used_for_random = no
+}
+
+96 = {
+	name = "Badawi"
+	culture = beni_novad
+	used_for_random = no
+}
+
+97 = {
+	name = "von Waldwacht"
+	culture = anvil_d
+	used_for_random = no
+}
+
+98 = {
+	name = "Al'Kasim"
+	culture = almadan
+	used_for_random = no
+}
+
